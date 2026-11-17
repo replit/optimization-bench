@@ -1,0 +1,30 @@
+{
+  "tests": [
+    {
+      "case": "duplicate",
+      "rejected": true,
+      "exit_code": 2,
+      "diagnostic": "duplicate or unordered key"
+    },
+    {
+      "case": "empty-country",
+      "rejected": true,
+      "exit_code": 2,
+      "diagnostic": "empty request"
+    },
+    {
+      "case": "extra-field",
+      "rejected": true,
+      "exit_code": 2,
+      "diagnostic": "request shape"
+    },
+    {
+      "case": "wrong-count",
+      "rejected": true,
+      "exit_code": 2,
+      "diagnostic": "request inventory"
+    }
+  ],
+  "timing_performed": false,
+  "qualified": false
+}

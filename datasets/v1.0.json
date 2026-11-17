@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "release": "optimbench-v1.0",
+  "task_version": "1.0.0",
+  "task_versions": {
+    "ruff-project-lint": "0.3.0"
+  },
+  "status": "qualification-pending",
+  "gate_policy": "datasets/v1.1-gate-policy.json",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "description": "Working selection with the original v1.0.0 agent tool conditions and current functional fixes. Reuses the existing scoring policy, not historical task/image qualification. Membership is not native correctness or timing qualification.",
+  "tasks": [
+    "black-project-format",
+    "bzip2-codec",
+    "git-history-change-summary",
+    "goldmark-gfm-html",
+    "jq-strip-openapi-descriptions",
+    "numpy-quantile",
+    "ruff-project-lint",
+    "serde-json-production-crate-index-ingestion",
+    "sqlfluff-project-lint",
+    "sqlfmt-cli",
+    "sqlglot-mozilla-transpile",
+    "sqlite-distinct-plant-facets",
+    "terser-minify",
+    "xz-lzma2-compress"
+  ]
+}

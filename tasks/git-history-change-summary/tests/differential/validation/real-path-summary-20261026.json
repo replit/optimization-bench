@@ -1,0 +1,103 @@
+{
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "passed": true,
+  "units": {
+    "patch-histogram": {
+      "aa": {
+        "ci95": [
+          0.9892770912296017,
+          1.00512761848548
+        ],
+        "full_width_percentage_points": 1.5850527255878322,
+        "median_seconds": {
+          "baseline": 6.46247682,
+          "candidate": 6.49321224
+        },
+        "minimum_seconds": 6.284183892,
+        "passed": true,
+        "ratio": 0.997481876483361,
+        "sample_count": 30
+      },
+      "ab": {
+        "ci95": [
+          0.992701979456472,
+          1.0060447563958872
+        ],
+        "full_width_percentage_points": 1.3342776939415213,
+        "median_seconds": {
+          "baseline": 6.4649554375000005,
+          "candidate": 6.461488559499999
+        },
+        "minimum_seconds": 6.274073965,
+        "passed": true,
+        "ratio": 0.9992678987032231,
+        "sample_count": 30
+      }
+    },
+    "patch-myers": {
+      "aa": {
+        "ci95": [
+          0.9928916247424342,
+          1.0067951969031907
+        ],
+        "full_width_percentage_points": 1.390357216075655,
+        "median_seconds": {
+          "baseline": 14.645710005,
+          "candidate": 14.677551766499999
+        },
+        "minimum_seconds": 14.229017412,
+        "passed": true,
+        "ratio": 0.9994782345203037,
+        "sample_count": 30
+      },
+      "ab": {
+        "ci95": [
+          0.9964474136358346,
+          1.011975855196527
+        ],
+        "full_width_percentage_points": 1.552844156069244,
+        "median_seconds": {
+          "baseline": 14.6623037775,
+          "candidate": 14.572633575000001
+        },
+        "minimum_seconds": 14.127819683,
+        "passed": true,
+        "ratio": 1.0044453254451815,
+        "sample_count": 30
+      }
+    },
+    "shortstat-myers": {
+      "aa": {
+        "ci95": [
+          0.9890760207339965,
+          1.0111107065431022
+        ],
+        "full_width_percentage_points": 2.2034685809105725,
+        "median_seconds": {
+          "baseline": 5.495729562,
+          "candidate": 5.457079473
+        },
+        "minimum_seconds": 5.268385422,
+        "passed": true,
+        "ratio": 0.9999961933932597,
+        "sample_count": 30
+      },
+      "ab": {
+        "ci95": [
+          0.9995004326897757,
+          1.0107252611805608
+        ],
+        "full_width_percentage_points": 1.12248284907851,
+        "median_seconds": {
+          "baseline": 5.48645026,
+          "candidate": 5.481579751
+        },
+        "minimum_seconds": 5.243685186,
+        "passed": true,
+        "ratio": 1.0050153444472112,
+        "sample_count": 30
+      }
+    }
+  },
+  "wall_seconds": 14089.291137039
+}

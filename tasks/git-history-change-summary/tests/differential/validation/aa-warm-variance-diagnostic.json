@@ -1,0 +1,131 @@
+{
+  "arms": {
+    "baseline": {
+      "cv": 0.035968049233224594,
+      "drift_correlation": -0.3564070266801625,
+      "mean": 3.498218489566667,
+      "repositories": {
+        "git": {
+          "covariance_share_of_total_variance": 0.2009104970597657,
+          "cv": 0.03588083109346104,
+          "mean": 1.0727361636333332,
+          "sd": 0.038490665095175014
+        },
+        "prettier": {
+          "covariance_share_of_total_variance": 0.48529285765171226,
+          "cv": 0.05579026577458913,
+          "mean": 1.4272422740000001,
+          "sd": 0.07962622579118897
+        },
+        "pydantic": {
+          "covariance_share_of_total_variance": 0.26277676791001264,
+          "cv": 0.07081438221088908,
+          "mean": 0.7072240860666666,
+          "sd": 0.05008163673947165
+        },
+        "ripgrep": {
+          "covariance_share_of_total_variance": 0.05101987737850991,
+          "cv": 0.06173380280007527,
+          "mean": 0.29101596586666667,
+          "sd": 0.017965522248486236
+        }
+      },
+      "sd": 0.12582409486131044,
+      "third_means": [
+        3.5619998642,
+        3.4557650942,
+        3.4768905103
+      ]
+    },
+    "candidate": {
+      "cv": 0.027474204334916628,
+      "drift_correlation": -0.03397596935772184,
+      "mean": 3.470315948266667,
+      "repositories": {
+        "git": {
+          "covariance_share_of_total_variance": 0.07438062599423508,
+          "cv": 0.026350138896241757,
+          "mean": 1.0630604301333333,
+          "sd": 0.028011789989111836
+        },
+        "prettier": {
+          "covariance_share_of_total_variance": 0.7363619853486588,
+          "cv": 0.05807910728803092,
+          "mean": 1.422573245,
+          "sd": 0.0826217841214373
+        },
+        "pydantic": {
+          "covariance_share_of_total_variance": 0.09305447101431084,
+          "cv": 0.03562298612232055,
+          "mean": 0.6992146611,
+          "sd": 0.024908114168888367
+        },
+        "ripgrep": {
+          "covariance_share_of_total_variance": 0.0962029176427951,
+          "cv": 0.05476724822710697,
+          "mean": 0.2854676120333333,
+          "sd": 0.015634275569029035
+        }
+      },
+      "sd": 0.09534416946939836,
+      "third_means": [
+        3.4940295333,
+        3.4254879665,
+        3.491430345
+      ]
+    }
+  },
+  "caveat": "Bigger steps may reduce fixed jitter, but proportional frequency-related noise would not necessarily improve with batch size. No frequency diagnosis is established.",
+  "frequency_telemetry_available": false,
+  "log_ratios": [
+    0.07456850171637602,
+    0.11656769051886742,
+    -0.09861462892942997,
+    0.01841575147077784,
+    -0.055192417961829054,
+    0.016416549268670953,
+    0.011448515492619778,
+    0.026625756916898773,
+    0.038366242785929,
+    0.04226255501468021,
+    -0.007149586192425503,
+    -0.009819758930887587,
+    0.04986606181519419,
+    -0.0021088047690639945,
+    0.002137749616001936,
+    0.02050348373607329,
+    0.008810205182755375,
+    -0.009582575015555244,
+    -0.0009995821161692185,
+    0.034462108580357614,
+    0.022499986518491888,
+    0.07139238430350923,
+    0.01653569422404247,
+    0.02038213246893496,
+    -0.04762770406369391,
+    -0.05838144743549751,
+    -0.009132599875395987,
+    -0.006615262325702169,
+    -0.021808461297975073,
+    -0.03170923191928983
+  ],
+  "logratio_drift_correlation": -0.2768512488814048,
+  "logratio_summary": {
+    "mad_flag_pair_numbers": [
+      2,
+      3
+    ],
+    "maximum": 0.11656769051886742,
+    "mean": 0.00775064362657553,
+    "minimum": -0.09861462892942997,
+    "sd": 0.042678744009493196,
+    "tukey_flag_pair_numbers": [
+      2,
+      3
+    ]
+  },
+  "no_samples_removed": true,
+  "read_only": true,
+  "ruling": "StrictFAILstands.Noextra pairs,trimmingorrounding. Replace small-history Rust/Python publicrepos; preserveequal25%mixand2:1:1families. Sizingonlyuntimedsingleruns;noAAuntilnewreview.",
+  "specific_fixable_nonworkload_cause_confirmed": false
+}

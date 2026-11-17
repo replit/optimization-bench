@@ -1,0 +1,1 @@
+{"complete_inventory_sha256":"f3d2b2e0f2efc870e5012a67b57f5ac6983182e30355899258b7027965bc3eb6","inventory_sha256":"f3d2b2e0f2efc870e5012a67b57f5ac6983182e30355899258b7027965bc3eb6","operation":"syntax-tree","project":"syntax-tree-public","shared_files":{},"targets":["sql/moz-fx-data-shared-prod/telemetry_derived/clients_daily_v6/query.sql"],"timeout":180}

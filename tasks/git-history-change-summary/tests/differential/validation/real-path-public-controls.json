@@ -1,0 +1,276 @@
+{
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "passed": true,
+  "records": [
+    {
+      "arm": "baseline",
+      "bytes": 649275479,
+      "case": "patch-myers",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 501323512,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": true,
+      "sha256": "fb3b5f09bf8a0a792c6594f0e4aec5a3ebbbe6953e4f5ddd1dabada4f86b0e28"
+    },
+    {
+      "arm": "independent",
+      "bytes": 649275479,
+      "case": "patch-myers",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 192356953,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": true,
+      "sha256": "fb3b5f09bf8a0a792c6594f0e4aec5a3ebbbe6953e4f5ddd1dabada4f86b0e28"
+    },
+    {
+      "arm": "broken",
+      "bytes": 77232735,
+      "case": "patch-myers",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 211234499,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": false,
+      "sha256": "52a8c36eae59aa36485a72e9d46d31bff2671fdc6989337d4dfab7ac29363b39"
+    },
+    {
+      "arm": "baseline",
+      "bytes": 969875,
+      "case": "shortstat-myers",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 206434251,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": true,
+      "sha256": "5aa92f4e76197559ab786e6b1770fa23849a3fd9a4c9f3de90c456d68e3b1a6b"
+    },
+    {
+      "arm": "independent",
+      "bytes": 969875,
+      "case": "shortstat-myers",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 185578311,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": true,
+      "sha256": "5aa92f4e76197559ab786e6b1770fa23849a3fd9a4c9f3de90c456d68e3b1a6b"
+    },
+    {
+      "arm": "broken",
+      "bytes": 504483,
+      "case": "shortstat-myers",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 187131810,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": false,
+      "sha256": "a542343f5f9c0e243e4d7bef00f788ab1cef4c0343e2e9c4e9ee73da81b51954"
+    },
+    {
+      "arm": "baseline",
+      "bytes": 146607583,
+      "case": "patch-histogram",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 186155911,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": true,
+      "sha256": "fe96df3f8427b30ec5793d0489ce0f2012169a5847d35745dbfd006817591a8e"
+    },
+    {
+      "arm": "independent",
+      "bytes": 146607583,
+      "case": "patch-histogram",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 180624415,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": true,
+      "sha256": "fe96df3f8427b30ec5793d0489ce0f2012169a5847d35745dbfd006817591a8e"
+    },
+    {
+      "arm": "broken",
+      "bytes": 15106815,
+      "case": "patch-histogram",
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 157286194,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 858420980,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "exact_pristine_match": false,
+      "sha256": "edc682d0b9ea7616f22061ba50e964724334ee352a5e258c9776b9031d84f527"
+    }
+  ]
+}

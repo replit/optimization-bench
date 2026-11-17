@@ -1,0 +1,46 @@
+{
+  "builds": {
+    "broken": "ea2f82deaf99db5448918603f7b0f7d83c3493a64dd7ed62da68c1cb070b6fe5",
+    "do-nothing": "b0bf6db37092ec2b272a164251468e966c9b01d46024113531ea3e3ee762bbcb",
+    "interface": "b9629c9e196d94312ee93edd577c909cb793310bfb9f1916fef4f976c933dacd",
+    "pristine": "481617a9b8d0dbed4e235ae90bd6a1f40eb66c59c1bbd931ad237c04deb00308"
+  },
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "new_source_commit": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "performance_claim": false,
+  "units": [
+    {
+      "broken": "incorrect",
+      "complete_byte_comparison": true,
+      "do_nothing": "correct",
+      "expect_len": 156274047,
+      "expect_sha": "23d7e9d7ffda740454b7560c3140e52603118583b6a6fdae69685b45154774b4",
+      "id": "patch-myers",
+      "leftovers": 0,
+      "repository_processes": 4,
+      "timing_suppressed": true
+    },
+    {
+      "broken": "incorrect",
+      "complete_byte_comparison": true,
+      "do_nothing": "correct",
+      "expect_len": 244451,
+      "expect_sha": "eba916345195c6a95f607d8ef9aea266ba7edb958ea590084144372226b1c3bb",
+      "id": "shortstat-myers",
+      "leftovers": 0,
+      "repository_processes": 4,
+      "timing_suppressed": true
+    },
+    {
+      "broken": "incorrect",
+      "complete_byte_comparison": true,
+      "do_nothing": "correct",
+      "expect_len": 75643279,
+      "expect_sha": "e9cd33a2d79e016730072494521ed13ace37f81fdb361efc5651caba2ee6fbf2",
+      "id": "patch-histogram",
+      "leftovers": 0,
+      "repository_processes": 4,
+      "timing_suppressed": true
+    }
+  ]
+}

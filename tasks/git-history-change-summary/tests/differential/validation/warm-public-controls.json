@@ -1,0 +1,293 @@
+{
+  "all_complete_outputs_equal_pristine_reference": true,
+  "broken_rejected_each_family": true,
+  "control_source_unchanged": true,
+  "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+  "performance_qualification": false,
+  "records": [
+    {
+      "arm": "pristine",
+      "bytes": 156274047,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 319330935,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "23d7e9d7ffda740454b7560c3140e52603118583b6a6fdae69685b45154774b4",
+      "timing_qualification": false,
+      "unit": "patch-myers"
+    },
+    {
+      "arm": "do-nothing",
+      "bytes": 156274047,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 315327104,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "23d7e9d7ffda740454b7560c3140e52603118583b6a6fdae69685b45154774b4",
+      "timing_qualification": false,
+      "unit": "patch-myers"
+    },
+    {
+      "arm": "broken",
+      "bytes": 4086343,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 132416447,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "6323d6c5d9ee9a6437186dabe7bb8bfb58380eca2f19ab33c77c2ded0d6720be",
+      "timing_qualification": false,
+      "unit": "patch-myers"
+    },
+    {
+      "arm": "pristine",
+      "bytes": 244451,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 258404050,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "eba916345195c6a95f607d8ef9aea266ba7edb958ea590084144372226b1c3bb",
+      "timing_qualification": false,
+      "unit": "shortstat-myers"
+    },
+    {
+      "arm": "do-nothing",
+      "bytes": 244451,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 129067627,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "eba916345195c6a95f607d8ef9aea266ba7edb958ea590084144372226b1c3bb",
+      "timing_qualification": false,
+      "unit": "shortstat-myers"
+    },
+    {
+      "arm": "broken",
+      "bytes": 130827,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 142278208,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "fd9c8d494d532b6fbaf45dbe1381af68841e2a7a072059e77554c872d0e7c13f",
+      "timing_qualification": false,
+      "unit": "shortstat-myers"
+    },
+    {
+      "arm": "pristine",
+      "bytes": 75643279,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 140963192,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "e9cd33a2d79e016730072494521ed13ace37f81fdb361efc5651caba2ee6fbf2",
+      "timing_qualification": false,
+      "unit": "patch-histogram"
+    },
+    {
+      "arm": "do-nothing",
+      "bytes": 75643279,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 136012123,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "e9cd33a2d79e016730072494521ed13ace37f81fdb361efc5651caba2ee6fbf2",
+      "timing_qualification": false,
+      "unit": "patch-histogram"
+    },
+    {
+      "arm": "broken",
+      "bytes": 424295,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 189572730,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDU2MTczNTY4NywgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "counts": {
+        "buffer_bytes": 8388608,
+        "bytes_read": 561735687,
+        "files_read": 8,
+        "selected_repositories": 4,
+        "status": "prepared"
+      },
+      "leftovers": 0,
+      "sha256": "7487f958e99d3656e1d46e7fc2bdc57c3e00b8b8bdf8fcf130822659b17ebb7b",
+      "timing_qualification": false,
+      "unit": "patch-histogram"
+    }
+  ],
+  "reused_control_builds": {
+    "broken": "ea2f82deaf99db5448918603f7b0f7d83c3493a64dd7ed62da68c1cb070b6fe5",
+    "do-nothing": "b0bf6db37092ec2b272a164251468e966c9b01d46024113531ea3e3ee762bbcb",
+    "pristine": "025afd507fcdaa577d0e0f887a2304ac5354e4d37206af5ae40ec7952f421764"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "task": "sqlglot-mozilla-transpile",
+  "visibility": "public",
+  "manifest": "workload/inputs/manifest.json",
+  "edition": "284 conversion inputs, 125 optimizer requests, 125 lineage queries and 99 structural-diff pairs"
+}

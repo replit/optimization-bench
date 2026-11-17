@@ -1,0 +1,11 @@
+{
+  "byte_identical": true,
+  "fresh_independent_compilations": 2,
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "performance_qualification": false,
+  "sha256": {
+    "baseline": "e50fe67999641c76daa1113517fd4d840553dd5ba6196a9e713f3c1e97d8aa77",
+    "independent": "e50fe67999641c76daa1113517fd4d840553dd5ba6196a9e713f3c1e97d8aa77"
+  },
+  "source_commit": "4d65bfcb28829c1c5196a7bc1cc23706ebb5d19a"
+}

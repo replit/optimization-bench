@@ -1,0 +1,60 @@
+{
+  "schema": "optimbench-public-api-fault-registry-v1",
+  "policy": "Documented operations and valid argument domains only; no candidate hashes or implementation patterns select a probe.",
+  "adapters": [
+    {
+      "id": "sqlfluff.mutable-block-config.v1",
+      "task": "sqlfluff-project-lint",
+      "language": "python",
+      "driver": "tools.fuzz_api_faults.worker",
+      "status": "implemented",
+      "surfaces": ["sqlfluff.utils.reflow.config.ReflowConfig.from_dict", "sqlfluff.utils.reflow.config.ReflowConfig.get_block_config", "sqlfluff.utils.reflow.config.BlockConfig.incorporate"],
+      "evidence": "Pinned source method docstrings document factory returns, spacing fields and incorporate mutation; get_block_config doctest constructs from a layout dict.",
+      "preconditions": "Only spacing_before/after/within and incorporate before/after/within with single/touch/any; no depth/private cache or nested undocumented mutations.",
+      "oracle": "Compare public values after get twice, legal incorporate(first), observe(second), independent factory interleave and repeated A call. Never compare object identity."
+    },
+    {
+      "id": "sqlfluff.frozen-match-result.v1",
+      "task": "sqlfluff-project-lint",
+      "language": "python",
+      "driver": "tools.fuzz_api_faults.worker",
+      "status": "implemented-must-not-flag-control",
+      "surfaces": ["sqlfluff.core.parser.match_result.MatchResult.empty_at", "sqlfluff.core.parser.match_result.MatchResult.append"],
+      "evidence": "Pinned MatchResult is dataclass(frozen=True); append documents returning a match rather than mutating inputs.",
+      "preconditions": "Only public empty matches with valid nonnegative indices, append(empty,empty), observation of public slice/len/bool.",
+      "oracle": "Safe interning must pass. No identity comparisons or segment_kwargs/nested-dict mutation."
+    },
+    {
+      "id": "rust.std-io-faults.v1",
+      "language": "rust",
+      "driver": "faults.rs compiled into verifier-owned typed driver",
+      "status": "implemented-shared-wrapper; task owners bind their public entrypoints",
+      "tasks": ["serde-json-production-crate-index-ingestion", "zrip-decode"],
+      "surfaces": ["serde_json::to_writer", "serde_json::to_writer_pretty", "serde_json::Serializer::new", "serde_json::Serializer::pretty", "serde_json::from_reader", "zrip::FrameDecoder"],
+      "evidence": "std::io::Read/Write permit short progress, zero/EOF, Interrupted, and Err with no accepted bytes. Task owners bind exact reader/writer constructors and public symbol provenance.",
+      "preconditions": "Typed verifier schedule; positive max_chunk; mutually exclusive terminal error/zero/EOF; one-shot EINTR; no malformed private library objects.",
+      "oracle": "Public status/error/panic, accepted output bytes, partial result where promised. Reader read-ahead and exact I/O call partitions are diagnostic. Flush only where documented/invoked."
+    },
+    {
+      "id": "python.binary-io-faults.v1",
+      "language": "python",
+      "driver": "streams.py",
+      "status": "implemented-shared-wrapper; no arbitrary task applicability claim",
+      "evidence": "io.RawIOBase binary readinto/write contracts and OSError/InterruptedError; no TextIO assumptions or invented Node callback partial writes.",
+      "preconditions": "Task adapter must prove it accepts this documented binary stream interface."
+    },
+    {
+      "id": "xz.input-stream-schedules.v1",
+      "task": "xz-lzma2-compress",
+      "language": "c",
+      "status": "native task adapter required",
+      "evidence": "lzma_code accepts caller input/output buffers, not std::io callbacks. Do not falsely apply Rust/Python I/O hooks. Input chunking/truncation/finish/reset belong to the native task driver; memusage is an independent semantic oracle."
+    },
+    {
+      "id": "msgpackr.documented-streams.pending",
+      "language": "javascript",
+      "status": "unresolved applicability; not silently excluded or claimed exercised",
+      "evidence": "No selected task's pinned msgpackr public stream/export authority is supplied here. Task owner must establish supported public PackrStream/UnpackrStream contract and Node callback semantics before binding a driver."
+    }
+  ]
+}

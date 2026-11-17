@@ -1,0 +1,67 @@
+{
+  "task_version": "1.0.0",
+  "v1_1_changelog": "instruction-only + RC hooks; workload unchanged from v1.0",
+  "v1_0_changelog": "v1.0: adds GeoJSON feature streaming, GH Archive complete-hour grouping, and CSV conversion workloads.",
+  "correctness_qualification": "unmeasured; no inherited qualification",
+  "backend": "jq",
+  "baseline_git_commit": "9008a2517ab2361d286612b4a9164212764f9ddd",
+  "baseline_git_tree": "23051d36b6275fe949c81dfa45943f50bb43804d",
+  "edition": "jq-dev-20261023",
+  "harbor_execution_qualified": false,
+  "judge_qualified": false,
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".c",
+      ".h",
+      ".jq",
+      ".l",
+      ".y"
+    ],
+    "max_source_bytes": 20000000,
+    "max_source_files": 1000,
+    "protected_paths": [
+      "src/jq_test.c"
+    ],
+    "protected_symlinks": {
+      "docs/content/manual/manual.yml": "v1.8/manual.yml"
+    },
+    "source_roots": [
+      "src"
+    ]
+  },
+  "status": "qualification-pending",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "task": "jq-strip-openapi-descriptions",
+  "upstream_test_command": [
+    "make",
+    "check",
+    "VERBOSE=yes"
+  ],
+  "upstream_timeout": 7200,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

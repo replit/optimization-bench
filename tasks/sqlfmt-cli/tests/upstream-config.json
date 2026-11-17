@@ -1,0 +1,9 @@
+{
+  "task": "sqlfmt-cli",
+  "upstream_test_command": [
+    "go",
+    "test",
+    "-count=1",
+    "./..."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "task_version": "1.0.0",
+  "native_batch_status": "native-origins-v1 corpus frozen. Legitimacy and unofficial noise checks, not official qualification, are the scope.",
+  "v1_1_changelog": "Add distinct pinned-source public and held-out inputs for runtime margin; preserve prior input/output commitments. Minimal RC library/lifecycle hooks registered; new-image timing qualification pending.",
+  "v1_0_changelog": "v1.0: adds the native sqlfmt batch workload with frozen real-world inputs (native-origins-v1).",
+  "correctness_qualification": "Packaged original/no-op complete public and private outputs passed. Wrong and omitted outputs were rejected, slower controls retained complete outputs. Official qualification is outside this research scope.",
+  "baseline_source_sha256": "2fb1eec6dc5cf3eea27e72c7a6d00340520df1464a15c9f406d87ff0e8af9f37",
+  "edition": "harbor-fresh-20261019",
+  "platform": "linux/amd64",
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".go"
+    ],
+    "max_source_bytes": 407847,
+    "max_source_files": 97,
+    "protected_paths": [
+      "*_test.go",
+      "cmd/sqlfmt/explaincmd.go"
+    ],
+    "source_roots": [
+      "format",
+      "cmd/sqlfmt"
+    ]
+  },
+  "status": "timing-qualified",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "task": "sqlfmt-cli",
+  "upstream_test_command": [
+    "go",
+    "test",
+    "-count=1",
+    "./..."
+  ],
+  "upstream_timeout": 3600,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0 (2026-10-29): adds the geojson-typed performance unit (serde_json::Deserializer::from_slice with a typed RFC 7946 DeserializeSeed over complete GeoJSON FeatureCollection files) next to the unchanged crate-index ingestion unit. Existing workload, inputs and references unchanged.",
+  "task": "serde-json-production-crate-index-ingestion",
+  "status": "qualification-pending",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json#/tasks/serde-json-production-crate-index-ingestion",
+  "edition": "v1.1-realism-20261027",
+  "baseline_source_sha256": "d638770aea490d6b9b94b67fa14c3533778431a8715792b2fac80e7ca405d721",
+  "platform": "linux/amd64",
+  "source_policy": {
+    "source_roots": [
+      "src"
+    ],
+    "allowed_extensions": [
+      ".rs"
+    ],
+    "protected_paths": [],
+    "max_source_files": 74,
+    "max_source_bytes": 1101534
+  },
+  "upstream_test_command": [
+    "cargo",
+    "test",
+    "--all-targets",
+    "--offline",
+    "--locked"
+  ],
+  "upstream_timeout": 7200,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

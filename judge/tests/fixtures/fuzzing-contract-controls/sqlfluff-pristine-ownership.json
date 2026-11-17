@@ -1,0 +1,131 @@
+{
+  "block_config": {
+    "domain": "documented-mutable-extension-API",
+    "observation": {
+      "diagnostics": {
+        "root_aliases": [
+          [
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            false,
+            false,
+            true
+          ]
+        ],
+        "view_aliases": {}
+      },
+      "effects": {
+        "after_interleave": [
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": [],
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "touch",
+            "spacing_within": null
+          },
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": null,
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "single",
+            "spacing_within": null
+          }
+        ],
+        "after_mutation": [
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": [],
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "touch",
+            "spacing_within": null
+          },
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": null,
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "single",
+            "spacing_within": null
+          }
+        ],
+        "after_refetch": [
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": [],
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "touch",
+            "spacing_within": null
+          },
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": null,
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "single",
+            "spacing_within": null
+          },
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": null,
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "single",
+            "spacing_within": null
+          }
+        ],
+        "initial": [
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": null,
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "single",
+            "spacing_within": null
+          },
+          {
+            "keyword_line_position": null,
+            "keyword_line_position_exclusions": null,
+            "line_position": null,
+            "spacing_after": "single",
+            "spacing_before": "single",
+            "spacing_within": null
+          }
+        ]
+      }
+    }
+  },
+  "candidate_executed": false,
+  "format": "optimbench-pristine-ownership-audit-v1",
+  "match_result": {
+    "candidate_verdict": null,
+    "domain": "nested-dict-mutation-scope-unresolved",
+    "nested_dict_mechanically_mutable": true,
+    "next_default_dict_empty": true,
+    "top_level_frozen": true
+  },
+  "module_sha256": {
+    "sqlfluff.core.parser.match_result": "2fc5869fd883bea49cd454c5c1377433db7b8b19cb8254684e5f173ed26d8908",
+    "sqlfluff.utils.reflow.config": "dc52bb87168660673e34f82e94b26839167f5e5f861db8390e96f2718ce801bb"
+  },
+  "observation_fixture_sha256": "7e9dae6a98f497de02f9657bdcd597f2a973730f33f839a29630b28609065563",
+  "qualification": "host-pristine-contract-evidence; not a pinned-image task/candidate campaign",
+  "runtime": {
+    "python": "3.14.4",
+    "sqlfluff": "4.4.0"
+  },
+  "source_archive_sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+  "source_commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+  "task": "sqlfluff-project-lint"
+}

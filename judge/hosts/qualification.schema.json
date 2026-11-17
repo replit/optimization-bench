@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:optimbench:judge-host-qualification:v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "host_id", "task_id", "fingerprint_sha256",
+    "judge_code_sha256", "task_policy_sha256", "scope", "units",
+    "quality", "noise_counters", "evidence"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "host_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "fingerprint_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "judge_code_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "task_policy_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "scope": {"enum": ["public", "heldout"]},
+    "units": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ci95", "sample_count", "full_width_pp"],
+        "properties": {
+          "ci95": {
+            "type": "array", "minItems": 2, "maxItems": 2,
+            "items": {"type": "number", "exclusiveMinimum": 0}
+          },
+          "sample_count": {"type": "integer", "minimum": 5},
+          "full_width_pp": {"type": "number", "minimum": 0, "maximum": 5}
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["noisy"],
+      "properties": {"noisy": {"const": false}}
+    },
+    "noise_counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["before", "after"],
+      "properties": {"before": {"type": "object"}, "after": {"type": "object"}}
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^judge/hosts/qualifications/[a-zA-Z0-9_./-]+\\.json(\\.gz)?$"
+        },
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    }
+  }
+}

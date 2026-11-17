@@ -1,0 +1,1 @@
+{"sql":"\n            SELECT A OR (B OR (C AND D))\n            FROM x\n            WHERE Z = date '2021-01-01' + INTERVAL '1' month OR 1 = 0\n        ","schema":{"x":{"A":"INT","B":"INT","C":"INT","D":"INT","Z":"STRING"}},"dialect":null}

@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "status": "passed",
+  "claimable": false,
+  "speedup": null,
+  "differences": {},
+  "baseline": {
+    "native_processes": [
+      {
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1,
+        "environment": [
+          "HOME=/scratch/home-1",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OMP_NUM_THREADS=1",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-1",
+          "TZ=UTC"
+        ],
+        "children": 0
+      }
+    ],
+    "rule_d_leftovers": 0,
+    "rule_d_leftover_threads": 0
+  },
+  "candidate": {
+    "native_processes": [
+      {
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1,
+        "environment": [
+          "HOME=/scratch/home-1",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OMP_NUM_THREADS=1",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-1",
+          "TZ=UTC"
+        ],
+        "children": 0
+      }
+    ],
+    "rule_d_leftovers": 0,
+    "rule_d_leftover_threads": 0
+  },
+  "execution_coverage": {
+    "baseline": {
+      "kind": "native",
+      "run_id": "process-state-8rm07i6w",
+      "status": "unavailable",
+      "reason": "No separate native coverage build configured",
+      "files": []
+    },
+    "candidate": {
+      "kind": "native",
+      "run_id": "process-state-zujeqaoz",
+      "status": "unavailable",
+      "reason": "No separate native coverage build configured",
+      "files": []
+    }
+  },
+  "baseline_probe_id": "process-state-8rm07i6w",
+  "candidate_probe_id": "process-state-zujeqaoz",
+  "elapsed_seconds": 74.2052465600027
+}

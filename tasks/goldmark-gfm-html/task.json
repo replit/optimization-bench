@@ -1,0 +1,15 @@
+{
+  "task_version": "1.0.0",
+  "code": "environment/workload/task.py",
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "contract": "The rendering unit configures one GFM parser/HTML renderer pair and reuses it across distinct whole documents, with fresh document context, AST and output buffers. The public unit has 10,392 documents (116,306,743 bytes); the family-disjoint held-out unit has 12,581 documents (122,436,684 bytes). Each input is processed exactly once, without repetition or padding. Superseded changelog revisions, normalized duplicates and documents without commit provenance are excluded; no source exceeds about half of a unit's bytes. The library, extensions and options, driver, declared output comparator and one-second minimum unit duration are fixed. The parse-only unit configures one parser with auto heading IDs, GFM and footnotes and emits per-document heading, link, image, autolink, fenced-code and footnote records from an AST walk over the same documents, without rendering; outputs are exact. See tests/README.md for public reproduction.",
+  "description": "Render 10,392 distinct complete public Markdown documents (116,306,743 bytes) to HTML once each, reusing one configured GFM parser/HTML renderer per unit, with exact per-document outputs. A second parse-only unit parses the same documents (heading IDs, GFM, footnotes) and walks the AST without rendering.",
+  "edition": "goldmark-v1.2-20261029",
+  "example_count": 10392,
+  "id": "goldmark-gfm-html",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "job": "Render 10,392 distinct complete public Markdown documents (116,306,743 bytes) to HTML once each, reusing one configured GFM parser/HTML renderer per unit, with exact per-document outputs. A second parse-only unit parses the same documents (heading IDs, GFM, footnotes) and walks the AST without rendering.",
+  "title": "Render and parse GitHub-flavored Markdown with goldmark",
+  "status": "baseline-reference-verified"
+}

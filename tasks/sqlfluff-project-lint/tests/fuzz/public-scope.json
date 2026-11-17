@@ -1,0 +1,1762 @@
+{
+  "build_manifests": {
+    "plugins/sqlfluff-plugin-example/pyproject.toml": "72f1ab44176a10470d94b9bd4f42891d0ba3d9cb338615016b6468650ba15c26",
+    "plugins/sqlfluff-templater-dbt/pyproject.toml": "26bbbec1d0eaa842ed1801985897f6d18fd6eae4dae818c3fb58d68217af9a00",
+    "plugins/sqlfluff-templater-sqlmesh/pyproject.toml": "0e7fc716e786442e52e442470fba7086345ec565ce205345ca94efd2e6fa47cd",
+    "pyproject.toml": "1598e83981ef39c38a7ed5e446767ed1b6d78550f30020fc86b191e71429cb2c",
+    "sqlfluffrs/Cargo.toml": "b732205a4911557a6a5ba76b40e4a6557e88166523450b5b01731760b337a3a8",
+    "sqlfluffrs/pyproject.toml": "93c1e25617ac6ee313fe85b4b59c8080f9eb702d208076edb7c1293072f9f685",
+    "sqlfluffrs/sqlfluffrs_benchmarks/Cargo.toml": "d44e49c2a2aa4a0c9df241af097c3b895b5ad70fab9106bd811a5a60550e0941",
+    "sqlfluffrs/sqlfluffrs_dialects/Cargo.toml": "6e41453ddcab2d86085c26873725b2b5f7fe83be05cdf29aaea925a968baefaa",
+    "sqlfluffrs/sqlfluffrs_lexer/Cargo.toml": "c09af658681b4576dc778db8634da2002cf57fc6c79ce6a9462fd05b99c5e400",
+    "sqlfluffrs/sqlfluffrs_parser/Cargo.toml": "f152f24c10b446c9bfa558af0bd91b55711a857782a42fa9648ab53ec1df6bca",
+    "sqlfluffrs/sqlfluffrs_python/Cargo.toml": "c041c1b2cdb558f37710a3812a0a045d42807d9330da23ca21ef2d65a8283404",
+    "sqlfluffrs/sqlfluffrs_rules/Cargo.toml": "aa57e9ec9c16071d4d779c794b1a36a41672443b7030ec0be29ad497b1d676ae",
+    "sqlfluffrs/sqlfluffrs_types/Cargo.toml": "771f51011d9f23394d197bb2d07178f001bfb1a0637f1b70534a9ab07f66ed11",
+    "test/fixtures/cli/extra_configs/pyproject.toml": "e1ae1cd29fec05ea6cbe11765a7a547f540ed9f45c2f6f4b3f45ef3ea68390ac",
+    "test/fixtures/config/inheritance_a/nested/pyproject.toml": "5ec321d5216467fad910db0b13746ff4a704358fcf92122281b4d117f51d8380",
+    "test/fixtures/config/inheritance_a/nested/setup.cfg": "85e8c0455c1cff609ecd2171a04a2de27e0013c6ecddc8d58355a46c583272e5",
+    "test/fixtures/config/toml/pyproject.toml": "b765f22a93ee297f23202ff607e034a8d5e004f0a55a51c679d3b588babe079f",
+    "test/fixtures/linter/sqlfluffignore/pyproject.toml": "8e8ec2865a36f62033cecc7632bb86ef20a51aaa9d21c734fb2030edabafa9d3"
+  },
+  "format": "optimbench-sqlfluff-public-scope-v1",
+  "header_inventory": {
+    "count": 0,
+    "extensions": [
+      ".h",
+      ".hh",
+      ".hpp",
+      ".hxx",
+      ".pxd"
+    ],
+    "guessed_C_Cpp_standards": [],
+    "matrix_pass_claim": false,
+    "paths": [],
+    "status": "source inventory complete; public consumer-matrix scope requires owner review"
+  },
+  "native_files_in_sqlfluff_runtime": [],
+  "platform_python_classifiers": [
+    "Operating System :: Unix",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: SQL"
+  ],
+  "public_evidence": {
+    "LICENSE.md": {
+      "sha256": "22dce2dc3663d299ccc2606289647982d757e6157393081e59736a9db335c77f",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/LICENSE.md"
+    },
+    "README.md": {
+      "sha256": "8129c935e97398ce6eaa76e03e8a0e087d787dd8b98e28bb1cabae5ad39b8ef3",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/README.md"
+    },
+    "docs/source/guides/contributing/architecture.rst": {
+      "sha256": "a958cc13fb49241adf386afa0d608f6a6c483a9194a590a6619fa97489a27267",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/docs/source/guides/contributing/architecture.rst"
+    },
+    "docs/source/reference/internals/index.rst": {
+      "sha256": "6c1cdd8a0b6724e5605c23333b0c5b28f0c4c8c2b742277f9f343b5d92d5740a",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/docs/source/reference/internals/index.rst"
+    },
+    "docs/source/reference/internals/reflow.rst": {
+      "sha256": "c6717172c57d3cbdd6fdcfa5347661a39c70225c88f8bf4c073c61b49f8c4c9b",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/docs/source/reference/internals/reflow.rst"
+    },
+    "pyproject.toml": {
+      "sha256": "1598e83981ef39c38a7ed5e446767ed1b6d78550f30020fc86b191e71429cb2c",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/pyproject.toml"
+    },
+    "src/sqlfluff/core/parser/match_result.py": {
+      "sha256": "2fc5869fd883bea49cd454c5c1377433db7b8b19cb8254684e5f173ed26d8908",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/src/sqlfluff/core/parser/match_result.py"
+    },
+    "src/sqlfluff/utils/reflow/config.py": {
+      "sha256": "dc52bb87168660673e34f82e94b26839167f5e5f861db8390e96f2718ce801bb",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/src/sqlfluff/utils/reflow/config.py"
+    }
+  },
+  "python_requirement": ">=3.10",
+  "qualification": "inventory only; optional/native instrumentation applicability remains explicit, not a blanket N/A waiver",
+  "runtime_inventory": {
+    "cli_commands": {
+      "dialects": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        }
+      ],
+      "fix": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "stdin_filename",
+          "opts": [
+            "--stdin-filename"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f5317f0>"
+        },
+        {
+          "name": "library_path",
+          "opts": [
+            "--library-path"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa_except",
+          "opts": [
+            "--disable-noqa-except"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa",
+          "opts": [
+            "--disable-noqa"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "logger",
+          "opts": [
+            "--logger"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['templater', 'lexer', 'parser', 'linter', 'rules', 'config'])"
+        },
+        {
+          "name": "bench",
+          "opts": [
+            "--bench"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "ignore",
+          "opts": [
+            "-i",
+            "--ignore"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "encoding",
+          "opts": [
+            "--encoding"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "ignore_local_config",
+          "opts": [
+            "--ignore-local-config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "extra_config_path",
+          "opts": [
+            "--config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f32c640>"
+        },
+        {
+          "name": "exclude_rules",
+          "opts": [
+            "-e",
+            "--exclude-rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "rules",
+          "opts": [
+            "-r",
+            "--rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "templater",
+          "opts": [
+            "-t",
+            "--templater"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['raw', 'jinja', 'python', 'placeholder'])"
+        },
+        {
+          "name": "dialect",
+          "opts": [
+            "-d",
+            "--dialect"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disregard_sqlfluffignores",
+          "opts": [
+            "--disregard-sqlfluffignores"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "warn_unused_ignores",
+          "opts": [
+            "--warn-unused-ignores"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "persist_timing",
+          "opts": [
+            "--persist-timing"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_progress_bar",
+          "opts": [
+            "--disable-progress-bar"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "processes",
+          "opts": [
+            "-p",
+            "--processes"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "quiet",
+          "opts": [
+            "-q",
+            "--quiet"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "force",
+          "opts": [
+            "-f",
+            "--force"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "check",
+          "opts": [
+            "--check"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "fixed_suffix",
+          "opts": [
+            "-x",
+            "--fixed-suffix"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "fix_even_unparsable",
+          "opts": [
+            "--FIX-EVEN-UNPARSABLE"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "show_lint_violations",
+          "opts": [
+            "--show-lint-violations"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "recursion_limit",
+          "opts": [
+            "--recursion-limit"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "paths",
+          "opts": [
+            "paths"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f627ce0>"
+        }
+      ],
+      "format": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "stdin_filename",
+          "opts": [
+            "--stdin-filename"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f503d50>"
+        },
+        {
+          "name": "library_path",
+          "opts": [
+            "--library-path"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa_except",
+          "opts": [
+            "--disable-noqa-except"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa",
+          "opts": [
+            "--disable-noqa"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "logger",
+          "opts": [
+            "--logger"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['templater', 'lexer', 'parser', 'linter', 'rules', 'config'])"
+        },
+        {
+          "name": "bench",
+          "opts": [
+            "--bench"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "ignore",
+          "opts": [
+            "-i",
+            "--ignore"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "encoding",
+          "opts": [
+            "--encoding"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "ignore_local_config",
+          "opts": [
+            "--ignore-local-config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "extra_config_path",
+          "opts": [
+            "--config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f541e10>"
+        },
+        {
+          "name": "exclude_rules",
+          "opts": [
+            "-e",
+            "--exclude-rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "rules",
+          "opts": [
+            "-r",
+            "--rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "templater",
+          "opts": [
+            "-t",
+            "--templater"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['raw', 'jinja', 'python', 'placeholder'])"
+        },
+        {
+          "name": "dialect",
+          "opts": [
+            "-d",
+            "--dialect"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disregard_sqlfluffignores",
+          "opts": [
+            "--disregard-sqlfluffignores"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "warn_unused_ignores",
+          "opts": [
+            "--warn-unused-ignores"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "persist_timing",
+          "opts": [
+            "--persist-timing"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_progress_bar",
+          "opts": [
+            "--disable-progress-bar"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "processes",
+          "opts": [
+            "-p",
+            "--processes"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "quiet",
+          "opts": [
+            "-q",
+            "--quiet"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "fixed_suffix",
+          "opts": [
+            "-x",
+            "--fixed-suffix"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "recursion_limit",
+          "opts": [
+            "--recursion-limit"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "paths",
+          "opts": [
+            "paths"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f541bf0>"
+        }
+      ],
+      "lint": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "stdin_filename",
+          "opts": [
+            "--stdin-filename"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f31ed50>"
+        },
+        {
+          "name": "library_path",
+          "opts": [
+            "--library-path"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa_except",
+          "opts": [
+            "--disable-noqa-except"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa",
+          "opts": [
+            "--disable-noqa"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "logger",
+          "opts": [
+            "--logger"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['templater', 'lexer', 'parser', 'linter', 'rules', 'config'])"
+        },
+        {
+          "name": "bench",
+          "opts": [
+            "--bench"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "ignore",
+          "opts": [
+            "-i",
+            "--ignore"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "encoding",
+          "opts": [
+            "--encoding"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "ignore_local_config",
+          "opts": [
+            "--ignore-local-config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "extra_config_path",
+          "opts": [
+            "--config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f31e350>"
+        },
+        {
+          "name": "exclude_rules",
+          "opts": [
+            "-e",
+            "--exclude-rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "rules",
+          "opts": [
+            "-r",
+            "--rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "templater",
+          "opts": [
+            "-t",
+            "--templater"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['raw', 'jinja', 'python', 'placeholder'])"
+        },
+        {
+          "name": "dialect",
+          "opts": [
+            "-d",
+            "--dialect"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disregard_sqlfluffignores",
+          "opts": [
+            "--disregard-sqlfluffignores"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "warn_unused_ignores",
+          "opts": [
+            "--warn-unused-ignores"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "persist_timing",
+          "opts": [
+            "--persist-timing"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_progress_bar",
+          "opts": [
+            "--disable-progress-bar"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "processes",
+          "opts": [
+            "-p",
+            "--processes"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "quiet",
+          "opts": [
+            "-q",
+            "--quiet"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "format",
+          "opts": [
+            "-f",
+            "--format"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['human', 'json', 'yaml', 'sarif', 'github-annotation', 'github-annotation-native', 'gitlab', 'none'])"
+        },
+        {
+          "name": "write_output",
+          "opts": [
+            "--write-output"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "annotation_level",
+          "opts": [
+            "--annotation-level"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['notice', 'warning', 'failure', 'error'])"
+        },
+        {
+          "name": "nofail",
+          "opts": [
+            "--nofail"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "recursion_limit",
+          "opts": [
+            "--recursion-limit"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "paths",
+          "opts": [
+            "paths"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f5192b0>"
+        }
+      ],
+      "parse": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "stdin_filename",
+          "opts": [
+            "--stdin-filename"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f34c500>"
+        },
+        {
+          "name": "library_path",
+          "opts": [
+            "--library-path"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa_except",
+          "opts": [
+            "--disable-noqa-except"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa",
+          "opts": [
+            "--disable-noqa"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "logger",
+          "opts": [
+            "--logger"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['templater', 'lexer', 'parser', 'linter', 'rules', 'config'])"
+        },
+        {
+          "name": "bench",
+          "opts": [
+            "--bench"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "ignore",
+          "opts": [
+            "-i",
+            "--ignore"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "encoding",
+          "opts": [
+            "--encoding"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "ignore_local_config",
+          "opts": [
+            "--ignore-local-config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "extra_config_path",
+          "opts": [
+            "--config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f4c3b60>"
+        },
+        {
+          "name": "exclude_rules",
+          "opts": [
+            "-e",
+            "--exclude-rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "rules",
+          "opts": [
+            "-r",
+            "--rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "templater",
+          "opts": [
+            "-t",
+            "--templater"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['raw', 'jinja', 'python', 'placeholder'])"
+        },
+        {
+          "name": "dialect",
+          "opts": [
+            "-d",
+            "--dialect"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "path",
+          "opts": [
+            "path"
+          ],
+          "required": true,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f503a50>"
+        },
+        {
+          "name": "recursion_limit",
+          "opts": [
+            "--recursion-limit"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "INT"
+        },
+        {
+          "name": "code_only",
+          "opts": [
+            "-c",
+            "--code-only"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "include_meta",
+          "opts": [
+            "-m",
+            "--include-meta"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "format",
+          "opts": [
+            "-f",
+            "--format"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['human', 'json', 'yaml', 'none'])"
+        },
+        {
+          "name": "write_output",
+          "opts": [
+            "--write-output"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "parse_statistics",
+          "opts": [
+            "--parse-statistics"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "nofail",
+          "opts": [
+            "--nofail"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        }
+      ],
+      "render": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "stdin_filename",
+          "opts": [
+            "--stdin-filename"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f344940>"
+        },
+        {
+          "name": "library_path",
+          "opts": [
+            "--library-path"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa_except",
+          "opts": [
+            "--disable-noqa-except"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "disable_noqa",
+          "opts": [
+            "--disable-noqa"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "logger",
+          "opts": [
+            "--logger"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['templater', 'lexer', 'parser', 'linter', 'rules', 'config'])"
+        },
+        {
+          "name": "bench",
+          "opts": [
+            "--bench"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "ignore",
+          "opts": [
+            "-i",
+            "--ignore"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "encoding",
+          "opts": [
+            "--encoding"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "ignore_local_config",
+          "opts": [
+            "--ignore-local-config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        },
+        {
+          "name": "extra_config_path",
+          "opts": [
+            "--config"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f53af90>"
+        },
+        {
+          "name": "exclude_rules",
+          "opts": [
+            "-e",
+            "--exclude-rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "rules",
+          "opts": [
+            "-r",
+            "--rules"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "templater",
+          "opts": [
+            "-t",
+            "--templater"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "Choice(['raw', 'jinja', 'python', 'placeholder'])"
+        },
+        {
+          "name": "dialect",
+          "opts": [
+            "-d",
+            "--dialect"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "STRING"
+        },
+        {
+          "name": "path",
+          "opts": [
+            "path"
+          ],
+          "required": true,
+          "secondary_opts": [],
+          "type": "<click.types.Path object at 0x7f265f53b5b0>"
+        }
+      ],
+      "rules": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        }
+      ],
+      "version": [
+        {
+          "name": "nocolor",
+          "opts": [
+            "-n",
+            "--nocolor"
+          ],
+          "required": false,
+          "secondary_opts": [
+            "--color"
+          ],
+          "type": "BOOL"
+        },
+        {
+          "name": "verbose",
+          "opts": [
+            "-v",
+            "--verbose"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "<IntRange x>=0>"
+        },
+        {
+          "name": "version",
+          "opts": [
+            "--version"
+          ],
+          "required": false,
+          "secondary_opts": [],
+          "type": "BOOL"
+        }
+      ]
+    },
+    "dialects": [
+      {
+        "docstring": "**Default Casing**: ``UPPERCASE``\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"``\n\nThis is the base dialect which holds most of the definitions of common\nSQL commands and structures. If the dialect which you're actually using\nisn't specifically implemented by SQLFluff, using this dialect is a good\nplace to start.\n\nThis dialect doesn't intend to be brutal in adhering to (and only to) the\nANSI SQL spec *(mostly because ANSI charges for access to that spec)*. It aims\nto be a representation of vanilla SQL before any other project adds their\nspin to it, and so may contain a slightly wider set of functions than actually\navailable in true ANSI SQL.",
+        "inherits_from": "nothing",
+        "label": "ansi",
+        "name": "ANSI"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``\n\n**Quotes**: String Literals: ``''``, ``\"\"`` or |back_quotes|,\nIdentifiers: ``\"\"`` or |back_quotes|\n\nThe dialect for `Athena <https://aws.amazon.com/athena/>`_\non Amazon Web Services (AWS).",
+        "inherits_from": "ansi",
+        "label": "athena",
+        "name": "AWS Athena"
+      },
+      {
+        "docstring": "**Default Casing**: BigQuery resolves unquoted column\nidentifiers case insensitively, and table/dataset identifiers case\nsensitively (by default, unless :code:`is_case_insensitive` is set for\nthe latter). Unless specified, columns are returned in the case which\nthey were defined in, which means columns can be re-cased in the result\nset without aliasing e.g. if a table is defined with\n:code:`CREATE TEMPORARY TABLE foo (col1 int, COL2 int)` then\n:code:`SELECT * FROM foo` returns :code:`col1` and :code:`COL2` in the\nresult, but :code:`SELECT COL1, col2 FROM foo` returns :code:`COL1` and\n:code:`col2` in the result.\n\n**Quotes**: String Literals: ``''``, ``\"\"``, ``@`` or ``@@`` (with the\nquoted options, also supporting variants prefixes with ``r``/``R`` (for\nraw/regex expressions) or ``b``/``B`` (for byte strings)),\nIdentifiers: ``\"\"`` or |back_quotes|.\n\nThe dialect for `BigQuery <https://cloud.google.com/bigquery/>`_\non Google Cloud Platform (GCP).",
+        "inherits_from": "ansi",
+        "label": "bigquery",
+        "name": "Google BigQuery"
+      },
+      {
+        "docstring": "**Default Casing**: Clickhouse is case sensitive throughout,\nregardless of quoting. An unquoted reference to an object using the wrong\ncase will raise an :code:`UNKNOWN_IDENTIFIER` error.\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"`` or |back_quotes|.\nNote as above, that because identifiers are always resolved case sensitively, the\nonly reason for quoting identifiers is when they contain invalid characters or\nreserved keywords.\n\nThe dialect for `ClickHouse <https://clickhouse.com/>`_.",
+        "inherits_from": "ansi",
+        "label": "clickhouse",
+        "name": "ClickHouse"
+      },
+      {
+        "docstring": "The dialect for `Databricks <https://databricks.com/>`_.",
+        "inherits_from": "sparksql",
+        "label": "databricks",
+        "name": "Databricks"
+      },
+      {
+        "docstring": "The dialect for IBM `Db2 <https://www.ibm.com/analytics/db2>`_.",
+        "inherits_from": "ansi",
+        "label": "db2",
+        "name": "IBM Db2"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``\n\n    **Quotes**: String Literals: ``''``, ``\"``,\n    Identifiers: |back_quotes|.\n\n    The dialect for `Apache Doris <https://doris.apache.org/>`_.",
+        "inherits_from": "mysql",
+        "label": "doris",
+        "name": "Apache Doris"
+      },
+      {
+        "docstring": "**Default Casing**: DuckDB stores all identifiers in the case\nthey were defined, however all identifier resolution is case-insensitive (when\nunquoted, and more unusually, *also when quoted*). See the\n`DuckDB Identifiers Documentation`_ for more details.\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"`` or ``''``\n\nThe dialect for `DuckDB <https://duckdb.org/>`_.\n\n.. _`DuckDB Identifiers Documentation`: https://duckdb.org/docs/sql/dialect/keywords_and_identifiers\n",
+        "inherits_from": "postgres",
+        "label": "duckdb",
+        "name": "DuckDB"
+      },
+      {
+        "docstring": "The dialect for `Exasol <https://www.exasol.com/>`_.",
+        "inherits_from": "ansi",
+        "label": "exasol",
+        "name": "Exasol"
+      },
+      {
+        "docstring": "**Default Casing**: FlinkSQL is case insensitive with\nboth quoted and unquoted identifiers.\n\n**Quotes**: String Literals: ``'`` (single quotes), Identifiers: |back_quotes|.\n\nThe dialect for Apache `Flink SQL`_. This dialect includes FlinkSQL-specific\nsyntax for stream processing, table operations, and connector configurations.\n\nFlinkSQL supports advanced features like:\n- ROW data types for complex nested structures\n- Table connectors (Kafka, BigQuery, etc.)\n- Watermark definitions for event time processing\n- Computed columns and metadata columns\n- Temporal table functions\n\n.. _`Flink SQL`: https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/dev/table/sql/\n",
+        "inherits_from": "ansi",
+        "label": "flink",
+        "name": "Apache Flink SQL"
+      },
+      {
+        "docstring": "The dialect for `Greenplum <https://www.greenplum.org/>`_.",
+        "inherits_from": "postgres",
+        "label": "greenplum",
+        "name": "Greenplum"
+      },
+      {
+        "docstring": "The dialect for Apache `Hive <https://hive.apache.org/>`_.",
+        "inherits_from": "ansi",
+        "label": "hive",
+        "name": "Apache Hive"
+      },
+      {
+        "docstring": "The dialect for Apache `Impala <https://impala.apache.org/>`_.",
+        "inherits_from": "hive",
+        "label": "impala",
+        "name": "Apache Impala"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``\n\n**Quotes**: String Literals: ``''``, ``\"\"`` or ``@``,\nIdentifiers: |back_quotes|.\n\nThe dialect for `MariaDB <https://www.mariadb.org/>`_.",
+        "inherits_from": "mysql",
+        "label": "mariadb",
+        "name": "MariaDB"
+      },
+      {
+        "docstring": "The dialect for `Materialize <https://materialize.com/>`_.",
+        "inherits_from": "postgres",
+        "label": "materialize",
+        "name": "Materialize"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``\n\n**Quotes**: String Literals: ``''``, ``\"\"`` or ``@``,\nIdentifiers: |back_quotes|.\n\nThe dialect for `MySQL <https://www.mysql.com/>`_.",
+        "inherits_from": "ansi",
+        "label": "mysql",
+        "name": "MySQL"
+      },
+      {
+        "docstring": "The dialect for `Oracle`_ SQL. Note: this does include PL/SQL.\n\n.. _`Oracle`: https://www.oracle.com/database/technologies/appdev/sql.html",
+        "inherits_from": "ansi",
+        "label": "oracle",
+        "name": "Oracle"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"``.\n\nThis is based around the `PostgreSQL spec`_. Many other SQL\ndialects are often based on the PostreSQL syntax. If you're running an unsupported\ndialect, then this is often the dialect to use (until someone makes a specific\ndialect).\n\n.. _`PostgreSQL spec`: https://www.postgresql.org/docs/current/reference.html",
+        "inherits_from": "ansi",
+        "label": "postgres",
+        "name": "PostgreSQL"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase`` (unless configured\nto be case sensitive with all identifiers using the\n:code:`enable_case_sensitive_identifier` configuration value, see\nthe `Redshift Names & Identifiers Docs`_).\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"``.\n\nThe dialect for `Redshift`_ on Amazon Web Services (AWS).\n\n.. _`Redshift`: https://aws.amazon.com/redshift/\n.. _`Redshift Names & Identifiers Docs`: https://docs.aws.amazon.com/redshift/latest/dg/r_names.html\n",
+        "inherits_from": "postgres",
+        "label": "redshift",
+        "name": "AWS Redshift"
+      },
+      {
+        "docstring": "**Default Casing**: ``UPPERCASE``\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"``\n\nThe dialect for\n`Snowflake <https://docs.snowflake.com/en/sql-reference.html>`_,\nwhich has much of its syntax inherited from :ref:`postgres_dialect_ref`.",
+        "inherits_from": "ansi",
+        "label": "snowflake",
+        "name": "Snowflake"
+      },
+      {
+        "docstring": "The dialect for `SOQL <https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm>`_ (Salesforce Object Query Language).",
+        "inherits_from": "ansi",
+        "label": "soql",
+        "name": "Salesforce Object Query Language (SOQL)"
+      },
+      {
+        "docstring": "**Default Casing**: SparkSQL is case insensitive with\nboth quoted and unquoted identifiers (_\"delimited\"_ identifiers in\nSpark terminology). See the `Spark Identifiers`_ docs.\n\n**Quotes**: String Literals: ``''`` or ``\"\"``, Identifiers: |back_quotes|.\n\nThe dialect for Apache `Spark SQL`_. This includes relevant\nsyntax from :ref:`hive_dialect_ref` for commands that permit Hive Format.\nSpark SQL extensions provided by the `Delta Lake`_ project are also implemented\nin this dialect.\n\nThis implementation focuses on the `Ansi Compliant Mode`_ introduced in\nSpark3, instead of being Hive Compliant. The introduction of ANSI Compliance\nprovides better data quality and easier migration from traditional DBMS.\n\nVersions of Spark prior to 3.x will only support the Hive dialect.\n\n.. _`Spark SQL`: https://spark.apache.org/docs/latest/sql-ref.html\n.. _`Delta Lake`: https://docs.delta.io/latest/quick-start.html#set-up-apache-spark-with-delta-lake\n.. _`Ansi Compliant Mode`: https://spark.apache.org/docs/latest/sql-ref-ansi-compliance.html\n.. _`Spark Identifiers`: https://spark.apache.org/docs/latest/sql-ref-identifier.html",
+        "inherits_from": "ansi",
+        "label": "sparksql",
+        "name": "Apache Spark SQL"
+      },
+      {
+        "docstring": "**Default Casing**: Not specified in the docs,\nbut through testing it appears that SQLite *stores* column names\nin whatever case they were defined, but is always *case-insensitive*\nwhen resolving those names.\n\n**Quotes**: String Literals: ``''`` (or  ``\"\"`` if not otherwise resolved\nto an identifier), Identifiers: ``\"\"``, ``[]`` or |back_quotes|. See the\n`SQLite Keywords Docs`_ for more details.\n\nThe dialect for `SQLite <https://www.sqlite.org/>`_.\n\n.. _`SQLite Keywords Docs`: https://sqlite.org/lang_keywords.html\n",
+        "inherits_from": "ansi",
+        "label": "sqlite",
+        "name": "SQLite"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``\n\n    **Quotes**: String Literals: ``''``, ``\"``,\n    Identifiers: |back_quotes|.\n\n    The dialect for `StarRocks <https://www.starrocks.io/>`_.",
+        "inherits_from": "mysql",
+        "label": "starrocks",
+        "name": "StarRocks"
+      },
+      {
+        "docstring": "The dialect for `Teradata <https://www.teradata.co.uk/>`_.",
+        "inherits_from": "ansi",
+        "label": "teradata",
+        "name": "Teradata"
+      },
+      {
+        "docstring": "**Default Casing**: ``lowercase``, although the case\nof a reference is used in the result set column label. If a column is defined\nusing :code:`CREATE TEMPORARY TABLE foo (COL1 int)`, then :code:`SELECT * FROM foo`\nreturns a column labelled :code:`col1`, however :code:`SELECT COL1 FROM foo`\nreturns a column labelled :code:`COL1`.\n\n**Quotes**: String Literals: ``''``, Identifiers: ``\"\"``\n\nThe dialect for `Trino <https://trino.io/docs/current/>`_.",
+        "inherits_from": "ansi",
+        "label": "trino",
+        "name": "Trino"
+      },
+      {
+        "docstring": "The dialect for `T-SQL`_ (aka Transact-SQL).\n\n.. _`T-SQL`: https://docs.microsoft.com/en-us/sql/t-sql/language-reference",
+        "inherits_from": "ansi",
+        "label": "tsql",
+        "name": "Microsoft T-SQL"
+      },
+      {
+        "docstring": "The dialect for\n`Vertica <https://www.vertica.com/documentation/vertica/all/>`_.",
+        "inherits_from": "ansi",
+        "label": "vertica",
+        "name": "Vertica"
+      }
+    ],
+    "optional_sqlfluffrs_installed": false,
+    "top_level_exports": [
+      "lint",
+      "fix",
+      "parse",
+      "list_rules",
+      "list_dialects"
+    ],
+    "top_level_signatures": {
+      "fix": "(sql: str, dialect: str | None = None, rules: list[str] | None = None, exclude_rules: list[str] | None = None, config: sqlfluff.core.config.fluffconfig.FluffConfig | None = None, config_path: str | None = None, fix_even_unparsable: bool | None = None) -> str",
+      "lint": "(sql: str, dialect: str | None = None, rules: list[str] | None = None, exclude_rules: list[str] | None = None, config: sqlfluff.core.config.fluffconfig.FluffConfig | None = None, config_path: str | None = None) -> list[dict[str, typing.Any]]",
+      "list_dialects": "() -> list[sqlfluff.core.dialects.DialectTuple]",
+      "list_rules": "() -> list[sqlfluff.core.linter.common.RuleTuple]",
+      "parse": "(sql: str, dialect: str | None = None, config: sqlfluff.core.config.fluffconfig.FluffConfig | None = None, config_path: str | None = None) -> dict[str, typing.Any]"
+    },
+    "top_level_structural_symbols": {
+      "fix": {
+        "origin_module": "sqlfluff.api.simple",
+        "parameters": [
+          {
+            "annotation": "str",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "sql",
+            "required": true
+          },
+          {
+            "annotation": "str | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "dialect",
+            "required": false
+          },
+          {
+            "annotation": "list[str] | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "rules",
+            "required": false
+          },
+          {
+            "annotation": "list[str] | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "exclude_rules",
+            "required": false
+          },
+          {
+            "annotation": "sqlfluff.core.config.fluffconfig.FluffConfig | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "config",
+            "required": false
+          },
+          {
+            "annotation": "str | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "config_path",
+            "required": false
+          },
+          {
+            "annotation": "bool | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "fix_even_unparsable",
+            "required": false
+          }
+        ],
+        "qualname": "fix",
+        "return_annotation": "str"
+      },
+      "lint": {
+        "origin_module": "sqlfluff.api.simple",
+        "parameters": [
+          {
+            "annotation": "str",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "sql",
+            "required": true
+          },
+          {
+            "annotation": "str | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "dialect",
+            "required": false
+          },
+          {
+            "annotation": "list[str] | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "rules",
+            "required": false
+          },
+          {
+            "annotation": "list[str] | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "exclude_rules",
+            "required": false
+          },
+          {
+            "annotation": "sqlfluff.core.config.fluffconfig.FluffConfig | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "config",
+            "required": false
+          },
+          {
+            "annotation": "str | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "config_path",
+            "required": false
+          }
+        ],
+        "qualname": "lint",
+        "return_annotation": "list[dict[str, typing.Any]]"
+      },
+      "list_dialects": {
+        "origin_module": "sqlfluff.api.info",
+        "parameters": [],
+        "qualname": "list_dialects",
+        "return_annotation": "list[sqlfluff.core.dialects.DialectTuple]"
+      },
+      "list_rules": {
+        "origin_module": "sqlfluff.api.info",
+        "parameters": [],
+        "qualname": "list_rules",
+        "return_annotation": "list[sqlfluff.core.linter.common.RuleTuple]"
+      },
+      "parse": {
+        "origin_module": "sqlfluff.api.simple",
+        "parameters": [
+          {
+            "annotation": "str",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "sql",
+            "required": true
+          },
+          {
+            "annotation": "str | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "dialect",
+            "required": false
+          },
+          {
+            "annotation": "sqlfluff.core.config.fluffconfig.FluffConfig | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "config",
+            "required": false
+          },
+          {
+            "annotation": "str | None",
+            "default": null,
+            "kind": "POSITIONAL_OR_KEYWORD",
+            "name": "config_path",
+            "required": false
+          }
+        ],
+        "qualname": "parse",
+        "return_annotation": "dict[str, typing.Any]"
+      }
+    },
+    "version": "4.4.0"
+  },
+  "rust_source_files": 88,
+  "source_manifest_digest": "97f47d00edda25c17ebe4b50367b241c5572304010b971a5092f9b2ca9077f01",
+  "source_regular_files": 6079,
+  "task_image": "sha256:cfec205d25d2f06c44445df781398264f6e8cf934a5c2ffa609acde9d595248f",
+  "upstream_archive_sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+  "upstream_commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+  "wheel": {
+    "content": "Wheel-Version: 1.0\nGenerator: setuptools (84.0.0)\nRoot-Is-Purelib: true\nTag: py3-none-any\n\n",
+    "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+  }
+}

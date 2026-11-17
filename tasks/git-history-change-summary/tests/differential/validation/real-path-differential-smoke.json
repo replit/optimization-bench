@@ -1,0 +1,294 @@
+{
+  "exact_replays": 2,
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "negative": {
+    "case_budget_per_seed": 1,
+    "cases": [
+      {
+        "index": 0,
+        "matched": false,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 40937418,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 37481234,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 1729,
+        "shrinking_receipts": [
+          {
+            "matched": false,
+            "receipts": {
+              "baseline": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 36865358,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              },
+              "candidate": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 36623879,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              }
+            }
+          },
+          {
+            "matched": false,
+            "receipts": {
+              "baseline": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 36181691,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              },
+              "candidate": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 223246409,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "coverage": "seeded differential",
+    "elapsed_seconds": 120.96287566699903,
+    "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+    "passed": false,
+    "reproducer": "reproducer.json",
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "status": "differential_mismatch",
+    "task": "git-history-change-summary",
+    "time_cap_seconds": 600
+  },
+  "original": {
+    "case_budget_per_seed": 1,
+    "cases": [
+      {
+        "index": 0,
+        "matched": true,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 46731315,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 54708469,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 1729
+      },
+      {
+        "index": 0,
+        "matched": true,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 36359428,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 36464890,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 2718
+      },
+      {
+        "index": 0,
+        "matched": true,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 35520573,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 37965459,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 31415
+      }
+    ],
+    "coverage": "seeded differential",
+    "elapsed_seconds": 122.98222275200169,
+    "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+    "passed": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "task": "git-history-change-summary",
+    "time_cap_seconds": 600
+  }
+}

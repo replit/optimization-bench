@@ -1,0 +1,78 @@
+{
+  "image": "sha256:60d0b356ce2ff6f18b4ce326e9cbae68d848e8e5870d911bea0819c8032de591",
+  "negative": {
+    "rejected": true,
+    "type": "InterfaceBroken"
+  },
+  "original": {
+    "components": [
+      {
+        "baseline_items": 13,
+        "baseline_sha256": "720ff15fe2ff694ad9a68120e1938883cbf2537a74be8b99ac1d7bbc0c705242",
+        "candidate_items": 13,
+        "changed": [],
+        "declaration_extraction": {
+          "baseline": {
+            "build_metadata": [
+              "project/Makefile",
+              "project/contrib/credential/libsecret/Makefile",
+              "project/contrib/credential/wincred/Makefile"
+            ],
+            "commands": [
+              {
+                "compiler": "cc",
+                "flags": [
+                  "-I",
+                  "/candidate",
+                  "-I",
+                  "/candidate/project",
+                  "-I",
+                  "/candidate/project/xdiff"
+                ],
+                "language": "c"
+              }
+            ],
+            "headers": {
+              "project/xdiff/xdiff.h": {
+                "mode": "preprocessed"
+              }
+            },
+            "mode": "preprocessed"
+          },
+          "candidate": {
+            "build_metadata": [
+              "project/Makefile",
+              "project/contrib/credential/libsecret/Makefile",
+              "project/contrib/credential/wincred/Makefile"
+            ],
+            "commands": [
+              {
+                "compiler": "cc",
+                "flags": [
+                  "-I",
+                  "/candidate",
+                  "-I",
+                  "/candidate/project",
+                  "-I",
+                  "/candidate/project/xdiff"
+                ],
+                "language": "c"
+              }
+            ],
+            "headers": {
+              "project/xdiff/xdiff.h": {
+                "mode": "preprocessed"
+              }
+            },
+            "mode": "preprocessed"
+          }
+        },
+        "kind": "declarations",
+        "passed": true,
+        "removed": []
+      }
+    ],
+    "passed": true
+  },
+  "preparation_applicability": "Static header preprocessing invokes no repository workload; direct interface inspection is not a timed DockerExecutor case."
+}

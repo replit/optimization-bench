@@ -1,0 +1,69 @@
+{
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "negative": {
+    "case_budget_per_seed": 1,
+    "cases": [
+      {
+        "index": 0,
+        "matched": false,
+        "seed": 1729
+      }
+    ],
+    "coverage": "seeded differential",
+    "elapsed_seconds": 73.38509961399905,
+    "image": "optimbench-git-xdiff-pristine-public",
+    "passed": false,
+    "reproducer": "reproducer.json",
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "status": "differential_mismatch",
+    "task": "git-history-change-summary",
+    "time_cap_seconds": 600
+  },
+  "original": {
+    "case_budget_per_seed": 1,
+    "cases": [
+      {
+        "index": 0,
+        "matched": true,
+        "seed": 1729
+      },
+      {
+        "index": 0,
+        "matched": true,
+        "seed": 2718
+      },
+      {
+        "index": 0,
+        "matched": true,
+        "seed": 31415
+      }
+    ],
+    "coverage": "seeded differential",
+    "elapsed_seconds": 81.07315139100137,
+    "image": "optimbench-git-xdiff-pristine-public",
+    "passed": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "task": "git-history-change-summary",
+    "time_cap_seconds": 600
+  },
+  "private_case_location": "Verifier scratch only; no heldout instances.",
+  "replays": [
+    {
+      "negative_rejected": true,
+      "whole_saved_observations_equal": true
+    },
+    {
+      "negative_rejected": true,
+      "whole_saved_observations_equal": true
+    }
+  ],
+  "reproducer_sha256": "f2c0e924b901f592ace64e7366b725101f02f7b3398782aae228ea1c36baef74"
+}

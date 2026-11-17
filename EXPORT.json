@@ -1,0 +1,26 @@
+{
+  "export_script_version": "1.0.0",
+  "files": 52999,
+  "manifest_sha256": "d4ca2b9abbe12849b20de7a83a729bee43e0264bb3ac639fecc5dc6cd286f571",
+  "mapping": "public v1.0 = staging commit c7ba0f3dbb4a6578148c2d4672b8a9338d3ee8b8",
+  "omitted_paths": 0,
+  "public_release": "OptimizationBench v1.0",
+  "scoped_files": [],
+  "source_staging_commit": "c7ba0f3dbb4a6578148c2d4672b8a9338d3ee8b8",
+  "tasks": [
+    "black-project-format",
+    "bzip2-codec",
+    "git-history-change-summary",
+    "goldmark-gfm-html",
+    "jq-strip-openapi-descriptions",
+    "numpy-quantile",
+    "ruff-project-lint",
+    "serde-json-production-crate-index-ingestion",
+    "sqlfluff-project-lint",
+    "sqlfmt-cli",
+    "sqlglot-mozilla-transpile",
+    "sqlite-distinct-plant-facets",
+    "terser-minify",
+    "xz-lzma2-compress"
+  ]
+}

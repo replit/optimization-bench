@@ -1,0 +1,32 @@
+{
+  "calibration_max_age_seconds": 86400,
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "enabled": false,
+    "reason": "Verifier harness not implemented; see docs/judge.md coverage matrix."
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "pids_limit": 512,
+  "process_state": {
+    "enabled": true,
+    "kind": "native"
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "qualification_notes": "The two public operations (pandas and FastAPI) keep their original projects and inventories. The held-out split uses separately pinned HTTPX and Rich projects with expectations from one untimed pristine authoring pass. Complete inputs, licenses, Git context and nonempty-file correspondence are bound in tests/heldout/edition.json. See [tests/README.md](tests/README.md).",
+  "public_interface": {
+    "kind": "binary",
+    "reason": "Only the Ruff command-line binary is shipped; no Rust library artifact is exposed. CLI behavior remains covered by upstream and workload contracts."
+  },
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "warmups": 1
+}

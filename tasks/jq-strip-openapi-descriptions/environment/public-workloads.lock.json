@@ -1,0 +1,207 @@
+{
+  "cases": [
+    {
+      "files_sha256": {
+        "files/1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d": "1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d"
+      },
+      "id": "amazonaws_com_ec2"
+    },
+    {
+      "files_sha256": {
+        "files/1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c": "1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c"
+      },
+      "id": "amazonaws_com_s3"
+    },
+    {
+      "files_sha256": {
+        "files/6e8e7818b3f7bdfa712837492fdc4901c1a6279fa47b529d18f3e0989e493b1a": "6e8e7818b3f7bdfa712837492fdc4901c1a6279fa47b529d18f3e0989e493b1a"
+      },
+      "id": "amazonaws_com_lambda"
+    },
+    {
+      "files_sha256": {
+        "files/b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e": "b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e"
+      },
+      "id": "amazonaws_com_cloudformation"
+    },
+    {
+      "files_sha256": {
+        "files/f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5": "f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5"
+      },
+      "id": "amazonaws_com_ecs"
+    },
+    {
+      "files_sha256": {
+        "files/ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c": "ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c"
+      },
+      "id": "amazonaws_com_rds"
+    },
+    {
+      "files_sha256": {
+        "files/c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df": "c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df"
+      },
+      "id": "amazonaws_com_cloudfront"
+    },
+    {
+      "files_sha256": {
+        "files/e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c": "e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c"
+      },
+      "id": "amazonaws_com_sagemaker"
+    },
+    {
+      "files_sha256": {
+        "files/9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4": "9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4"
+      },
+      "id": "amazonaws_com_dynamodb"
+    },
+    {
+      "files_sha256": {
+        "files/975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c": "975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c"
+      },
+      "id": "amazonaws_com_apigateway"
+    },
+    {
+      "files_sha256": {
+        "files/0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf": "0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf"
+      },
+      "id": "amazonaws_com_iam"
+    },
+    {
+      "files_sha256": {
+        "files/d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428": "d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428"
+      },
+      "id": "amazonaws_com_glue"
+    },
+    {
+      "files_sha256": {
+        "files/41d7c860c6e52c0854913270019c3a14afacbe513613a06b67de65f09a4dc2e9": "41d7c860c6e52c0854913270019c3a14afacbe513613a06b67de65f09a4dc2e9"
+      },
+      "id": "amazonaws_com_sqs"
+    },
+    {
+      "files_sha256": {
+        "files/9b88acc1454d5145509cf3a88684300670e8f4440a43a5732fbf292d8eeacbfa": "9b88acc1454d5145509cf3a88684300670e8f4440a43a5732fbf292d8eeacbfa"
+      },
+      "id": "amazonaws_com_sns"
+    },
+    {
+      "files_sha256": {
+        "files/82e5208e1901e0f7975cb3e99ea940cb116c44693a15a4c2875dc4c174de4134": "82e5208e1901e0f7975cb3e99ea940cb116c44693a15a4c2875dc4c174de4134"
+      },
+      "id": "amazonaws_com_kinesis"
+    },
+    {
+      "files_sha256": {
+        "files/c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7": "c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7"
+      },
+      "id": "amazonaws_com_route53"
+    },
+    {
+      "files_sha256": {
+        "files/3504629364457876ef66960cabb78ae1e9147b4cfa00c0d8c1257700d2606708": "3504629364457876ef66960cabb78ae1e9147b4cfa00c0d8c1257700d2606708"
+      },
+      "id": "amazonaws_com_logs"
+    },
+    {
+      "files_sha256": {
+        "files/76cfa4cd60546916c1d6c1a898bb72743bda1342e4844e470a728e22a9fb55a5": "76cfa4cd60546916c1d6c1a898bb72743bda1342e4844e470a728e22a9fb55a5"
+      },
+      "id": "amazonaws_com_kms"
+    },
+    {
+      "files_sha256": {
+        "files/12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c": "12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c"
+      },
+      "id": "amazonaws_com_ssm"
+    },
+    {
+      "files_sha256": {
+        "files/5638c4ddded2dddd618e29f14c6287f6c54eab94494e2997be3da219f942516d": "5638c4ddded2dddd618e29f14c6287f6c54eab94494e2997be3da219f942516d"
+      },
+      "id": "amazonaws_com_eks"
+    },
+    {
+      "files_sha256": {
+        "files/da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa": "da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa"
+      },
+      "id": "twilio_com_api"
+    },
+    {
+      "files_sha256": {
+        "files/c7cbbef1b72e7e214cd846c89e2f0b968dcb4680e5cd2ae711b75f14e8b774e3": "c7cbbef1b72e7e214cd846c89e2f0b968dcb4680e5cd2ae711b75f14e8b774e3"
+      },
+      "id": "twilio_com_twilio_chat_v2"
+    },
+    {
+      "files_sha256": {
+        "files/764d164266c478e61742de51c87d7ac14be43e7e32b047157dd83da5b539434e": "764d164266c478e61742de51c87d7ac14be43e7e32b047157dd83da5b539434e"
+      },
+      "id": "twilio_com_twilio_conversations_v1"
+    },
+    {
+      "files_sha256": {
+        "files/c0f78375d5d269b96a95637bd2eaa87b8f29c430c0bc49b1499a9f1f6eb9e143": "c0f78375d5d269b96a95637bd2eaa87b8f29c430c0bc49b1499a9f1f6eb9e143"
+      },
+      "id": "twilio_com_twilio_flex_v1"
+    },
+    {
+      "files_sha256": {
+        "files/d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58": "d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58"
+      },
+      "id": "box_com"
+    },
+    {
+      "files_sha256": {
+        "files/d64b718d898f5f0d3da615e61a9491e31f603dff4dbd64ba6365b472026b1b87": "d64b718d898f5f0d3da615e61a9491e31f603dff4dbd64ba6365b472026b1b87"
+      },
+      "id": "apache_org_airflow"
+    },
+    {
+      "files_sha256": {
+        "files/664fde9931941ae811ff98d087e40306553024928ed206547173704029a932ae": "664fde9931941ae811ff98d087e40306553024928ed206547173704029a932ae"
+      },
+      "id": "anchore_io"
+    },
+    {
+      "files_sha256": {
+        "files/302d8b77cdae034f7af7594aa88918253af3204a865882903c908edd6dccb1e3": "302d8b77cdae034f7af7594aa88918253af3204a865882903c908edd6dccb1e3"
+      },
+      "id": "appwrite_io_server"
+    },
+    {
+      "files_sha256": {
+        "files/1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12": "1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12"
+      },
+      "id": "xero_com_xero_accounting"
+    },
+    {
+      "files_sha256": {
+        "files/ab6f6264cc78efbccb5f0978c830269e579a97e993f31b3ede3f0c763582a8e0": "ab6f6264cc78efbccb5f0978c830269e579a97e993f31b3ede3f0c763582a8e0"
+      },
+      "id": "netlify_com"
+    },
+    {
+      "id": "geojson-features-public",
+      "files_sha256": {
+        "files/293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941": "293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941"
+      }
+    },
+    {
+      "id": "group-gharchive-public",
+      "files_sha256": {
+        "files/5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b"
+      }
+    },
+    {
+      "id": "csv-gharchive-public",
+      "files_sha256": {
+        "files/5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b"
+      }
+    }
+  ],
+  "edition": "jq-gharchive-draft-20261029",
+  "lineage": "Original public layout lock retained with historical migration evidence; this lock authenticates the migrated public layout.",
+  "task": "jq-strip-openapi-descriptions",
+  "visibility": "public",
+  "workload_manifest_sha256": "a38e2cdb57ce2da909c749a9171256c5b4c19811bc1e6981ebdf78a7926d48dd"
+}

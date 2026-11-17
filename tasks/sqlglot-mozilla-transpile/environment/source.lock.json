@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "task": "sqlglot-mozilla-transpile",
+  "source_version": "30.21.0",
+  "upstream": {
+    "url": "https://codeload.github.com/tobymao/sqlglot/tar.gz/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76",
+    "commit": "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76",
+    "sha256": "d553b6eddad6e7bdeb55b05a54e722e230b3a0cf2c3ce06cdd8558677d5dadd9",
+    "bytes": 8851630
+  },
+  "source_repository": "https://github.com/tobymao/sqlglot",
+  "source_archive_prefix": "sqlglot-5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76",
+  "source_overlay": "source-overlay",
+  "source_overlay_reason": "Exact generated version metadata and installed package metadata captured from the qualified baseline; no upstream source edits. The TPC-H/TPC-DS fixture entries and benchmarks/parse.py were removed from the file lists together with those files (TPC material is not redistributed).",
+  "pristine_lock": "pristine-files.lock.json",
+  "pristine_lock_sha256": "626df801d354cecdf701f413f16076121b649e0f5a73e75d3c085b969904508a",
+  "public_artifacts": "public-artifacts.json",
+  "public_artifacts_sha256": "9e2a04d862cff0ebd2ae563fa4a75a5e2aefdd8bf449851ed4fa9422443968c4",
+  "runtime": {
+    "platform": "linux/amd64",
+    "python": "3.14.6",
+    "mode": "Reproducible source image build with hash-locked test dependencies; runtime network disabled",
+    "test_dependencies": "requirements-tests.lock"
+  },
+  "source_exclusions": [
+    "tests/fixtures/optimizer/tpc-h",
+    "tests/fixtures/optimizer/tpc-ds",
+    "benchmarks/parse.py"
+  ],
+  "source_exclusions_reason": "TPC query text and data may not be redistributed; prepare.py deletes these upstream fixture directories and the parse benchmark script (which embeds a TPC-H query) before the pinned tree is committed. Only the two upstream tests that read the fixtures are excluded from the upstream gate (release.json); no test uses the benchmark script."
+}

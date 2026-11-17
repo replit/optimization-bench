@@ -1,0 +1,19 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  221.7kB
+Step 1/8 : ARG TASK_IMAGE=python:3.12-slim-bookworm@sha256:54c85f3c47607a77f32adec749d3c81d1348bf25833671f512b26a9b6d778cb3
+Step 2/8 : FROM ${TASK_IMAGE}
+ ---> 26160f935ba6
+Step 3/8 : USER root
+ ---> Running in 9a177e4d0926
+ ---> Removed intermediate container 9a177e4d0926
+ ---> 8096b25f934a
+Step 4/8 : COPY tools/fuzz_runners/python.lock /opt/fuzz-runners/python.lock
+ ---> b5c5f8a818b4
+Step 5/8 : RUN python -m venv /opt/fuzz-python  && /opt/fuzz-python/bin/pip install --require-hashes --only-binary=:all: -r /opt/fuzz-runners/python.lock  && /opt/fuzz-python/bin/python -c "import pathlib,site; pathlib.Path(site.getsitepackages()[0], 'optimbench_coverage.pth').write_text('import coverage; coverage.process_startup()\\n')"
+ ---> Running in 1b94138c2563
+[91mERROR: Could not find a version that satisfies the requirement atheris==3.1.0 (from versions: none)
+ERROR: No matching distribution found for atheris==3.1.0
+[0mThe command '/bin/sh -c python -m venv /opt/fuzz-python  && /opt/fuzz-python/bin/pip install --require-hashes --only-binary=:all: -r /opt/fuzz-runners/python.lock  && /opt/fuzz-python/bin/python -c "import pathlib,site; pathlib.Path(site.getsitepackages()[0], 'optimbench_coverage.pth').write_text('import coverage; coverage.process_startup()\\n')"' returned a non-zero code: 1

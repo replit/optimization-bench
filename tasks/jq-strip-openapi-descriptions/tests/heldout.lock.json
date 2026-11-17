@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "task": "jq-strip-openapi-descriptions",
+  "status": "available",
+  "archives": [],
+  "files": {
+    "heldout/files/dedfee9ad6a676c2f7186b8e2137d887d6449cad8b7af8253aecdaae24b27977": "dedfee9ad6a676c2f7186b8e2137d887d6449cad8b7af8253aecdaae24b27977",
+    "heldout/expected/heldout_github_ghes_3_0.json": "eeb5271c38d089e6d329eae046ac87738e0e60f8b7bf9c4d2c74cee1b6b20d83",
+    "heldout/files/b72e9c05af5670233b58a61aeca45aaf10ab6c5e774230ca82b95e32ce6b75ea": "b72e9c05af5670233b58a61aeca45aaf10ab6c5e774230ca82b95e32ce6b75ea",
+    "heldout/expected/heldout_stripe_2022.json": "260c2abd4ac292a6f70a28107c7a557ab14a61ecc3df4caaba4b12523bc3a428",
+    "heldout/files/742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7": "742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7",
+    "heldout/expected/heldout_slack.json": "20dc3f34a8d52f73a5a2d0f4a33bcc592408dae4310aa706a0ceb14f04040f60",
+    "heldout/files/8ce3450e18f3381dd6b2936db2172ecb5bf8a7f6549ecb51ec3cd01b7c30fa3b": "8ce3450e18f3381dd6b2936db2172ecb5bf8a7f6549ecb51ec3cd01b7c30fa3b",
+    "heldout/expected/heldout_discord.json": "5a2fce90325d2a87ac4233ed4786ac4ca5110fa57febc507b426f0849c167220",
+    "heldout/files/8f394230ec35016d559bfa242ec4f644468317bc91b3928cd73d579b8955792e": "8f394230ec35016d559bfa242ec4f644468317bc91b3928cd73d579b8955792e",
+    "heldout/expected/heldout_elasticsearch.json": "0bb6f3fac37e759cf8d4bf59a124fd3fe7f09ff67bd493f3f60c512cc20e453c",
+    "heldout/files/cf628212ef590622596362692360c838d3303f8d45ec7f66ff86a75a94148228": "cf628212ef590622596362692360c838d3303f8d45ec7f66ff86a75a94148228",
+    "heldout/expected/heldout_kubernetes.json": "8c89a106d6c435e5f32489984fe9603014ef510e10d107557ea2e5a90b931766",
+    "heldout/files/daf75417abefdd10657e1099e3151faba1b58308c405ecc3dea3219a79e73af7": "daf75417abefdd10657e1099e3151faba1b58308c405ecc3dea3219a79e73af7",
+    "heldout/expected/heldout_kubernetes_apps_v1.json": "6108c2c0f0b696439252e324d270e703991b3d22ca97277cbd9dbf626fe08589",
+    "heldout/files/8c51c61f95563546cbf6cd45a763d452d07d3fa61bf06c15acc7172df37b2d71": "8c51c61f95563546cbf6cd45a763d452d07d3fa61bf06c15acc7172df37b2d71",
+    "heldout/expected/heldout_kubernetes_core_v1.json": "a2983d020c7ab20bb3cec9ed628039a885c73b167836d0488cd0568bfaa89d9d",
+    "heldout/files/099a2bc8a7d83f30c12b882be05d84831c449f1950ced11f97781a66d57a1ac1": "099a2bc8a7d83f30c12b882be05d84831c449f1950ced11f97781a66d57a1ac1",
+    "heldout/expected/heldout_kubernetes_autoscaling_v2.json": "2e61c7550e14f3b0dc56bde873ad75ff9f3028ca45fa8f96f213c3ef3dda044a",
+    "heldout/references/github_ghes_3_0.LICENSE": "3243761cbac07e6d169a5a2f4e7c25cc544da85248e735df74c3672e055cc87b",
+    "heldout/references/stripe_2022.LICENSE": "8c1ce883f4eee7b531e0b7872dbfc72d410ced87dfff9501305de05ca8d203e5",
+    "heldout/references/slack.LICENSE": "5fca42e1431e247c120ab9c787ff16a26a538633852821e4865d05fe4cfea98e",
+    "heldout/references/discord.LICENSE": "02c955561564f3b5343c656b7eacd6c770e2624a039b81b6bc7828fbe8c9ab52",
+    "heldout/references/elasticsearch.LICENSE": "2c3b6f68793adc895d5672849fc8a746b41954bd867ddff4b0d4578a17a73fe4",
+    "heldout/references/kubernetes.LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "heldout/references/kubernetes_apps_v1.LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "heldout/references/kubernetes_core_v1.LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "heldout/references/kubernetes_autoscaling_v2.LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "heldout/manifest.json": "b52ddeb4d37805b68411e1f900cbf95d53e02933011fb7cf8dd1c1720b739bf2",
+    "heldout/references/geojson-provenance.json": "ab9c351de160f592db96e65eaa055754b46b4160dd8ea3296ac8879554bb9f0c",
+    "heldout/files/400e40c4e8a7b31dbfa29260d8c6db1b45531c01baf5e66ef988b5334114cb21": "400e40c4e8a7b31dbfa29260d8c6db1b45531c01baf5e66ef988b5334114cb21",
+    "heldout/expected/geojson-features-private.json": "012c16d2894115dc428ab036f22bd1616a4afc9f47257347e926be9ccf2ac600"
+  },
+  "references": {
+    "heldout/files/5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206": {
+      "scope": "heldout",
+      "role": "input",
+      "kind": "file",
+      "license_basis": "fetch-only; no redistribution",
+      "url": "https://storage.googleapis.com/data.gharchive.org/2020-06-16-14.json.gz",
+      "bytes": 72618102,
+      "sha256": "5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "agent_context_contains_private_tests": false,
+  "baseline_gate": "All3publicunitsreproducedcompletecanonicalobservations; fullpristineGitpinassertionspassed.",
+  "build_checkout_commit": "889a52736816d09859f124f9f57a144da73bacca",
+  "build_end": "2026-10-25T20:46:44.719255940Z",
+  "build_log_sha256": "af5c92fb448193f976a65011a3e2436402d49f1b72808be027f089582e568e8c",
+  "build_start": "2026-10-25T20:44:53.051107408Z",
+  "canonical_source_root": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "canonical_source_tree": "79a1f663a05401ad749f6116a4898e03f2388323",
+  "clean_checkout_before_build": true,
+  "context": "tasks/git-history-change-summary/environment only",
+  "fuzz_original_atomic_count": 23,
+  "fuzz_shrunk_atomic_count": 11,
+  "harness_sha256": {
+    "generate.py": "af91b5e6d2669f14f0ae56acea1278265fa6657815366f4349191da6390455c2",
+    "original-lines.txt": "5cef36a09f9b140da2f5c1b131f6e96c1a2f3a382ccc670addf57ca4e0622d40",
+    "run.py": "d508b6da468c5423c624be76f2a2e414525f775db1e0741bfff0a91879a7d928"
+  },
+  "heldout_instances_created": false,
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "task_environment_unchanged_since_image": true,
+  "upstream_source_pin": "a018953688f1b10bddf91bff8747068f5f4746a4"
+}

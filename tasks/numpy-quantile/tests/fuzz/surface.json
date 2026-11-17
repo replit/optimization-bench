@@ -1,0 +1,11 @@
+{
+  "format": "optimbench-fuzz-surface-v1",
+  "task": "numpy-quantile",
+  "extraction": {
+    "status": "incomplete",
+    "reason": "Corrected transitive re-export extraction not yet applied; documented-API inventory in progress. No completeness claim.",
+    "extractor_version": null,
+    "report_sha256": null
+  },
+  "entry_points": []
+}

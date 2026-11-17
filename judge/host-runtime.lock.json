@@ -1,0 +1,15 @@
+{
+  "schema": "optimbench-host-runtime-v1",
+  "python": {
+    "implementation": "CPython",
+    "supported_minor_versions": ["3.12", "3.14"],
+    "release_level": "final",
+    "gil_disabled": false,
+    "dedicated_venv_required": true
+  },
+  "dependency_locks": [
+    "judge/requirements-interface.lock",
+    "judge/requirements-host-registry.lock"
+  ],
+  "scope": "Judge host runtime only; task-image interpreters/toolchains are unchanged."
+}

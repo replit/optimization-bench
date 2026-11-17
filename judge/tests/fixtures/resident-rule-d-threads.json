@@ -1,0 +1,121 @@
+{
+  "aa_sampling_performed": false,
+  "claimable": false,
+  "correct": false,
+  "failure_context": {
+    "arm": "baseline",
+    "case": "heldout-merge-bucket-2",
+    "completed_record_count": 4,
+    "last_completed_record": {
+      "build": "candidate",
+      "case": "gharchive-distinct-bucket-3",
+      "matched": true
+    },
+    "missing_snapshot_fields": "unavailable; no liveness inference",
+    "run_case_returned": true,
+    "stage": "rule-d-classification",
+    "steps": [
+      {
+        "exit_code": 0,
+        "leftovers": [
+          {
+            "flags": 4194368,
+            "kind": "thread",
+            "name": "merge_thread_0",
+            "observation_boundary": "resident-result-stop",
+            "pid": 38,
+            "process_pid": 8,
+            "reason": "worker outlived measured operation",
+            "sampled_monotonic_ns": 47236064141802,
+            "start_ticks": 4723392,
+            "state": "T",
+            "step_index": 0,
+            "tgid": 8,
+            "thread_identities": [
+              {
+                "flags": 4194368,
+                "name": "merge_thread_0",
+                "sampled_monotonic_ns": 47236064141802,
+                "start_ticks": 4723392,
+                "state": "T",
+                "tgid": 8,
+                "tid": 38
+              }
+            ],
+            "threads": 1,
+            "tid": 38
+          },
+          {
+            "flags": 4194368,
+            "kind": "thread",
+            "name": "merge_thread_2",
+            "observation_boundary": "resident-result-stop",
+            "pid": 40,
+            "process_pid": 8,
+            "reason": "worker outlived measured operation",
+            "sampled_monotonic_ns": 47236064309072,
+            "start_ticks": 4723392,
+            "state": "T",
+            "step_index": 0,
+            "tgid": 8,
+            "thread_identities": [
+              {
+                "flags": 4194368,
+                "name": "merge_thread_2",
+                "sampled_monotonic_ns": 47236064309072,
+                "start_ticks": 4723392,
+                "state": "T",
+                "tgid": 8,
+                "tid": 40
+              }
+            ],
+            "threads": 1,
+            "tid": 40
+          },
+          {
+            "flags": 4194368,
+            "kind": "thread",
+            "name": "merge_thread_3",
+            "observation_boundary": "resident-result-stop",
+            "pid": 41,
+            "process_pid": 8,
+            "reason": "worker outlived measured operation",
+            "sampled_monotonic_ns": 47236064468219,
+            "start_ticks": 4723392,
+            "state": "T",
+            "step_index": 0,
+            "tgid": 8,
+            "thread_identities": [
+              {
+                "flags": 4194368,
+                "name": "merge_thread_3",
+                "sampled_monotonic_ns": 47236064468219,
+                "start_ticks": 4723392,
+                "state": "T",
+                "tgid": 8,
+                "tid": 41
+              }
+            ],
+            "threads": 1,
+            "tid": 41
+          }
+        ],
+        "step": 0,
+        "telemetry": {
+          "execution_protocol": "complete",
+          "exit_observation": {
+            "fallback_reason": null,
+            "method": "waitpid-sigstop"
+          },
+          "kernel_exiting_tasks": [],
+          "main_pid": 8
+        }
+      }
+    ]
+  },
+  "harness_error": "Live Rule D leftover has no command identity",
+  "mode": "heldout-check",
+  "speedup": null,
+  "status": "invalid run",
+  "timing_performed": false
+}

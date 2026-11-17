@@ -1,0 +1,108 @@
+[
+  {
+    "repository": "python/cpython",
+    "commit": "067145177975eadd61a0c907d0d177f7b6a5a3de",
+    "version": "v3.13.1",
+    "license": "Python-2.0",
+    "license_url": "https://raw.githubusercontent.com/python/cpython/067145177975eadd61a0c907d0d177f7b6a5a3de/LICENSE",
+    "license_sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
+  },
+  {
+    "repository": "git/git",
+    "commit": "777489f9e09c8d0dd6b12f9d90de6376330577a2",
+    "version": "v2.47.0",
+    "license": "GPL-2.0-only",
+    "license_url": "https://raw.githubusercontent.com/git/git/777489f9e09c8d0dd6b12f9d90de6376330577a2/COPYING",
+    "license_sha256": "5b2198d1645f767585e8a88ac0499b04472164c0d2da22e75ecf97ef443ab32e"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "mesa3d/mesa",
+    "version": "24.2.5",
+    "url": "https://archive.mesa3d.org/mesa-24.2.5.tar.xz",
+    "bytes": 29534380,
+    "sha256": "733d0bea242ed6a5bb5c806fe836792ce7f092d45a2f115b7b7e15897c9dd96f",
+    "license": "MIT",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "gnome/gnome-builder",
+    "version": "47.2",
+    "url": "https://download.gnome.org/sources/gnome-builder/47/gnome-builder-47.2.tar.xz",
+    "bytes": 10652952,
+    "sha256": "4687b93c47cd1e33665a2dc503790b6213ee827872fc004d978d14bcbfa9b495",
+    "license": "GPL-3.0-or-later",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "gnome/glib",
+    "version": "2.82.2",
+    "url": "https://download.gnome.org/sources/glib/2.82/glib-2.82.2.tar.xz",
+    "bytes": 5555528,
+    "sha256": "ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63",
+    "license": "LGPL-2.1-or-later",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "xorg/libX11",
+    "version": "1.8.10",
+    "url": "https://www.x.org/releases/individual/lib/libX11-1.8.10.tar.xz",
+    "bytes": 1839380,
+    "sha256": "2b3b3dad9347db41dca56beb7db5878f283bde1142f04d9f8e478af435dfdc53",
+    "license": "X11 (MIT-style)",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "gnome/pango",
+    "version": "1.54.0",
+    "url": "https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz",
+    "bytes": 1963180,
+    "sha256": "8a9eed75021ee734d7fc0fdf3a65c3bba51dfefe4ae51a9b414a60c70b2d1ed8",
+    "license": "LGPL-2.0-or-later",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "kernel.org/man-pages",
+    "version": "6.9.1",
+    "url": "https://cdn.kernel.org/pub/linux/docs/man-pages/man-pages-6.9.1.tar.xz",
+    "bytes": 1864500,
+    "sha256": "e23cbac29f110ba571f0da8523e79d373691466ed7f2a31301721817d34530bd",
+    "license": "multiple (per-page notices)",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "kernel.org/iproute2",
+    "version": "6.11.0",
+    "url": "https://cdn.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.11.0.tar.xz",
+    "bytes": 923736,
+    "sha256": "1f795398a04aeaacd06a8f6ace2cfd913c33fa5953ca99daae83bb5c534611c3",
+    "license": "GPL-2.0-or-later",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "kernel.org/kmod",
+    "version": "33",
+    "url": "https://cdn.kernel.org/pub/linux/utils/kernel/kmod/kmod-33.tar.xz",
+    "bytes": 514428,
+    "sha256": "dc768b3155172091f56dc69430b5481f2d76ecd9ccb54ead8c2540dbcf5ea9bc",
+    "license": "LGPL-2.1-or-later (library) and GPL-2.0-or-later (tools)",
+    "retention": "fetch-only"
+  },
+  {
+    "workload": "stream-decode",
+    "repository": "gnome/gtk",
+    "version": "4.16.5",
+    "url": "https://download.gnome.org/sources/gtk/4.16/gtk-4.16.5.tar.xz",
+    "bytes": 18651572,
+    "sha256": "302d6813fbed95c419fb3ab67c5da5e214882b6a645c3eab9028dfb91ab418a4",
+    "license": "LGPL-2.1-or-later",
+    "retention": "fetch-only"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "format": "optimbench-inputs-v1",
+  "note": "Four reserved independent repository histories, equal original nonmerge commit counts, globally distinct original commits,2:1:1 Myers full patch/shortstat/histogram; fetch-only histories, complete byte-exact pristine observations. Four further xdiff units over other reserved fetch-only repositories, one unit each.",
+  "splits": {
+    "heldout": [
+      {
+        "docs": [
+          {
+            "bytes": 186275,
+            "expect_len": 91420531,
+            "expect_sha": "b673e58e95e477f8c06b8bcf58bfd5dc6d89ad350db44aeaac625d856fb7725a",
+            "path": "patch-myers",
+            "sha256": "460a40d04df486f94798c3084f31cd825e32bd384ef3eee9eb0fad6f4d0d09f5"
+          },
+          {
+            "bytes": 93231,
+            "expect_len": 255891,
+            "expect_sha": "55cc0bb94a2a2e0fc412c5d053151d4e3ae76e94bf544d1f7b0578c17284143f",
+            "path": "shortstat-myers",
+            "sha256": "852cbbba52beb459b8416639fa5b24484620aa1b252d671fa916ed5991d30d2a"
+          },
+          {
+            "bytes": 93231,
+            "expect_len": 30219611,
+            "expect_sha": "284e3cd689bc9198c63571f05585a6ddc34eb1a89e97e733f92307ad2815c5fe",
+            "path": "patch-histogram",
+            "sha256": "36e982cff07a56016e6ae3737f91ddc6690fc23d8868bab0e921f3ed2d0f40ac"
+          },
+          {
+            "bytes": 137743,
+            "expect_len": 41763375,
+            "expect_sha": "31949423ce74d4daf1c5fb48362e43ba64346f10bd81e5169b4b5c1eac1b45d4",
+            "path": "patch-ignore-all-space",
+            "sha256": "29f58a30f2c727b3acec6ba1cfc8fe33843e74d8c9296a402baa775fa9ec8147"
+          },
+          {
+            "bytes": 116193,
+            "expect_len": 37010513,
+            "expect_sha": "df53da9b6d71ed93f88e187c4f3a5d035f698695ea704eb6039027e308b94571",
+            "path": "patch-patience",
+            "sha256": "7fae9ce3dc23674a23b292390d21b935b03ca288514b0767fdc12f9da442c06a"
+          },
+          {
+            "bytes": 240904,
+            "expect_len": 198100933,
+            "expect_sha": "50fdc0a33a6c8924ae5a5e7da9aa6e72d57c217dc84f94d714772744043f3aa9",
+            "path": "patch-full-context",
+            "sha256": "754cba941dbe1be043c1ab6f629b82e8223f5e4127000f337632111b792b4858"
+          },
+          {
+            "bytes": 503580,
+            "expect_len": 130251804,
+            "expect_sha": "eea693fc496d1358ca3cdb83e4891ad9a320ba222a4718f8df1771c7ce929bee",
+            "path": "merge-file",
+            "sha256": "f3caaf0e93d9d54e18420c94f497e2c85c1bf62bf92b97e95f6e103cb6f609a7"
+          }
+        ]
+      }
+    ]
+  },
+  "task": "git-history-change-summary"
+}

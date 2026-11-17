@@ -1,0 +1,22 @@
+{
+  "receipt_sha256": {
+    "alias-facts.json.gz": "97e12794dd642048f5aad3b815044e06ab3795b4d03d361174df7c84e7384080",
+    "aliasing.json.gz": "d10f0a41d17b344027a90d5f6790149aac92df1ceee31e975991c2b1fb7419fa",
+    "execution.json.gz": "2f126cafc2e012fb48537177263ecf2180d72169a447fc34d8134fc5280ee556",
+    "header_consumers.json.gz": "8a67fe856271f96fb7a17b1833f915ba2946d58fe611d09bc17da93d002746d2",
+    "repeat-facts.json.gz": "231da24a31874767c4207a9e9691d38df56576ff971b04ca04b9369fdf89d5d8",
+    "repeat_in_process.json.gz": "92d7a71492d5a2106b1d61fc3454579c94ab59e9a2e5920ec4b461920554d541",
+    "shared-tests.log": "5bf572506a27ad7e2293b39221df46bb7a5668ecabf816fe1c1c2ef763f834b1",
+    "stream-facts.json.gz": "8ce0b5516c8d47c2b27155c859f9b1ade0634743a6537374b620f8303eeb9428",
+    "stream_faults.json.gz": "ff58ef79a81b7843aa28e300ca763640f7ba68c63dd99e2667c49be980ac4e9e",
+    "summary.json": "2d175c0f8feac14a1cd0a5b4731c63359f7f3d1f28e55d6f7d4a92f2138c6e61"
+  },
+  "task_code_sha256": {
+    "adapter.py": "b65d385e74c27f472b0e3eee7824a1924276c90722ca422fa1561e53c96c55c0",
+    "driver.py": "7b28314f86cdbe31d2f7b65f586d62e9e7b63a7c247bd740fb39d332e4bba53f",
+    "rc_driver.py": "84e26ecbf20b41da8150993f8f0a26d130b151bdaf69e987ee9d53bccadc062b",
+    "rc_hooks.py": "8a4fe8a378ecaab21f68f22cbbd0cb0e6d08eb086ad0fbeb885b363100ec5e7c",
+    "receipts/rc-mapped-signatures.json": "6f337b8e567fce2bea7f539d007d3a6d1631802d5e640047a9e19798cfa41421",
+    "surface.json": "bae4df2edec21b51b3b11db5c9e565c4cb0ec0317f770633bdc45b4581fccfb0"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0 (2026-10-29): adds four xdiff performance units over other fetch-only repositories (diff-tree --stdin patches with --ignore-all-space, the patience algorithm and -U32767 context, and git merge-file on real merge blob triples) next to the unchanged Myers patch, Myers shortstat and histogram patch units. Editable scope unchanged. Existing units, inputs and references unchanged.",
+  "v1_1_changelog": "instruction-only + RC hooks; workload unchanged from v1.0",
+  "correctness_qualification": "unmeasured; no inherited qualification",
+  "baseline_git_commit": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "baseline_git_tree": "79a1f663a05401ad749f6116a4898e03f2388323",
+  "edition": "pristine-replacement-20261025",
+  "harbor_execution_qualified": false,
+  "judge_qualified": false,
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".c",
+      ".h"
+    ],
+    "allowed_files": [
+      "xdiff/xdiff.h",
+      "xdiff/xdiffi.c",
+      "xdiff/xdiffi.h",
+      "xdiff/xemit.c",
+      "xdiff/xemit.h",
+      "xdiff/xhistogram.c",
+      "xdiff/xinclude.h",
+      "xdiff/xmacros.h",
+      "xdiff/xmerge.c",
+      "xdiff/xpatience.c",
+      "xdiff/xprepare.c",
+      "xdiff/xprepare.h",
+      "xdiff/xtypes.h",
+      "xdiff/xutils.c",
+      "xdiff/xutils.h"
+    ],
+    "max_source_bytes": 2000000,
+    "max_source_files": 15,
+    "operations": [
+      "modify"
+    ],
+    "protected_paths": [],
+    "source_roots": [
+      "xdiff"
+    ]
+  },
+  "status": "timing-qualified",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "task": "git-history-change-summary",
+  "upstream_test_command": [
+    "make",
+    "-C",
+    "t",
+    "test"
+  ],
+  "upstream_timeout": 7200,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

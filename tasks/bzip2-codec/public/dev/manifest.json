@@ -1,0 +1,1083 @@
+{
+  "version": "bzip2-corpus-v1",
+  "split": "dev",
+  "entries": [
+    {
+      "archive_member": null,
+      "bytes": 1897193,
+      "collection": "govinfo-federal-register",
+      "facts": {},
+      "family": "documents",
+      "id": "documents/govinfo/FR-2024-01-02.xml",
+      "license_and_attribution": {
+        "notice_url": "https://www.govinfo.gov/about/policies",
+        "publisher": "U.S. Government Publishing Office",
+        "status": "retain source; U.S. Government work, not subject to copyright in the United States (17 U.S.C. 105); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/govinfo-policies.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:10.216021+00:00",
+      "sha256": "57abe43a1988ac14194809a43425e692991568a3ad081bdd37bb450404d9f7f0",
+      "source_url": "https://www.govinfo.gov/bulkdata/FR/2024/01/FR-2024-01-02.xml",
+      "split": "dev",
+      "split_group_keys": [
+        "govinfo:FR-2024-01-02"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "57abe43a1988ac14194809a43425e692991568a3ad081bdd37bb450404d9f7f0",
+      "upstream_version": "2024-01-02",
+      "file": "inputs/000.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/000-1.bz2",
+          "sha256": "e732ddb59faea9d4e11f567c68d7062c058223d137899520e746daada21c4900",
+          "bytes": 339936
+        },
+        "9": {
+          "file": "reference/000-9.bz2",
+          "sha256": "8e55a1bb8d2d8e958f39d9eed070fa8b715d0f65ece188267a9717ae737ae620",
+          "bytes": 284430
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 3353405,
+      "collection": "noaa-storm-events",
+      "facts": {
+        "table": "locations",
+        "year": 2023
+      },
+      "family": "tables",
+      "id": "tables/noaa/StormEvents_locations-ftp_v1.0_d2023_c20260707.csv",
+      "license_and_attribution": {
+        "notice_url": "https://www.noaa.gov/office-education/outreach-communication/faq",
+        "publisher": "NOAA NCEI",
+        "source_readme": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/README",
+        "status": "retain source; U.S. Government work, not subject to copyright in the United States (17 U.S.C. 105); reviewed 2026-11-17",
+        "upstream_notices": []
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:14.247372+00:00",
+      "sha256": "ae6962e4eec0658052c73949bf68dee34ff0ee4ee01effa596973e0ac1b9d6a6",
+      "source_url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_locations-ftp_v1.0_d2023_c20260707.csv.gz",
+      "split": "dev",
+      "split_group_keys": [
+        "noaa:storm-events:2023"
+      ],
+      "transformation": "gzip decompression only",
+      "upstream_download_sha256": "100424d6feec5cdf4c282fd41b40588bee4bdcaf28e17fe79bec58d1fa8be52b",
+      "upstream_version": "StormEvents_locations-ftp_v1.0_d2023_c20260707.csv.gz",
+      "file": "inputs/001.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/001-1.bz2",
+          "sha256": "679b541aa19eb1c53eed65843c2a67f5ff7156fb3abbfd6783a6828a9eff8766",
+          "bytes": 882623
+        },
+        "9": {
+          "file": "reference/001-9.bz2",
+          "sha256": "1bb72cd7bf173b2acf4c8cd593acfb77ed0c4c8cb858b084ce25718d2f843abd",
+          "bytes": 823629
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 113975,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "query": "climate",
+        "record_ids": [
+          "09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58",
+          "d3db9de0-25fa-5716-ad6c-e9c1749bb9de",
+          "51dbf91e-509c-437b-ab9e-eca6d0bf6fa8",
+          "2b9bc161-ca00-4a1e-9c75-58ed621ef4b1",
+          "6bb2e6ff-dabf-4724-be0d-b5785014d8d5",
+          "3f0cc9c9-b69c-477a-81be-62be89094026",
+          "0a896af8-f2be-4cf5-a745-2e1792db04a1",
+          "d9e2bbf6-1226-4445-a1d8-295c1edbad44",
+          "c6d02a9b-a7c0-441b-bfd3-ca69067b4b79",
+          "142d0f83-1b81-45a4-959e-224f14f674df"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/search-climate.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:14.593083+00:00",
+      "sha256": "1db5a9bb452fcaa75f6026dba7944c06ea90e38fa200808d0a9905e607daebef",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_search?q=climate&rows=10",
+      "split": "dev",
+      "split_group_keys": [
+        "canada:record:09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58",
+        "canada:record:0a896af8-f2be-4cf5-a745-2e1792db04a1",
+        "canada:record:142d0f83-1b81-45a4-959e-224f14f674df",
+        "canada:record:2b9bc161-ca00-4a1e-9c75-58ed621ef4b1",
+        "canada:record:3f0cc9c9-b69c-477a-81be-62be89094026",
+        "canada:record:51dbf91e-509c-437b-ab9e-eca6d0bf6fa8",
+        "canada:record:6bb2e6ff-dabf-4724-be0d-b5785014d8d5",
+        "canada:record:c6d02a9b-a7c0-441b-bfd3-ca69067b4b79",
+        "canada:record:d3db9de0-25fa-5716-ad6c-e9c1749bb9de",
+        "canada:record:d9e2bbf6-1226-4445-a1d8-295c1edbad44"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "1db5a9bb452fcaa75f6026dba7944c06ea90e38fa200808d0a9905e607daebef",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/002.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/002-1.bz2",
+          "sha256": "282892f9220da360267b89d1db415e11222fdd6ea4b31fcee393b04e48891c7f",
+          "bytes": 20872
+        },
+        "9": {
+          "file": "reference/002-9.bz2",
+          "sha256": "7f44b7da09ad2d39a1e41cf735937e9c6ea9e1bbf245a303c5068cfa548ca5ee",
+          "bytes": 18784
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 10368,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "record_ids": [
+          "09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/record-09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:14.821618+00:00",
+      "sha256": "1577c0f3a78b924877d6cd50e43aa0fbabc25fe10e9e11b9e5c4629f0de9efde",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58",
+      "split": "dev",
+      "split_group_keys": [
+        "canada:record:09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "1577c0f3a78b924877d6cd50e43aa0fbabc25fe10e9e11b9e5c4629f0de9efde",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/003.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/003-1.bz2",
+          "sha256": "5a4034b03f9a8bb3fe3dfdaf875ca25f33f2c723ee136ee76b2c75971b503eb0",
+          "bytes": 3368
+        },
+        "9": {
+          "file": "reference/003-9.bz2",
+          "sha256": "92eab7cb8a2111f6daa6af273308c962f6416cb111ba00efddb6ec5695310474",
+          "bytes": 3368
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 8804,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "record_ids": [
+          "d3db9de0-25fa-5716-ad6c-e9c1749bb9de"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/record-d3db9de0-25fa-5716-ad6c-e9c1749bb9de.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:15.038428+00:00",
+      "sha256": "3663fa7cdef2756b5af23d95fc5b45e10c4e5aa32247fdd8223617131cde64d9",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=d3db9de0-25fa-5716-ad6c-e9c1749bb9de",
+      "split": "dev",
+      "split_group_keys": [
+        "canada:record:d3db9de0-25fa-5716-ad6c-e9c1749bb9de"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "3663fa7cdef2756b5af23d95fc5b45e10c4e5aa32247fdd8223617131cde64d9",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/004.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/004-1.bz2",
+          "sha256": "a5aae8cec1214535b85d1b6db9c4163b5b22fbeba488402f1f7c46c619355581",
+          "bytes": 2482
+        },
+        "9": {
+          "file": "reference/004-9.bz2",
+          "sha256": "d6ab4dcc436ae970182b86dab8f6945933ff90ff758cb929b02aa834d7aebd34",
+          "bytes": 2482
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 14092,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "record_ids": [
+          "51dbf91e-509c-437b-ab9e-eca6d0bf6fa8"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/record-51dbf91e-509c-437b-ab9e-eca6d0bf6fa8.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:15.290453+00:00",
+      "sha256": "6d0ca0ceef5c4ff28b7189cf5ac934bb017fded053496fe639b02ab589b0e4f2",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=51dbf91e-509c-437b-ab9e-eca6d0bf6fa8",
+      "split": "dev",
+      "split_group_keys": [
+        "canada:record:51dbf91e-509c-437b-ab9e-eca6d0bf6fa8"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "6d0ca0ceef5c4ff28b7189cf5ac934bb017fded053496fe639b02ab589b0e4f2",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/005.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/005-1.bz2",
+          "sha256": "0c872e192e819c7b9b91588439cc759962b68873831651ce70bd5028d0997993",
+          "bytes": 3594
+        },
+        "9": {
+          "file": "reference/005-9.bz2",
+          "sha256": "ec10ea8b28b6586e4086f9f989d28a08ac1ed99c886f9aae02dc4706f7707554",
+          "bytes": 3594
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/java/com/google/devtools/kythe/platform/shared/StatisticsCollector.java",
+      "bytes": 1024,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 1024,
+        "candidate_count": 453,
+        "category": "implementation",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/java/com/google/devtools/kythe/platform/shared/StatisticsCollector.java",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "60160f286cf839f6e49d0fc38844dabce39c249bc16371562acc29193cd11a05",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/006.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/006-1.bz2",
+          "sha256": "1c3661197c61b03cb0635b2ab2d59763ffabaf5ae005aa76dfc2802ca565ac89",
+          "bytes": 631
+        },
+        "9": {
+          "file": "reference/006-9.bz2",
+          "sha256": "751d344c05ff032841a1dbcb37f659ea45d01e3e9129e6b122776d4ccd3e0183",
+          "bytes": 631
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/go/util/flagutil/flagutil.go",
+      "bytes": 5523,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 5523,
+        "candidate_count": 453,
+        "category": "implementation",
+        "selection_rank": 226
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/go/util/flagutil/flagutil.go",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "f7ed4cd573f148ce7bea3b63f46b1af4d05ddc15897c3529c1467d05dd3b378f",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/007.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/007-1.bz2",
+          "sha256": "3a17a06c48e9dd18fc91bc48326238959f92b2d104eb4c431807fd536d67444c",
+          "bytes": 2030
+        },
+        "9": {
+          "file": "reference/007-9.bz2",
+          "sha256": "5d17ad152889d935b7c07cd89d0ce3371584d3e34824746c6bf237efe0d39df2",
+          "bytes": 2030
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/cxx/indexer/cxx/IndexerASTHooks.cc",
+      "bytes": 234046,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 234046,
+        "candidate_count": 453,
+        "category": "implementation",
+        "selection_rank": 452
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/cxx/indexer/cxx/IndexerASTHooks.cc",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "02f0a15b6475dbb21acaa27aea4e38a171f4e83db9449a8c81a9938237dd92c4",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/008.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/008-1.bz2",
+          "sha256": "4a0c7757aca66e1ce900d1fdd4a45d8f5b06c0c6a4f77709e68392d8fbedd3b0",
+          "bytes": 46193
+        },
+        "9": {
+          "file": "reference/008-9.bz2",
+          "sha256": "ccdf9bb526aab4916a042060b4d7c9dc6c5b25d318bb1ba9856a12a3757822ee",
+          "bytes": 39944
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/proto/generated_message_info.proto",
+      "bytes": 1030,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 1030,
+        "candidate_count": 122,
+        "category": "interfaces",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/proto/generated_message_info.proto",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "a9ab01919b11812a9c56599feae875de66070cd8a315ef4fa20fcec7dc63b711",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/009.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/009-1.bz2",
+          "sha256": "1bc0366f0489f09cac623267b4f644ff13911578b41b2fd7a27a91de0ef89635",
+          "bytes": 648
+        },
+        "9": {
+          "file": "reference/009-9.bz2",
+          "sha256": "6767d154fea6f301f4944b2b22d17b0ce62b800ad644386cd19cddfdf48fe18e",
+          "bytes": 648
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/cxx/extractor/bazel_event_reader.h",
+      "bytes": 3224,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 3224,
+        "candidate_count": 122,
+        "category": "interfaces",
+        "selection_rank": 61
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/cxx/extractor/bazel_event_reader.h",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "773ddff97d0705bb1fdbaeed496e10c52a0bd76f87031934c1b1d9f634689eca",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/010.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/010-1.bz2",
+          "sha256": "fca12f229e34c404c67679e1b7eb4cb7e264b6e7df18a81008aef52acd0ef57c",
+          "bytes": 1373
+        },
+        "9": {
+          "file": "reference/010-9.bz2",
+          "sha256": "f18d29b4e3a217e4770765407c442f06aff95ea64e8c1d0a6f9a0a592d833e43",
+          "bytes": 1373
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/cxx/indexer/cxx/GraphObserver.h",
+      "bytes": 57968,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 57968,
+        "candidate_count": 122,
+        "category": "interfaces",
+        "selection_rank": 121
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/cxx/indexer/cxx/GraphObserver.h",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "edd7115ebb2e1230398e3975ca7fd549a16578bbdda46fa108a325698d4d8432",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/011.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/011-1.bz2",
+          "sha256": "62a6b394cc336516602299c56d37edc9ebd6d35d355b77e92b558f183f5f25c1",
+          "bytes": 12267
+        },
+        "9": {
+          "file": "reference/011-9.bz2",
+          "sha256": "4e2bb7c16758c2bed71129fb132f2ef54cf6bf0e1dfb68fd8c5b8d928c1f0f6f",
+          "bytes": 12267
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/data/vnames.go.json",
+      "bytes": 1049,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 1049,
+        "candidate_count": 44,
+        "category": "configuration",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/data/vnames.go.json",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "302218e05be634bf43c62200045704e4b0e4a7ebf6deaedf93a1d88e4ec9ad65",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/012.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/012-1.bz2",
+          "sha256": "5b0ae35724e3a360ef150f9e3a90ce234a4f2a5d0e4be254339e20a3c54b8c8e",
+          "bytes": 288
+        },
+        "9": {
+          "file": "reference/012-9.bz2",
+          "sha256": "6c03477d14185ef679b102dffb17324898ff9ffff47300b14c5634c51a1f6b69",
+          "bytes": 288
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/tools/build_rules/testing.bzl",
+      "bytes": 2538,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 2538,
+        "candidate_count": 44,
+        "category": "configuration",
+        "selection_rank": 22
+      },
+      "family": "source",
+      "id": "source/kythe/tools/build_rules/testing.bzl",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "f16a1a36ba11676cd0e70b857e68e4a1da0908ca9f3d7ed76007821b49090c92",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/013.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/013-1.bz2",
+          "sha256": "cc9f6633eee5ccebcc886c94d19fbf76fa849634c6334db5c41715c073937dd4",
+          "bytes": 1088
+        },
+        "9": {
+          "file": "reference/013-9.bz2",
+          "sha256": "22d721cd5c086e7286df9abf8f39383769dbca1466f6c3aa4cea5db96a080e2d",
+          "bytes": 1088
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/external.bzl",
+      "bytes": 68979,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 68979,
+        "candidate_count": 44,
+        "category": "configuration",
+        "selection_rank": 43
+      },
+      "family": "source",
+      "id": "source/kythe/external.bzl",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "bc045ccd275f193b8f1d4cd33a255c01272b6ceef8be1a53db4537fbff948375",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/014.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/014-1.bz2",
+          "sha256": "4a30e1944f32f4fe0ccb1db107263cd1479190e8371357b590ddbbeb258c65e9",
+          "bytes": 16587
+        },
+        "9": {
+          "file": "reference/014-9.bz2",
+          "sha256": "6b4fdfb0f6a8f0af907e015e3ddbce874a477343648762e6af343b3939ecf2af",
+          "bytes": 16587
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/extractors/bazel/README.md",
+      "bytes": 1190,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 1190,
+        "candidate_count": 46,
+        "category": "documentation",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/extractors/bazel/README.md",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "b6c043e05683d9f497609e6f3a27a759d1cc5d05843a7c370c06e3e4ddebe6c5",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/015.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/015-1.bz2",
+          "sha256": "ef572d81bb603f5262f25bf3257f3b32087dc3636379bc3c9ca9d3434593f9e5",
+          "bytes": 657
+        },
+        "9": {
+          "file": "reference/015-9.bz2",
+          "sha256": "1e515f57a3173c8d3fb1340d3f7f3663205b0566e15ec4f1bf15d2dc52ea5a56",
+          "bytes": 657
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/kythe/docs/kythe-kzip.txt",
+      "bytes": 6763,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 6763,
+        "candidate_count": 46,
+        "category": "documentation",
+        "selection_rank": 23
+      },
+      "family": "source",
+      "id": "source/kythe/kythe/docs/kythe-kzip.txt",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "48bc08140e19cbd1da145153b7aa80fefc7acc74e4d4bd908079d18e6b94e25c",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/016.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/016-1.bz2",
+          "sha256": "1dfe5423d2cd5e4aa7a81acf2570967ccd139838c68f3abcd0c6ebbb2786dbbb",
+          "bytes": 2741
+        },
+        "9": {
+          "file": "reference/016-9.bz2",
+          "sha256": "48976e5446b9cc885631d33317bf23a2238be6474ae073ec1f3fc13366f1e3e6",
+          "bytes": 2741
+        }
+      }
+    },
+    {
+      "archive_member": "kythe-26056edfc953b5d4ea0ed8e94db072caa7f7d4c7/RELEASES.md",
+      "bytes": 172520,
+      "collection": "kythe",
+      "facts": {
+        "archive_member_bytes": 172520,
+        "candidate_count": 46,
+        "category": "documentation",
+        "selection_rank": 45
+      },
+      "family": "source",
+      "id": "source/kythe/RELEASES.md",
+      "license_and_attribution": {
+        "project": "https://github.com/kythe/kythe",
+        "status": "root notices retained; per-file review complete 2026-11-17: every file carries the Kythe Apache-2.0 header or is covered by the repository's Apache-2.0 LICENSE",
+        "upstream_notices": [
+          "notices/AUTHORS",
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:17.827124+00:00",
+      "sha256": "4b54c582ae1a8993c7dd24f333cb2fb020df12f5bb930be89706eb431c3ed24d",
+      "source_url": "https://codeload.github.com/kythe/kythe/tar.gz/26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "split": "dev",
+      "split_group_keys": [
+        "project:kythe/kythe"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "49e9bd510918b79a0b34222319464dbe9e54c5c6bb42355a228aee7c274d5136",
+      "upstream_version": "v0.0.76@26056edfc953b5d4ea0ed8e94db072caa7f7d4c7",
+      "file": "inputs/017.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/017-1.bz2",
+          "sha256": "c68c361e8668dffbd8ad60729c7b8470765b218a0488df8cdedd1d75c626503f",
+          "bytes": 51011
+        },
+        "9": {
+          "file": "reference/017-9.bz2",
+          "sha256": "f386e7e42ed5291c77dab45550e1cc79e871fc46d3869a58768a135f3f41564a",
+          "bytes": 48873
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 150232,
+      "collection": "uplot",
+      "facts": {
+        "minified": false,
+        "upstream_sha256_verified": false
+      },
+      "family": "web",
+      "id": "web/uplot/dist/uPlot.iife.js",
+      "license_and_attribution": {
+        "project": "https://github.com/leeoniya/uPlot",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/8f989229699b-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:18.920347+00:00",
+      "sha256": "1b71fc5e6b5b572922ed9941ed21d067207c8e5ecac0d35de66fd65d9686e791",
+      "source_url": "https://raw.githubusercontent.com/leeoniya/uPlot/e995b061e9fc5476a6d862cd2fb2ebc7452ca012/dist/uPlot.iife.js",
+      "split": "dev",
+      "split_group_keys": [
+        "project:leeoniya/uPlot"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "1b71fc5e6b5b572922ed9941ed21d067207c8e5ecac0d35de66fd65d9686e791",
+      "upstream_version": "1.6.32@e995b061e9fc5476a6d862cd2fb2ebc7452ca012",
+      "file": "inputs/018.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/018-1.bz2",
+          "sha256": "74dc972e307c51c19085498b70e6d79c5a506af723313d852798de6b5812845c",
+          "bytes": 39631
+        },
+        "9": {
+          "file": "reference/018-9.bz2",
+          "sha256": "bbcaeffebf69fc7ba0cf6a2aedf0e6277b7db96bff2ea20af2f3c1e3c5b2a15f",
+          "bytes": 37675
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 51081,
+      "collection": "uplot",
+      "facts": {
+        "minified": true,
+        "upstream_sha256_verified": false
+      },
+      "family": "web",
+      "id": "web/uplot/dist/uPlot.iife.min.js",
+      "license_and_attribution": {
+        "project": "https://github.com/leeoniya/uPlot",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/8f989229699b-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:19.068885+00:00",
+      "sha256": "19c8d4c6ad88929a79f4ae49d6f7161566dfd0ba3d15cc495e974f787eb78f1f",
+      "source_url": "https://raw.githubusercontent.com/leeoniya/uPlot/e995b061e9fc5476a6d862cd2fb2ebc7452ca012/dist/uPlot.iife.min.js",
+      "split": "dev",
+      "split_group_keys": [
+        "project:leeoniya/uPlot"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "19c8d4c6ad88929a79f4ae49d6f7161566dfd0ba3d15cc495e974f787eb78f1f",
+      "upstream_version": "1.6.32@e995b061e9fc5476a6d862cd2fb2ebc7452ca012",
+      "file": "inputs/019.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/019-1.bz2",
+          "sha256": "dd9f2b2f22c582a1be41efeaf0f9391d1fe3f81daff76a7faa2cf5f408755150",
+          "bytes": 21168
+        },
+        "9": {
+          "file": "reference/019-9.bz2",
+          "sha256": "9f6bfd03119202eda9d08ed3d76141f3fdcc564de2d339cff1292cb917e0702b",
+          "bytes": 21168
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 1857,
+      "collection": "uplot",
+      "facts": {
+        "minified": true,
+        "upstream_sha256_verified": false
+      },
+      "family": "web",
+      "id": "web/uplot/dist/uPlot.min.css",
+      "license_and_attribution": {
+        "project": "https://github.com/leeoniya/uPlot",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/8f989229699b-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:19.227855+00:00",
+      "sha256": "df630c6a8d6f8eeaff264b50f73ce5b114f646ffd9a0bb74f049b0a00135fa04",
+      "source_url": "https://raw.githubusercontent.com/leeoniya/uPlot/e995b061e9fc5476a6d862cd2fb2ebc7452ca012/dist/uPlot.min.css",
+      "split": "dev",
+      "split_group_keys": [
+        "project:leeoniya/uPlot"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "df630c6a8d6f8eeaff264b50f73ce5b114f646ffd9a0bb74f049b0a00135fa04",
+      "upstream_version": "1.6.32@e995b061e9fc5476a6d862cd2fb2ebc7452ca012",
+      "file": "inputs/020.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/020-1.bz2",
+          "sha256": "0ce7cca3eceb76a6817df28d2d4aa8a13c6fed820d0fbd0e9e25c4dc504dcff7",
+          "bytes": 843
+        },
+        "9": {
+          "file": "reference/020-9.bz2",
+          "sha256": "39c40e38f06a288bd6845060d6df0023ec973b40b7b1feb1c37da5d46c0c6339",
+          "bytes": 843
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 600010,
+      "collection": "physionet-bidmc",
+      "facts": {
+        "channels": 5,
+        "record": "bidmc01",
+        "representation": "WFDB 16-bit binary",
+        "samples": 60001,
+        "sampling_hz": 125.0,
+        "upstream_sha256_verified": true,
+        "upstream_header_record": "provenance/headers/bidmc/bidmc01.hea"
+      },
+      "family": "measurements",
+      "id": "measurements/bidmc/bidmc01.dat",
+      "license_and_attribution": {
+        "dataset_doi": "10.13026/C2208R",
+        "license": "Open Data Commons Attribution License v1.0",
+        "required_citations_url": "https://physionet.org/content/bidmc/1.0.0/",
+        "status": "upstream notices retained",
+        "upstream_notices": [
+          "notices/76576a17b505-LICENSE",
+          "notices/README"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:49:32.608340+00:00",
+      "sha256": "b1666c7f2f117be6dc04cae2e7016b3315775edb9ad7c7ee53fa9c110937560b",
+      "source_url": "https://physionet.org/files/bidmc/1.0.0/bidmc01.dat",
+      "split": "dev",
+      "split_group_keys": [
+        "bidmc:record:bidmc01",
+        "mimic2:subject:s01182"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "b1666c7f2f117be6dc04cae2e7016b3315775edb9ad7c7ee53fa9c110937560b",
+      "upstream_version": "1.0.0",
+      "file": "inputs/021.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/021-1.bz2",
+          "sha256": "c1d41b9b793dd052044b1f91a0d64b5f94a9bc75c878f8de433133e6c30b32cc",
+          "bytes": 321426
+        },
+        "9": {
+          "file": "reference/021-9.bz2",
+          "sha256": "0743c6d4c4bf9ecca3b0a95e67a8c12dcde39a194f1c95535863c8fb3fc1e89d",
+          "bytes": 283922
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 2678552,
+      "collection": "physionet-bidmc",
+      "facts": {
+        "channels": 5,
+        "record": "bidmc01",
+        "representation": "CSV",
+        "samples": 60001,
+        "sampling_hz": 125.0,
+        "upstream_sha256_verified": true,
+        "upstream_header_record": "provenance/headers/bidmc/bidmc01.hea"
+      },
+      "family": "measurements",
+      "id": "measurements/bidmc/bidmc_csv/bidmc_01_Signals.csv",
+      "license_and_attribution": {
+        "dataset_doi": "10.13026/C2208R",
+        "license": "Open Data Commons Attribution License v1.0",
+        "required_citations_url": "https://physionet.org/content/bidmc/1.0.0/",
+        "status": "upstream notices retained",
+        "upstream_notices": [
+          "notices/76576a17b505-LICENSE",
+          "notices/README"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:50:29.550367+00:00",
+      "sha256": "21495169cc36e82352d8e12cc6430927946d02d240b030715088d02396ea2d5c",
+      "source_url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_01_Signals.csv",
+      "split": "dev",
+      "split_group_keys": [
+        "bidmc:record:bidmc01",
+        "mimic2:subject:s01182"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "21495169cc36e82352d8e12cc6430927946d02d240b030715088d02396ea2d5c",
+      "upstream_version": "1.0.0",
+      "file": "inputs/022.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/022-1.bz2",
+          "sha256": "0c021ce10300f494d7e8b7fb2c8a8eeafc845fe1ef27c311cd35699cc7ca57bd",
+          "bytes": 490850
+        },
+        "9": {
+          "file": "reference/022-9.bz2",
+          "sha256": "d5e4fd1d019a15cca77cb97be7dcd791024b866d3c3cac99d6cf225258d1ac03",
+          "bytes": 422705
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 840014,
+      "collection": "physionet-bidmc",
+      "facts": {
+        "channels": 7,
+        "record": "bidmc08",
+        "representation": "WFDB 16-bit binary",
+        "samples": 60001,
+        "sampling_hz": 125.0,
+        "upstream_sha256_verified": true,
+        "upstream_header_record": "provenance/headers/bidmc/bidmc08.hea"
+      },
+      "family": "measurements",
+      "id": "measurements/bidmc/bidmc08.dat",
+      "license_and_attribution": {
+        "dataset_doi": "10.13026/C2208R",
+        "license": "Open Data Commons Attribution License v1.0",
+        "required_citations_url": "https://physionet.org/content/bidmc/1.0.0/",
+        "status": "upstream notices retained",
+        "upstream_notices": [
+          "notices/76576a17b505-LICENSE",
+          "notices/README"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:50:55.562760+00:00",
+      "sha256": "4f7f3f52776be7aa5cd46d28e475b101eaa30a9b6b3c92dee507d2110fea934e",
+      "source_url": "https://physionet.org/files/bidmc/1.0.0/bidmc08.dat",
+      "split": "dev",
+      "split_group_keys": [
+        "bidmc:record:bidmc08",
+        "mimic2:subject:s03386"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "4f7f3f52776be7aa5cd46d28e475b101eaa30a9b6b3c92dee507d2110fea934e",
+      "upstream_version": "1.0.0",
+      "file": "inputs/023.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/023-1.bz2",
+          "sha256": "ac221d5c8bab8f87d3e58a7a8d981b4ab22d92f8a57849bc9e82443cec3beef2",
+          "bytes": 495096
+        },
+        "9": {
+          "file": "reference/023-9.bz2",
+          "sha256": "5709461bf70f3fad4430ba65bd0a263139268498cdd7af42c8d5284c589ad7ee",
+          "bytes": 394033
+        }
+      }
+    }
+  ],
+  "description": "Intact real files; no generated padding, prefixes or synthetic timed content."
+}

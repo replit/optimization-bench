@@ -1,0 +1,53 @@
+{
+  "timed_surface": "public_cli",
+  "task_version": "1.0.0",
+  "id": "git-history-change-summary",
+  "name": "Git xdiff",
+  "title": "Summarize Git history with exact patches",
+  "job": "Seven equally weighted units run normal Git command-line work over distinct original repositories. Three units run `git diff-tree --stdin` over 32,768 commits from Git, Cargo, Django and Prettier: full Myers patches for 16,384 commits, and Myers shortstats and histogram patches for 8,192 other commits each. Three more produce complete patches for distinct commits of other repositories with `--ignore-all-space`, the patience algorithm and `-U32767` context. The seventh runs `git merge-file -p` on base, ours and theirs blobs from real merge commits.",
+  "language": "C",
+  "status": "qualification-in-progress",
+  "packaging_status": "public-task-private-judge",
+  "code": "environment/workload/task.py",
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "run_mode": "process",
+  "container_prepare": [
+    "/app/workload/guards/warm_git_objects.py",
+    "--steps",
+    "{steps}",
+    "--inputs",
+    "{inputs}"
+  ],
+  "sources": ["xdiff"],
+  "input_visibility": "public_dev",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "example_count": 7,
+  "objective": "Reduce elapsed time of exact patch, shortstat and merge-file outputs over distinct real repository inputs without changing any output or behavior.",
+  "operation": "Three disjoint commit-batch units: primary full Myers patches (16384 commits), secondary Myers shortstat (8192), secondary histogram patches (8192). Per repository counts 4096/2048/2048, four normal git diff-tree --stdin processes per unit. Four further one-unit xdiff families over other repositories: diff-tree --stdin patches with --ignore-all-space, the patience algorithm and -U32767 context, and git merge-file -p on real merge blob triples (one process per triple).",
+  "inputs": "32768 globally distinct commits from Git, Cargo, Django and Prettier, equal 25% by commit count; generic fetch-only git-history payloads pinned by original commit/tree/object and native checkout identities. Further units: 5 public and 6 held-out fetch-only original histories, no repository shared between splits.",
+  "outputs": "Complete exit status and stdout for every repository batch, compared byte-exactly; CLI stderr preserves error headlines/classes, not runtime stack frames or addresses. Full patch bytes are never reduced or truncated by the adapter.",
+  "preparation": "Pinned original source archive/compiler/Rust images; canonical source Git root; full input histories fetched and authenticated before timing; runtime network off.",
+  "configuration": "Distinct batches frozen before new timing. Normal Git dispatch, libc and Rust enabled. Myers primary/default, histogram secondary. No runtime tuning or repeat multiplier. safe.directory accommodates protected read-only input ownership only.",
+  "contract": "Preserve xdiff public declarations, structs, callbacks, exact patch/stat output and upstream test identities/outcomes. No test/fixture/snapshot changes, precomputed outputs or new process-global state.",
+  "limits": "Four-project authored public sample, not independent per-commit statistics or a frequency-weighted developer population. Repository replacements preserve the language/count mix and allow larger distinct batches. Each unit runs for at least 1 s.",
+  "source_identity": {
+    "bytes": 12796779,
+    "commit": "a018953688f1b10bddf91bff8747068f5f4746a4",
+    "sha256": "898ecd505bcec4390b3b7b2c1882509af3f11f3b62c56147d19f01e2a4e81355",
+    "url": "https://codeload.github.com/git/git/tar.gz/a018953688f1b10bddf91bff8747068f5f4746a4"
+  },
+  "public_commands": [
+    {
+      "command": "sh /app/workload/build.sh /app/build",
+      "description": "Rebuild the submitted production source offline with pinned GCC and Rust."
+    },
+    {
+      "command": "/app/build/run",
+      "description": "Check complete outputs for all seven public distinct-input units."
+    },
+    {
+      "command": "export GIT_TEST_INSTALLED=/app/build/project GIT_EXEC_PATH=/app/build/project; make -C /app/build/project CFLAGS='-O3 -g' NO_TCLTK=YesPlease GIT-BUILD-OPTIONS && GIT_SKIP_TESTS=t4015.129 make -C /app/build/project/t GIT_TEST_OPTS=--tee 'T=t4000-diff-format.sh t4002-diff-basic.sh t4033-diff-patience.sh t4048-diff-combined-binary.sh t4050-diff-histogram.sh t4015-diff-whitespace.sh t4055-diff-context.sh t6403-merge-file.sh t6427-diff3-conflict-markers.sh' test",
+      "description": "Prepare relocated test paths and run the nine selected unchanged original suites on the built Git; pristine environment failures are part of the frozen outcome ledger."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "optimbench-header-matrix-v1",
+  "scope": "All pinned public liblzma headers through the documented lzma.h umbrella; C89 and C++98 consumer compatibility.",
+  "required_cells": ["liblzma-c89", "liblzma-cxx98"],
+  "cells": [
+    {
+      "id": "liblzma-c89",
+      "supported": true,
+      "language": "c",
+      "dialect": "c89",
+      "headers": [
+        "project/src/liblzma/api/lzma.h", "project/src/liblzma/api/lzma/base.h",
+        "project/src/liblzma/api/lzma/bcj.h", "project/src/liblzma/api/lzma/block.h",
+        "project/src/liblzma/api/lzma/check.h", "project/src/liblzma/api/lzma/container.h",
+        "project/src/liblzma/api/lzma/delta.h", "project/src/liblzma/api/lzma/filter.h",
+        "project/src/liblzma/api/lzma/hardware.h", "project/src/liblzma/api/lzma/index.h",
+        "project/src/liblzma/api/lzma/index_hash.h", "project/src/liblzma/api/lzma/lzma12.h",
+        "project/src/liblzma/api/lzma/stream_flags.h", "project/src/liblzma/api/lzma/version.h",
+        "project/src/liblzma/api/lzma/vli.h"
+      ],
+      "features": [],
+      "support_refs": [
+        {
+          "path": "project/CMakeLists.txt",
+          "sha256": "3e29d8d080c29998d4ed975da563129dc5e9c3dbf52d336c1a70ca90ee08b0d1",
+          "quote": "# INTERFACE_COMPILE_FEATURES \"c_std_99\" or such (the API headers are C89\n# and C++ compatible)."
+        }
+      ],
+      "include_context": {"id": "liblzma-public-umbrella", "includes": ["lzma.h"]},
+      "compiler": "cc",
+      "include_dirs": ["project/src/liblzma/api"],
+      "libraries": ["cmake/liblzma.a"],
+      "defines": [],
+      "compile_flags": [],
+      "link_flags": ["-lpthread"],
+      "symbol_refs": ["lzma_easy_buffer_encode", "lzma_stream_decoder", "lzma_end"],
+      "translation_units": [
+        {
+          "name": "encode.c",
+          "source": "#include <lzma.h>\nint consume_encode(void) { const unsigned char input[] = {1, 2, 3}; unsigned char output[1024]; size_t size = 0; return lzma_easy_buffer_encode(0, LZMA_CHECK_CRC64, 0, input, sizeof(input), output, &size, sizeof(output)) == LZMA_OK && size > 0; }\n"
+        },
+        {
+          "name": "decode.c",
+          "source": "#include <lzma.h>\nint consume_encode(void);\nint main(void) { lzma_stream stream = LZMA_STREAM_INIT; lzma_ret ret = lzma_stream_decoder(&stream, UINT64_MAX, LZMA_CONCATENATED); lzma_end(&stream); return ret == LZMA_OK && consume_encode() ? 0 : 1; }\n"
+        }
+      ]
+    },
+    {
+      "id": "liblzma-cxx98",
+      "supported": true,
+      "language": "c++",
+      "dialect": "c++98",
+      "headers": [
+        "project/src/liblzma/api/lzma.h", "project/src/liblzma/api/lzma/base.h",
+        "project/src/liblzma/api/lzma/bcj.h", "project/src/liblzma/api/lzma/block.h",
+        "project/src/liblzma/api/lzma/check.h", "project/src/liblzma/api/lzma/container.h",
+        "project/src/liblzma/api/lzma/delta.h", "project/src/liblzma/api/lzma/filter.h",
+        "project/src/liblzma/api/lzma/hardware.h", "project/src/liblzma/api/lzma/index.h",
+        "project/src/liblzma/api/lzma/index_hash.h", "project/src/liblzma/api/lzma/lzma12.h",
+        "project/src/liblzma/api/lzma/stream_flags.h", "project/src/liblzma/api/lzma/version.h",
+        "project/src/liblzma/api/lzma/vli.h"
+      ],
+      "features": [],
+      "support_refs": [
+        {
+          "path": "project/CMakeLists.txt",
+          "sha256": "3e29d8d080c29998d4ed975da563129dc5e9c3dbf52d336c1a70ca90ee08b0d1",
+          "quote": "# INTERFACE_COMPILE_FEATURES \"c_std_99\" or such (the API headers are C89\n# and C++ compatible)."
+        },
+        {
+          "path": "project/src/liblzma/api/lzma.h",
+          "sha256": "6829350ef1ee35fae25481cc87a4f4b17c4b6c2a3df26f2b34dc1804df75c0d9",
+          "quote": "break C89 and C++ programs on many systems."
+        }
+      ],
+      "include_context": {"id": "liblzma-public-umbrella", "includes": ["lzma.h"]},
+      "compiler": "c++",
+      "include_dirs": ["project/src/liblzma/api"],
+      "libraries": ["cmake/liblzma.a"],
+      "defines": [],
+      "compile_flags": [],
+      "link_flags": ["-lpthread"],
+      "symbol_refs": ["lzma_easy_buffer_encode", "lzma_stream_decoder", "lzma_end"],
+      "translation_units": [
+        {
+          "name": "encode.cc",
+          "source": "#include <lzma.h>\nint consume_encode(void) { const unsigned char input[] = {1, 2, 3}; unsigned char output[1024]; size_t size = 0; return lzma_easy_buffer_encode(0, LZMA_CHECK_CRC64, 0, input, sizeof(input), output, &size, sizeof(output)) == LZMA_OK && size > 0; }\n"
+        },
+        {
+          "name": "decode.cc",
+          "source": "#include <lzma.h>\nint consume_encode(void);\nint main(void) { lzma_stream stream = LZMA_STREAM_INIT; lzma_ret ret = lzma_stream_decoder(&stream, UINT64_MAX, LZMA_CONCATENATED); lzma_end(&stream); return ret == LZMA_OK && consume_encode() ? 0 : 1; }\n"
+        }
+      ]
+    }
+  ]
+}

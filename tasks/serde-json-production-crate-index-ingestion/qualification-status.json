@@ -1,0 +1,6 @@
+{
+  "task": "serde-json-production-crate-index-ingestion",
+  "payload_status": "heldout-missing",
+  "harbor_execution_qualified": false,
+  "scored_qualification": false
+}

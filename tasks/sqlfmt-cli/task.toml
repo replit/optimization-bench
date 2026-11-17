@@ -1,0 +1,55 @@
+schema_version = "1.4"
+# Only the editable format/ and cmd/sqlfmt/ directories reach the separate verifier.
+artifacts = [
+  { source = "/app/sqlfmt/format" },
+  { source = "/app/sqlfmt/cmd/sqlfmt" },
+]
+
+[task]
+name = "optimbench/sqlfmt-cli"
+version = "1.0.0"
+description = "Speed up the sqlfmt command-line tool end to end (one cold process per invocation: -d/-l/-w on real project SQL trees, stdin, big files), byte-identical exit status, stdout, outputs and stderr vs the pinned sqlfmt (8c676b5)."
+keywords = ["optimbench", "performance", "go", "sql", "formatter", "cli", "standalone"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_tree = "da6c989b02299d77d374e7dec598677a5a5751c2"
+baseline_git_commit = "b92aa1e57ceb8d875328eadc9ab4f47b05285705"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "sqlfmt (dimitri/sqlfmt)"
+language = "Go"
+run_mode = "standalone"
+github_stars = 107
+upstream_repo = "https://github.com/dimitri/sqlfmt"
+upstream_commit = "8c676b51ea62e6ce33221e0d9d6d8a43256c942c"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+shared_workload_group = "sqlfmt (sqlfmt-postgres, sqlfmt-cli: same formatter; the review notes shared sources)"
+portable_environment_ready = false
+verifier_ready = false
+
+[verifier]
+timeout_sec = 3600.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:sqlfmt-cli-1.0.0@sha256:4159f726cc7ad390d02df4d324b26f37982ee18c88934dce1a9ed62ba551a15a"
+# The agent stays offline and receives declared public inputs through read-only mounts.
+# Without this setting the agent container would have network access (held-out
+# source codebases and newer upstream commits reachable).
+network_mode = "no-network"
+build_timeout_sec = 1800.0
+cpus = 8
+memory_mb = 16384

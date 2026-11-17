@@ -1,0 +1,50 @@
+{
+  "task_version": "1.0.0",
+  "code": "environment/workload/task.py",
+  "contract": "Quantile results: exact shape/dtype; rtol=atol=8*eps(float64), equal NaNs. Suite units: exact canonical results, except interp-equalize (absolute 8*eps(float64)) and loadtxt-csv (equal NaNs). Preserve input buffers.",
+  "core_counts": [
+    1,
+    2,
+    4
+  ],
+  "development_entrypoint": "sh /app/workload/build.sh && /app/build/run",
+  "example_count": 28,
+  "id": "numpy-quantile",
+  "interface": {
+    "documentation": ["https://numpy.org/doc/stable/reference/"],
+    "documented_api": [],
+    "extension_points": []
+  },
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "job": "Compute linear quantiles over resident arrays, plus six timed numeric, time, random and I/O units over real data. Two further batches (strings-text, held-out only, and genfromtxt-catalog) are correctness-only.",
+  "language": "Python / C / C++",
+  "measurement_boundary": "Trusted external dispatch-to-stopped-worker timing includes the complete call batch, all copying/selection/sorting/interpolation, output materialization and result-address metadata. Input transfers and host numerical checking are outside; old outputs are released during the next timed batch. Suite units use the same resident boundary: the complete call batch and materialized results are timed; loading, argument derivation, canonical ordering, serialization and comparison are not.",
+  "name": "NumPy",
+  "operations": [
+    "np.quantile(a, q, axis=axis, method=\"linear\", keepdims=keepdims, overwrite_input=False)",
+    "np.argsort(a, kind=\"stable\")",
+    "np.argsort(datetime64[ms])",
+    "np.lexsort(keys)",
+    "np.searchsorted(edges, values, side)",
+    "np.searchsorted(np.unique(labels), labels)",
+    "np.unique_values(a)",
+    "np.unique_inverse(a)",
+    "np.unique(X, return_inverse=True, axis=0)",
+    "np.interp(x, xp, fp)",
+    "np.busday_count / np.busday_offset / np.is_busday(busdaycal=...)",
+    "np.random.Generator(PCG64).binomial/gamma/poisson/normal",
+    "np.strings.{strip,str_len,find,count,replace,partition,startswith,endswith,isalpha,expandtabs}",
+    "np.genfromtxt(text, delimiter=\",\", dtype=structured)",
+    "np.loadtxt(text, delimiter=\",\", dtype=float64)",
+    "str.astype(\"datetime64[ms]\"), timedelta arithmetic, datetime64.astype(\"S\")",
+    "float64/float32 .astype(str)"
+  ],
+  "packaging_status": "public-task-private-judge",
+  "source_directory": "numpy",
+  "status": "qualification-in-progress",
+  "timing": "Shared shim resident stop protocol; local execution reports no timing.",
+  "title": "Compute quantiles and related NumPy operations over real data",
+  "readme_notes": "Seven equally weighted timed units per scope: the linear-quantile batch and six suite units. The strings-text (held-out only) and genfromtxt-catalog batches are correctness-only checks.",
+  "version": "2.5.4"
+}

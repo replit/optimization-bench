@@ -1,0 +1,2 @@
+# Input bodies remain fetch-only and are never committed to Git or LFS.
+# tests/heldout/manifest.json is an ordinary Git file, like every other Task's held-out manifest.

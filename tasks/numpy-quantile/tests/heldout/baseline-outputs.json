@@ -1,0 +1,107 @@
+[
+  {
+    "id": "heldout-natural-workload-warm-batch",
+    "bytes": 2004720,
+    "sha256": "0fb21b06028eaf5a6c5b9afbd5cc1e51f762ffb67423203047b3333e4145ffcf"
+  },
+  {
+    "id": "taxi-2024-01--small-table",
+    "bytes": 224,
+    "sha256": "a72470153fc34b94969bc12d76326f4dc70163b86acee8bff5ca3a7b38b61c75"
+  },
+  {
+    "id": "taxi-2024-07--small-table",
+    "bytes": 224,
+    "sha256": "c37ff7be6c2c027233e371edf24a8e307ac349ba332d4e991bc0d00fcbeb0b0c"
+  },
+  {
+    "id": "taxi-2024-03--small-table",
+    "bytes": 224,
+    "sha256": "382f95ca6a3ca04d679704b440a61e23667e77509beef8c0ab46c480700b9d55"
+  },
+  {
+    "id": "taxi-2024-05--small-table",
+    "bytes": 224,
+    "sha256": "a22e61a527b948b852c807f8d861222a1e1011e7acaf47d7668bd9069f384ba1"
+  },
+  {
+    "id": "taxi-2024-09--small-table",
+    "bytes": 224,
+    "sha256": "0d8d4b7abfe4bb709549fe4d4184607b95d5bfbd80feb5d4822a16c0d65e1c82"
+  },
+  {
+    "id": "taxi-2024-11--small-table",
+    "bytes": 224,
+    "sha256": "ae0ff24ca783877a6dee3e88b89e254a425aeb06f68f96c896fff62d5c426398"
+  },
+  {
+    "id": "electricity-2014-block1--strided-subset",
+    "bytes": 2792,
+    "sha256": "2b5cd4d08baf776deb5bdb1f388b7a26fcd5f332cfcc67b9c2f4af2dc8bf00bb"
+  },
+  {
+    "id": "electricity-2014-block2--strided-subset",
+    "bytes": 2792,
+    "sha256": "fba80948743af916da985da9fb15adca72406c63fb7c7c8b05a7e94c151cc461"
+  },
+  {
+    "id": "weather-2018--strided-grid",
+    "bytes": 362432,
+    "sha256": "13f87b5d9f74c6ecba2a9b48801c1fb1ac947339b899d5f39e652f5586bfb80e"
+  },
+  {
+    "id": "weather-2019--strided-grid",
+    "bytes": 362432,
+    "sha256": "ac2fee661b2061cb5be69164592b16fd014e13d63f3bc4ed8b6360779c0e5743"
+  },
+  {
+    "id": "weather-2022--strided-grid",
+    "bytes": 362432,
+    "sha256": "0e47da70beac02252e3a5c25798f5fdaf86303f41e4f821573e52ad0b4fca4c7"
+  },
+  {
+    "id": "weather-2023--strided-grid",
+    "bytes": 362432,
+    "sha256": "bff398cf4c7140e397670cfddbb9e42689f4d62276891e1575520ec46904e203"
+  },
+  {
+    "id": "heldout-interp-equalize",
+    "bytes": 414950944,
+    "sha256": "3a20aac71381826c5e6eedcaa7a201060b9c05af0a1ab14718cd4b693442df5d"
+  },
+  {
+    "id": "heldout-busday-calendar",
+    "bytes": 453698775,
+    "sha256": "5a55b34be83197ce72f7421f602296fc0f605505a305bb066cc00f9fffd16cad"
+  },
+  {
+    "id": "heldout-random-dists",
+    "bytes": 561290656,
+    "sha256": "0bb627877ba355aae6e91a4186f407aa510e0fc561827bef4b187ae5afff9532"
+  },
+  {
+    "id": "heldout-strings-text",
+    "bytes": 3232826397,
+    "sha256": "d972d00f01ff5843e7381cbd9c1a301038264e22ade1b37da6b83443fa30a0c0"
+  },
+  {
+    "id": "heldout-genfromtxt-catalog",
+    "bytes": 128736344,
+    "sha256": "c675b4631de79bd1edbcfe755eeb295f80b9ed58866d94736674684dcc0eb97b"
+  },
+  {
+    "id": "heldout-loadtxt-csv",
+    "bytes": 218880512,
+    "sha256": "bfb2883a84d745987b97df5e86b2b0a926bb9356f906352221fe8b12252e1447"
+  },
+  {
+    "id": "heldout-datetime-iso",
+    "bytes": 220388124,
+    "sha256": "2c3694e81e49c0db3c70827bdffc5cb9c31c1e019a43d0715862e48d2ecd6bcc"
+  },
+  {
+    "id": "heldout-float-format",
+    "bytes": 698340864,
+    "sha256": "3993998ac7578f5c5cfab685cf45cbb26e930a715cd9eb3266a18455087c72a0"
+  }
+]

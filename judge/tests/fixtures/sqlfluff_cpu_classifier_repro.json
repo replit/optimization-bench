@@ -1,0 +1,13 @@
+{
+  "origin_commit": "dd18cc9547",
+  "source_sha256": "66a16c668508aabc360c0998d07b03c3f5fe858f0c8d01370afa71b31d083638",
+  "note": "Minimized identical-pristine readonly traceback from the CPU worker d1ecf42. Unit-test affinities are synthetic, not physical execution proof.",
+  "watch_inputs": ["project/case.sql"],
+  "output_dirs": ["project"],
+  "required_outputs": ["project/case.fixed.sql"],
+  "paths": [
+    ["project/case.fixed.sqltjjqir39.sql", "project/case.fixed.sql0ds4khfx.sql"],
+    ["project/case.fixed.sql6esxkshk.sql", "project/case.fixed.sqlq0gfx2tg.sql"]
+  ],
+  "stderr_template": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.14/tempfile.py\", line 255, in _mkstemp_inner\n    fd = _os.open(file, flags, 0o600)\nOSError: [Errno 30] Read-only file system: '/scratch/work/{path}'\n"
+}

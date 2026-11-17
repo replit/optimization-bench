@@ -1,0 +1,110 @@
+{
+  "task_version": "1.0.0",
+  "id": "sqlglot-mozilla-transpile",
+  "interface": {
+    "documentation": [
+      "https://sqlglot.com/sqlglot.html"
+    ],
+    "documented_api": [
+      {
+        "name": "sqlglot.expressions:*",
+        "documentation": "https://sqlglot.com/sqlglot/expressions.html"
+      },
+      {
+        "name": "sqlglot.optimizer:optimize",
+        "documentation": "https://sqlglot.com/sqlglot.html#sql-optimizer"
+      },
+      {
+        "name": "sqlglot.optimizer.scope:Scope",
+        "documentation": "https://sqlglot.com/sqlglot/optimizer/scope.html"
+      },
+      {
+        "name": "sqlglot.optimizer.scope:build_scope",
+        "documentation": "https://sqlglot.com/sqlglot/optimizer/scope.html"
+      },
+      {
+        "name": "sqlglot.optimizer.scope:traverse_scope",
+        "documentation": "https://sqlglot.com/sqlglot/optimizer/scope.html"
+      },
+      {
+        "name": "sqlglot.executor:execute",
+        "documentation": "https://sqlglot.com/sqlglot.html#sql-execution"
+      }
+    ],
+    "extension_points": [
+      {
+        "name": "sqlglot.dialects.dialect:Dialect",
+        "documentation": "https://sqlglot.com/sqlglot/dialects.html#implementing-a-custom-dialect"
+      },
+      {
+        "name": "sqlglot.tokens:Tokenizer",
+        "documentation": "https://sqlglot.com/sqlglot/dialects.html#implementing-a-custom-dialect"
+      },
+      {
+        "name": "sqlglot.parser:Parser",
+        "documentation": "https://sqlglot.com/sqlglot/dialects.html#implementing-a-custom-dialect"
+      },
+      {
+        "name": "sqlglot.generator:Generator",
+        "documentation": "https://sqlglot.com/sqlglot/dialects.html#implementing-a-custom-dialect"
+      }
+    ]
+  },
+  "name": "SQLGlot",
+  "language": "Python",
+  "title": "Convert, optimize, trace lineage and compare SQL",
+  "version": "30.21.0",
+  "job": "One image runs four equally weighted cold batches using the same rebuilt SQLGlot package: 284 public Mozilla SQL conversions, 125 schema-aware optimizer requests, 125 column-lineage queries and 99 structural-diff pairs. Every distinct input runs once per unit. Complete SQL, typed trees, lineage graphs and structural edits are checked.",
+  "code": "environment/workload/task.py",
+  "operations": [
+    "sqlglot.transpile(text, read='bigquery', write='duckdb', pretty=False, error_level=sqlglot.ErrorLevel.RAISE, unsupported_level=sqlglot.ErrorLevel.RAISE)",
+    "sqlglot.parse_one(sql, read=dialect, error_level=sqlglot.ErrorLevel.RAISE); normalize_identifiers(tree, dialect=dialect); quote_identifiers(tree, dialect=dialect)",
+    "sqlglot.optimizer.optimize(tree, schema=schema, dialect=dialect, rules=RULES, infer_schema=True, quote_identifiers=True, db=None, catalog=None); complete SQL and semantic-AST serialization",
+    "parse_one; copy; qualify; build_scope; lineage per output column with trim_selects=False and copy=False; complete ordered graph and semantic expressions",
+    "transpile each statement with pretty=True/comments=False in its source dialect; diff(source,target,matchings=None,delta_only=False,f=0.6,t=0.6); full typed edits, endpoint paths, trees and similarity"
+  ],
+  "editable": "Production Python under sqlglot/. Tests, version/build settings, dependencies, driver, inputs and evaluator are protected.",
+  "families": {
+    "primary": "Whole-process BigQuery-to-DuckDB conversion of unchanged production queries.",
+    "optimizer": "Whole-process schema-aware optimization of distinct application examples, a documented query and the complete TPC-H and TPC-DS fixture groups.",
+    "lineage": "Whole-process column lineage with ordered graph sharing and complete semantic AST values.",
+    "diff": "Whole-process structural comparison of real before/after pairs with complete typed edits."
+  },
+  "size_meaning": "Each original file may contain several statements. Each optimizer request contains one SQL query, its dialect and a schema mapping. One cold process handles each complete workload-family batch.",
+  "variables": [
+    "SQL query size and complexity",
+    "Number of statements per input",
+    "Joins, nested queries, grouping, inferred types and optimizer rule interactions"
+  ],
+  "options": "Original conversion settings remain unchanged. Optimizer calls use all pinned RULES in order, infer_schema=True, quote_identifiers=True, db/catalog=None and the request dialect. No database execution, added dependencies, explicit worker threads or cross-process caches.",
+  "outputs": "Original conversion bytes remain unchanged. Each optimizer result contains complete generated SQL and a semantic AST with class, ordered children, types, comments and metadata. Allocation identity, empty optional values and mapping insertion order are normalized. Errors retain qualified exception class and message. Optimizer logs and Python warning category/message are included. Missing results, nonzero exit or process streams fail the complete-output comparison.",
+  "contract": "Byte-identical complete per-query output digests and preserved public APIs, errors and warnings; untouched upstream tests keep baseline outcomes; no input/evaluator detection, precomputation, delegation, persistent caches or leftover processes.",
+  "limits": "Linux amd64, Python 3.14.6, pure-Python SQLGlot 30.21.0; eight CPUs, 16 GiB. Timing includes cold startup, imports, input reads, API work, complete output materialization and writes for each batch. Input staging/integrity preparation and result comparison occur outside execution. No task-specific timer or weighting policy is introduced.",
+  "sources": [
+    "sqlglot/parser.py",
+    "sqlglot/generator.py",
+    "sqlglot/tokens.py",
+    "sqlglot/dialects/bigquery.py",
+    "sqlglot/dialects/duckdb.py",
+    "sqlglot/optimizer/optimizer.py",
+    "sqlglot/optimizer/qualify.py",
+    "sqlglot/optimizer/annotate_types.py",
+    "sqlglot/optimizer/scope.py",
+    "sqlglot/schema.py",
+    "sqlglot/lineage.py",
+    "sqlglot/diff.py"
+  ],
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "preparation": "Pinned SHA-256-checked SQLGlot archive and qualified generated version metadata; hash-locked test dependencies; content-addressed original SQL files; local git source checkout /app/sqlglot; prebuilt baseline /app/baseline-build.",
+  "source_identity": {
+    "upstream_repository": "https://github.com/tobymao/sqlglot",
+    "upstream_commit": "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76",
+    "archive_sha256": "d553b6eddad6e7bdeb55b05a54e722e230b3a0cf2c3ce06cdd8558677d5dadd9"
+  },
+  "example_count": 633,
+  "status": "qualification-in-progress",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "run_mode": "standalone",
+  "packaging_status": "public-task-private-judge"
+}

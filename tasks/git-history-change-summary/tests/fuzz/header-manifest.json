@@ -1,0 +1,85 @@
+{
+  "schema": "optimbench-header-matrix-v1",
+  "scope": "task:git-history-change-summary:contracted-xdiff-header",
+  "required_cells": ["xdiff-c-default", "xdiff-cxx-default"],
+  "cells": [
+    {
+      "id": "xdiff-c-default",
+      "supported": true,
+      "headers": ["project/xdiff/xdiff.h"],
+      "language": "c",
+      "dialect": "compiler-default",
+      "support_basis": "pinned-upstream-default-flags",
+      "features": [],
+      "support_refs": [
+        {
+          "path": "project/Makefile",
+          "sha256": "b1b13c839b6eb32c3b14575e89d7b568a5b5f30c55de3bbafecd3d7d7c5a3bb4",
+          "quote": "CFLAGS = -g -O2 -Wall"
+        },
+        {
+          "path": "project/xdiff/xdiff.h",
+          "sha256": "906854ed0e616f1c25dc294dbd894bbac80b15d539594de09e4f30e56bb90d92",
+          "quote": "int xdl_diff(mmfile_t *mf1, mmfile_t *mf2, xpparam_t const *xpp,\n\t     xdemitconf_t const *xecfg, xdemitcb_t *ecb);"
+        }
+      ],
+      "include_context": {"id": "stddef-posix-regex-xdiff", "includes": ["stddef.h", "regex.h", "xdiff/xdiff.h"]},
+      "compiler": "cc",
+      "include_dirs": ["project"],
+      "libraries": ["project/libgit.a", "project/target/release/libgitcore.a"],
+      "defines": [],
+      "compile_flags": [],
+      "link_flags": ["-lz", "-lssl", "-lcrypto", "-lpcre2-8", "-lcurl", "-lexpat", "-lpthread", "-ldl", "-lm"],
+      "symbol_refs": ["xdl_diff", "xdl_merge"],
+      "translation_units": [
+        {
+          "name": "diff.c",
+          "source": "#include <stddef.h>\n#include <regex.h>\n#include \"xdiff/xdiff.h\"\nstatic int emit(void *p, mmbuffer_t *b, int n) { long *count = (long *)p; int i; for (i = 0; i < n; ++i) *count += b[i].size; return 0; }\nint consume_diff(void) { char a[] = \"before\\n\", b[] = \"after\\n\"; mmfile_t left = {a, 7}, right = {b, 6}; xpparam_t xp = {0}; xdemitconf_t cfg = {0}; xdemitcb_t cb = {0}; long count = 0; cb.priv = &count; cb.out_line = emit; return xdl_diff(&left, &right, &xp, &cfg, &cb) == 0 && count > 0; }\n"
+        },
+        {
+          "name": "merge.c",
+          "source": "#include <stddef.h>\n#include <regex.h>\n#include <stdlib.h>\n#include <string.h>\n#include \"xdiff/xdiff.h\"\nint consume_diff(void);\nint main(void) { char text[] = \"same\\n\"; mmfile_t base = {text, 5}, left = {text, 5}, right = {text, 5}; xmparam_t xp = {0}; mmbuffer_t out = {0}; int rc = xdl_merge(&base, &left, &right, &xp, &out); int ok = rc == 0 && out.size == 5 && memcmp(out.ptr, text, 5) == 0; free(out.ptr); return ok && consume_diff() ? 0 : 1; }\n"
+        }
+      ]
+    },
+    {
+      "id": "xdiff-cxx-default",
+      "supported": true,
+      "headers": ["project/xdiff/xdiff.h"],
+      "language": "c++",
+      "dialect": "compiler-default",
+      "support_basis": "pinned-upstream-default-flags",
+      "features": [],
+      "support_refs": [
+        {
+          "path": "project/xdiff/xdiff.h",
+          "sha256": "906854ed0e616f1c25dc294dbd894bbac80b15d539594de09e4f30e56bb90d92",
+          "quote": "#ifdef __cplusplus\nextern \"C\" {\n#endif /* #ifdef __cplusplus */"
+        },
+        {
+          "path": "project/Makefile",
+          "sha256": "b1b13c839b6eb32c3b14575e89d7b568a5b5f30c55de3bbafecd3d7d7c5a3bb4",
+          "quote": "CFLAGS = -g -O2 -Wall"
+        }
+      ],
+      "include_context": {"id": "stddef-posix-regex-xdiff", "includes": ["stddef.h", "regex.h", "xdiff/xdiff.h"]},
+      "compiler": "c++",
+      "include_dirs": ["project"],
+      "libraries": ["project/libgit.a", "project/target/release/libgitcore.a"],
+      "defines": [],
+      "compile_flags": [],
+      "link_flags": ["-lz", "-lssl", "-lcrypto", "-lpcre2-8", "-lcurl", "-lexpat", "-lpthread", "-ldl", "-lm"],
+      "symbol_refs": ["xdl_diff", "xdl_merge"],
+      "translation_units": [
+        {
+          "name": "diff.cc",
+          "source": "#include <stddef.h>\n#include <regex.h>\n#include \"xdiff/xdiff.h\"\nstatic int emit(void *p, mmbuffer_t *b, int n) { long *count = (long *)p; int i; for (i = 0; i < n; ++i) *count += b[i].size; return 0; }\nint consume_diff(void) { char a[] = \"before\\n\", b[] = \"after\\n\"; mmfile_t left = {a, 7}, right = {b, 6}; xpparam_t xp = {0}; xdemitconf_t cfg = {0}; xdemitcb_t cb = {0}; long count = 0; cb.priv = &count; cb.out_line = emit; return xdl_diff(&left, &right, &xp, &cfg, &cb) == 0 && count > 0; }\n"
+        },
+        {
+          "name": "merge.cc",
+          "source": "#include <stddef.h>\n#include <regex.h>\n#include <stdlib.h>\n#include <string.h>\n#include \"xdiff/xdiff.h\"\nint consume_diff(void);\nint main(void) { char text[] = \"same\\n\"; mmfile_t base = {text, 5}, left = {text, 5}, right = {text, 5}; xmparam_t xp = {0}; mmbuffer_t out = {0}; int rc = xdl_merge(&base, &left, &right, &xp, &out); int ok = rc == 0 && out.size == 5 && memcmp(out.ptr, text, 5) == 0; free(out.ptr); return ok && consume_diff() ? 0 : 1; }\n"
+        }
+      ]
+    }
+  ]
+}

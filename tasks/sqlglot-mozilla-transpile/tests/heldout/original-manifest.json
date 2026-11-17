@@ -1,0 +1,1234 @@
+{
+  "version": "mozilla-sqlglot-v2",
+  "split": "private",
+  "operation": "sqlglot.transpile",
+  "kwargs": {
+    "read": "bigquery",
+    "write": "duckdb",
+    "pretty": false,
+    "error_level": "RAISE",
+    "unsupported_level": "RAISE"
+  },
+  "cases": [
+    {
+      "id": "005edae532e031e3",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/recent_logical_subscription_events_v1/query.sql",
+      "sha256": "810a971ce41c0d2a7f8911dc29012d36afc2c9cfc984515095b3a38c4d27c3d2",
+      "group_id": "9aa9593bf331c796",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/005edae532e031e3.sql",
+      "bytes": 641
+    },
+    {
+      "id": "0536422f98b78763",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_task_reschedule_v1/query.sql",
+      "sha256": "69451593dc72280c804bc5d1f62f9c7caa0c4e75c234e5ee483e473b109ab8e5",
+      "group_id": "48f984a2a9d872d0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/0536422f98b78763.sql",
+      "bytes": 519
+    },
+    {
+      "id": "080c46342f3f62de",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/google_ads_campaign_cost_breakdowns_v1/query.sql",
+      "sha256": "4db1d12c444cb1bdc5e2980f096bf4ea1798ff68c6103e52ffa15223f29c26f0",
+      "group_id": "080c46342f3f62de",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/080c46342f3f62de.sql",
+      "bytes": 3795
+    },
+    {
+      "id": "094614ace68abe46",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_deletion_request_v1/query.sql",
+      "sha256": "7b93e072104803e1ad545b6ab1a3ea2ee6d6cb4b5458253f993114228c8c1b8a",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/094614ace68abe46.sql",
+      "bytes": 3625
+    },
+    {
+      "id": "09cb8d20eb56b5db",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_logins_sync_v1/query.sql",
+      "sha256": "722a50bd64540383fd55f8aa9ae068c3a8863dd41e6b25d9900af19ce8b4c509",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/09cb8d20eb56b5db.sql",
+      "bytes": 4702
+    },
+    {
+      "id": "09ddd231c40c2dc2",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_mau_per_os_v1/query.sql",
+      "sha256": "4b0d9e0c3f1616c5605b1f10bb6b0f20452ba288f111280e85e2875d6328afae",
+      "group_id": "09ddd231c40c2dc2",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/09ddd231c40c2dc2.sql",
+      "bytes": 1049
+    },
+    {
+      "id": "0a1c3d94fb11e85b",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_country_aggregates_v1/query.sql",
+      "sha256": "b0e14fb0698bda02b3ba9d10940564ae388fe4e5e62fb44da1b2605fb9bb1f56",
+      "group_id": "0a1c3d94fb11e85b",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/0a1c3d94fb11e85b.sql",
+      "bytes": 693
+    },
+    {
+      "id": "0bf79d0d47129b4d",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/recent_subplat_attribution_impressions_v1/query.sql",
+      "sha256": "1137da58ca31c0af51a8412792a140a8882019109243047009bc0b698bfbcddb",
+      "group_id": "9aa9593bf331c796",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/0bf79d0d47129b4d.sql",
+      "bytes": 658
+    },
+    {
+      "id": "0d20e2cf6b60d82c",
+      "source_path": "sql/moz-fx-data-shared-prod/accounts_db_derived/accounts_aggregates_v1/query.sql",
+      "sha256": "2e8aa9bf38604b31dd50101b26bfabc409addcfe96a6c3336f9ef8a4adf434da",
+      "group_id": "0d20e2cf6b60d82c",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/0d20e2cf6b60d82c.sql",
+      "bytes": 1743
+    },
+    {
+      "id": "0d38fb8f1d9d2908",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_client_tile_component_daily_v1/query.sql",
+      "sha256": "1f9f6aec51aed0e0c05295dc52e8d794ba3c6485fa494597dc6c25120cf376f1",
+      "group_id": "0d38fb8f1d9d2908",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/0d38fb8f1d9d2908.sql",
+      "bytes": 827
+    },
+    {
+      "id": "0d54e7594708e34f",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_installation_v1/query.sql",
+      "sha256": "18bc59ea3dbe87e3ba46661565789a29191f6828fadb8fedf16d3967bbccda87",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/0d54e7594708e34f.sql",
+      "bytes": 3617
+    },
+    {
+      "id": "10c764ed3ce3ea7f",
+      "source_path": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_invoice_v1/query.sql",
+      "sha256": "58468ae7e09fe79fd5a2f93a466c94310aeec38e0a56b483efbb844d75782129",
+      "group_id": "00f032becafdded0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/10c764ed3ce3ea7f.sql",
+      "bytes": 960
+    },
+    {
+      "id": "12691c99b9175ebd",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_bookmarks_sync_v1/query.sql",
+      "sha256": "e214b8e659f05a3e446f031eeb44c41ff43e4261ec15f5e8a826bade5f09b5e3",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/12691c99b9175ebd.sql",
+      "bytes": 4976
+    },
+    {
+      "id": "12e0212667d6388d",
+      "source_path": "sql/moz-fx-data-shared-prod/mozilla_org_derived/www_site_page_metrics_v2/query.sql",
+      "sha256": "56cc4687a34096e4cb58c2a1e48e07f6b43245c8faa54e6ce6a2cf115e4f7c57",
+      "group_id": "17b99f47ab83ba50",
+      "bucket": "4-16KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/12e0212667d6388d.sql",
+      "bytes": 4854
+    },
+    {
+      "id": "12fd933271d5d373",
+      "source_path": "sql/moz-fx-data-shared-prod/search_terms_derived/suggest_partial_aggregates_daily_v1/query.sql",
+      "sha256": "7f9d486c45098b4daca254f4fb007001961933eb1c581dd386f02365b6399c1b",
+      "group_id": "12fd933271d5d373",
+      "bucket": "<1KiB",
+      "execution_status": "upstream_fixture_results_match",
+      "input": "inputs/12fd933271d5d373.sql",
+      "bytes": 754
+    },
+    {
+      "id": "14703f70abbc833f",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/event_aggregates_v1/query.sql",
+      "sha256": "95422c9b72b01b3335a6f779d38fd23586efc66c82b9aa717fc735a7edbe7cfb",
+      "group_id": "14703f70abbc833f",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/14703f70abbc833f.sql",
+      "bytes": 3209
+    },
+    {
+      "id": "176b2001457d8811",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/latest_versions/query.sql",
+      "sha256": "7d9cd12af355222aa5845827ed5c595eef538eccfe37230d36e22f2caa614062",
+      "group_id": "176b2001457d8811",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/176b2001457d8811.sql",
+      "bytes": 555
+    },
+    {
+      "id": "17c13bdcb9bb373b",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_per_other_installs_v1/query.sql",
+      "sha256": "1e60bed5d9ffba8d63ff0498b9dc4e2cb15ede08cd569b70cd82d3070e088c25",
+      "group_id": "5051c191d6e7223a",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/17c13bdcb9bb373b.sql",
+      "bytes": 345
+    },
+    {
+      "id": "187e8534b98a3221",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_addresses_sync_v1/query.sql",
+      "sha256": "e416bf7c0418602a7c00edfe437c6cf284fb81f2271f867d628dbe88e5b711d2",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/187e8534b98a3221.sql",
+      "bytes": 4817
+    },
+    {
+      "id": "205f6a22e7c2bc09",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_desktop_compressed_v2/query.sql",
+      "sha256": "aebe413a97b489ce629548fa13c55c80a5f64c4d7170c04b90c01cc616c53f3a",
+      "group_id": "e6854bd4f2950248",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/205f6a22e7c2bc09.sql",
+      "bytes": 1881
+    },
+    {
+      "id": "234940c6f1911a0e",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/ltv_state_values_v1/query.sql",
+      "sha256": "c67c8ef580cb86c656185288a9680b307d7b091f371e52982d5e32a83d3c1ae2",
+      "group_id": "a2100a0fd24ff8b7",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/234940c6f1911a0e.sql",
+      "bytes": 511
+    },
+    {
+      "id": "236dcbbe331131bd",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_dag_tag_v1/query.sql",
+      "sha256": "7daebc68373305618930b6f0688108aae3ee341bc152eab60579c55dbcf0422e",
+      "group_id": "236dcbbe331131bd",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/236dcbbe331131bd.sql",
+      "bytes": 142
+    },
+    {
+      "id": "27bae48f21a7f6cd",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_ga_derived/ga4_events_v1/query.sql",
+      "sha256": "ac28046612e88b0b6adbe3376d1598daf70797ac646973689697d7706f7a4300",
+      "group_id": "27bae48f21a7f6cd",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/27bae48f21a7f6cd.sql",
+      "bytes": 816
+    },
+    {
+      "id": "2982293d2c67ff81",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/feature_usage_metrics_v1/query.sql",
+      "sha256": "cc318939b1df128d8ec7f5f904e00fd25a26febaa5a720376f0b0efd619dbffd",
+      "group_id": "2982293d2c67ff81",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/2982293d2c67ff81.sql",
+      "bytes": 13036
+    },
+    {
+      "id": "2d75e8fccc688841",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/zyte_rss_load_job_monitoring_v1/query.sql",
+      "sha256": "430670b70b4a00834a577a2348ea31e680843ef453eb49ef229bc92a44971647",
+      "group_id": "2d75e8fccc688841",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/2d75e8fccc688841.sql",
+      "bytes": 1482
+    },
+    {
+      "id": "2ebbe8abf0a22c44",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_history_sync_v1/query.sql",
+      "sha256": "8b1ef5a9b3e116845a4677d8f83c336dfddad508a59e0ac1a68d8b914de8527f",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/2ebbe8abf0a22c44.sql",
+      "bytes": 4719
+    },
+    {
+      "id": "308c8956df391cd8",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/public_data_report_hardware_aggregates_v1/query.sql",
+      "sha256": "75322d59018aaccbdc489afd5b7d1f4712eb6adc447c623596989f0f765c3789",
+      "group_id": "308c8956df391cd8",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/308c8956df391cd8.sql",
+      "bytes": 3248
+    },
+    {
+      "id": "310c5f8bbaf843e5",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/newtab_conditional_daily_aggregates_v1/query.sql",
+      "sha256": "a0b41e2c2add66a287d6d585a53b9b2180ce4213ef3e0f4285f752812d6d07fd",
+      "group_id": "310c5f8bbaf843e5",
+      "bucket": "4-16KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/310c5f8bbaf843e5.sql",
+      "bytes": 6476
+    },
+    {
+      "id": "3386641472472fff",
+      "source_path": "sql/moz-fx-data-shared-prod/search_derived/mobile_search_aggregates_for_searchreport_v1/query.sql",
+      "sha256": "6631a653fd1dac66580d97fdf80f0c57a810619f9bb8cec0cc94ac856038e322",
+      "group_id": "3386641472472fff",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/3386641472472fff.sql",
+      "bytes": 1318
+    },
+    {
+      "id": "35275747c755fbad",
+      "source_path": "sql/moz-fx-data-shared-prod/mozilla_vpn_derived/subscriptions_v1/query.sql",
+      "sha256": "63ad4d0c607013a96c1785ed0e2e94ad146910e192747aff2bfc8bd142ba776b",
+      "group_id": "a2100a0fd24ff8b7",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/35275747c755fbad.sql",
+      "bytes": 156
+    },
+    {
+      "id": "36258261c25e0938",
+      "source_path": "sql/moz-fx-data-shared-prod/braze_external/add_ons_devs_users_sync_v1/query.sql",
+      "sha256": "70f22163ece5fdd816897b9105ad14066e22fc035c600abaa9ca351e0c7678fa",
+      "group_id": "36258261c25e0938",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/36258261c25e0938.sql",
+      "bytes": 519
+    },
+    {
+      "id": "38575d6d630a9a7a",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_cpu_core_count_v1/query.sql",
+      "sha256": "1a5922b495d74fa52982faeb22f53d2ce30a79920cdef0e68907976c66b5bdf4",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/38575d6d630a9a7a.sql",
+      "bytes": 490
+    },
+    {
+      "id": "39d7ada08d93d6a7",
+      "source_path": "sql/moz-fx-data-shared-prod/sync_derived/desktop_v1/query.sql",
+      "sha256": "56c6aee52dcfaf89244f9fed551c8ebfdd51f85cc284709850238d59beb51fcf",
+      "group_id": "39d7ada08d93d6a7",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/39d7ada08d93d6a7.sql",
+      "bytes": 2328
+    },
+    {
+      "id": "3ac9718ad9235ced",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/baseline_active_users_aggregates_v2/query.sql",
+      "sha256": "1e7baf18a35a9f13f6a900d09556d930e7b429e75936bde7ae72f434adbb41c1",
+      "group_id": "c7cf49b9e4fee153",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/3ac9718ad9235ced.sql",
+      "bytes": 801
+    },
+    {
+      "id": "3b219aa3565a4c6e",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/ltv_state_values_v2/query.sql",
+      "sha256": "4c922d4115368510aa5c1541f60efa98df94f902d761a25bf29991500ea45d41",
+      "group_id": "a2100a0fd24ff8b7",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/3b219aa3565a4c6e.sql",
+      "bytes": 164
+    },
+    {
+      "id": "3ef26f9159ce653a",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_creditcards_sync_v1/query.sql",
+      "sha256": "54beed4ebb3ed5ace43138e835bc12f56cd5de4f3385e58ff95b4349aec24ebe",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/3ef26f9159ce653a.sql",
+      "bytes": 4851
+    },
+    {
+      "id": "403c14ba02557a8e",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__latest_versions_v1/query.sql",
+      "sha256": "2857eaa6cb0c61d1670837c17c86621aea3545197802d21d62e2452646b85548",
+      "group_id": "63d3fe28509c9717",
+      "bucket": "<1KiB",
+      "execution_status": "upstream_fixture_results_match",
+      "input": "inputs/403c14ba02557a8e.sql",
+      "bytes": 686
+    },
+    {
+      "id": "4076580e3c81bd31",
+      "source_path": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_subscription_history_v1/query.sql",
+      "sha256": "060675741953173b5755744ca85123aa1cd410ec92c5591915aa7c1122751995",
+      "group_id": "4076580e3c81bd31",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/4076580e3c81bd31.sql",
+      "bytes": 722
+    },
+    {
+      "id": "42d2b433dc73d447",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_cert_errors_v1/query.sql",
+      "sha256": "48a4c54c32e0e2bb1da39cf67f001ea2d63c71550793704cc89fed56f7ef187a",
+      "group_id": "42d2b433dc73d447",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/42d2b433dc73d447.sql",
+      "bytes": 397
+    },
+    {
+      "id": "4376465570aea8d7",
+      "source_path": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_page_metrics_v1/query.sql",
+      "sha256": "10a1572399540789afbad576d97034fb7172e4f660db32202cbffe4b7acd0359",
+      "group_id": "17b99f47ab83ba50",
+      "bucket": "4-16KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/4376465570aea8d7.sql",
+      "bytes": 5492
+    },
+    {
+      "id": "439c63be652a56c3",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_country_v1/query.sql",
+      "sha256": "fbabbe6aeb01c964f3a549744501599e12493c575a06f111284bc1ef6dcb0199",
+      "group_id": "8d03191db9ce39bd",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/439c63be652a56c3.sql",
+      "bytes": 478
+    },
+    {
+      "id": "440c02fa007dcf87",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_channel_aggregates_v1/query.sql",
+      "sha256": "e4b40eb012afff38a06775d9b0ba68b48a07b9065d6f21ad5a958a5482e830e1",
+      "group_id": "5051c191d6e7223a",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/440c02fa007dcf87.sql",
+      "bytes": 333
+    },
+    {
+      "id": "4920643f72c97a5d",
+      "source_path": "sql/moz-fx-data-shared-prod/braze_external/braze_sends_combined_v1/query.sql",
+      "sha256": "55ae1aafbe9b6fe5366a514c484827c147a8e65e73b9cd9d5e0b0c3514a9e8e3",
+      "group_id": "4920643f72c97a5d",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass_after_parameter_fix",
+      "input": "inputs/4920643f72c97a5d.sql",
+      "bytes": 1427
+    },
+    {
+      "id": "4dc546a6419db2ee",
+      "source_path": "sql/moz-fx-data-shared-prod/relay_derived/relay_mask_firefox_retention_v1/query.sql",
+      "sha256": "d27549cf6c0c264b2d0aa0907843010ad508cf7f60c18b100fb699e403d574fa",
+      "group_id": "4dc546a6419db2ee",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/4dc546a6419db2ee.sql",
+      "bytes": 2503
+    },
+    {
+      "id": "5256446234901a24",
+      "source_path": "sql/moz-fx-data-shared-prod/stripe_external/invoice_v1/query.sql",
+      "sha256": "0f038916fb124747c342760262aff101ecd5fa0f25ea330d43fc4dac8d4d65c2",
+      "group_id": "00f032becafdded0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/5256446234901a24.sql",
+      "bytes": 953
+    },
+    {
+      "id": "53fef69f5011090a",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_dlsource_v1/query.sql",
+      "sha256": "ef4940731438ad11b7078011378b6d3fdd3c36f4ea4eb35d39638f6ae15e3ef2",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/53fef69f5011090a.sql",
+      "bytes": 517
+    },
+    {
+      "id": "5507eea7f153953f",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_baseline_v1/query.sql",
+      "sha256": "3c3141d7e419cb6360b0888d1686b896982b5d475d5265a5ede560197ab2ef47",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/5507eea7f153953f.sql",
+      "bytes": 5603
+    },
+    {
+      "id": "5dc9412e6a037f58",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_page_reloads_v1/query.sql",
+      "sha256": "e0b9dbc56bcb1733b323a81167f879c819d5614bdb815a6a208e405a1a45848c",
+      "group_id": "5dc9412e6a037f58",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/5dc9412e6a037f58.sql",
+      "bytes": 472
+    },
+    {
+      "id": "5f18e1a246f438fc",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_metrics_derived/kitsune_contributor_answers_base_v1/query.sql",
+      "sha256": "3241633fb302ae1931e5846ac2267a076eb101cf8a016574ed617b79e91a0c0f",
+      "group_id": "5f18e1a246f438fc",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/5f18e1a246f438fc.sql",
+      "bytes": 3371
+    },
+    {
+      "id": "5fb329f872c8ec88",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/devtools_panel_usage_v1/query.sql",
+      "sha256": "71880143c0f88f914bccd2d220df4f8e1424a7074638c7d5405e906f0f2998bc",
+      "group_id": "5fb329f872c8ec88",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/5fb329f872c8ec88.sql",
+      "bytes": 4907
+    },
+    {
+      "id": "60380042e1413417",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop_glam_nightly__latest_versions_v1/query.sql",
+      "sha256": "ff1d0c73105d2c7345342f3355a84d90098453712554627e9fe01b06fa34ac32",
+      "group_id": "63d3fe28509c9717",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/60380042e1413417.sql",
+      "bytes": 682
+    },
+    {
+      "id": "627445900ef113b3",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_browser_v1/query.sql",
+      "sha256": "0033bd647ac3db5d4af7a97d1808f4e9f4549c73d3b99d3bc1c2f2512fd94608",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/627445900ef113b3.sql",
+      "bytes": 491
+    },
+    {
+      "id": "6526de848de2543f",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_dag_run_v1/query.sql",
+      "sha256": "86c1a26ef4766d319299b79133bd00b94fa745d154edd2fb22ca237e6bf3ad92",
+      "group_id": "48f984a2a9d872d0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6526de848de2543f.sql",
+      "bytes": 487
+    },
+    {
+      "id": "663db258007cac91",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_os_ver_v1/query.sql",
+      "sha256": "25bc1e4ce4d7979fad2f69f55218440e449a2a07a3559ba0d5882ef67e46cbfb",
+      "group_id": "8d03191db9ce39bd",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/663db258007cac91.sql",
+      "bytes": 474
+    },
+    {
+      "id": "67f72b730812eb53",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/clients_daily_agg_by_default_browser_lifecycle_stage_v1/query.sql",
+      "sha256": "bd4569ae306775c3b8bb32f59e5c668bf898beaebb27aaec1205065d35cae687",
+      "group_id": "67f72b730812eb53",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/67f72b730812eb53.sql",
+      "bytes": 692
+    },
+    {
+      "id": "697fa3c05ce7aac8",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/baseline_active_users_aggregates_v1/query.sql",
+      "sha256": "03fd69104fd0511a45ff917eebe67c55aa503815dff8dda940779257de89c28d",
+      "group_id": "c7cf49b9e4fee153",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/697fa3c05ce7aac8.sql",
+      "bytes": 756
+    },
+    {
+      "id": "6b88746cbf19d3b0",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/docker_fxa_customs_sanitized_v2/query.sql",
+      "sha256": "82296e06121844183b7702128d4636adcbb7c6bbb074f76fe782efe6ce9853ce",
+      "group_id": "6b88746cbf19d3b0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6b88746cbf19d3b0.sql",
+      "bytes": 759
+    },
+    {
+      "id": "6bb97eb018a87ef3",
+      "source_path": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/glean_gclid_conversions_v1/query.sql",
+      "sha256": "57a3d9e5ad97cde50e0597c21444bfcba5c0b1859723c9ffac59e5c1fae0bd9c",
+      "group_id": "6bb97eb018a87ef3",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6bb97eb018a87ef3.sql",
+      "bytes": 9149
+    },
+    {
+      "id": "6bc79fd18b2ea217",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_first_session_v1/query.sql",
+      "sha256": "dbfac06855d61b774f77d6ae69b8a97dc8143b45cdaca81d9d6b9ada67dfe300",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6bc79fd18b2ea217.sql",
+      "bytes": 3620
+    },
+    {
+      "id": "6d1431fe70ba3402",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/install_vs_uninstall_by_os_v1/query.sql",
+      "sha256": "c1bae4a04e741edbb110fbd684bc93f61c7c7362bb1d65cf2b7e9a49b856574b",
+      "group_id": "6d1431fe70ba3402",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6d1431fe70ba3402.sql",
+      "bytes": 1399
+    },
+    {
+      "id": "6e5cbf08e8c091e1",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_np_by_install_type_v1/query.sql",
+      "sha256": "8d40e0c3c84e5a2aef9e67e0a8117808ddd346655bdde9196eaccf57c6e60161",
+      "group_id": "6e5cbf08e8c091e1",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6e5cbf08e8c091e1.sql",
+      "bytes": 1647
+    },
+    {
+      "id": "6fd07728a9d5ec2e",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_ga_derived/ga3_events_v1/query.sql",
+      "sha256": "7387a8186be168efca38b40802552a690030917943e7fd04c43f4ed5405b9b7d",
+      "group_id": "6fd07728a9d5ec2e",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/6fd07728a9d5ec2e.sql",
+      "bytes": 179
+    },
+    {
+      "id": "7068b9c9af6d5121",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/active_users_rollup_shredder_v1/query.sql",
+      "sha256": "0703e640a6e62201ed0956c8182f8c6217deb5109a0faba7577a139534cfb1d3",
+      "group_id": "7068b9c9af6d5121",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/7068b9c9af6d5121.sql",
+      "bytes": 703
+    },
+    {
+      "id": "70bb9953a97715e7",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_bookmarks_by_os_version_v1/query.sql",
+      "sha256": "65c0da2ee2db8e96f96f3f51edb337cdbbfff410a9bf469d5a2d4c0ab19637be",
+      "group_id": "70bb9953a97715e7",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/70bb9953a97715e7.sql",
+      "bytes": 679
+    },
+    {
+      "id": "7397447aa870c3e9",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/service_subscriptions_v1/query.sql",
+      "sha256": "18a6ece760b914ffad2bf39888b80940cd6743d70a05b3ae911245e9006b1da7",
+      "group_id": "7397447aa870c3e9",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/7397447aa870c3e9.sql",
+      "bytes": 240
+    },
+    {
+      "id": "73b4f0ece74828a5",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_users_services_devices_first_seen_v1/query.sql",
+      "sha256": "526294581d836160e361b7e9edaa7dafdab3d7f5b217b9eecdc047a3649cf35e",
+      "group_id": "73b4f0ece74828a5",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/73b4f0ece74828a5.sql",
+      "bytes": 1303
+    },
+    {
+      "id": "73b5c3493187b097",
+      "source_path": "sql/moz-fx-data-shared-prod/addons_derived/dev_amo_stats_dau_v1/query.sql",
+      "sha256": "89f08d2e117139969cae8bfd680dc7663e2471f9fa0ede98c2c0741551bd0a4a",
+      "group_id": "73b5c3493187b097",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/73b5c3493187b097.sql",
+      "bytes": 785
+    },
+    {
+      "id": "75e6555207bc3b73",
+      "source_path": "sql/moz-fx-data-shared-prod/contextual_services_derived/event_aggregates_suggest_v1/query.sql",
+      "sha256": "816e9770288145c75096551f561050092713aacc8f6398eb750b85d6e3ec8cf2",
+      "group_id": "75e6555207bc3b73",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/75e6555207bc3b73.sql",
+      "bytes": 8552
+    },
+    {
+      "id": "760af230ed903265",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "sha256": "82e1395f0efdac605a5dce952cddf59123ee96ad37ee5bedbb32cb57c7236b28",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/760af230ed903265.sql",
+      "bytes": 15182
+    },
+    {
+      "id": "78f070f89a068b78",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/firefox_installer_aggregates_v1/query.sql",
+      "sha256": "095d2cf8a6175a4add1eced39145a1a50e6765f1a92e898f0129fe624e020e43",
+      "group_id": "78f070f89a068b78",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/78f070f89a068b78.sql",
+      "bytes": 2245
+    },
+    {
+      "id": "7c56886d3e412df8",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_events_v1/query.sql",
+      "sha256": "efc91df29aff4e5ab3efa327a88c98a52c4ad13452411907886a0552fa31c405",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/7c56886d3e412df8.sql",
+      "bytes": 3599
+    },
+    {
+      "id": "7d0b930af21cb3bb",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_deletion_request_v1/query.sql",
+      "sha256": "628b28d7ab76db48efdb67a17bc49dae5d683e342c7e9df27d2edbc4f9534f1e",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/7d0b930af21cb3bb.sql",
+      "bytes": 3629
+    },
+    {
+      "id": "7d22207cf36a171e",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/google_subscriptions_history_v1/query.sql",
+      "sha256": "53090c16a8b515973cb90074defd81c083c0839f355246897351a018d547885f",
+      "group_id": "7d22207cf36a171e",
+      "bucket": "1-4KiB",
+      "execution_status": "upstream_fixture_results_match",
+      "input": "inputs/7d22207cf36a171e.sql",
+      "bytes": 3968
+    },
+    {
+      "id": "7e823ab12b15078e",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/snippets_v2/query.sql",
+      "sha256": "5ed1e704ca07376c5b9495486bc51c6f08fbfec420968a312aca2f8f0011e37a",
+      "group_id": "7e823ab12b15078e",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/7e823ab12b15078e.sql",
+      "bytes": 913
+    },
+    {
+      "id": "8121bf6723ff7002",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fennec_aurora__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "sha256": "410131f74bd49dc97adc91311785e273868285e28304e2bee56d72103c80eaa5",
+      "group_id": "721b7e8dfc641666",
+      "bucket": ">=16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/8121bf6723ff7002.sql",
+      "bytes": 57702
+    },
+    {
+      "id": "822d95eb8f6df102",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/glean_server_knob_experiments_v1/query.sql",
+      "sha256": "e537633d59d4cad7fb587c8ef0fe96209fc3263971dbd35d98030ec588d774ec",
+      "group_id": "822d95eb8f6df102",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/822d95eb8f6df102.sql",
+      "bytes": 522
+    },
+    {
+      "id": "82b6eab463723431",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_nondesktop_compressed_v2/query.sql",
+      "sha256": "ff15d6b4211dfe30498527c327bbdf7bc2df60c352fa12858fc8ad2a91cab00e",
+      "group_id": "e6854bd4f2950248",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/82b6eab463723431.sql",
+      "bytes": 1884
+    },
+    {
+      "id": "8334829c7adac351",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_addon_v1/query.sql",
+      "sha256": "4368abb7056db13b16c2071c44eb4ba30122b2bd87a443853487ad63de25e092",
+      "group_id": "8334829c7adac351",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/8334829c7adac351.sql",
+      "bytes": 380
+    },
+    {
+      "id": "84aaa3b7d6c3201f",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_accounts_linked_clients_ordered_v1/query.sql",
+      "sha256": "dd284378bdf6df835af91b108e6d91948daa401ff7cdc7305671ac756d746425",
+      "group_id": "84aaa3b7d6c3201f",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/84aaa3b7d6c3201f.sql",
+      "bytes": 2215
+    },
+    {
+      "id": "8adea4c9d97bb3c7",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_attr_src_v1/query.sql",
+      "sha256": "d49152454a8d79e6a48fd6e32091637a3252fc2bab4b21e72da5f4172d502995",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/8adea4c9d97bb3c7.sql",
+      "bytes": 513
+    },
+    {
+      "id": "8af8032f3c2c6198",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/shredder_targets_joined_v1/query.sql",
+      "sha256": "ecb58886655b5d10e5763826daba233b87faa1d4c080698c1f1e1e983dd57510",
+      "group_id": "8af8032f3c2c6198",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/8af8032f3c2c6198.sql",
+      "bytes": 2679
+    },
+    {
+      "id": "8b54accb4cfd06bd",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_task_fail_v1/query.sql",
+      "sha256": "2cecb83360d143114cd9638cfbc0cdc412fca1d7737e940444bd7da2e97adccf",
+      "group_id": "48f984a2a9d872d0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/8b54accb4cfd06bd.sql",
+      "bytes": 439
+    },
+    {
+      "id": "8d4ee15365d883e8",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/doh_adoption_rate_v1/query.sql",
+      "sha256": "c0045a990ab839d20cfdc2f5ada4f7606f0b039d3b9411ebbc31ea2b92049f8d",
+      "group_id": "8d4ee15365d883e8",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/8d4ee15365d883e8.sql",
+      "bytes": 7284
+    },
+    {
+      "id": "94b6309908db8c2d",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_ios_derived/new_profile_metrics_marketing_geo_testing_v1/query.sql",
+      "sha256": "eb318c23db0248c08f963c704e17f2956e9052c6b655d1a46d42730bee6f3b15",
+      "group_id": "94b6309908db8c2d",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/94b6309908db8c2d.sql",
+      "bytes": 1957
+    },
+    {
+      "id": "99c85cc2312eeff0",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_activation_v1/query.sql",
+      "sha256": "4b2e6c0ced5b0e369069e8ff2bae0f0d8c00bdfaf7dd3883fd43b6298efefdab",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/99c85cc2312eeff0.sql",
+      "bytes": 3611
+    },
+    {
+      "id": "9b57cd5519a8510f",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "sha256": "06567f4611c874ad5d11303627a96d5e046ea90f3141f824aa9b0b6741f43313",
+      "group_id": "721b7e8dfc641666",
+      "bucket": ">=16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/9b57cd5519a8510f.sql",
+      "bytes": 57686
+    },
+    {
+      "id": "a053cdc8db0246fd",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_events_v1/query.sql",
+      "sha256": "4df117dd03046c494878341712d5b7e9479a3038050e3eb1300615c7704f96ce",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/a053cdc8db0246fd.sql",
+      "bytes": 3595
+    },
+    {
+      "id": "a4050414e664cfbc",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/addon_names_v1/query.sql",
+      "sha256": "10cd9945be54cd3398a2fac27cb1361fb9b483447ad5d5c8c218981bbb45ebe4",
+      "group_id": "a4050414e664cfbc",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/a4050414e664cfbc.sql",
+      "bytes": 577
+    },
+    {
+      "id": "a5b980b361e64c27",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_sync_v1/query.sql",
+      "sha256": "d60a931ef1f96fcf0672384d37b2e9c676f8e77009a4f5c0509f1095d5d08177",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/a5b980b361e64c27.sql",
+      "bytes": 3593
+    },
+    {
+      "id": "aa1662142818cf7b",
+      "source_path": "sql/moz-fx-data-shared-prod/search_terms_derived/adm_daily_aggregates_qa_v1/query.sql",
+      "sha256": "0b6fa507313d2be9a5f05cf5744d0cf0416bb7e7a1e2a30796ae4e39822b43b8",
+      "group_id": "aa1662142818cf7b",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/aa1662142818cf7b.sql",
+      "bytes": 433
+    },
+    {
+      "id": "aab7952265ddda4e",
+      "source_path": "sql/moz-fx-data-marketing-prod/fetch/spend_alignment_by_campaign_v1/query.sql",
+      "sha256": "1df3d068225ea970cd5d341848ce17569ed3b6e7ea2407ce7c538c0af26e1761",
+      "group_id": "aab7952265ddda4e",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/aab7952265ddda4e.sql",
+      "bytes": 659
+    },
+    {
+      "id": "ad61373adbaf8be7",
+      "source_path": "sql/moz-fx-data-shared-prod/glean_telemetry_derived/cohort_daily_churn_v1/query.sql",
+      "sha256": "75568282e6fa463711303a6a3852c2592686f630f69f1174f3caa19efd920b6c",
+      "group_id": "e8d2a75dff6ab99c",
+      "bucket": "4-16KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/ad61373adbaf8be7.sql",
+      "bytes": 5793
+    },
+    {
+      "id": "af7ac3f1e42643bf",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_account_signed_in_status_v1/query.sql",
+      "sha256": "7f0e2622ae648688deb33722c23acf3f46bb8f82e2fd05e0d80082e01f9b108f",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/af7ac3f1e42643bf.sql",
+      "bytes": 502
+    },
+    {
+      "id": "b2de00527e38fe46",
+      "source_path": "sql/moz-fx-data-shared-prod/contextual_services_derived/event_aggregates_check_v1/query.sql",
+      "sha256": "1e2c8a4efc5e3c4cdc38390df0a861d67ec606c04dfa93e33d9e64de1aeaac36",
+      "group_id": "b2de00527e38fe46",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/b2de00527e38fe46.sql",
+      "bytes": 1957
+    },
+    {
+      "id": "b3c90e9f6f53429c",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_baseline_v1/query.sql",
+      "sha256": "2ac86defe4fcbc66ec617246bab41c8298cf653f85093f192ca7c3c0f5137a1e",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/b3c90e9f6f53429c.sql",
+      "bytes": 6950
+    },
+    {
+      "id": "b63f645b831ba48a",
+      "source_path": "sql/moz-fx-data-shared-prod/search_derived/desktop_mobile_search_clients_monthly_v1/query.sql",
+      "sha256": "a9f24b99edaea4043701afe825a2056f53f03527e06667bf63a5aa39261e1114",
+      "group_id": "b63f645b831ba48a",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/b63f645b831ba48a.sql",
+      "bytes": 1853
+    },
+    {
+      "id": "b736cf09d6b46395",
+      "source_path": "sql/moz-fx-data-shared-prod/braze_external/delete_users_sync_v1/query.sql",
+      "sha256": "e978912d1d841c6b1dbc37d81a50fa53b5fefc2638c90a04ae9cf016788e0501",
+      "group_id": "b736cf09d6b46395",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/b736cf09d6b46395.sql",
+      "bytes": 220
+    },
+    {
+      "id": "bb2d3e545c75ce8b",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/metadata_standardization_v1/query.sql",
+      "sha256": "ecd6f02e4c5196bdf60f83a285f75822d291e4a06ac119ef3c73625d9e636b38",
+      "group_id": "bb2d3e545c75ce8b",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/bb2d3e545c75ce8b.sql",
+      "bytes": 2217
+    },
+    {
+      "id": "bcb4bf8448e5b366",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_win_instll_by_instll_typ_v1/query.sql",
+      "sha256": "7e4c6f996a64cd4b6da461bac5e2396b063f288ba6aa252bcc64a976cc388a5c",
+      "group_id": "bcb4bf8448e5b366",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/bcb4bf8448e5b366.sql",
+      "bytes": 324
+    },
+    {
+      "id": "c22c0f285ad46fb9",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_gcp_stdout_events_v1/query.sql",
+      "sha256": "4836731a3701633a7b6e2b733bc52b4cfd2f828cf788eb93b5fcbb048a6a1c46",
+      "group_id": "ee43de0d038cf335",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/c22c0f285ad46fb9.sql",
+      "bytes": 305
+    },
+    {
+      "id": "c5f638a21d9f1fb8",
+      "source_path": "sql/moz-fx-data-shared-prod/search_derived/desktop_search_aggregates_by_userstate_v1/query.sql",
+      "sha256": "07a52d889066adacb5f5f66933629f535dd115be98e369ef27858e33ca1a2cf6",
+      "group_id": "c5f638a21d9f1fb8",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/c5f638a21d9f1fb8.sql",
+      "bytes": 1272
+    },
+    {
+      "id": "c7226a08dc8a8dc0",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/new_profile_metrics_marketing_geo_testing_v1/query.sql",
+      "sha256": "c1a3c29bc586eaa36c1e65e241c3e202ef58407f995fee74fe041e283bebc3f8",
+      "group_id": "c7226a08dc8a8dc0",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/c7226a08dc8a8dc0.sql",
+      "bytes": 1988
+    },
+    {
+      "id": "cb915be888f9e22f",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/desktop_dau_distribution_id_history_v1/query.sql",
+      "sha256": "cd18beabf201e24cde92c10e1d931a39479bf375b49368b8e0e583bc6ee9a124",
+      "group_id": "cb915be888f9e22f",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/cb915be888f9e22f.sql",
+      "bytes": 1488
+    },
+    {
+      "id": "cbd356d56fea1d50",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_nightly__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "sha256": "7941a23f92e64ffb83120d34a14fa7e11636c1dc4af65eb30df5b72b61afef62",
+      "group_id": "721b7e8dfc641666",
+      "bucket": ">=16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/cbd356d56fea1d50.sql",
+      "bytes": 57702
+    },
+    {
+      "id": "ccb2ffbfcd841808",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_startup_timeline_v1/query.sql",
+      "sha256": "b4fc535bc788e8bc509a7f45c32217be89ecd82024ff8605137dbf40c3ac69cb",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/ccb2ffbfcd841808.sql",
+      "bytes": 9481
+    },
+    {
+      "id": "ccbbf78e17318ca0",
+      "source_path": "sql/moz-fx-data-marketing-prod/fetch/spend_alignment_by_month_v1/query.sql",
+      "sha256": "f4f4210759333da6590b53f0a6a171018d87eba21b03fdd0ee26c2ee73e9e443",
+      "group_id": "ccbbf78e17318ca0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/ccbbf78e17318ca0.sql",
+      "bytes": 758
+    },
+    {
+      "id": "d126cf033c12a0f3",
+      "source_path": "sql/moz-fx-data-shared-prod/mozilla_vpn_derived/devices_v1/query.sql",
+      "sha256": "3e6241a3eb3f36289539ac1c615809bfcbaac7d1520cabd2801c8569311a387a",
+      "group_id": "a2100a0fd24ff8b7",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/d126cf033c12a0f3.sql",
+      "bytes": 142
+    },
+    {
+      "id": "d44a18f579597f50",
+      "source_path": "sql/moz-fx-data-shared-prod/plausible_derived/download_metrics_v1/query.sql",
+      "sha256": "0bb9fc87764a09988a0e5cfe25713b076e03df5f29a814f42d1715f67f5aa862",
+      "group_id": "d44a18f579597f50",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/d44a18f579597f50.sql",
+      "bytes": 2150
+    },
+    {
+      "id": "d6390e6dcefaae3c",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_tabs_sync_v1/query.sql",
+      "sha256": "c308b3c11232e836881cdcf048fd091e3fc961003e0c813a061d01a23189ac20",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "4-16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/d6390e6dcefaae3c.sql",
+      "bytes": 4668
+    },
+    {
+      "id": "d7e9110b8225bebb",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_referral_derived/referral_installs_daily_v1/query.sql",
+      "sha256": "75de397a8b70904152ecc172bd2b583d8a6ffd5f3b0f58a3a3c613c8fa161380",
+      "group_id": "d7e9110b8225bebb",
+      "bucket": "1-4KiB",
+      "execution_status": "upstream_fixture_results_match",
+      "input": "inputs/d7e9110b8225bebb.sql",
+      "bytes": 3398
+    },
+    {
+      "id": "d93c2852964a7d28",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_metrics_derived/translation_daily_eng_base_v1/query.sql",
+      "sha256": "c62a7cb39b0651afc03cf37d55c784005761274d30df1b0ec985c2a2d8c3dbd0",
+      "group_id": "d93c2852964a7d28",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/d93c2852964a7d28.sql",
+      "bytes": 953
+    },
+    {
+      "id": "dbe833a39d140afe",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_gcp_stderr_events_v1/query.sql",
+      "sha256": "0d5467d6b8b9f978aba51c6b9dea253fcb5e4fdcfc53fd3726ce82f66bc1dc47",
+      "group_id": "ee43de0d038cf335",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/dbe833a39d140afe.sql",
+      "bytes": 305
+    },
+    {
+      "id": "df51f4d878ecb7b2",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_dflt_srch_v1/query.sql",
+      "sha256": "ea627f2035765a5798ad0b53bbaff18af87c52dd257890ae4380a0f4eb1a1e9d",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/df51f4d878ecb7b2.sql",
+      "bytes": 520
+    },
+    {
+      "id": "e349488ec346429c",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_os_install_yr_v1/query.sql",
+      "sha256": "2c3baf8eb3e9e3751b3fe53893b63a9e19489168321e37e2f01f2421649dd6eb",
+      "group_id": "eeab39ec978cb13d",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/e349488ec346429c.sql",
+      "bytes": 500
+    },
+    {
+      "id": "e7fb24c3fbef743c",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/cohort_daily_churn_v1/query.sql",
+      "sha256": "621b694142bb343806a81c78f9c7c4f0136e277dcb2c19c3d0e130bcaa6dd5c0",
+      "group_id": "e8d2a75dff6ab99c",
+      "bucket": "4-16KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/e7fb24c3fbef743c.sql",
+      "bytes": 5781
+    },
+    {
+      "id": "ea9f08f7258ab1e7",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_fxa_compressed_v2/query.sql",
+      "sha256": "fe44d4ecc8d1fda1f4592e873a037ae18f42793618004800b9081e5a69dcd151",
+      "group_id": "e6854bd4f2950248",
+      "bucket": "1-4KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/ea9f08f7258ab1e7.sql",
+      "bytes": 1876
+    },
+    {
+      "id": "ed508bcdfc057bca",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_migration_v1/query.sql",
+      "sha256": "a58e6a7c8ecafdb8c3286c346cf08d15262140bcc9de57f13e9462d06fc8b24e",
+      "group_id": "721b7e8dfc641666",
+      "bucket": ">=16KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/ed508bcdfc057bca.sql",
+      "bytes": 52539
+    },
+    {
+      "id": "f1870bc71aa666cb",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/recent_service_subscription_events_v1/query.sql",
+      "sha256": "685f301757511520c16cd210f331ffbb6e62f21c96df37ae5de3442ac1f39d21",
+      "group_id": "9aa9593bf331c796",
+      "bucket": "<1KiB",
+      "execution_status": "empty_table_execution_pass",
+      "input": "inputs/f1870bc71aa666cb.sql",
+      "bytes": 641
+    },
+    {
+      "id": "f313b746fb1d1a81",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_fog_validation_v1/query.sql",
+      "sha256": "6f3bdecf08f29c5092b8300b64bcdcb07824df2a5773d7ac9c0f825355dc9cbd",
+      "group_id": "721b7e8dfc641666",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/f313b746fb1d1a81.sql",
+      "bytes": 4001
+    },
+    {
+      "id": "f728142e9835af13",
+      "source_path": "sql/moz-fx-data-shared-prod/search_terms_derived/merino_queries_daily_v1/query.sql",
+      "sha256": "cc2d7336128f9d84e851189be6369a8031cc85d090070b640646725f446482b4",
+      "group_id": "f728142e9835af13",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/f728142e9835af13.sql",
+      "bytes": 405
+    },
+    {
+      "id": "f94c041f55ecec0b",
+      "source_path": "sql/moz-fx-data-shared-prod/glean_auto_events_derived/daily_auto_events_metadata_v1/query.sql",
+      "sha256": "10f620c8c52a018c3863281225208dc5a75654a6a3161c072e7a3c17c8f3870d",
+      "group_id": "f94c041f55ecec0b",
+      "bucket": "1-4KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/f94c041f55ecec0b.sql",
+      "bytes": 3134
+    },
+    {
+      "id": "fd623fec1b3de4b0",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_day_v1/query.sql",
+      "sha256": "08502437dba67d1f9da33e6622105681edd752d50a1dc2c487d65c4692c413d0",
+      "group_id": "fd623fec1b3de4b0",
+      "bucket": "<1KiB",
+      "execution_status": "not_executed_missing_schema",
+      "input": "inputs/fd623fec1b3de4b0.sql",
+      "bytes": 288
+    }
+  ]
+}

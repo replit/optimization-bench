@@ -1,0 +1,27 @@
+{
+  "build_sha256": "4f1150a0e15d02a0a94005f7157a0706e7c88131f36be44f2325ffbd73082b60",
+  "claimable": false,
+  "compiler_cache_seed": null,
+  "cpuset": "0-7",
+  "executor": "shared DockerExecutor; source admission, not a timing sample",
+  "image": "sha256:fa9392b44967617e4225147639682c9418609a135936dc7164b6d02822d8cb16",
+  "source_sha256": "4ecda01aa4a6c4c707aca4b54b4c8beb88d2058a9e9b63ed94f93092c08cf238",
+  "steps": [
+    {
+      "exit_code": 0,
+      "leftovers": [],
+      "telemetry": {
+        "cpu.stat": "usage_usec 112764095\nuser_usec 107851391\nsystem_usec 4912703\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+        "execution_protocol": "process",
+        "exit_observation": {
+          "fallback_reason": null,
+          "method": "pidfd-poll"
+        },
+        "leftover_count": 0,
+        "memory.peak": "1431212032\n",
+        "operation_cpu_time_usec": 112645776
+      }
+    }
+  ],
+  "task": "sqlite-distinct-plant-facets"
+}

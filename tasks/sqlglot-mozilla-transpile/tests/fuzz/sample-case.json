@@ -1,0 +1,25 @@
+{
+  "contract_id": "sqlglot-behavior-preservation-v1",
+  "faults": [],
+  "generator": "sqlglot-public-grammar-v1",
+  "input": {
+    "origin": "public-sql",
+    "sql": "SELECT 1 AS a"
+  },
+  "options": {
+    "comments": false,
+    "error_level": "RAISE",
+    "identify": false,
+    "normalize": false,
+    "pretty": false,
+    "read": "bigquery",
+    "unsupported_level": "RAISE",
+    "write": "duckdb"
+  },
+  "precondition_id": "public-sql-or-parser-produced-tree-v1",
+  "sequence": [
+    "invoke"
+  ],
+  "surface_id": "sqlglot.transpile",
+  "task": "sqlglot-mozilla-transpile"
+}

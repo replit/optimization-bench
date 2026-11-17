@@ -1,0 +1,34 @@
+SELECT
+  creation_time AS submission_timestamp,
+  destination_table.table_id AS destination_table,
+  REPLACE(
+    COALESCE(
+      -- extract slug from metrics table format (`{slug}_{basis}_[{data_source}_]{period}_{index}`)
+      REGEXP_EXTRACT(
+        destination_table.table_id,
+        r'^(.+?)_(?:enrollments|exposures)_.*_?(?:days28|day|week|overall|preenrollment_(?:week|days28))_\d+$'
+      ),
+      -- if no match for above, try statistics table format (`statistics_{slug}_{period}_{index}`)
+      REGEXP_EXTRACT(
+        destination_table.table_id,
+        r'^statistics_(.+)_(?:days28|day|week|overall|preenrollment_(?:week|days28))_\d+$'
+      ),
+      -- last try: enrollments table is `enrollments_{slug}`
+      REGEXP_EXTRACT(destination_table.table_id, r'^enrollments_(.+)$')
+    ),
+    '_',
+    '-'
+  ) AS experiment_slug,
+  query,
+  TIMESTAMP_DIFF(end_time, start_time, MINUTE) AS duration_minutes,
+  error_result.reason AS error_reason,
+  error_result.message AS error_message,
+  total_bytes_processed,
+  total_slot_ms,
+  total_slot_ms / 1000 / 60 / 60 * 0.06 AS cost_usd
+FROM
+  `moz-fx-data-experiments.region-us.INFORMATION_SCHEMA.JOBS_BY_PROJECT`
+WHERE
+  DATE(creation_time) = @submission_date
+  AND destination_table.dataset_id = "mozanalysis"
+  AND total_slot_ms > 3600 -- only costs > 0.001 USD

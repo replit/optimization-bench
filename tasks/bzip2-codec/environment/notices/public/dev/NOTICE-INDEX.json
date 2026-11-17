@@ -1,0 +1,87 @@
+{
+  "documents/govinfo/FR-2024-01-02.xml": [
+    "notices/govinfo-policies.html"
+  ],
+  "tables/noaa/StormEvents_locations-ftp_v1.0_d2023_c20260707.csv": [],
+  "json/canada/search-climate.json": [
+    "notices/canada-licence.html"
+  ],
+  "json/canada/record-09ffaeb5-ec8f-5bb5-bdcb-3436ccf26f58.json": [
+    "notices/canada-licence.html"
+  ],
+  "json/canada/record-d3db9de0-25fa-5716-ad6c-e9c1749bb9de.json": [
+    "notices/canada-licence.html"
+  ],
+  "json/canada/record-51dbf91e-509c-437b-ab9e-eca6d0bf6fa8.json": [
+    "notices/canada-licence.html"
+  ],
+  "source/kythe/kythe/java/com/google/devtools/kythe/platform/shared/StatisticsCollector.java": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/go/util/flagutil/flagutil.go": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/cxx/indexer/cxx/IndexerASTHooks.cc": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/proto/generated_message_info.proto": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/cxx/extractor/bazel_event_reader.h": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/cxx/indexer/cxx/GraphObserver.h": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/data/vnames.go.json": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/tools/build_rules/testing.bzl": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/external.bzl": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/extractors/bazel/README.md": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/kythe/docs/kythe-kzip.txt": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "source/kythe/RELEASES.md": [
+    "notices/AUTHORS",
+    "notices/LICENSE"
+  ],
+  "web/uplot/dist/uPlot.iife.js": [
+    "notices/8f989229699b-LICENSE"
+  ],
+  "web/uplot/dist/uPlot.iife.min.js": [
+    "notices/8f989229699b-LICENSE"
+  ],
+  "web/uplot/dist/uPlot.min.css": [
+    "notices/8f989229699b-LICENSE"
+  ],
+  "measurements/bidmc/bidmc01.dat": [
+    "notices/76576a17b505-LICENSE",
+    "notices/README"
+  ],
+  "measurements/bidmc/bidmc_csv/bidmc_01_Signals.csv": [
+    "notices/76576a17b505-LICENSE",
+    "notices/README"
+  ],
+  "measurements/bidmc/bidmc08.dat": [
+    "notices/76576a17b505-LICENSE",
+    "notices/README"
+  ]
+}

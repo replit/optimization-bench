@@ -1,0 +1,279 @@
+{
+  "cases": [
+    {
+      "files_sha256": {
+        "files/9f3d7572b5a95c475e6553c27465d76cbec891f7448bff9fbc07df4b11367911": "9f3d7572b5a95c475e6553c27465d76cbec891f7448bff9fbc07df4b11367911"
+      },
+      "id": "curl-01"
+    },
+    {
+      "files_sha256": {
+        "files/022dbb96c9671688d49ec0ec2bfa19000e91e82b1769b0d3b1027484209ad39c": "022dbb96c9671688d49ec0ec2bfa19000e91e82b1769b0d3b1027484209ad39c"
+      },
+      "id": "curl-02"
+    },
+    {
+      "files_sha256": {
+        "files/b7576d891bc58e4556164634ba3fd9ec9063c261eb74eaf28fc050c25a2e14be": "b7576d891bc58e4556164634ba3fd9ec9063c261eb74eaf28fc050c25a2e14be"
+      },
+      "id": "curl-03"
+    },
+    {
+      "files_sha256": {
+        "files/c9bf1d9dc90bd504ab28a9d2da86354660dc470cabe337f0e22e2add1fe0ce6a": "c9bf1d9dc90bd504ab28a9d2da86354660dc470cabe337f0e22e2add1fe0ce6a"
+      },
+      "id": "curl-04"
+    },
+    {
+      "files_sha256": {
+        "files/9e6fdc5b034d3fccc5a9f0a05e880bfd6f6a9b3ee4b014d999cf9bf305ce12bf": "9e6fdc5b034d3fccc5a9f0a05e880bfd6f6a9b3ee4b014d999cf9bf305ce12bf"
+      },
+      "id": "curl-05"
+    },
+    {
+      "files_sha256": {
+        "files/43d6fb116a281686a0beaaaabfcc931fe2189b0b99bdf06b803ac04581248931": "43d6fb116a281686a0beaaaabfcc931fe2189b0b99bdf06b803ac04581248931"
+      },
+      "id": "curl-06"
+    },
+    {
+      "files_sha256": {
+        "files/9eb94731d89c55a27ef9ead98de7d003cb2f261f14fd898c1bcef46c1607f619": "9eb94731d89c55a27ef9ead98de7d003cb2f261f14fd898c1bcef46c1607f619"
+      },
+      "id": "libuv-01"
+    },
+    {
+      "files_sha256": {
+        "files/d5ce447af0526cc38e79bd5a8e59f9a30de29a83d3afce69bdfa9d2d9769eaff": "d5ce447af0526cc38e79bd5a8e59f9a30de29a83d3afce69bdfa9d2d9769eaff"
+      },
+      "id": "libuv-02"
+    },
+    {
+      "files_sha256": {
+        "files/7cdf11dfcf174c968777ae6235215fe0f54bb22fdf2a2b0dd8d0757c1373b63e": "7cdf11dfcf174c968777ae6235215fe0f54bb22fdf2a2b0dd8d0757c1373b63e"
+      },
+      "id": "libuv-03"
+    },
+    {
+      "files_sha256": {
+        "files/f3b81608598cc610e0148ee9229c3e2a5de1c1182788ca7fbdfdfc2dc23598c3": "f3b81608598cc610e0148ee9229c3e2a5de1c1182788ca7fbdfdfc2dc23598c3"
+      },
+      "id": "libuv-04"
+    },
+    {
+      "files_sha256": {
+        "files/2ca5f6afffe58219015770f5e1dd442f598a3c3cb0b87295984222cc71232836": "2ca5f6afffe58219015770f5e1dd442f598a3c3cb0b87295984222cc71232836"
+      },
+      "id": "pcre2-01"
+    },
+    {
+      "files_sha256": {
+        "files/ef3772478135f9fa33bead8ce9d3d7ca9ba5935f8765b31008c27ad8e89bcc5c": "ef3772478135f9fa33bead8ce9d3d7ca9ba5935f8765b31008c27ad8e89bcc5c"
+      },
+      "id": "pcre2-02"
+    },
+    {
+      "files_sha256": {
+        "files/819e49f77f1fa14442ad2c2310050185e69dce67913da37fe789c90a6d6b4a75": "819e49f77f1fa14442ad2c2310050185e69dce67913da37fe789c90a6d6b4a75"
+      },
+      "id": "pcre2-03"
+    },
+    {
+      "files_sha256": {
+        "files/fc5bd1cab08a382fb036b34cae09a62ba7633335503c93ac743512a5465c4e02": "fc5bd1cab08a382fb036b34cae09a62ba7633335503c93ac743512a5465c4e02"
+      },
+      "id": "pcre2-04"
+    },
+    {
+      "files_sha256": {
+        "files/0f3153c269b40924c6f47cea61bd249cf7c3b8c643e97fb7e1f7d0f0680fe1ea": "0f3153c269b40924c6f47cea61bd249cf7c3b8c643e97fb7e1f7d0f0680fe1ea"
+      },
+      "id": "pcre2-05"
+    },
+    {
+      "files_sha256": {
+        "files/c90e751dd2ae240f77113a01b6600ecd129ea8bd064736c4d156973a81fef8cd": "c90e751dd2ae240f77113a01b6600ecd129ea8bd064736c4d156973a81fef8cd"
+      },
+      "id": "pcre2-06"
+    },
+    {
+      "files_sha256": {
+        "files/cb3df7a1a5e32868de98b9f0149e57e82085767048c64214cf4db3e2b55bdbaa": "cb3df7a1a5e32868de98b9f0149e57e82085767048c64214cf4db3e2b55bdbaa"
+      },
+      "id": "libgit2-01"
+    },
+    {
+      "files_sha256": {
+        "files/67c3266dc4d8e15454dd05fd704d603e07837240244d9c2c42297a5288200ac1": "67c3266dc4d8e15454dd05fd704d603e07837240244d9c2c42297a5288200ac1"
+      },
+      "id": "libgit2-02"
+    },
+    {
+      "files_sha256": {
+        "files/cd98df905574232de24c3b600607c8326e09854f11a7b81dbb5bb4d6d4cf8790": "cd98df905574232de24c3b600607c8326e09854f11a7b81dbb5bb4d6d4cf8790"
+      },
+      "id": "libgit2-03"
+    },
+    {
+      "files_sha256": {
+        "files/b1454443f9a0bd8bd1c7ead537445651dec5a05e49e82f12e8eaa41e3335e090": "b1454443f9a0bd8bd1c7ead537445651dec5a05e49e82f12e8eaa41e3335e090"
+      },
+      "id": "libgit2-04"
+    },
+    {
+      "files_sha256": {
+        "files/d2b2c1548bb407442ccddc636820e7f7771dbb45b9d6bb2118d9abe93e6d6dc5": "d2b2c1548bb407442ccddc636820e7f7771dbb45b9d6bb2118d9abe93e6d6dc5"
+      },
+      "id": "libgit2-05"
+    },
+    {
+      "files_sha256": {
+        "files/a8807d316985e9806cc6029e1d0838667da37ff937e60a318d51104ecd2c636d": "a8807d316985e9806cc6029e1d0838667da37ff937e60a318d51104ecd2c636d"
+      },
+      "id": "libgit2-06"
+    },
+    {
+      "files_sha256": {
+        "files/06a76fb970c06be85a3fa61724ae51dff43ae290d02f0e7118acc8179327c4f1": "06a76fb970c06be85a3fa61724ae51dff43ae290d02f0e7118acc8179327c4f1"
+      },
+      "id": "libarchive-01"
+    },
+    {
+      "files_sha256": {
+        "files/e165b2a6b56317aed9b06070813caa444ad6eeca370f4f6aaf51f85edac5886e": "e165b2a6b56317aed9b06070813caa444ad6eeca370f4f6aaf51f85edac5886e"
+      },
+      "id": "libarchive-02"
+    },
+    {
+      "files_sha256": {
+        "files/4656a7ecaa0b7bf554dbfa46e7fdedcef4710ffe4f6c29f367ac8eb6c88f9b96": "4656a7ecaa0b7bf554dbfa46e7fdedcef4710ffe4f6c29f367ac8eb6c88f9b96"
+      },
+      "id": "libarchive-03"
+    },
+    {
+      "files_sha256": {
+        "files/3456c0e2d79c3a7fb2b611ca28617b11a146e4ae57d40523f6767fc52412c2e3": "3456c0e2d79c3a7fb2b611ca28617b11a146e4ae57d40523f6767fc52412c2e3"
+      },
+      "id": "libarchive-04"
+    },
+    {
+      "files_sha256": {
+        "files/0a21cc37ef7ae0f83bbffdac1b08414380787ddf1cddae7b8539985e4b28e3ab": "0a21cc37ef7ae0f83bbffdac1b08414380787ddf1cddae7b8539985e4b28e3ab"
+      },
+      "id": "libarchive-05"
+    },
+    {
+      "files_sha256": {
+        "files/1a48e05c8a34e50eb59d37c7f1c66c45e74a7ee42795d8db20bbf1c47c52710f": "1a48e05c8a34e50eb59d37c7f1c66c45e74a7ee42795d8db20bbf1c47c52710f"
+      },
+      "id": "libarchive-06"
+    },
+    {
+      "files_sha256": {
+        "files/87fcd3bea133d278930ef03e4549802b568184fa8202680babf20b1e2a3f24db": "87fcd3bea133d278930ef03e4549802b568184fa8202680babf20b1e2a3f24db"
+      },
+      "id": "sdl-01"
+    },
+    {
+      "files_sha256": {
+        "files/bdc7204a6bf4c6ca25e79d686cecd8773cafc1d8afcafdfeb9bad72b05dd5dfa": "bdc7204a6bf4c6ca25e79d686cecd8773cafc1d8afcafdfeb9bad72b05dd5dfa"
+      },
+      "id": "sdl-02"
+    },
+    {
+      "files_sha256": {
+        "files/68a77ba5c1e78da16baa849cdeff12e72cedef9ae019bc8a6afd627dcfd4292c": "68a77ba5c1e78da16baa849cdeff12e72cedef9ae019bc8a6afd627dcfd4292c"
+      },
+      "id": "sdl-03"
+    },
+    {
+      "files_sha256": {
+        "files/38722c10282b9c61f27b7041872b94639c3deba37b05f5bc83ba5ad0ef3ad28c": "38722c10282b9c61f27b7041872b94639c3deba37b05f5bc83ba5ad0ef3ad28c"
+      },
+      "id": "sdl-04"
+    },
+    {
+      "files_sha256": {
+        "files/673b9763297521596b7705e5f713d67fe92c3d35a7185cc171cd6ed11f61e4e2": "673b9763297521596b7705e5f713d67fe92c3d35a7185cc171cd6ed11f61e4e2"
+      },
+      "id": "sdl-05"
+    },
+    {
+      "files_sha256": {
+        "files/315c04638d76f2c6f2bdc7f4c2e8dbb55ecb2b3203ca71467cfc99cdb03a3bfc": "315c04638d76f2c6f2bdc7f4c2e8dbb55ecb2b3203ca71467cfc99cdb03a3bfc"
+      },
+      "id": "sdl-06"
+    },
+    {
+      "files_sha256": {
+        "files/260144572830b58ca6c3a382d399fcb2a42413bf9347a6e09b63344d9b83c126": "260144572830b58ca6c3a382d399fcb2a42413bf9347a6e09b63344d9b83c126"
+      },
+      "id": "harfbuzz-01"
+    },
+    {
+      "files_sha256": {
+        "files/3c4e62bc11c6ad2726b0898dc6c74437c1ad2327ffec561b2b09d24ffc204004": "3c4e62bc11c6ad2726b0898dc6c74437c1ad2327ffec561b2b09d24ffc204004"
+      },
+      "id": "harfbuzz-02"
+    },
+    {
+      "files_sha256": {
+        "files/7380558b7b7ed8b89eecb70ae959dfb12ab3cc9984d7bde9a97639f98a3bab14": "7380558b7b7ed8b89eecb70ae959dfb12ab3cc9984d7bde9a97639f98a3bab14"
+      },
+      "id": "harfbuzz-03"
+    },
+    {
+      "files_sha256": {
+        "files/b40945880dc8c4f6ec88daa0b7b7d66682236f4d841feb932b8b816325347c9e": "b40945880dc8c4f6ec88daa0b7b7d66682236f4d841feb932b8b816325347c9e"
+      },
+      "id": "harfbuzz-04"
+    },
+    {
+      "files_sha256": {
+        "files/e333078d9ac454f2066d00a825b2bb05cbb0a4f3cec3f6c1ff9c9e2cd019735f": "e333078d9ac454f2066d00a825b2bb05cbb0a4f3cec3f6c1ff9c9e2cd019735f"
+      },
+      "id": "harfbuzz-05"
+    },
+    {
+      "files_sha256": {
+        "files/c480280203275b5fb2f2fd5df56409eaa886a6011cf6208320ec75bd8ee66a2d": "c480280203275b5fb2f2fd5df56409eaa886a6011cf6208320ec75bd8ee66a2d"
+      },
+      "id": "libpng-01"
+    },
+    {
+      "files_sha256": {
+        "files/66201f4505d8d1df0068677372d89a659e50e4055d470ccbe8549e98df411005": "66201f4505d8d1df0068677372d89a659e50e4055d470ccbe8549e98df411005"
+      },
+      "id": "libpng-02"
+    },
+    {
+      "files_sha256": {
+        "files/e6a9b419848ea4ecdd14f4b345092dfc87379674844a70218f613640bdd97639": "e6a9b419848ea4ecdd14f4b345092dfc87379674844a70218f613640bdd97639"
+      },
+      "id": "libpng-03"
+    },
+    {
+      "files_sha256": {
+        "files/77ef0244d56389a223e336b43b84ebd2568c33f294fe8738add4ffc5f28edf41": "77ef0244d56389a223e336b43b84ebd2568c33f294fe8738add4ffc5f28edf41"
+      },
+      "id": "libpng-04"
+    },
+    {
+      "files_sha256": {
+        "files/0b9d36f3f39199d842f973f90e47e4c3bd47a3563cde68a3bf659c350df5b6b1": "0b9d36f3f39199d842f973f90e47e4c3bd47a3563cde68a3bf659c350df5b6b1"
+      },
+      "id": "libpng-05"
+    },
+    {
+      "files_sha256": {
+        "files/31a9193892fc9e6ad12a5bae580d4f4652ec2e936a8bb3d87ff5cdc1ad938b71": "31a9193892fc9e6ad12a5bae580d4f4652ec2e936a8bb3d87ff5cdc1ad938b71"
+      },
+      "id": "libpng-06"
+    }
+  ],
+  "lineage": "Original public layout lock retained with historical migration evidence; this lock authenticates the migrated public layout.",
+  "schema_version": 1,
+  "task": "xz-lzma2-compress",
+  "visibility": "public",
+  "workload_manifest_sha256": "474ca6d2ee2663c264f63b819ef338126459361f376d0e53779a4c2053757ea8"
+}

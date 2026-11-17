@@ -1,0 +1,131 @@
+{
+ "schema": "optimbench-header-matrix-v1",
+ "scope": "task:bzip2-codec",
+ "required_cells": [
+  "bzlib-h-c-compiler-default",
+  "bzlib-h-cxx-compiler-default"
+ ],
+ "cells": [
+  {
+   "id": "bzlib-h-c-compiler-default",
+   "supported": true,
+   "headers": [
+    "source/bzlib.h"
+   ],
+   "language": "c",
+   "dialect": "compiler-default",
+   "support_basis": "pinned-upstream-default-flags",
+   "features": [],
+   "support_refs": [
+    {
+     "path": "source/Makefile",
+     "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+     "sha256": "7e7cf0f050748c29caa9cb6abd30639d46d3b9c7880562f2834f9b908ac97f80",
+     "quote": "CC=gcc\n...\nBIGFILES=-D_FILE_OFFSET_BITS=64\nCFLAGS=-Wall -Winline -O2 -g $(BIGFILES)"
+    },
+    {
+     "path": "source/bzlib.h",
+     "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+     "sha256": "6ac62e811669598ee30c9e1c379b9e627f6ff17a5a3dc1e0b4fa8b8ea75e580d",
+     "quote": "BZ_EXTERN int BZ_API(BZ2_bzBuffToBuffCompress) ( \n...\nBZ_EXTERN const char * BZ_API(BZ2_bzlibVersion) ("
+    }
+   ],
+   "include_context": {
+    "id": "bzlib-h",
+    "includes": [
+     "bzlib.h"
+    ]
+   },
+   "compiler": "gcc",
+   "include_dirs": [
+    "source"
+   ],
+   "libraries": [
+    "source/libbz2.a"
+   ],
+   "defines": [
+    "_FILE_OFFSET_BITS=64"
+   ],
+   "compile_flags": [],
+   "link_flags": [],
+   "symbol_refs": [
+    "BZ2_bzlibVersion",
+    "BZ2_bzBuffToBuffCompress",
+    "BZ2_bzBuffToBuffDecompress",
+    "BZ2_bzCompressInit",
+    "BZ2_bzCompressEnd"
+   ],
+   "translation_units": [
+    {
+     "name": "first.c",
+     "source": "#include <stdio.h>\n#include <string.h>\n#include \"bzlib.h\"\nint consumer_roundtrip(void) {\n  char src[] = \"header consumer roundtrip payload\";\n  char packed[512], plain[64];\n  unsigned int packed_len = sizeof packed, plain_len = sizeof plain;\n  if (BZ2_bzBuffToBuffCompress(packed, &packed_len, src, (unsigned int)sizeof src, 9, 0, 30) != BZ_OK) return 0;\n  if (BZ2_bzBuffToBuffDecompress(plain, &plain_len, packed, packed_len, 0, 0) != BZ_OK) return 0;\n  return plain_len == sizeof src && memcmp(plain, src, sizeof src) == 0;\n}\n"
+    },
+    {
+     "name": "main.c",
+     "source": "#include <stdio.h>\n#include <string.h>\n#include \"bzlib.h\"\nint consumer_roundtrip(void);\nint main(void) {\n  bz_stream s;\n  memset(&s, 0, sizeof s);\n  if (BZ2_bzCompressInit(&s, 10, 0, 0) != BZ_PARAM_ERROR) return 1;\n  if (BZ2_bzCompressInit(&s, 1, 0, 0) != BZ_OK) return 1;\n  if (BZ2_bzCompressEnd(&s) != BZ_OK) return 1;\n  return consumer_roundtrip() && strncmp(BZ2_bzlibVersion(), \"1.0.8\", 5) == 0 ? 0 : 1;\n}\n"
+    }
+   ]
+  },
+  {
+   "id": "bzlib-h-cxx-compiler-default",
+   "headers": [
+    "source/bzlib.h"
+   ],
+   "language": "c++",
+   "support_refs": [
+    {
+     "path": "source/bzlib.h",
+     "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+     "sha256": "6ac62e811669598ee30c9e1c379b9e627f6ff17a5a3dc1e0b4fa8b8ea75e580d",
+     "quote": "#ifdef __cplusplus\nextern \"C\" {\n#endif\n...\n#ifdef __cplusplus\n}\n#endif"
+    },
+    {
+     "path": "source/Makefile",
+     "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+     "sha256": "7e7cf0f050748c29caa9cb6abd30639d46d3b9c7880562f2834f9b908ac97f80",
+     "quote": "CC=gcc\n...\nBIGFILES=-D_FILE_OFFSET_BITS=64\nCFLAGS=-Wall -Winline -O2 -g $(BIGFILES)"
+    }
+   ],
+   "supported": true,
+   "dialect": "compiler-default",
+   "support_basis": "pinned-upstream-default-flags",
+   "features": [],
+   "cxx_scope": "advertised-by-public-extern-C-guard",
+   "include_context": {
+    "id": "bzlib-h-cxx",
+    "includes": [
+     "bzlib.h"
+    ]
+   },
+   "compiler": "g++",
+   "include_dirs": [
+    "source"
+   ],
+   "libraries": [
+    "source/libbz2.a"
+   ],
+   "defines": [
+    "_FILE_OFFSET_BITS=64"
+   ],
+   "compile_flags": [],
+   "link_flags": [],
+   "symbol_refs": [
+    "BZ2_bzlibVersion",
+    "BZ2_bzBuffToBuffCompress",
+    "BZ2_bzBuffToBuffDecompress",
+    "BZ2_bzCompressInit",
+    "BZ2_bzCompressEnd"
+   ],
+   "translation_units": [
+    {
+     "name": "first.cpp",
+     "source": "#include <cstdio>\n#include <cstring>\n#include \"bzlib.h\"\nbool consumer_cpp_roundtrip() {\n  char src[] = \"C++ header consumer roundtrip payload\";\n  char packed[512], plain[64];\n  unsigned int packed_len = sizeof packed, plain_len = sizeof plain;\n  if (BZ2_bzBuffToBuffCompress(packed, &packed_len, src, (unsigned int)sizeof src, 9, 0, 30) != BZ_OK) return false;\n  if (BZ2_bzBuffToBuffDecompress(plain, &plain_len, packed, packed_len, 0, 0) != BZ_OK) return false;\n  return plain_len == sizeof src && std::memcmp(plain, src, sizeof src) == 0;\n}\n"
+    },
+    {
+     "name": "main.cpp",
+     "source": "#include <cstdio>\n#include <cstring>\n#include \"bzlib.h\"\nbool consumer_cpp_roundtrip();\nint main() {\n  bz_stream s = {};\n  if (BZ2_bzCompressInit(&s, 10, 0, 0) != BZ_PARAM_ERROR) return 1;\n  if (BZ2_bzCompressInit(&s, 1, 0, 0) != BZ_OK) return 1;\n  if (BZ2_bzCompressEnd(&s) != BZ_OK) return 1;\n  return consumer_cpp_roundtrip() && std::strncmp(BZ2_bzlibVersion(), \"1.0.8\", 5) == 0 ? 0 : 1;\n}\n"
+    }
+   ]
+  }
+ ]
+}

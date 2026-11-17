@@ -1,0 +1,13 @@
+{
+  "args": [
+    "--quiet",
+    "--line-length",
+    "79",
+    "."
+  ],
+  "format": "black-case-v1",
+  "id": "django-reformat",
+  "inventory_sha256": "db2c73a23e09d5401f821edf065c52154a1c9e5d34eaefb8a637e7fe29963805",
+  "project": "django",
+  "timeout": 1200
+}

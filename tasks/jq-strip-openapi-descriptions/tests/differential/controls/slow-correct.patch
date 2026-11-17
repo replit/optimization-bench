@@ -1,0 +1,11 @@
+diff --git a/src/main.c b/src/main.c
+index abe4e95..cdafcf3 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -175,4 +175,6 @@ enum {
+ static int process(jq_state *jq, jv value, int flags, int dumpopts, int options) {
++  /* Throwaway timing control: preserve every result and add a known delay. */
++  usleep(250000);
+   int ret = JQ_OK_NO_OUTPUT; // No valid results && -e -> exit(4)
+   jq_start(jq, value, flags);
+   jv result;

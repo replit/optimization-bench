@@ -1,0 +1,17 @@
+{
+  "upstream_repository": "https://github.com/serde-rs/json",
+  "upstream_commit": "20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8",
+  "upstream": {
+    "url": "https://codeload.github.com/serde-rs/json/tar.gz/20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8",
+    "commit": "20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8",
+    "sha256": "d638770aea490d6b9b94b67fa14c3533778431a8715792b2fac80e7ca405d721",
+    "bytes": 156556
+  },
+  "base_image": "rust:1.93.1-bookworm@sha256:7c4ae649a84014c467d79319bbf17ce2632ae8b8be123ac2fb2ea5be46823f31",
+  "toolchain": "rustc1.93.1; Release opt-level3/defaultCPU/defaultallocator",
+  "baseline_git_tree": "5986ca6d571db1f4f733b78aa9428a4f8f86b73a",
+  "baseline_git_commit": "48ffa39cf6ce033c7fdcb985d68eae8dd4dc711c",
+  "dependency_lock": "workload/driver/Cargo.lock; protected upstream test closureworkload/driver/upstream.Cargo.lock",
+  "pristine_lock": "pristine-files.lock.json",
+  "pristine_lock_sha256": "d7841cdc97fe174749f4bb78386b5916330623192882791f3fc7f01b3d38bdcb"
+}

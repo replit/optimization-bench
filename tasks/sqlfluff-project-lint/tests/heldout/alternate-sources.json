@@ -1,0 +1,131 @@
+{
+  "cases": [
+    {
+      "files": [
+        {
+          "bytes": 17142,
+          "git_blob_sha": "e1528ab6b66b1ca93547a41b924b535f0d827249",
+          "path": "samples/geospatial/Python UDFs/JS_CLOSESTPOINT.sql",
+          "sha256": "96e13989470bfca8e670fb2815918e1fa1fb3b1f332f64d2c25c8ebc97f66f36"
+        },
+        {
+          "bytes": 16923,
+          "git_blob_sha": "3cde1439241b75887aff629f4e7b75d0b9705344",
+          "path": "samples/sap_accounts_receivable_dbt/macros/sap_lookup_table.sql",
+          "sha256": "71e25f568b476abbc8f87a1c1f6ac6d418b517acd709e71c374353fdeb7a1608"
+        },
+        {
+          "bytes": 16803,
+          "git_blob_sha": "799873f2cdee75df588c8fe5ba44bc51b0531519",
+          "path": "samples/tasty_bytes/FY25_Zero_To_Snowflake/tb_geospatial.sql",
+          "sha256": "2aa11b93b29f157d6a4009e096527597f4bc6bd798446b1ccea639a27be6ddae"
+        },
+        {
+          "bytes": 16514,
+          "git_blob_sha": "bc7069deb6266b099165f40f304071fb59a96bc9",
+          "path": "samples/marketing-idr-solution/use-cases/martech/sql/procedures/sp_run_household_matching.sql",
+          "sha256": "6582433cdde650d3121db3a087b0f0679c39792ac09b5607a2f92adf2af56932"
+        },
+        {
+          "bytes": 16257,
+          "git_blob_sha": "42f89ae2378f44b847f1257dfaea4d53a1a5127b",
+          "path": "samples/marketing-idr-solution/use-cases/martech/sql/procedures/sp_ml_score_candidates.sql",
+          "sha256": "bfedddb6c8fa4b1f98bb6a42eaa0f63486bb1bed73a2d321fd95815502a28ed9"
+        },
+        {
+          "bytes": 15237,
+          "git_blob_sha": "2a169dc45f30cd62d2297ab42ae9231f3c106e61",
+          "path": "samples/marketing-idr-solution/engine/sql/procedures/01_sp_extract_identifiers.sql",
+          "sha256": "65a2490732702c014b8ba9ea161ac7197c4baf95ede109b4f1fad935c49f458e"
+        },
+        {
+          "bytes": 14807,
+          "git_blob_sha": "bf8174fb0f5f650ffee78b52a290c49b5bd16ec1",
+          "path": "samples/ML Powered Functions/June 2023 MLPF Demos.sql",
+          "sha256": "c16b3f619dfb37e77c0598e229a90c36c937592091c4dc7ae5f060978ba9c6ca"
+        },
+        {
+          "bytes": 14785,
+          "git_blob_sha": "f9e2be4ef33cf058808b42bbe07ec32a65c63258",
+          "path": "samples/meta-capi-pipeline/sql/00_discovery/pipeline_config.sql",
+          "sha256": "7b58d257a676506ac94a1da241d6f82381adf155cd1a40e7c8945aca91e04186"
+        },
+        {
+          "bytes": 11357,
+          "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "fixture_hashes": {
+        ".sqlfluff": "409ce7f815e6b76138fcde5298b6b6c89858d234f4cda0a2df6c4f3eb5ae1aa5",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "samples/ML Powered Functions/June 2023 MLPF Demos.sql": "c16b3f619dfb37e77c0598e229a90c36c937592091c4dc7ae5f060978ba9c6ca",
+        "samples/geospatial/Python UDFs/JS_CLOSESTPOINT.sql": "96e13989470bfca8e670fb2815918e1fa1fb3b1f332f64d2c25c8ebc97f66f36",
+        "samples/marketing-idr-solution/engine/sql/procedures/01_sp_extract_identifiers.sql": "65a2490732702c014b8ba9ea161ac7197c4baf95ede109b4f1fad935c49f458e",
+        "samples/marketing-idr-solution/use-cases/martech/sql/procedures/sp_ml_score_candidates.sql": "bfedddb6c8fa4b1f98bb6a42eaa0f63486bb1bed73a2d321fd95815502a28ed9",
+        "samples/marketing-idr-solution/use-cases/martech/sql/procedures/sp_run_household_matching.sql": "6582433cdde650d3121db3a087b0f0679c39792ac09b5607a2f92adf2af56932",
+        "samples/meta-capi-pipeline/sql/00_discovery/pipeline_config.sql": "7b58d257a676506ac94a1da241d6f82381adf155cd1a40e7c8945aca91e04186",
+        "samples/sap_accounts_receivable_dbt/macros/sap_lookup_table.sql": "71e25f568b476abbc8f87a1c1f6ac6d418b517acd709e71c374353fdeb7a1608",
+        "samples/tasty_bytes/FY25_Zero_To_Snowflake/tb_geospatial.sql": "2aa11b93b29f157d6a4009e096527597f4bc6bd798446b1ccea639a27be6ddae"
+      },
+      "operation": "snowflake-lint",
+      "reference_origin": "Two complete, matching eligibility captures",
+      "reference_sha256": "6dacac48211669ba468d09913d4b9144722f69397de375b12d8f8828e63302c1",
+      "repository": "Snowflake-Labs/sf-samples",
+      "revision": "a291149cf20f8b52fc2cd31f92b09671c415bee2",
+      "shared_files": {
+        ".sqlfluff": "409ce7f815e6b76138fcde5298b6b6c89858d234f4cda0a2df6c4f3eb5ae1aa5",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    },
+    {
+      "files": [
+        {
+          "bytes": 50976,
+          "git_blob_sha": "ad9e45b61fe393d02fc70173c79ce40988adcf5b",
+          "path": "views/audit/bigquery_audit_logs_v2.sql",
+          "sha256": "8fb0a74b2269550d373fb8f488f7221b840337ce4f8f83912585b36ba7239ea1"
+        },
+        {
+          "bytes": 36935,
+          "git_blob_sha": "24ce5775e6c3ffcb8aeee1120b60df2b4d64ee50",
+          "path": "views/audit/bigquery_script_logs_v2.sql",
+          "sha256": "87a60b95ab260b81cab9849107f51dfad7c2534aebac274c44d8f06d0830b43f"
+        },
+        {
+          "bytes": 9775,
+          "git_blob_sha": "a4379b7ce9e4ac07a0233958974f502abb7a3c9a",
+          "path": "views/audit/bigquery_audit_logs_v1.sql",
+          "sha256": "ad3e000d3463bd406aca6d2590f7ce9c0d4d89fa29278a9a468ad1547b3e0d98"
+        },
+        {
+          "bytes": 6041,
+          "git_blob_sha": "ee11f2409204aa1a13994e2432da95632ba66cfc",
+          "path": "views/audit/query_audit.sql",
+          "sha256": "dacbebbd8da520e63b7f1a17923b67a70c1ea1b202b749f1059736e856e32795"
+        },
+        {
+          "bytes": 11358,
+          "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "fixture_hashes": {
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "views/audit/bigquery_audit_logs_v1.sql": "ad3e000d3463bd406aca6d2590f7ce9c0d4d89fa29278a9a468ad1547b3e0d98",
+        "views/audit/bigquery_audit_logs_v2.sql": "8fb0a74b2269550d373fb8f488f7221b840337ce4f8f83912585b36ba7239ea1",
+        "views/audit/bigquery_script_logs_v2.sql": "87a60b95ab260b81cab9849107f51dfad7c2534aebac274c44d8f06d0830b43f",
+        "views/audit/query_audit.sql": "dacbebbd8da520e63b7f1a17923b67a70c1ea1b202b749f1059736e856e32795"
+      },
+      "operation": "syntax-tree",
+      "reference_origin": "Two complete, matching eligibility captures",
+      "reference_sha256": "b7400f27bf9b78321f0f937480c1d63293a822042d10226aa453a617e87a1ec8",
+      "repository": "GoogleCloudPlatform/bigquery-utils",
+      "revision": "d5bde4fb0d2dbfa0477f1f2a6d87edda65bb7907",
+      "shared_files": {}
+    }
+  ],
+  "schema_version": 1
+}

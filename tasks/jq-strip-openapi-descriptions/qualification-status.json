@@ -1,0 +1,6 @@
+{
+  "task": "jq-strip-openapi-descriptions",
+  "payload_status": "heldout-missing",
+  "harbor_execution_qualified": false,
+  "scored_qualification": false
+}

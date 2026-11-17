@@ -1,0 +1,37 @@
+[
+  {
+    "expect_len": 649275479,
+    "expect_sha": "fb3b5f09bf8a0a792c6594f0e4aec5a3ebbbe6953e4f5ddd1dabada4f86b0e28",
+    "id": "patch-myers"
+  },
+  {
+    "expect_len": 969875,
+    "expect_sha": "5aa92f4e76197559ab786e6b1770fa23849a3fd9a4c9f3de90c456d68e3b1a6b",
+    "id": "shortstat-myers"
+  },
+  {
+    "expect_len": 146607583,
+    "expect_sha": "fe96df3f8427b30ec5793d0489ce0f2012169a5847d35745dbfd006817591a8e",
+    "id": "patch-histogram"
+  },
+  {
+    "expect_len": 17519199,
+    "expect_sha": "e8054a5b15c42db004079b968e940ba89bff055a095fdf54a106b8d46d820b25",
+    "id": "patch-ignore-all-space"
+  },
+  {
+    "expect_len": 41250901,
+    "expect_sha": "3c00dea41949cc0aae56524903e83098e8aab6b082b4ec0f33e2c61ec19c04da",
+    "id": "patch-patience"
+  },
+  {
+    "expect_len": 273765325,
+    "expect_sha": "6d091e16be8882bd78c5d1896def41777818c9340bc31eecd8729e777ffe55fc",
+    "id": "patch-full-context"
+  },
+  {
+    "expect_len": 127927592,
+    "expect_sha": "dbfa3f386df1196ac8576716519ce1abc28814c39927b9bf084aa924407b17ad",
+    "id": "merge-file"
+  }
+]

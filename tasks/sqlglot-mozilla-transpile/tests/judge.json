@@ -1,0 +1,50 @@
+{
+  "calibration_max_age_seconds": 86400,
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "enabled": true,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "case_budget": 24,
+    "case_timeout_seconds": 30,
+    "time_cap_seconds": 600
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "pids_limit": 512,
+  "process_state": {
+    "enabled": true,
+    "kind": "python",
+    "representative_operation": {
+      "module": "sqlglot",
+      "root": "/app/build/runtime",
+      "script": "differential/optimizer_operation.py"
+    }
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "kind": "python",
+    "packages": [
+      "sqlglot"
+    ],
+    "root": "runtime"
+  },
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "warmups": 1
+}

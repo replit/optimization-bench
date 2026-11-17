@@ -1,0 +1,41 @@
+{
+  "all_task_shell_check": {
+    "command": "python tools/check_tasks.py",
+    "passed": true,
+    "tasks": 22
+  },
+  "base_commit": "4def16d70e7aabb1ab779ba76ad8f931ccc6c731",
+  "baseline_metadata_tests": {
+    "command": "python -m unittest discover -s tools/tests -p test_baseline_git.py",
+    "passed": true,
+    "tests": 2
+  },
+  "catalog_check": {
+    "command": "python tools/update_catalog.py --check",
+    "passed": true
+  },
+  "checked_at": "2026-10-25T21:03:27.322712+00:00",
+  "fully_smudged_lfs": true,
+  "heldout_tooling": "Covered by main judge/tools suites; the sole heldout-tooling failure is the hardcoded total-task-count assertion, not an asset or validation failure.",
+  "judge_suite": {
+    "expected_failure": "Hardcoded packaged-task count:22directories!=21; Lumen retirement is separate integration.",
+    "failure_count": 1,
+    "log_sha256": "d53e5386a2158854aea33ea31718f87de218dc5d43317c33db472a0ce59c9c7d",
+    "seconds": 20.199,
+    "skip_count": 10,
+    "tests": 192
+  },
+  "main_tooling_ports": [],
+  "no_performance_qualification": true,
+  "private_asset_bodies_inspected_by_author": false,
+  "task_specific_controls": "completion.json",
+  "tools_suite": {
+    "expected_failure": "Hardcoded packaged-task count:22directories!=21; Lumen retirement is separate integration.",
+    "failure_count": 1,
+    "log_sha256": "b4b96df51fb668bef28244d0fd58daa8e62f8e860fbf472d4d5594b9aed2626d",
+    "seconds": 17.011,
+    "skip_count": 4,
+    "tests": 118
+  },
+  "unit_count_assertions_or_lumen_changed": false
+}

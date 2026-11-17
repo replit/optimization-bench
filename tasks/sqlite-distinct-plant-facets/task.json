@@ -1,0 +1,45 @@
+{
+  "task_version": "1.0.0",
+  "id": "sqlite-distinct-plant-facets",
+  "name": "SQLite",
+  "title": "Serve ranked search and a ten-workload SQLite suite",
+  "job": "Run eleven equally weighted timed native units using one candidate and image: ranked documentation search and ten suite batches running integrity_check, CREATE INDEX, JSON, printf, R*Tree, decimal, percentile, multi-way join, window-function and foreign-key-cascade workloads once per frozen request or document. Plant facets, authentic-record batch UPSERT and post-retention VACUUM are correctness-only cases, not timed units.",
+  "readme_notes": "Each original request or record is executed once per native batch. Peak memory is reported but is not a correctness criterion.",
+  "status": "qualification-in-progress",
+  "language": "C",
+  "code": "environment/workload/task.py",
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "example_count": 14,
+  "contract": "Preserve SQLite C ABI, SQL/transaction/error/callback behavior and complete typed results. Each original request or genuine incoming record occurs once per unit. No added caches or process-global settings. Read units preserve complete request identities, ordered full records, exact ranks, lifecycle results and immutable inputs. Write units preserve every ordered field and type, schema, headers, settings, integrity, local notes, commit/close/shutdown success and source bytes. VACUUM must reclaim free pages and shrink the retained database. Suite workloads preserve complete typed results, per-request change counts and exported database images that pass an independent reader's integrity check and canonical row dump.",
+  "editable": "Production C and headers under src/ and ext/ only. Driver, query strings, request sets, original data, build flags, tests and interface remain protected.",
+  "sources": [
+    "src/",
+    "ext/"
+  ],
+  "operations": [
+    "sqlite3_prepare_v2",
+    "sqlite3_bind_text",
+    "sqlite3_step",
+    "sqlite3_column_*",
+    "sqlite3_finalize",
+    "sqlite3_bind_*",
+    "sqlite3_reset",
+    "sqlite3_exec",
+    "sqlite3_backup_*",
+    "sqlite3_serialize",
+    "sqlite3_deserialize",
+    "sqlite3_changes64"
+  ],
+  "outputs": "Complete framed facet and ranked-search results retain their existing contracts. Write units export all ordered typed record fields, schema, source headers, fixed settings and local notes after successful commit/close/shutdown. VACUUM also proves actual compaction. References commit to the complete state, without host-specific filesystem metadata. Suite: all ordered typed rows per request, integrity_check rows, per-request change counts and canonical-dump commitments of exported database images.",
+  "configuration": "Read units retain immutable databases, defaults, 5000ms busy timeout and fresh statement lifecycles. Write units retain 4096-byte pages, DELETE journaling, synchronous FULL and auto_vacuum NONE. UPSERT batches contain at most 100 genuine incoming records, once each. Eight reserved CPUs. Suite query units: read-only immutable connections with an application-set 256 MiB page cache; in-memory units use native defaults; CREATE INDEX sorter spill files on tmpfs; library built with SQLITE_ENABLE_RTREE.",
+  "measurement_boundary": "Read-unit timing is unchanged. UPSERT stages its partial mirror, connection and incoming values before ready, then times one transaction including fresh batch SQL construction, prepare/bind/step/finalize and commit. VACUUM stages the post-retention database and connection before ready, then times prepare/step/finalize once. Write-unit close, shutdown, export and independent full-state checks follow the result stop. Suite units time the complete operation of each workload (statement lifecycles, accessors, buffering, transactions, serialization where specified) and close; input staging precedes ready and image export follows the result stop.",
+  "source_identity": {
+    "upstream_repository": "https://github.com/sqlite/sqlite",
+    "upstream_commit": "57520227c95396ce39ba6ecaac8d475b78dd3964",
+    "archive_sha256": "11e88a37e198edb4895357a160651017da0fe9cf83e4a988503e35d9bb2d97b8"
+  },
+  "realism_tier": "representative",
+  "limits": "Representative operations over real source data, not measured deployment traffic. UPSERT covers unchanged conflicts and new-to-local-mirror inserts only, with no genuinely changed updates. Public VACUUM uses a separately enlarged corpus. Suite inputs are rebuilt at image build from authenticated raw upstream files with the base image's CPython sqlite3; usgs and rtree split one raw file per publisher by hash parity."
+}

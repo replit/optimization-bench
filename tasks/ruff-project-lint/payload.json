@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "task": "ruff-project-lint",
+  "files": [
+    {
+      "scope": "public",
+      "name": "ea7d6e16b5fed68373a2d63deb65f987a212ac462776602cd429eda4c61ae829",
+      "destination": "environment/workload/inputs/files/ea7d6e16b5fed68373a2d63deb65f987a212ac462776602cd429eda4c61ae829",
+      "bytes": 925334,
+      "sha256": "ea7d6e16b5fed68373a2d63deb65f987a212ac462776602cd429eda4c61ae829",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "8528a02ebbecf67032fe9b6a383c94513699f38255f8d0e66fa3d97b61239134",
+      "destination": "environment/workload/inputs/files/8528a02ebbecf67032fe9b6a383c94513699f38255f8d0e66fa3d97b61239134",
+      "bytes": 1968,
+      "sha256": "8528a02ebbecf67032fe9b6a383c94513699f38255f8d0e66fa3d97b61239134",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "role": "input",
+      "name": "heldout/edition.json",
+      "destination": "tests/heldout/edition.json",
+      "bytes": 9337,
+      "sha256": "8e83d02faeaca6c7eb048f24a3dad3cd571f83d4a113e5ade2d4c53b4db07094",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "role": "input",
+      "name": "heldout/files/c53d2a19fa1ec9a23dd159097d33a72cf0d9b89f21a8d04e0cb3f8fde8509e9d",
+      "destination": "tests/heldout/files/c53d2a19fa1ec9a23dd159097d33a72cf0d9b89f21a8d04e0cb3f8fde8509e9d",
+      "bytes": 1476,
+      "sha256": "c53d2a19fa1ec9a23dd159097d33a72cf0d9b89f21a8d04e0cb3f8fde8509e9d",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "role": "input",
+      "name": "heldout/files/974e2b5f9c0b5a8dc3bc7cf59ada2e62b74777e85a2fbeb8b61c4b956cd44b81",
+      "destination": "tests/heldout/files/974e2b5f9c0b5a8dc3bc7cf59ada2e62b74777e85a2fbeb8b61c4b956cd44b81",
+      "bytes": 1475,
+      "sha256": "974e2b5f9c0b5a8dc3bc7cf59ada2e62b74777e85a2fbeb8b61c4b956cd44b81",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "role": "input",
+      "name": "heldout/inputs.lock.json",
+      "destination": "tests/heldout/inputs.lock.json",
+      "bytes": 110646,
+      "sha256": "7d05b722f733afdfdd86445eec4dc480c072d4207f076d68f362df5db8cd045e",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "role": "input",
+      "name": "heldout/manifest.json",
+      "destination": "tests/heldout/manifest.json",
+      "bytes": 928,
+      "sha256": "966007b983d4cbfbc1a471289975c7c6b48d25f2a8a2303d6bc6216133a834f3",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "role": "input",
+      "name": "heldout/project-inventories.json",
+      "destination": "tests/heldout/project-inventories.json",
+      "bytes": 131941,
+      "sha256": "4d744a79fe7d2ec8fec6aa0219adf7321f4beaecefbba300d4025a947eb7483b",
+      "distribution": "git"
+    },
+    {
+      "kind": "git-history",
+      "repository": "https://github.com/encode/httpx.git",
+      "commit": "26d48e0634e6ee9cdc0533996db289ce4b430177",
+      "ref_policy": "one-detached-commit-closure",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "object_count": 10013,
+        "bytes": 57051291,
+        "sha256": "bc8a53bedfdbdc424be09961abd35f2f3fbbf4b4b3087ac68d7337072dc27d6d"
+      },
+      "checkout_inventory_sha256": "60f684b2c0d0c01d5375787fad82ba83aae3c3eb743a498b4c27ac16004538ee",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "scope": "heldout",
+      "role": "input",
+      "license_basis": "fetch-only; no redistribution",
+      "name": "heldout/projects/httpx",
+      "destination": "tests/heldout/projects/httpx",
+      "retention": "fetch-only"
+    },
+    {
+      "kind": "git-history",
+      "repository": "https://github.com/Textualize/rich.git",
+      "commit": "43d3b04725ab9731727fb1126e35980c62f32377",
+      "ref_policy": "one-detached-commit-closure",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "object_count": 20090,
+        "bytes": 211876331,
+        "sha256": "524b045c5a783b9ca9c145ef5945fbadc4245d2aef7b101c93e3488593f69b34"
+      },
+      "checkout_inventory_sha256": "beac92b50827720dd41955bf3f7074047024555d904edda4206747220e3db068",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "scope": "heldout",
+      "role": "input",
+      "license_basis": "fetch-only; no redistribution",
+      "name": "heldout/projects/rich",
+      "destination": "tests/heldout/projects/rich",
+      "retention": "fetch-only"
+    }
+  ]
+}

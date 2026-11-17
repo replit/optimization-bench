@@ -1,0 +1,78 @@
+{
+  "documents/govinfo/FR-2024-01-17.xml": [
+    "notices/govinfo-policies.html"
+  ],
+  "documents/govinfo/FR-2024-01-29.xml": [
+    "notices/govinfo-policies.html"
+  ],
+  "tables/noaa/StormEvents_locations-ftp_v1.0_d2019_c20260707.csv": [],
+  "json/canada/search-transport.json": [
+    "notices/canada-licence.html"
+  ],
+  "json/canada/record-e6f5411a-bc51-497c-adc7-841da8de646e.json": [
+    "notices/canada-licence.html"
+  ],
+  "json/canada/record-8de1b362-4f81-4057-9d3d-06bb21b4c606.json": [
+    "notices/canada-licence.html"
+  ],
+  "json/canada/record-59700495-8526-403c-88b6-b0fa8d574297.json": [
+    "notices/canada-licence.html"
+  ],
+  "source/newsboat/rust/libnewsboat-ffi/build.rs": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/rust/strprintf/src/traits.rs": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/rust/libnewsboat/src/utils.rs": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/include/helpformaction.h": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/include/feedcontainer.h": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/filter/Scanner.h": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/rust/libnewsboat/Cargo.toml": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/Cargo.lock": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/doc/chapter-podboat.asciidoc": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/doc/docker.md": [
+    "notices/LICENSE"
+  ],
+  "source/newsboat/CHANGELOG.md": [
+    "notices/LICENSE"
+  ],
+  "web/tabulator/dist/js/tabulator.js": [
+    "notices/191a2ee55468-LICENSE"
+  ],
+  "web/tabulator/dist/js/tabulator.min.js": [
+    "notices/191a2ee55468-LICENSE"
+  ],
+  "web/tabulator/dist/css/tabulator.css": [
+    "notices/191a2ee55468-LICENSE"
+  ],
+  "web/tabulator/dist/css/tabulator.min.css": [
+    "notices/191a2ee55468-LICENSE"
+  ],
+  "measurements/bidmc/bidmc21.dat": [
+    "notices/76576a17b505-LICENSE",
+    "notices/README"
+  ],
+  "measurements/bidmc/bidmc_csv/bidmc_21_Signals.csv": [
+    "notices/76576a17b505-LICENSE",
+    "notices/README"
+  ],
+  "measurements/bidmc/bidmc37.dat": [
+    "notices/76576a17b505-LICENSE",
+    "notices/README"
+  ]
+}

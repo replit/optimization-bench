@@ -1,0 +1,8 @@
+diff --git a/src/jv.c b/src/jv.c
+--- a/src/jv.c
++++ b/src/jv.c
+@@ -138,3 +138,3 @@
+ jv jv_bool(int x) {
+-  return x ? JV_TRUE : JV_FALSE;
++  return (x != 0) ? JV_TRUE : JV_FALSE;
+ }

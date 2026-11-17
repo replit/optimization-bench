@@ -1,0 +1,3686 @@
+{
+  "task": "numpy-quantile",
+  "kind": "numpy",
+  "cases": [
+    {
+      "id": "natural-workload-warm-batch",
+      "role": "workload",
+      "kind": "warm-batch",
+      "description": "v1.1 warm batch: one resident process computes every distinct natural-data quantile call once; inputs are loaded and prepared before timing and results are serialized after it.",
+      "calls": [
+        {
+          "id": "taxi-2023-01--distance-median",
+          "parent": "taxi-2023-01",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-01--distance-bins",
+          "parent": "taxi-2023-01",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-01--column-quartiles",
+          "parent": "taxi-2023-01",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-01--column-tails-fortran",
+          "parent": "taxi-2023-01",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-01--strided-fares",
+          "parent": "taxi-2023-01",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-07--distance-median",
+          "parent": "taxi-2023-07",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-07--distance-bins",
+          "parent": "taxi-2023-07",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-07--column-quartiles",
+          "parent": "taxi-2023-07",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-07--column-tails-fortran",
+          "parent": "taxi-2023-07",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-07--strided-fares",
+          "parent": "taxi-2023-07",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-03--distance-median",
+          "parent": "taxi-2023-03",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-03--distance-bins",
+          "parent": "taxi-2023-03",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-03--column-quartiles",
+          "parent": "taxi-2023-03",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-03--column-tails-fortran",
+          "parent": "taxi-2023-03",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-03--strided-fares",
+          "parent": "taxi-2023-03",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-04--distance-median",
+          "parent": "taxi-2023-04",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-04--distance-bins",
+          "parent": "taxi-2023-04",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-04--column-quartiles",
+          "parent": "taxi-2023-04",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-04--column-tails-fortran",
+          "parent": "taxi-2023-04",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-04--strided-fares",
+          "parent": "taxi-2023-04",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-05--distance-median",
+          "parent": "taxi-2023-05",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-05--distance-bins",
+          "parent": "taxi-2023-05",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-05--column-quartiles",
+          "parent": "taxi-2023-05",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-05--column-tails-fortran",
+          "parent": "taxi-2023-05",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-05--strided-fares",
+          "parent": "taxi-2023-05",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-09--distance-median",
+          "parent": "taxi-2023-09",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-09--distance-bins",
+          "parent": "taxi-2023-09",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-09--column-quartiles",
+          "parent": "taxi-2023-09",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-09--column-tails-fortran",
+          "parent": "taxi-2023-09",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-09--strided-fares",
+          "parent": "taxi-2023-09",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-10--distance-median",
+          "parent": "taxi-2023-10",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-10--distance-bins",
+          "parent": "taxi-2023-10",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-10--column-quartiles",
+          "parent": "taxi-2023-10",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-10--column-tails-fortran",
+          "parent": "taxi-2023-10",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-10--strided-fares",
+          "parent": "taxi-2023-10",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-11--distance-median",
+          "parent": "taxi-2023-11",
+          "description": "Median trip distance across selected rides.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float64",
+            "strides": [
+              8
+            ]
+          },
+          "call": {
+            "q": 0.5,
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-11--distance-bins",
+          "parent": "taxi-2023-11",
+          "description": "Seventeen boundaries for distance bins, retaining ties.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  null
+                ],
+                0
+              ]
+            },
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "contiguous",
+              "order": "C"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000
+            ],
+            "dtype": "float32",
+            "strides": [
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": null,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-11--column-quartiles",
+          "parent": "taxi-2023-11",
+          "description": "Quartiles for each distance or monetary column.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              32,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-11--column-tails-fortran",
+          "parent": "taxi-2023-11",
+          "description": "Per-column lower, median and upper tail summaries.",
+          "prepare": [
+            {
+              "op": "contiguous",
+              "order": "F"
+            }
+          ],
+          "input": {
+            "shape": [
+              1000000,
+              4
+            ],
+            "dtype": "float64",
+            "strides": [
+              8,
+              8000000
+            ]
+          },
+          "call": {
+            "q": [
+              0.01,
+              0.5,
+              0.99
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": true,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              1,
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "taxi-2023-11--strided-fares",
+          "parent": "taxi-2023-11",
+          "description": "Fare quantiles for every third selected ride; repeated unsorted q.",
+          "prepare": [
+            {
+              "op": "slice",
+              "index": [
+                [
+                  null,
+                  null,
+                  3
+                ],
+                1
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              333334
+            ],
+            "dtype": "float64",
+            "strides": [
+              96
+            ]
+          },
+          "call": {
+            "q": [
+              0.99,
+              0.1,
+              0.5,
+              0.1
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              4
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block1--customer-quartiles",
+          "parent": "electricity-2012-block1",
+          "description": "Demand quartiles over time for each customer.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              17568,
+              148
+            ],
+            "dtype": "float64",
+            "strides": [
+              1184,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              148
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block1--cross-customer-tail",
+          "parent": "electricity-2012-block1",
+          "description": "90th percentile of customer demand at each timestamp.",
+          "prepare": [
+            {
+              "op": "cast",
+              "dtype": "float32"
+            }
+          ],
+          "input": {
+            "shape": [
+              17568,
+              148
+            ],
+            "dtype": "float32",
+            "strides": [
+              592,
+              4
+            ]
+          },
+          "call": {
+            "q": 0.9,
+            "q_dtype": "float64",
+            "axis": 1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17568
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block1--transposed-time",
+          "parent": "electricity-2012-block1",
+          "description": "Per-customer demand tails from a transposed view.",
+          "prepare": [
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "transpose",
+              "axes": [
+                1,
+                0
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              148,
+              17568
+            ],
+            "dtype": "float32",
+            "strides": [
+              4,
+              592
+            ]
+          },
+          "call": {
+            "q": [
+              0.05,
+              0.5,
+              0.95
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              148
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block1--pooled-bins",
+          "parent": "electricity-2012-block1",
+          "description": "Seventeen demand boundaries pooled across customers and time.",
+          "prepare": [
+            {
+              "op": "cast",
+              "dtype": "float32"
+            }
+          ],
+          "input": {
+            "shape": [
+              17568,
+              148
+            ],
+            "dtype": "float32",
+            "strides": [
+              592,
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": [
+              0,
+              1
+            ],
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block2--customer-quartiles",
+          "parent": "electricity-2012-block2",
+          "description": "Demand quartiles over time for each customer.",
+          "prepare": [],
+          "input": {
+            "shape": [
+              17568,
+              148
+            ],
+            "dtype": "float64",
+            "strides": [
+              1184,
+              8
+            ]
+          },
+          "call": {
+            "q": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "q_dtype": "float64",
+            "axis": 0,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              148
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block2--cross-customer-tail",
+          "parent": "electricity-2012-block2",
+          "description": "90th percentile of customer demand at each timestamp.",
+          "prepare": [
+            {
+              "op": "cast",
+              "dtype": "float32"
+            }
+          ],
+          "input": {
+            "shape": [
+              17568,
+              148
+            ],
+            "dtype": "float32",
+            "strides": [
+              592,
+              4
+            ]
+          },
+          "call": {
+            "q": 0.9,
+            "q_dtype": "float64",
+            "axis": 1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17568
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block2--transposed-time",
+          "parent": "electricity-2012-block2",
+          "description": "Per-customer demand tails from a transposed view.",
+          "prepare": [
+            {
+              "op": "cast",
+              "dtype": "float32"
+            },
+            {
+              "op": "transpose",
+              "axes": [
+                1,
+                0
+              ]
+            }
+          ],
+          "input": {
+            "shape": [
+              148,
+              17568
+            ],
+            "dtype": "float32",
+            "strides": [
+              4,
+              592
+            ]
+          },
+          "call": {
+            "q": [
+              0.05,
+              0.5,
+              0.95
+            ],
+            "q_dtype": "float64",
+            "axis": -1,
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              3,
+              148
+            ],
+            "dtype": "float64"
+          }
+        },
+        {
+          "id": "electricity-2012-block2--pooled-bins",
+          "parent": "electricity-2012-block2",
+          "description": "Seventeen demand boundaries pooled across customers and time.",
+          "prepare": [
+            {
+              "op": "cast",
+              "dtype": "float32"
+            }
+          ],
+          "input": {
+            "shape": [
+              17568,
+              148
+            ],
+            "dtype": "float32",
+            "strides": [
+              592,
+              4
+            ]
+          },
+          "call": {
+            "q": [
+              0.0,
+              0.0625,
+              0.125,
+              0.1875,
+              0.25,
+              0.3125,
+              0.375,
+              0.4375,
+              0.5,
+              0.5625,
+              0.625,
+              0.6875,
+              0.75,
+              0.8125,
+              0.875,
+              0.9375,
+              1.0
+            ],
+            "q_dtype": "float64",
+            "axis": [
+              0,
+              1
+            ],
+            "method": "linear",
+            "keepdims": false,
+            "overwrite_input": false
+          },
+          "output": {
+            "shape": [
+              17
+            ],
+            "dtype": "float64"
+          }
+        }
+      ]
+    },
+    {
+      "id": "taxi-2023-01--small-table",
+      "parent": "taxi-2023-01",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-07--small-table",
+      "parent": "taxi-2023-07",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-03--small-table",
+      "parent": "taxi-2023-03",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-04--small-table",
+      "parent": "taxi-2023-04",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-05--small-table",
+      "parent": "taxi-2023-05",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-09--small-table",
+      "parent": "taxi-2023-09",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-10--small-table",
+      "parent": "taxi-2023-10",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "taxi-2023-11--small-table",
+      "parent": "taxi-2023-11",
+      "role": "workload",
+      "description": "A smaller table summary using single precision inputs.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              0,
+              25000,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "op": "cast",
+          "dtype": "float32"
+        }
+      ],
+      "input": {
+        "shape": [
+          25000,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "electricity-2012-block1--strided-subset",
+      "parent": "electricity-2012-block1",
+      "role": "workload",
+      "description": "Time quantiles for alternate customers and every fourth timestamp.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              null,
+              null,
+              4
+            ],
+            [
+              null,
+              null,
+              2
+            ]
+          ]
+        }
+      ],
+      "input": {
+        "shape": [
+          4392,
+          74
+        ],
+        "dtype": "float64",
+        "strides": [
+          4736,
+          16
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          74
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "electricity-2012-block2--strided-subset",
+      "parent": "electricity-2012-block2",
+      "role": "workload",
+      "description": "Time quantiles for alternate customers and every fourth timestamp.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              null,
+              null,
+              4
+            ],
+            [
+              null,
+              null,
+              2
+            ]
+          ]
+        }
+      ],
+      "input": {
+        "shape": [
+          4392,
+          74
+        ],
+        "dtype": "float64",
+        "strides": [
+          4736,
+          16
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          74
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "generic-cube--time-quantile-maps",
+      "parent": "generic-cube",
+      "role": "workload",
+      "description": "Low, median and high generic scalar field over time at each grid cell.",
+      "prepare": [],
+      "input": {
+        "shape": [
+          180,
+          32,
+          64
+        ],
+        "dtype": "float32",
+        "strides": [
+          8192,
+          256,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          32,
+          64
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "generic-cube--transposed-time-view",
+      "parent": "generic-cube",
+      "role": "workload",
+      "description": "Time tails of a transposed generic scalar field array.",
+      "prepare": [
+        {
+          "op": "transpose",
+          "axes": [
+            1,
+            2,
+            0
+          ]
+        }
+      ],
+      "input": {
+        "shape": [
+          32,
+          64,
+          180
+        ],
+        "dtype": "float32",
+        "strides": [
+          256,
+          4,
+          8192
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": -1,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          2,
+          32,
+          64
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "generic-cube--spatial-median",
+      "parent": "generic-cube",
+      "role": "workload",
+      "description": "Unweighted grid-cell median of generic scalar field at each timestamp.",
+      "prepare": [],
+      "input": {
+        "shape": [
+          180,
+          32,
+          64
+        ],
+        "dtype": "float32",
+        "strides": [
+          8192,
+          256,
+          4
+        ]
+      },
+      "call": {
+        "q": 0.5,
+        "q_dtype": "float64",
+        "axis": [
+          1,
+          2
+        ],
+        "method": "linear",
+        "keepdims": true,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          180,
+          1,
+          1
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "generic-cube--strided-grid",
+      "parent": "generic-cube",
+      "role": "workload",
+      "description": "Time quantile boundaries of a sliced generic scalar field grid.",
+      "prepare": [
+        {
+          "op": "cast",
+          "dtype": "float64"
+        },
+        {
+          "op": "slice",
+          "index": [
+            [
+              null,
+              null,
+              2
+            ],
+            [
+              null,
+              null,
+              2
+            ],
+            [
+              null,
+              null,
+              2
+            ]
+          ]
+        }
+      ],
+      "input": {
+        "shape": [
+          90,
+          16,
+          32
+        ],
+        "dtype": "float64",
+        "strides": [
+          32768,
+          1024,
+          16
+        ]
+      },
+      "call": {
+        "q": [
+          0.0,
+          0.0625,
+          0.125,
+          0.1875,
+          0.25,
+          0.3125,
+          0.375,
+          0.4375,
+          0.5,
+          0.5625,
+          0.625,
+          0.6875,
+          0.75,
+          0.8125,
+          0.875,
+          0.9375,
+          1.0
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          17,
+          16,
+          32
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "generic-cube--global-tails",
+      "parent": "generic-cube",
+      "role": "workload",
+      "description": "Unweighted pooled tails across the entire generic scalar field array.",
+      "prepare": [],
+      "input": {
+        "shape": [
+          180,
+          32,
+          64
+        ],
+        "dtype": "float32",
+        "strides": [
+          8192,
+          256,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.01,
+          0.5,
+          0.99
+        ],
+        "q_dtype": "float64",
+        "axis": null,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "upstream-style-vector--quartiles",
+      "parent": "upstream-style-vector",
+      "role": "public-reference",
+      "description": "Basic ordered-vector quartiles.",
+      "prepare": [],
+      "input": {
+        "shape": [
+          10000
+        ],
+        "dtype": "float32",
+        "strides": [
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.25,
+          0.75
+        ],
+        "q_dtype": "float64",
+        "axis": null,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          2
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "upstream-style-table--columns",
+      "parent": "upstream-style-table",
+      "role": "public-reference",
+      "description": "Small dense-table quantile example.",
+      "prepare": [],
+      "input": {
+        "shape": [
+          1000,
+          3
+        ],
+        "dtype": "float64",
+        "strides": [
+          24,
+          8
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.5
+        ],
+        "q_dtype": "float64",
+        "axis": 0,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-linear-not-nearest--check",
+      "parent": "correctness-linear-not-nearest",
+      "role": "correctness",
+      "description": "linear not nearest",
+      "prepare": [],
+      "input": {
+        "shape": [
+          4
+        ],
+        "dtype": "float64",
+        "strides": [
+          8
+        ]
+      },
+      "call": {
+        "q": [
+          0.25,
+          0.5
+        ],
+        "q_dtype": "float64",
+        "axis": null,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          2
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-repeated-unsorted-q--check",
+      "parent": "correctness-repeated-unsorted-q",
+      "role": "correctness",
+      "description": "repeated unsorted q",
+      "prepare": [],
+      "input": {
+        "shape": [
+          5
+        ],
+        "dtype": "float64",
+        "strides": [
+          8
+        ]
+      },
+      "call": {
+        "q": [
+          0.9,
+          0.0,
+          0.5,
+          0.5,
+          1.0
+        ],
+        "q_dtype": "float64",
+        "axis": null,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          5
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-nan-propagation--check",
+      "parent": "correctness-nan-propagation",
+      "role": "correctness",
+      "description": "nan propagation",
+      "prepare": [],
+      "input": {
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": "float64",
+        "strides": [
+          24,
+          8
+        ]
+      },
+      "call": {
+        "q": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "q_dtype": "float64",
+        "axis": 1,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          2
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-singletons--check",
+      "parent": "correctness-singletons",
+      "role": "correctness",
+      "description": "singletons",
+      "prepare": [],
+      "input": {
+        "shape": [
+          2,
+          1
+        ],
+        "dtype": "float32",
+        "strides": [
+          4,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "q_dtype": "float64",
+        "axis": -1,
+        "method": "linear",
+        "keepdims": true,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3,
+          2,
+          1
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-signed-zeros--check",
+      "parent": "correctness-signed-zeros",
+      "role": "correctness",
+      "description": "signed zeros",
+      "prepare": [],
+      "input": {
+        "shape": [
+          4
+        ],
+        "dtype": "float64",
+        "strides": [
+          8
+        ]
+      },
+      "call": {
+        "q": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "q_dtype": "float64",
+        "axis": null,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          3
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-tuple-keepdims--check",
+      "parent": "correctness-tuple-keepdims",
+      "role": "correctness",
+      "description": "tuple keepdims",
+      "prepare": [],
+      "input": {
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          48,
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.17,
+          0.81
+        ],
+        "q_dtype": "float64",
+        "axis": [
+          0,
+          2
+        ],
+        "method": "linear",
+        "keepdims": true,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          2,
+          1,
+          3,
+          1
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-scalar-q--check",
+      "parent": "correctness-scalar-q",
+      "role": "correctness",
+      "description": "scalar q",
+      "prepare": [],
+      "input": {
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          4
+        ]
+      },
+      "call": {
+        "q": 0.5,
+        "q_dtype": "float64",
+        "axis": null,
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "correctness-tuple-keepdims--negative-stride",
+      "parent": "correctness-tuple-keepdims",
+      "role": "correctness",
+      "description": "Reverse a dimension before a tuple-axis reduction.",
+      "prepare": [
+        {
+          "op": "slice",
+          "index": [
+            [
+              null,
+              null,
+              -1
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ]
+        }
+      ],
+      "input": {
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "dtype": "float32",
+        "strides": [
+          -48,
+          16,
+          4
+        ]
+      },
+      "call": {
+        "q": [
+          0.1,
+          0.9
+        ],
+        "q_dtype": "float64",
+        "axis": [
+          0,
+          2
+        ],
+        "method": "linear",
+        "keepdims": false,
+        "overwrite_input": false
+      },
+      "output": {
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "id": "interp-equalize",
+      "workload": "interp-equalize",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/interp-equalize",
+      "description": "Suite unit (one resident warm batch): np.interp histogram equalization of elevation rasters.",
+      "files": [
+        "srtm-N45E006.npy",
+        "srtm-N45E007.npy",
+        "srtm-N46E007.npy",
+        "srtm-N46E008.npy"
+      ],
+      "family": "SRTM tiles, Western Alps (N45E006, N45E007, N46E007, N46E008)",
+      "op": "interp-equalize",
+      "outputs": [
+        "srtm-N45E006.0",
+        "srtm-N45E007.0",
+        "srtm-N46E007.0",
+        "srtm-N46E008.0"
+      ]
+    },
+    {
+      "id": "busday-calendar",
+      "workload": "busday-calendar",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/busday-calendar",
+      "description": "Suite unit (one resident warm batch): np.busday_count / busday_offset / is_busday under three business-day calendars.",
+      "files": [
+        "dates-nyc-dob-part0.npz",
+        "dates-nyc-dob-part1.npz"
+      ],
+      "family": "NYC DOB permit issuance (filing, issuance, expiration), first two thirds of rows",
+      "op": "busday-calendar",
+      "outputs": [
+        "dates-nyc-dob-part0.0",
+        "dates-nyc-dob-part0.1",
+        "dates-nyc-dob-part0.2",
+        "dates-nyc-dob-part0.3",
+        "dates-nyc-dob-part0.4",
+        "dates-nyc-dob-part0.5",
+        "dates-nyc-dob-part0.6",
+        "dates-nyc-dob-part0.7",
+        "dates-nyc-dob-part0.8",
+        "dates-nyc-dob-part0.9",
+        "dates-nyc-dob-part0.10",
+        "dates-nyc-dob-part0.11",
+        "dates-nyc-dob-part0.12",
+        "dates-nyc-dob-part0.13",
+        "dates-nyc-dob-part0.14",
+        "dates-nyc-dob-part0.15",
+        "dates-nyc-dob-part0.16",
+        "dates-nyc-dob-part0.17",
+        "dates-nyc-dob-part1.0",
+        "dates-nyc-dob-part1.1",
+        "dates-nyc-dob-part1.2",
+        "dates-nyc-dob-part1.3",
+        "dates-nyc-dob-part1.4",
+        "dates-nyc-dob-part1.5",
+        "dates-nyc-dob-part1.6",
+        "dates-nyc-dob-part1.7",
+        "dates-nyc-dob-part1.8",
+        "dates-nyc-dob-part1.9",
+        "dates-nyc-dob-part1.10",
+        "dates-nyc-dob-part1.11",
+        "dates-nyc-dob-part1.12",
+        "dates-nyc-dob-part1.13",
+        "dates-nyc-dob-part1.14",
+        "dates-nyc-dob-part1.15",
+        "dates-nyc-dob-part1.16",
+        "dates-nyc-dob-part1.17"
+      ]
+    },
+    {
+      "id": "random-dists",
+      "workload": "random-dists",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/random-dists",
+      "description": "Suite unit (one resident warm batch): Generator(PCG64) binomial, gamma, poisson and normal draws with per-group parameters.",
+      "files": [
+        "census-county-2010-2014.npz",
+        "census-county-2015-2019.npz",
+        "census-county-2020-2023.npz"
+      ],
+      "family": "US Census county population estimates (co-est2023-alldata 2020-2023, co-est2019-alldata 2010-2019)",
+      "op": "random-dists",
+      "outputs": [
+        "census-county-2010-2014.0",
+        "census-county-2010-2014.1",
+        "census-county-2010-2014.2",
+        "census-county-2010-2014.3",
+        "census-county-2015-2019.0",
+        "census-county-2015-2019.1",
+        "census-county-2015-2019.2",
+        "census-county-2015-2019.3",
+        "census-county-2020-2023.0",
+        "census-county-2020-2023.1",
+        "census-county-2020-2023.2",
+        "census-county-2020-2023.3"
+      ]
+    },
+    {
+      "id": "genfromtxt-catalog",
+      "workload": "genfromtxt-catalog",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/genfromtxt-catalog",
+      "description": "Suite unit (one resident warm batch): np.genfromtxt of earthquake-catalog CSV text into a structured dtype.",
+      "files": [
+        "usgs-comcat-2021.csv",
+        "usgs-comcat-2022.csv",
+        "usgs-comcat-2023.csv",
+        "usgs-comcat-2024.csv"
+      ],
+      "family": "USGS ComCat worldwide events 2021-2024 (all magnitudes), one file per year",
+      "op": "genfromtxt-catalog",
+      "outputs": [
+        "usgs-comcat-2021.0",
+        "usgs-comcat-2022.0",
+        "usgs-comcat-2023.0",
+        "usgs-comcat-2024.0"
+      ]
+    },
+    {
+      "id": "loadtxt-csv",
+      "workload": "loadtxt-csv",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/loadtxt-csv",
+      "description": "Suite unit (one resident warm batch): np.loadtxt of numeric CSV text to float64.",
+      "files": [
+        "yearpredictionmsd-part0.csv",
+        "yearpredictionmsd-part1.csv",
+        "yearpredictionmsd-part2.csv",
+        "yearpredictionmsd-part3.csv"
+      ],
+      "family": "UCI YearPredictionMSD.txt first 240,000 rows (4 x 60,000), 91 comma-separated fields",
+      "op": "loadtxt-csv",
+      "outputs": [
+        "yearpredictionmsd-part0.0",
+        "yearpredictionmsd-part1.0",
+        "yearpredictionmsd-part2.0",
+        "yearpredictionmsd-part3.0"
+      ]
+    },
+    {
+      "id": "datetime-iso",
+      "workload": "datetime-iso",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/datetime-iso",
+      "description": "Suite unit (one resident warm batch): ISO-8601 text to datetime64[ms], timedelta arithmetic, day floor and ISO formatting.",
+      "files": [
+        "nyc311-2023-01-created-closed.npz",
+        "nyc311-2023-01-created-resolution.npz",
+        "nyc311-2023-02-created-closed.npz",
+        "nyc311-2023-02-created-resolution.npz",
+        "nyc311-2023-03-created-closed.npz",
+        "nyc311-2023-03-created-resolution.npz",
+        "nyc311-2023-04-created-closed.npz",
+        "nyc311-2023-04-created-resolution.npz",
+        "nyc311-2023-05-created-closed.npz",
+        "nyc311-2023-05-created-resolution.npz",
+        "nyc311-2023-06-created-closed.npz",
+        "nyc311-2023-06-created-resolution.npz"
+      ],
+      "family": "NYC 311 service requests, created/closed/resolution-updated timestamps, Jan-Jun 2023 (days 1-28)",
+      "op": "datetime-iso",
+      "outputs": [
+        "nyc311-2023-01-created-closed.0",
+        "nyc311-2023-01-created-closed.1",
+        "nyc311-2023-01-created-closed.2",
+        "nyc311-2023-01-created-closed.3",
+        "nyc311-2023-01-created-closed.4",
+        "nyc311-2023-01-created-resolution.0",
+        "nyc311-2023-01-created-resolution.1",
+        "nyc311-2023-01-created-resolution.2",
+        "nyc311-2023-01-created-resolution.3",
+        "nyc311-2023-01-created-resolution.4",
+        "nyc311-2023-02-created-closed.0",
+        "nyc311-2023-02-created-closed.1",
+        "nyc311-2023-02-created-closed.2",
+        "nyc311-2023-02-created-closed.3",
+        "nyc311-2023-02-created-closed.4",
+        "nyc311-2023-02-created-resolution.0",
+        "nyc311-2023-02-created-resolution.1",
+        "nyc311-2023-02-created-resolution.2",
+        "nyc311-2023-02-created-resolution.3",
+        "nyc311-2023-02-created-resolution.4",
+        "nyc311-2023-03-created-closed.0",
+        "nyc311-2023-03-created-closed.1",
+        "nyc311-2023-03-created-closed.2",
+        "nyc311-2023-03-created-closed.3",
+        "nyc311-2023-03-created-closed.4",
+        "nyc311-2023-03-created-resolution.0",
+        "nyc311-2023-03-created-resolution.1",
+        "nyc311-2023-03-created-resolution.2",
+        "nyc311-2023-03-created-resolution.3",
+        "nyc311-2023-03-created-resolution.4",
+        "nyc311-2023-04-created-closed.0",
+        "nyc311-2023-04-created-closed.1",
+        "nyc311-2023-04-created-closed.2",
+        "nyc311-2023-04-created-closed.3",
+        "nyc311-2023-04-created-closed.4",
+        "nyc311-2023-04-created-resolution.0",
+        "nyc311-2023-04-created-resolution.1",
+        "nyc311-2023-04-created-resolution.2",
+        "nyc311-2023-04-created-resolution.3",
+        "nyc311-2023-04-created-resolution.4",
+        "nyc311-2023-05-created-closed.0",
+        "nyc311-2023-05-created-closed.1",
+        "nyc311-2023-05-created-closed.2",
+        "nyc311-2023-05-created-closed.3",
+        "nyc311-2023-05-created-closed.4",
+        "nyc311-2023-05-created-resolution.0",
+        "nyc311-2023-05-created-resolution.1",
+        "nyc311-2023-05-created-resolution.2",
+        "nyc311-2023-05-created-resolution.3",
+        "nyc311-2023-05-created-resolution.4",
+        "nyc311-2023-06-created-closed.0",
+        "nyc311-2023-06-created-closed.1",
+        "nyc311-2023-06-created-closed.2",
+        "nyc311-2023-06-created-closed.3",
+        "nyc311-2023-06-created-closed.4",
+        "nyc311-2023-06-created-resolution.0",
+        "nyc311-2023-06-created-resolution.1",
+        "nyc311-2023-06-created-resolution.2",
+        "nyc311-2023-06-created-resolution.3",
+        "nyc311-2023-06-created-resolution.4"
+      ]
+    },
+    {
+      "id": "float-format",
+      "workload": "float-format",
+      "driver": "textio",
+      "role": "workload",
+      "kind": "warm-batch",
+      "root": "units/float-format",
+      "description": "Suite unit (one resident warm batch): float64 and float32 arrays to str via astype.",
+      "files": [
+        "usgs-iv-discharge-de-2023.npy",
+        "usgs-iv-discharge-me-2023.npy"
+      ],
+      "family": "USGS NWIS instantaneous discharge (00060), all Delaware and Maine gauges, calendar 2023",
+      "op": "float-format",
+      "outputs": [
+        "usgs-iv-discharge-de-2023.0",
+        "usgs-iv-discharge-de-2023.1",
+        "usgs-iv-discharge-me-2023.0",
+        "usgs-iv-discharge-me-2023.1"
+      ]
+    }
+  ]
+}

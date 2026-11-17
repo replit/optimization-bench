@@ -1,0 +1,79 @@
+{
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0: adds the complete-text small-memory workload (small-text-expansion-v1) next to the unchanged original codec workload.",
+  "schema_version": 1,
+  "task": "bzip2-codec",
+  "edition": "v1.0-bzip2-small-text-20261029",
+  "status": "qualification-pending",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "correctness_qualification": "pending-new-definition-registration-and-CPU-certification",
+  "source_policy": {
+    "version": 3,
+    "task": "bzip2-codec",
+    "source_root": "/app/bzip2",
+    "source_roots": [
+      "."
+    ],
+    "allowed_extensions": [
+      ".c",
+      ".h"
+    ],
+    "allowed_files": [
+      "blocksort.c",
+      "huffman.c",
+      "crctable.c",
+      "randtable.c",
+      "compress.c",
+      "decompress.c",
+      "bzlib.c",
+      "bzlib_private.h"
+    ],
+    "protected_paths": [
+      "bzlib.h",
+      "Makefile",
+      "tests/**",
+      "driver/**",
+      "tools/**"
+    ],
+    "operations": [
+      "modify"
+    ],
+    "protected_paths_take_precedence": true,
+    "max_source_bytes": 4194304,
+    "max_source_files": 8,
+    "verifier_shares_candidate_process": false
+  },
+  "judge_distribution": "separate-verifier",
+  "cores": [
+    8
+  ],
+  "upstream_test_command": "See tests/README.md",
+  "baseline_source_sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+  "backend": "harbor-public-v1",
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  },
+  "workload_revision": "small-text-expansion-v1"
+}

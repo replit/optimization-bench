@@ -1,0 +1,9 @@
+[sqlfluff]
+large_file_skip_byte_limit = 0
+large_file_skip_char_limit = 0
+dialect = snowflake
+templater = jinja
+[sqlfluff:templater:jinja:context]
+database_name = BENCH_DATABASE
+schema_name = BENCH_SCHEMA
+warehouse_name = BENCH_WAREHOUSE

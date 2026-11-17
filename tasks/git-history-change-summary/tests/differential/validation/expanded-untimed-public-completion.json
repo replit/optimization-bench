@@ -1,0 +1,9 @@
+{
+  "api": true,
+  "fuzz": "awaiting separate smoke",
+  "image": "sha256:60d0b356ce2ff6f18b4ce326e9cbae68d848e8e5870d911bea0819c8032de591",
+  "native": true,
+  "public_controls": true,
+  "timing_started": false,
+  "upstream": true
+}

@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "release": "optimbench-v1.0-public",
+  "scope": "Data-distribution decisions and sign-off evidence for the public release. Records evidence only; it is not a legal grant and does not change any frozen Task file, workload, expected output, gate or timing rule. Validate with: python3 -m tools.public_release_ledger",
+  "policy": {
+    "heldout": "Held-out sets are released (owner decision, docs/heldout-lfs.md). Fetch-only held-out inputs ship as pinned URL + SHA-256 recipes, never as rehosted bodies.",
+    "image_policies": {
+      "ecr-after-signoff": "Image may be pushed to public ECR once every item is verified and the release checks pass.",
+      "build-locally": "Image must not be pushed to a public registry; users build it from environment/Dockerfile, which fetches inputs from their upstreams. The source repository may still be public.",
+      "held": "Excluded from this release round; resolve the reason first."
+    },
+    "statuses": {
+      "verified": "Checked against the cited evidence. approved_by records a team decision where one was made.",
+      "blocked": "Work remains before release.",
+      "requires-human-judgment": "A permission or usage question that only a responsible person can decide; it blocks the Task until decided."
+    },
+    "data_policy": "docs/public-data-policy.md"
+  },
+  "tasks": {
+    "black-project-format": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Permissive public project trees in the image; held-out project bodies in repo LFS.",
+      "signoffs": [
+        {
+          "item": "Six held-out repositories recorded as NOASSERTION are permissively licensed",
+          "status": "verified",
+          "evidence": "Retained licence texts: yt, logbook, django-hosts, numpy BSD-3-Clause; ics-py, BrowserGym Apache-2.0. sources.json is hash-locked, so the identification is recorded here.",
+          "evidence_paths": [
+            "tasks/black-project-format/tests/fuzz/notices/heldout/yt-project_yt/COPYING",
+            "tasks/black-project-format/tests/fuzz/notices/heldout/getlogbook_logbook/LICENSE",
+            "tasks/black-project-format/tests/fuzz/notices/heldout/ics-py_ics-py/LICENSE.rst"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "Public project trees in the image ship with their licence notices",
+          "status": "verified",
+          "evidence": "MIT/BSD/PSF notices listed for the public trees and API inputs.",
+          "evidence_paths": [
+            "tasks/black-project-format/environment/notices/PUBLIC-PROJECT-TREES.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "Public notice says the two held-out project licence files ship with the released held-out trees",
+          "status": "verified",
+          "evidence": "PUBLIC-PROJECT-TREES.md corrected 2026-11-15; provenance binding refreshed.",
+          "evidence_paths": [
+            "tasks/black-project-format/environment/notices/PUBLIC-PROJECT-TREES.md"
+          ]
+        }
+      ]
+    },
+    "bzip2-codec": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "30.6 MB public and 153 MB held-out corpus hosted in repo LFS and baked into the image; the 36 entries labelled 'review pending' were reviewed on 2026-11-17 and relabelled (Kythe Apache-2.0, Newsboat MIT, U.S. Government works, Open Government Licence - Canada).",
+      "signoffs": [
+        {
+          "item": "All 'review pending' entries are U.S. Government, OGL-Canada, Kythe or Newsboat sources",
+          "status": "verified",
+          "evidence": "Collection and publisher per entry in both manifests.",
+          "evidence_paths": [
+            "tasks/bzip2-codec/public/dev/manifest.json",
+            "tasks/bzip2-codec/tests/fuzz/notices/heldout-corpus/manifest.json"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "Project Gutenberg texts are public domain in the U.S. only; confirm international redistribution",
+          "status": "verified",
+          "evidence": "Every Gutenberg author, editor and illustrator in the public (75) and held-out sets died by 1946, so the texts are also public domain in life+70 jurisdictions. The Robert W. Service (d. 1958) and Stephen Crane/Vincent Starrett (ed., d. 1974) held-out groups were removed on 2026-11-17; 65 held-out texts remain (13 authors x 5).",
+          "evidence_paths": [
+            "tasks/bzip2-codec/tests/README.md",
+            "docs/public-data-policy.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "Corpus entries formerly labelled 'review pending' carry reviewed licence terms",
+          "evidence": "Kythe files carry the Apache-2.0 header or fall under the repository Apache-2.0 LICENSE; Newsboat files fall under its MIT LICENSE (NEWSBOAT-LICENSE-REVIEW.md); GPO and NOAA files are U.S. Government works; Canada records are under the Open Government Licence - Canada.",
+          "evidence_paths": [
+            "tasks/bzip2-codec/public/dev/manifest.json",
+            "tasks/bzip2-codec/tests/fuzz/notices/heldout-corpus/manifest.json"
+          ],
+          "status": "verified",
+          "approved_by": "AI team at Replit, 2026-11-17"
+        }
+      ]
+    },
+    "git-history-change-summary": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Image contains full public open-source repository histories (about 29 GB); held-out repositories are fetch-only.",
+      "signoffs": [
+        {
+          "item": "Public repository histories in the image are open-source projects with root licences recorded",
+          "status": "verified",
+          "evidence": "Root licence per repository.",
+          "evidence_paths": [
+            "tasks/git-history-change-summary/environment/notices/SOURCE-LICENSES.md"
+          ]
+        },
+        {
+          "item": "Full histories can contain third-party files whose licences differ from the root licence; confirm redistribution of complete histories",
+          "status": "verified",
+          "evidence": "Root-licence labels are not evidence for every historical file. Resolved under rules 3-4: complete repositories ship with their licences, as in SWE-bench-style benchmarks.",
+          "evidence_paths": [
+            "tasks/git-history-change-summary/environment/notices/SOURCE-LICENSES.md",
+            "docs/public-data-policy.md"
+          ],
+          "approved_by": "AI team at Replit, data policy adopted 2026-11-15"
+        },
+        {
+          "item": "Held-out identities, pins, metadata and expected bodies are part of the public release",
+          "status": "verified",
+          "evidence": "docs/heldout-lfs.md records the decision to release held-out sets. Held-out repository histories are fetch-only public histories; the derived expected outputs ship in Git LFS with their source licences in tests/notices/heldout-expected/. The licences of all ten held-out histories are recorded in payload.json, tests/heldout.lock.json and tests/notices/heldout-expected/NOTICE.md.",
+          "evidence_paths": [
+            "tasks/git-history-change-summary/tests/README.md",
+            "docs/heldout-lfs.md",
+            "docs/public-data-policy.md"
+          ],
+          "approved_by": "AI team at Replit, data policy adopted 2026-11-15"
+        },
+        {
+          "item": "Document GPL obligations for the Git source history shipped in the image",
+          "status": "verified",
+          "evidence": "Obligations written down in environment/notices/SOURCE-LICENSES.md ('Obligations when redistributing this image'): complete Git source at /app/git with COPYING and LGPL-2.1; HAProxy LICENSE plus GPL/LGPL texts ship in /app/notices.",
+          "evidence_paths": [
+            "tasks/git-history-change-summary/environment/notices/SOURCE-LICENSES.md",
+            "tasks/git-history-change-summary/environment/notices/COPYING",
+            "tasks/git-history-change-summary/environment/notices/haproxy-LICENSE",
+            "docs/public-data-policy.md"
+          ]
+        },
+        {
+          "item": "Held-out expected outputs ship with the licences of their source histories",
+          "evidence": "The stored patch and shortstat outputs reproduce text from neovim (Apache-2.0 with Vim-licensed portions), mdBook (MPL-2.0), click (BSD-3-Clause) and eslint (MIT); each licence is retained at its pinned commit. Redistribution obligations are in the 'Obligations' section of that NOTICE.md.",
+          "evidence_paths": [
+            "tasks/git-history-change-summary/tests/notices/heldout-expected/NOTICE.md"
+          ],
+          "status": "verified",
+          "approved_by": "AI team at Replit, 2026-11-17"
+        }
+      ]
+    },
+    "goldmark-gfm-html": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "About 33 MB public and 279 MB held-out Markdown in repo LFS; public documents baked into the image.",
+      "signoffs": [
+        {
+          "item": "CC-BY-4.0 and Apache-2.0 documents ship with attribution and licence notices",
+          "status": "verified",
+          "evidence": "Per-entry licences in NOTICE.md and V1.1-INPUTS.md; creator credits removed with front matter are attributed by URI to the pinned original (CC BY 4.0 section 3(a)(2); notices/V1.1-INPUTS.md, tests/notices/README.md).",
+          "evidence_paths": [
+            "tasks/goldmark-gfm-html/environment/notices/NOTICE.md",
+            "tasks/goldmark-gfm-html/notices/V1.1-INPUTS.md",
+            "tasks/goldmark-gfm-html/tests/notices/README.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "Document obligations for the AGPL-3.0-only (3) and GPL-2.0-or-later (1) documents in Git and the image",
+          "status": "verified",
+          "evidence": "Obligations recorded in the 'Copyleft documents and obligations' paragraph of NOTICE.md; the AGPL-3.0 text and pandoc COPYRIGHT ship inside NOTICE.md, GPL-2.0 as pandoc-COPYING.md and GPL-2.0.txt. Stale notice entries that matched no input were removed.",
+          "evidence_paths": [
+            "tasks/goldmark-gfm-html/environment/notices/NOTICE.md",
+            "tasks/goldmark-gfm-html/environment/notices/pandoc-COPYING.md",
+            "tasks/goldmark-gfm-html/environment/notices/GPL-2.0.txt"
+          ]
+        }
+      ]
+    },
+    "jq-strip-openapi-descriptions": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Inputs are bind-mounted, not baked into the image. GH Archive inputs are fetch-only. Public OpenAPI specs are in Git or fetch-only; held-out OpenAPI specs and the Toronto GeoJSON excerpts are hosted in repo LFS with their licences.",
+      "signoffs": [
+        {
+          "item": "Hosted OpenAPI specs (Apache/MIT/BSD) and Toronto GeoJSON (Open Government Licence - Toronto) ship with licence texts",
+          "status": "verified",
+          "evidence": "Licence texts retained; NOTICE.md has a City of Toronto Street Tree Data entry (source, retrieval date 2026-10-28, OGL-Toronto attribution, changes-made statement for the public and held-out excerpts).",
+          "evidence_paths": [
+            "tasks/jq-strip-openapi-descriptions/notices/NOTICE.md",
+            "tasks/jq-strip-openapi-descriptions/notices/TORONTO-LICENSE.txt"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "GH Archive raw-event terms are unconfirmed; inputs are fetch-only but usage terms still apply",
+          "status": "verified",
+          "evidence": "GHARCHIVE-SOURCES.md: redistribution terms unconfirmed. Resolved under docs/public-data-policy.md rule 2: not hosted; users download from the publisher and accept its terms.",
+          "evidence_paths": [
+            "tasks/jq-strip-openapi-descriptions/notices/GHARCHIVE-SOURCES.md",
+            "docs/public-data-policy.md"
+          ],
+          "approved_by": "AI team at Replit, data policy adopted 2026-11-15"
+        }
+      ]
+    },
+    "numpy-quantile": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Eight units built from a third-party dataset whose terms do not permit redistribution were removed on 2026-11-17, and the public strings-text batch (Project Gutenberg texts, not all public domain outside the USA) was removed the same day. Remaining inputs are U.S. Government and other public-domain works, NYC Open Data and Chicago terms, CC BY 4.0, CC BY 3.0 NZ, OGL-UK-3.0, PDDL-1.0 and PSF-2.0 (CPython) sources, attributed in environment/notices/suite-inputs.md (public) and tests/notices/HELDOUT-INPUTS.md (held-out). The image is published on Public ECR after an image-layer audit, pinned by digest in task.toml.",
+      "signoffs": [
+        {
+          "item": "NYC TLC trip-record arrays (warm-batch) have a recorded terms entry",
+          "status": "verified",
+          "evidence": "Terms record in docs/public-data-policy.md (NYC Open Data Terms of Use; NYC Administrative Code Title 23, Chapter 5: public data sets without use restrictions). Kept outside the Task so the results-bearing image context is unchanged.",
+          "evidence_paths": [
+            "docs/public-data-policy.md"
+          ]
+        },
+        {
+          "item": "No input from a source whose terms do not permit redistribution remains in the Task",
+          "evidence": "The eight units built from such a source, with their public and held-out inputs, locks and references, were removed on 2026-11-17.",
+          "evidence_paths": [
+            "tasks/numpy-quantile/environment/notices/suite-inputs.md"
+          ],
+          "status": "verified",
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "Every public and held-out input source is attributed with its licence, required attribution and changes made",
+          "status": "verified",
+          "evidence": "Public sources in environment/notices/suite-inputs.md (in the image) and held-out sources in tests/notices/HELDOUT-INPUTS.md, with verbatim CC-BY-4.0, OGL-UK-3.0, CC BY 3.0 NZ and CPython licence texts; facts taken from publisher pages on 2026-11-17.",
+          "evidence_paths": [
+            "tasks/numpy-quantile/environment/notices/suite-inputs.md",
+            "tasks/numpy-quantile/tests/notices/HELDOUT-INPUTS.md",
+            "tasks/numpy-quantile/environment/notices/CC-BY-4.0.txt"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "No text that is public domain only in the USA remains",
+          "status": "verified",
+          "evidence": "16 of the 175 Project Gutenberg texts in the public strings-text batch could not be confirmed public domain in the UK/EU, so the whole public batch (four arrays, 384 MB) was removed on 2026-11-17; strings-text is checked on held-out CPython text only.",
+          "evidence_paths": [
+            "tasks/numpy-quantile/environment/notices/suite-inputs.md",
+            "tasks/numpy-quantile/environment/workload/manifest.json"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        }
+      ]
+    },
+    "ruff-project-lint": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Image contains pandas (BSD-3) and FastAPI (MIT) trees; held-out HTTPX/Rich histories are fetch-only.",
+      "signoffs": [
+        {
+          "item": "pandas (BSD-3-Clause) and FastAPI (MIT) trees in the image ship with notices; held-out HTTPX/Rich histories are fetch-only",
+          "status": "verified",
+          "evidence": "Notice index lists both licences.",
+          "evidence_paths": [
+            "tasks/ruff-project-lint/notices/README.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        }
+      ]
+    },
+    "serde-json-production-crate-index-ingestion": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Inputs stay in a BuildKit cache mount, not image layers. All inputs are fetch-only: crates.io index records (public and held-out), public GeoJSON (Natural Earth, public domain; japan-topography with the MLIT credit) and 194 held-out geoBoundaries gbOpen files with per-file licences listed in notices/GEOJSON-SOURCES.md. The six held-out expected outputs (2,748,152 bytes) are not hosted in Git or LFS; they are regenerated locally with tools/recover_serde_json_goldens.py and checked against tests/heldout.lock.json. crates.io terms: notices/CRATES-IO-INDEX.md.",
+      "signoffs": [
+        {
+          "item": "Held-out inputs are fetch-only from crates.io-index and geoBoundaries gbOpen at pinned commits",
+          "status": "verified",
+          "evidence": "payload.json retention fetch-only for all held-out inputs.",
+          "evidence_paths": [
+            "tasks/serde-json-production-crate-index-ingestion/notices/GEOJSON-SOURCES.md",
+            "tasks/serde-json-production-crate-index-ingestion/payload.json"
+          ]
+        },
+        {
+          "item": "The six held-out expected-output bodies are regenerated by tools/recover_serde_json_goldens.py and omitted from the export",
+          "status": "verified",
+          "evidence": "GCP c4-standard-32 (linux/amd64), release snapshot 64e433bbdf, 2026-11-15: canonical serde_json image (recipe a18aec65..., image sha256:1bf1ed45...) regenerated all six goldens from 2,896,102 bytes of pinned crates.io inputs; every SHA-256 matched the frozen lock (bevy ae7f174d, diesel b912613b, image 1ba134dd, nalgebra 73c4098b, opencv e65bec56, winit 797c1357). Run the tool as root or with a writable temp directory. Omission is enforced by the export allowlist.",
+          "evidence_paths": [
+            "docs/serde-json-verifier-recovery.md",
+            "tools/recover_serde_json_goldens.py",
+            "scorer-metadata/serde-json-production-crate-index-ingestion/tests/heldout/manifest.json"
+          ]
+        },
+        {
+          "item": "crates.io data-access policy permits this benchmark's use of index records",
+          "status": "verified",
+          "evidence": "provenance.json: no blanket registry-metadata redistribution licence; owner ruling covers retention, not third-party rights. Resolved under docs/public-data-policy.md rule 2: not hosted; users download from the publisher and accept its terms.",
+          "evidence_paths": [
+            "tasks/serde-json-production-crate-index-ingestion/provenance.json",
+            "docs/public-data-policy.md",
+            "tasks/serde-json-production-crate-index-ingestion/notices/CRATES-IO-INDEX.md"
+          ],
+          "approved_by": "AI team at Replit, data policy adopted 2026-11-15"
+        }
+      ],
+      "omit_from_export": [
+        "tasks/serde-json-production-crate-index-ingestion/tests/heldout/expected/bevy",
+        "tasks/serde-json-production-crate-index-ingestion/tests/heldout/expected/diesel",
+        "tasks/serde-json-production-crate-index-ingestion/tests/heldout/expected/image",
+        "tasks/serde-json-production-crate-index-ingestion/tests/heldout/expected/nalgebra",
+        "tasks/serde-json-production-crate-index-ingestion/tests/heldout/expected/opencv",
+        "tasks/serde-json-production-crate-index-ingestion/tests/heldout/expected/winit"
+      ]
+    },
+    "sqlfluff-project-lint": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Third-party SQL project sources (MIT, BSD-3-Clause, PostgreSQL and Apache-2.0, plus MPL-2.0 Mozilla bigquery-etl, a file-level copyleft licence) fetched into the image; small held-out set in repo LFS.",
+      "signoffs": [
+        {
+          "item": "Per-project licences (MIT, BSD-3-Clause, PostgreSQL, Apache-2.0, MPL-2.0) are recorded for every fetched SQL project",
+          "status": "verified",
+          "evidence": "Per-project licence table (SPDX) in RESEARCH.md and source.license in environment/public-workloads.lock.json; Mozilla bigquery-etl (MPL-2.0, file-level copyleft) is fetched unmodified and its LICENSE is retained; the held-out MIMIC and pg-schema-diff licences are in tests/notices/.",
+          "evidence_paths": [
+            "tasks/sqlfluff-project-lint/RESEARCH.md",
+            "tasks/sqlfluff-project-lint/environment/public-workloads.lock.json",
+            "tasks/sqlfluff-project-lint/tests/notices/README.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "HTTP Archive Almanac: code and documentation carry different terms; confirm the SQL used falls under the code licence",
+          "status": "verified",
+          "evidence": "The HTTPArchive/almanac.httparchive.org repository states it is licensed under Apache-2.0; the SQL files are code in that repository, and RESEARCH.md retains its LICENSE, README and per-file attribution.",
+          "evidence_paths": [
+            "tasks/sqlfluff-project-lint/RESEARCH.md"
+          ]
+        }
+      ]
+    },
+    "sqlfmt-cli": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Public CLI and native inputs are fetch-only and bind-mounted, so no input body is in the repository or a final image layer. The ten Sourcegraph-licensed CLI inputs and their notices were removed on 2026-11-15; the sixteen CLI cases built from TimescaleDB's source-available tsl/ directory (Timescale License) were removed on 2026-11-17 (89 CLI cases remain, every remaining expected output unchanged); held-out inputs (Chinook MIT, PostgreSQL, Mozilla MPL-2.0) are in LFS. The public native reference outputs (25,993,649 bytes, formatter output derived from PostgreSQL/PostGIS files) are in repo LFS with a derivation notice and the source licences.",
+      "signoffs": [
+        {
+          "item": "Held-out inputs in LFS are Chinook (MIT), PostgreSQL (PostgreSQL Licence) and Mozilla bigquery-etl (MPL-2.0) with verbatim notices",
+          "status": "verified",
+          "evidence": "tests/README.md lists sources and notice locations.",
+          "evidence_paths": [
+            "tasks/sqlfmt-cli/tests/README.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "Sourcegraph Enterprise-licensed CLI inputs are removed",
+          "status": "verified",
+          "evidence": "Ten CLI cases and two Sourcegraph notices removed from the manifest, payload, CLI recipe generator and provenance; no held-out or native copy. The remaining cases keep their expected outputs (89 after the 2026-11-17 tsl/ removal); image build exact-output check re-run on Linux x86-64.",
+          "evidence_paths": [
+            "tasks/sqlfmt-cli/environment/workload/inputs/manifest.json",
+            "tasks/sqlfmt-cli/tests/README.md"
+          ]
+        },
+        {
+          "item": "No input under a source-available or non-open-source licence remains",
+          "evidence": "The 16 TimescaleDB tsl/ CLI cases (294 fetch-only files, Timescale License) and the TSL notice were removed; remaining TimescaleDB inputs come from its Apache-2.0 sql/ and test/sql/ trees. One CLI case reads PostGIS extras/ogc_test_suite/ files (1998 Open GIS Consortium copyright); they are fetch-only from PostGIS's repository at a pinned commit, only their output length and SHA-256 are stored, and they are excluded from the hosted native reference.",
+          "evidence_paths": [
+            "tasks/sqlfmt-cli/environment/workload/inputs/manifest.json",
+            "tasks/sqlfmt-cli/payload.json",
+            "tasks/sqlfmt-cli/tests/README.md"
+          ],
+          "status": "verified",
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "The hosted native reference outputs carry their source licences and a derivation notice",
+          "status": "verified",
+          "evidence": "tests/fuzz/native/notices/NATIVE-REFERENCE-OUTPUTS.md records the derivation, the modification statement and the PostgreSQL, GPL-2.0-or-later, MIT (address_standardizer), MPL-2.0 and CC BY-SA 3.0 (one PostGIS documentation file) terms; licence texts are in environment/notices/ and provenance.json records the per-commit sources. PostGIS spatial_ref_sys.sql (EPSG dataset records) is acknowledged with the IOGP/EPSG terms of use (https://epsg.org/terms-of-use.html).",
+          "evidence_paths": [
+            "tasks/sqlfmt-cli/tests/fuzz/native/notices/NATIVE-REFERENCE-OUTPUTS.md",
+            "tasks/sqlfmt-cli/provenance.json"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        }
+      ]
+    },
+    "sqlglot-mozilla-transpile": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Hosted in Git and bind-mounted at build and run time, not image layers (912,983 bytes): 284 Mozilla bigquery-etl SQL files (MPL-2.0), plus 4 optimizer and 4 lineage inputs adapted from SQLMesh sushi example models (Apache-2.0, 3 each) and SQLGlot's README query (MIT, 1 each). Held-out, in Git LFS outside the image: 429 Mozilla bigquery-etl inputs (MPL-2.0) with 429 expected outputs and 122 references. The 341 TPC-H/TPC-DS-derived public inputs (22+99 optimizer, 121 lineage, 99 diff) are fetch-only, derived locally from SQLGlot's pinned files, and not hosted.",
+      "signoffs": [
+        {
+          "item": "Mozilla bigquery-etl SQL (MPL-2.0), sqlglot (MIT) and SQLMesh (Apache-2.0) notices ship with the image",
+          "status": "verified",
+          "evidence": "environment/notices/INPUTS.md lists every source with its licence, attribution and changes made (Apache-2.0 section 4(b) statement for the SQLMesh-derived requests); tests/notices/HELDOUT.md marks the held-out expected outputs as modified MPL-2.0 Covered Software.",
+          "evidence_paths": [
+            "tasks/sqlglot-mozilla-transpile/environment/notices/INPUTS.md",
+            "tasks/sqlglot-mozilla-transpile/environment/notices/LICENSE.sqlglot",
+            "tasks/sqlglot-mozilla-transpile/environment/notices/Mozilla-MPL-2.0",
+            "tasks/sqlglot-mozilla-transpile/environment/notices/SQLMesh-LICENSE",
+            "tasks/sqlglot-mozilla-transpile/tests/notices/HELDOUT.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "public/alternates/README.md records held-out origins in tests/heldout/alternates-provenance.json (shipped with the held-out set); confirm the alternates are publishable",
+          "status": "verified",
+          "evidence": "public/alternates/provenance.json pins public alternates to SQLGlot (MIT) fixtures and SQLMesh (Apache-2.0) examples; held-out alternates are Mozilla bigquery-etl (MPL-2.0) revisions. Recorded in docs/public-data-policy.md.",
+          "evidence_paths": [
+            "docs/public-data-policy.md",
+            "tasks/sqlglot-mozilla-transpile/public/alternates/provenance.json"
+          ]
+        },
+        {
+          "item": "TPC-H and TPC-DS query text (TPC terms do not allow general redistribution) is not redistributed",
+          "status": "verified",
+          "evidence": "The 341 TPC-derived public input files were removed from Git; environment/workload/fetch_inputs.py downloads SQLGlot's pinned tpc-h.sql, tpc-ds.sql and tests/helpers.py and derives them locally (byte-identical to the removed files). prepare.py deletes tests/fixtures/optimizer/tpc-h and tpc-ds from the image; release.json declares the two TPC upstream tests as exclusions. prepare.py also deletes SQLGlot's benchmarks/parse.py. TPC text that remains inside SQLGlot's own MIT-licensed upstream test sources (tests/dialects/test_duckdb.py, tests/test_anonymize.py, table schemas in tests/helpers.py) is listed in environment/notices/INPUTS.md. The previously published image contains TPC fixtures and must be replaced.",
+          "evidence_paths": [
+            "docs/public-data-policy.md",
+            "tasks/sqlglot-mozilla-transpile/environment/public-input-packet.json",
+            "tasks/sqlglot-mozilla-transpile/environment/workload/fetch_inputs.py",
+            "tasks/sqlglot-mozilla-transpile/environment/prepare.py",
+            "tasks/sqlglot-mozilla-transpile/release.json"
+          ]
+        }
+      ]
+    },
+    "sqlite-distinct-plant-facets": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Remaining inputs are public-domain U.S. Government works and CC BY 4.0, CC BY 2.0 FR, CC BY-SA (Stack Exchange), MIT and NYC Open Data sources; licences, attributions and changes are in environment/notices/SUITE-INPUTS.md and STACK-EXCHANGE.md (public inputs) and tests/notices/HELDOUT-INPUTS.md (held-out inputs). Removed third-party units are no longer in the Task. The image is published on Public ECR after an image-layer audit, pinned by digest in task.toml.",
+      "signoffs": [
+        {
+          "item": "Stack Exchange data (Seasoned Advice public, Photography held-out) ships as CC BY-SA 4.0 adaptations with attribution, dated per-post licences, changes made and share-alike notice",
+          "status": "verified",
+          "evidence": "STACK-EXCHANGE.md credits Seasoned Advice contributors (public) and tests/notices/HELDOUT-INPUTS.md credits Photography Stack Exchange contributors (held-out). Both record Stack Exchange's dated CC BY-SA 2.5/3.0/4.0 terms (each post's licence retained in content_license), explain how every row links to its post (/q/<id>, /a/<id>) and author (/users/<id>), state the changes made and release the derived databases and request lists under CC BY-SA 4.0 (permitted by section 4(b) of the 2.5 and 3.0 licences). The 4.0/3.0/2.5 legal code and the dump's license.txt ship in environment/notices/suite-inputs/ and tests/notices/.",
+          "evidence_paths": [
+            "tasks/sqlite-distinct-plant-facets/environment/notices/STACK-EXCHANGE.md",
+            "tasks/sqlite-distinct-plant-facets/tests/notices/HELDOUT-INPUTS.md",
+            "tasks/sqlite-distinct-plant-facets/environment/notices/suite-inputs/cc-by-sa-4.0-legalcode.txt",
+            "tasks/sqlite-distinct-plant-facets/tests/notices/cc-by-sa-4.0-legalcode.txt"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "Five held-out mirror inputs (GeoNames records) carry a public licence record",
+          "status": "verified",
+          "evidence": "The held-out mirror files store the GeoNames dump header (geonameid, name, asciiname, ...) and GeoNames records; GeoNames is CC BY 4.0. Attribution ships in the Task at tests/notices/HELDOUT-INPUTS.md (CC BY 4.0 legal code in tests/notices/cc-by-4.0-legalcode.html), and payload.json labels the five files CC-BY-4.0 (GeoNames).",
+          "evidence_paths": [
+            "tasks/sqlite-distinct-plant-facets/tests/notices/HELDOUT-INPUTS.md",
+            "tasks/sqlite-distinct-plant-facets/payload.json"
+          ]
+        },
+        {
+          "item": "No removed third-party (bike-share) input or builder remains in the Task",
+          "evidence": "The removed unit's inputs, request lists, held-out database, derive.py builder and .gitignore entry are gone.",
+          "evidence_paths": [
+            "tasks/sqlite-distinct-plant-facets/environment/notices/SUITE-INPUTS.md"
+          ],
+          "status": "verified",
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "Derived inputs name their source licences instead of an unpublished RESEARCH.md",
+          "evidence": "Each derived request list and held-out database records its source's licence: U.S. Government works (USGS, NOAA, EPA, USGS NWIS), GeoNames CC BY 4.0, WRI CC BY 4.0, Tatoeba CC BY 2.0 FR, Auckland Transport CC BY 4.0 (public), Translink Queensland CC BY 4.0 (held-out), LA City Controller CC BY 4.0 (held-out), NYC Open Data terms (public), Stack Exchange CC BY-SA 4.0 adaptations, Chinook MIT, and Northwind MIT (JP White's SQLite port; Microsoft publishes the original sample under MIT).",
+          "evidence_paths": [
+            "tasks/sqlite-distinct-plant-facets/payload.json",
+            "tasks/sqlite-distinct-plant-facets/tests/notices/HELDOUT-INPUTS.md"
+          ],
+          "status": "verified",
+          "approved_by": "AI team at Replit, 2026-11-17"
+        }
+      ]
+    },
+    "terser-minify": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "Public and held-out cdnjs inputs are fetch-only and bind-mounted at build; no input body is in the repository or a final image layer. The non-commercially labelled Highmaps 6.0.3 input was removed on 2026-11-15 (149 public assets; every remaining expected output unchanged). Three held-out libraries were removed on 2026-11-17 (146 held-out cdnjs cases remain): jquery.webticker 3.0.0 (file header CC BY-NC 3.0), p5play 3.35.5 (proprietary p5play Creator License) and cryptico (licence cannot be determined).",
+      "signoffs": [
+        {
+          "item": "No input body is hosted in the repository or a final image layer",
+          "status": "verified",
+          "evidence": "Public and held-out cdnjs inputs are fetch-only and bind-mounted at build.",
+          "evidence_paths": [
+            "tasks/terser-minify/notices/INPUT-DISTRIBUTION.md"
+          ]
+        },
+        {
+          "item": "Highmaps 6.0.3 input (cdnjs label CC-BY-NC-3.0) is removed from the public batch",
+          "status": "verified",
+          "evidence": "Removed from manifest, payload, notices and provenance; no held-out copy. The image build's exact-output check passed for all 156 public cases on linux/arm64 and on GCP c4-standard-32 (linux/amd64), release snapshot 64e433bbdf, 2026-11-15 (image sha256:88a2c034...); the final image holds only inputs/manifest.json.",
+          "evidence_paths": [
+            "tasks/terser-minify/environment/workload/inputs/manifest.json",
+            "tasks/terser-minify/notices/INPUT-DISTRIBUTION.md"
+          ]
+        },
+        {
+          "item": "Other cdnjs inputs carry GPL, LGPL, EUPL and unspecified labels; confirm usage terms",
+          "status": "verified",
+          "evidence": "Labels are publisher metadata, not a permission conclusion. Resolved under docs/public-data-policy.md rule 2: not hosted; users download from the publisher and accept its terms.",
+          "evidence_paths": [
+            "tasks/terser-minify/notices/CDNJS-INPUTS.json",
+            "docs/public-data-policy.md"
+          ],
+          "approved_by": "AI team at Replit, data policy adopted 2026-11-15"
+        },
+        {
+          "item": "Release process never publishes Terser build stages or BuildKit caches holding fetched inputs",
+          "status": "verified",
+          "evidence": "Only the final image was pushed (docker push of the tagged final stage); a layer-by-layer audit of the pushed image found no input body under app/workload/inputs/files and no removed library in any layer.",
+          "evidence_paths": [
+            "tasks/terser-minify/notices/INPUT-DISTRIBUTION.md"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        },
+        {
+          "item": "Held-out cdnjs and npm inputs carry verified licence labels; non-commercial, proprietary or undeterminable ones are removed",
+          "status": "verified",
+          "evidence": "Every held-out row in payload.json and tests/heldout.lock.json records an SPDX licence and the evidence (npm registry licence at that version, cdnjs metadata, file header or upstream LICENSE). jquery.webticker, p5play and cryptico were removed from the held-out manifest, lock, payload and source list; the requalification record lists them as licence drops.",
+          "evidence_paths": [
+            "tasks/terser-minify/payload.json",
+            "tasks/terser-minify/tests/heldout.lock.json",
+            "tasks/terser-minify/tests/heldout/requalification.json"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-17"
+        }
+      ]
+    },
+    "xz-lzma2-compress": {
+      "image_policy": "ecr-after-signoff",
+      "reason": "4.8 MB from Git plus about 62 MB of fetched source archives (PCRE2, SDL, GNU projects) baked into the image.",
+      "signoffs": [
+        {
+          "item": "Fetched source archives carry their own licences; CPython and Git notices ship",
+          "status": "verified",
+          "evidence": "Per-project notices for CPython and Git; GNU archives contain COPYING.",
+          "evidence_paths": [
+            "tasks/xz-lzma2-compress/environment/notices"
+          ],
+          "approved_by": "AI team at Replit, 2026-11-15"
+        },
+        {
+          "item": "GNU source archives in the image have a notice entry and recorded GPL/LGPL obligations",
+          "status": "verified",
+          "evidence": "environment/notices/GNU-ARCHIVES.md lists all ten archives with licence and source URL; obligations in docs/public-data-policy.md.",
+          "evidence_paths": [
+            "tasks/xz-lzma2-compress/environment/notices/GNU-ARCHIVES.md",
+            "docs/public-data-policy.md"
+          ]
+        }
+      ]
+    }
+  },
+  "release_scope": {
+    "decided": "2026-11-15",
+    "included": [
+      "black-project-format",
+      "bzip2-codec",
+      "git-history-change-summary",
+      "goldmark-gfm-html",
+      "jq-strip-openapi-descriptions",
+      "numpy-quantile",
+      "ruff-project-lint",
+      "serde-json-production-crate-index-ingestion",
+      "sqlfluff-project-lint",
+      "sqlfmt-cli",
+      "sqlglot-mozilla-transpile",
+      "sqlite-distinct-plant-facets",
+      "terser-minify",
+      "xz-lzma2-compress"
+    ],
+    "note": "Fourteen candidate Tasks. A Task is release-ready only when every item is verified; an unresolved permission question stays a blocker. NumPy and SQLite are required; their units built from a non-redistributable source were removed on 2026-11-17."
+  },
+  "release_checks": [
+    {
+      "item": "Explicit file allowlist for the export (selected Tasks only; omit held Tasks, serde_json expected bodies, duplicates and derived copies)",
+      "status": "verified",
+      "evidence": "Allowlist = every tracked path of the release commit (52,999 paths); the six serde_json held-out expected bodies are not tracked; no held Task is present; 0 omissions.",
+      "evidence_paths": []
+    },
+    {
+      "item": "Inspect the final one-commit Git/LFS export against the allowlist",
+      "status": "verified",
+      "evidence": "One root commit with no history; tree identical to the release commit (0 extra, missing or mismatched paths); every LFS pointer valid and referenced; content scans found no TPC query text, no data from removed third-party sources, no Timescale tsl/ files, no secrets and no personal email addresses in our files. The fresh LFS store holds exactly the 47,035 referenced objects, confirmed by the GitHub LFS batch API.",
+      "evidence_paths": []
+    },
+    {
+      "item": "Inspect every layer of each image intended for public ECR; never publish intermediate build stages or input-holding caches",
+      "status": "verified",
+      "evidence": "All 14 pushed images audited layer by layer: recipe label equals the committed recipe; input-free images carry no input body in any layer; no removed or forbidden path (TPC fixtures, benchmarks/parse.py, Gutenberg batch, bike-share builder, Highmaps/webticker/p5play/cryptico, tsl/, credentials) in any layer; licence notices present. A negative test confirmed the audit detects TPC fixtures in the superseded SQLGlot image. Superseded untagged images were deleted from the registry.",
+      "evidence_paths": []
+    },
+    {
+      "item": "Per Task on Linux x86-64 from the exported snapshot: credential-free setup, clean image build, baseline passes, negative control rejected; record commit IDs and image digests",
+      "status": "verified",
+      "evidence": "Each image was built on a fresh Linux x86-64 VM from a clone of the release branch with the recipe label, and each build replays its baseline against every public expected output. Judge gates (--gates-only, public) on the exact pushed digest of every Task: the pristine baseline passed and a deliberately corrupted source was rejected, for all 14 Tasks. Image digests are pinned in each task.toml.",
+      "evidence_paths": []
+    },
+    {
+      "item": "v1.0 timing qualification and a positive-gain control; ledger validation and unit tests are not benchmark qualification",
+      "status": "blocked",
+      "evidence": "Not part of the v1.0 release gate: timing qualification and a positive-gain control are planned after release. Correctness, gates and image audits above are complete.",
+      "evidence_paths": []
+    }
+  ]
+}

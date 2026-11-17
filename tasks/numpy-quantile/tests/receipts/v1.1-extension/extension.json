@@ -1,0 +1,210 @@
+{
+  "format": "optimbench-v1.1-workload-extension-v1",
+  "task": "numpy-quantile",
+  "task_version": "1.1.0",
+  "reason": "Timed unit under the frozen 1 s minimum on quiet GCP hosts (public 0.784 s Intel). Extended with more distinct inputs, each processed exactly once; floor unchanged; library source, protected driver and comparator unchanged.",
+  "recipe": {
+    "source": "NYC TLC yellow trip parquet (same dataset and rights basis as existing taxi parents)",
+    "selection": "finite rows on trip_distance, fare_amount, tip_amount, total_amount with pickup inside the nominal month; rows = eligible[(arange(1e6)*(E-1))//(1e6-1)] (evenly spaced source-order ranks incl. both ends); float64; no clipping",
+    "verification": "recipe reproduces existing taxi-2023-01.npy (125c990f...) and taxi-2023-01-source-rows.npy (9dd6fed2...) byte-for-byte from its authenticated parquet (32df6f67...)",
+    "scripts": [
+      "taxi.py",
+      "verify_and_make.py",
+      "outputs.py"
+    ]
+  },
+  "public_added": {
+    "taxi-2023-03": {
+      "source_sha256": "e7d44943111b007bf0e7084863511886e0db29f862f9a96239383a1f86c6c26e",
+      "sha256": "3038468225d5fc3348bff7f9e26d8d1c04c8786f0d69db105d1540bbaceba35c",
+      "bytes": 32000128,
+      "rows_sha256": "1720516ab7b305140dbc35b71f9c41488f90a8259de25b3091fd63a2e30c50e7",
+      "rows_bytes": 8000128,
+      "source_rows": 3403766,
+      "eligible_rows": 3403577,
+      "excluded_rows": 189,
+      "pickup_range": [
+        "2023-03-01T00:00:00.000000",
+        "2023-03-31T23:59:59.000000"
+      ]
+    },
+    "taxi-2023-04": {
+      "source_sha256": "95c01c53c865e06489179bdecce3a59603697a1557c4d5d183c20ae13a144dc6",
+      "sha256": "5f93229a200c94845e8ffc036d04ff1bbffa369cd49dee4a69c6fc51eb0bb657",
+      "bytes": 32000128,
+      "rows_sha256": "77b6a3ebf27968fdfd394566daa6146c6ea1eccea8a38fcffaf227aa4ff29778",
+      "rows_bytes": 8000128,
+      "source_rows": 3288250,
+      "eligible_rows": 3288155,
+      "excluded_rows": 95,
+      "pickup_range": [
+        "2023-04-01T00:00:00.000000",
+        "2023-04-30T23:59:57.000000"
+      ]
+    },
+    "taxi-2023-05": {
+      "source_sha256": "9bd7d1c557bb9d0413619ba296b4828b884852a70bd07f2230b83f080d9a8591",
+      "sha256": "319a3a0c6c90371f286e4fd352223609e948b33677116ac5c7c66bdcaaa69fa4",
+      "bytes": 32000128,
+      "rows_sha256": "ffba943da3ee65819339fcb277d90273012af2dcf368606f7cb3d6dd2bb9c6ca",
+      "rows_bytes": 8000128,
+      "source_rows": 3513649,
+      "eligible_rows": 3513599,
+      "excluded_rows": 50,
+      "pickup_range": [
+        "2023-05-01T00:00:06.000000",
+        "2023-05-31T23:59:56.000000"
+      ]
+    },
+    "taxi-2023-09": {
+      "source_sha256": "091bf156bea5bb10bd217f5f12375f966f8789349af45d5ee4153e3e1e077a87",
+      "sha256": "30eb4d54236b35dcb208c829b89f4ee605e1ec6827103a1029de7b51977de306",
+      "bytes": 32000128,
+      "rows_sha256": "6ca900775dc0052b90ddb3ac25473c110a43b4ab292999908e007182535043f7",
+      "rows_bytes": 8000128,
+      "source_rows": 2846722,
+      "eligible_rows": 2846690,
+      "excluded_rows": 32,
+      "pickup_range": [
+        "2023-09-01T00:00:00.000000",
+        "2023-09-30T23:59:59.000000"
+      ]
+    },
+    "taxi-2023-10": {
+      "source_sha256": "dc5f069476d350df802ed8120f3b39ec321c34cfa905381e87f608c78ca0c645",
+      "sha256": "0b711eba6c0b883722854a567055fe1931d3480e4ae6a403b6a032c79a6f86ae",
+      "bytes": 32000128,
+      "rows_sha256": "3f82f0f816cbf1d7c5351d75571a30361f200d9db9fc7ba14f1b79226c9d2fce",
+      "rows_bytes": 8000128,
+      "source_rows": 3522285,
+      "eligible_rows": 3522232,
+      "excluded_rows": 53,
+      "pickup_range": [
+        "2023-10-01T00:00:00.000000",
+        "2023-10-31T23:59:58.000000"
+      ]
+    },
+    "taxi-2023-11": {
+      "source_sha256": "af203de0e73a92d640121f02a34326f25037d62380fc406237c87c2a4231ae58",
+      "sha256": "c4569a9ccbee45e8c76b9dbc94fcc6ab7395cf54ac5ed38c4e45bf5243cbb41d",
+      "bytes": 32000128,
+      "rows_sha256": "5f324529d0924dacc7f641cef2710c2d5f35718fa6da0aaeeb6f7d41d9be9621",
+      "rows_bytes": 8000128,
+      "source_rows": 3339715,
+      "eligible_rows": 3339684,
+      "excluded_rows": 31,
+      "pickup_range": [
+        "2023-11-01T00:00:00.000000",
+        "2023-11-30T23:59:59.000000"
+      ]
+    }
+  },
+  "private_added": {
+    "taxi-2024-03": {
+      "source_sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+      "sha256": "115b7bdde8e635eb3799a211ed65fa99583feec2dce352123fe594c056bb2961",
+      "bytes": 32000128,
+      "rows_sha256": "0c7e3e1e0fd910fba9d93072089fd4e21626caf0359fe22a8ad6f4f9e4a44a8e",
+      "rows_bytes": 8000128,
+      "source_rows": 3582628,
+      "eligible_rows": 3582605,
+      "excluded_rows": 23,
+      "pickup_range": [
+        "2024-03-01T00:00:00.000000",
+        "2024-03-31T23:59:59.000000"
+      ]
+    },
+    "taxi-2024-05": {
+      "source_sha256": "1974230be2b5a3ea92e47b5eb77f32dbf1de896d81ad8df4ab6faba52749ad23",
+      "sha256": "a70fed4844cce945ab21247233269f36d558df89d46ba487ad84f7e15e7a31c6",
+      "bytes": 32000128,
+      "rows_sha256": "71d4abf36c0ef4d30720788619895b998f2b661f87c1774d3edb03a2ab7665d2",
+      "rows_bytes": 8000128,
+      "source_rows": 3723833,
+      "eligible_rows": 3723800,
+      "excluded_rows": 33,
+      "pickup_range": [
+        "2024-05-01T00:00:00.000000",
+        "2024-05-31T23:59:58.000000"
+      ]
+    },
+    "taxi-2024-09": {
+      "source_sha256": "2f42e4a383a6635de803001462848d0aee2b47f6ce899126805d2d05361fb843",
+      "sha256": "94b2b8a5f313f5d20d19e0e9e3730d1be7de4865a736c607123d677a1e20d34c",
+      "bytes": 32000128,
+      "rows_sha256": "5ac993b70929a26bdb98b62c0bfff5a354ed38ad46a2dae832de4aaaac9ce28f",
+      "rows_bytes": 8000128,
+      "source_rows": 3633030,
+      "eligible_rows": 3632981,
+      "excluded_rows": 49,
+      "pickup_range": [
+        "2024-09-01T00:00:00.000000",
+        "2024-09-30T23:59:59.000000"
+      ]
+    },
+    "taxi-2024-11": {
+      "source_sha256": "5ef321876de5007a7c147a347389133fc94fd7ac28f82eb1d57d8f2cf05cfd3b",
+      "sha256": "7d81e044b182ae11d7293765cad6a0b5e2f2b557db5bd557420ae8a50f25d99b",
+      "bytes": 32000128,
+      "rows_sha256": "42575aad81c66d0ec6aaf6cdaf37142be5391254fc5ac443aced7a99ddf8ff5d",
+      "rows_bytes": 8000128,
+      "source_rows": 3646369,
+      "eligible_rows": 3646319,
+      "excluded_rows": 50,
+      "pickup_range": [
+        "2024-11-01T00:00:00.000000",
+        "2024-11-30T23:59:59.000000"
+      ]
+    }
+  },
+  "disjointness": {
+    "public_taxi_parents": [
+      "taxi-2023-01",
+      "taxi-2023-03",
+      "taxi-2023-04",
+      "taxi-2023-05",
+      "taxi-2023-07",
+      "taxi-2023-09",
+      "taxi-2023-10",
+      "taxi-2023-11"
+    ],
+    "private_taxi_parents": [
+      "taxi-2024-01",
+      "taxi-2024-03",
+      "taxi-2024-05",
+      "taxi-2024-07",
+      "taxi-2024-09",
+      "taxi-2024-11"
+    ],
+    "shared_source_files": [],
+    "shared_parent_arrays": [],
+    "checks": "asserted: no shared TLC source parquet sha256 and no shared parent array sha256 between splits; public pickups all 2023, private all 2024"
+  },
+  "outputs": "pristine NumPy 2.5.4 baseline build in the pinned task image; complete .npy bundles computed in two fresh processes and required identical; method reproduces existing taxi-2023-07 public commitments 6/6",
+  "composition": {
+    "public": {
+      "performance_cases": 48,
+      "previous": 18,
+      "added_parents": 6,
+      "added_cases": 36
+    },
+    "heldout": {
+      "performance_cases": 54,
+      "previous": 34,
+      "added_parents": 4,
+      "added_cases": 24
+    }
+  },
+  "sizing_not_timing": {
+    "note": "informal single-core best-of-3 np.quantile sums on the scratch VM, used only to size composition; not a measurement or score",
+    "public_sum_seconds": {
+      "before": 1.03,
+      "after": 2.769
+    },
+    "heldout_sum_seconds": {
+      "before": 2.227,
+      "after": 3.349
+    },
+    "public_intel_gcp_estimate_seconds": 2.11
+  }
+}

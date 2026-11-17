@@ -1,0 +1,70 @@
+{
+  "description": "Protected four-task contracts retained from the working branch base, including functional fixes. Changes require deliberate review and real requalification, not historical receipt promotion.",
+  "catalog_distribution_promotions": {
+    "sqlite-distinct-plant-facets": {
+      "payload.json": [
+        "usgs-geojson-json-requests-public",
+        "storms-printf-report-requests-public",
+        "decimal-ledger-requests-public",
+        "percentile-requests-public",
+        "fkey-cascade-requests-public",
+        "gtfs-departure-join-requests-public",
+        "ghcn-window-series-requests-public"
+      ],
+      "environment/payload-public.json": [
+        "public-tsv"
+      ]
+    }
+  },
+  "locked_files": {
+    "git-history-change-summary": {
+      "release.json": "32847a6366af6b3650aabd47ca983bf2207af5757766cab59ca2a396fe38fb46",
+      "environment/Dockerfile": "aa01cf2e1f72bf0311e6534675e77b108168c0fdffd253ff815b19d925cccf00",
+      "environment/source.lock.json": "5468e4a98630c55f82fef4b81a754e018c517aca25694c910c23f0ab6d13641e",
+      "environment/payload-public.json": "af5ef626546c122f5cbecb080392e3c12502eb5cd700be35860ddf60b33724a8",
+      "environment/workload/task.py": "af3f0b1b2ef8c20dbae3ad6c372ec9aa6ba468e4afe1e257cc515c331b2e02ae",
+      "environment/workload/build.sh": "5e5612ff084a9c862e5225e3a286ab8b7374165cbd6bde7b2ff577971198654b",
+      "environment/workload/baseline-outputs.json": "36578317cf8a28a6b27124d0dd0b193ee8509e43745c11afd781ffedb7fcb47b",
+      "tests/judge.json": "a6c2588ebcc23f6dea3e50b9eb6390ff9d5150892b70688e3d29ac07cda2b72f",
+      "tests/heldout.lock.json": "b5766a4b9cdf5fd0a5e070df3bbf287a966c3e4c92a4e9ed5adee87688c1c7e1",
+      "payload.json": "cfafc2a3c5c0aef14aeef829e71e8cdf8e97f957711412a25178ca7f0a151190"
+    },
+    "numpy-quantile": {
+      "release.json": "50630e118d82d91d50849ecde0b45849255bc18108ca0ac5823d0e875569c322",
+      "environment/Dockerfile": "716e9a53e6f3fe625781d14b96616d34593ce6a5576d04ebf1487bf66d37c069",
+      "environment/source.lock.json": "40417d5baf731d0bf0976ccee13bd832381948425fcc85e86acd9d98a274007f",
+      "environment/payload-public.json": "23e961929ef2a60389d6ff888de8fa806395d635e0a72b3c4b0ba2ee97391d54",
+      "environment/workload/task.py": "0b74dd0a66e2b86b4e147ff043cf54af76d83026118ed90c0ebc2892a234f34e",
+      "environment/workload/build.sh": "3d87565e06220ba24242f5df7ad68720c24ae7134431f821e1464e70c2858056",
+      "environment/public-inputs.lock.json": "bcc360c86c8eee1ad6f7a3980395e088e38176b942d9bf9933bc587293f4f0b7",
+      "environment/workload/public-inputs.lock.json": "bcc360c86c8eee1ad6f7a3980395e088e38176b942d9bf9933bc587293f4f0b7",
+      "environment/workload/manifest.json": "86e786dbc1dd8f721c82257d63137d61dd158e490bb1bf1137d84a357e1d35a9",
+      "environment/workload/baseline-outputs.json": "eced621384b82aecf67d441fa04e30d4d186324fbe4703b402f56ef687e1dc94",
+      "tests/judge.json": "166817dcb2be5ab9226b302e9f83e974d246ebe268825b3ed69259a618ce2bb7",
+      "tests/heldout.lock.json": "82a7de8353934dfdc467de25e3d8cc0d3567c8091bc63ee979ab4363ceee38aa",
+      "payload.json": "28411c7ca5e7d798966176abfb3da86db2ef62018fe09a6b59542625d34151c7"
+    },
+    "sqlglot-mozilla-transpile": {
+      "release.json": "7141f7881cec3f9817a4d6f8a9fd262350188fb62e5a37a6393164705b8ff309",
+      "environment/Dockerfile": "1ce7a824be6cba1b0b0447f0e6e3d45a9c2e8f37a9c193f8c95827a89563ea27",
+      "environment/source.lock.json": "cf4cccf4d61cab2e152c0f05afc1a2792ca82ddf06d3e238f14be1ea636ab25d",
+      "environment/payload-public.json": "a16da92f1f6a57f3265332e7551fcd43be50bfe329747f1249b92e73dc7a7ee9",
+      "environment/workload/task.py": "6d3056ffaa7792cc679204ea6c9c9f0d1c5c5cdc5b8291e2fb5f1e90b604270a",
+      "environment/workload/build.sh": "8ab1bb2d726923b70d505237c9fe04d79aa8022e6ca0a2e9a389c49f31119f76",
+      "tests/judge.json": "4e1bc626c15b75b5ea42072ddd347b6ac101cc23c13bd79f50a07d1dcd1d6eaf",
+      "tests/heldout.lock.json": "3a300c5906044ac5de167e6996956801d37e8309b20d543a7a32c6ebb5286744",
+      "payload.json": "21f7c5b98b3edbc32cd9e922b8671de75418c8e9a187916fedaacd8ecefa11af"
+    },
+    "sqlite-distinct-plant-facets": {
+      "release.json": "265c48eb8879dd21fdadc03fe839048d7a6e7b6962a2b4861616e5e786facdfc",
+      "environment/Dockerfile": "c2bd17f6fa0d61fb35a669b0c8dd572b9b4a400c073eb5458f206bcd927b56a9",
+      "environment/source.lock.json": "db5c246a88b68f5ec6ae0631a7abae4983e4727378064d41f0c230c77661382f",
+      "environment/payload-public.json": "6aefdbff19b0d6a66dbf03d3b10cff93243432fd8050fc0d3afcda976c5e3b22",
+      "environment/workload/task.py": "9a2f01474ba26c7e6a54a63054d67d19b3b067536496bc41827eba8be849b053",
+      "environment/workload/build.sh": "a1f057ab003e885f92b4ce7570b284c095f51e089d5de74cad4ec7ed40d974f9",
+      "tests/judge.json": "6653fe265eaa44cc3e462c42a273de4c7bea9c33e90aae4b3201a10cf3577cb8",
+      "tests/heldout.lock.json": "e1bb28432831f8d8ad0533f408d58f71e08c018081ba574e361af9c38ca1ab0c",
+      "payload.json": "35521a62e7041c6ff46938547def469d238789ad9e7c434ff99e51132bb81c46"
+    }
+  }
+}

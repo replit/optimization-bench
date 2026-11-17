@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "sqlfluff-project-lint",
+  "files": [
+    {
+      "bytes": 6903,
+      "destination": "workload/inputs/files/859916c25be8f7f486e5308e625ad6e11fa92841920b9a102fb720ea17f75552",
+      "distribution": "git",
+      "name": "859916c25be8f7f486e5308e625ad6e11fa92841920b9a102fb720ea17f75552",
+      "scope": "public",
+      "sha256": "859916c25be8f7f486e5308e625ad6e11fa92841920b9a102fb720ea17f75552"
+    },
+    {
+      "bytes": 584,
+      "destination": "workload/inputs/files/63b36dfccaebe6d17c9714377d17f7456228ad7153b7be09e2ed1233dc741da0",
+      "distribution": "git",
+      "name": "63b36dfccaebe6d17c9714377d17f7456228ad7153b7be09e2ed1233dc741da0",
+      "scope": "public",
+      "sha256": "63b36dfccaebe6d17c9714377d17f7456228ad7153b7be09e2ed1233dc741da0"
+    },
+    {
+      "bytes": 1101,
+      "destination": "workload/inputs/files/9e4e0eef01dd36b6a49f2539ff3532a4e2154b338d38802fff128e952cafe279",
+      "distribution": "git",
+      "name": "9e4e0eef01dd36b6a49f2539ff3532a4e2154b338d38802fff128e952cafe279",
+      "scope": "public",
+      "sha256": "9e4e0eef01dd36b6a49f2539ff3532a4e2154b338d38802fff128e952cafe279"
+    },
+    {
+      "bytes": 358,
+      "destination": "workload/inputs/files/8344db946780285f2e69494ee39643830248c75ccdd72f31981d04e259e7c8ea",
+      "distribution": "git",
+      "name": "8344db946780285f2e69494ee39643830248c75ccdd72f31981d04e259e7c8ea",
+      "scope": "public",
+      "sha256": "8344db946780285f2e69494ee39643830248c75ccdd72f31981d04e259e7c8ea"
+    }
+  ]
+}

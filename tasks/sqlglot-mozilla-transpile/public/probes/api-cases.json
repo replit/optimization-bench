@@ -1,0 +1,13 @@
+[
+  {"id":"api-empty","api":"transpile","args":[""],"kwargs":{"read":"bigquery","write":"duckdb"}},
+  {"id":"api-statements","api":"transpile","args":["SELECT 1; SELECT 'héllo'; -- trailing"],"kwargs":{"read":"bigquery","write":"duckdb"}},
+  {"id":"api-pretty","api":"transpile","args":["-- useful comment\n SELECT x, COUNT(*) AS n FROM `a.b` GROUP BY x"],"kwargs":{"read":"bigquery","write":"duckdb","pretty":true}},
+  {"id":"api-no-comments","api":"transpile","args":["SELECT /* keep? */ `a` FROM `t`"],"kwargs":{"read":"bigquery","write":"duckdb","comments":false}},
+  {"id":"api-invalid","api":"transpile","args":["SELECT * FROM ("],"kwargs":{"read":"bigquery","write":"duckdb","error_level":"RAISE"}},
+  {"id":"api-other-dialects","api":"transpile","args":["SELECT TOP 5 [name] FROM [people] ORDER BY [name]"],"kwargs":{"read":"tsql","write":"postgres"}},
+  {"id":"api-identify","api":"transpile","args":["SELECT x + 1 AS y FROM t"],"kwargs":{"read":"bigquery","write":"duckdb","identify":true}},
+  {"id":"api-token-comments","api":"tokenize","args":["-- x\n SELECT `name`, 'a\\nb', 123.45 FROM `t`"],"kwargs":{"read":"bigquery"}},
+  {"id":"api-token-unicode","api":"tokenize","args":["SELECT 'café', 1e3 /* comment */"],"kwargs":{"read":"duckdb"}},
+  {"id":"api-ast-copy","api":"ast_copy_mutation","args":["SELECT a + 2 AS b FROM items WHERE a > 4"],"kwargs":{"read":"bigquery"}},
+  {"id":"api-custom-dialect","api":"custom_dialect","args":["SELECT CAST(x AS INT64), ARRAY(1, 2) FROM `t`"]}
+]

@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "task": "git-history-change-summary",
+  "files": [
+    {
+      "checkout_inventory_sha256": "e4e9afc35b28a4ab2accc47b2fd671d4f508fac79c4efdd9d09d75909c47b102",
+      "commit": "a018953688f1b10bddf91bff8747068f5f4746a4",
+      "destination": "workload/inputs/histories/git",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 98,
+        "sha256": "ec66359fe2bdbc38b5c4736422b713a92c26fc81f324c37f7d9dcb6c7b9a928b"
+      },
+      "gitlinks": {
+        "sha1collisiondetection": "855827c583bc30645ba427885caa40c5b81764d2"
+      },
+      "kind": "git-history",
+      "name": "git-release-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 8222199955,
+        "object_count": 408171,
+        "sha256": "92d2636bca7242257cbe9d90937706eb061c95e7c3b1451fd393eb5ed7108b4d"
+      },
+      "reason": "Original complete commit closure and native checkout, fetched at build time; no body in Git.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/git/git.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "4bf21754f88d6e711361e05f2494a55c63606265eb574a26e34b4680808bb137",
+      "commit": "b57863321f8d0a0f76fcf9ad636b6e39b024d0c0",
+      "destination": "workload/inputs/histories/cargo",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "name": "cargo-public-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 1535183846,
+        "object_count": 190737,
+        "sha256": "597540f9e42c7e18b4642d73c63b2f9a0c9a17833e6d1f949c471e6da111e8d8"
+      },
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/rust-lang/cargo.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "7155279bd7c6ddbb46f52f95341a6f6d2fbc5f35f3a965a5f4f26ed2138cabd1",
+      "commit": "36920bb4766679f5b32445797dcc5d32b8ff5ad2",
+      "destination": "workload/inputs/histories/django",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "name": "django-public-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 3377448993,
+        "object_count": 428564,
+        "sha256": "1d8bf8845ec32a8631865f1055b58496f0f8cdd637d185e9a4457c30189ca2a7"
+      },
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/django/django.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "89f389b053266c66546e671c370abcda3c67f28c72abd65960334f3b8bac222b",
+      "commit": "7664e36875350ad0f309287391858de19ed13eb7",
+      "destination": "workload/inputs/histories/prettier",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "name": "prettier-public-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 2484971902,
+        "object_count": 164388,
+        "sha256": "90739312d8c29579b6063096fdeb2c57003a9f13f502cc4db206e00bf7a91254"
+      },
+      "reason": "Fetch-only original pinned history; no repository body in Git or LFS.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/prettier/prettier.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "d8d9a5a84ae48155157c443dec28fbc8789ad2b71e22680d95ea401a23d65734",
+      "commit": "463527ba1e19c4fafae96fd16d1ff56ce979a698",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 7720827877,
+        "object_count": 174094,
+        "sha256": "410412535c3bd5ef72e49d8022f63659ec4cb2d93aeb8430bef582b81ee1d580"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/haproxy/haproxy.git",
+      "destination": "workload/inputs/histories/haproxy",
+      "distribution": "upstream",
+      "name": "haproxy-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "c1c03320a18ee6de8d8b3140ec218c2ed8057c3aef5fbf9ae2bec5025d1c6353",
+      "commit": "6065d21b3eb2777aa7211cc6bdd72af92bb185e0",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 1866381672,
+        "object_count": 353011,
+        "sha256": "30b9efea44a5cd4ac417f7cf77b8d20e5298283957596ab9b9bf44d743f969a2"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/laravel/framework.git",
+      "destination": "workload/inputs/histories/laravel",
+      "distribution": "upstream",
+      "name": "laravel-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "7ef4c7bf4d73a5e9fb34e07015f032635e38ce26c76ad04801483da37f4b98fd",
+      "commit": "33395d143f267f00820a3327588b1c397c66b209",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 324598264,
+        "object_count": 38181,
+        "sha256": "40adf6cd51f8f740e5e88d0dac42c9ccc7d0560937adad81a14e717b67177e39"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/libuv/libuv.git",
+      "destination": "workload/inputs/histories/libuv",
+      "distribution": "upstream",
+      "name": "libuv-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "7dd029168379fae76a0a3c069f147bd0a9f74a1a0f9f3cd8d3f0e84906fcc67d",
+      "commit": "1ddf1981c4aac4ff72bfb4a97e05909d55c3a149",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 2954576764,
+        "object_count": 181089,
+        "sha256": "4a89d818ba9bf233ff4e81ea9fa6751c9f09fce5b0193396abdd784aab70d683"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/sphinx-doc/sphinx.git",
+      "destination": "workload/inputs/histories/sphinx",
+      "distribution": "upstream",
+      "name": "sphinx-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "ce51c8553d762b34fb7bd7acdbd48e9d976c7ebc4a9c830e8b43ad69d6db7fd0",
+      "commit": "ca034820b8288ab6da3a033626a7857401ee64a5",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 667210348,
+        "object_count": 69401,
+        "sha256": "e509eb5b4ba77e93ecc828c1c6f890c63420818442f4c32f241c9af2cb795148"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/vuejs/core.git",
+      "destination": "workload/inputs/histories/vuejs-core",
+      "distribution": "upstream",
+      "name": "vuejs-core-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "bytes": 704683,
+      "destination": "workload/inputs/files/e44947aa61e8e1eca2a2e97732a1af6c3816115be9a605adcfbe47d27a1e4d3e",
+      "distribution": "git",
+      "name": "patch-myers",
+      "scope": "public",
+      "sha256": "e44947aa61e8e1eca2a2e97732a1af6c3816115be9a605adcfbe47d27a1e4d3e"
+    },
+    {
+      "bytes": 352435,
+      "destination": "workload/inputs/files/56a892fc18c3aeca94ce1c6cd95e75d1f80171c4280b22c3f3619808d5c8b3fb",
+      "distribution": "git",
+      "name": "shortstat-myers",
+      "scope": "public",
+      "sha256": "56a892fc18c3aeca94ce1c6cd95e75d1f80171c4280b22c3f3619808d5c8b3fb"
+    },
+    {
+      "bytes": 352435,
+      "destination": "workload/inputs/files/b207d014747c8f8001c7b020033e79c3ada2cb5da7fa0ae889e6608511bac047",
+      "distribution": "git",
+      "name": "patch-histogram",
+      "scope": "public",
+      "sha256": "b207d014747c8f8001c7b020033e79c3ada2cb5da7fa0ae889e6608511bac047"
+    },
+    {
+      "bytes": 131291,
+      "destination": "workload/inputs/files/c18b15b388cab78b81cd24b7ab33b922f4f39a02153ccab56d266a2be65d6d0b",
+      "distribution": "git",
+      "name": "patch-ignore-all-space",
+      "scope": "public",
+      "sha256": "c18b15b388cab78b81cd24b7ab33b922f4f39a02153ccab56d266a2be65d6d0b"
+    },
+    {
+      "bytes": 163499,
+      "destination": "workload/inputs/files/941a3dcb1d7f082a154650894566267405e56ac52edb5e325d09072c180b8fe3",
+      "distribution": "git",
+      "name": "patch-patience",
+      "scope": "public",
+      "sha256": "941a3dcb1d7f082a154650894566267405e56ac52edb5e325d09072c180b8fe3"
+    },
+    {
+      "bytes": 150602,
+      "destination": "workload/inputs/files/b9525799cfc85b0b68e62a4137e2e078ca61d5e6b1f6ee1a0509d929986c3790",
+      "distribution": "git",
+      "name": "patch-full-context",
+      "scope": "public",
+      "sha256": "b9525799cfc85b0b68e62a4137e2e078ca61d5e6b1f6ee1a0509d929986c3790"
+    },
+    {
+      "bytes": 216984,
+      "destination": "workload/inputs/files/8962ce97c4d6777515a293062e5a3b168876092011396e1e410929472ecf7f67",
+      "distribution": "git",
+      "name": "merge-file",
+      "scope": "public",
+      "sha256": "8962ce97c4d6777515a293062e5a3b168876092011396e1e410929472ecf7f67"
+    }
+  ]
+}

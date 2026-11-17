@@ -1,0 +1,6 @@
+# Private composition/provenance inventories grow with distinct whole documents.
+tests/heldout/manifest.json filter=lfs diff=lfs merge=lfs -text
+tests/heldout/inputs.lock.json filter=lfs diff=lfs merge=lfs -text
+# Verbatim licenses and source patches retain their exact upstream bytes.
+tests/notices/licenses/** -text -whitespace linguist-vendored=true
+tests/differential/negative-control.patch -text -whitespace

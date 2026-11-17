@@ -1,0 +1,1988 @@
+{
+  "public_input_bytes": 1323952201,
+  "public_input_identity": "environment/public-inputs.lock.json",
+  "task": "numpy-quantile",
+  "upstream": {
+    "base_image": "python:3.12-slim-bookworm@sha256:54c85f3c47607a77f32adec749d3c81d1348bf25833671f512b26a9b6d778cb3",
+    "commit": null,
+    "compiler_package_policy": "Base image digest pinned; apt package versions recorded during validation. Cross-host toolchain identity requires a published image digest.",
+    "dependency_policy": "No runtime downloads; fixed source and build settings; NumPy toolchain Python versions pinned in requirements-toolchain.txt.",
+    "platform": "linux/amd64",
+    "source_repository": "https://github.com/numpy/numpy",
+    "source_version": "2.5.4",
+    "task": "numpy-quantile",
+    "upstream": {
+      "bytes": 20866315,
+      "kind": "sdist",
+      "sha256": "9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a",
+      "url": "https://files.pythonhosted.org/packages/95/b0/c7453d0b6e2073c3264468b106ee1563750cecc910965e67357e3698c83e/numpy-2.5.4.tar.gz"
+    }
+  },
+  "current_files_sha256": {
+    "environment/.dockerignore": "79603549bc2c133f6af1c824cf724ed414316ff8c0a3e88b3c0e114aa251f9e0",
+    "environment/.gitignore": "ecb5028a795dc6dcf227366e68797380ef57fa55591d94555a183ef606e0f365",
+    "environment/Dockerfile": "716e9a53e6f3fe625781d14b96616d34593ce6a5576d04ebf1487bf66d37c069",
+    "environment/README.md": "69f1758a6844b677918a2b275f302adbff94d8de3a1ab5fb881b3030af81c90b",
+    "environment/notices/CC-BY-4.0.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "environment/notices/DISTRIBUTION.md": "c8fd272553c9822be5c6267462cb9aa767e4b331ae482668a5ced2d3c55ff6c7",
+    "environment/notices/suite-inputs.md": "469033275666f8184367be1a2ae09393daf5cefe85e6f50bbcac5277b3f6a59f",
+    "environment/payload-public.json": "23e961929ef2a60389d6ff888de8fa806395d635e0a72b3c4b0ba2ee97391d54",
+    "environment/payload_check.py": "c471a0e41c35fc0c0ec609489d3de301130ae60203b9dab6d270aa345e22ee24",
+    "environment/prepare.py": "544824676992593e968d48c9ced05082d01f6e84e4207b4f68a2b3af10233f3d",
+    "environment/pristine-files.lock.json": "98ae2465631f62ddb8a8f0f48fd4953c839d5e980d27647718ccd6be6c81d5a2",
+    "environment/public-artifacts.json": "e1ab5b3b270badb274f353c792773f23d4e134a28d54f7c924613df2abe981cc",
+    "environment/public-inputs.lock.json": "bcc360c86c8eee1ad6f7a3980395e088e38176b942d9bf9933bc587293f4f0b7",
+    "environment/public-workloads.lock.json": "2da89b8c77808345174e665f00eea41b2bb3315f5300c8aae91864f5edde24ef",
+    "environment/requirements-toolchain.txt": "f2d01431d70e92d53dd0a0cd6b2412d21ede6c027e334185b24136eaf9eb7dca",
+    "environment/source.lock.json": "40417d5baf731d0bf0976ccee13bd832381948425fcc85e86acd9d98a274007f",
+    "environment/workload/baseline-outputs.json": "eced621384b82aecf67d441fa04e30d4d186324fbe4703b402f56ef687e1dc94",
+    "environment/workload/build.sh": "3d87565e06220ba24242f5df7ad68720c24ae7134431f821e1464e70c2858056",
+    "environment/workload/corpus.json": "9a7c6003e6d40565813986599cfcf6c50f99b34d85aa61686bffd4c0e1ee694e",
+    "environment/workload/driver/busday_holidays.json": "fbae3aa9b3b7f4a2f9cda2855579b4f8c175e7db65ed13fd40a25fe979881576",
+    "environment/workload/driver/suite.py": "8f3656e1b5325629e77ee10d5aabdbfbd22ec3aacc30cced1f4649f75d1e5028",
+    "environment/workload/driver/textio.py": "7350704fb7ef8ccba260ca32e499ff09e189f26acb7364515346885a98965f8b",
+    "environment/workload/manifest.json": "86e786dbc1dd8f721c82257d63137d61dd158e490bb1bf1137d84a357e1d35a9",
+    "environment/workload/numpy_helpers.py": "ce9403b873ce849e71be9f9982d5d74a3371097b107bd335a5d6b4e64c2267e3",
+    "environment/workload/public-inputs.lock.json": "bcc360c86c8eee1ad6f7a3980395e088e38176b942d9bf9933bc587293f4f0b7",
+    "environment/workload/runner.py": "78720e32703d9d24624d81f1ebe260c2a40e871d830bd63d08ce6c839cdc76c6",
+    "environment/workload/task.py": "0b74dd0a66e2b86b4e147ff043cf54af76d83026118ed90c0ebc2892a234f34e",
+    "instruction.md": "67389e9fe3a43f947a7605d3624537145bdfe4bf68b95d20a8836a1b74ccc51f",
+    "release.json": "50630e118d82d91d50849ecde0b45849255bc18108ca0ac5823d0e875569c322",
+    "task.json": "9ff7db4346ca37cb19fa1ae3ffc19f70f35609a9ff2e7a3eb1b461dfdae64118",
+    "task.toml": "723a10df072d9d50fb0455376e24dc380d2ade9068711fa7a9ba8787a996dca6",
+    "tests/Dockerfile": "02034401ae55d119149d41fec89ba9a420fbe4e3b0af87ac5e0f9f5e6425aeff",
+    "tests/README.md": "15d5cafcd060535c155e9f994d274ca6904eae9d419a3fe6cbc9035eeb0e3fd3",
+    "tests/differential/README.md": "9f1cbcd5d5f44a0a926198650733232e7df369bef4c7ef8714e2ebc89b75b399",
+    "tests/differential/generate.py": "47b333ea1cfcde50233fbe7aa4e0d587e2914a1847e49f71bf193a195de20d6c",
+    "tests/differential/representative.py": "8f1419b29e3d4ce26d36dc3f6a24bbb21003ce1157f6f1bc38e4dfdf90249148",
+    "tests/differential/run.py": "d6f4a3fbaad9cb02b3efb13440ba1fbc476a1798100b62a8036412792688a323",
+    "tests/fuzz/README.md": "be7d23ec457d7072f600ad8c57a0e760b53639ed37da462bed0c7dae762d3cb6",
+    "tests/fuzz/adapter.json": "84899257b5ac0a0cba69bcaa34b3d4e202eae6722dca5e32a6d26c9611d3f412",
+    "tests/fuzz/adapter.py": "66e2a98a5465248e6da3235d88c3ccf6e22a63a454118ccd834a7dd39fc5aa31",
+    "tests/fuzz/build-variant.sh": "2a1b8d5e71f19a00747cfd1e99a93551ea01625bb600c79535ac357a87606bd6",
+    "tests/fuzz/driver.py": "36b51b1197ab33ca5e4ae09792a34ebfc7904036cbbe711044f86f0bfc5463f5",
+    "tests/fuzz/header-consumers.json": "c97b71cb2cd6f9a11b796196c04fe2b6ae0b654b351e49ec2c5ae0a83430de33",
+    "tests/fuzz/header_manifest.py": "d3214b8510087fc0975f716817345b29c5ada48e98b152de2f39901f0bbf7a02",
+    "tests/fuzz/inventory.py": "7b2756a043afb0b167780c85d45f6aff1ed97e190ea68fcbe023cda2ed288903",
+    "tests/fuzz/rc_driver.py": "e1976879ce31dfbe8b20a34556f8f52fd7c25d7c32586438740a2f5892f70609",
+    "tests/fuzz/rc_hooks.py": "580fb2bae34dd8931b3fb41affb75245e177dc65d3c1b38f91345a651d6d0283",
+    "tests/fuzz/rc_worker.py": "9e111c8bbf8c365a954c3571664e011ed52a7ab0568784287c72faf1f0f723c7",
+    "tests/fuzz/smoke_aa.py": "f7034d26bb65a0381b20258bb3af16a9f4c17c691121a321a5d88e14bf923362",
+    "tests/fuzz/surface.json": "e30e77338274ed9dd19f355603c453470e69af9a5b53c781968b02e0c340793f",
+    "tests/heldout.lock.json": "82a7de8353934dfdc467de25e3d8cc0d3567c8091bc63ee979ab4363ceee38aa",
+    "tests/heldout/baseline-outputs.json": "857bc5a3e50641b013e451c78d035323f16edd4a5e7de059c91ba99c63d24dc6",
+    "tests/heldout/cases.json": "bd3c0b121adaff4c6b27cd74ad4d984ef87f331f8d057357d01e6ee92f7bd2cc",
+    "tests/heldout/expected/electricity-2014-block1--strided-subset": "2b5cd4d08baf776deb5bdb1f388b7a26fcd5f332cfcc67b9c2f4af2dc8bf00bb",
+    "tests/heldout/expected/electricity-2014-block2--strided-subset": "fba80948743af916da985da9fb15adca72406c63fb7c7c8b05a7e94c151cc461",
+    "tests/heldout/expected/heldout-natural-workload-warm-batch": "0fb21b06028eaf5a6c5b9afbd5cc1e51f762ffb67423203047b3333e4145ffcf",
+    "tests/heldout/expected/taxi-2024-01--small-table": "a72470153fc34b94969bc12d76326f4dc70163b86acee8bff5ca3a7b38b61c75",
+    "tests/heldout/expected/taxi-2024-03--small-table": "382f95ca6a3ca04d679704b440a61e23667e77509beef8c0ab46c480700b9d55",
+    "tests/heldout/expected/taxi-2024-05--small-table": "a22e61a527b948b852c807f8d861222a1e1011e7acaf47d7668bd9069f384ba1",
+    "tests/heldout/expected/taxi-2024-07--small-table": "c37ff7be6c2c027233e371edf24a8e307ac349ba332d4e991bc0d00fcbeb0b0c",
+    "tests/heldout/expected/taxi-2024-09--small-table": "0d8d4b7abfe4bb709549fe4d4184607b95d5bfbd80feb5d4822a16c0d65e1c82",
+    "tests/heldout/expected/taxi-2024-11--small-table": "ae0ff24ca783877a6dee3e88b89e254a425aeb06f68f96c896fff62d5c426398",
+    "tests/heldout/expected/weather-2018--strided-grid": "13f87b5d9f74c6ecba2a9b48801c1fb1ac947339b899d5f39e652f5586bfb80e",
+    "tests/heldout/expected/weather-2019--strided-grid": "ac2fee661b2061cb5be69164592b16fd014e13d63f3bc4ed8b6360779c0e5743",
+    "tests/heldout/expected/weather-2022--strided-grid": "0e47da70beac02252e3a5c25798f5fdaf86303f41e4f821573e52ad0b4fca4c7",
+    "tests/heldout/expected/weather-2023--strided-grid": "bff398cf4c7140e397670cfddbb9e42689f4d62276891e1575520ec46904e203",
+    "tests/heldout/files/02180d44ee1fc338972075f8f471ac2e467e6c5fbd268f288159895f5879349c": "02180d44ee1fc338972075f8f471ac2e467e6c5fbd268f288159895f5879349c",
+    "tests/heldout/files/0fac119272e34f38ecbb638d035da75c98f80104f19a290af63fc741f1afab85": "0fac119272e34f38ecbb638d035da75c98f80104f19a290af63fc741f1afab85",
+    "tests/heldout/files/2ae321ea7e136f017960cf18f0379e7a6f4b219e94b868f959a8349408e0f3c6": "2ae321ea7e136f017960cf18f0379e7a6f4b219e94b868f959a8349408e0f3c6",
+    "tests/heldout/files/3989a75ac51d3870ad1fe0a16b67887bbddf34b92617851d5613210cb7009f43": "3989a75ac51d3870ad1fe0a16b67887bbddf34b92617851d5613210cb7009f43",
+    "tests/heldout/files/46ec8aab21df86e191e9f0ff0eabd30663f2e5aa23249878d26efabfbe0b8270": "46ec8aab21df86e191e9f0ff0eabd30663f2e5aa23249878d26efabfbe0b8270",
+    "tests/heldout/files/676fc018c290d2ef8c40d6e475b5b78444e24868045fe280d831c3b7a05f55a8": "676fc018c290d2ef8c40d6e475b5b78444e24868045fe280d831c3b7a05f55a8",
+    "tests/heldout/files/6f1917cbf01365cd2e1f4f89108656a53789b225ea302fad379f071e40b0f961": "6f1917cbf01365cd2e1f4f89108656a53789b225ea302fad379f071e40b0f961",
+    "tests/heldout/files/771236dc27517cc44f4e9e8335d3476c9c5b64beffa6c0f0345cc3f93e11bf24": "771236dc27517cc44f4e9e8335d3476c9c5b64beffa6c0f0345cc3f93e11bf24",
+    "tests/heldout/files/78e77c19c140e435d9f027caa1be003acd0a1c33c209033677984c95d36acfff": "78e77c19c140e435d9f027caa1be003acd0a1c33c209033677984c95d36acfff",
+    "tests/heldout/files/79f0a0fde46dd692f7d29f32403f59c51fa38c3a6e1f18358d6f521591ea72b4": "79f0a0fde46dd692f7d29f32403f59c51fa38c3a6e1f18358d6f521591ea72b4",
+    "tests/heldout/files/7e996079e231603cc5def7efe89477b9f8be0290849dad6df534071ba42d3ba4": "7e996079e231603cc5def7efe89477b9f8be0290849dad6df534071ba42d3ba4",
+    "tests/heldout/files/83b4450afd1e7245a30dc31d4ba614ea7ac46a398f8978d70ed4decd85303496": "83b4450afd1e7245a30dc31d4ba614ea7ac46a398f8978d70ed4decd85303496",
+    "tests/heldout/files/89966b1805f7fd9470e391f3396d261bdb88cd2607c1d3cfa8687ec43822252a": "89966b1805f7fd9470e391f3396d261bdb88cd2607c1d3cfa8687ec43822252a",
+    "tests/heldout/files/8e39d8c8d63c3655e1859a95e0e77530dcc18067fcbb8f835f6d930327fd1ab2": "8e39d8c8d63c3655e1859a95e0e77530dcc18067fcbb8f835f6d930327fd1ab2",
+    "tests/heldout/files/90710dda98769a14ef6397d826315479972502d8b90a6241a71c3e7ca3d73e95": "90710dda98769a14ef6397d826315479972502d8b90a6241a71c3e7ca3d73e95",
+    "tests/heldout/files/93bdf11ea71db07e6f4a94c62936f1df9be2320abcd0c5754dc7a8c21acb5362": "93bdf11ea71db07e6f4a94c62936f1df9be2320abcd0c5754dc7a8c21acb5362",
+    "tests/heldout/files/9d05fd6ce3201deeec4cdbd15d07ff6fdedcf9b5ad21542afedfe0161c2a0955": "9d05fd6ce3201deeec4cdbd15d07ff6fdedcf9b5ad21542afedfe0161c2a0955",
+    "tests/heldout/files/a70b6a0a13cf58633925ce8b74c7b0bddedc7719870329334aec74dedf632536": "a70b6a0a13cf58633925ce8b74c7b0bddedc7719870329334aec74dedf632536",
+    "tests/heldout/files/a9535048158fbd9b975f10c31c3c24616ec3a318d3c56146330266b7388c630f": "a9535048158fbd9b975f10c31c3c24616ec3a318d3c56146330266b7388c630f",
+    "tests/heldout/files/b6ebafd7d73543cdb37e06c6d0c6e3d3f3045762a7e5e1faa97861a80de8e8f2": "b6ebafd7d73543cdb37e06c6d0c6e3d3f3045762a7e5e1faa97861a80de8e8f2",
+    "tests/heldout/files/bad6ce5fcc5322c10d7fb50dbb57309bf17cfbeec19afe888a4474cf3c8cce45": "bad6ce5fcc5322c10d7fb50dbb57309bf17cfbeec19afe888a4474cf3c8cce45",
+    "tests/heldout/files/c477d7f41daabad648bb304f405aad2ac6a34d8a815c43362bd02deb23535991": "c477d7f41daabad648bb304f405aad2ac6a34d8a815c43362bd02deb23535991",
+    "tests/heldout/files/c55d0e1250cc4ebb29c85cca9a47bed71b09a246e62322d3cea3082708f0c544": "c55d0e1250cc4ebb29c85cca9a47bed71b09a246e62322d3cea3082708f0c544",
+    "tests/heldout/files/d015cdc344204363cbc29d3d765136a05c6db1e40dd1e3c8ac301e4fb47013f2": "d015cdc344204363cbc29d3d765136a05c6db1e40dd1e3c8ac301e4fb47013f2",
+    "tests/heldout/files/dc2a10e32ee55745a2d60e402a67b34deae9e6974993f9b21805345eca2d7a27": "dc2a10e32ee55745a2d60e402a67b34deae9e6974993f9b21805345eca2d7a27",
+    "tests/heldout/files/e5f1497b95a48bc228a01d9cc43f7bb9ab140a89c923c215bc684df9fad86ac8": "e5f1497b95a48bc228a01d9cc43f7bb9ab140a89c923c215bc684df9fad86ac8",
+    "tests/heldout/files/ebc8869ca3c13a78edd83c7aca0446436c384c7fadf2cc86fe32ff90372e8e1d": "ebc8869ca3c13a78edd83c7aca0446436c384c7fadf2cc86fe32ff90372e8e1d",
+    "tests/heldout/files/f7de16871b41513e166a5a02aebd25fc387ee845c6402d80ec641e8a1b5337c0": "f7de16871b41513e166a5a02aebd25fc387ee845c6402d80ec641e8a1b5337c0",
+    "tests/heldout/files/fd08056c2d65240ed084e277050dc80c2e0d3d2ab810de44df949b6ce26a2588": "fd08056c2d65240ed084e277050dc80c2e0d3d2ab810de44df949b6ce26a2588",
+    "tests/heldout/inputs.lock.json": "6bbebe4cedf140af6425fbad0e247c9aa5d93f2d059d403a26ea3bc65cb27a9e",
+    "tests/heldout/manifest.json": "206d3d84f7cb87d5edb6888724bd460925a9a753305edf9cc9736aab30fa50ac",
+    "tests/heldout/requalification.json": "1b47b786bbf5772bc5610e37a85a14f923ff87218656815e9eb1c4b54dcabf06",
+    "tests/heldout/workload/corpus.json": "45ef30eecf343df31ec51ab5ecb4007664d885ff9cf6816e046b55096bc084ea",
+    "tests/judge.json": "166817dcb2be5ab9226b302e9f83e974d246ebe268825b3ed69259a618ce2bb7",
+    "tests/notices/CC-BY-3.0-NZ-legalcode.html": "9e59e3a73b80b868c7c58ec6618c072538e30fb1d146982aae10332cb3e3b091",
+    "tests/notices/CC-BY-4.0.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "tests/notices/CPython-3.12.7-Doc-license.rst": "bad93f2d7f71f6729b12cf0080951ace371acaf5e3fd6835118d53cd4bfd9120",
+    "tests/notices/CPython-3.12.7-LICENSE.txt": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+    "tests/notices/HELDOUT-INPUTS.md": "4ee42a091d5962961083d55501451a388cea17ab03aa07887b7aa8f4d7672c62",
+    "tests/notices/OGL-UK-3.0.txt": "eb22384c866b63b513254ae3baff6b3bc7d001f559d03e02b6b8b83333a04806",
+    "tests/test.sh": "bcf5c66687c026906404b08528c75d3a5cda7efb1d22df710352aa6075f36e10"
+  },
+  "public_input_distribution": {
+    "git": 0,
+    "upstream": 0,
+    "operator": 0,
+    "repo-lfs": 1707952713,
+    "upstream_urls": []
+  },
+  "heldout_recovery": {
+    "task": "numpy-quantile",
+    "provenance": "recovered-requalified (not proven original)",
+    "source_revision": "numpy-quantile-evaluator-v1/hidden original 42-case corpus, not half-repeat variants",
+    "source_branch_commit": "50755d4c802228a7d083c96d16fbd7234ba91641",
+    "source_manifest_sha256": "6ea1db94b38a0cd18f97155d05137886594a31b03199153ced84a951588295f4",
+    "source_bundle_sha256": "e795894c42d69ec40fda82e8f3296d5a2c07b43d4da294f1ba153c29ae45ae30",
+    "public_recovery_commit": "2195825fde5ae56e5796c5bf99229975733a72b6",
+    "baseline_repository_commit": "862e5e62bd615a943315aa7943d430367a1507f6",
+    "baseline_image": "sha256:dd544087dad55c9e009092e02afc7523fdeb724a244c165acef41dff14f8eefc",
+    "full_public_image_build": "passed",
+    "cases": 42,
+    "dropped_overlaps": 0,
+    "baseline_pass": 42,
+    "repeat_pass": 42,
+    "reference_agreement": 42,
+    "reference_exact": 42,
+    "reference_complete_digest_cases": 42,
+    "reference_total": 42,
+    "fresh_clone_lfs_verified": true
+  },
+  "public_baseline_recovery": {
+    "source_recovery_commit": "2195825fde5ae56e5796c5bf99229975733a72b6",
+    "source_manifest_sha256": "2b1f4415998b32c4a3bd0a61eb01caaee8892145275949673b141b73578465ab",
+    "authenticated_public_entries": 16,
+    "full_pristine_image_build": "passed",
+    "baseline_image": "sha256:dd544087dad55c9e009092e02afc7523fdeb724a244c165acef41dff14f8eefc",
+    "pinned_complete_output_public_cases_passed": 37,
+    "original_expected_outputs": "unchanged, all size/SHA commitments matched",
+    "public_bodies_committed": false,
+    "public_bodies_retained": "Operator-owned exact bodies staged only for build, retained outside repository",
+    "scored_qualification": false,
+    "remaining_scoring_blocker": "Original family/control/repetition/regression/resource protocols remain unqualified; public_dry_run_only preserved"
+  },
+  "suite_units": {
+    "interp-equalize": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "np.interp histogram equalization of elevation rasters",
+      "public": {
+        "family": "SRTM tiles, Western Alps (N45E006, N45E007, N46E007, N46E008)",
+        "files": 4,
+        "bytes": 103738120,
+        "transformation": ".hgt big-endian int16 3601x3601 -> native int16 .npy (no void filling needed; skadi tiles are filled).",
+        "upstream": [
+          {
+            "bytes": 15958095,
+            "path": "interp/srtm/N46E007.hgt.gz",
+            "sha256": "cf790a87057dfdf126f9b314d9ec71d407afdedbe71c79e2b14c903d024ce0b9",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N46/N46E007.hgt.gz"
+          },
+          {
+            "bytes": 17461331,
+            "path": "interp/srtm/N46E008.hgt.gz",
+            "sha256": "79b5b5e78f7e0edb7aca4e1f74f235c18ba6bd82557b92ab1ec42d8e37600c86",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N46/N46E008.hgt.gz"
+          },
+          {
+            "bytes": 17435774,
+            "path": "interp/srtm/N45E006.hgt.gz",
+            "sha256": "6b9699a7d05ad3cf36af7bb1ddbf35f2a465e9236953675afec8552018825651",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N45/N45E006.hgt.gz"
+          },
+          {
+            "bytes": 16143921,
+            "path": "interp/srtm/N45E007.hgt.gz",
+            "sha256": "8f98a452476e0c0af474649d59ebd3c5c40211b2d189ad1fb748ada01b953e6f",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N45/N45E007.hgt.gz"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "SRTM tiles, Central Andes (S13W072, S14W072, S16W069, S33W070)",
+        "files": 4,
+        "bytes": 103738120,
+        "transformation": ".hgt big-endian int16 3601x3601 -> native int16 .npy (no void filling needed; skadi tiles are filled).",
+        "upstream": [
+          {
+            "bytes": 15860861,
+            "path": "interp/srtm/S33W070.hgt.gz",
+            "sha256": "a62a0f2688937a24ae7a33e829fed0837eb38fef65687f24cacd5b493180dd71",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/S33/S33W070.hgt.gz"
+          },
+          {
+            "bytes": 18788721,
+            "path": "interp/srtm/S16W069.hgt.gz",
+            "sha256": "44fd8ddf9e10190a0007121cb64e007a244e2fc9ecdcaf55b7d5b122e8dd916f",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/S16/S16W069.hgt.gz"
+          },
+          {
+            "bytes": 18027456,
+            "path": "interp/srtm/S14W072.hgt.gz",
+            "sha256": "2d086fedf8979c91156f9493230a0e25e3f988d1a603820d1d5915c7ccf21c06",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/S14/S14W072.hgt.gz"
+          },
+          {
+            "bytes": 15414725,
+            "path": "interp/srtm/S13W072.hgt.gz",
+            "sha256": "bc190bb1fa3d317b94fec88efb3f09089ee36f8ec3dfaf017c9c12b36795c97e",
+            "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/S13/S13W072.hgt.gz"
+          }
+        ]
+      }
+    },
+    "busday-calendar": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "np.busday_count / busday_offset / is_busday under three business-day calendars",
+      "public": {
+        "family": "NYC DOB permit issuance (filing, issuance, expiration), first two thirds of rows",
+        "files": 2,
+        "bytes": 63464936,
+        "transformation": "rows with all three dates parseable in 1990-2039; MM/DD/YYYY or ISO -> datetime64[D]; NYC split into source-order thirds (two used).",
+        "upstream": [
+          {
+            "bytes": 207141559,
+            "path": "busday/nyc-dob-permits.csv",
+            "sha256": "08f7523baadb9eb37b82c5b90c9a21f2b6c8c7fa7439de164829ce0f6e23726f",
+            "url": "https://data.cityofnewyork.us/resource/ipu4-2q9a.csv?$select=filing_date,issuance_date,expiration_date,job_start_date&$limit=5000000"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "Chicago building permits, Chicago business licenses, San Francisco building permits, Austin issued construction permits",
+        "files": 4,
+        "bytes": 88527688,
+        "transformation": "rows with all three dates parseable in 1990-2039; MM/DD/YYYY or ISO -> datetime64[D]; NYC split into source-order thirds (two used).",
+        "upstream": [
+          {
+            "bytes": 44272589,
+            "path": "busday/chicago-permits.csv",
+            "sha256": "d2e8815fa14a15e125db1b7b889718e5915c1dbc3e1865b1c88a079a76d64553",
+            "url": "https://data.cityofchicago.org/resource/ydr8-5enu.csv?$select=application_start_date,issue_date&$limit=5000000"
+          },
+          {
+            "bytes": 87566219,
+            "path": "busday/sf-permits.csv",
+            "sha256": "4ff2ccc043023bd626862efb072206fa36b9ca745dad07a1b9c27dc02f963552",
+            "url": "https://data.sfgov.org/resource/i98e-djp9.csv?$select=filed_date,issued_date,completed_date,first_construction_document_date&$limit=3000000"
+          },
+          {
+            "bytes": 102598542,
+            "path": "busday/chicago-business-licenses.csv",
+            "sha256": "e3cb0cf32a01780560d4766b656aa18051db60b00450e256266cdc95185da190",
+            "url": "https://data.cityofchicago.org/resource/r5kz-chrr.csv?$select=application_created_date,license_start_date,expiration_date,date_issued&$limit=3000000"
+          },
+          {
+            "bytes": 185807786,
+            "path": "busday/austin-permits.csv",
+            "sha256": "1d4bc11fea4eb013a7f59f8b016f011ceea79935dada0b119d95dd835782970a",
+            "url": "https://data.austintexas.gov/resource/3syk-w9eu.csv?$select=applieddate,issue_date,expiresdate&$order=permit_number&$limit=3000000"
+          }
+        ]
+      }
+    },
+    "random-dists": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "Generator(PCG64) binomial, gamma, poisson and normal draws with per-group parameters",
+      "public": {
+        "family": "US Census county population estimates (co-est2023-alldata 2020-2023, co-est2019-alldata 2010-2019)",
+        "files": 3,
+        "bytes": 1764976,
+        "transformation": "Census: SUMLEV 050 rows, one group per (county, year), n=POPESTIMATE, births=BIRTHS, deaths=DEATHS, netmig=NETMIG, p=births/n; WB: groups (country, year) with all four series, births=round(n*CBR/1000), deaths=round(n*CDR/1000); R = 4.5e6/k (public), 5.85e6/k (heldout).",
+        "upstream": [
+          {
+            "bytes": 1396427,
+            "path": "random/co-est2023-alldata.csv",
+            "sha256": "38dd59c70ef8067a3d476b6f5039e60f288e2d492015525ba9711faffd12c418",
+            "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2023/counties/totals/co-est2023-alldata.csv"
+          },
+          {
+            "bytes": 3644730,
+            "path": "random/co-est2019-alldata.csv",
+            "sha256": "654032fbb805bc9a7c124ba04ad47e170f5d9dc9d4974a73edfc20598fde77d8",
+            "url": "https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/co-est2019-alldata.csv"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "World Bank WDI country/aggregate series SP.POP.TOTL, SP.DYN.CBRT.IN, SP.DYN.CDRT.IN, SM.POP.NETM (1960-2024)",
+        "files": 3,
+        "bytes": 692936,
+        "transformation": "Census: SUMLEV 050 rows, one group per (county, year), n=POPESTIMATE, births=BIRTHS, deaths=DEATHS, netmig=NETMIG, p=births/n; WB: groups (country, year) with all four series, births=round(n*CBR/1000), deaths=round(n*CDR/1000); R = 4.5e6/k (public), 5.85e6/k (heldout).",
+        "upstream": [
+          {
+            "bytes": 90332,
+            "path": "random/wb-SP.POP.TOTL.zip",
+            "sha256": "9c8a27460bb951b2b6e18fe9c01fac3938c78fd6b8862a84240d01f218b649b0",
+            "url": "https://api.worldbank.org/v2/en/indicator/SP.POP.TOTL?downloadformat=csv"
+          },
+          {
+            "bytes": 81312,
+            "path": "random/wb-SP.DYN.CBRT.IN.zip",
+            "sha256": "a055535b9c9892d7655d8ab67a0cfeebf225f21df7fb22e201d3c42c1309e279",
+            "url": "https://api.worldbank.org/v2/en/indicator/SP.DYN.CBRT.IN?downloadformat=csv"
+          },
+          {
+            "bytes": 77210,
+            "path": "random/wb-SP.DYN.CDRT.IN.zip",
+            "sha256": "89305dbec8854850d223ac670635090c1566e9deea8e9121daeec08965585b05",
+            "url": "https://api.worldbank.org/v2/en/indicator/SP.DYN.CDRT.IN?downloadformat=csv"
+          },
+          {
+            "bytes": 67215,
+            "path": "random/wb-SM.POP.NETM.zip",
+            "sha256": "35571604d3d817ab64ba3f9b91306d8a1739f6eca623fedd3ba7aba26eb8ae8f",
+            "url": "https://api.worldbank.org/v2/en/indicator/SM.POP.NETM?downloadformat=csv"
+          }
+        ]
+      }
+    },
+    "strings-text": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "np.strings strip, str_len, find, count, replace, partition, startswith, endswith, isalpha, expandtabs",
+      "heldout": {
+        "family": "CPython 3.12.7 source tarball: Lib/**/*.py (incl. Lib/test) and Doc/**/*.rst lines",
+        "files": 4,
+        "bytes": 377143232,
+        "transformation": "split on \\n, strip trailing \\r, hard-wrap lines longer than 80 code points, at most 300,000 lines per group, fixed-width <U(max) array per group (4 groups per split, round-robin by sorted id/name).",
+        "upstream": [
+          {
+            "bytes": 27016272,
+            "path": "strings/Python-3.12.7.tgz",
+            "sha256": "73ac8fe780227bf371add8373c3079f42a0dc62deff8d612cd15a618082ab623",
+            "url": "https://www.python.org/ftp/python/3.12.7/Python-3.12.7.tgz"
+          }
+        ]
+      },
+      "public_note": "No public batch: the Project Gutenberg batch was removed on 2026-11-17; strings-text is checked on held-out data only."
+    },
+    "genfromtxt-catalog": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "np.genfromtxt of earthquake-catalog CSV text into a structured dtype",
+      "public": {
+        "family": "USGS ComCat worldwide events 2021-2024 (all magnitudes), one file per year",
+        "files": 4,
+        "bytes": 43493252,
+        "transformation": "CSV parsed with the csv module; columns mapped to obspy names; trailing 'Z' stripped from ISO times; written as plain comma-separated text with header.",
+        "upstream": [
+          {
+            "bytes": 2828128,
+            "path": "quakes/usgs-comcat-2021-01.csv",
+            "sha256": "7700751e92276e4e4722748a59b2bdd2f8d1e6e15ca76dbe28d9b57ac609311f",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-01-01&endtime=2021-02-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2201690,
+            "path": "quakes/usgs-comcat-2021-02.csv",
+            "sha256": "de3c65e437bf85fdad65a862b0c0a4a046bd77d3272bc8260c6f2312e200a168",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-02-01&endtime=2021-03-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2537415,
+            "path": "quakes/usgs-comcat-2021-03.csv",
+            "sha256": "818ae3098994534c7fae65a8ecb148ed4d1612492a6c2b41832162e6ce5e791d",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-03-01&endtime=2021-04-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2388081,
+            "path": "quakes/usgs-comcat-2021-04.csv",
+            "sha256": "321d456bf2754d3ea8032a95be196061cecb8aebfd3d8a6c265b4798740e6966",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-04-01&endtime=2021-05-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2231854,
+            "path": "quakes/usgs-comcat-2021-05.csv",
+            "sha256": "ec5e834dfe17019d38a91f4a443b5404d8110937d61020bb74a629f35aa9f005",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-05-01&endtime=2021-06-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2705274,
+            "path": "quakes/usgs-comcat-2021-06.csv",
+            "sha256": "812cefb8989f27bc23afc2de93d559c46f9dd6e9f23133bdf6a73f48a8b7779c",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-06-01&endtime=2021-07-01&orderby=time-asc"
+          },
+          {
+            "bytes": 3377367,
+            "path": "quakes/usgs-comcat-2021-07.csv",
+            "sha256": "379662915dea70b460ff50b51222409671b5465c83ef0d0c9da5c16b3e35da46",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-07-01&endtime=2021-08-01&orderby=time-asc"
+          },
+          {
+            "bytes": 3164914,
+            "path": "quakes/usgs-comcat-2021-08.csv",
+            "sha256": "24808a5681f5a5ce095e3a111b8bf2dba35ce6de631356248c1404c555b29ffc",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-08-01&endtime=2021-09-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2550902,
+            "path": "quakes/usgs-comcat-2021-09.csv",
+            "sha256": "aa34570a768973b70496e55ec6a8e57594bda341da3e3fb8a2ad55182ae33a48",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-09-01&endtime=2021-10-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2308895,
+            "path": "quakes/usgs-comcat-2021-10.csv",
+            "sha256": "e76ec6d809a51f6228d6f5901d868634379d91953ee4eea32479ab6dd038c03d",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-10-01&endtime=2021-11-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2155263,
+            "path": "quakes/usgs-comcat-2021-11.csv",
+            "sha256": "005878b4e0bc63c2b9b612a5e6752d8d2758ca8508f36caf4a5a974d9c168a87",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-11-01&endtime=2021-12-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2112703,
+            "path": "quakes/usgs-comcat-2021-12.csv",
+            "sha256": "a757e4f29833c4ae5fa31cc9b09f2a070e4249835717a271da5ac91883ff0c26",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-12-01&endtime=2022-01-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2415035,
+            "path": "quakes/usgs-comcat-2022-01.csv",
+            "sha256": "488f608d97d58512848d37e6df4bf27481c91f416d0a8808d3588a0483cab146",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-01-01&endtime=2022-02-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2201979,
+            "path": "quakes/usgs-comcat-2022-02.csv",
+            "sha256": "2c0caa412c28d10acd921da139f61a1cf96ba31b572a6f15e5b509e77587b327",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-02-01&endtime=2022-03-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2386446,
+            "path": "quakes/usgs-comcat-2022-03.csv",
+            "sha256": "e168dd34163e901ad1fe9c5f7fd3aef3be6818f9ff02a7b4afed6253fe643e19",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-03-01&endtime=2022-04-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2297620,
+            "path": "quakes/usgs-comcat-2022-04.csv",
+            "sha256": "143c2570574f90ee7bb83f9246aea63d8bb0ec0250d7135c3004a912bce74098",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-04-01&endtime=2022-05-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2261571,
+            "path": "quakes/usgs-comcat-2022-05.csv",
+            "sha256": "381a7b768ccf0894f1e9d5631be7e9b942fd7a9290cce9235688a9357272d697",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-05-01&endtime=2022-06-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2215014,
+            "path": "quakes/usgs-comcat-2022-06.csv",
+            "sha256": "1c0b82c9d4b4c5a56ea182a2695d0d0616bcb3d4f5020fd5e5be6db22cd9c754",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-06-01&endtime=2022-07-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2284474,
+            "path": "quakes/usgs-comcat-2022-07.csv",
+            "sha256": "ca7004bd9be12f8aea63bf95009dae9e541a185cb40af5aebb38e90863eef9ec",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-07-01&endtime=2022-08-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2441887,
+            "path": "quakes/usgs-comcat-2022-08.csv",
+            "sha256": "ab3af609bb00618ebc009f6427b4afb1dbbb339f222790f4896b902de6df6c89",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-08-01&endtime=2022-09-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2434442,
+            "path": "quakes/usgs-comcat-2022-09.csv",
+            "sha256": "c8a2cbb78997606b9ad0b493bb0ae996105c0fd4beb5758bc18d3c95e51fc401",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-09-01&endtime=2022-10-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2440494,
+            "path": "quakes/usgs-comcat-2022-10.csv",
+            "sha256": "344b89365243fea4cb9071b2f0f1e94c7a482f24665f6fd1374fe1eef5d4a01b",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-10-01&endtime=2022-11-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2369661,
+            "path": "quakes/usgs-comcat-2022-11.csv",
+            "sha256": "488ca54582436dc8f87bdee79b65f6fa3408b9ce36c9e745cee8d83c406c403a",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-11-01&endtime=2022-12-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2397331,
+            "path": "quakes/usgs-comcat-2022-12.csv",
+            "sha256": "e963caeec27826bbdc0c1c4c620ffa03a5727b069bfa626e9ac49a1dda4a85c8",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2022-12-01&endtime=2023-01-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2282382,
+            "path": "quakes/usgs-comcat-2023-01.csv",
+            "sha256": "82c7fdf549b263d21e885dbbcea1f5634e4fa16e78fc396be4e26beb851e5108",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-01-01&endtime=2023-02-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2202446,
+            "path": "quakes/usgs-comcat-2023-02.csv",
+            "sha256": "0173a5d8b54f176c926f160688f690a22a163e056d44423fb6c5d6ff48820b23",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-02-01&endtime=2023-03-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2991958,
+            "path": "quakes/usgs-comcat-2023-03.csv",
+            "sha256": "d89e9f13f93d5ac882d39526c122d81ac12710220b6314b2cd60c7f305856e6d",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-03-01&endtime=2023-04-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2512562,
+            "path": "quakes/usgs-comcat-2023-04.csv",
+            "sha256": "ecf021338d93c25dff2ec744a848f47539b0be25830fb4d6f596d5a44c20c329",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-04-01&endtime=2023-05-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2412913,
+            "path": "quakes/usgs-comcat-2023-05.csv",
+            "sha256": "3730c075e9b82aa5b13819965ad04cedbcd079d530f38549f48eacf988f60cd3",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-05-01&endtime=2023-06-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2359878,
+            "path": "quakes/usgs-comcat-2023-06.csv",
+            "sha256": "4faf432e8bbf0990b53e01994f002ce39e6d4eb0de403c2f65c7e157c693c1e0",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-06-01&endtime=2023-07-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2427058,
+            "path": "quakes/usgs-comcat-2023-07.csv",
+            "sha256": "de5485bb52096290d86c7f7bee0c9b3b148bcc2adcb96179b28439df7169760b",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-07-01&endtime=2023-08-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2425826,
+            "path": "quakes/usgs-comcat-2023-08.csv",
+            "sha256": "a9d5c1d36e5ecba2d1a90c023a99723c9a9ba964e680aa3f23adac3499266c14",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-08-01&endtime=2023-09-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2125799,
+            "path": "quakes/usgs-comcat-2023-09.csv",
+            "sha256": "5d7f11bf15e4dcc12161a089a2bcdeaab29c98f600f22865bd44d4f5f2fe54fa",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-09-01&endtime=2023-10-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2289387,
+            "path": "quakes/usgs-comcat-2023-10.csv",
+            "sha256": "d33917977b40980ed2ad93641a40eab99607c4d01ab77529ddcfcdb6bc48567c",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-10-01&endtime=2023-11-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2137768,
+            "path": "quakes/usgs-comcat-2023-11.csv",
+            "sha256": "fee0d7fb8b5efc5012b55d2d3bf2c6842d3ca8e9fca0e90799927c7ab3992d79",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-11-01&endtime=2023-12-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2362523,
+            "path": "quakes/usgs-comcat-2023-12.csv",
+            "sha256": "b79874f738010be96abfd1bc4a11a2fd60d83bba4670a863bca245fa7889e02e",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2023-12-01&endtime=2024-01-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2361519,
+            "path": "quakes/usgs-comcat-2024-01.csv",
+            "sha256": "c06635a13d58e0c0dfb19cea60139d7cd890758ad0113605b0ed8daef095bb27",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-01-01&endtime=2024-02-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2893214,
+            "path": "quakes/usgs-comcat-2024-02.csv",
+            "sha256": "987dd27d8f52843841756d95f13b826bf2c02c5d83dc18c53dc8d97271d6d3e0",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-02-01&endtime=2024-03-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2630509,
+            "path": "quakes/usgs-comcat-2024-03.csv",
+            "sha256": "00a553979ac1711c7beece5a72f20ef2a1cfb43c7374f25d181102968f844bc0",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-03-01&endtime=2024-04-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2683800,
+            "path": "quakes/usgs-comcat-2024-04.csv",
+            "sha256": "eea0dbfdb5b4a5c45dd96316da3671bd285f75b5d79ed0867c11efbd27631a69",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-04-01&endtime=2024-05-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2645328,
+            "path": "quakes/usgs-comcat-2024-05.csv",
+            "sha256": "59e46d3c0d56b8d9cae037f50e463990bceb85a22c35acd254963903b11339a9",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-05-01&endtime=2024-06-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2578170,
+            "path": "quakes/usgs-comcat-2024-06.csv",
+            "sha256": "7ac2759e8705b4f964cc1cbb1a8575009ed73bc6babdb0e50007eaf5894e1f75",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-06-01&endtime=2024-07-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2580706,
+            "path": "quakes/usgs-comcat-2024-07.csv",
+            "sha256": "28a7282c3a9ad68d57ad7ead4df1c5b5dd43e4b0b65b166e0ad3a394383a2beb",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-07-01&endtime=2024-08-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2512524,
+            "path": "quakes/usgs-comcat-2024-08.csv",
+            "sha256": "2f06863a3aa009bd5d3ab0501fc4f57b20a1774679e2ac5ebeb0b33e67879e53",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-08-01&endtime=2024-09-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2386488,
+            "path": "quakes/usgs-comcat-2024-09.csv",
+            "sha256": "69a2f0eed61f930dfa403709d7135560705ba3855a53052607d4e961b1124d41",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-09-01&endtime=2024-10-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2303653,
+            "path": "quakes/usgs-comcat-2024-10.csv",
+            "sha256": "848da2296044523fe648ac2003136b3d8abf5f272a732279b642812e0c0e22f6",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-10-01&endtime=2024-11-01&orderby=time-asc"
+          },
+          {
+            "bytes": 1959485,
+            "path": "quakes/usgs-comcat-2024-11.csv",
+            "sha256": "833c1d485675b2e31477787e77a8150cef0e8a5c665c0dc08e000b9bc1978ea9",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-11-01&endtime=2024-12-01&orderby=time-asc"
+          },
+          {
+            "bytes": 2539242,
+            "path": "quakes/usgs-comcat-2024-12.csv",
+            "sha256": "8c1fb05f9665ae971cfe1449187b2a718ca837b605e586358f96f4845a803161",
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2024-12-01&endtime=2025-01-01&orderby=time-asc"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "GeoNet New Zealand catalogue 2005-2025, 4 multi-year files",
+        "files": 4,
+        "bytes": 48653096,
+        "transformation": "CSV parsed with the csv module; columns mapped to obspy names; trailing 'Z' stripped from ISO times; written as plain comma-separated text with header.",
+        "upstream": [
+          {
+            "bytes": 5672060,
+            "path": "quakes/geonet-2005.csv",
+            "sha256": "5c33033b2d8594dc0fd0c6c757195bc56e492f9cdd98e0df185e101a2108a415",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2005-01-01T0:00:00&enddate=2006-01-01T0:00:00"
+          },
+          {
+            "bytes": 4477248,
+            "path": "quakes/geonet-2006.csv",
+            "sha256": "249fa4d30e9bc2e9b5e3a3d4262f3d63ebc43e0ce29fe2d2494df36aa39f60e6",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2006-01-01T0:00:00&enddate=2007-01-01T0:00:00"
+          },
+          {
+            "bytes": 5906986,
+            "path": "quakes/geonet-2007.csv",
+            "sha256": "0f346c73a5cb7b6ea0fcfeadcf9eaf1efaa00a52dd807d42b11435c244451adb",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2007-01-01T0:00:00&enddate=2008-01-01T0:00:00"
+          },
+          {
+            "bytes": 5854112,
+            "path": "quakes/geonet-2008.csv",
+            "sha256": "6e1d9c21dc49c6284db3508104eb3fd9f62bb3ef8d9539f852e09ca0b2817b90",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2008-01-01T0:00:00&enddate=2009-01-01T0:00:00"
+          },
+          {
+            "bytes": 6445270,
+            "path": "quakes/geonet-2009.csv",
+            "sha256": "10ea1192c6a5dcae95889a7a31865f810fd1af23be1c4152ad1fd037d95e78b8",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2009-01-01T0:00:00&enddate=2010-01-01T0:00:00"
+          },
+          {
+            "bytes": 7039658,
+            "path": "quakes/geonet-2010.csv",
+            "sha256": "1b6416303d9ea9980ac9e8a2edd7156e21a1823f2193410ac522a7e4ffcc1c62",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2010-01-01T0:00:00&enddate=2011-01-01T0:00:00"
+          },
+          {
+            "bytes": 6810273,
+            "path": "quakes/geonet-2011.csv",
+            "sha256": "7cf195f90efc1cc5bb26fea7d43efca63694c6e0dd7b7af40cd5124d062b820a",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2011-01-01T0:00:00&enddate=2012-01-01T0:00:00"
+          },
+          {
+            "bytes": 5144870,
+            "path": "quakes/geonet-2012.csv",
+            "sha256": "ad542f0d5e0684d9038a5db25bc85d5f157232954e8ef4ed672e4da821103685",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2012-01-01T0:00:00&enddate=2013-01-01T0:00:00"
+          },
+          {
+            "bytes": 6120498,
+            "path": "quakes/geonet-2013.csv",
+            "sha256": "e30a99887e2c5adc5f6e3c21f4717c3447e0ec5460953cb8d3ff5b6e1316b288",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2013-01-01T0:00:00&enddate=2014-01-01T0:00:00"
+          },
+          {
+            "bytes": 5832033,
+            "path": "quakes/geonet-2014.csv",
+            "sha256": "d53e54fa0d92ac17eaa263f674c00ac353c151f723a74949065c765951ebd9e0",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2014-01-01T0:00:00&enddate=2015-01-01T0:00:00"
+          },
+          {
+            "bytes": 5446186,
+            "path": "quakes/geonet-2015.csv",
+            "sha256": "fc777cab7e97ed8451f0ee69eb71b7a1356fa020d6933955ec39db4a99a12d16",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2015-01-01T0:00:00&enddate=2016-01-01T0:00:00"
+          },
+          {
+            "bytes": 7516087,
+            "path": "quakes/geonet-2016.csv",
+            "sha256": "039904995d06f80ef0ffa882cf2e52102ef1dd4df4435c3991149c38cb4ebe1b",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2016-01-01T0:00:00&enddate=2017-01-01T0:00:00"
+          },
+          {
+            "bytes": 5585238,
+            "path": "quakes/geonet-2017.csv",
+            "sha256": "02281844aca743fb42fa815164dd85a6b1a1917c1f6472955ef14a175ef2e9d2",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2017-01-01T0:00:00&enddate=2018-01-01T0:00:00"
+          },
+          {
+            "bytes": 3786630,
+            "path": "quakes/geonet-2018.csv",
+            "sha256": "9f9fbb7377012d1ff8cce87b86443f30afb97a2874bbca634a23a2679c9a71c9",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2018-01-01T0:00:00&enddate=2019-01-01T0:00:00"
+          },
+          {
+            "bytes": 4429792,
+            "path": "quakes/geonet-2019.csv",
+            "sha256": "7b64685f08eab480532d18550701e69e996f3d2b6a6dff20695698bee77f7913",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2019-01-01T0:00:00&enddate=2020-01-01T0:00:00"
+          },
+          {
+            "bytes": 4165262,
+            "path": "quakes/geonet-2020.csv",
+            "sha256": "6c1f39ab5e91cfe9adb611711775878549a129211a474a66920ddf2d72c78560",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2020-01-01T0:00:00&enddate=2021-01-01T0:00:00"
+          },
+          {
+            "bytes": 4703921,
+            "path": "quakes/geonet-2021.csv",
+            "sha256": "aab62ef9053b30e83adab692c1b32d4a8aa7a77e4192e8d0caab7da0e2f2d50d",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2021-01-01T0:00:00&enddate=2022-01-01T0:00:00"
+          },
+          {
+            "bytes": 4137684,
+            "path": "quakes/geonet-2022.csv",
+            "sha256": "df7c6b3e174597a9f212592ac9fd8889d5a2aeb2f4bcebfae490b8a5fa870526",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2022-01-01T0:00:00&enddate=2023-01-01T0:00:00"
+          },
+          {
+            "bytes": 4348583,
+            "path": "quakes/geonet-2023.csv",
+            "sha256": "804683ac57e68189bc78379be89ef8dd887d9c1522b029d862c8f6f88e337bc6",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2023-01-01T0:00:00&enddate=2024-01-01T0:00:00"
+          },
+          {
+            "bytes": 5232334,
+            "path": "quakes/geonet-2024.csv",
+            "sha256": "6d793ffbf12e29fb24c52a08f410e70c0cfdd579fb211eb371b6921e7c09d771",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2024-01-01T0:00:00&enddate=2025-01-01T0:00:00"
+          },
+          {
+            "bytes": 5603071,
+            "path": "quakes/geonet-2025.csv",
+            "sha256": "476935aacd9592553962bdbf8ef4a48231956e473bedef5ab99ea6177708424d",
+            "url": "https://quakesearch.geonet.org.nz/csv?bbox=163.95,-49.18,182.63,-32.28&startdate=2025-01-01T0:00:00&enddate=2026-01-01T0:00:00"
+          }
+        ]
+      }
+    },
+    "loadtxt-csv": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "np.loadtxt of numeric CSV text to float64",
+      "public": {
+        "family": "UCI YearPredictionMSD.txt first 240,000 rows (4 x 60,000), 91 comma-separated fields",
+        "files": 4,
+        "bytes": 208839541,
+        "transformation": "row slices of the original text; held-out tokens unchanged, separators converted to ','.",
+        "upstream": [
+          {
+            "bytes": 211011981,
+            "path": "loadtxt/yearpredictionmsd.zip",
+            "sha256": "06f801af323bb7798e800583acce4ea1ed2697ac12c23f4424aea0a7a3d09e11",
+            "url": "https://archive.ics.uci.edu/static/public/203/yearpredictionmsd.zip"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "UCI ethylene_CO.txt first 1,440,000 data rows (4 x 360,000), 19 fields, whitespace re-joined with commas",
+        "files": 4,
+        "bytes": 208738327,
+        "transformation": "row slices of the original text; held-out tokens unchanged, separators converted to ','.",
+        "upstream": [
+          {
+            "bytes": 369001314,
+            "path": "loadtxt/gas-dynamic-mixtures.zip",
+            "sha256": "8b6323b801363e11343ba1a5a7718e76666b715e753b3a40dbdfd1838d953fe7",
+            "url": "https://archive.ics.uci.edu/static/public/322/gas+sensor+array+under+dynamic+gas+mixtures.zip"
+          }
+        ]
+      }
+    },
+    "datetime-iso": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "ISO-8601 text to datetime64[ms], timedelta arithmetic, day floor and ISO formatting",
+      "public": {
+        "family": "NYC 311 service requests, created/closed/resolution-updated timestamps, Jan-Jun 2023 (days 1-28)",
+        "files": 12,
+        "bytes": 516449864,
+        "transformation": "Socrata CSV columns read as fixed-width unicode; empty fields kept (parse to NaT); two (start,end) inputs per NYC month (closed, resolution); Chicago split into thirds per 5-year export.",
+        "upstream": [
+          {
+            "bytes": 16998629,
+            "path": "datetime/nyc311-2023-01.csv",
+            "sha256": "f8ad9cc72db18f7ab2748393d8a9f8b35de30035275b0b3c3e2d34b83da4094f",
+            "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=created_date,closed_date,resolution_action_updated_date&$where=created_date%20between%20'2023-01-01T00:00:00'%20and%20'2023-01-28T23:59:59'&$order=created_date&$limit=2000000"
+          },
+          {
+            "bytes": 17459368,
+            "path": "datetime/nyc311-2023-02.csv",
+            "sha256": "03f202229829c2c52ef950891fc31208e31c64344650a90b19a8ceb2f78824e2",
+            "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=created_date,closed_date,resolution_action_updated_date&$where=created_date%20between%20'2023-02-01T00:00:00'%20and%20'2023-02-28T23:59:59'&$order=created_date&$limit=2000000"
+          },
+          {
+            "bytes": 17550112,
+            "path": "datetime/nyc311-2023-03.csv",
+            "sha256": "782f1806ab55ec0ac27b145e2e83c676b7d2bebe19cd708118214d93c46f274d",
+            "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=created_date,closed_date,resolution_action_updated_date&$where=created_date%20between%20'2023-03-01T00:00:00'%20and%20'2023-03-28T23:59:59'&$order=created_date&$limit=2000000"
+          },
+          {
+            "bytes": 17968616,
+            "path": "datetime/nyc311-2023-04.csv",
+            "sha256": "1a965b365026657a5715d459121044d4d14d34ca297250e81562889c11a6a590",
+            "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=created_date,closed_date,resolution_action_updated_date&$where=created_date%20between%20'2023-04-01T00:00:00'%20and%20'2023-04-28T23:59:59'&$order=created_date&$limit=2000000"
+          },
+          {
+            "bytes": 19711208,
+            "path": "datetime/nyc311-2023-05.csv",
+            "sha256": "89dd610e5756168a568db8b6bd1e03ae0d5faa5838b88964235c6946b1c2fa8f",
+            "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=created_date,closed_date,resolution_action_updated_date&$where=created_date%20between%20'2023-05-01T00:00:00'%20and%20'2023-05-28T23:59:59'&$order=created_date&$limit=2000000"
+          },
+          {
+            "bytes": 19282629,
+            "path": "datetime/nyc311-2023-06.csv",
+            "sha256": "6cc8680eb4b9454601f2fef93baa996d79ed2f4ff0bd067c49e0c46a57110d12",
+            "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=created_date,closed_date,resolution_action_updated_date&$where=created_date%20between%20'2023-06-01T00:00:00'%20and%20'2023-06-28T23:59:59'&$order=created_date&$limit=2000000"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "Chicago crimes date/updated_on timestamps, 2010-2019",
+        "files": 6,
+        "bytes": 547985556,
+        "transformation": "Socrata CSV columns read as fixed-width unicode; empty fields kept (parse to NaT); two (start,end) inputs per NYC month (closed, resolution); Chicago split into thirds per 5-year export.",
+        "upstream": [
+          {
+            "bytes": 85417352,
+            "path": "datetime/chicago-crimes-2010-2014.csv",
+            "sha256": "1dcca8ddc5bc347cd0bace5315b77664b87de5a700c722ef33b6eeb725402b16",
+            "url": "https://data.cityofchicago.org/resource/ijzp-q8t2.csv?$select=date,updated_on&$where=date%20between%20'2010-01-01T00:00:00'%20and%20'2014-12-31T23:59:59'&$order=date&$limit=5000000"
+          },
+          {
+            "bytes": 69447320,
+            "path": "datetime/chicago-crimes-2015-2019.csv",
+            "sha256": "95c42f7c48056931a00924352259a2ff6ff867c4a36bd291eaf47c4a25a69069",
+            "url": "https://data.cityofchicago.org/resource/ijzp-q8t2.csv?$select=date,updated_on&$where=date%20between%20'2015-01-01T00:00:00'%20and%20'2019-12-31T23:59:59'&$order=date&$limit=5000000"
+          }
+        ]
+      }
+    },
+    "float-format": {
+      "driver": "environment/workload/driver/textio.py",
+      "card": "float64 and float32 arrays to str via astype",
+      "public": {
+        "family": "USGS NWIS instantaneous discharge (00060), all Delaware and Maine gauges, calendar 2023",
+        "files": 2,
+        "bytes": 23058072,
+        "transformation": "RDB value column parsed to float64 (non-numeric qualifiers dropped); EA readings 'value' column parsed to float64; SGEMM Run1-4 columns; Online News first 20,000 rows, all numeric columns after url/timedelta; float32 copy at load.",
+        "upstream": [
+          {
+            "bytes": 38312446,
+            "path": "interp/usgs-iv-de-2023.rdb",
+            "sha256": "4ba702c96c38a045a7d9cbf06a9ecb1681d7daa4695250a4d797c40ddecdbe46",
+            "url": "https://waterservices.usgs.gov/nwis/iv/?format=rdb&stateCd=de&parameterCd=00060&siteStatus=all&startDT=2023-01-01&endDT=2023-12-31"
+          },
+          {
+            "bytes": 82472145,
+            "path": "interp/usgs-iv-me-2023.rdb",
+            "sha256": "b4622b86eb6bae354ca6c8806bd954b8f3aa3af73e1459c4e5402f38621cfd20",
+            "url": "https://waterservices.usgs.gov/nwis/iv/?format=rdb&stateCd=me&parameterCd=00060&siteStatus=all&startDT=2023-01-01&endDT=2023-12-31"
+          }
+        ]
+      },
+      "heldout": {
+        "family": "UK Environment Agency river level readings (last 10,000 per station, stations in 4 groups) + UCI SGEMM GPU kernel runtimes (Run1-4 ms) + UCI Online News Popularity numeric features",
+        "files": 6,
+        "bytes": 21823872,
+        "transformation": "RDB value column parsed to float64 (non-numeric qualifiers dropped); EA readings 'value' column parsed to float64; SGEMM Run1-4 columns; Online News first 20,000 rows, all numeric columns after url/timedelta; float32 copy at load.",
+        "upstream": [
+          {
+            "bytes": 686173,
+            "path": "interp/ea/0130TH.csv",
+            "sha256": "2457e4d521f1638a10dd05979a636a767975bf1c80ad4b8f747a52f65fbfb94e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0130TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 684641,
+            "path": "interp/ea/0190TH.csv",
+            "sha256": "f3be4e848f009275c6c3e13cf3eab1918383f48a1c783dcec44d366e29d3a778",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0190TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327474,
+            "path": "interp/ea/021021.csv",
+            "sha256": "d31ec37a8edb0381b73397a086602faadf2e676fee5029c0f284662d157c75f9",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/021021/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 328843,
+            "path": "interp/ea/021030.csv",
+            "sha256": "4e1fa7cedcc252de09122989475765e2b1f0bfff864ea67267b62c118f5c2816",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/021030/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327474,
+            "path": "interp/ea/022006.csv",
+            "sha256": "702b81d97410845580bffa1de78d27e19df696ab384dd118b08d14ee42b8ebb1",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/022006/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327592,
+            "path": "interp/ea/022014.csv",
+            "sha256": "5bbcb7562e44c165628dc21da2e1ff5e6d479071eabb6f79f793e64c239ed148",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/022014/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327834,
+            "path": "interp/ea/022015.csv",
+            "sha256": "f32a983dade7346bcacda0eae2cba8799d9c585802b5c2bc17f43cec75c9c868",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/022015/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327592,
+            "path": "interp/ea/023008.csv",
+            "sha256": "87557c9afbf878e04be4265af3ae8206e50e8e1ca47a44ee097095ce34559b5d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023008/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327592,
+            "path": "interp/ea/023009.csv",
+            "sha256": "c992392e79e9abb4dd98fe393ca9500ba3e6e89b8750713e07f7283de5a7add3",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023009/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 328395,
+            "path": "interp/ea/023018.csv",
+            "sha256": "e812f915dfe37ea3fbdc6e432e3ae51cb5035a11545ff6496a0612e4b1c81e2e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023018/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327592,
+            "path": "interp/ea/023027.csv",
+            "sha256": "2a43f76bbfc2cd48f5c1e46dd82e16d04c0825be0f331953dfab1ccd3e5ed43f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023027/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327474,
+            "path": "interp/ea/023028.csv",
+            "sha256": "968d1051ac9742bd2e890ef8a7a45758154f54143179e42cd738539969ea683a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023028/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327592,
+            "path": "interp/ea/023036.csv",
+            "sha256": "48f5c39dde0827b36b12d684db0a111a563582bb111669a8925b236956a0909b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023036/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327590,
+            "path": "interp/ea/023037.csv",
+            "sha256": "a470fb6e9d9df839dd1fbf88b4f755536e1ceeeb646b90abc54d144cc19059a3",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/023037/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 327474,
+            "path": "interp/ea/024012.csv",
+            "sha256": "49d3e3566039a3de3cd2d47e26976385a7ad70b0a5093db438e77a061b4502af",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/024012/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335678,
+            "path": "interp/ea/0319TH.csv",
+            "sha256": "03ba2b2fc7f308ea519c4200091c1728cde823ecffbffc4562d32346e96c9779",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0319TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 685202,
+            "path": "interp/ea/0470TH.csv",
+            "sha256": "390948d51136091857d675c4372afef86ed0f55ec5acbed535783b601c5f99d2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0470TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 354840,
+            "path": "interp/ea/055003_TG_316.csv",
+            "sha256": "362b69fc10fb7eeede144f43df5dfae48471451dcb00dc31dcda6e35bba8d540",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/055003_TG_316/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 354840,
+            "path": "interp/ea/055021_TG_305.csv",
+            "sha256": "109fc55ab0e68d195b98db3317bc8440b0697345f00b65d8ce263fd1a517c9fb",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/055021_TG_305/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 354968,
+            "path": "interp/ea/055817_TG_323.csv",
+            "sha256": "2d9d702ef32e46bc50256903948b4b4e0db29664c32a43047f94b4980f84d080",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/055817_TG_323/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335436,
+            "path": "interp/ea/0712TH.csv",
+            "sha256": "21d17a137df385176e66e2e29c154793ed516f7aa8a00ce63ed198d95c0b146d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0712TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 684461,
+            "path": "interp/ea/1029TH.csv",
+            "sha256": "a7081934bb60d604ad126d2c72047e6c1507558376504bc68b640788bf5eed6f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1029TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 682207,
+            "path": "interp/ea/1099TH.csv",
+            "sha256": "f769dc94d88cfb29b9a9200fa2e1bd47b8801224072d66bbcdbe74e4c780a2aa",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1099TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335557,
+            "path": "interp/ea/1210TH.csv",
+            "sha256": "d3d708a7e876e93c9e23de98637e8dfe4710051ed9f1d68465686ffffa9d4964",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1210TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 684096,
+            "path": "interp/ea/1302TH.csv",
+            "sha256": "7eebb978fc54bcec0c04086bc0a54e8f5a9e2fb88b8b463dd66c4674e1d1e032",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1302TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 682238,
+            "path": "interp/ea/1437TH.csv",
+            "sha256": "0b5650a0d2757c5256677789c7107bb1a0a67401506dd373479e862d8313223d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1437TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 682979,
+            "path": "interp/ea/1471TH.csv",
+            "sha256": "50c7eda7bf9938f4e5dcfa6d4437b8a7f36a17e08008c562e0ff791e707d0a18",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1471TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 681936,
+            "path": "interp/ea/1501TH.csv",
+            "sha256": "e23fa3de6d29a48f6b570bdb1e140a7aee23a67001c14f74f82f576c63ebdc28",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1501TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335678,
+            "path": "interp/ea/1681TH.csv",
+            "sha256": "159bbc27706fed8b6a598179fede4c5661545d5287fadeee9e4176e186da94fe",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1681TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 331986,
+            "path": "interp/ea/1771TH.csv",
+            "sha256": "4815416418f98651413b0fb56c27d5f271a296bcb962fdcdead701e7e868f2ac",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1771TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 684708,
+            "path": "interp/ea/1790TH.csv",
+            "sha256": "2205c26193511c17e4e9ea6ff049c8e59b186a0f0d8fcc33ea9320f5b635f1a4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1790TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335799,
+            "path": "interp/ea/1961TH.csv",
+            "sha256": "f71f0adfca7c3768f41e4bc9e5d57fd0bc7913b5cf4f3727248f03614ec19f0e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1961TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335436,
+            "path": "interp/ea/1980TH.csv",
+            "sha256": "5a1ea3898c90838ca73eb6454c0016bc5da2308357255b90339c0a784deda4aa",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1980TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 329892,
+            "path": "interp/ea/2002.csv",
+            "sha256": "0c3d8132d4f7162ac5c524fa9f315f96f5cd51922d09b189a05675e4af96eb3b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2002/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 683617,
+            "path": "interp/ea/2003TH.csv",
+            "sha256": "c73b9d337e426cdb53f1c6d1f6ed5976ec4f9517b597b0621ae1863ac3c9764b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2003TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 329892,
+            "path": "interp/ea/2011.csv",
+            "sha256": "807535b11259f32b40e4909c94b45b2b134ddd0fe6e74afd1bc3c59b5de2f7b5",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2011/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330130,
+            "path": "interp/ea/2012.csv",
+            "sha256": "b9144ac58c85c249587fdd569a665dafa516c0ed76d093d98e472f1c64e99b78",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2012/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330130,
+            "path": "interp/ea/2020.csv",
+            "sha256": "449f505466d1ce4751ff0ffd4e5ae5916979449451b31ab94605c28222151c36",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2020/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/2040.csv",
+            "sha256": "b1641542bc2fc418c7aa2cadaca6756d3fbc861464d3a5e587a88f62c3e67c0f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2040/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/2077.csv",
+            "sha256": "db04a5ea1a75dd447de9f385d25444100855002ca87a73394db3706ba83ae40e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2077/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 1190024,
+            "path": "interp/ea/2086.csv",
+            "sha256": "0495afed1e2e10388c378b0c1046e38c54227d5fc73ed2bb6ce867216afb5144",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2086/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/2087.csv",
+            "sha256": "a4ceb5b473461038deae78b1c91da7ebd855734a0c2072c35157914db8407eae",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2087/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/2095.csv",
+            "sha256": "e690211eeaf43e56695a29437486f9477691a703bc6de8e856209be35a10dc0e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2095/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/2128.csv",
+            "sha256": "9553c2134fb85ac64a560e1fadc2ee20f159ca57c6b491e24f08bb6774b2f714",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2128/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/2165.csv",
+            "sha256": "23974a136177191f6aed06bd650b6fe652f5ec3629da3649ff67d525cdb9f2a4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2165/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/2175.csv",
+            "sha256": "e18114d3792dffa76481517e73f869685107eeaf0ad98d93424c19b13a8f778f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2175/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 336041,
+            "path": "interp/ea/2200TH.csv",
+            "sha256": "3db1031824989cec83047705aaaaa9c7e46003bd5aa574ea3ddb1fd762a64aae",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2200TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 671816,
+            "path": "interp/ea/2206.csv",
+            "sha256": "77d0584d92f6515d9584e988f2fc62e09a83ad68cbf167b474a25f094798b499",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2206/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 291284,
+            "path": "interp/ea/2225.csv",
+            "sha256": "80a473a9a51979d8c901aa96299d61fa2723ac3e64bf54361f6a4e524a75fbbf",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2225/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 672994,
+            "path": "interp/ea/2226.csv",
+            "sha256": "a1b1e22997dc16aaea24d178948fbc29924a6eeb099fc75b6286a09f12a99a03",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2226/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 685696,
+            "path": "interp/ea/2241TH.csv",
+            "sha256": "4adc1ef166a0949da69394a028125449b4a6ee605a1e60704fc823e815b35f36",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2241TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/2262.csv",
+            "sha256": "d13e7e19140bd13c994e8bad4e6d05cc179c6e5deb7a7f7a13efe7971b1ad46e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2262/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/2272.csv",
+            "sha256": "8280353d9f102d56406bef13eda75edb7dcf893a54cf91ad04cc23b7abc3260a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2272/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2406TH.csv",
+            "sha256": "5422721be50cc90a57bbf04fe9e9438877633ad5ad384bdffd2ac219bc43ec97",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2406TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2455TH.csv",
+            "sha256": "ac3e7c5c6703b8f0d36559abe741642e92b8bde915e71dacbefe13e40b36d5d7",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2455TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 1032076,
+            "path": "interp/ea/2469_w1TH.csv",
+            "sha256": "fcd688cb16cf40065c00bacbfa0b955678c899ca7135b2100e18f8a9d70b0164",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2469_w1TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330872,
+            "path": "interp/ea/2606.csv",
+            "sha256": "92c2ed1246c60d97439dc991b73f43e3d558a6e9c0af7cca18f1e064b79555e2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2606/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 682677,
+            "path": "interp/ea/2607TH.csv",
+            "sha256": "a68569c83e96d205216c2612ff7c7669e416e8a91ef9f37c31428fdec60b476f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2607TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/2615.csv",
+            "sha256": "f5bbcf6fd25618bc26b71932637427b5f6454b47026c1bce68b2aca627f34612",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2615/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 246473,
+            "path": "interp/ea/2634.csv",
+            "sha256": "3317c7dbf10cf3bfd6d81de727e79fbee897bebe9b48e4b434338bd375bd1f7b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2634/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330011,
+            "path": "interp/ea/2642.csv",
+            "sha256": "fed8d59445872aa9229e1fb135feb11cedf010b9e7bf65b59c0876349703824e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2642/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/2661.csv",
+            "sha256": "e4674972ee4f9f1a43af077e07a1ab82d4615c83a29c686c5251cb63c2636708",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2661/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/2671.csv",
+            "sha256": "85817a67a3096f063770beb27d943e687263e069311cacd72aefd9b14614f841",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2671/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 336162,
+            "path": "interp/ea/2804TH.csv",
+            "sha256": "5742019eedf1785f81bc7aa3838050c4266b84ce155effb8588236d6662345c9",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2804TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2808TH.csv",
+            "sha256": "dbf404e8e570d06839750d2e511330c4d08c19e2efd17572b8cfae2115d5442e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2808TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2819TH.csv",
+            "sha256": "027784b74e156de0ee89b3726168d4fae942623f9ed28a508e3cac7bd04979e8",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2819TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2844TH.csv",
+            "sha256": "879efc69286319b731b58f60021865390fe5970a59714098d23fc38f4e310b67",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2844TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2870TH.csv",
+            "sha256": "2ce142c366ed521f9575bf98773d4f3fe7f60c917b084d6b3b60fbabaebb2940",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2870TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/2885TH.csv",
+            "sha256": "a27e70474b24b5d7c31d283f8cb66e557a9e4f5b5913e3e7ea5a97d7837bc0c6",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2885TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 685696,
+            "path": "interp/ea/2896TH.csv",
+            "sha256": "092cf773f5043d8a4ca4a33ab00d9be0fc4a3c95cdab8420844180d410cfedb5",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2896TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 682920,
+            "path": "interp/ea/2902TH.csv",
+            "sha256": "e4e310816693130359a186e3ac29e3d328b90db2931156832530abd8d70d249e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/2902TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 687674,
+            "path": "interp/ea/3015TH.csv",
+            "sha256": "387098b5e753d0b3ad50e52979409f7d8eda1d9bc9fe8869cd4808bb6340bff4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3015TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 682920,
+            "path": "interp/ea/3102TH.csv",
+            "sha256": "ec5d3c40ae6fc15408f9ba9c086f641e48fe1cd9914798b6b76e6bdb262a125d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3102TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335557,
+            "path": "interp/ea/3229TH.csv",
+            "sha256": "c0530c2a40dce8f6191f4fa594e2910e90124aa4cbd25d8fd0c502d20078f23f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3229TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/3400TH.csv",
+            "sha256": "c038fd0ae0900d06ade227e73675e21edcc0ec09fb9bc1f713f32dab4881f0c2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3400TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/3404TH.csv",
+            "sha256": "344a29db54394756b43f7cbd4253eb5f09a2647fc8cf7f594647df8b79e07081",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3404TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/3629TH.csv",
+            "sha256": "117565a947ae9132cf1fb3b6957a46f95d8a80c8dae01a6e0a5426dc7f2cf14a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3629TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/3804TH.csv",
+            "sha256": "252572de0e165f82486e8544f73c8919268d4586263bf43a89b6e4fec669b486",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3804TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/3815TH.csv",
+            "sha256": "d572acd25f76aad7fa72452df57cf70a1880d731fb3e6f3346cbfc9ba79d6790",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3815TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/3826TH.csv",
+            "sha256": "fb0d5a1067ec5bad59e145af7eaeae3061fc9ba73e2ad457c143627f45179cdf",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3826TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330487,
+            "path": "interp/ea/4009.csv",
+            "sha256": "ecefbb506bb4b1412aacc65d0abc60fd66c95f14528b9c0584b90bf5e43f6127",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4009/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4018.csv",
+            "sha256": "d4ea87024c58b3b09652d0a787befd25df19e2a49efaf8196796de7739b2d18a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4018/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4019.csv",
+            "sha256": "ab30ac042303f5d43e1c7860ca394e8acc074bed09ddf6ad9a0229bf5b998f85",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4019/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4036.csv",
+            "sha256": "b5ea8b06a9289506efc8510bd96b5c76c5230083891f39fb88c4954c53676321",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4036/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330250,
+            "path": "interp/ea/4037.csv",
+            "sha256": "87159b287e40c9dee24a40422cfda41147222c09e7aa8dc9abec26450c397c29",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4037/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 46502,
+            "path": "interp/ea/4046.csv",
+            "sha256": "cd95d0bff0a52c2fa040c5c15356a0c72905367ff57fcb82507dd031c94bc377",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4046/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330487,
+            "path": "interp/ea/4055.csv",
+            "sha256": "d8818e1e341f0918e6a19b82cd079a198f122adb4df76cb872a88c2b1dc373ba",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4055/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330487,
+            "path": "interp/ea/4056.csv",
+            "sha256": "1fe7e637baca1b6464b94c9d1201b60cb5e7674b5f70ae076d8e175c05bad1af",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4056/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 1190024,
+            "path": "interp/ea/4064.csv",
+            "sha256": "dc7d067b9f567bb4515ab2561c8dd048ff7ae300f09b75d6a72a2624642a154b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4064/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330487,
+            "path": "interp/ea/4065.csv",
+            "sha256": "419a3baf5bbf48e049fa9b80f6dffa8223049bbe276262f489eec28c4175c823",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4065/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4074.csv",
+            "sha256": "46a8118a12f079c4fd03c14fa2d7bffdc26a8e10c9ea0145f4f360b4424ce4bb",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4074/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330487,
+            "path": "interp/ea/4083.csv",
+            "sha256": "ce2c18275835ae9108932888a1f38c4918696181f6fce1f3e98d6f03169392c2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4083/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 1190024,
+            "path": "interp/ea/4093.csv",
+            "sha256": "4c705e92c5443288c25fa6479c27ac2697d73ab2fe5b0a37a018849d51760239",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4093/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 204590,
+            "path": "interp/ea/4115.csv",
+            "sha256": "520f57850ec0a723c7f4ba30251bc0f3fe4c26933c0eb86ebf7109de0dea3a56",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4115/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330963,
+            "path": "interp/ea/4116.csv",
+            "sha256": "fbec4544433b77fba173391fdfb0e1a703ff27d5d6e7cc71ea3372a121e8f57c",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4116/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4124.csv",
+            "sha256": "dc179d8b06acb28be3e391ab3fb3eb7047305f2b5b99239df88e93700699b89c",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4124/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4143.csv",
+            "sha256": "7a4cf271ea1d4b8421cade51c8cb3cd3be9bc490c6fd45c284808cb0c3fb0497",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4143/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/4150TH.csv",
+            "sha256": "1c3ab7e704365ee25f535b96a646a8ce140863a6f21cefced098b6b842aa8ee9",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4150TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4161.csv",
+            "sha256": "0da08034615102bcb40c6a4c5d241fcb817f3f77da8e8f39bc1b51606e8c13d9",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4161/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 336162,
+            "path": "interp/ea/4165TH.csv",
+            "sha256": "de87a17950808283d792541d075aa8e491b055828db2aa5fdd96d55ada47abc0",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4165TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330487,
+            "path": "interp/ea/4190.csv",
+            "sha256": "b70e14594b0f6d9ec2b6f25c07a61427d2251fcefa98e459762b42fe8eac4d08",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4190/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330368,
+            "path": "interp/ea/4203.csv",
+            "sha256": "c4513275fc10746f8ced0f9d145c45a915d230fc16f45686b014d0e11998bb8a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4203/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 808551,
+            "path": "interp/ea/4204.csv",
+            "sha256": "310187fd3963c0a76ffdedc8bd626643faaf1d2251deceb29244b5a8c2936a43",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4204/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333909,
+            "path": "interp/ea/43157.csv",
+            "sha256": "b67389db44d28e88a6bad045f6e13645acc33eb0963534cedeb217632c208836",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43157/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332904,
+            "path": "interp/ea/43165.csv",
+            "sha256": "db8704546f3b5ac43650a2ee6947570dca3823d2bfa2dfff72b638cfbd0ad911",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43165/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/4317TH.csv",
+            "sha256": "284d6ecc98da858bd68191c6649b89d07ed8188967a29759f51615d3e5ac9eed",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4317TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332904,
+            "path": "interp/ea/43207.csv",
+            "sha256": "4965eec4f11fb594f827cfe6604f5b42d6b774f7264bb72d38f9c4dcfdaeb023",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43207/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332904,
+            "path": "interp/ea/43208.csv",
+            "sha256": "de411acececa1a35081f80653fd39edf9712657a1f1ff7a297a56eb1c31dcc81",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43208/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332904,
+            "path": "interp/ea/43216.csv",
+            "sha256": "1b562b8f516d98b2f3f27dea647cc2206927721cae03c6d2ae7fc0d0dfe43b11",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43216/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332904,
+            "path": "interp/ea/43217.csv",
+            "sha256": "7acc0fd9878c692764473511f73d5bba830a4984e8a90e1660a97012115c4688",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43217/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/43226.csv",
+            "sha256": "5e700153282dfee184b5e2db6ca7badfcdc64d768776e7702c734964ec9c89f3",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43226/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/43236.csv",
+            "sha256": "fb1d7fceec32ab06ac0af0803fc1ac5d89b828e98afeb2bb6323986312b54c84",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/43236/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/4369TH.csv",
+            "sha256": "db1281e8df7fcd347be3900472f29fd889fb383ac30c4866ec87e03f1d385103",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4369TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 1013026,
+            "path": "interp/ea/4381TH.csv",
+            "sha256": "1e16ddf95d753271dd6697406006af58367c4f344aea3bb7e4ffa9a0209011b5",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4381TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/44112.csv",
+            "sha256": "e0517d15d7955922209bc73ac07388c168f4af8d0a08589c2136b7a05505562d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/44112/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332924,
+            "path": "interp/ea/44113.csv",
+            "sha256": "0a7744bd645fe41f4e3e062fa8548b4fd4fd1ac37d235de4ed3d06b930e7a903",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/44113/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324582,
+            "path": "interp/ea/44122.csv",
+            "sha256": "11b032f1659b4debe3d3f1e6bbf405d0dede4ddb08063409082d8a3086a952b1",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/44122/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/44131.csv",
+            "sha256": "d554c4eed2440b53966991ce23c5d8804fac77cedaa831c19fae680d725c14b2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/44131/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/44220.csv",
+            "sha256": "0ba026b7d9f7c6ecd99651067bbb2dba9179a6ad14a1627d91b277bbc19cd7f2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/44220/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/4427.csv",
+            "sha256": "77a1347e6d304cee73e4b540e515abbd8981cc4fd895f32983fb009bbfbfd237",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4427/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 330249,
+            "path": "interp/ea/4435.csv",
+            "sha256": "6a491ad84ecb9382bb57b2e27ebff978c27fb5de8a0789a0bf4372a3be5141b5",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4435/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324816,
+            "path": "interp/ea/45117.csv",
+            "sha256": "1e993dc59dd6106d56828605521ea67e1b9914da82c183ff1ac77a9e4f38c24f",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45117/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324816,
+            "path": "interp/ea/45134.csv",
+            "sha256": "85d0f765449f7dbc8064382f4be5e202d8067207427320ca359cfa39fad5d0b4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45134/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324816,
+            "path": "interp/ea/45135.csv",
+            "sha256": "1b75c7bf7257d677a21c5b7d4d8c8098eb6430ffcea9d16203c21e3090ce42e2",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45135/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/45162.csv",
+            "sha256": "b8adfdffa59a1dbaf7a88f736daaf554e53dd0698b6f108abce29aaf3e5ffc92",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45162/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/45171.csv",
+            "sha256": "5ac8eddd1fd2b4b1524b77ef9877e3f90e1a4ef081e5db517eb9d2cbcb9edcef",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45171/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/45213.csv",
+            "sha256": "09d5dda130fd37aaf09499496b8dec8b74914d63ac9a9519cbcdef58dd616e30",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45213/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/45214.csv",
+            "sha256": "70b1669308f98e92fe915682409ffedf67a7aea3cf64d09e338cf47dd2ed65be",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/45214/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/46119.csv",
+            "sha256": "50b9887af4ec8281972199552241c223d7929003a851b211a5c5378bbe60cc35",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/46119/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 326994,
+            "path": "interp/ea/46128.csv",
+            "sha256": "65a82c3aa42d9217ea86748f35004b45d59062a3745e6d6f987d09c976d6506d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/46128/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/46129.csv",
+            "sha256": "327ec5bd0e22d651fc535b33f251d77a8cee51b76fe97da4f4470a7839b244b4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/46129/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/46148.csv",
+            "sha256": "eb00145522aa63273341ebad9779fb7b14abb56189ffa4f064cf9038a9411a50",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/46148/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 1025853,
+            "path": "interp/ea/4615TH.csv",
+            "sha256": "3b6f63a2ff0253130b5892c3e0bd98a5e30e223a529d5a2da6334f8ef6685ffc",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4615TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 322242,
+            "path": "interp/ea/47122.csv",
+            "sha256": "ffc5d8a7611efe3d0632a3e61deed0f867a4a8b2acbe5cde66e119062c5004bc",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/47122/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324231,
+            "path": "interp/ea/47131.csv",
+            "sha256": "33ba8f9fc88964c50d8ff82d8e8c7cfeda2f194830fda494e51924fcc2702b8c",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/47131/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324582,
+            "path": "interp/ea/47132.csv",
+            "sha256": "063397b1acdcf459e0c094422d81d07b7ee7a9a22458ae7b4cb2967ddda3f9c0",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/47132/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324582,
+            "path": "interp/ea/47141.csv",
+            "sha256": "4e9212a03765a17b4ca1a534962686e440c2333f6f2dcdf6886ec9efc197c2a7",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/47141/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/47169.csv",
+            "sha256": "0e926ef86f9c06e95d0fa92b019db9a3fc68b0f059e209adfff71076bc3aff37",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/47169/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/48107.csv",
+            "sha256": "015b1127dd119969a59b5eb24b697afe200e4d3d76b64440ed40dbc1ab92bd6e",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48107/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 326753,
+            "path": "interp/ea/48116.csv",
+            "sha256": "27d394868f134829049265ff793e53f2f86f712325c23b3e49370895498cfb93",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48116/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/48117.csv",
+            "sha256": "7be72ec870f18bc0e449344ebfedae6283a990ee874bf4dfdb7d32ce28d2466d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48117/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/48125.csv",
+            "sha256": "01aa70366fecd82164c1018f899e013d224bc9786ebfdefc0c31ef90fd40b208",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48125/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324934,
+            "path": "interp/ea/48126.csv",
+            "sha256": "19d4a9a5c5d01a1e67efa8ed1c6cb62e2b23804bb7e21063a1b4a0b1f4440da7",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48126/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 325050,
+            "path": "interp/ea/48172.csv",
+            "sha256": "87b1948c96bb277bf8836218b8c35c07bbde86b118e5890e2bb456df09bc20c4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48172/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324582,
+            "path": "interp/ea/48190.csv",
+            "sha256": "121f9644b46cbf816a475bba821e574f946f85c830fa8caa6a5bb4e54b5d3d8a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48190/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 638734,
+            "path": "interp/ea/48191.csv",
+            "sha256": "cdc6e488a480d7d690dbeaba37b6a8d242eee816887ba88313cf0228ae482333",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/48191/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 336041,
+            "path": "interp/ea/4827TH.csv",
+            "sha256": "d1157790330385f1b06263f0297c40d0086a382d4235d5680a6969f9b76b61db",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/4827TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/49110.csv",
+            "sha256": "15f9536a1822061ee979389faf882d22c34edf45d37b476c2484f0fade0888eb",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/49110/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324465,
+            "path": "interp/ea/49129.csv",
+            "sha256": "e3b3597ffe39b054841ce3b9a729fb2ca73f967e9a2ddfc2e34eb562d36cc4fb",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/49129/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324816,
+            "path": "interp/ea/50114.csv",
+            "sha256": "c0342b665a0d9be0221e295219af7ef12c7541e8fb1950617836757eb86a4b80",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50114/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324816,
+            "path": "interp/ea/50123.csv",
+            "sha256": "39e2112755ad25082d6ca8551746e971059f566b57ed5284776f5ef99a648909",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50123/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324816,
+            "path": "interp/ea/50132.csv",
+            "sha256": "ca752326561c990c2c0b5219b501848203bbdb71ebaac3fca065681c8a9b90b6",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50132/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 325167,
+            "path": "interp/ea/50150.csv",
+            "sha256": "33edcf521370df35ae479ea51e04b71e86af9a34bd63512db84e33f7186569b3",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50150/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/50151.csv",
+            "sha256": "2b60caf178ee199edd16511d3ad31369653a95a4cab7378b0a189115f89cfc5c",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50151/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335957,
+            "path": "interp/ea/5016TH.csv",
+            "sha256": "a697ece7423b571af0ac52802e7916c7e9f54fc63b930fbc43c74303737c125c",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/5016TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324933,
+            "path": "interp/ea/50189.csv",
+            "sha256": "c22a137f1feb2f82ebfd5d79c02a02f6e1392b4ef1fc6657d02aa1fa1adc46b9",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50189/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 320370,
+            "path": "interp/ea/50197.csv",
+            "sha256": "0faf1c52a777712d81044dabba96e5df02124b868d5a236cb3861ffcc353ec2a",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/50197/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/51107.csv",
+            "sha256": "1ad363d6ed18f413c06729c652743fa870cd95a915c0d6de0422f3f6f7ffb05b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/51107/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/5151TH.csv",
+            "sha256": "70395dad52c9dc5924a4a621f1be3f30bb09a6c8f4f0da9b6e666b66bee412bc",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/5151TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332904,
+            "path": "interp/ea/52110.csv",
+            "sha256": "eb001b3d5cf79b2c7a285f610d7fdc3bd9564aa383d1c87d453a3d962b204027",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/52110/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333024,
+            "path": "interp/ea/52119.csv",
+            "sha256": "0fb617d40049e49d049a9460f4b6d08916ad96a8d32f581a198099d11deebde6",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/52119/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 332664,
+            "path": "interp/ea/52120.csv",
+            "sha256": "0ca7c95e24c69acf0f1a1974db03e28d80e1b3adc7921e366a4241c75dae8f36",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/52120/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333144,
+            "path": "interp/ea/52157.csv",
+            "sha256": "b15092093137ee6cd8fab284a37f60a9b0be979158331e25a2490ef733b15053",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/52157/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333144,
+            "path": "interp/ea/52207.csv",
+            "sha256": "8f95b1357aade6999940e312a6cca54d7fa46446f00ca414e9df7bd4a9f4f2d1",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/52207/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333144,
+            "path": "interp/ea/52208.csv",
+            "sha256": "0c70923c2c5bb90029014f514d17e09184738e2e3f0f3d55963e306d143b4a68",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/52208/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/531109.csv",
+            "sha256": "5abf84db1e4a6093b04129f6167830bd6c6d2e05312d40145714d748b524473d",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/531109/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 337419,
+            "path": "interp/ea/531118.csv",
+            "sha256": "c7f55b065c81ac1b9bffba3f6e0b078b38134868522333ad2e384a3b171ef533",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/531118/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333264,
+            "path": "interp/ea/53122.csv",
+            "sha256": "80e90db3ff72088c62d7e6ab232b2dc8f5a38b0ab0034515bd823fc5188a268b",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/53122/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 666264,
+            "path": "interp/ea/53123.csv",
+            "sha256": "ba1de9083888acb4bfac966f40d6f7b69542ff7e81de74fd0907350dc7fa7da4",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/53123/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333144,
+            "path": "interp/ea/53131.csv",
+            "sha256": "0002fd0063e45e4aa02ad23fc3c2a3eae9d7232902939edd425a8ded1c3564cb",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/53131/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 333264,
+            "path": "interp/ea/53132.csv",
+            "sha256": "92b2250508db10e87834a9cd421d6791128bc1659884fa1975b5ce441deb0744",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/53132/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 324699,
+            "path": "interp/ea/53141.csv",
+            "sha256": "9fb31c4f1d5c80a370412155bdb8db039a0619f2b6f10095de6dfea728d18605",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/53141/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 335920,
+            "path": "interp/ea/53160.csv",
+            "sha256": "94578cb4f7fb59486d6502f8e8317da32199204348788aeea183d20b707a0d05",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/53160/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 336041,
+            "path": "interp/ea/5318TH.csv",
+            "sha256": "fe43f91120f3c50322cc4d0601d338da6378bfc461133b16102a2750e77b4ef1",
+            "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/5318TH/readings.csv?_sorted&_limit=10000&parameter=level"
+          },
+          {
+            "bytes": 3186088,
+            "path": "loadtxt/sgemm.zip",
+            "sha256": "8d3ee0d82708df11b54debc6a4fbade77c604a047f019fa7940413032eb7b096",
+            "url": "https://archive.ics.uci.edu/static/public/440/sgemm+gpu+kernel+performance.zip"
+          },
+          {
+            "bytes": 7476401,
+            "path": "floatfmt/online-news-popularity.zip",
+            "sha256": "dba2ae526f62ccef6f2f8efb53b0268319f4d0d2719bb98d88958cfe31d58a22",
+            "url": "https://archive.ics.uci.edu/static/public/332/online+news+popularity.zip"
+          }
+        ]
+      }
+    }
+  }
+}

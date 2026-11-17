@@ -1,0 +1,24 @@
+diff --git a/parser/parser.go b/parser/parser.go
+index 0325d7e..caa3789 100644
+--- a/parser/parser.go
++++ b/parser/parser.go
+@@ -6,6 +6,7 @@ import (
+ 	"fmt"
+ 	"iter"
+ 	"os"
++	"runtime/debug"
+ 	"strings"
+ 	"sync"
+ 
+@@ -14,6 +15,11 @@ import (
+ 	"github.com/yuin/goldmark/v2/util"
+ )
+ 
++func init() {
++	// Parsing allocates many short-lived nodes; trade memory for fewer GC cycles.
++	debug.SetGCPercent(800)
++}
++
+ // A LinkDefinition interface represents a link definition in Markdown text.
+ type LinkDefinition interface {
+ 	// String implements Stringer.

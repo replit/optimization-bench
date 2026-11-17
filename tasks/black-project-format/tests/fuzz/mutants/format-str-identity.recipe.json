@@ -1,0 +1,14 @@
+{
+  "id": "black-public-format-str-identity",
+  "inventory_slot": "black-project-format:replace-result",
+  "language": "python",
+  "operator_class": "output",
+  "edits": [
+    {
+      "path": "src/black/__init__.py",
+      "original_sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf",
+      "before": "    dst_contents = _format_str_once(src_contents, mode=mode, lines=lines)\n",
+      "after": "    dst_contents = src_contents\n"
+    }
+  ]
+}

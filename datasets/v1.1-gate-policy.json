@@ -1,0 +1,117 @@
+{
+  "schema": "optimbench-v1.1-gate-policy-v1",
+  "policy_id": "optimbench-v1.1-wrap-up-20261027",
+  "frozen_judge_commit": "331098d53464b053bc52b8d8011bd40f5c0eb74c",
+  "judge_revision": "rc.11",
+  "execution_correctness_overlays": {
+    "judge/heldout.py": {
+      "kind": "authenticated held-out task source mapping",
+      "base_git_blob_sha1": "e8534106165a8a5871762c28edeeb6f6f213a643",
+      "effective_sha256": "1744e7812b3b77a862a8a42ec481a84f7a56b69276e3c8b63e0eb8c95b78eec8",
+      "scope": "Merged PR99 (d98ac954ea2bf1e2a586c3491be1f05218c5a582): bind verified temporary held-out views to their canonical task source for the acquisition context lifetime; reject replaced protected symlinks. Private bodies and acquisition checks are unchanged. Follow-up: run independent per-reference acquisition/integrity checks on a bounded forked process pool (min(8, available cores)); results are consumed in lock order with identical checks, messages and fail-closed behavior."
+    },
+    "judge/image_recipe.py": {
+      "kind": "authenticated held-out task source mapping",
+      "base_git_blob_sha1": "ad90ced67faedbc21bea548ecccc6053943202ae",
+      "effective_sha256": "d2484a72b19cfdb8b95e2039986cbe47b7705b283984a44d97756709357c77bb",
+      "scope": "Merged PR99 (d98ac954ea2bf1e2a586c3491be1f05218c5a582): resolve authenticated held-out views to the original checkout for Git image-recipe identity. Recipe contents, images and task definitions are unchanged. PR50 agent-tools integration: exclude only path-validated agent.Dockerfile, docker-compose.yaml and agent-tools/** inputs from grading-recipe identity. Protected grading files, payload commitments and source identity remain checked; agent inputs remain bound in package provenance."
+    },
+    "judge/public_input_preflight.py": {
+      "kind": "authenticated held-out task source mapping",
+      "base_git_blob_sha1": "8d6da40724a369266a176cc9a09587313b4fb075",
+      "effective_sha256": "f475154db1ae8db164d97e393fd47a79034082e4b5a1a248e9d48b6f35ed78c1",
+      "scope": "Merged PR99 (d98ac954ea2bf1e2a586c3491be1f05218c5a582): use the canonical source of authenticated held-out views for public-input ownership and manifest lookup. Public size/hash checks and acquisition behavior are unchanged. Follow-up: authenticate independent public entries on a bounded forked process pool; results are consumed in manifest order with identical checks, messages and fail-closed behavior. Public transport follow-up: missing file-cache entries may use their declared pinned public acquisition before admission; independently authenticate and mirror public workload bodies into the runtime cache. Corrupt cache bytes and missing Git-history caches still fail closed. Measured calls, sampling and statistics are unchanged."
+    },
+    "judge/score.py": {
+      "kind": "declared file artifact transport",
+      "base_git_blob_sha1": "81277645dfd4ca28ee71da1874fd560ae5c39c21",
+      "effective_sha256": "19b80e4023ab4fc96f4fb6864c553a21515152479b31ea8d8508afaf659e7f03",
+      "scope": "Map declared modify-only file exports as files, including Harbor trials; reject missing, wrong-kind and symlinked exports before build. Directory export policy, source admission, task judges, sampling and statistics are unchanged. rc.4 follow-up: pass out/timing as the timing-copy root to verifier.evaluate; no other change. rc.8 follow-up: optional --session-control path passed to host registration and the claimability session; no other change. rc.10 follow-up: score-through by default (--stop-on-gate restores stopping): interface, behavior, runtime-configuration, upstream, generic, CPU-subset and output-contract outcomes are recorded as flags and timing continues; a flagged result has needs_review, is never claimable and correctness flags set correct=false. Host registration is attempted only when every mandatory gate passed. Gates, sampling, statistics and verdict rules are unchanged. rc.11 follow-up: under score-through, edits outside the editable scope are undone (protected files restored, added protected files and symlinks removed) and flagged for review; a candidate build failure or a source admission failure that remains scores zero with a correctness flag instead of an invalid run. --stop-on-gate keeps the rc.9 behavior; gates, sampling, statistics and verdict rules are unchanged."
+    },
+    "judge/interfaces.py": {
+      "kind": "installed-header weak-template copy proof",
+      "base_git_blob_sha1": "aaa7d7ccf1bc29d2fdea7531527fdc45b6923721",
+      "effective_sha256": "5c6b45d97a7b7beb3649ac6b16e926fabf314e04605dd70f600f89bfdfbc1a79",
+      "scope": "Only removed W function-template copies proven emitted by independent consumers of both arms' installed public headers; strong, non-template, extern-template and unproven symbols stay protected."
+    },
+    "judge/native_surface.py": {
+      "kind": "installed-header weak-template copy proof",
+      "base_git_blob_sha1": "204ba1ee6951347d307808fd227221f989a40add",
+      "effective_sha256": "0e47027d97f8334c6f5e21645fb9ec22e47a1966e7f3816d343688b71171ca04",
+      "scope": "Bounded compiler proof for redundant weak header-template copies; existing static vague-linkage projection remains unchanged."
+    },
+    "judge/scheduler.py": {
+      "kind": "rc.4: A/A baseline twin timing copies",
+      "base_git_blob_sha1": "cf574d2bb58bf7e80f98d27f79102f2b373c294e",
+      "effective_sha256": "5556b9088d0f596903f2f3371ec872e073dad754cb47f92be851cf6bc8ae6cce",
+      "scope": "Optional aa_twin build name for the A/A candidate lane, so A/A crosses two byte-identical files exactly as A/B does, with one warm-up per distinct build. Order blocks, stopping rule, A/A envelope and statistics are unchanged; without aa_twin the previous schedule is reproduced exactly. rc.5 follow-up: optional copies=K rotation; each timed sample draws a copy per build from seeded balanced random blocks on a separate random stream, recorded per sample; every copy is warmed once per warm-up round. Order schedule, stopping rule, A/A envelope and statistics are unchanged; copies=None reproduces rc.4 exactly. rc.6 follow-up: the per-unit A/A bias decision (early stop and aa_passed) uses a Bonferroni (1 - 0.05/k) interval over the task's k performance units, read from the same bootstrap draws as the 95% CI and recorded as aa.bias_test; with k = 1 it is the 95% CI. 95% CIs, the 3 pp precision bar, the A/A envelope, the A/B rule and order schedule are unchanged. rc.7 follow-up: optional aa_builds=(A1, A2) four-lane layout: A/B = baseline vs candidate and A/A = A1 vs A2, disjoint lanes each run once per round with every copy timed equally; each round's 4 runs follow a Williams square (slot and first-order carry-over balanced per 4-round block, no lane back-to-back). The rc.6 family-wise A/A bias decision, stopping rule, A/A envelope and statistics are unchanged; earlier layouts are reproduced when aa_builds is omitted. rc.8 follow-up: rebind current bytes; no rc.8 change. Also binds #132's per-task A/A width bar (tests/judge.json aa_max_full_width_pp, default 3 pp), whose bytes were merged without a policy rebind. rc.8 review follow-up: default A/A full-width limit 5 pp (was 3 pp) for all tasks; no other change. rc.10 follow-up: optional score_through: an incorrect candidate output is recorded in incorrect_cases instead of raising, and that unit is timed under the same stopping rule as any other; a mismatch on any other build still raises. score_through=False reproduces rc.8 exactly."
+    },
+    "judge/host_registry.py": {
+      "kind": "rc.8: approved host configurations with same-session control",
+      "base_git_blob_sha1": "40c98d4504c337dbc1771d3ed40c1f169d735b42",
+      "effective_sha256": "12d6054c3e7d364a77a2f60efb99efdd1bf13dcb5bcdf57efab4063e6d193c0a",
+      "scope": "Registration only: an approved configuration entry (provider, machine_type, cpu_model, architecture, threads_per_core, judge_cpus, system_cpus) matches fresh VMs; when no exact host holds a receipt for the task, this boot's passing pristine control (same task, boot_id, fingerprint, entry, judge code and task policy; canonical tools.judge_control check) replaces the stored qualification receipt. Exact-host receipts, gates, tagged clean release, Docker locality and session A/A/quality checks are unchanged. No timing, statistics or gate change. Review follow-up: qualification units may be up to 5 pp wide (was 3 pp). rc.9 follow-up: the live system_cpus observation is the systemd manager (PID 1) scheduler affinity intersected with the system.slice cgroup CPU set, so hosts provisioned by provision-host.sh (CPUAffinity, not AllowedCPUs) report their reserved set instead of every CPU; configuration fields, matching and registration rules are unchanged. PR50 agent-tools integration: exclude only the shared, path-validated agent-image inputs from task inventory and policy identity. Other task inputs and mandatory qualification checks remain protected."
+    },
+    "judge/score_result.py": {
+      "kind": "rc.3: multi-unit aggregate headline",
+      "base_git_blob_sha1": "20d0c8b7981da80ef4311323f19def81a496a583",
+      "effective_sha256": "fe4cefb0832cf4edd70ca170a1dfd8d55bf00ff9c792ab13461ae13058220ece",
+      "scope": "Interpretation only: with more than one performance unit, a unit inside its own A/A noise floor is reported in unit_notes instead of vetoing; the existing equal-weight aggregate interval must still clear the combined A/A envelope and per-unit A/A quality gates still veto. Single-unit verdicts unchanged. No clock, sampling, stopping rule or statistic change. rc.6 follow-up: the per-unit A/A bias veto (aa_unresolved_or_biased) uses the scheduler's Bonferroni (1 - 0.05/k) bias_test interval, falling back to the stricter 95% CI when it is missing or inconsistent; the adjusted level and per-unit intervals are recorded. A/A precision bar, A/A envelope and A/B verdict are unchanged. rc.8 follow-up: summary labels a claimable result QUALIFIED — CLAIMABLE and lists claimability denial reasons otherwise; interpretation unchanged. Also binds #132's per-task A/A width bar (tests/judge.json aa_max_full_width_pp, default 3 pp), whose bytes were merged without a policy rebind. rc.8 review follow-up: default A/A full-width limit 5 pp (was 3 pp) for all tasks; no other change. rc.10 follow-up: a score-through measurement with cases is interpreted instead of rejected, carrying its correct value; the summary lists review flags under NEEDS REVIEW. A/A, A/B and verdict rules are unchanged."
+    },
+    "judge/verifier.py": {
+      "kind": "rc.2: batch-case correctness mapping",
+      "base_git_blob_sha1": "07e4f1db09902441258cafd747f58e8fb7e46134",
+      "effective_sha256": "dcebe08bfed0606178aba3aaf7d7dad298d712ecfd3393fc241852649e17a293",
+      "scope": "Expected-output names only: bind each case with existing process_state.native_reference, as A/A already does. No clock, sampling, statistics or comparison-rule change. rc.4 follow-up: time fresh, inventory-verified copies of the baseline, an A/A baseline twin and the candidate made together in one step, and pass the twin to scheduler.session as the A/A candidate lane. Clock, stopping rule and statistics are unchanged. rc.5 follow-up: K fresh copies per build (default 4, task setting timing_copies_per_build) written in one seeded random order with every inventory verified, rotated per sample by the scheduler, removed after the session. rc.6 follow-up: protocol label eight-core-rmit-aa-twin-rotation-fwer-v4 for the family-wise A/A bias decision; no other change. rc.7 follow-up: time four disjoint lanes (baseline, candidate and two baseline-byte A/A lanes), K copies each; hard-link files with identical bytes, mode and mtime within a copy; hash each source and each inode once; sync before timing. rc.8 follow-up: pass the registration context's session_control to the pre-timing registration re-check; no other change. Also binds #132's per-task A/A width bar (tests/judge.json aa_max_full_width_pp, default 3 pp), whose bytes were merged without a policy rebind. rc.8 review follow-up: default A/A full-width limit 5 pp (was 3 pp) for all tasks; no other change. rc.10 follow-up: optional score_through passes interface, behavior and runtime-review outcomes and rejected upstream receipts through to timing and the scheduler; a baseline or A/A output mismatch remains a harness error. Clock, copies, lanes and statistics are unchanged."
+    }
+  },
+  "definition_cutoff_utc": "2026-10-27T16:00:00Z",
+  "headline_groups": [
+    "exact public and held-out outputs",
+    "GCP timing A/A qualification on Intel and AMD",
+    "library callbacks where registered",
+    "process-state and lifecycle",
+    "CLI faults when the timed surface is the public CLI and CLI requests are registered"
+  ],
+  "required_receipts": [
+    "exact_public_outputs",
+    "exact_heldout_outputs",
+    "gcp_aa_intel",
+    "gcp_aa_amd"
+  ],
+  "library_callbacks": ["stream_faults", "repeat_in_process", "aliasing"],
+  "state_hooks": ["process_state", "lifecycle"],
+  "conditional_cli_gate": {
+    "task_metadata_field": "timed_surface",
+    "required_value": "public_cli",
+    "registration": "callable CLI_CASES in the protected task RC module",
+    "report_only_case_statuses": ["baseline_nonrepeatable", "not_applicable"],
+    "missing_registered_receipt": "unmeasured-and-blocking"
+  },
+  "reported_only": ["header_consumers", "cpu_correctness", "cpu_subsets"],
+  "missing_hook_label": "unmeasured",
+  "receipt_projection_only": true,
+  "legacy_rc_aggregate_is_headline_gate": false,
+  "performance_measurements_are_recomputed": false,
+  "patch_scoring": {
+    "candidate_stopping": "judge.sampling_policy.resolve(task tests/judge.json), with no overrides; frozen verifier.evaluate and scheduler.session",
+    "aa_policy": {
+      "minimum_pairs": 5,
+      "maximum_pairs": 30,
+      "warmups": 1,
+      "maximum_full_interval_width_pp": 5,
+      "minimum_unit_seconds": 1,
+      "external_qualification_futility": {"after_pairs": 20, "projected_spread_pp": 3.3}
+    },
+    "scope_order": ["public", "heldout"],
+    "seed": 1729,
+    "host_lock": "/var/lock/optimbench/patch-scoring.lock",
+    "legacy_registration_denials_are_preserved": true
+  },
+  "fallbacks": {
+    "terser-minify": "unchanged workload, version 1.1.0 metadata; source-map realism deferred, callbacks unmeasured; exact selected image/workload A/A passed with checked context parity",
+    "lame-mono-vbr-encode": "excluded: unit below 1 s floor, extension not delivered by freeze; replaced by sqlite-distinct-plant-facets",
+    "universal-ctags-c-symbol-tags": "excluded: unit below 1 s floor, extension/rebalance not delivered by freeze; replaced by tantivy-gharchive-single-segment-indexing",
+    "xz-lzma2-compress": "Unchanged pins; final 5d343770 task-set image passed public+held-out A/A on Intel-3 and AMD-3."
+  }
+}

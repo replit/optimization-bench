@@ -1,0 +1,17 @@
+{
+  "factory_source_sha256": "027fa8c51eb536460c4e9039de29e81efa2f795674f01ed9df6323a8f57dbf27",
+  "fresh_workers": 6,
+  "frozen_interning_must_not_flag": true,
+  "lifecycle_source_sha256": "8149c05333e8654c5b1fdc2a0d38d078449eaa920be037dd07b112e7aa585912",
+  "memory_cap_enforced": false,
+  "native_path_hash_source_sha256": "0e204002b7270e04725917092ea33fc00c461c6b7578b4e01ee4ebca2ffa755e",
+  "native_proc_source_sha256": "496024f1be839a2ea1477ac1c2f20446a98a58013a5a09282a1a45da4d0f2dec",
+  "public_call_records": 1026,
+  "qualification_claimed": false,
+  "schema": "per-call-live-identities-v2-reference",
+  "scope": "local fresh-process control validation, not pinned-container campaign",
+  "shared_mutable_detected": true,
+  "supersedes_for_live_thread_evidence": "../summary.json; v1 artifacts unchanged",
+  "validation_sha256": "83ee743a89b8c2c880d8d6cf93d6cd00cde6246641f4aadc5049986ba1cec913",
+  "worker_source_sha256": "31e885351ee4e27dec79a95d73bf74423837ecdf3094e22292e50a034cbb3afc"
+}

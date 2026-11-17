@@ -1,0 +1,231 @@
+{
+  "causality": "The position difference is observed; its cause is not established. Fresh-container cache/I/O behavior is a hypothesis, not proof of host contamination.",
+  "container_memory_limit_bytes": 17179869184,
+  "docker_storage_driver": "vfs",
+  "executed_author_protocol_sha256": "224a64420069ccd6f46a052aa83c365a8abd4503bdb75b68761c873a1f51676d",
+  "first_lane_counts": {
+    "baseline": 15,
+    "candidate": 15
+  },
+  "first_median_seconds": 4.726989027,
+  "first_second_ratio": {
+    "ci95": [
+      1.2963898847716309,
+      1.3873064301949956
+    ],
+    "pairs": [
+      [
+        4.261090386,
+        3.414942531
+      ],
+      [
+        4.776199861,
+        3.796026155
+      ],
+      [
+        4.462046731,
+        3.6011986
+      ],
+      [
+        5.164608614,
+        3.481385896
+      ],
+      [
+        4.281962344,
+        3.461248703
+      ],
+      [
+        5.328041853,
+        3.497611132
+      ],
+      [
+        4.96467405,
+        3.729084971
+      ],
+      [
+        5.580515282,
+        3.434387265
+      ],
+      [
+        5.186608163,
+        3.471552373
+      ],
+      [
+        4.619909458,
+        3.581961016
+      ],
+      [
+        4.585016092,
+        3.473756191
+      ],
+      [
+        4.612698868,
+        3.516311696
+      ],
+      [
+        3.973819749,
+        3.741755928
+      ],
+      [
+        4.910486594,
+        3.46716527
+      ],
+      [
+        4.515687171,
+        3.418101028
+      ],
+      [
+        4.447634123,
+        3.517854838
+      ],
+      [
+        4.677778193,
+        3.474898559
+      ],
+      [
+        4.551933423,
+        3.484021128
+      ],
+      [
+        5.457432944,
+        3.433287676
+      ],
+      [
+        5.132142818,
+        3.412009506
+      ],
+      [
+        4.961135158,
+        3.455379814
+      ],
+      [
+        4.880126324,
+        3.526674158
+      ],
+      [
+        4.67644821,
+        3.529491846
+      ],
+      [
+        4.956691614,
+        3.837650027
+      ],
+      [
+        5.008507596,
+        3.729177457
+      ],
+      [
+        5.210164345,
+        3.435403512
+      ],
+      [
+        4.381608075,
+        3.694959633
+      ],
+      [
+        4.284998941,
+        3.533505558
+      ],
+      [
+        4.829126243,
+        3.62345255
+      ],
+      [
+        4.398788606,
+        3.714876926
+      ]
+    ],
+    "relative_half_width": 0.03392167264921239,
+    "sample_count": 30,
+    "speedup": 1.3400952595047761
+  },
+  "first_slower_pairs": 30,
+  "guest_cgroup_memory_limit_bytes": 68719476736,
+  "guest_ram_kib": 65870428,
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "method": "Read-only post-hoc positional diagnostic on retained measurements; not new qualification or permission to trim/adjust times.",
+  "mmap_evidence": {
+    "binary_symbols": [
+      "mmap64@GLIBC_2.2.5",
+      "munmap@GLIBC_2.2.5",
+      "pread64@GLIBC_2.2.5"
+    ],
+    "runtime_syscall_or_page_fault_trace": false,
+    "source": "packfile.c lines95 and671: read-only private mmap for pack index/windows",
+    "source_pin": "a018953688f1b10bddf91bff8747068f5f4746a4"
+  },
+  "object_stores": [
+    {
+      "canonical_raw_object_bytes": 8222199955,
+      "index_bytes": 11429860,
+      "pack_bytes": 316358203,
+      "repository": "git"
+    },
+    {
+      "canonical_raw_object_bytes": 122905612,
+      "index_bytes": 384084,
+      "pack_bytes": 5878356,
+      "repository": "ripgrep"
+    },
+    {
+      "canonical_raw_object_bytes": 666685911,
+      "index_bytes": 1474152,
+      "pack_bytes": 32493665,
+      "repository": "pydantic"
+    },
+    {
+      "canonical_raw_object_bytes": 2484971902,
+      "index_bytes": 4603936,
+      "pack_bytes": 187348609,
+      "repository": "prettier"
+    }
+  ],
+  "order_conditioned_ratios": {
+    "baseline-first": {
+      "geometric_mean": 1.3292960519073747,
+      "maximum": 1.6248940062384027,
+      "median": 1.3211099186387183,
+      "minimum": 1.0620200316283164,
+      "n": 15
+    },
+    "rebuilt-first": {
+      "geometric_mean": 0.7402022025613907,
+      "maximum": 0.8246222710093315,
+      "median": 0.7511238267495123,
+      "minimum": 0.6291030437258269,
+      "n": 15
+    }
+  },
+  "pair_count": 30,
+  "pearson_order_vs_log_ratio": 0.9522474073260363,
+  "per_repository_order": [
+    "git",
+    "ripgrep",
+    "pydantic",
+    "prettier"
+  ],
+  "per_repository_position_medians": {
+    "0": {
+      "first": 1.8235876925,
+      "second": 1.0783147745
+    },
+    "1": {
+      "first": 0.33514505149999996,
+      "second": 0.2856598755
+    },
+    "2": {
+      "first": 0.81380802,
+      "second": 0.7095352175
+    },
+    "3": {
+      "first": 1.7230991445,
+      "second": 1.4168125255000001
+    }
+  },
+  "preparation_protocol_changed": false,
+  "reruns_or_omitted_samples": 0,
+  "second_median_seconds": 3.506961414,
+  "seed": 20261025,
+  "task_commit": "1eee415ff0b37b2704eeaf0ba78ae80fa30012b1",
+  "total_pack_and_index_bytes": 559970865
+}

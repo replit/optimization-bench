@@ -1,0 +1,287 @@
+{
+  "aa_sampling_performed": false,
+  "builds": {
+    "baseline": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+    "candidate": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477"
+  },
+  "image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "limits": {
+    "cases_per_gate": 256,
+    "observations_per_arm": 4096,
+    "seconds_per_subset": 900
+  },
+  "passed": true,
+  "records": [
+    {
+      "actual_cpus": [
+        0
+      ],
+      "affinity_verified": true,
+      "baseline_cases": 60,
+      "candidate_cases": 60,
+      "cpu_count": 1,
+      "execution_evidence": {
+        "bytes": 33615,
+        "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-1/executions.json",
+        "sha256": "24cd6892e581b02d6915adb24bafacf0d43e6b69c3ffd4bc7507d27b5baf5697"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 1048789,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-1/aliasing.json",
+            "sha256": "3bb6cde9b6c2370167fb69b6d0c637c0bd429e9f1dd356c7f68d687c7d57d254"
+          },
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 360126,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-1/cli_faults.json",
+            "sha256": "14b0ed4fb368dd9fae059d84fc19aac88fa30d45dd5e26e3f2117ecb3620ab85"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-1/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 3605223,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-1/repeat_in_process.json",
+            "sha256": "ecd7aa198426100dc34a6e6ed9b855337a23698689d4a25bab234cf7c4163b04"
+          },
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 1060488,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-1/stream_faults.json",
+            "sha256": "277d7075b60b51baadd3226f51bde69755fe4a0c2d8c7dd26f0bda93437987c4"
+          },
+          "status": "passed"
+        }
+      },
+      "passed": true,
+      "requested_cpus": [
+        0
+      ],
+      "status": "passed"
+    },
+    {
+      "actual_cpus": [
+        0,
+        1
+      ],
+      "affinity_verified": true,
+      "baseline_cases": 60,
+      "candidate_cases": 60,
+      "cpu_count": 2,
+      "execution_evidence": {
+        "bytes": 34695,
+        "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-2/executions.json",
+        "sha256": "12bb726fa7d1bac969afff24c5c544e6d49c0d4905f8b384423820781f418020"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 1049125,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-2/aliasing.json",
+            "sha256": "841066bfdddcb225d1f38fb4949e22aca85bfd6b85a79ce29104db7bc01a5656"
+          },
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 360863,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-2/cli_faults.json",
+            "sha256": "f3680b4d0f6d9ae7f36615fccf82e45135ad405c93bf1fe172ed96e4f074decc"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-2/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 3607239,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-2/repeat_in_process.json",
+            "sha256": "592ed36e3767ef55fb20494dca48179caa48a04b3ca66577aaeaaa898c17d07a"
+          },
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 1061160,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-2/stream_faults.json",
+            "sha256": "573206eb48d4992124aa0452e1b62ea7dabb2ea15d0caa316ed00b493779666e"
+          },
+          "status": "passed"
+        }
+      },
+      "passed": true,
+      "requested_cpus": [
+        0,
+        1
+      ],
+      "status": "passed"
+    },
+    {
+      "actual_cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "affinity_verified": true,
+      "baseline_cases": 60,
+      "candidate_cases": 60,
+      "cpu_count": 4,
+      "execution_evidence": {
+        "bytes": 36855,
+        "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-4/executions.json",
+        "sha256": "4802e9f4be95b190c887569f77c6e454b361962125b830339c1818790637c93a"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 1049797,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-4/aliasing.json",
+            "sha256": "266dce66008308f7880d75f66e4f133e5c6b6be566532b2ad921720584d8760b"
+          },
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 362334,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-4/cli_faults.json",
+            "sha256": "f2f8f4f32114e1788972de3f57286bae8d31f8cdd8b041643dfc3c378c0b7ab6"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-4/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 3611271,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-4/repeat_in_process.json",
+            "sha256": "3de68586c931a6eb9bebcd6a58a3af4112631dc95eeef69070d3a45276417571"
+          },
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 1062504,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-4/stream_faults.json",
+            "sha256": "ed99bbf3e64901838cf97ee48fd7a3cdcdc57966bb2c4ac1e3c4feefc9ba79f7"
+          },
+          "status": "passed"
+        }
+      },
+      "passed": true,
+      "requested_cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "passed"
+    },
+    {
+      "actual_cpus": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "affinity_verified": true,
+      "baseline_cases": 60,
+      "candidate_cases": 60,
+      "cpu_count": 8,
+      "execution_evidence": {
+        "bytes": 41175,
+        "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-8/executions.json",
+        "sha256": "6196dde04ead163a1c07fd37aa0376c74f6cb99c5761119db095722c8dac460c"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 1051141,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-8/aliasing.json",
+            "sha256": "299f42584a809ca080cf3e72cd88f4427900b7bf2892de8066bb0c76e6533337"
+          },
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 365280,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-8/cli_faults.json",
+            "sha256": "7863fa4d56d8ca99b9ee704c71c4e281899acf71746ce6db6f903ee56069774c"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-8/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 3619335,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-8/repeat_in_process.json",
+            "sha256": "0a5503fa28214efbde3f1bfe0a4a315b3a068b8d922729660049884fc9fa190c"
+          },
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 1065192,
+            "path": "/root/sqlglot-cpu-subsets-coherent-shared-smoke/cpu-8/stream_faults.json",
+            "sha256": "9a5f548fd1f7dd6203cfc6cdbbc62dccfb24d5795904502fd12952fab05a295d"
+          },
+          "status": "passed"
+        }
+      },
+      "passed": true,
+      "requested_cpus": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "passed"
+    }
+  ],
+  "schema": "judge-cpu-correctness-v1",
+  "sources": null,
+  "status": "passed",
+  "task": "sqlglot-mozilla-transpile",
+  "timing_performed": false
+}

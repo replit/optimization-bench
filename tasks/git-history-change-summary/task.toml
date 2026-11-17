@@ -1,0 +1,40 @@
+schema_version = "1.4"
+artifacts = [{source="/app/git/xdiff"}]
+[task]
+name = "optimbench/git-history-change-summary"
+version = "1.0.0"
+description = "Original Git history shortstat workflow"
+keywords = ["optimbench","git","diff"]
+[metadata]
+category = "library-optimization"
+[metadata.optimbench]
+baseline_git_commit = "92186d5b2a561afb5fe4b0dbce18a8906771faef"
+baseline_git_tree = "79a1f663a05401ad749f6116a4898e03f2388323"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "git"
+language = "C"
+run_mode = "process"
+upstream_repo = "https://github.com/git/git"
+upstream_commit = "a018953688f1b10bddf91bff8747068f5f4746a4"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = false
+verifier_ready = false
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "separate"
+network_mode = "no-network"
+[agent]
+timeout_sec = 7200.0
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:git-history-change-summary-1.0.0@sha256:7b994964fc10dee23188848bf92e7cf46dd9bdb1b26b4092319c99a5ea43d25a"
+network_mode = "no-network"
+build_timeout_sec = 7200.0
+cpus = 8
+memory_mb = 16384

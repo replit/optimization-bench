@@ -1,0 +1,6 @@
+{
+  "task": "ruff-project-lint",
+  "payload_status": "heldout-missing",
+  "harbor_execution_qualified": false,
+  "scored_qualification": false
+}

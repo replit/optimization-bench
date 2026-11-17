@@ -1,0 +1,38 @@
+{
+  "all_task_shells_passed": true,
+  "at": "2026-10-25T21:33:14.623155+00:00",
+  "branch_ci": {
+    "conclusion": "success",
+    "databaseId": 40235850028,
+    "headSha": "4cf21228d9d76931733ad9b80bd364910ecf09ef",
+    "status": "completed",
+    "url": "not published (private CI run)"
+  },
+  "catalog_check_passed": true,
+  "generic_hook_awaited": true,
+  "helper": "environment/workload/guards/warm_git_objects.py",
+  "helper_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+  "helper_wired": false,
+  "judge": {
+    "log_sha256": "fcdd753c0fb88357f18055403eae6713f7c7ae9199dae46a2f64bcb5eae6b46e",
+    "passed": true,
+    "skipped": 11,
+    "tests": 194
+  },
+  "shared_count_fix": "3e0aef982e4882f3809840ffdca38e538deb8ca2",
+  "shared_merge": "e76ff00401",
+  "supersedes": "main-checks.json task-count failures only; historical receipts retained.",
+  "synthetic_helper": {
+    "log_sha256": "f1385e4d2479958d9aaab90647c066a8a0e02b66c8a56c3529252d927550168e",
+    "passed": true,
+    "skipped": 0,
+    "tests": 11
+  },
+  "tools": {
+    "log_sha256": "fdbbaf6674f641f23531399bfe84cc4f00a1716a18b49f8ca1e2e9d7a2d20698",
+    "passed": true,
+    "skipped": 4,
+    "tests": 135
+  },
+  "workload_or_timing_runs_since_failed_aa": 0
+}

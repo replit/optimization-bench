@@ -1,0 +1,150 @@
+{
+  "timed_surface": "public_cli",
+  "code": "environment/workload/task.py",
+  "container_prepare": [
+    "/app/workload/guards/capture_autofix.py",
+    "{steps}"
+  ],
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "contract": "Byte-identical complete serialized results and preserved supported behavior; untouched upstream tests keep baseline outcomes; no input/evaluator detection, precomputation, delegation, persistent caches or processes outliving the operation.",
+  "editable": "Production Python under src/sqlfluff, except src/sqlfluff/utils/testing. Configuration/data files, plugins, packaging/build settings, tests, dependencies, driver, project trees and inputs are protected.",
+  "example_count": 4,
+  "families": {
+    "additional": "In-place PostgreSQL auto-fix, Snowflake project lint with Jinja, and complete BigQuery syntax-tree export.",
+    "options": "Original BigQuery queries and real dbt SQL models with existing Jinja builtins.",
+    "primary": "Configured PostgreSQL project lint in a sequential three-project unit."
+  },
+  "id": "sqlfluff-project-lint",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "interface": {
+    "documentation": [
+      "https://docs.sqlfluff.com/en/stable/reference/api.html"
+    ],
+    "documented_api": [
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html",
+        "name": "sqlfluff.core:Linter"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html",
+        "name": "sqlfluff.core:Lexer"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html",
+        "name": "sqlfluff.core:Parser"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html",
+        "name": "sqlfluff.core.config.fluffconfig:FluffConfig"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html",
+        "name": "sqlfluff.core.config.loader:load_config_string"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html",
+        "name": "sqlfluff.core.config.loader:load_config_file"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html",
+        "name": "sqlfluff.core.config.loader:load_config_resource"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html",
+        "name": "sqlfluff.core.config.loader:load_config_at_path"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html",
+        "name": "sqlfluff.core.config.loader:load_config_up_to_path"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/rules.html",
+        "name": "sqlfluff.core.rules.base:*"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html",
+        "name": "sqlfluff.utils.functional.segments:*"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html",
+        "name": "sqlfluff.utils.functional.segment_predicates:*"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html",
+        "name": "sqlfluff.utils.functional.raw_file_slices:*"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html",
+        "name": "sqlfluff.utils.functional.raw_file_slice_predicates:*"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/reflow.html",
+        "name": "sqlfluff.utils.reflow:ReflowSequence"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/reflow.html",
+        "name": "sqlfluff.utils.reflow.elements:ReflowPoint"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/reflow.html",
+        "name": "sqlfluff.utils.reflow.elements:ReflowBlock"
+      }
+    ],
+    "extension_points": [
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/rules.html",
+        "name": "sqlfluff.core.rules.base:BaseRule"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/rules.html",
+        "name": "sqlfluff.core.rules.crawlers:BaseCrawler"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/plugins.html",
+        "name": "sqlfluff.core.plugin.hookspecs:PluginSpec"
+      },
+      {
+        "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/plugins.html",
+        "name": "sqlfluff.core.templaters.base:RawTemplater"
+      }
+    ]
+  },
+  "job": "Run four separate equal-weight scored units in one image with one rebuilt SQLFluff candidate and optimization budget: original three-project lint, PostgreSQL auto-fix, Snowflake lint with Jinja, and complete BigQuery syntax-tree export.",
+  "language": "Python",
+  "limits": "Pinned Linux amd64/Python3.14.6 SQLFluff4.4.0; eight CPUs and16GiB unchanged. No database, Rust acceleration, dbt adapter, SQLMesh or new dependency. Full upstream repositories are not stress-tested.",
+  "name": "SQLFluff",
+  "operations": [
+    "Original pgledger lint command, once",
+    "Lint 126 declared original Almanac SQL files, once",
+    "Lint five original Jaffle Shop Classic dbt models with existing Jinja builtins, once",
+    "Fix every declared original PostgreSQL SQL file in place, once, using one cold CLI process and one worker",
+    "Lint every declared original Snowflake SQL file once with protected Jinja configuration and one worker",
+    "Parse every declared original BigQuery SQL file once and export complete source, variants, positioned syntax trees and diagnostics"
+  ],
+  "options": "Four equal-weight units use one candidate. Original lint retains eight workers. Auto-fix retains one worker and its protected PostgreSQL settings. Snowflake lint uses one worker and its declared protected Jinja configuration. BigQuery syntax export uses the raw templater, no large-file skip, and all raw, metadata and position fields. Every unit uses fresh home/cache/temp directories and the fixed child environment.",
+  "outputs": "Original lint and auto-fix commitments remain unchanged. Snowflake retains complete ordered JSON except top-level per-file timings. Syntax export retains complete source/templated text, variants, positioned trees, diagnostics, settings and version. The Snowflake lint and syntax-export units retain raw stderr, exit status and complete read-only input invariants. Machine-specific metadata is compared only within each operation.",
+  "packaging_status": "public-task-private-judge",
+  "preparation": "Pinned source and original inputs, hash-locked dependencies and one rebuilt runtime for all four units. Copying, authenticated shared-metadata restoration, input pre-reading and snapshots are untimed. The original lint preparation is unchanged. All operation startup, imports, computation, serialization and completed writes remain inside the shared process-exit clock.",
+  "run_mode": "standalone",
+  "size_meaning": "Distinct original SQL bodies processed once per unit across three real project stages.",
+  "source_identity": {
+    "archive_sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+    "upstream_commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+    "upstream_repository": "https://github.com/sqlfluff/sqlfluff"
+  },
+  "sources": [
+    "src/sqlfluff/core/linter",
+    "src/sqlfluff/core/parser",
+    "src/sqlfluff/rules"
+  ],
+  "status": "qualification-in-progress",
+  "task_version": "1.0.0",
+  "title": "Lint, repair and export complete SQL syntax",
+  "variables": [
+    "SQL dialect",
+    "Original project configuration and ignores",
+    "Number and size of SQL files"
+  ],
+  "version": "4.4.0"
+}

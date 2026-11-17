@@ -1,0 +1,52 @@
+{
+  "additional_controls_passed": [
+    "sqlglot-public-copy-aliasing"
+  ],
+  "branch_coverage_smoke": {
+    "coverage_version": "7.17.0",
+    "files": 48,
+    "scope": "one case, not changed-coverage adequacy"
+  },
+  "canonical_controller_commit": "f54325378d",
+  "changed_line_branch_coverage": "not-measured",
+  "compiled_non_equivalent_control_mutants": 3,
+  "corrected_authority_status": "unavailable",
+  "coverage_guided_campaign": "not-run",
+  "coverage_guided_smoke": {
+    "atheris_version": "3.1.0",
+    "observations": 30,
+    "scope": "one-arm discovery only"
+  },
+  "cpu_correctness_smoke": "Passed fresh pristine/pristine 1/2/4/8 physical CPU replay; actual affinity verified, 60 observations per arm per subset; optimized candidates not qualified",
+  "cpu_repeat_campaign": "not-run",
+  "environment_changes": "hash-only mutation deltas; no values emitted",
+  "format": "optimbench-fuzz-v1",
+  "full_mutation_portfolio_qualified": false,
+  "generic_rc_registration": "CLI requests, library callbacks, approved header scope registered; actual library CPU0 smoke passed",
+  "header_native_scope": "Independent Validation2 approval: header-consumer N/A for authenticated pinned pure-Python feature only; race/lifecycle/full surface not waived",
+  "import_side_effect_capture": true,
+  "instrumentation_status": "Pinned-task approved overlay smoke passed; full campaigns not run",
+  "mapped_surface_entries": 14,
+  "no_production_shared_or_timing_edits": true,
+  "per_observation_affinity": "sched_getaffinity in every library observation; shared cc0f3f5 CLI observer",
+  "per_unit_memory": "control workers report startup-inclusive fresh-process ru_maxrss; no candidate campaign ratios",
+  "phase": "generic-rc-registered-with-public-callback-faults",
+  "property_campaign": "not-run",
+  "property_generation_smoke": {
+    "examples": 30,
+    "hypothesis_version": "6.170.12",
+    "scope": "approved pinned-task overlay generation smoke; not full campaign",
+    "seed": 1729
+  },
+  "public_corpus_files": 8,
+  "qualification": "undertested",
+  "required_controls_passed": [
+    "sqlglot-private-malformed-join",
+    "sqlglot-public-parser-error",
+    "sqlglot-public-valid-ast"
+  ],
+  "shared_contract_tests": 90,
+  "shared_controller_integration": "Canonical ebbffa42 merged; 31 shared tests passed",
+  "shared_cpu_source_commit": "50ae082cea7badd2af6e10134bf1364d3857c8ef",
+  "unit_tests": 18
+}

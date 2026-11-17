@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "url": "https://codeload.github.com/terser/terser/tar.gz/317f449862b8d48756818cdcaf67c22c31ec852c",
+    "commit": "317f449862b8d48756818cdcaf67c22c31ec852c",
+    "sha256": "1469cd7c12bf88653ff93b2237fd350b563eb590ec5350cbf770efa8eec0befb",
+    "bytes": 555103
+  }
+}

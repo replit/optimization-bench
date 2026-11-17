@@ -1,0 +1,1196 @@
+{
+  "task": "terser-minify",
+  "provenance": "recovered-requalified (not proven original)",
+  "source_revision": "repaired-private-v1, 150-case repaired corpus; not proven original final",
+  "source_branch_commit": "50755d4c802228a7d083c96d16fbd7234ba91641",
+  "source_manifest_sha256": "6bccbee5bd9f2b5a50de1d01897868be9140f1ec624ec6e652f28b6a45ba6a05",
+  "source_bundle_sha256": "35d1b6f0aab6e221742d03a64985daacf9501cc775f41f7ef0ffcb375ecce0ee",
+  "baseline_repository_commit": "a25b5a4be0",
+  "baseline_image": "sha256:3d24997f032f0554f8143a2d3bdd84d05458e9feada24a3f0d2e1255368e7379",
+  "cases": 146,
+  "dropped_overlaps": 1,
+  "baseline_pass": 146,
+  "repeat_pass": 146,
+  "reference_agreement": 146,
+  "reference_total": 146,
+  "records": [
+    {
+      "case": "money.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1213,
+      "expect_sha": "6a948157b1d9eacaa8caee3144b30f377a4fccd1b8d43bd559e69e8836dd7057"
+    },
+    {
+      "case": "jQuery.x18n",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5901,
+      "expect_sha": "f54174af298094e39015c722ff5bed3194de6649459f322cc06e22674fe6a31c"
+    },
+    {
+      "case": "jquery-watch",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1670,
+      "expect_sha": "3aeae3d0459f40fb52c2cfacab6db63eb2f85861abc39a31af103edf453b26cc"
+    },
+    {
+      "case": "OrgChart.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 39437,
+      "expect_sha": "1a662924259a580fbf1dfddbcc1044f825f39d53e9e3368da2c4df2cddb104ee"
+    },
+    {
+      "case": "corti",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5615,
+      "expect_sha": "80725f6352e83caeb3c081049400b1a9b350dd920d61a5e10baf6d8d0c2040a6"
+    },
+    {
+      "case": "jquery-mousewheel",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2671,
+      "expect_sha": "d0eb6129deea2abb3172559e2c8865cc4c0b6b278e6b985d67790eb3c1c49c7a"
+    },
+    {
+      "case": "fastselect",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 11277,
+      "expect_sha": "017c7bbbeba83ddfb3f9fc19da724b7319b9089751263a0c8eca8e600c05da6e"
+    },
+    {
+      "case": "imgLiquid",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5052,
+      "expect_sha": "fc17954d6637f1a6b410289ae7b8f878497f55d9ef580d801c5ef1c56457d9fe"
+    },
+    {
+      "case": "jquery.meiomask",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 10601,
+      "expect_sha": "bf297a7b1d6d409caee4bf1d68759c3bca8ae179956b920da9930ce8a1d2455a"
+    },
+    {
+      "case": "highchartTable",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 7981,
+      "expect_sha": "106d111da3178d081200f1bc7ce47293df4cde52ec0dc7c2c4b9ce39c6ecdeb5"
+    },
+    {
+      "case": "stats.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1776,
+      "expect_sha": "99d004b25d1b284040b8be94ddea98543e24e4661a4076afa5a6f17e25da83b8"
+    },
+    {
+      "case": "eventemitter3",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3151,
+      "expect_sha": "7c1ee020c14283c1e70c06dc41c1cb4c4b5fbda1ec445d01c570f7c643771282"
+    },
+    {
+      "case": "bootstrap-calendar",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 21867,
+      "expect_sha": "e95149511b800d118133a2f6db5832170ebbd20f1617df69de8c3454f15e1489"
+    },
+    {
+      "case": "videojs-vast-plugin",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4208,
+      "expect_sha": "3b1737c6df9930cb455672444357b4b1f0c784a19992b9d3676a7c03e6dcf9c2"
+    },
+    {
+      "case": "blueimp-file-upload",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 18824,
+      "expect_sha": "dc5d0d59211bbb82439694a31aeb71ad27e7b2582c499f65130a0ac39f76fcc0"
+    },
+    {
+      "case": "angular-confirm",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2163,
+      "expect_sha": "4995af9098070700d8b3f87b9d67db03343b3bb90a15cceb1dbc767c7140fde3"
+    },
+    {
+      "case": "json-formatter",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4124,
+      "expect_sha": "3fb761cc5376d3ee3d669f03407b356293ca22a73f2e334b0513bad5f52bd191"
+    },
+    {
+      "case": "jspdf-autotable",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 32112,
+      "expect_sha": "4efb457e3532660a9ffcb2aec712433968890144faa1a60bb7695baf40ed0a74"
+    },
+    {
+      "case": "simple-slider",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2179,
+      "expect_sha": "6ead871aff4873abf1654b310a6d2770a6b1044dc1e6d306b67e6c40a91059e7"
+    },
+    {
+      "case": "fetch-jsonp",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1558,
+      "expect_sha": "6c97a43b0139a6586c52da42f1d0d54d59f5985127f545160d7e311024073b71"
+    },
+    {
+      "case": "radio",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1034,
+      "expect_sha": "903de840ba55525976047311c5b11638045f196536bc2b14c568e61d70ce32b5"
+    },
+    {
+      "case": "sticky-sidebar",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 10348,
+      "expect_sha": "e33959990dd15476d760c27b72b5c53f62e8d16ccf1cf36c1103739777b07801"
+    },
+    {
+      "case": "Ripple.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1624,
+      "expect_sha": "916e4b3d808a8a5ad16a849bfb772313e08467d538e0c3e0142377c5c4b8d5e9"
+    },
+    {
+      "case": "angular-dialog-service",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8577,
+      "expect_sha": "f8349a12ed95bedbe2db7eb8688d6fd106b2514675140d115b020a06349c5457"
+    },
+    {
+      "case": "angular-gravatar",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4941,
+      "expect_sha": "32448dcd4e0dfd4cd3de9b03f6eeb8aeecddb2983b1369ec497dbe8064178421"
+    },
+    {
+      "case": "jquerykeyframes",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2477,
+      "expect_sha": "01af7b1e8f7c581992fdacdb9ba6008f0a6ad6877cb5d72dff56931c1a70266a"
+    },
+    {
+      "case": "pts",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 189114,
+      "expect_sha": "27f4df94c00b453735e2b7050276fd94868af62a5f7cd6f9f58a0bf202dad690"
+    },
+    {
+      "case": "Swiper",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 153463,
+      "expect_sha": "cc1b2a359968d9b3f6ede763f071dd96e01bd7923ff45f384924ed17d221cd4d"
+    },
+    {
+      "case": "jquery-popup-overlay",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 10934,
+      "expect_sha": "9b40529b145df48c2cc1ed721e1fe1dcf7341a949c846ab3294180ec00c18514"
+    },
+    {
+      "case": "angular-ui-router.statehelper",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 757,
+      "expect_sha": "8a1541e1eb26a46d03553aa360fafea2cc66ae5c5a24f6f2803168390dfd7aa2"
+    },
+    {
+      "case": "ng-parallax",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1246,
+      "expect_sha": "292f8ee0d24823c4f48a0bba351a4d890d5a047932d4397ede89cc311a93b23d"
+    },
+    {
+      "case": "responsive-carousel",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4143,
+      "expect_sha": "d5f054b0f39da5796c6b679c2d3c5e64ac7abb6a1d13b74ea079e6a3ab288a77"
+    },
+    {
+      "case": "gas",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 15614,
+      "expect_sha": "21c20854065ae1b908b995ebff0964dba7b8664f27d739305bd3765d65e3c24e"
+    },
+    {
+      "case": "phery.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 32552,
+      "expect_sha": "4fade0ed8a238a7702d3e0840b788b2c3194fd2b2c78890313c9a3ef46d1cfd2"
+    },
+    {
+      "case": "sharer.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 7874,
+      "expect_sha": "6572e9a6b07203beddfcb1004f23841f1a11c9a840342809875c4e429a0fb6ca"
+    },
+    {
+      "case": "smartbanner.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 6213,
+      "expect_sha": "05a4b6bc4031318348c86ff45529b506c2ac5854bd9660b8d297b6c0d1520eab"
+    },
+    {
+      "case": "three.meshline",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 12803,
+      "expect_sha": "0bd537f9c66a1eade626fb1ffd3d5735d41b825cf826a08ed862ee50828199f0"
+    },
+    {
+      "case": "monkberry",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3565,
+      "expect_sha": "fefd7202216fdab8164d14a37e99b350d04ba2f678af1ab56306fcf95cb55812"
+    },
+    {
+      "case": "favico.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8746,
+      "expect_sha": "d947f3802857787ae103d55cf0861ffb0f3df99aadefdbefc7d62b8387adb2c8"
+    },
+    {
+      "case": "page.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 11301,
+      "expect_sha": "148a3d7155cc67bfa0cedb6ee7777d899273a3397b477aced9c6b85648bf7744"
+    },
+    {
+      "case": "humanize-plus",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 6158,
+      "expect_sha": "a39de3d82db1523c2f058533c46eb1828616bd3c3f38da0e492912d21f921bec"
+    },
+    {
+      "case": "jinq",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 10775,
+      "expect_sha": "03701797f51e24ed39d41aaafe82db91d929744ead0a660026b93ed4588c094b"
+    },
+    {
+      "case": "countdown",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 7219,
+      "expect_sha": "8111f831ebfbb4eaa8aad4970cf6701e173c26c8be0567afbe53a9ac274f1133"
+    },
+    {
+      "case": "angular-md5",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4146,
+      "expect_sha": "50833faca0d561edf37d937ddb9e134505e236213f915e212d228929206403b6"
+    },
+    {
+      "case": "timer.jquery",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5381,
+      "expect_sha": "1404925f4ed3847ebb57a5e0ed0561fc8ff23cd2a834fc5d362f2bb6b2c961fd"
+    },
+    {
+      "case": "dinero.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 10280,
+      "expect_sha": "abeeec834399459073627849baf49d46a508575cd0c5af42eaf21c05083bcf27"
+    },
+    {
+      "case": "angularjs-datepicker",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 16524,
+      "expect_sha": "0e2cb37c9318cf4794c252a4ec96202ac418fc74f74a9b42c1c72375aabebbeb"
+    },
+    {
+      "case": "blob-polyfill",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 9048,
+      "expect_sha": "28113d138ef9ad40118a3ac184400339cf350b6b1244526270bca1862447d1d7"
+    },
+    {
+      "case": "js-signals",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3054,
+      "expect_sha": "de15eaa3acca3075acbcc0a0bb31aa1533cdc333a7392d4afc75791f898eba11"
+    },
+    {
+      "case": "jclic.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 387480,
+      "expect_sha": "f1c33a9827bf494a2629ecd6654c55f0eacc7e9c3688c38cf8e4c7d1c25220c0"
+    },
+    {
+      "case": "angular-chart.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5994,
+      "expect_sha": "bbcdfbcfc297f97b5f212b0e9f05a536e8a04db4cb47dce4316856ac9a877a44"
+    },
+    {
+      "case": "egjs-axes",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 42040,
+      "expect_sha": "f883531e3259b33ddf1b10527c5e094b7b1f6b5828ae11217f331bc86c46c4d8"
+    },
+    {
+      "case": "annyang",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5890,
+      "expect_sha": "ab22f09df530881e9a5eb8b11ddbd3869c19604fd8eac9f9ca25bb7eca33d5be"
+    },
+    {
+      "case": "amplifyjs",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8458,
+      "expect_sha": "ecd28830913d3eb75d077a1622d141008863f8a2a563324d84793245705a96c7"
+    },
+    {
+      "case": "qrcodejs",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 19743,
+      "expect_sha": "8cb8815200f765affd4d839dc99216411c5cb3210197e1d18421484ca5bc272e"
+    },
+    {
+      "case": "jsdiff",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 23163,
+      "expect_sha": "80da4a1638abc248d995550404646ef7a19a36cbce6414e76aaa9d31d23c0ecf"
+    },
+    {
+      "case": "impetus",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3732,
+      "expect_sha": "a0d1b5f02d0a4689f31bfb185443077abccec4b65a0da37b71486690b71a30b1"
+    },
+    {
+      "case": "rowgrid.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2207,
+      "expect_sha": "e3f67e395ec5ef67c316c65bef06d20f54c6e8435ef577a03558467784acd5d9"
+    },
+    {
+      "case": "openplayerjs",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 161811,
+      "expect_sha": "267c8e33c3ec0aa33803d7d1acaa020c089c61f15518380805c619049db6c0cf"
+    },
+    {
+      "case": "SlickNav",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8315,
+      "expect_sha": "5b223b6add7cc3b42f01e92a519e8677ec5925f503dec34e7d0f19bbfd813c54"
+    },
+    {
+      "case": "webuploader",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 56451,
+      "expect_sha": "4d0fa2fd9e61bc11e91c5169d91ae38a55af54b3a4ddf8e7f30e0d06872220dd"
+    },
+    {
+      "case": "jplayer",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 60591,
+      "expect_sha": "b6473bf3c6134a623bafe4f3ce9df0b3b43626f6958d27b6e5d2e00733cbe1fc"
+    },
+    {
+      "case": "autocomplete.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 36148,
+      "expect_sha": "16132276c95da391f12d7e6fa9df2b1e90b73833a251871b88b388a17e4b836b"
+    },
+    {
+      "case": "mui",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 121483,
+      "expect_sha": "6be81e6d79f963d60951d63f8e34b44ec042329698a317ad505f604a21dabcb1"
+    },
+    {
+      "case": "sentient-lang",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 346851,
+      "expect_sha": "0c8b51cbf7bd6d16c7ce5ec19d981828c770e0c4d06af549fae1c2a5801c1d65"
+    },
+    {
+      "case": "emberFire",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 19109,
+      "expect_sha": "d933176fdfde2b4dbe5b5450881e1a6768df980bfbce7263df994273a01c5580"
+    },
+    {
+      "case": "angular-permission",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8158,
+      "expect_sha": "cfe5a6dc70b55f30c0b39e061cfda30fa64e10435b313ba4e7842e3b52f33ba9"
+    },
+    {
+      "case": "Base64URL-ArrayBuffer",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1255,
+      "expect_sha": "4f8bc2b31a78c4585bfab6fc1e0bf49b9963e668c9d093b5d01778a07e2c1a18"
+    },
+    {
+      "case": "qwerty-hancock",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8037,
+      "expect_sha": "e8832178d4ce03f75a2aeb200653ae74ab67ffaf2e780d7b4b10b77c94ee8fd6"
+    },
+    {
+      "case": "crossroads",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 7435,
+      "expect_sha": "cdc2b071d93e0a86bc9d2ae4afd000146b6943e4f71c1d6e74d09d70d01156ea"
+    },
+    {
+      "case": "libphonenumber",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 50006,
+      "expect_sha": "426fed0d115d21f8262596a30ff1cdc877f6ac40eb3609bb3b00d5f50f4941d9"
+    },
+    {
+      "case": "angular-socket-io",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1131,
+      "expect_sha": "d0d60d6c4cc71d5c1fa0f3541c72f990326c25cc80bfd673807871e51407d907"
+    },
+    {
+      "case": "flocks.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5137,
+      "expect_sha": "5a012fbcc8770858b990d6a9e6d8582056a2ecdcce2d94f45c2a2ca6a6d25784"
+    },
+    {
+      "case": "react-disqus-thread",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2655,
+      "expect_sha": "aa8d6fa53711c54d7b99a9c020204bbdff6328d8041645da674783b60dcd52c1"
+    },
+    {
+      "case": "stackblur-canvas",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 6898,
+      "expect_sha": "3a49dfe855e6620b665b040f51f67b0062a6cbd37423ab743458f57a99cfd698"
+    },
+    {
+      "case": "Fort.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5698,
+      "expect_sha": "3282cad7b30c703de4b983a02c278652e435633a9162ce25b3ad2d32a201b28c"
+    },
+    {
+      "case": "shpjs",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 99473,
+      "expect_sha": "d34e3fed195e28263682b6f3869f5c1601c8d143687b8f558d648812d30e15ee"
+    },
+    {
+      "case": "prism",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 8685,
+      "expect_sha": "ce91d4f4a1c20ee3deb9f32339d26a24f2922a898836b33016821c57b4a079f9"
+    },
+    {
+      "case": "mark.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 16674,
+      "expect_sha": "16926388e208a29779f05cee216526af637b7d47e6ebbb3f6524f1f5649ef44f"
+    },
+    {
+      "case": "pure.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 10825,
+      "expect_sha": "656f765094dffd3482e63dca8f9d3d8282f2ac16a735e2bcf7286b10111ad503"
+    },
+    {
+      "case": "spf",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 34233,
+      "expect_sha": "286f10c6fad8fdb43c6a8d06c328887ce8c44d0c5afe006b45c8fab2517883b4"
+    },
+    {
+      "case": "z-schema",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4480,
+      "expect_sha": "228844e0fcac48ddf2642ece6284502e22fc530ce0e316211e2ec30a6af520f8"
+    },
+    {
+      "case": "jquery-extendext",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1087,
+      "expect_sha": "1e829e946c7b8d8db9b6ffb4947138eaa4a555e6ca17d4c2872421f997ebce73"
+    },
+    {
+      "case": "backbone.layoutmanager",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 9019,
+      "expect_sha": "ed9bda0481bb1fbb285b4b114536d536ab587970cc1cd3b538049ba23e8a6b43"
+    },
+    {
+      "case": "mootable-hashmap",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 67427,
+      "expect_sha": "8d093618c19fa398ce1cb633a03d9837774cf1452a911d3d2b1dc12d6e668d8c"
+    },
+    {
+      "case": "angular",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 311988,
+      "expect_sha": "e4f32237ed6a29edaa979013b6ded5d5cb42b01d89577e8c0fb6699d0905c786"
+    },
+    {
+      "case": "angular-ui-grid",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 353452,
+      "expect_sha": "0070f4ec43091112684516138347711232ed2c350584f34d3020952e86cc610a"
+    },
+    {
+      "case": "clipboard.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 9248,
+      "expect_sha": "66124aed4a9f53844a6fc2bd336224d4d11dc1469686c964795e59fa2c000045"
+    },
+    {
+      "case": "jQuery-QueryBuilder",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 71650,
+      "expect_sha": "5e66d6549bfe8991d9fec5366ef5eac511cbfa15afaf3faf6038caad9b7406d5"
+    },
+    {
+      "case": "ready.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 148,
+      "expect_sha": "c95834014ec077abc74b99a503d36f974760e06dd6a945ca124e6832200e89b9"
+    },
+    {
+      "case": "cyclejs-core",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4007,
+      "expect_sha": "45499f9c7ea6b18fbc1acb094ea099971ec2c31c83b645a55a71b2c3d8ca0ea9"
+    },
+    {
+      "case": "backbone.projections",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5538,
+      "expect_sha": "1e2f804731be1f9ca2d8c3b500aafd3341dfc3799a1b49b9135a00714a947fd9"
+    },
+    {
+      "case": "store2",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4388,
+      "expect_sha": "5437fe4354901dc7b930b5ef17bfccfd92c139e5f69c96946c462f514ef17804"
+    },
+    {
+      "case": "qrcode-generator",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 20433,
+      "expect_sha": "d8ce08e2791106683ec56b46a04d3634e7454980972abb77b1cc8c955bfcc7d4"
+    },
+    {
+      "case": "instafeed.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 6654,
+      "expect_sha": "3fe10ac2271f54abd4452910d68ef9e1425540e9445eaec7f4714bcf69d0fecd"
+    },
+    {
+      "case": "jquery-jkit",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 51907,
+      "expect_sha": "117d78deb13de048168bbe9a85e93bd4c1c462eaf8a96cfd61eb820feecdae54"
+    },
+    {
+      "case": "angular-ui-codemirror",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1673,
+      "expect_sha": "739d559bffb3de220c8a52f8914eb086747cacb92f0ae3fdd14d67c79c4d7451"
+    },
+    {
+      "case": "jsmediatags",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 49423,
+      "expect_sha": "7680c06aa8831e7d5fd6b64b73a04962617cd3e207b8cec7f84a2ddc41edd639"
+    },
+    {
+      "case": "progressStep",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2981,
+      "expect_sha": "b2e72b4387a48d5607f022116b40ead5c69ba4c7948db62131bd25c6dd1a4df0"
+    },
+    {
+      "case": "jQuery.highlightRegex",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1142,
+      "expect_sha": "591764d2126aed035cd2ca101b449af50f76b66d85f034d11535c39ebeab38e4"
+    },
+    {
+      "case": "bootstrap-growl",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1090,
+      "expect_sha": "70ae570f07ffa6f65b2a83bfeb9dfc31c27612020c3459982d484309c7de90fa"
+    },
+    {
+      "case": "browser-deeplink",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1436,
+      "expect_sha": "5e78caf37e4f819000395e52d9843392f1d96aff364edddb8feeb00467bb6ebb"
+    },
+    {
+      "case": "oppia",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4089,
+      "expect_sha": "a2c372c07acd9b6a5f42a0d2fd5e3b6ad7ca6e5d5a34f29a739935a70966aeb7"
+    },
+    {
+      "case": "backbone-tastypie",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2107,
+      "expect_sha": "cac80d1558a9a1063e65be213fa15a5832a7e04972e761cfa62122e8a5cd558d"
+    },
+    {
+      "case": "tippy.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 27301,
+      "expect_sha": "3948bc01cc89a2efa228b402b9fb22839e72731b6ce7e126c5336bf12646bbcf"
+    },
+    {
+      "case": "flux",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3137,
+      "expect_sha": "a1bd010af11e7a6b5e63b3c976e3d1f2fb0b768c8857e3a76ef514b7cef72124"
+    },
+    {
+      "case": "alt",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 22190,
+      "expect_sha": "577a9fb47ba387b83bc996c23fc7d3830bfc22501ea5449e1fbfcf836266b4c8"
+    },
+    {
+      "case": "jInvertScroll",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 984,
+      "expect_sha": "9c7c3289f3f31aee98e3b87a09c6eb9224de837861d11db99658f71905b6a7d6"
+    },
+    {
+      "case": "chillout",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 4976,
+      "expect_sha": "ef6db110b31868668bada498f4511357186535c44c94186d2fa91f5cd3ebdbed"
+    },
+    {
+      "case": "jquery-nice-select",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2822,
+      "expect_sha": "f56865f3d6ffac43866e36a142bcd0c26860e0ef4a2d9251c43db92ed13768f0"
+    },
+    {
+      "case": "mercury",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 45230,
+      "expect_sha": "24a85994acd81e9206bf201111acc65442690869b8c2041be2c2195d12419cb4"
+    },
+    {
+      "case": "numl",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 464,
+      "expect_sha": "7ef3fa7f44bf9afb3a3f4735ca12c03aa4767c00001193e3569873e7689f2868"
+    },
+    {
+      "case": "jsgrid",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 36876,
+      "expect_sha": "260b69359ac380ade6d61f992d356f7780fe61fc947392bf4dbccbdd5ff88e1b"
+    },
+    {
+      "case": "jquery.rateit",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 7205,
+      "expect_sha": "07bcb4439b733308babdcf2bd2626b7c041469dcb87ac9d44113dfae06fd086d"
+    },
+    {
+      "case": "angular-elastic",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3027,
+      "expect_sha": "5ac744e98aac06189b7a51dbfc7d56c6bbcfe00929d09298978d2160bf0d4c1e"
+    },
+    {
+      "case": "jquery-color",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 6465,
+      "expect_sha": "ddf2acb5657d04cd0bea79fb3555e727ad0da671b59294365d1cb621d1a0b723"
+    },
+    {
+      "case": "startbootstrap-creative",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 926,
+      "expect_sha": "1a1c9327a8e1bce5453bd9e7fcb65c2e1167f37d8675ebf1cb198f5e2986b742"
+    },
+    {
+      "case": "load.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1880,
+      "expect_sha": "808f82c9ae9ae31212054cd4d97d539de2c45c2adacf7127cc3e8eb625ccf67d"
+    },
+    {
+      "case": "jQuery.my",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 59480,
+      "expect_sha": "726dbbbffc1ba728ab1c1499af5a41a93d61e52a4d4149937a46d5797d2eca20"
+    },
+    {
+      "case": "tern",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 19953,
+      "expect_sha": "45289689c75d02445109a671f0be499a6bd981d866dc3c1fea3ad1bd3676eee2"
+    },
+    {
+      "case": "markerclustererplus",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 16579,
+      "expect_sha": "6a6328e7832d664adbfda7a72d3da53bf962174b75f0f906995a439eb93b51c1"
+    },
+    {
+      "case": "classlist",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 2619,
+      "expect_sha": "211db7ae1d9c35fdf020a5fb9a8186d30a3ba323d2ca2bac625a74e7acd6a116"
+    },
+    {
+      "case": "jQuery.BlackAndWhite",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3197,
+      "expect_sha": "aa5a09ad75b7e4bd0795429114b7276abc5236d275932a81032379dc45f89053"
+    },
+    {
+      "case": "reel.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 20269,
+      "expect_sha": "a4f84e2d7135b0f253f2b54820f54022e5fdb472161456e9773eedd01e8fef64"
+    },
+    {
+      "case": "dialog-polyfill",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 11640,
+      "expect_sha": "dff8e24073efd4f0de242ad679db59dfa40c149394ae166b20418912f435b78b"
+    },
+    {
+      "case": "PullToRefresh",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 6946,
+      "expect_sha": "4cfb64107f617f34e5c5fd7f37650eb1c70db2500e08e57fee9a150e46036acb"
+    },
+    {
+      "case": "range.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 768,
+      "expect_sha": "74338f7cb8b38b8a46aea358771e9c037c48abb842a6a114941434addd95e629"
+    },
+    {
+      "case": "ui.multiselect",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 7264,
+      "expect_sha": "b3c136a9b9ce4903759c3bf08ff2564aa84acbd89a63782d4982f1de9cc73be6"
+    },
+    {
+      "case": "flexnav",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 3203,
+      "expect_sha": "db72bee1ce1b538759c321599d83b320b3d7781f7c81fe9044df9f03cbc8b83d"
+    },
+    {
+      "case": "iDevice.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1910,
+      "expect_sha": "e0778c61bdc39c49ce3bb00e993293850c01f5f0cbe10e44ca68cd76ea395783"
+    },
+    {
+      "case": "material-kit",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 5314,
+      "expect_sha": "af5ad17803824bf61bc7b09f822f1745dfbbe199090acf786d8886725bcc012e"
+    },
+    {
+      "case": "textAngular",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 63985,
+      "expect_sha": "c64c7b36f7985ddfeeb80c2822e566630bb6e7f2b12ed83ed647351d9be86920"
+    },
+    {
+      "case": "radash",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 11792,
+      "expect_sha": "81996e607a097aea84a8e76e4386a297ae49977537f6e22b4a1d1c67537862ab"
+    },
+    {
+      "case": "lightslider",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 15805,
+      "expect_sha": "2502cef577a7ef18d341f3a21c70aa8db6f3456a2a12f85facd2e45f2a4250d1"
+    },
+    {
+      "case": "vue-validator",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 328,
+      "expect_sha": "e9c87a7f9d4d8ef62d904e5571dd2155ff5882a82e8ae7464c552d54cc07bf02"
+    },
+    {
+      "case": "anyjs",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 34791,
+      "expect_sha": "e168f498bcdeb48bdd7f25c97a38ac643eb5b4f2e172789e833c8377aea2f341"
+    },
+    {
+      "case": "twgl.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 57886,
+      "expect_sha": "5b9b65eee2a606b08ef15e5aa610adfbe7cb91e313ca88b235eaebf838657d02"
+    },
+    {
+      "case": "chartist",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 39566,
+      "expect_sha": "40bd748b07e640d6f433da0629def38f000c15712acce56418d2bc7e679279e1"
+    },
+    {
+      "case": "request",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1964,
+      "expect_sha": "8dfc4d807300312eb200d0d8abe10d898b47a191954fd8e10fae95befa771c8a"
+    },
+    {
+      "case": "Buttons",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1189,
+      "expect_sha": "4cf971024d203431295a2fe779f3aeb7426d15c14776bc68ef2b1e7492b508e3"
+    },
+    {
+      "case": "waterfall.js",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1321,
+      "expect_sha": "664ac7e7caf7b0b8de3e6ab2167e771b5f52005e88cf0b7f2ee19634f3c80342"
+    },
+    {
+      "case": "EaselJS",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 126945,
+      "expect_sha": "a2f8c6f60016876b071590131dcc6285e0ca39ab1754fa395075bfc9acb01f40"
+    },
+    {
+      "case": "web-starter-kit",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 509,
+      "expect_sha": "4ad0addb3716da9e93d54607941d6b5f5246e13a75cead2d87dcf89f4de9c751"
+    },
+    {
+      "case": "jquery-visible",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 801,
+      "expect_sha": "84761981183c66c1ae27cb0c069aaeff853c90d825578ac0e9c4ead00846e466"
+    },
+    {
+      "case": "esri-leaflet-related",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1451,
+      "expect_sha": "23666473a579c84fef80d620b345be01a5bf9f563ce894e8080cdc442ad6cdcd"
+    },
+    {
+      "case": "ng-bs-daterangepicker",
+      "baseline_pass": true,
+      "repeat_pass": true,
+      "reference_agreement": true,
+      "expect_len": 1689,
+      "expect_sha": "163ea0c45f48022258b0d0faba950d7a7622ab1a4f80191505aabb990b676186"
+    }
+  ],
+  "dropped_cases": [
+    "redux"
+  ],
+  "overlap_policy": "Recursive public manifest commitments and all public environment bytes/digest references, cross-task",
+  "licence_dropped_cases": [
+    "cryptico",
+    "jquery.webticker",
+    "p5play"
+  ],
+  "licence_drop_policy": "Removed 2026-11-17: jquery.webticker (file header CC BY-NC 3.0), p5play (proprietary p5play Creator License), cryptico (licence cannot be determined). Remaining records unchanged."
+}

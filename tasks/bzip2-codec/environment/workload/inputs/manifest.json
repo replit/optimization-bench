@@ -1,0 +1,7 @@
+{
+  "format": "optimbench-locked-cases-v1",
+  "visibility": "public-dev-only",
+  "cases": "manifest.json",
+  "lock": "public-inputs.lock.json",
+  "references": "baseline-outputs.json"
+}

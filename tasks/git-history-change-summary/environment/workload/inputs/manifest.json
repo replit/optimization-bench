@@ -1,0 +1,48 @@
+{
+  "format": "optimbench-inputs-v1",
+  "note": "Original three units unchanged (equal 25% repository mix; 32768 distinct commits; 2:1:1 Myers/stat/histogram); four further xdiff units over other repositories, one unit each.",
+  "splits": {
+    "public": [
+      {
+        "docs": [
+          {
+            "bytes": 704683,
+            "path": "patch-myers",
+            "sha256": "e44947aa61e8e1eca2a2e97732a1af6c3816115be9a605adcfbe47d27a1e4d3e"
+          },
+          {
+            "bytes": 352435,
+            "path": "shortstat-myers",
+            "sha256": "56a892fc18c3aeca94ce1c6cd95e75d1f80171c4280b22c3f3619808d5c8b3fb"
+          },
+          {
+            "bytes": 352435,
+            "path": "patch-histogram",
+            "sha256": "b207d014747c8f8001c7b020033e79c3ada2cb5da7fa0ae889e6608511bac047"
+          },
+          {
+            "bytes": 131291,
+            "path": "patch-ignore-all-space",
+            "sha256": "c18b15b388cab78b81cd24b7ab33b922f4f39a02153ccab56d266a2be65d6d0b"
+          },
+          {
+            "bytes": 163499,
+            "path": "patch-patience",
+            "sha256": "941a3dcb1d7f082a154650894566267405e56ac52edb5e325d09072c180b8fe3"
+          },
+          {
+            "bytes": 150602,
+            "path": "patch-full-context",
+            "sha256": "b9525799cfc85b0b68e62a4137e2e078ca61d5e6b1f6ee1a0509d929986c3790"
+          },
+          {
+            "bytes": 216984,
+            "path": "merge-file",
+            "sha256": "8962ce97c4d6777515a293062e5a3b168876092011396e1e410929472ecf7f67"
+          }
+        ]
+      }
+    ]
+  },
+  "task": "git-history-change-summary"
+}

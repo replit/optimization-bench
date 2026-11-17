@@ -1,0 +1,4 @@
+{
+  "scope": "unittest reports Ran 1399 tests including 57 skips: 1342 passed, not 1399 passed plus 57 skipped. The two upstream tests that read SQLGlot's TPC-H/TPC-DS fixtures (tests.test_optimizer.TestOptimizer.test_tpch and test_tpcds) are excluded by release.json because TPC material is not redistributed in the image; the gate requires each to be discovered. Exact main-test and subtest ledgers are retained and compared.",
+  "suites": {"upstream": {"passed": 1342, "skipped": 57, "failed": 0, "collected": 1399}}
+}

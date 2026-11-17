@@ -1,0 +1,234 @@
+{
+  "mode": "development checks, not A/A or qualification",
+  "scopes": {
+    "public": {
+      "batch": {
+        "complete_outputs_match": true,
+        "cases": 284,
+        "missing_output_rejected": true
+      },
+      "optimizer": {
+        "complete_outputs_match": true,
+        "cases": 125,
+        "missing_output_rejected": true
+      },
+      "lineage": {
+        "complete_outputs_match": true,
+        "cases": 125,
+        "missing_output_rejected": true,
+        "method": "Robin-accepted cProfile Python self time, default wall timer",
+        "approved_ratio": 1.0,
+        "conservative_python_ratio": 0.9999942988012634,
+        "strict_ratio": 0.4535191424320967,
+        "self_seconds": {
+          "stdlib": 0.6663746929999996,
+          "driver": 0.833015516,
+          "repository": 2.430176819000001,
+          "unresolved": 1.3855e-05,
+          "builtin": 1.4289069769999996
+        },
+        "native_cpu_claim": false,
+        "cold_seconds": [
+          1.6947507459990447,
+          1.6809896579979977,
+          1.7631979450015933
+        ],
+        "median_seconds": 1.6947507459990447,
+        "all_at_least_1_3_seconds": true,
+        "wrong": {
+          "complete_outputs_match": false,
+          "seconds": 1.645344811000541,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "diff": true
+          }
+        },
+        "skip": {
+          "complete_outputs_match": false,
+          "seconds": 0.9601545189980243,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "diff": true
+          }
+        },
+        "slow": {
+          "complete_outputs_match": true,
+          "seconds": 4.597473319001438,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "diff": true
+          }
+        }
+      },
+      "diff": {
+        "complete_outputs_match": true,
+        "cases": 99,
+        "missing_output_rejected": true,
+        "method": "Robin-accepted cProfile Python self time, default wall timer",
+        "approved_ratio": 1.0,
+        "conservative_python_ratio": 0.9999988655202836,
+        "strict_ratio": 0.5776173972786203,
+        "self_seconds": {
+          "stdlib": 1.9202878690000023,
+          "driver": 1.9010861040000007,
+          "repository": 12.90986799800003,
+          "unresolved": 1.4646000000000002e-05,
+          "builtin": 5.6189496939999986
+        },
+        "native_cpu_claim": false,
+        "cold_seconds": [
+          5.8309745359983935,
+          5.807455051999568,
+          5.853119253999466
+        ],
+        "median_seconds": 5.8309745359983935,
+        "all_at_least_1_3_seconds": true,
+        "wrong": {
+          "complete_outputs_match": false,
+          "seconds": 5.841803044997505,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "lineage": true
+          }
+        },
+        "skip": {
+          "complete_outputs_match": false,
+          "seconds": 2.3131784190009057,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "lineage": true
+          }
+        },
+        "slow": {
+          "complete_outputs_match": true,
+          "seconds": 14.233741861000453,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "lineage": true
+          }
+        }
+      }
+    },
+    "private": {
+      "batch": {
+        "complete_outputs_match": true,
+        "cases": 122,
+        "missing_output_rejected": true
+      },
+      "optimizer": {
+        "complete_outputs_match": true,
+        "cases": 36,
+        "missing_output_rejected": true
+      },
+      "lineage": {
+        "complete_outputs_match": true,
+        "cases": 48,
+        "missing_output_rejected": true,
+        "method": "Robin-accepted cProfile Python self time, default wall timer",
+        "approved_ratio": 1.0,
+        "conservative_python_ratio": 0.9999930381173898,
+        "strict_ratio": 0.428107424095863,
+        "self_seconds": {
+          "stdlib": 0.7342553539999994,
+          "driver": 0.8955122830000002,
+          "repository": 2.1690820880000015,
+          "unresolved": 1.5101000000000002e-05,
+          "builtin": 1.267812288
+        },
+        "native_cpu_claim": false,
+        "cold_seconds": [
+          1.6799666229999275,
+          1.6540441760007525,
+          1.645398546999786
+        ],
+        "median_seconds": 1.6540441760007525,
+        "all_at_least_1_3_seconds": true,
+        "wrong": {
+          "complete_outputs_match": false,
+          "seconds": 1.703878035001253,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "diff": true
+          }
+        },
+        "skip": {
+          "complete_outputs_match": false,
+          "seconds": 0.8609420819993829,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "diff": true
+          }
+        },
+        "slow": {
+          "complete_outputs_match": true,
+          "seconds": 4.295586798998556,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "diff": true
+          }
+        }
+      },
+      "diff": {
+        "complete_outputs_match": true,
+        "cases": 18,
+        "missing_output_rejected": true,
+        "method": "Robin-accepted cProfile Python self time, default wall timer",
+        "approved_ratio": 1.0,
+        "conservative_python_ratio": 0.9999981605632021,
+        "strict_ratio": 0.6016691465252265,
+        "self_seconds": {
+          "stdlib": 1.0542163369999984,
+          "repository": 7.747465855999999,
+          "driver": 0.894955906,
+          "unresolved": 1.4251e-05,
+          "builtin": 3.179969130000002
+        },
+        "native_cpu_claim": false,
+        "cold_seconds": [
+          3.833449326997652,
+          3.7313665309993667,
+          3.699531489997753
+        ],
+        "median_seconds": 3.7313665309993667,
+        "all_at_least_1_3_seconds": true,
+        "wrong": {
+          "complete_outputs_match": false,
+          "seconds": 3.7447892839991255,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "lineage": true
+          }
+        },
+        "skip": {
+          "complete_outputs_match": false,
+          "seconds": 1.3986283000012918,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "lineage": true
+          }
+        },
+        "slow": {
+          "complete_outputs_match": true,
+          "seconds": 5.174877081997693,
+          "other_units_match": {
+            "batch": true,
+            "optimizer": true,
+            "lineage": true
+          }
+        }
+      }
+    }
+  },
+  "all_controls_passed": true
+}

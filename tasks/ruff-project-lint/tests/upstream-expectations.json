@@ -1,0 +1,4 @@
+{
+  "scope": "Recorded baseline sanity guards in addition to exact normalized Cargo identity/outcome comparison",
+  "suites": {"upstream": {"passed": 4742, "failed": 0, "ignored": 7, "summaries": 42}}
+}

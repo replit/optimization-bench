@@ -1,0 +1,28 @@
+{
+  "format": "black-explicit-public-corpus-v1",
+  "visibility": "public",
+  "selection_rule": "original django/utils/tree.py from the task explicit public Django project, selected before candidate campaign; no expected outputs",
+  "source": {
+    "archive_bytes": 10591082,
+    "name": "django",
+    "repository": "django/django",
+    "revision": "f1d11117c6a3e227ce7cdd263cf0743f0eb73070",
+    "sha256": "f20015c2045b557ec2e743a87534bf8b61de96eb4aa99f4c2181d3043769b4cc",
+    "url": "https://codeload.github.com/django/django/tar.gz/f1d11117c6a3e227ce7cdd263cf0743f0eb73070"
+  },
+  "license": "BSD-3-Clause",
+  "files": [
+    {
+      "path": "django-tree.py",
+      "original_path": "django/utils/tree.py",
+      "bytes": 4394,
+      "sha256": "bfcb0d52c9ec1b62e88bdc412089341a6579c8ded558e193cdb9a4f01384b3a1"
+    },
+    {
+      "path": "django-LICENSE.txt",
+      "original_path": "LICENSE",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+name: Packaged-task repository checks
+on: [push, pull_request]
+permissions:
+  contents: read
+env:
+  GIT_LFS_SKIP_SMUDGE: "1"
+  PYTHONPATH: .:tools
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install native regression dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends gcc g++ make ffmpeg
+      - name: Install locked host dependencies
+        run: |
+          python3 -m venv .venv-host
+          .venv-host/bin/python -m pip install --require-hashes --only-binary=:all: -r judge/requirements-interface.lock -r judge/requirements-host-registry.lock
+          echo "$PWD/.venv-host/bin" >> "$GITHUB_PATH"
+      - name: Check metadata and hook registration without claiming execution
+        run: python3 -m tools.release_preflight --require-generic-hooks
+      - name: Check public-release data ledger against frozen Task files
+        run: python3 -m tools.public_release_ledger
+      - name: Check shared preparation and judge contracts
+        run: |
+          python3 -m unittest discover -s tools/tests
+          python3 -m unittest discover -s judge/tests
+          python3 -m tools.judge_command_audit --check
+          git diff --check
+      - name: Prepare the original sqlfmt public CLI fixture
+        if: ${{ hashFiles('tasks/sqlfmt-cli/tests/fuzz/public_cli_recipes.py') != '' }}
+        run: python3 tasks/sqlfmt-cli/tests/fuzz/public_cli_recipes.py --stage-cli-fixture
+      - name: Check packaged task hook contracts
+        run: |
+          for suite in tasks/*/tests/fuzz tasks/*/tests/differential tasks/*/tests/fuzz/realism; do
+            [ -d "$suite" ] || continue
+            if find "$suite" -name 'test_*.py' -print -quit | grep -q .; then
+              python3 -m unittest discover -s "$suite" -p 'test_*.py'
+            fi
+            for test in "$suite"/*.test.mjs; do
+              [ -f "$test" ] || continue
+              node --test "$test"
+            done
+          done
+          if [ -d tasks/zrip-decode ]; then
+            python3 -m unittest discover -s tasks/zrip-decode/tests -p 'test_acquire_heldout.py'
+          fi
+      - name: Authenticate Git source and compile header consumers
+        run: |
+          curl -fL --retry 3 --max-time 90 \
+            https://codeload.github.com/git/git/tar.gz/a018953688f1b10bddf91bff8747068f5f4746a4 \
+            -o "$RUNNER_TEMP/git-source.tar.gz"
+          echo "898ecd505bcec4390b3b7b2c1882509af3f11f3b62c56147d19f01e2a4e81355  $RUNNER_TEMP/git-source.tar.gz" | sha256sum -c -
+          mkdir "$RUNNER_TEMP/git-header-source"
+          tar -xzf "$RUNNER_TEMP/git-source.tar.gz" -C "$RUNNER_TEMP/git-header-source" --strip-components=1
+          export GIT_HEADER_SOURCE="$RUNNER_TEMP/git-header-source"
+          python3 -m unittest discover -s tasks/git-history-change-summary/tests/fuzz -p test_rc_hooks.py
+  cli-nonroot-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install locked host dependencies
+        run: |
+          python3 -m venv .venv-host
+          .venv-host/bin/python -m pip install --require-hashes --only-binary=:all: -r judge/requirements-interface.lock -r judge/requirements-host-registry.lock
+          echo "$PWD/.venv-host/bin" >> "$GITHUB_PATH"
+      - name: Authenticate pinned Git source
+        run: |
+          curl -fL --retry 3 --max-time 90 \
+            https://codeload.github.com/git/git/tar.gz/a018953688f1b10bddf91bff8747068f5f4746a4 \
+            -o "$RUNNER_TEMP/git-source.tar.gz"
+          echo "898ecd505bcec4390b3b7b2c1882509af3f11f3b62c56147d19f01e2a4e81355  $RUNNER_TEMP/git-source.tar.gz" | sha256sum -c -
+          mkdir "$RUNNER_TEMP/git-source"
+          tar -xzf "$RUNNER_TEMP/git-source.tar.gz" -C "$RUNNER_TEMP/git-source" --strip-components=1
+      - name: Exercise healthy Git CLI cases as the non-root worker
+        run: sudo env "PATH=$PATH" PYTHONPATH=.:tools sh tools/ci/git_cli_nonroot_smoke.sh "$RUNNER_TEMP/git-source"
+  host-runtime-portability:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.12", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Check locked runtime and command audit
+        run: |
+          python3 -m venv .venv-portability
+          .venv-portability/bin/python -m pip install --require-hashes --only-binary=:all: -r judge/requirements-interface.lock -r judge/requirements-host-registry.lock
+          .venv-portability/bin/python -m tools.scoring_host runtime-check
+          .venv-portability/bin/python -m unittest tools.tests.test_host_runtime_dependencies tools.tests.test_judge_command_audit
+          if [ -d tasks/zrip-decode ]; then
+            .venv-portability/bin/python -m unittest discover -s tasks/zrip-decode/tests -p 'test_acquire_heldout.py'
+          fi
+          .venv-portability/bin/python -m tools.judge_command_audit --check
+  bzip2-header-consumers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Authenticate pinned bzip2 source
+        run: |
+          curl -fL --retry 3 --max-time 90 \
+            https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz \
+            -o "$RUNNER_TEMP/bzip2-source.tar.gz"
+          echo "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269  $RUNNER_TEMP/bzip2-source.tar.gz" | sha256sum -c -
+          mkdir "$RUNNER_TEMP/bzip2-source"
+          tar -xzf "$RUNNER_TEMP/bzip2-source.tar.gz" \
+            -C "$RUNNER_TEMP/bzip2-source" --strip-components=1
+      - name: Exercise native C and C++ consumers and negative controls
+        run: |
+          export BZIP2_HEADER_SOURCE="$RUNNER_TEMP/bzip2-source"
+          export BZIP2_HEADER_RECEIPTS="$RUNNER_TEMP/bzip2-header-receipts"
+          python3 -m unittest discover -s tasks/bzip2-codec/tests/fuzz -p 'test_*.py' -v
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bzip2-native-header-receipts
+          path: ${{ runner.temp }}/bzip2-header-receipts
+  xz-native-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install locked host and symbol dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends binutils
+          python3 -m venv .venv-xz
+          .venv-xz/bin/python -m pip install --require-hashes --only-binary=:all: -r judge/requirements-interface.lock -r judge/requirements-host-registry.lock
+          echo "$PWD/.venv-xz/bin" >> "$GITHUB_PATH"
+      - name: Check XZ native hook contracts
+        run: python3 -m unittest discover -s tasks/xz-lzma2-compress/tests/fuzz -p 'test_*.py'
+      - name: Build the original public XZ image without additional agent tools
+        run: docker build -t optimbench:xz-ci tasks/xz-lzma2-compress/environment
+      - name: Execute actual XZ public and native component controls
+        run: |
+          sudo env PYTHONPATH="$PWD:$PWD/tools:$PWD/tools/runner" \
+            "$PWD/.venv-xz/bin/python" tasks/xz-lzma2-compress/tests/fuzz/native_smoke.py \
+            --image optimbench:xz-ci --out "$RUNNER_TEMP/xz-native-smoke"
+      - name: Archive original verifier evidence without changing its ownership
+        if: always()
+        run: |
+          if test -d "$RUNNER_TEMP/xz-native-smoke"; then
+            sudo tar --exclude='./cache' --exclude='./compiler-cache' \
+              -czf "$RUNNER_TEMP/xz-native-component-evidence.tar.gz" \
+              -C "$RUNNER_TEMP/xz-native-smoke" .
+            sudo chown "$(id -u):$(id -g)" "$RUNNER_TEMP/xz-native-component-evidence.tar.gz"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: xz-native-component-evidence
+          path: ${{ runner.temp }}/xz-native-component-evidence.tar.gz
+          if-no-files-found: ignore

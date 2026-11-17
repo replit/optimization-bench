@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "configurations": [
+    {
+      "configuration_id": "gcp-c4-standard-32-intel-8581c",
+      "role": "scoring",
+      "fingerprint": {"architecture":"x86_64","cpu_model":"INTEL(R) XEON(R) PLATINUM 8581C CPU @ 2.30GHz","judge_cpus":[0,1,2,3,4,5,6,7],"machine_type":"c4-standard-32","provider":"gcp","system_cpus":[8,9,10,11,12,13,14,15],"threads_per_core":1}
+    }
+  ],
+  "hosts": []
+}

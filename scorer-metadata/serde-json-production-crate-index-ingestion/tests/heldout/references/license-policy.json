@@ -1,0 +1,6 @@
+{
+  "license_basis": "fetch-only; no redistribution",
+  "no_inference": "Crate source-code MIT/Apache/etc licenses are NOT silently treated as metadata redistribution grants.",
+  "record": "Exact upstream registry metadata URLs, source commit, byte sizes and SHA256 are recorded for every input.",
+  "retention": "No input bodies in Git/LFS; private reconstruction outside the worktree; public acquisition at image-build time only."
+}

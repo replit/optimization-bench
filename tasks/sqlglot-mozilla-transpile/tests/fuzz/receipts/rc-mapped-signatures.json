@@ -1,0 +1,135 @@
+{
+  "callback_note": "Expression.transform accepts arbitrary transform callback; no declared filelike reader/writer protocol. Stream applicability requires independent review.",
+  "format": "optimbench-fuzz-v1",
+  "native_headers": "Independently reviewed separately",
+  "scope": "Exactly 14 mapped signatures; not full transitive surface",
+  "signatures": [
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/__init__.py",
+      "first_line": 168,
+      "signature": "(sql: 'str', read: 'DialectType' = None, write: 'DialectType' = None, identity: 'bool' = True, error_level: 'ErrorLevel | None' = None, **opts: 'Unpack[GeneratorArgs]') -> 'list[str]'",
+      "source_definition": "def transpile(\n    sql: str,\n    read: DialectType = None,\n    write: DialectType = None,\n    identity: bool = True,\n    error_level: ErrorLevel | None = None,\n    **opts: Unpack[GeneratorArgs],\n) -> list[str]:\n    \"\"\"\n    Parses the given SQL string in accordance with the source dialect and returns a list of SQL strings transformed\n    to conform to the target dialect. Each string in the returned list represents a single transformed SQL statement.\n\n    Args:\n        sql: the SQL code string to transpile.\n        read: the source dialect used to parse the input string (eg. \"spark\", \"hive\", \"presto\", \"mysql\").\n        write: the target dialect into which the input should be transformed (eg. \"spark\", \"hive\", \"presto\", \"mysql\").\n        identity: if set to `True` and if the target dialect is not specified the source dialect will be used as both:\n            the source and the target dialect.\n        error_level: the desired error level of the parser.\n        **opts: other `sqlglot.generator.Generator` options.\n\n    Returns:\n        The list of transpiled SQL statements.\n    \"\"\"\n    write = (read if write is None else write) if identity else write\n    write = Dialect.get_or_raise(write)\n    return [\n        write.generate(expression, copy=False, **opts) if expression else \"\"\n        for expression in parse(sql, read, error_level=error_level)\n    ]\n",
+      "source_path": "sqlglot/__init__.py",
+      "source_sha256": "62475c676c9112c31d8ecca3ef7763565153a2ba6fe01897dcef6e782fe89cb3",
+      "symbol": "sqlglot.transpile"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/__init__.py",
+      "first_line": 92,
+      "signature": "(sql: 'str', read: 'DialectType' = None, dialect: 'DialectType' = None, **opts: 'Unpack[ParserNoDialectArgs]') -> 'list[Expr | None]'",
+      "source_definition": "def parse(\n    sql: str,\n    read: DialectType = None,\n    dialect: DialectType = None,\n    **opts: Unpack[ParserNoDialectArgs],\n) -> list[Expr | None]:\n    \"\"\"\n    Parses the given SQL string into a collection of syntax trees, one per parsed SQL statement.\n\n    Args:\n        sql: the SQL code string to parse.\n        read: the SQL dialect to apply during parsing (eg. \"spark\", \"hive\", \"presto\", \"mysql\").\n        dialect: the SQL dialect (alias for read).\n        **opts: other `sqlglot.parser.Parser` options.\n\n    Returns:\n        The resulting syntax tree collection.\n    \"\"\"\n    return Dialect.get_or_raise(read or dialect).parse(sql, **opts)\n",
+      "source_path": "sqlglot/__init__.py",
+      "source_sha256": "62475c676c9112c31d8ecca3ef7763565153a2ba6fe01897dcef6e782fe89cb3",
+      "symbol": "sqlglot.parse"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/__init__.py",
+      "first_line": 134,
+      "signature": "(sql: 'str', read: 'DialectType' = None, dialect: 'DialectType' = None, into: 'exp.IntoType | None' = None, **opts: 'Unpack[ParserNoDialectArgs]') -> 'Expr'",
+      "source_definition": "def parse_one(\n    sql: str,\n    read: DialectType = None,\n    dialect: DialectType = None,\n    into: exp.IntoType | None = None,\n    **opts: Unpack[ParserNoDialectArgs],\n) -> Expr:\n    \"\"\"\n    Parses the given SQL string and returns a syntax tree.\n\n    Args:\n        sql: the SQL code string to parse.\n        read: the SQL dialect to apply during parsing (eg. \"spark\", \"hive\", \"presto\", \"mysql\").\n        dialect: the SQL dialect (alias for read)\n        into: the SQLGlot Expr to parse into.\n        **opts: other `sqlglot.parser.Parser` options.\n\n    Returns:\n        A single syntax tree if one statement is parsed, otherwise a Block expression containing all parsed syntax trees.\n    \"\"\"\n\n    dialect = Dialect.get_or_raise(read or dialect)\n\n    if into:\n        result = dialect.parse_into(into, sql, **opts)\n    else:\n        result = dialect.parse(sql, **opts)\n\n    if not result or result[0] is None:\n        raise ParseError(f\"No expression was parsed from '{sql}'\")\n\n    return exp.Block(expressions=result) if len(result) > 1 else result[0]\n",
+      "source_path": "sqlglot/__init__.py",
+      "source_sha256": "62475c676c9112c31d8ecca3ef7763565153a2ba6fe01897dcef6e782fe89cb3",
+      "symbol": "sqlglot.parse_one"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/__init__.py",
+      "first_line": 77,
+      "signature": "(sql: 'str', read: 'DialectType' = None, dialect: 'DialectType' = None) -> 'list[Token]'",
+      "source_definition": "def tokenize(sql: str, read: DialectType = None, dialect: DialectType = None) -> list[Token]:\n    \"\"\"\n    Tokenizes the given SQL string.\n\n    Args:\n        sql: the SQL code string to tokenize.\n        read: the SQL dialect to apply during tokenizing (eg. \"spark\", \"hive\", \"presto\", \"mysql\").\n        dialect: the SQL dialect (alias for read).\n\n    Returns:\n        The resulting list of tokens.\n    \"\"\"\n    return Dialect.get_or_raise(read or dialect).tokenize(sql)\n",
+      "source_path": "sqlglot/__init__.py",
+      "source_sha256": "62475c676c9112c31d8ecca3ef7763565153a2ba6fe01897dcef6e782fe89cb3",
+      "symbol": "sqlglot.tokenize"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/expressions/core.py",
+      "first_line": 1246,
+      "signature": "(self, dialect: 'DialectType' = None, copy: 'bool' = True, **opts: 'Unpack[GeneratorNoDialectArgs]') -> 'str'",
+      "source_definition": "    def sql(\n        self, dialect: DialectType = None, copy: bool = True, **opts: Unpack[GeneratorNoDialectArgs]\n    ) -> str:\n        from sqlglot.dialects.dialect import Dialect\n\n        return Dialect.get_or_raise(dialect).generate(self, copy=copy, **opts)\n",
+      "source_path": "sqlglot/expressions/core.py",
+      "source_sha256": "241e86e17b65e58eeb08a164c5bce1e92081d0b446ab412d4e56e926af977750",
+      "symbol": "sqlglot.expressions.Expression.sql"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/expressions/core.py",
+      "first_line": 1036,
+      "signature": "(self: 'E') -> 'E'",
+      "source_definition": "    def copy(self: E) -> E:\n        return deepcopy(self)\n",
+      "source_path": "sqlglot/expressions/core.py",
+      "source_sha256": "241e86e17b65e58eeb08a164c5bce1e92081d0b446ab412d4e56e926af977750",
+      "symbol": "sqlglot.expressions.Expression.copy"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/expressions/core.py",
+      "first_line": 1253,
+      "signature": "(self, fun: 't.Callable[..., T]', *args: 'object', copy: 'bool' = True, **kwargs: 'object') -> 'T'",
+      "source_definition": "    def transform(\n        self, fun: t.Callable[..., T], *args: object, copy: bool = True, **kwargs: object\n    ) -> T:\n        root: t.Any = None\n        new_node: t.Any = None\n\n        for node in (self.copy() if copy else self).dfs(prune=lambda n: n is not new_node):\n            parent, arg_key, index = node.parent, node.arg_key, node.index\n            new_node = fun(node, *args, **kwargs)\n\n            if not root:\n                root = new_node\n            elif parent and arg_key and new_node is not node:\n                parent.set(arg_key, new_node, index)\n\n        assert root\n        return root\n",
+      "source_path": "sqlglot/expressions/core.py",
+      "source_sha256": "241e86e17b65e58eeb08a164c5bce1e92081d0b446ab412d4e56e926af977750",
+      "symbol": "sqlglot.expressions.Expression.transform"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/expressions/core.py",
+      "first_line": 1187,
+      "signature": "(self, bfs: 'bool' = True, prune: 't.Callable[[Expr], bool] | None' = None) -> 'Iterator[Expr]'",
+      "source_definition": "    def walk(\n        self, bfs: bool = True, prune: t.Callable[[Expr], bool] | None = None\n    ) -> Iterator[Expr]:\n        if bfs:\n            yield from self.bfs(prune=prune)\n        else:\n            yield from self.dfs(prune=prune)\n",
+      "source_path": "sqlglot/expressions/core.py",
+      "source_sha256": "241e86e17b65e58eeb08a164c5bce1e92081d0b446ab412d4e56e926af977750",
+      "symbol": "sqlglot.expressions.Expression.walk"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/expressions/core.py",
+      "first_line": 1160,
+      "signature": "(self, *expression_types: 'Type[E]', bfs: 'bool' = True) -> 'Iterator[E]'",
+      "source_definition": "    def find_all(self, *expression_types: Type[E], bfs: bool = True) -> Iterator[E]:\n        for expression in self.walk(bfs=bfs):\n            if isinstance(expression, expression_types):\n                yield expression\n",
+      "source_path": "sqlglot/expressions/core.py",
+      "source_sha256": "241e86e17b65e58eeb08a164c5bce1e92081d0b446ab412d4e56e926af977750",
+      "symbol": "sqlglot.expressions.Expression.find_all"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/expressions/builders.py",
+      "first_line": 63,
+      "signature": "(*expressions: 'ExpOrStr', dialect: 'DialectType' = None, copy: 'bool' = True, **opts: 'Unpack[ParserNoDialectArgs]') -> 'Select'",
+      "source_definition": "def select(\n    *expressions: ExpOrStr,\n    dialect: DialectType = None,\n    copy: bool = True,\n    **opts: Unpack[ParserNoDialectArgs],\n) -> Select:\n    \"\"\"\n    Initializes a syntax tree from one or multiple SELECT expressions.\n\n    Example:\n        >>> select(\"col1\", \"col2\").from_(\"tbl\").sql()\n        'SELECT col1, col2 FROM tbl'\n\n    Args:\n        *expressions: the SQL code string to parse as the expressions of a\n            SELECT statement. If an Expr instance is passed, this is used as-is.\n        dialect: the dialect used to parse the input expressions (in the case that an\n            input expression is a SQL string).\n        **opts: other options to use to parse the input expressions (again, in the case\n            that an input expression is a SQL string).\n\n    Returns:\n        Select: the syntax tree for the SELECT statement.\n    \"\"\"\n    return Select().select(*expressions, dialect=dialect, copy=copy, **opts)\n",
+      "source_path": "sqlglot/expressions/builders.py",
+      "source_sha256": "7af350d5480396dc588086a060e4f0b51b2cc650cc8ab953f0f8d773b661e1d9",
+      "symbol": "sqlglot.select"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/dialects/dialect.py",
+      "first_line": 1204,
+      "signature": "(self, sql: 'str', **opts: 'Unpack[ParserArgs]') -> 'list[exp.Expr | None]'",
+      "source_definition": "    def parse(self, sql: str, **opts: Unpack[ParserArgs]) -> list[exp.Expr | None]:\n        return self.parser(**opts).parse(self.tokenize(sql), sql)\n",
+      "source_path": "sqlglot/dialects/dialect.py",
+      "source_sha256": "6c8b9249250c3ef4d6a842dd8fe7ec2ce8abc373613025a48ca608067ab03841",
+      "symbol": "sqlglot.dialects.dialect.Dialect.parse"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/dialects/dialect.py",
+      "first_line": 1212,
+      "signature": "(self, expression: 'exp.Expr', copy: 'bool' = True, **opts: 'Unpack[GeneratorArgs]') -> 'str'",
+      "source_definition": "    def generate(\n        self, expression: exp.Expr, copy: bool = True, **opts: Unpack[GeneratorArgs]\n    ) -> str:\n        return self.generator(**opts).generate(expression, copy=copy)\n",
+      "source_path": "sqlglot/dialects/dialect.py",
+      "source_sha256": "6c8b9249250c3ef4d6a842dd8fe7ec2ce8abc373613025a48ca608067ab03841",
+      "symbol": "sqlglot.dialects.dialect.Dialect.generate"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/parser.py",
+      "first_line": 2140,
+      "signature": "(self, raw_tokens: 'list[Token]', sql: 'str') -> 'list[exp.Expr | None]'",
+      "source_definition": "    def parse(self, raw_tokens: list[Token], sql: str) -> list[exp.Expr | None]:\n        \"\"\"\n        Parses a list of tokens and returns a list of syntax trees, one tree\n        per parsed SQL statement.\n\n        Args:\n            raw_tokens: The list of tokens.\n            sql: The original SQL string.\n\n        Returns:\n            The list of the produced syntax trees.\n        \"\"\"\n        return self._parse(\n            parse_method=self.__class__._parse_statement, raw_tokens=raw_tokens, sql=sql\n        )\n",
+      "source_path": "sqlglot/parser.py",
+      "source_sha256": "5dbf49c1c5735538801800f2583ae7917a8a3415c6b0ce15e3059e23c7ac63c6",
+      "symbol": "sqlglot.parser.Parser.parse"
+    },
+    {
+      "authority": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/tokens.py",
+      "first_line": 589,
+      "signature": "(self, sql: 'str') -> 'list[Token]'",
+      "source_definition": "    def tokenize(self, sql: str) -> list[Token]:\n        \"\"\"Returns a list of tokens corresponding to the SQL string `sql`.\"\"\"\n        return self._core.tokenize(sql)  # type: ignore\n",
+      "source_path": "sqlglot/tokens.py",
+      "source_sha256": "578e4bd0326209cd338c325ce32d328ba9bd0fd3819748684abea6be4de551a8",
+      "symbol": "sqlglot.tokens.Tokenizer.tokenize"
+    }
+  ],
+  "upstream_commit": "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76"
+}

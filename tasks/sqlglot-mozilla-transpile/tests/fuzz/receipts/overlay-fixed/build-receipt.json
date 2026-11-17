@@ -1,0 +1,76 @@
+{
+  "artifacts": [],
+  "build_sha256": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+  "capabilities": {
+    "atheris": {
+      "evidence": [
+        2
+      ],
+      "reason": "fixture control succeeded; not task qualification",
+      "status": "validated"
+    },
+    "coverage.py-branch": {
+      "evidence": [
+        3,
+        4
+      ],
+      "reason": "task fixture branch export checked",
+      "status": "validated"
+    },
+    "coverage.py-child-process": {
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "reason": "both parent positive and child negative branch bodies retained after combine",
+      "status": "validated"
+    },
+    "hypothesis": {
+      "evidence": [
+        1
+      ],
+      "reason": "fixture control succeeded; not task qualification",
+      "status": "validated"
+    },
+    "interpreter": {
+      "evidence": [
+        0
+      ],
+      "reason": "fixture control succeeded; not task qualification",
+      "status": "validated"
+    },
+    "native-extension-sanitizers": {
+      "evidence": [],
+      "reason": "requires task-specific native module build plus complete instrumented dependency closure",
+      "status": "unsupported"
+    }
+  },
+  "features": [
+    "pure-python"
+  ],
+  "flags": [
+    "/opt/fuzz-python/bin/python",
+    "-m",
+    "coverage",
+    "run",
+    "--branch",
+    "--parallel-mode"
+  ],
+  "instrumentation": "coverage.py-branch",
+  "language": "python",
+  "parent_task_image": "sha256:26160f935ba63787bb3704fa3b575684cb842bab670331c9a758af28b32319cd",
+  "qualification": "not-a-task-verdict",
+  "runner_image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "schema": "optimbench-runner-build-v1",
+  "source_sha256": "1fb06e382c7953fea39452126906ce1289719e694e7b7914cca1f28177ee5823",
+  "tools": {
+    "PIP_NO_INDEX": "1",
+    "python": "3.14.6 (main, Aug  5 2026, 01:07:16) [GCC 14.2.0]",
+    "tools": {
+      "atheris": "3.1.0",
+      "coverage": "7.17.0",
+      "hypothesis": "6.170.12"
+    }
+  }
+}

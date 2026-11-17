@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "url": "https://codeload.github.com/sqlfluff/sqlfluff/tar.gz/0348222a3bcdb0226563f7349c5a39beb0641955",
+    "commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+    "sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+    "bytes": 4754153
+  }
+}

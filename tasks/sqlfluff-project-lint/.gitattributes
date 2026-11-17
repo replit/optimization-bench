@@ -1,0 +1,14 @@
+# Machine-produced package inventories and captured source metadata.
+payload.json linguist-generated=true
+provenance.json linguist-generated=true
+environment/payload-public.json linguist-generated=true
+environment/public-workloads.lock.json linguist-generated=true
+environment/workload/inputs/manifest.json linguist-generated=true
+environment/workload/inputs/files/* linguist-generated=true
+tests/heldout.lock.json linguist-generated=true
+tests/heldout/manifest.json linguist-generated=true
+tests/heldout/alternate-sources.json linguist-generated=true
+# Unmodified third-party license text, already present in a public source.
+environment/workload/driver/alternate-assets/c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4 linguist-vendored=true
+# Verbatim upstream license files for held-out project trees.
+tests/notices/** -text -whitespace

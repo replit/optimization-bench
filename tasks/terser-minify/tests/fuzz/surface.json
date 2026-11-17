@@ -1,0 +1,572 @@
+{
+  "format": "optimbench-fuzz-surface-v1",
+  "task": "terser-minify",
+  "upstream_commit": "317f449862b8d48756818cdcaf67c22c31ec852c",
+  "evidence": [
+    {
+      "path": "README.md",
+      "sha256": "8e9e0a7f8d8d57de42e36b003d1628aaa22559330c15fe96e2e926db691c9523"
+    },
+    {
+      "path": "tools/terser.d.ts",
+      "sha256": "0b215f03e21d3b61e59ec62ae5ffe869b8f8db497ee1999f7aee263aafe2e38c"
+    },
+    {
+      "path": "package.json",
+      "sha256": "22ac1ee8fda1c4088a9d1615c5aacaa0562939d89dce2ff8bdfae7b3ff029067"
+    },
+    {
+      "path": "main.js",
+      "sha256": "3ad9e454673cf22659f32a321eca3d6ceca190cf3073f7445b1002d0371334f2"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "901d0a7fcaccaae9917d165039c0473c354e5da2e0e94140dde67aad9ffb19da"
+    }
+  ],
+  "option_families": {
+    "minify": {
+      "typed_options": [
+        "compress",
+        "ecma",
+        "enclose",
+        "format",
+        "ie8",
+        "keep_classnames",
+        "keep_fnames",
+        "mangle",
+        "module",
+        "nameCache",
+        "output",
+        "parse",
+        "safari10",
+        "sourceMap",
+        "toplevel"
+      ],
+      "source": "tools/terser.d.ts:MinifyOptions"
+    },
+    "parse": {
+      "typed_options": [
+        "bare_returns",
+        "ecma",
+        "html5_comments",
+        "shebang"
+      ],
+      "source": "tools/terser.d.ts:ParseOptions",
+      "documented_additional_forms": [
+        "spidermonkey",
+        "expression",
+        "filename"
+      ]
+    },
+    "compress": {
+      "typed_options": [
+        "arguments",
+        "arrows",
+        "booleans",
+        "booleans_as_integers",
+        "builtins_ecma",
+        "builtins_pure",
+        "collapse_vars",
+        "comparisons",
+        "computed_props",
+        "conditionals",
+        "dead_code",
+        "defaults",
+        "directives",
+        "drop_console",
+        "drop_debugger",
+        "ecma",
+        "evaluate",
+        "expression",
+        "global_defs",
+        "hoist_funs",
+        "hoist_props",
+        "hoist_vars",
+        "ie8",
+        "if_return",
+        "inline",
+        "join_vars",
+        "keep_classnames",
+        "keep_fargs",
+        "keep_fnames",
+        "keep_infinity",
+        "lhs_constants",
+        "loops",
+        "module",
+        "negate_iife",
+        "passes",
+        "properties",
+        "pure_funcs",
+        "pure_getters",
+        "pure_new",
+        "reduce_funcs",
+        "reduce_vars",
+        "sequences",
+        "side_effects",
+        "switches",
+        "top_retain",
+        "toplevel",
+        "typeofs",
+        "unsafe",
+        "unsafe_Function",
+        "unsafe_arrows",
+        "unsafe_comps",
+        "unsafe_math",
+        "unsafe_methods",
+        "unsafe_proto",
+        "unsafe_regexp",
+        "unsafe_symbols",
+        "unsafe_undefined",
+        "unused"
+      ],
+      "source": "tools/terser.d.ts:CompressOptions",
+      "documented_additional_forms": [
+        "top_retain:function",
+        "toplevel:funcs|vars",
+        "unused:keep_assign",
+        "unsafe_methods:RegExp"
+      ]
+    },
+    "mangle": {
+      "typed_options": [
+        "eval",
+        "keep_classnames",
+        "keep_fnames",
+        "module",
+        "nth_identifier",
+        "properties",
+        "reserved",
+        "safari10",
+        "toplevel"
+      ],
+      "source": "tools/terser.d.ts:MangleOptions"
+    },
+    "mangle.properties": {
+      "typed_options": [
+        "builtins",
+        "debug",
+        "keep_quoted",
+        "nth_identifier",
+        "regex",
+        "reserved"
+      ],
+      "source": "tools/terser.d.ts:ManglePropertiesOptions",
+      "documented_additional_forms": [
+        "undeclared",
+        "debug:string"
+      ]
+    },
+    "format": {
+      "typed_options": [
+        "ascii_only",
+        "beautify",
+        "braces",
+        "comments",
+        "ecma",
+        "ie8",
+        "indent_level",
+        "indent_start",
+        "inline_script",
+        "keep_numbers",
+        "keep_quoted_props",
+        "max_line_len",
+        "preamble",
+        "preserve_annotations",
+        "quote_keys",
+        "quote_style",
+        "safari10",
+        "semicolons",
+        "shebang",
+        "shorthand",
+        "source_map",
+        "webkit",
+        "width",
+        "wrap_func_args",
+        "wrap_iife"
+      ],
+      "source": "tools/terser.d.ts:FormatOptions",
+      "documented_additional_forms": [
+        "spidermonkey"
+      ]
+    },
+    "sourceMap": {
+      "typed_options": [
+        "asObject",
+        "content",
+        "filename",
+        "includeSources",
+        "root",
+        "url"
+      ],
+      "source": "tools/terser.d.ts:SourceMapOptions"
+    }
+  },
+  "entries": [
+    {
+      "id": "terser.package.import.minify.v1",
+      "symbol_path": "terser.minify",
+      "signature": {
+        "parameters": [
+          "files:string|string[]|Record<string,string>",
+          "options?:MinifyOptions"
+        ],
+        "returns": "Promise<MinifyOutput>"
+      },
+      "reexport": {
+        "package_entry": ".",
+        "condition": "import",
+        "origin": "lib/minify.js"
+      },
+      "contract_refs": [
+        "README.md:API Reference",
+        "tools/terser.d.ts:minify"
+      ],
+      "visibility": "public",
+      "contract_id": "exact-public-result-error-and-mutable-cache-v1",
+      "option_family_ids": [
+        "minify",
+        "parse",
+        "compress",
+        "mangle",
+        "mangle.properties",
+        "format",
+        "sourceMap"
+      ],
+      "generator_ids": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "generators": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "precondition_id": "public-source-and-options-v1",
+      "oracle": {
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "baseline_exit_codes": [
+          0
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "sequence_applicability": [
+        "fresh",
+        "repeat",
+        "interleaved",
+        "name-cache-reuse",
+        "error-recovery"
+      ],
+      "fault_applicability": [
+        "syntax-error",
+        "invalid-source-map",
+        "callback-error-pending-review"
+      ],
+      "oracle_policy": "exact-public-result-error-and-mutable-cache-v1",
+      "status": "mapped-documented-not-corrected-extractor-qualified"
+    },
+    {
+      "id": "terser.package.require.minify.v1",
+      "symbol_path": "terser.minify",
+      "signature": {
+        "parameters": [
+          "files:string|string[]|Record<string,string>",
+          "options?:MinifyOptions"
+        ],
+        "returns": "Promise<MinifyOutput>"
+      },
+      "reexport": {
+        "package_entry": ".",
+        "condition": "require",
+        "origin": "dist/bundle.min.js"
+      },
+      "contract_refs": [
+        "README.md:API Reference",
+        "tools/terser.d.ts:minify"
+      ],
+      "visibility": "public",
+      "contract_id": "exact-public-result-error-and-mutable-cache-v1",
+      "option_family_ids": [
+        "minify",
+        "parse",
+        "compress",
+        "mangle",
+        "mangle.properties",
+        "format",
+        "sourceMap"
+      ],
+      "generator_ids": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "generators": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "precondition_id": "public-source-and-options-v1",
+      "oracle": {
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "baseline_exit_codes": [
+          0
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "sequence_applicability": [
+        "fresh",
+        "repeat",
+        "interleaved",
+        "name-cache-reuse",
+        "error-recovery"
+      ],
+      "fault_applicability": [
+        "syntax-error",
+        "invalid-source-map",
+        "callback-error-pending-review"
+      ],
+      "oracle_policy": "exact-public-result-error-and-mutable-cache-v1",
+      "status": "mapped-documented-not-corrected-extractor-qualified"
+    },
+    {
+      "id": "terser.package.import.minify_sync.v1",
+      "symbol_path": "terser.minify_sync",
+      "signature": {
+        "parameters": [
+          "files:string|string[]|Record<string,string>",
+          "options?:MinifyOptions"
+        ],
+        "returns": "MinifyOutput"
+      },
+      "reexport": {
+        "package_entry": ".",
+        "condition": "import",
+        "origin": "lib/minify.js"
+      },
+      "contract_refs": [
+        "README.md:API Reference",
+        "tools/terser.d.ts:minify_sync"
+      ],
+      "visibility": "public",
+      "contract_id": "exact-public-result-error-and-mutable-cache-v1",
+      "option_family_ids": [
+        "minify",
+        "parse",
+        "compress",
+        "mangle",
+        "mangle.properties",
+        "format",
+        "sourceMap"
+      ],
+      "generator_ids": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "generators": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "precondition_id": "public-source-and-options-v1",
+      "oracle": {
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "baseline_exit_codes": [
+          0
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "sequence_applicability": [
+        "fresh",
+        "repeat",
+        "interleaved",
+        "name-cache-reuse",
+        "error-recovery"
+      ],
+      "fault_applicability": [
+        "syntax-error",
+        "invalid-source-map",
+        "callback-error-pending-review"
+      ],
+      "oracle_policy": "exact-public-result-error-and-mutable-cache-v1",
+      "status": "mapped-documented-not-corrected-extractor-qualified"
+    },
+    {
+      "id": "terser.package.require.minify_sync.v1",
+      "symbol_path": "terser.minify_sync",
+      "signature": {
+        "parameters": [
+          "files:string|string[]|Record<string,string>",
+          "options?:MinifyOptions"
+        ],
+        "returns": "MinifyOutput"
+      },
+      "reexport": {
+        "package_entry": ".",
+        "condition": "require",
+        "origin": "dist/bundle.min.js"
+      },
+      "contract_refs": [
+        "README.md:API Reference",
+        "tools/terser.d.ts:minify_sync"
+      ],
+      "visibility": "public",
+      "contract_id": "exact-public-result-error-and-mutable-cache-v1",
+      "option_family_ids": [
+        "minify",
+        "parse",
+        "compress",
+        "mangle",
+        "mangle.properties",
+        "format",
+        "sourceMap"
+      ],
+      "generator_ids": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "generators": [
+        "grammar-options-v1",
+        "public-corpus-v1"
+      ],
+      "precondition_id": "public-source-and-options-v1",
+      "oracle": {
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "baseline_exit_codes": [
+          0
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "sequence_applicability": [
+        "fresh",
+        "repeat",
+        "interleaved",
+        "name-cache-reuse",
+        "error-recovery"
+      ],
+      "fault_applicability": [
+        "syntax-error",
+        "invalid-source-map",
+        "callback-error-pending-review"
+      ],
+      "oracle_policy": "exact-public-result-error-and-mutable-cache-v1",
+      "status": "mapped-documented-not-corrected-extractor-qualified"
+    },
+    {
+      "id": "terser.package._default_options.v1",
+      "symbol_path": "terser._default_options",
+      "reexport": {
+        "package_entry": ".",
+        "origin": "main.js"
+      },
+      "status": "unresolved-supported-contract-and-generator",
+      "reason": "Exported by main.js but not declared in types; do not silently exclude"
+    },
+    {
+      "id": "terser.package._run_cli.v1",
+      "symbol_path": "terser._run_cli",
+      "reexport": {
+        "package_entry": ".",
+        "origin": "main.js"
+      },
+      "status": "unresolved-supported-contract-and-generator",
+      "reason": "Exported by main.js but not declared in types; do not silently exclude"
+    },
+    {
+      "id": "terser.bin.cli.v1",
+      "symbol_path": "terser/bin/terser",
+      "status": "generic-CLI-IO-probe-mapped; full-option-generator-and-error-attribution-review-pending",
+      "contract_refs": [
+        "package.json:bin and exports",
+        "README.md:Command line options"
+      ],
+      "visibility": "public",
+      "generator_ids": [
+        "cli-io-v1"
+      ],
+      "generic_probe": "cli_probe.py",
+      "exercised_IO": [
+        "stdin-success-nonempty",
+        "file-output-success",
+        "dev-full",
+        "closed-reader-EPIPE",
+        "closed-stdout",
+        "readonly-output",
+        "missing-input",
+        "syntax-error"
+      ],
+      "oracle_policy": "retain complete raw stdout/stderr/exits/files; no automatic stack normalization"
+    }
+  ],
+  "extractor": {
+    "version": null,
+    "report_sha256": null,
+    "status": "unresolved-corrected-extractor-dependency"
+  },
+  "public_headers": {
+    "status": "not-applicable-reviewed-for-pinned-JS-feature-only",
+    "files": [],
+    "package_files_allowlist": [
+      "bin",
+      "dist",
+      "lib",
+      "tools",
+      "LICENSE",
+      "README.md",
+      "CHANGELOG.md",
+      "PATRONS.md",
+      "main.js"
+    ],
+    "package_exports": {
+      ".": [
+        {
+          "types": "./tools/terser.d.ts",
+          "import": "./main.js",
+          "require": "./dist/bundle.min.js"
+        },
+        "./dist/bundle.min.js"
+      ],
+      "./package": "./package.json",
+      "./package.json": "./package.json",
+      "./bin/terser": "./bin/terser"
+    },
+    "declaration_entry": "tools/terser.d.ts",
+    "supported_C_Cpp_dialects": [],
+    "legal_include_contexts": [],
+    "evidence": "Complete pinned tar archive scan plus package export/files and TypeScript declaration inventory",
+    "matrix_applicability": "not-applicable-to-this-pinned-JS-feature",
+    "independent_review": {
+      "reviewer": "Validation2",
+      "conversation": "c04e9c07-100d-43af-8f55-978b00001e1d",
+      "scope": "Pinned 317f449 archive has zero header/native files; package exports JS/TS, no gypfile",
+      "not_waived": [
+        "full public surface authority",
+        "native-addon applicability for other feature sets"
+      ]
+    }
+  },
+  "internal_surface_review": {
+    "parse/TreeWalker": "Existing differential imports internal paths. No main/package re-export found; retained original cases, public status unresolved, not blanket excluded.",
+    "AST_inputs": "Only documented parser-produced SpiderMonkey forms; malformed private ASTs not generated"
+  },
+  "qualification": "incomplete; full CLI/export/corrected-extractor and deep campaign evidence unresolved"
+}

@@ -1,0 +1,29 @@
+{
+  "factory_source_sha256": "027fa8c51eb536460c4e9039de29e81efa2f795674f01ed9df6323a8f57dbf27",
+  "fresh_workers": 6,
+  "frozen_interning_must_not_flag": true,
+  "lifecycle_available_per_call": {
+    "frozen-interned": true,
+    "pristine": true,
+    "shared-mutable": true
+  },
+  "lifecycle_source_sha256": "aabe9083e149e45bdab6ad51e616808d1e199ed50df4178badc1686157f2bc45",
+  "memory_cap_enforced": false,
+  "native_fault_source_sha256": "937464eaddc4ba06348e1638fc18e5c43cb6c0a46d10e5eb92b9ca5a42baa0cd",
+  "native_proc_source_sha256": "1d23d6d3d789d0762475ed386f935f6e3b1fbf95f9d5ae04996dafe9e48fd8da",
+  "order": [
+    "A",
+    "B",
+    "A"
+  ],
+  "public_call_records": 1026,
+  "python_runtime": "3.14.4 local reference; task owners replay in pinned images",
+  "qualification_claimed": false,
+  "repetitions": 3,
+  "requests_per_worker": 2,
+  "schema": "optimbench-api-state-reference-v1",
+  "scope": "local fresh-process control validation, not pinned-container campaign",
+  "shared_mutable_detected": true,
+  "validation_sha256": "2cd0368701f86a91d82a7732ffe5fbc821cefb58f87489b7c9a0b317bd5e8008",
+  "worker_source_sha256": "31e885351ee4e27dec79a95d73bf74423837ecdf3094e22292e50a034cbb3afc"
+}

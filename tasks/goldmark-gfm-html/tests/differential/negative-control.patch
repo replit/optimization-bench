@@ -1,0 +1,21 @@
+diff --git a/renderer/html/html.go b/renderer/html/html.go
+index 1883dea..8732e33 100644
+--- a/renderer/html/html.go
++++ b/renderer/html/html.go
+@@ -361,14 +361,14 @@ func (e *commonMark) renderHeading(
+ 	n := node.(*ast.Heading)
+ 	if entering {
+ 		_, _ = w.WriteString("<h")
+-		_ = w.WriteByte("0123456"[n.Level])
++_ = w.WriteByte("0123456"[n.Level%6+1])
+ 		if n.Attributes() != nil {
+ 			RenderAttributes(w, source, node, HeadingAttributeFilter, rc)
+ 		}
+ 		_ = w.WriteByte('>')
+ 	} else {
+ 		_, _ = w.WriteString("</h")
+-		_ = w.WriteByte("0123456"[n.Level])
++_ = w.WriteByte("0123456"[n.Level%6+1])
+ 		_, _ = w.WriteString(">\n")
+ 	}
+ 	return ast.WalkContinue, nil

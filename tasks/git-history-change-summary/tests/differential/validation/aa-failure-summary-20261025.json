@@ -1,0 +1,62 @@
+{
+  "actual_session_end": "2026-10-25T21:21:31.095537+00:00",
+  "current_task_changed_during_session": false,
+  "host_clear_released": true,
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "next_action": "Await coordinator ruling; no new timed work authorized.",
+  "noise": {
+    "frequency_after": {
+      "0": null,
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null
+    },
+    "frequency_before": {
+      "0": null,
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null
+    },
+    "frequency_drop_fraction": null,
+    "missing_cpu_counters": false,
+    "noisy": false,
+    "sibling_busy_fraction": 0,
+    "steal_fraction": 0.0013975462550707431,
+    "throttled_fraction": 0.0
+  },
+  "padding_resizing_trimming_or_reruns": false,
+  "recorded_at": "2026-10-25T21:22:45.138844+00:00",
+  "status": "measurability-failed",
+  "task_commit": "1eee415ff0b37b2704eeaf0ba78ae80fa30012b1",
+  "unit_results": {
+    "patch-histogram": {
+      "status": "not-run-after-failed-first-family"
+    },
+    "patch-myers": {
+      "all_full_outputs_equal": true,
+      "baseline_median_seconds": 3.905734888,
+      "ci95": [
+        0.8898314840245414,
+        1.1069810900559587
+      ],
+      "full_ci_width_percentage_points": 21.71496060314173,
+      "minimum_arm_seconds": 3.412009506,
+      "pairs": 30,
+      "qualification": false,
+      "ratio": 0.9919414627275137,
+      "rebuilt_median_seconds": 4.011859136
+    },
+    "shortstat-myers": {
+      "status": "not-run-after-failed-first-family"
+    }
+  },
+  "wall_seconds": 800.8054836510019
+}

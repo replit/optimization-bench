@@ -1,0 +1,493 @@
+{
+  "build_bindings_verified_at_closeout": {
+    "baseline": {
+      "build_sha256": "d62987fbae235efcc3b7b40fa2abd069eeb815a1bc9e2afe6971a50ff921882a",
+      "cpuset": "0-7",
+      "source_sha256": "4ecda01aa4a6c4c707aca4b54b4c8beb88d2058a9e9b63ed94f93092c08cf238"
+    },
+    "missing-output": {
+      "build_sha256": "6afd749f79d5fb5588b87b029b2a522f65badf3e4e420ff9a04fb91544872c93",
+      "cpuset": "0-7",
+      "source_sha256": "319eef4fdaa08a8a41195592189cf711a02acc62edec2bbbb66e324d3459bf6e"
+    },
+    "skipped-work": {
+      "build_sha256": "cebd1b4169e26af984482626b296e3e061d6adafa89a0bf8ff57cada94576291",
+      "cpuset": "0-7",
+      "source_sha256": "b2769e9d46572ce8bd015c98ebd0000add462177a97d2dae672f97cf673434b3"
+    },
+    "slow-correct": {
+      "build_sha256": "1989ed67ff365ecec48867f6cd720bdb6b35889127c2b5cca2ff772921c4b16c",
+      "cpuset": "0-7",
+      "source_sha256": "552d4f141e88ad4a0b5ad3cd3403038310fe60838706946307cf8051bdb4d719"
+    },
+    "wrong-output": {
+      "build_sha256": "30f1fb15b8699ee1ff5de512961528a337a7ee78b51e12f2c34103c88da1a5ea",
+      "cpuset": "0-7",
+      "source_sha256": "c51835a9170c9f0d686ac5e7d84f1cad40993c00c6f878646ca8fedb0044e364"
+    }
+  },
+  "delay_window_proof": {
+    "observations": [
+      {
+        "baseline_seconds": 0.03364875,
+        "complete_output_equal": true,
+        "family": "batch-upsert",
+        "slowed_seconds": 5.045478235
+      },
+      {
+        "baseline_seconds": 0.038999931,
+        "complete_output_equal": true,
+        "family": "mirror-vacuum",
+        "slowed_seconds": 5.073826637
+      }
+    ],
+    "passed": true,
+    "scope": "synthetic test fixture only, not benchmark eligibility or scoring"
+  },
+  "earlier_eligibility_cpu_percent": {
+    "batch-upsert": {
+      "heldout": {
+        "primary": 100,
+        "strict_all_cpu": 45.019027
+      },
+      "public": {
+        "primary": 100,
+        "strict_all_cpu": 48.745295
+      }
+    },
+    "mirror-vacuum": {
+      "heldout": {
+        "primary": 100,
+        "strict_all_cpu": 7.428484
+      },
+      "public": {
+        "primary": 100,
+        "strict_all_cpu": 5.515203
+      }
+    },
+    "scope": "Earlier profiles, not packaged executions or timing-stability evidence"
+  },
+  "failed_comparison_history": {
+    "diagnostic_upsert_seconds": {
+      "baseline": 11.439059829,
+      "slowed": 13.265240036
+    },
+    "first_attempt": "A +3s public UPSERT cutoff failed. Original times were not retained.",
+    "resolution": "No further real-input relative timing gate. Verify the injected delay on small test fixtures and complete real-input correctness independently.",
+    "second_attempt": "A positive real-input VACUUM slowdown comparison failed."
+  },
+  "final_package_build": {
+    "canonical_rebuild": {
+      "build_sha256": "504a5405d373eab8b89edfbd1af3fb55eb4f10358e5d6bb2e1b71f3ec47a2698",
+      "cpuset": "0-7",
+      "source_sha256": "4ecda01aa4a6c4c707aca4b54b4c8beb88d2058a9e9b63ed94f93092c08cf238"
+    },
+    "image": "sha256:2bcc51be910a22fb6e56d0e8a5bc7576002a01d1418e09d75d6239cd574f56a3",
+    "protected_code_matches": true,
+    "public_image_build_checks": "All four complete outputs passed",
+    "scope": "Packaging and clean-build checks only. Native controls above used the separately recorded development image. No new CPU profile or A/A result."
+  },
+  "image": "sha256:0f3abff033da82808743a6bce3314e9013b0732c42f3c01e9c01844a05e02bdc",
+  "independent_matrix_validation": {
+    "passed": true,
+    "unique_observations": 24
+  },
+  "observations": [
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "country-filtered-facets",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 35.443737841,
+      "split": "public",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "ranked-documents",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 1.641621541,
+      "split": "public",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 7.822139943,
+      "split": "public",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": false,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 7.645896646,
+      "split": "public",
+      "variant": "wrong-output"
+    },
+    {
+      "collector_rejection": "Native workload failed",
+      "complete_output_equal": false,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 2,
+          "leftovers": 0,
+          "protocol": "missing-result-stop"
+        }
+      ],
+      "seconds": 0.029534187,
+      "split": "public",
+      "variant": "skipped-work"
+    },
+    {
+      "collector_rejection": "Missing complete alternate output",
+      "complete_output_equal": false,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 8.520701614,
+      "split": "public",
+      "variant": "missing-output"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 12.930482648,
+      "split": "public",
+      "variant": "slow-correct"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 9.224476605,
+      "split": "public",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": "Fixed database settings differ",
+      "complete_output_equal": false,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 4.40886399,
+      "split": "public",
+      "variant": "wrong-output"
+    },
+    {
+      "collector_rejection": "VACUUM did not compact the retained database",
+      "complete_output_equal": false,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 3.184e-05,
+      "split": "public",
+      "variant": "skipped-work"
+    },
+    {
+      "collector_rejection": "Missing complete alternate output",
+      "complete_output_equal": false,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 3.822642227,
+      "split": "public",
+      "variant": "missing-output"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 8.88962589,
+      "split": "public",
+      "variant": "slow-correct"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "country-filtered-facets",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 3.359105275,
+      "split": "heldout",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "ranked-documents",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 2.217127021,
+      "split": "heldout",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 16.016596314,
+      "split": "heldout",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": false,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 10.470382466,
+      "split": "heldout",
+      "variant": "wrong-output"
+    },
+    {
+      "collector_rejection": "Native workload failed",
+      "complete_output_equal": false,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 2,
+          "leftovers": 0,
+          "protocol": "missing-result-stop"
+        }
+      ],
+      "seconds": 0.044902108,
+      "split": "heldout",
+      "variant": "skipped-work"
+    },
+    {
+      "collector_rejection": "Missing complete alternate output",
+      "complete_output_equal": false,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 10.175099452,
+      "split": "heldout",
+      "variant": "missing-output"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "batch-upsert",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 17.92318825,
+      "split": "heldout",
+      "variant": "slow-correct"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 14.401203382,
+      "split": "heldout",
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": "Fixed database settings differ",
+      "complete_output_equal": false,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 7.535095022,
+      "split": "heldout",
+      "variant": "wrong-output"
+    },
+    {
+      "collector_rejection": "VACUUM did not compact the retained database",
+      "complete_output_equal": false,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 3.5356e-05,
+      "split": "heldout",
+      "variant": "skipped-work"
+    },
+    {
+      "collector_rejection": "Missing complete alternate output",
+      "complete_output_equal": false,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 7.802153492,
+      "split": "heldout",
+      "variant": "missing-output"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "family": "mirror-vacuum",
+      "protocols": [
+        {
+          "exit_code": 0,
+          "leftovers": 0,
+          "protocol": "complete"
+        }
+      ],
+      "seconds": 13.804989593,
+      "split": "heldout",
+      "variant": "slow-correct"
+    }
+  ],
+  "passed": true,
+  "protected_code_sha256": {
+    "environment/workload/build.sh": "014e7a708778d722dce92410a94c63364b4dbbcf333a07f75fc96d06222fc6c9",
+    "environment/workload/driver/bulk.c": "4512f741c944fe29b2ffec3a66bcad3aaeba8dacb88ba58dfde2e4693723f028",
+    "environment/workload/driver/sqlite_mirror.py": "cb3b1829700dd597b86944298a41b9ffb99af635df3068830ef3c6404146a398",
+    "environment/workload/task.py": "0bcf005ee7470d9490bb7f56e69f4e73a1f46a4de281f8a8946138e00becce47"
+  },
+  "qualification": false,
+  "scope": "packaged workload development checks",
+  "source_admission": {
+    "missing-output": {
+      "allowed": true,
+      "changed_files": [
+        "src/main.c"
+      ]
+    },
+    "skipped-work": {
+      "allowed": true,
+      "changed_files": [
+        "src/vdbeapi.c"
+      ]
+    },
+    "slow-correct": {
+      "allowed": true,
+      "changed_files": [
+        "src/vdbeapi.c"
+      ]
+    },
+    "wrong-output": {
+      "allowed": true,
+      "changed_files": [
+        "src/vdbeapi.c"
+      ]
+    }
+  },
+  "timing_warning": "Single-run timing comparisons are unreliable on this host. Public VACUUM baseline was 9.224476605s while the correct build with a verified 5s delay was 8.889625890s. Full output correctness passed. GCP A/A remains pending."
+}

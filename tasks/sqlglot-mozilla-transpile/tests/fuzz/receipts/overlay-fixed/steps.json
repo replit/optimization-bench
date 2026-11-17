@@ -1,0 +1,208 @@
+[
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "-c",
+      "import os,json,sys,importlib.metadata as m;assert os.environ['PIP_NO_INDEX']=='1';print(json.dumps({'python':sys.version,'PIP_NO_INDEX':'1','tools':{k:m.version(k) for k in ('atheris','hypothesis','coverage')}}))"
+    ],
+    "env": {
+      "PIP_NO_INDEX": "1"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "",
+    "stdout_utf8": "{\"python\": \"3.14.6 (main, Aug  5 2026, 01:07:16) [GCC 14.2.0]\", \"PIP_NO_INDEX\": \"1\", \"tools\": {\"atheris\": \"3.1.0\", \"hypothesis\": \"6.170.12\", \"coverage\": \"7.17.0\"}}\n",
+    "telemetry": {
+      "cpu.stat": "usage_usec 290072\nuser_usec 231189\nsystem_usec 58883\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "41160704\n",
+      "operation_cpu_time_usec": 144057
+    }
+  },
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "/verifier-fuzz/property_generate.py",
+      "--seed",
+      "1729",
+      "--examples",
+      "30",
+      "--output",
+      "/scratch/property"
+    ],
+    "env": {
+      "PIP_NO_INDEX": "1"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "",
+    "stdout_utf8": "{\"generated\": 30, \"unique\": 29, \"seed\": 1729}\n",
+    "telemetry": {
+      "cpu.stat": "usage_usec 674134\nuser_usec 574698\nsystem_usec 99435\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "49860608\n",
+      "operation_cpu_time_usec": 383661
+    }
+  },
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "-m",
+      "coverage",
+      "run",
+      "--branch",
+      "--parallel-mode",
+      "/verifier-fuzz/driver.py",
+      "--runtime",
+      "/app/baseline-build/runtime",
+      "--case",
+      "/verifier-fuzz/sample-case.json",
+      "--build-sha256",
+      "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+      "--output",
+      "/scratch/observation.json"
+    ],
+    "env": {
+      "COVERAGE_FILE": "/scratch/.coverage",
+      "PIP_NO_INDEX": "1"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "",
+    "stdout_utf8": "",
+    "telemetry": {
+      "cpu.stat": "usage_usec 1465464\nuser_usec 1314528\nsystem_usec 150935\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "87494656\n",
+      "operation_cpu_time_usec": 791330
+    }
+  },
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "-m",
+      "coverage",
+      "combine",
+      "/scratch"
+    ],
+    "env": {
+      "COVERAGE_FILE": "/scratch/.coverage",
+      "PIP_NO_INDEX": "1"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "Combined 1 file\n",
+    "stdout_utf8": "",
+    "telemetry": {
+      "cpu.stat": "usage_usec 1597287\nuser_usec 1434354\nsystem_usec 162933\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "87494656\n",
+      "operation_cpu_time_usec": 131050
+    }
+  },
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "-m",
+      "coverage",
+      "json",
+      "-o",
+      "/scratch/coverage.json"
+    ],
+    "env": {
+      "COVERAGE_FILE": "/scratch/.coverage",
+      "PIP_NO_INDEX": "1"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "Wrote JSON report to /scratch/coverage.json\n",
+    "stdout_utf8": "",
+    "telemetry": {
+      "cpu.stat": "usage_usec 3573345\nuser_usec 3295740\nsystem_usec 277604\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "124313600\n",
+      "operation_cpu_time_usec": 1976058
+    }
+  },
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "-c",
+      "from pathlib import Path;p=Path('/scratch/atheris-seeds');p.mkdir();(p/'public-sql').write_bytes(bytes([0,0,2,0])+b'SELECT 1 AS a')"
+    ],
+    "env": {
+      "PIP_NO_INDEX": "1"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "",
+    "stdout_utf8": "",
+    "telemetry": {
+      "cpu.stat": "usage_usec 3691489\nuser_usec 3385649\nsystem_usec 305840\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "124313600\n",
+      "operation_cpu_time_usec": 118144
+    }
+  },
+  {
+    "argv": [
+      "/opt/fuzz-python/bin/python",
+      "/verifier-fuzz/coverage_guide.py",
+      "/scratch/atheris-seeds",
+      "-seed=1729",
+      "-runs=30",
+      "-max_len=256"
+    ],
+    "env": {
+      "PIP_NO_INDEX": "1",
+      "SQLGLOT_FUZZ_BUILD_SHA256": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+      "SQLGLOT_FUZZ_CORPUS_OUT": "/scratch/atheris-discovery",
+      "SQLGLOT_FUZZ_RUNTIME": "/app/baseline-build/runtime"
+    },
+    "exit_code": 0,
+    "leftovers": [],
+    "stderr_utf8": "INFO: Instrumenting sqlglot\nINFO: Instrumenting sqlglot.expressions\nINFO: Instrumenting sqlglot.expressions.core\nINFO: Instrumenting numbers\nINFO: Instrumenting decimal\nINFO: Instrumenting sqlglot._typing\nINFO: Instrumenting sqlglot.errors\nINFO: Instrumenting sqlglot.helper\nINFO: Instrumenting difflib\nINFO: Instrumenting heapq\nINFO: Instrumenting sqlglot.tokenizer_core\nINFO: Instrumenting sqlglot.expressions.datatypes\nINFO: Instrumenting sqlglot.expressions.constraints\nINFO: Instrumenting sqlglot.expressions.properties\nINFO: Instrumenting sqlglot.expressions.query\nINFO: Instrumenting sqlglot.expressions.ddl\nINFO: Instrumenting sqlglot.expressions.dml\nINFO: Instrumenting sqlglot.expressions.math\nINFO: Instrumenting sqlglot.expressions.string\nINFO: Instrumenting sqlglot.expressions.temporal\nINFO: Instrumenting sqlglot.expressions.aggregate\nINFO: Instrumenting sqlglot.expressions.array\nINFO: Instrumenting sqlglot.expressions.json\nINFO: Instrumenting sqlglot.expressions.functions\nINFO: Instrumenting sqlglot.expressions.builders\nINFO: Instrumenting sqlglot.dialects\nINFO: Instrumenting sqlglot.dialects.dialect\nINFO: Instrumenting sqlglot.generator\nINFO: Instrumenting sqlglot.jsonpath\nINFO: Instrumenting sqlglot.tokens\nINFO: Instrumenting sqlglot.trie\nINFO: Instrumenting sqlglot.time\nINFO: Instrumenting sqlglot.optimizer\nINFO: Instrumenting sqlglot.optimizer.scope\nINFO: Instrumenting sqlglot.parser\nINFO: Instrumenting sqlglot.parsers\nINFO: Instrumenting sqlglot.parsers.base\nINFO: Instrumenting sqlglot.typing\nINFO: Instrumenting importlib.metadata\nINFO: Instrumenting email\nINFO: Instrumenting zipfile\nINFO: Instrumenting shutil\nINFO: Instrumenting bz2\nINFO: Instrumenting compression\nINFO: Instrumenting compression._common\nINFO: Instrumenting compression._common._streams\nINFO: Instrumenting lzma\nINFO: Instrumenting compression.zstd\nINFO: Instrumenting compression.zstd._zstdfile\nINFO: Instrumenting zipfile._path\nINFO: Instrumenting zipfile._path.glob\nINFO: Instrumenting importlib.metadata._meta\nINFO: Instrumenting importlib.metadata._collections\nINFO: Instrumenting importlib.metadata._functools\nINFO: Instrumenting importlib.metadata._itertools\nINFO: Instrumenting sqlglot.diff\nINFO: Instrumenting sqlglot.schema\nINFO: Instrumenting sqlglot._version\nINFO: Instrumenting driver\nINFO: Instrumenting argparse\nINFO: Instrumenting gettext\nINFO: Using built-in libfuzzer\nWARNING: Failed to find function \"__sanitizer_acquire_crash_state\".\nWARNING: Failed to find function \"__sanitizer_print_stack_trace\".\nWARNING: Failed to find function \"__sanitizer_set_death_callback\".\nINFO: Running with entropic power schedule (0xFF, 100).\nINFO: Seed: 1729\nINFO:        1 files found in /scratch/atheris-seeds\nINFO: seed corpus: files: 1 min: 17b max: 17b total: 17b rss: 90Mb\n#2\tINITED cov: 662 ft: 662 corp: 1/17b exec/s: 0 rss: 90Mb\n#3\tNEW    cov: 726 ft: 861 corp: 2/34b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ChangeBinInt-\n#4\tNEW    cov: 732 ft: 930 corp: 3/51b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ChangeBinInt-\n#5\tNEW    cov: 732 ft: 934 corp: 4/64b lim: 17 exec/s: 0 rss: 90Mb L: 13/17 MS: 1 EraseBytes-\n#6\tNEW    cov: 741 ft: 1029 corp: 5/77b lim: 17 exec/s: 0 rss: 90Mb L: 13/17 MS: 1 ShuffleBytes-\n#8\tNEW    cov: 742 ft: 1044 corp: 6/94b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 2 ChangeBit-ChangeByte-\n#9\tNEW    cov: 742 ft: 1045 corp: 7/111b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 InsertRepeatedBytes-\n#10\tNEW    cov: 742 ft: 1047 corp: 8/128b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ShuffleBytes-\n#13\tNEW    cov: 742 ft: 1048 corp: 9/145b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 3 ChangeByte-ChangeByte-CopyPart-\n#14\tNEW    cov: 742 ft: 1079 corp: 10/162b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ShuffleBytes-\n#15\tNEW    cov: 801 ft: 1151 corp: 11/179b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ChangeBit-\n#16\tNEW    cov: 810 ft: 1161 corp: 12/196b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ChangeByte-\n#17\tNEW    cov: 810 ft: 1181 corp: 13/211b lim: 17 exec/s: 0 rss: 90Mb L: 15/17 MS: 1 EraseBytes-\n#18\tNEW    cov: 810 ft: 1187 corp: 14/228b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 CMP- DE: \"\\001\\000\\000\\000\"-\n#19\tNEW    cov: 810 ft: 1196 corp: 15/245b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ShuffleBytes-\n#20\tNEW    cov: 810 ft: 1198 corp: 16/262b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 1 ChangeByte-\n#23\tNEW    cov: 815 ft: 1224 corp: 17/279b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 3 CopyPart-ChangeBit-ChangeBit-\n#25\tNEW    cov: 815 ft: 1232 corp: 18/296b lim: 17 exec/s: 0 rss: 90Mb L: 17/17 MS: 2 ShuffleBytes-ShuffleBytes-\n#27\tREDUCE cov: 815 ft: 1232 corp: 18/293b lim: 17 exec/s: 0 rss: 90Mb L: 10/17 MS: 2 ChangeByte-EraseBytes-\n#30\tDONE   cov: 815 ft: 1232 corp: 18/293b lim: 17 exec/s: 0 rss: 90Mb\n###### Recommended dictionary. ######\n\"\\001\\000\\000\\000\" # Uses: 1\n###### End of recommended dictionary. ######\nDone 30 runs in 0 second(s)\n",
+    "stdout_utf8": "",
+    "telemetry": {
+      "cpu.stat": "usage_usec 9218717\nuser_usec 8843335\nsystem_usec 375381\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "execution_protocol": "process",
+      "exit_observation": {
+        "fallback_reason": null,
+        "method": "pidfd-poll"
+      },
+      "leftover_count": 0,
+      "memory.peak": "124313600\n",
+      "operation_cpu_time_usec": 5527228
+    }
+  }
+]

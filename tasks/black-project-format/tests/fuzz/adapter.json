@@ -1,0 +1,42 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "black-project-format",
+  "language": "mixed",
+  "contract_sources": [
+    "instruction.md:Contract",
+    "psf/black@87928e6d6761a4a6d22250e1fee5601b3998086e:docs/usage_and_configuration/the_basics.md",
+    "psf/black@87928e6d6761a4a6d22250e1fee5601b3998086e:docs/usage_and_configuration/black_as_a_server.md",
+    "psf/black@87928e6d6761a4a6d22250e1fee5601b3998086e:src/black/__init__.py"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {
+    "profile": "Goldmark, sqlfmt, Black, SQLFluff, SQLGlot, Terser",
+    "grammar_property_seconds": 900,
+    "coverage_guided_seconds": 2700,
+    "cpu_state_seconds": 900,
+    "sanitizer_seconds_per_applicable_build": 1200,
+    "per_case_seconds": 20,
+    "large_case_seconds": 60
+  },
+  "resources": {
+    "peak_memory": {
+      "mode": "report-only",
+      "verdict_impact": false,
+      "metric": "cgroup-v2-memory.peak",
+      "unit": "complete-fresh-case-sequence",
+      "scope": "fresh-worker-complete-unit",
+      "missing_measurement": "report-unavailable"
+    }
+  },
+  "qualification": {
+    "status": "undertested",
+    "reason": "Initial adapter; corrected surface, compiled mutation portfolio and instrumentation qualification are pending."
+  }
+}

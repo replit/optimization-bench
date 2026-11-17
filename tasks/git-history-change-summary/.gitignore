@@ -1,0 +1,10 @@
+# Authenticated build-time or operator-staged public histories.
+environment/workload/inputs/histories/cargo/
+environment/workload/inputs/histories/django/
+environment/workload/inputs/histories/git/
+environment/workload/inputs/histories/haproxy/
+environment/workload/inputs/histories/laravel/
+environment/workload/inputs/histories/libuv/
+environment/workload/inputs/histories/prettier/
+environment/workload/inputs/histories/sphinx/
+environment/workload/inputs/histories/vuejs-core/

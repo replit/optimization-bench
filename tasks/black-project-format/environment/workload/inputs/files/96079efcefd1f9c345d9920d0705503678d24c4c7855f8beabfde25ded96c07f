@@ -1,0 +1,1 @@
+{"args": ["--check", "./lib/", "./test/", "./examples/", "setup.py", "doc/build/conf.py"], "format": "black-case-v1", "id": "sqlalchemy-check", "inventory_sha256": "fdd23c11f675cceb9f36ac380acfa9fb63a99a5eb9fc68b334ad1b35efc3cba5", "project": "sqlalchemy-3c650ced", "timeout": 1200}

@@ -1,0 +1,14 @@
+{
+  "allowed_extensions": [
+    ".c",
+    ".h",
+    ".S",
+    ".s"
+  ],
+  "max_source_bytes": 20000000,
+  "max_source_files": 2000,
+  "protected_paths": [],
+  "source_roots": [
+    "src/liblzma"
+  ]
+}

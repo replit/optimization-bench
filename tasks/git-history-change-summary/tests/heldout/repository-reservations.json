@@ -1,0 +1,19 @@
+{
+  "heldout_commits_or_bodies_created": false,
+  "independent_builder": "Later separate builder only. Must verify repository-level exclusion, audit shared vendored/copied content, choose/pin commits and reproduce the same families. None of those instances are constructed by this author.",
+  "normalization": "Compare canonical hosting owner/repository case-insensitively, strip trailing .git/slash; forks, mirrors, renamed repositories and shared upstream lineage count as the same repository.",
+  "public_repositories": [
+    "https://github.com/git/git",
+    "https://github.com/rust-lang/cargo",
+    "https://github.com/django/django",
+    "https://github.com/prettier/prettier"
+  ],
+  "reserved_repositories": [
+    "https://github.com/neovim/neovim",
+    "https://github.com/rust-lang/mdBook",
+    "https://github.com/pallets/click",
+    "https://github.com/eslint/eslint"
+  ],
+  "schema_version": 1,
+  "status": "reserved-repositories-only-no-instances"
+}

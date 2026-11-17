@@ -1,0 +1,1288 @@
+{
+  "eligibility": "One serial PostgreSQL auto-fix operation on distinct, unchanged SQL files from multiple authentic source projects. Project-relative paths remain under separate origin namespaces. Inputs are selected once, without repetition, generated SQL or padding. Whole project origins separate public and private sets.",
+  "files": [
+    {
+      "bytes": 1692,
+      "git_blob_sha": "4d997d0868f02700dd2a3448966b3091c73aa37f",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "pgmq-extension/sql/pgmq--0.14.3--0.15.0.sql",
+      "path": "origin-1/pgmq-extension/sql/pgmq--0.14.3--0.15.0.sql",
+      "sha256": "7031878a87ca72debaf538152149d2101b2c5f2b077a949d178cb23acd2c848a",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/pgmq-extension/sql/pgmq--0.14.3--0.15.0.sql"
+    },
+    {
+      "bytes": 9786,
+      "git_blob_sha": "bab5981c4ca9ff2b4a97840ce83e1a8bf8fc2d4b",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "pgmq-extension/sql/pgmq--0.24.0--0.25.0.sql",
+      "path": "origin-1/pgmq-extension/sql/pgmq--0.24.0--0.25.0.sql",
+      "sha256": "67362cd81899c9c64b7e712fd473275d1ad6cf0126e2c4bb13e23f63e6abd53c",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/pgmq-extension/sql/pgmq--0.24.0--0.25.0.sql"
+    },
+    {
+      "bytes": 4946,
+      "git_blob_sha": "eb0b8cd279aa2a45a304c51d7baa287c731460a9",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "pgmq-extension/sql/pgmq--0.25.0--0.26.0.sql",
+      "path": "origin-1/pgmq-extension/sql/pgmq--0.25.0--0.26.0.sql",
+      "sha256": "6c0035971f16fa25858c44251d3bf850e745f67fa9adad5399b79606e65e02e1",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/pgmq-extension/sql/pgmq--0.25.0--0.26.0.sql"
+    },
+    {
+      "bytes": 1281,
+      "git_blob_sha": "ef33f9cf128432381f33ec51c0bd79e10f38726c",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "pgmq-extension/sql/pgmq--1.5.0--1.5.1.sql",
+      "path": "origin-1/pgmq-extension/sql/pgmq--1.5.0--1.5.1.sql",
+      "sha256": "28c25b057b60148ecd8a578d5cb764ae3075c48b3df516d98f2afea9ed4cb1af",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/pgmq-extension/sql/pgmq--1.5.0--1.5.1.sql"
+    },
+    {
+      "bytes": 12676,
+      "git_blob_sha": "7cde5f9dd26f1071dd55db052991e64f40ebb126",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "pgmq-extension/sql/pgmq--1.5.2--1.6.0.sql",
+      "path": "origin-1/pgmq-extension/sql/pgmq--1.5.2--1.6.0.sql",
+      "sha256": "da0c8a9a778c92071deecd9dc61b5e10fc2185fc49743948eb145adc71be4757",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/pgmq-extension/sql/pgmq--1.5.2--1.6.0.sql"
+    },
+    {
+      "bytes": 11186,
+      "git_blob_sha": "f60eb5f0a2872c9e4571cb7b45f06b503b211218",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "pgmq-extension/test/sql/security_search_path.sql",
+      "path": "origin-1/pgmq-extension/test/sql/security_search_path.sql",
+      "sha256": "80c5dd628dc7415d6f2a7c37bc5b31812c763284b436bad273cad25f61bfb5f1",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/pgmq-extension/test/sql/security_search_path.sql"
+    },
+    {
+      "bytes": 917,
+      "git_blob_sha": "f47f0cde4a14f12b4b7d6282dd1ea82b21b21b16",
+      "mode": "100644",
+      "origin": "origin-1",
+      "original_path": "LICENSE",
+      "path": "origin-1/LICENSE",
+      "sha256": "a3ce61e0031bdcad1024b1bf50ded2359602160f00e0cac8e509752273df6179",
+      "url": "https://raw.githubusercontent.com/pgmq/pgmq/8efb078dbe7afe16c83be72e9fffefbb03ebd9e9/LICENSE"
+    },
+    {
+      "bytes": 1184,
+      "git_blob_sha": "c614e9d11e6a7b98ebfaa2c7ceb541b7b792f428",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "test/sql/bigint_is_string.sql",
+      "path": "origin-2/test/sql/bigint_is_string.sql",
+      "sha256": "4805c8d34e82a18c99d908a858328a29502c709f423402b254e6ffe207e53db6",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/test/sql/bigint_is_string.sql"
+    },
+    {
+      "bytes": 4634,
+      "git_blob_sha": "30cfd2b7dcf4082e7f67d94c5d28d040bd7c03b2",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "test/sql/function_calls_default_args.sql",
+      "path": "origin-2/test/sql/function_calls_default_args.sql",
+      "sha256": "a18e53bba66571cd410a61de7e273cf6dcdf8ac1b50cdebf4a37a66b7cd2a3e7",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/test/sql/function_calls_default_args.sql"
+    },
+    {
+      "bytes": 1791,
+      "git_blob_sha": "94be7f6e8df70100e162421c57c4e65bf0edd39f",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "test/sql/function_return_row_is_selectable.sql",
+      "path": "origin-2/test/sql/function_return_row_is_selectable.sql",
+      "sha256": "cbc35d41e059288cce5f52f48efcc2540b0a4d405ef17f4e465c12e8ca4ce6be",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/test/sql/function_return_row_is_selectable.sql"
+    },
+    {
+      "bytes": 1585,
+      "git_blob_sha": "3689ba55672330d4fcf580eb3c79f66498822bd4",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "test/sql/inflection_fields.sql",
+      "path": "origin-2/test/sql/inflection_fields.sql",
+      "sha256": "a3e81ec55265b8a7947e096b5d44ada38e271387907e91427ddd5d8fa2b76aec",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/test/sql/inflection_fields.sql"
+    },
+    {
+      "bytes": 6096,
+      "git_blob_sha": "127c52679a44362e7fa8a67f23e37c4e1c2eab2d",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "test/sql/page_info.sql",
+      "path": "origin-2/test/sql/page_info.sql",
+      "sha256": "391e09bd9d2775875494b559304ebca2dccc9c406d4f82ff35f139f2e30c3b3c",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/test/sql/page_info.sql"
+    },
+    {
+      "bytes": 1583,
+      "git_blob_sha": "0c0b284d9cf527165376419e55d029177a37626e",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "test/sql/type_bigfloat.sql",
+      "path": "origin-2/test/sql/type_bigfloat.sql",
+      "sha256": "8e3cec58e544820a5dbcbfd7e42f6fdd8372ba170926ca111a9092487ae0ec90",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/test/sql/type_bigfloat.sql"
+    },
+    {
+      "bytes": 10753,
+      "git_blob_sha": "8c33ac148d15b3fe25a250ad517252b2c184e445",
+      "mode": "100644",
+      "origin": "origin-2",
+      "original_path": "LICENSE",
+      "path": "origin-2/LICENSE",
+      "sha256": "9b78bbb5a12f0e1928691f09604c788f8b8b4db59cdb82f9924679cf9beae5d2",
+      "url": "https://raw.githubusercontent.com/supabase/pg_graphql/3327437620a1a620f411d7f9290b020eefee1508/LICENSE"
+    }
+  ],
+  "notices": [
+    "origin-1/LICENSE",
+    "origin-2/LICENSE"
+  ],
+  "origins": [
+    {
+      "eligibility": "Authentic regular UTF-8 PostgreSQL SQL files from one independent public application/extension project. Original size 1000 to 16000 bytes, no Jinja, psql client commands or binary content. Four to six distinct files, each processed once. Known exact byte collisions with existing public or private commitments excluded. No source edits, generated SQL or repeated files. Reference freezing additionally requires an actual target rewrite.",
+      "exclusions": [
+        {
+          "path": "pgmq-extension/sql/pgmq--0.10.2--0.11.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.11.1--0.11.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.11.2--0.12.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.12.0--0.12.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.12.1--0.13.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.13.0--0.13.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.13.1--0.14.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.14.0--0.14.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.14.1--0.14.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.14.2--0.14.3.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.15.0--0.15.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.15.1--0.16.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.16.0--0.17.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.17.0--0.18.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.18.0--0.19.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.19.0--0.20.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.20.0--0.21.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.21.0--0.22.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.22.0--0.23.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.27.0--0.28.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.28.0--0.29.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.29.0--0.30.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.30.0--0.31.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.31.0--0.31.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.31.1--0.32.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.32.0--0.32.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.32.1--0.32.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.32.2--0.32.3.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.33.0--0.33.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.33.2--0.33.3.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.33.3--1.0.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.7.3--0.7.4.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.7.4--0.7.5.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.7.5--0.8.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.8.0--0.8.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.8.1--0.9.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.9.0--0.10.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.0.0--1.1.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.10.1--1.11.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.11.1--1.12.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.13.0--1.13.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.2.1--1.3.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.3.0--1.3.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.3.1--1.3.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.3.2--1.3.3.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.4.0--1.4.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.4.4--1.4.5.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.4.5--1.5.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.5.1--1.5.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.6.0--1.6.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.7.0--1.7.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.9.0--1.10.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/manual/sql/security_direct_install_search_path.sql",
+          "reason": "duplicate, binary, templated or psql-client source",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/manual/sql/security_upgrade_custom_default.sql",
+          "reason": "duplicate, binary, templated or psql-client source",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/manual/sql/security_upgrade_split_owner.sql",
+          "reason": "duplicate, binary, templated or psql-client source",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/sql/base.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/sql/topic_tests.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/migrations/20230809222001_dev.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/different-name-pattern.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/pgmq--0.9.0--0.10.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/pgmq--1.10.1--1.11.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/pgmq--1.11.0--1.11.1.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/pgmq--1.11.1--1.11.2.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/pgmq--1.11.2--2.0.0.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-rs/src/install/embedded/test_migrations/pgmq.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "examples/grouped_rr_example.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "examples/grouped_sqs_style_comparison.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "examples/topics.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.23.0--0.24.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.26.0--0.27.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.32.3--0.33.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--0.33.1--0.33.2.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.1.0--1.1.1.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.1.1--1.2.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.10.0--1.10.1.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.11.0--1.11.1.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.12.0--1.13.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.2.0--1.2.1.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.3.3--1.4.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.4.1--1.4.2.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.4.2--1.4.3.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.4.3--1.4.4.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.6.1--1.7.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.7.1--1.8.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.8.0--1.8.1.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/sql/pgmq--1.8.1--1.9.0.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/manual/sql/security_upgrade_search_path.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/manual/sql/security_upgrade_stored_defaults.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/sql/fifo_per_group_tests.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/sql/fifo_rr_tests.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/sql/fifo_tests.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        },
+        {
+          "path": "pgmq-extension/test/sql/security_install_search_path.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "pgmq/pgmq"
+        }
+      ],
+      "license": "PostgreSQL",
+      "prefix": "origin-1",
+      "repository": "pgmq/pgmq",
+      "revision": "8efb078dbe7afe16c83be72e9fffefbb03ebd9e9"
+    },
+    {
+      "eligibility": "Authentic regular UTF-8 PostgreSQL SQL files from one independent public application/extension project. Original size 1000 to 16000 bytes, no Jinja, psql client commands or binary content. Four to six distinct files, each processed once. Known exact byte collisions with existing public or private commitments excluded. No source edits, generated SQL or repeated files. Reference freezing additionally requires an actual target rewrite.",
+      "exclusions": [
+        {
+          "reason": "license outside declared allowlist",
+          "repository": "pgvector/pgvector"
+        },
+        {
+          "path": "sql/directives.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "sql/load_sql_config.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "sql/load_sql_context.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "sql/raise_exception.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "sql/resolve.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "sql/schema_version.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/fixtures.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/aggregate_directive.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/array_args_and_return_types.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/comment_directive.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/comment_directive_description.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/empty_mutations.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/extend_type_with_function.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/extend_type_with_generated_column.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/fragment_on_mutation.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/fragment_on_query.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/function_calls.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_163.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_170.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_300.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_312.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_334_ambiguous_function.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_339_function_return_json.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_373.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_444.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/max_page_size.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/multiple_queries.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/null_argument.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/omit_weird_names.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/override_enum_name.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/override_field_name.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/override_func_field_name.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/override_relationship_field_name.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/override_type_name.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/primary_key_is_required.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/primary_key_queries.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve___type.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_connection_named.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_connection_to_node.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_connection_edge_no_field.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_connection_edge_node_no_field.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_connection_no_field.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_from_parser.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_mutation_no_field.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_node_no_field.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_error_query_no_field.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_fragment.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_anon_and_named_operations.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_multiple_anon_operations.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_mutation_transpilation.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_operation_name_not_found.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_operation_names_not_unique.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_query_transpilation.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_subscription.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_query__type.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/total_count.sql",
+          "reason": "outside representative original-file size range",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "dockerfiles/db/setup.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "docs/assets/demo_schema.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/aggregate.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/aliases.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/allow_camel_names.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/builtin_directives.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/compound_filters.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/depth_limit.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/enum_mappings.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/extend_type_with_function_relation.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/filter_by_node_id.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/function_calls_unsupported.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/function_return_view_has_pkey.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/inflection_function.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/inflection_relationships.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/inflection_types.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/introspection.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_225.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_237_field_merging.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_237_field_merging_mismatched.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_306.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_337.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_339_function_return_table.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_353_too_many_fields.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_370_citext_as_string.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_377_enum_search_path.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_409_fkey_rls_nullability.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_463.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_511.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_533.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_542_partial_unique.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_551_too_many_fields.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_557_1_to_1_nullability.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_581_missing_desc_on_schema.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/issue_fragment_spread_cycles.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/json_is_stringified.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/max_rows_directive.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/multi_column_primary_key.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/multiple_mutations.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/mutation_delete.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/mutation_delete_variable.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/mutation_insert.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/mutation_update.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/omit_exotic_types.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/operation_name.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/permissions_connection_column.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/permissions_functions.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/permissions_node_column.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/permissions_table_level.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/permissions_types.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/relationship_one_to_one.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve___schema.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve___typename.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_array_type.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_connection_filter.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_connection_order_by.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_connection_pagination_args.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_connection_to_conn.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_graphiql_schema.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/resolve_one.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/roundtrip_types.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/row_level_security.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/sqli_connection.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/string_filters.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/test_error_invalid_offset.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/type_modifier_max_length.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/type_opaque.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/variable_default.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        },
+        {
+          "path": "test/sql/views_integration.sql",
+          "reason": "eligible but not selected for the bounded initial set",
+          "repository": "supabase/pg_graphql"
+        }
+      ],
+      "license": "Apache-2.0",
+      "prefix": "origin-2",
+      "repository": "supabase/pg_graphql",
+      "revision": "3327437620a1a620f411d7f9290b020eefee1508"
+    }
+  ],
+  "reference_provenance": {
+    "build_sha256": "0391998b4f7fde344038571d2c4404b0b51928d732cf9f5abc9c1006922f99a2",
+    "collector_sha256": "18edf602ece11eb0fdf7aaa3da6c6382f14c4f02fcd432b4a364d0a6910b17d9",
+    "image_id": "sha256:65da82326afc79c1da8dc34db6ea6b3735a0e517f3912ec9e3eadaef51d6feb0",
+    "input_inventory_sha256": "ed343fa820623e9549cd6a776982b331119e4d1ac4e8c0ef98681e4a1273f3aa",
+    "pristine_python_sources_match": true,
+    "python_source_files": 268,
+    "reference_sha256": "06c958b8a543711ad5b5c4615490f8fc7637b7c299ed647f8c5a48cafa3e98d3",
+    "upstream_commit": "0348222a3bcdb0226563f7349c5a39beb0641955"
+  },
+  "split_group": "whole project origin",
+  "targets": [
+    "origin-1/pgmq-extension/sql/pgmq--0.14.3--0.15.0.sql",
+    "origin-1/pgmq-extension/sql/pgmq--0.24.0--0.25.0.sql",
+    "origin-1/pgmq-extension/sql/pgmq--0.25.0--0.26.0.sql",
+    "origin-1/pgmq-extension/sql/pgmq--1.5.0--1.5.1.sql",
+    "origin-1/pgmq-extension/sql/pgmq--1.5.2--1.6.0.sql",
+    "origin-1/pgmq-extension/test/sql/security_search_path.sql",
+    "origin-2/test/sql/bigint_is_string.sql",
+    "origin-2/test/sql/function_calls_default_args.sql",
+    "origin-2/test/sql/function_return_row_is_selectable.sql",
+    "origin-2/test/sql/inflection_fields.sql",
+    "origin-2/test/sql/page_info.sql",
+    "origin-2/test/sql/type_bigfloat.sql"
+  ]
+}

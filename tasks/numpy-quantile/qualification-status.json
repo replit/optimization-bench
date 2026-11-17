@@ -1,0 +1,9 @@
+{
+  "task": "numpy-quantile",
+  "payload_status": "ready",
+  "harbor_execution_qualified": false,
+  "scored_qualification": true,
+  "qualification_mode": "provisional-unregistered-host",
+  "qualification_receipt": "tests/receipts/qualification-2026-10-26/summary.json",
+  "claimable": false
+}

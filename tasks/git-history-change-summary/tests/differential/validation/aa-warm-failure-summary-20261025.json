@@ -1,0 +1,224 @@
+{
+  "cold_first_vs_second_ci": [
+    1.2963898847716309,
+    1.3873064301949956
+  ],
+  "executed_protocol_sha256": "aca57e3f7dd8361e212c8315f685d4b518534e211edf49252ca32bdc36aa6a19",
+  "host_clear_released": true,
+  "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+  "interpretation": "Large observed positional difference is absent under revised warm preparation/read-only input-staging protocol. The change was joint; this is not an isolated causal claim about the preread helper. Overall original/rebuilt CI is still too wide for qualification.",
+  "next_action": "Await coordinator ruling and new explicit host-clear; no further timing authorized.",
+  "noise": {
+    "frequency_after": {
+      "0": null,
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null
+    },
+    "frequency_before": {
+      "0": null,
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null
+    },
+    "frequency_drop_fraction": null,
+    "missing_cpu_counters": false,
+    "noisy": false,
+    "sibling_busy_fraction": 0,
+    "steal_fraction": 0.0010797264692944454,
+    "throttled_fraction": 0.0
+  },
+  "padding_trimming_reruns_rounding_to_pass": false,
+  "preparation": {
+    "all31receipts_valid": true,
+    "bytes_per_pair": 561735687,
+    "files": 8,
+    "no_git_execution_binary_preread_or_result_cache": true,
+    "selected_repositories": 4,
+    "timed": false
+  },
+  "recorded_at": "2026-10-25T22:13:31.430239+00:00",
+  "session_end": "2026-10-25T22:10:42.294427+00:00",
+  "session_start": "2026-10-25T21:58:07.317187+00:00",
+  "source_or_protocol_changed_during_session": false,
+  "status": "measurability-failed-strict-width-gate",
+  "task_commit": "308ac7c31a7fc31f4e1bfdc72e2ab1e45c13e35e",
+  "unit_results": {
+    "patch-histogram": {
+      "status": "not-run-after-failed-first-family"
+    },
+    "patch-myers": {
+      "baseline_median_seconds": 3.470275533,
+      "ci95": [
+        0.9927905541586146,
+        1.022896034371164
+      ],
+      "excess_percentage_points": 0.010548021254932927,
+      "first_slower_pairs": 16,
+      "first_vs_second": {
+        "ci95": [
+          0.9849466620740355,
+          1.0155102665428108
+        ],
+        "pairs": [
+          [
+            3.864119619,
+            3.586459024
+          ],
+          [
+            3.35991229,
+            3.775310232
+          ],
+          [
+            3.478579779,
+            3.83910294
+          ],
+          [
+            3.40749736,
+            3.470830357
+          ],
+          [
+            3.516652016,
+            3.32781851
+          ],
+          [
+            3.580253837,
+            3.521958239
+          ],
+          [
+            3.430224078,
+            3.469720709
+          ],
+          [
+            3.481845912,
+            3.390362442
+          ],
+          [
+            3.574928005,
+            3.440369212
+          ],
+          [
+            3.447757732,
+            3.596591682
+          ],
+          [
+            3.375641293,
+            3.351592925
+          ],
+          [
+            3.374320133,
+            3.407618366
+          ],
+          [
+            3.558997778,
+            3.385876876
+          ],
+          [
+            3.427570467,
+            3.420350006
+          ],
+          [
+            3.457514244,
+            3.450130839
+          ],
+          [
+            3.348371631,
+            3.417733565
+          ],
+          [
+            3.475404989,
+            3.506159297
+          ],
+          [
+            3.426292965,
+            3.459283489
+          ],
+          [
+            3.413603297,
+            3.410192825
+          ],
+          [
+            3.634497204,
+            3.511378418
+          ],
+          [
+            3.555949925,
+            3.636865638
+          ],
+          [
+            3.612831202,
+            3.363894389
+          ],
+          [
+            3.518704924,
+            3.460999113
+          ],
+          [
+            3.535226729,
+            3.608021525
+          ],
+          [
+            3.371270624,
+            3.53572163
+          ],
+          [
+            3.581651022,
+            3.378535819
+          ],
+          [
+            3.401740093,
+            3.432949117
+          ],
+          [
+            3.475075526,
+            3.45216286
+          ],
+          [
+            3.482683619,
+            3.407553858
+          ],
+          [
+            3.38121856,
+            3.49015238
+          ]
+        ],
+        "relative_half_width": 0.015274036064818267,
+        "sample_count": 30,
+        "speedup": 1.000508455626035
+      },
+      "full_ci_width_percentage_points": 3.010548021254933,
+      "minimum_arm_seconds": 3.32781851,
+      "order_conditioned_ratios": {
+        "baseline-first": {
+          "maximum": 1.0774191460551872,
+          "median": 1.0165520412350353,
+          "minimum": 0.9060918223255561,
+          "pairs": 15
+        },
+        "rebuilt-first": {
+          "maximum": 1.1236335672321969,
+          "median": 1.0088491292661834,
+          "minimum": 0.9432900632271595,
+          "pairs": 15
+        }
+      },
+      "pairs": 30,
+      "passed": false,
+      "ratio": 1.0077807576155442,
+      "rebuilt_median_seconds": 3.454707164,
+      "width_limit_percentage_points": 3
+    },
+    "shortstat-myers": {
+      "status": "not-run-after-failed-first-family"
+    }
+  },
+  "wall_seconds": 754.9760313609986
+}

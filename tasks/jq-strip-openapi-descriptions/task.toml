@@ -1,0 +1,46 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/jq/src" }]
+
+[task]
+name = "optimbench/jq-strip-openapi-descriptions"
+version = "1.0.0"
+description = "Strip OpenAPI descriptions, stream GeoJSON, group events and emit CSV"
+keywords = ["optimbench", "performance", "c", "json", "fresh-track"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "9008a2517ab2361d286612b4a9164212764f9ddd"
+baseline_git_tree = "23051d36b6275fe949c81dfa45943f50bb43804d"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "jq"
+language = "C"
+run_mode = "in-process-and-cli"
+upstream_repo = "https://github.com/jqlang/jq"
+upstream_commit = "49fbca1242c7f46f00b849de76565764e0254a03"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = true
+verifier_ready = false
+
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:jq-strip-openapi-descriptions-1.0.0@sha256:30e69602453682e8aea371c6f95e3101533be6cb8e79ab0984a461f1eb2c7bcb"
+network_mode = "no-network"
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384

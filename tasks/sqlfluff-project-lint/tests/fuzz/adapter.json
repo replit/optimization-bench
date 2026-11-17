@@ -1,0 +1,36 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "sqlfluff-project-lint",
+  "language": "python",
+  "status": "undertested",
+  "contract_sources": [
+    "tasks/sqlfluff-project-lint/instruction.md",
+    "https://github.com/sqlfluff/sqlfluff/tree/0348222a3bcdb0226563f7349c5a39beb0641955/docs/source/reference",
+    "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/src/sqlfluff/utils/reflow/config.py"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {
+    "profile": "Goldmark, sqlfmt, Black, SQLFluff, SQLGlot, Terser",
+    "grammar_property_seconds": 900,
+    "coverage_guided_seconds": 2700,
+    "state_fault_seconds": 900,
+    "sanitizer_replay_seconds_per_applicable_build": 1200,
+    "normal_case_timeout_seconds": 20,
+    "large_case_class_enabled": false
+  },
+  "resources": {
+    "peak_memory": {"mode": "report-only", "verdict_impact": false}
+  },
+  "limitations": [
+    "Initial 12 operation profiles cover only a bounded subset of the corrected 3897-record inventory, not the complete public surface.",
+    "Fault schedules, explicit public-corpus mutation, Hypothesis/Atheris campaigns, changed coverage, native applicability and mutation qualification remain pending.",
+    "No integration or qualification verdict is inferred from the task-owned unit tests."
+  ]
+}

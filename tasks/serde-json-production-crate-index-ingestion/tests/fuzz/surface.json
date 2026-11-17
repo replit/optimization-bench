@@ -1,0 +1,48 @@
+{
+  "format": "optimbench-fuzz-surface-v1",
+  "task": "serde-json-production-crate-index-ingestion",
+  "status": "incomplete-extraction-not-qualified",
+  "extractor": {
+    "version": null,
+    "report_sha256": null,
+    "scope": "Bounded native probe inventory only; the shared interface gate independently extracts and admits the complete public source surface"
+  },
+  "build": {
+    "upstream_commit": "20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8",
+    "source_archive_sha256": "d638770aea490d6b9b94b67fa14c3533778431a8715792b2fac80e7ca405d721",
+    "toolchain": "rustc 1.93.1",
+    "features": ["pinned workload default dependency resolution"],
+    "feature_coverage_complete": false
+  },
+  "surfaces": [
+    {"id":"serde_json::to_writer","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<W: Write, T: Serialize + ?Sized>(W, &T) -> Result<()>","reexport_chain":["serde_json","ser::to_writer"],"option_family_ids":["compact","custom-Serialize"],"generators":["adapter.generate"],"faults":["short","error","zero","interrupt"],"sequence":["serialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::to_writer_pretty","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<W: Write, T: Serialize + ?Sized>(W, &T) -> Result<()>","reexport_chain":["serde_json","ser::to_writer_pretty"],"option_family_ids":["pretty"],"generators":["adapter.generate"],"faults":["short","error","zero","interrupt"],"sequence":["serialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::Serializer::new","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<W: Write>(W) -> Serializer<W>","reexport_chain":["serde_json","ser::Serializer"],"option_family_ids":["compact"],"generators":["adapter.generate"],"faults":["short","error","zero","interrupt"],"sequence":["serialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::Serializer::pretty","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<W: Write>(W) -> Serializer<W, PrettyFormatter>","reexport_chain":["serde_json","ser::Serializer"],"option_family_ids":["pretty"],"generators":["adapter.generate"],"faults":["short","error","zero","interrupt"],"sequence":["serialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::from_slice","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<'a, T: Deserialize<'a>>(&'a [u8]) -> Result<T>","reexport_chain":["serde_json","de::from_slice"],"option_family_ids":["Value","JSON-error-domain"],"generators":["adapter.generate"],"faults":["truncated","invalid-json","invalid-utf8"],"sequence":["deserialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::from_str","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<'a, T: Deserialize<'a>>(&'a str) -> Result<T>","reexport_chain":["serde_json","de::from_str"],"option_family_ids":["Value","JSON-error-domain"],"generators":["adapter.generate"],"faults":["truncated","invalid-json"],"sequence":["deserialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::from_reader","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"fn<R: Read, T: DeserializeOwned>(R) -> Result<T>","reexport_chain":["serde_json","de::from_reader"],"option_family_ids":["Value"],"generators":["adapter.generate"],"faults":["short","error","zero","interrupt","truncated","invalid-json"],"sequence":["deserialize"],"oracle_policy":"serde-public-json-io-v1"},
+    {"id":"serde_json::StreamDeserializer::next","visibility":"public","contract_id":"serde-public-json-io-v1","precondition_id":"public-typed-json-io-v1","signature":"Iterator::next(&mut StreamDeserializer<IoRead<R>, Value>) -> Option<Result<Value>>","reexport_chain":["serde_json","de::StreamDeserializer","Iterator"],"option_family_ids":["Value","stream"],"generators":["adapter.generate"],"faults":["short","error","zero","interrupt","early-end"],"sequence":["next-until-end-or-error"],"oracle_policy":"serde-public-json-io-v1"}
+  ],
+  "oracle_defaults": {
+    "baseline_terminations": ["return"],
+    "baseline_exit_codes": [0],
+    "required_error_fields": {
+      "category": "nonempty_string",
+      "io_kind": ["nonempty_string","null"],
+      "line": ["integer","null"],
+      "column": ["integer","null"]
+    }
+  },
+  "unresolved": [
+    "Full corrected export inventory and denominator; 8 mapped entries is not the full public API",
+    "Custom Formatter, Deserializer visitor/seed integration, RawValue, Number, Map and Value methods",
+    "Non-default supported features and legal feature combinations",
+    "Serializer reuse, allocation failures and independent/interleaved instances"
+  ],
+  "normalization": {
+    "semantic": ["termination","outcome error category/I/O kind/line/column","complete accepted bytes","independently encoded deserialized values","stream byte_offset"],
+    "diagnostic_only": ["I/O call partitioning/counts","reader read-ahead","panic text/source path","stderr panic diagnostics"],
+    "error_text": "No blanket normalization for other task contracts. These newly explored library surfaces compare documented category, I/O kind and position; public workload CLI checks remain unchanged."
+  }
+}

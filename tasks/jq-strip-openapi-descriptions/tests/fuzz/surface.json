@@ -1,0 +1,3066 @@
+{
+  "format": "optimbench-jq-public-surface-worklist-v1",
+  "source_commit": "49fbca1242c7f46f00b849de76565764e0254a03",
+  "source_tree_sha256": null,
+  "extractor": {
+    "tool": "Ubuntu clang version 21.1.8 (6ubuntu1)",
+    "version": "task-owned-header-worklist-v1",
+    "corrected_shared_extractor": "pending corrected-extractor report",
+    "final_denominator": false
+  },
+  "features": {
+    "platform": "pinned-linux-task-image",
+    "oniguruma": "builtin"
+  },
+  "public_header_hashes": {
+    "src/jv.h": "60dfafe7bc156a2876d643e7daf7c53a7e9631a95fd7a216aeb0610831977e8a",
+    "src/jq.h": "976689e8c3dc0b4b7d7bba50dc560277c638694681a356be61ae93787b335f8d"
+  },
+  "scope_evidence": {
+    "path": "Makefile.am",
+    "sha256": "2a5f819b8a21f013da579e05370774302d15db8acb954e14fd2bcc10db560da4",
+    "statement": "include_HEADERS = src/jv.h src/jq.h"
+  },
+  "entries": [
+    {
+      "surface_id": "jq.c:jq_compile",
+      "symbol_path": "jq_compile",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jq_state *, const char *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_compile_args",
+      "symbol_path": "jq_compile_args",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jq_state *, const char *, jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_dump_disassembly",
+      "symbol_path": "jq_dump_disassembly",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, int)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_format_error",
+      "symbol_path": "jq_format_error",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_attr",
+      "symbol_path": "jq_get_attr",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *, jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_attrs",
+      "symbol_path": "jq_get_attrs",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_debug_cb",
+      "symbol_path": "jq_get_debug_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_msg_cb *, void **)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_error_cb",
+      "symbol_path": "jq_get_error_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_msg_cb *, void **)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_error_message",
+      "symbol_path": "jq_get_error_message",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_exit_code",
+      "symbol_path": "jq_get_exit_code",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_input_cb",
+      "symbol_path": "jq_get_input_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_input_cb *, void **)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_jq_origin",
+      "symbol_path": "jq_get_jq_origin",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_lib_dirs",
+      "symbol_path": "jq_get_lib_dirs",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_prog_origin",
+      "symbol_path": "jq_get_prog_origin",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_get_stderr_cb",
+      "symbol_path": "jq_get_stderr_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_msg_cb *, void **)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_halt",
+      "symbol_path": "jq_halt",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jv, jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_halted",
+      "symbol_path": "jq_halted",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_init",
+      "symbol_path": "jq_init",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jq_state *(void)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_next",
+      "symbol_path": "jq_next",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_report_error",
+      "symbol_path": "jq_report_error",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_attr",
+      "symbol_path": "jq_set_attr",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jv, jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_attrs",
+      "symbol_path": "jq_set_attrs",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jv)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_colors",
+      "symbol_path": "jq_set_colors",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (const char *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_debug_cb",
+      "symbol_path": "jq_set_debug_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_msg_cb, void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_error_cb",
+      "symbol_path": "jq_set_error_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_msg_cb, void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_input_cb",
+      "symbol_path": "jq_set_input_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_input_cb, void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_nomem_handler",
+      "symbol_path": "jq_set_nomem_handler",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, void (*)(void *), void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_set_stderr_cb",
+      "symbol_path": "jq_set_stderr_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jq_msg_cb, void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_start",
+      "symbol_path": "jq_start",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state *, jv, int)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_teardown",
+      "symbol_path": "jq_teardown",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_state **)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_add_input",
+      "symbol_path": "jq_util_input_add_input",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_util_input_state *, const char *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_errors",
+      "symbol_path": "jq_util_input_errors",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jq_util_input_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_free",
+      "symbol_path": "jq_util_input_free",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_util_input_state **)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_get_current_filename",
+      "symbol_path": "jq_util_input_get_current_filename",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_get_current_line",
+      "symbol_path": "jq_util_input_get_current_line",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_get_position",
+      "symbol_path": "jq_util_input_get_position",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_init",
+      "symbol_path": "jq_util_input_init",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jq_util_input_state *(jq_util_msg_cb, void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_next_input",
+      "symbol_path": "jq_util_input_next_input",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_util_input_state *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_next_input_cb",
+      "symbol_path": "jq_util_input_next_input_cb",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jq_state *, void *)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jq_util_input_set_parser",
+      "symbol_path": "jq_util_input_set_parser",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jq_util_input_state *, jv_parser *, int)"
+      },
+      "public_origin": "src/jq.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array",
+      "symbol_path": "jv_array",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (void)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_append",
+      "symbol_path": "jv_array_append",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_concat",
+      "symbol_path": "jv_array_concat",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_get",
+      "symbol_path": "jv_array_get",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_indexes",
+      "symbol_path": "jv_array_indexes",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_length",
+      "symbol_path": "jv_array_length",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_set",
+      "symbol_path": "jv_array_set",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_sized",
+      "symbol_path": "jv_array_sized",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_array_slice",
+      "symbol_path": "jv_array_slice",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_bool",
+      "symbol_path": "jv_bool",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_cmp",
+      "symbol_path": "jv_cmp",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_contains",
+      "symbol_path": "jv_contains",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_copy",
+      "symbol_path": "jv_copy",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_delpaths",
+      "symbol_path": "jv_delpaths",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_dump",
+      "symbol_path": "jv_dump",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_dump_string",
+      "symbol_path": "jv_dump_string",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_dump_string_trunc",
+      "symbol_path": "jv_dump_string_trunc",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "char *(jv, char *, size_t)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_dumpf",
+      "symbol_path": "jv_dumpf",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv, FILE *, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_equal",
+      "symbol_path": "jv_equal",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_false",
+      "symbol_path": "jv_false",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (void)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_free",
+      "symbol_path": "jv_free",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_get",
+      "symbol_path": "jv_get",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_get_kind",
+      "symbol_path": "jv_get_kind",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv_kind (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_get_refcnt",
+      "symbol_path": "jv_get_refcnt",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_getpath",
+      "symbol_path": "jv_getpath",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_group",
+      "symbol_path": "jv_group",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_has",
+      "symbol_path": "jv_has",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_identical",
+      "symbol_path": "jv_identical",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_invalid",
+      "symbol_path": "jv_invalid",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (void)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_invalid_get_msg",
+      "symbol_path": "jv_invalid_get_msg",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_invalid_has_msg",
+      "symbol_path": "jv_invalid_has_msg",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_invalid_with_msg",
+      "symbol_path": "jv_invalid_with_msg",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_is_integer",
+      "symbol_path": "jv_is_integer",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_is_valid",
+      "symbol_path": "jv_is_valid",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_keys",
+      "symbol_path": "jv_keys",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_keys_unsorted",
+      "symbol_path": "jv_keys_unsorted",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_kind_name",
+      "symbol_path": "jv_kind_name",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "const char *(jv_kind)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_load_file",
+      "symbol_path": "jv_load_file",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_nomem_handler",
+      "symbol_path": "jv_nomem_handler",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv_nomem_handler_f, void *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_null",
+      "symbol_path": "jv_null",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (void)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number",
+      "symbol_path": "jv_number",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (double)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number_abs",
+      "symbol_path": "jv_number_abs",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number_get_literal",
+      "symbol_path": "jv_number_get_literal",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "const char *(jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number_has_literal",
+      "symbol_path": "jv_number_has_literal",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number_negate",
+      "symbol_path": "jv_number_negate",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number_value",
+      "symbol_path": "jv_number_value",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "double (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_number_with_literal",
+      "symbol_path": "jv_number_with_literal",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object",
+      "symbol_path": "jv_object",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (void)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_delete",
+      "symbol_path": "jv_object_delete",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_get",
+      "symbol_path": "jv_object_get",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_has",
+      "symbol_path": "jv_object_has",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_iter",
+      "symbol_path": "jv_object_iter",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_iter_key",
+      "symbol_path": "jv_object_iter_key",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_iter_next",
+      "symbol_path": "jv_object_iter_next",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_iter_valid",
+      "symbol_path": "jv_object_iter_valid",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_iter_value",
+      "symbol_path": "jv_object_iter_value",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_length",
+      "symbol_path": "jv_object_length",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_merge",
+      "symbol_path": "jv_object_merge",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_merge_recursive",
+      "symbol_path": "jv_object_merge_recursive",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_object_set",
+      "symbol_path": "jv_object_set",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parse",
+      "symbol_path": "jv_parse",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parse_custom_flags",
+      "symbol_path": "jv_parse_custom_flags",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parse_sized",
+      "symbol_path": "jv_parse_sized",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parser_free",
+      "symbol_path": "jv_parser_free",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv_parser *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parser_new",
+      "symbol_path": "jv_parser_new",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv_parser *(int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parser_next",
+      "symbol_path": "jv_parser_next",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv_parser *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parser_remaining",
+      "symbol_path": "jv_parser_remaining",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv_parser *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_parser_set_buf",
+      "symbol_path": "jv_parser_set_buf",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv_parser *, const char *, int, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_set",
+      "symbol_path": "jv_set",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_setpath",
+      "symbol_path": "jv_setpath",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_show",
+      "symbol_path": "jv_show",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "void (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_sort",
+      "symbol_path": "jv_sort",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string",
+      "symbol_path": "jv_string",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_append_buf",
+      "symbol_path": "jv_string_append_buf",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, const char *, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_append_codepoint",
+      "symbol_path": "jv_string_append_codepoint",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, uint32_t)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_append_str",
+      "symbol_path": "jv_string_append_str",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, const char *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_concat",
+      "symbol_path": "jv_string_concat",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_empty",
+      "symbol_path": "jv_string_empty",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_explode",
+      "symbol_path": "jv_string_explode",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_fmt",
+      "symbol_path": "jv_string_fmt",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *, ...)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_hash",
+      "symbol_path": "jv_string_hash",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "unsigned long (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_implode",
+      "symbol_path": "jv_string_implode",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_indexes",
+      "symbol_path": "jv_string_indexes",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_length_bytes",
+      "symbol_path": "jv_string_length_bytes",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_length_codepoints",
+      "symbol_path": "jv_string_length_codepoints",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "int (jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_repeat",
+      "symbol_path": "jv_string_repeat",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_sized",
+      "symbol_path": "jv_string_sized",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_slice",
+      "symbol_path": "jv_string_slice",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, int, int)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_split",
+      "symbol_path": "jv_string_split",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_value",
+      "symbol_path": "jv_string_value",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "const char *(jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_string_vfmt",
+      "symbol_path": "jv_string_vfmt",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (const char *, struct __va_list_tag *)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_true",
+      "symbol_path": "jv_true",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (void)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.c:jv_unique",
+      "symbol_path": "jv_unique",
+      "structural_signature": {
+        "format": "clang-qualtype-v1",
+        "type": "jv (jv, jv)"
+      },
+      "public_origin": "src/jv.h",
+      "reexport_chain": [],
+      "feature_conditions": [],
+      "option_family_ids": [],
+      "generator_ids": [],
+      "precondition_refs": [
+        "src/jv.h:ownership-rules",
+        "typed-public-api-domain-required"
+      ],
+      "sequence_applicability": "unresolved",
+      "fault_applicability": "unresolved",
+      "oracle_policy": "requires-per-surface-contract-review",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_1",
+      "symbol_path": "JV_ARRAY_1",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_2",
+      "symbol_path": "JV_ARRAY_2",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_3",
+      "symbol_path": "JV_ARRAY_3",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_4",
+      "symbol_path": "JV_ARRAY_4",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_5",
+      "symbol_path": "JV_ARRAY_5",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_6",
+      "symbol_path": "JV_ARRAY_6",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_7",
+      "symbol_path": "JV_ARRAY_7",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_8",
+      "symbol_path": "JV_ARRAY_8",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_9",
+      "symbol_path": "JV_ARRAY_9",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY_IDX",
+      "symbol_path": "JV_ARRAY_IDX",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_ARRAY",
+      "symbol_path": "JV_ARRAY",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_PRINTF_LIKE",
+      "symbol_path": "JV_PRINTF_LIKE",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_VPRINTF_LIKE",
+      "symbol_path": "JV_VPRINTF_LIKE",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_PRINTF_LIKE",
+      "symbol_path": "JV_PRINTF_LIKE",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_VPRINTF_LIKE",
+      "symbol_path": "JV_VPRINTF_LIKE",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_1",
+      "symbol_path": "JV_OBJECT_1",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_2",
+      "symbol_path": "JV_OBJECT_2",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_3",
+      "symbol_path": "JV_OBJECT_3",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_4",
+      "symbol_path": "JV_OBJECT_4",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_5",
+      "symbol_path": "JV_OBJECT_5",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_6",
+      "symbol_path": "JV_OBJECT_6",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_7",
+      "symbol_path": "JV_OBJECT_7",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_8",
+      "symbol_path": "JV_OBJECT_8",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_9",
+      "symbol_path": "JV_OBJECT_9",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_10",
+      "symbol_path": "JV_OBJECT_10",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_11",
+      "symbol_path": "JV_OBJECT_11",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_12",
+      "symbol_path": "JV_OBJECT_12",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_13",
+      "symbol_path": "JV_OBJECT_13",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_14",
+      "symbol_path": "JV_OBJECT_14",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_15",
+      "symbol_path": "JV_OBJECT_15",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_16",
+      "symbol_path": "JV_OBJECT_16",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_17",
+      "symbol_path": "JV_OBJECT_17",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_18",
+      "symbol_path": "JV_OBJECT_18",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT_IDX",
+      "symbol_path": "JV_OBJECT_IDX",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_OBJECT",
+      "symbol_path": "JV_OBJECT",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.macro:JV_PRINT_INDENT_FLAGS",
+      "symbol_path": "JV_PRINT_INDENT_FLAGS",
+      "public_origin": "src/jv.h",
+      "status": "inventoried-unmapped-unexercised"
+    },
+    {
+      "surface_id": "jq.cli:filter",
+      "symbol_path": "jq CLI filter execution",
+      "public_origin": "docs/content/manual/dev/manual.yml",
+      "generator_ids": [
+        "jq-grammar-v1",
+        "explicit-public-document-transform-v1"
+      ],
+      "precondition_refs": [
+        "bounded-cli-byte-input-v1"
+      ],
+      "option_family_ids": [
+        "slurp",
+        "exit-status",
+        "sorted",
+        "ascii",
+        "stream",
+        "stream-errors",
+        "seq",
+        "raw-input"
+      ],
+      "oracle_policy": "jq-public-complete-streams-v1",
+      "status": "implemented-campaign-not-run"
+    }
+  ],
+  "unresolved": [
+    "Corrected shared extractor and export/macro/options denominator",
+    "Per-symbol legal domain/state/fault mapping beyond CLI subset",
+    "All supported CLI option families and combinations",
+    "Documented supported C/C++ dialect/include feature matrix",
+    "Coverage, sanitizer, race, CPU-repeat and mutation adequacy evidence"
+  ]
+}

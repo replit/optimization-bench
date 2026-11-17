@@ -1,0 +1,9 @@
+{
+  "base_images": [
+    "python:3.12-slim-bookworm@sha256:54c85f3c47607a77f32adec749d3c81d1348bf25833671f512b26a9b6d778cb3",
+    "gcc@sha256:3ae15afe768b06d0c0fe088d822ba5f8045c26630bdacc8d8e7713cf5d8e7289",
+    "rust:1.93.0-bookworm@sha256:d0a4aa3ca2e1088ac0c81690914a0d810f2eee188197034edf366ed010a2b382"
+  ],
+  "build": "make -j8 CFLAGS='-O3 -g' NO_TCLTK=YesPlease",
+  "cargo": "Pinned Cargo.lock has no external dependencies; Rust remains enabled."
+}

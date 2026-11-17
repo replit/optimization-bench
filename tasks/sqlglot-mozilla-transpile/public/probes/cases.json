@@ -1,0 +1,651 @@
+[
+  {
+    "id": "probe_a25bbb76f4130085",
+    "label": "unsupported_farm_fingerprint",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT FARM_FINGERPRINT('benchmark') AS v"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_7a7f553c23fff0c2",
+    "label": "unsupported_json_strip_nulls",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT JSON_STRIP_NULLS(JSON '{\"a\":null,\"b\":1}') AS v"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_f8c63a5981efd870",
+    "label": "group_alias_overrides_join_columns",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT a.id AS id, COUNT(*) AS n FROM a JOIN b ON a.id=b.id GROUP BY id"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_8026dba8950279c0",
+    "label": "group_alias_shadows_input_column",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT event_name AS event_category, COUNT(*) AS n FROM hits GROUP BY event_category"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_ae47f55ff3668c3e",
+    "label": "unnest_alias_shadows_array_column",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT items.name FROM t CROSS JOIN UNNEST(items) AS items"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_94281760725e135f",
+    "label": "unnest_struct_fields_flatten",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT SUM(x) AS total FROM UNNEST([STRUCT(2 AS x), STRUCT(3 AS x)])"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_38cd41c551b091ea",
+    "label": "unnest_struct_using_fields",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT d FROM UNNEST([STRUCT(DATE '2025-01-01' AS d)]) AS rec JOIN (SELECT DATE '2025-01-01' AS d) dates USING(d)"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_022e6f8f11c0cb31",
+    "label": "column_struct_fields_flatten",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT SUM(x) AS total FROM t CROSS JOIN UNNEST(t.items)"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_dfb59f9c40eb88b1",
+    "label": "column_struct_using_fields",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT d FROM t CROSS JOIN UNNEST(t.items) AS rec JOIN (SELECT DATE '2025-01-01' AS d) dates USING(d)"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_144aed891ced99c9",
+    "label": "correlated_literal_struct_unnest",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT x FROM t CROSS JOIN UNNEST([STRUCT(t.n AS x)])"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_9f69f5b7adc2f5f2",
+    "label": "nested_struct_star",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT (SELECT AS STRUCT 1 AS fixed_id, r.* EXCEPT (id)) AS packed FROM (SELECT 2 AS id, 'value' AS label) AS r"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_a1792c5e35778676",
+    "label": "non_equi_correlated_unnest_join",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT t.id, s.value FROM t LEFT JOIN UNNEST(t.items) AS s ON t.id IN UNNEST(s.ids)"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_acbc0d66d6517f8c",
+    "label": "date_trunc_retains_date_type",
+    "category": "independent_reduced_regression",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT DATE_TRUNC(d, MONTH) AS month FROM dates"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_2974a4a4a76f4d33",
+    "label": "empty_input",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      ""
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_bd87c76e9505891b",
+    "label": "only_comment",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "-- no statement\n"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_c3d8ac5ca2958d95",
+    "label": "multiple_statements",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT 1 AS first; SELECT 2 AS second;"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_535be06b878e3287",
+    "label": "trailing_comment",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT 1 AS n; -- trailing note"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_31ebfa6c61890ed6",
+    "label": "retain_comments",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "/* lead */ SELECT 1 + 2 AS n -- tail\n"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_043144b68434d390",
+    "label": "remove_comments",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "/* lead */ SELECT 1 + 2 AS n -- tail\n"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE",
+      "comments": false
+    }
+  },
+  {
+    "id": "probe_48c3823d4ef04db4",
+    "label": "pretty_output",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "WITH x AS (SELECT 1 AS a) SELECT a, COUNT(*) AS n FROM x GROUP BY a"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": true,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_4d04220614edbd1c",
+    "label": "quote_identifiers",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT MixedCase AS Label FROM SourceTable"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE",
+      "identify": true
+    }
+  },
+  {
+    "id": "probe_1a1aa24405e3dc2b",
+    "label": "normalize_identifiers",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT MixedCase AS Label FROM SourceTable"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE",
+      "normalize": true
+    }
+  },
+  {
+    "id": "probe_2b3a596cc8e86575",
+    "label": "unicode_and_escapes",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT 'café ☕' AS `Δ`, 'line\\nnext' AS value"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_3ed25055d24f067c",
+    "label": "safe_cast_nulls",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT SAFE_CAST('bad' AS INT64) AS safe, CAST(NULL AS STRING) AS missing"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_3fb765021cae10d1",
+    "label": "array_access",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT [11,22,33][OFFSET(1)] AS normal, [11,22][SAFE_OFFSET(9)] AS safe"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_07951a318a1bde01",
+    "label": "array_aggregation_order",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT ARRAY_AGG(x ORDER BY x DESC) AS xs FROM UNNEST([1,3,2]) x"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_99682e627aab60c1",
+    "label": "qualify_window",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT a, ROW_NUMBER() OVER(PARTITION BY a ORDER BY b) AS rn FROM t QUALIFY rn=1"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_84b608973f5253f9",
+    "label": "struct_star_exclusion",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT * EXCEPT(secret) FROM t"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_1c0696e710f1a876",
+    "label": "date_literal",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT DATE_ADD(DATE '2024-02-28', INTERVAL 1 DAY) AS d"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_676de1966b2d505e",
+    "label": "json_access",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT JSON_VALUE(JSON '{\"x\":7}', '$.x') AS x"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_339d90f781b5810d",
+    "label": "parse_error_unclosed",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT (1 +"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_096f1a5fcf199933",
+    "label": "parse_error_bad_from",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT * FROM"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_18f75283c0e6dca4",
+    "label": "unknown_read_dialect",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT 1"
+    ],
+    "kwargs": {
+      "read": "not_a_real_dialect",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_f57bfc0fdbb59ed7",
+    "label": "unsupported_aggregation_raise",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT ARRAY_AGG(x LIMIT 2) FROM t"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_8d73fddcb3ce05ac",
+    "label": "unsupported_aggregation_warn",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT ARRAY_AGG(x LIMIT 2) FROM t"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "WARN"
+    }
+  },
+  {
+    "id": "probe_b1d10fca3ebc0fe2",
+    "label": "unsupported_aggregation_ignore",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT ARRAY_AGG(x LIMIT 2) FROM t"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "duckdb",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "IGNORE"
+    }
+  },
+  {
+    "id": "probe_e0ca2c6ae1b0c373",
+    "label": "alternate_dialect_preservation",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT `a`, IFNULL(`b`, 0) FROM `tbl`"
+    ],
+    "kwargs": {
+      "read": "mysql",
+      "write": "postgres",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  },
+  {
+    "id": "probe_80049a7a3c50765c",
+    "label": "same_dialect",
+    "category": "api_options",
+    "visibility": "public_generic",
+    "api": "transpile",
+    "args": [
+      "SELECT IFNULL(x, 0) FROM t"
+    ],
+    "kwargs": {
+      "read": "bigquery",
+      "write": "bigquery",
+      "pretty": false,
+      "error_level": "RAISE",
+      "unsupported_level": "RAISE"
+    }
+  }
+]

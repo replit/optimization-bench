@@ -1,0 +1,192 @@
+{
+  "files": {
+    "arrays/taxi-2024-01.npy": {
+      "bytes": 32000128,
+      "sha256": "049445645a29e39b51a8f41489a47e894037acf2fa7dfd8f4df1f50b0b67fa26"
+    },
+    "arrays/taxi-2024-07.npy": {
+      "bytes": 32000128,
+      "sha256": "d3fc42671d5d8331f9948a54111ec7a3bcd923401341c684bdcc3f137359f0ea"
+    },
+    "arrays/electricity-2014-block1.npy": {
+      "bytes": 31115648,
+      "sha256": "f6167800d80fce7e5af4cad30b67653c3a4e00f9f3f182c36e354ba22f08fd05"
+    },
+    "arrays/electricity-2014-block2.npy": {
+      "bytes": 31115648,
+      "sha256": "c88bc247372eb21711ecbb860130d3b8a10b9872824f235b399b569b2e7c928a"
+    },
+    "arrays/weather-2018.npy": {
+      "bytes": 15347648,
+      "sha256": "3b2b590be34d0a0abb8023216717105813f8e373cc32653a1ce671e7f2814115"
+    },
+    "arrays/weather-2019.npy": {
+      "bytes": 15347648,
+      "sha256": "70d52a36accce31f012abfd124dd08ec99211db05502900842e788e8cbedfae6"
+    },
+    "arrays/weather-2022.npy": {
+      "bytes": 15347648,
+      "sha256": "5ba6bcfcaf3bc2a9424f76abf5b7339359f7803285cc268f02c3b53d92eb234c"
+    },
+    "arrays/weather-2023.npy": {
+      "bytes": 15347648,
+      "sha256": "ea59a379a036fdfe968bcb2d0f624247a15c8e105054be9059ed3c919ebd2486"
+    },
+    "arrays/taxi-2024-03.npy": {
+      "bytes": 32000128,
+      "sha256": "115b7bdde8e635eb3799a211ed65fa99583feec2dce352123fe594c056bb2961"
+    },
+    "arrays/taxi-2024-05.npy": {
+      "bytes": 32000128,
+      "sha256": "a70fed4844cce945ab21247233269f36d558df89d46ba487ad84f7e15e7a31c6"
+    },
+    "arrays/taxi-2024-09.npy": {
+      "bytes": 32000128,
+      "sha256": "94b2b8a5f313f5d20d19e0e9e3730d1be7de4865a736c607123d677a1e20d34c"
+    },
+    "arrays/taxi-2024-11.npy": {
+      "bytes": 32000128,
+      "sha256": "7d81e044b182ae11d7293765cad6a0b5e2f2b557db5bd557420ae8a50f25d99b"
+    },
+    "units/interp-equalize/srtm-S13W072.npy": {
+      "bytes": 25934530,
+      "sha256": "3ea890301b6d45183e7abf1c8d95a846042bec941ec0be46ed7cdc99610a0554"
+    },
+    "units/interp-equalize/srtm-S14W072.npy": {
+      "bytes": 25934530,
+      "sha256": "458247c913d5d4787dcbd598e8a576190704fea082816be483114bdeb780ff17"
+    },
+    "units/interp-equalize/srtm-S16W069.npy": {
+      "bytes": 25934530,
+      "sha256": "459fd79e446b5006a7adc94c19c8b5a4867c2bf36eed73a83921b0a32538e2de"
+    },
+    "units/interp-equalize/srtm-S33W070.npy": {
+      "bytes": 25934530,
+      "sha256": "282a87af7345c484c073ae1e48e72bd4d1896da24fbfad72976b6056d84d0da9"
+    },
+    "units/busday-calendar/dates-austin-permits.npz": {
+      "bytes": 45699412,
+      "sha256": "7b66caf65ab5e8fb61e1c43963d80118a4fa0ac5981f000b9d685d57ee4008a9"
+    },
+    "units/busday-calendar/dates-chicago-licenses.npz": {
+      "bytes": 6774820,
+      "sha256": "0e85b41cdce1b55fe15f5dded255b8f851c97725505bbc32ae0a88ca6fa7137a"
+    },
+    "units/busday-calendar/dates-chicago-permits.npz": {
+      "bytes": 20429860,
+      "sha256": "7e09a2888a4a0ce492f029612a056aa9e770b771cee2395a2104921622b19465"
+    },
+    "units/busday-calendar/dates-sf-permits.npz": {
+      "bytes": 15623596,
+      "sha256": "23297aae45fbdb71160854a65bb95609f836a7d4d0c18b95d54226f3fc441886"
+    },
+    "units/random-dists/worldbank-1960-1979.npz": {
+      "bytes": 212912,
+      "sha256": "07d7ea3dd25a2d0f6b30f80f36f7ff96ce05efc444630833b45fada43be41bfe"
+    },
+    "units/random-dists/worldbank-1980-1999.npz": {
+      "bytes": 213312,
+      "sha256": "3da7086b5b178c1817eb5b4ffbfe75d38d68530add80e8385c50b00cbb580dd2"
+    },
+    "units/random-dists/worldbank-2000-2024.npz": {
+      "bytes": 266712,
+      "sha256": "8210cdad5ea2009f0570660637a1dedefb6d714485156b301860e6b740afd0ca"
+    },
+    "units/strings-text/cpython-lib-group0.npy": {
+      "bytes": 96000128,
+      "sha256": "61260b4b3ca4c0a8d19af772f5cf0b6fa1d7e2aa38cfa710ddeca85ce44d97b0"
+    },
+    "units/strings-text/cpython-lib-group1.npy": {
+      "bytes": 92032128,
+      "sha256": "cad6466555e7bc32f77ebe3c63f0ce0b135f4324eaecec970cba7c4df20f49d9"
+    },
+    "units/strings-text/cpython-lib-group2.npy": {
+      "bytes": 93110848,
+      "sha256": "5a209075818ce9cc5c506c069f2ddec8d49013e21634ba781e83b5250fbaa906"
+    },
+    "units/strings-text/cpython-lib-group3.npy": {
+      "bytes": 96000128,
+      "sha256": "e891e03ee874f59df3c9fc1834edcc92bf02dcbdbb8ad0899e5965ee14e4afd4"
+    },
+    "units/genfromtxt-catalog/geonet-2005-2009.csv": {
+      "bytes": 12055792,
+      "sha256": "14d567ea8e84af106df369f0f80d10e972a76d479c73f870100815c183547539"
+    },
+    "units/genfromtxt-catalog/geonet-2010-2014.csv": {
+      "bytes": 13527364,
+      "sha256": "0f7d520c32df5cb239c5beefd6ce9bf43ddd324c0e8bce9d4b70addacc9b37ef"
+    },
+    "units/genfromtxt-catalog/geonet-2015-2019.csv": {
+      "bytes": 11571629,
+      "sha256": "c11f141b6d27b6aedff3ad75924eaf07bf82bac89512a0cf1b9d4de72dfd8f3e"
+    },
+    "units/genfromtxt-catalog/geonet-2020-2025.csv": {
+      "bytes": 11498311,
+      "sha256": "e7d094aa9b9bca250fa04e86695bc063af033501c38521c55cc7bfe6e64dddea"
+    },
+    "units/loadtxt-csv/gas-ethylene-co-part0.csv": {
+      "bytes": 51707705,
+      "sha256": "df29cbed063e3043b078b6bbfd7a61c5c05c8441dee8a9a4b28bb09310d1a996"
+    },
+    "units/loadtxt-csv/gas-ethylene-co-part1.csv": {
+      "bytes": 51977487,
+      "sha256": "259521899908d6abd825a47c65fdc1119969c190da0545fac76c5c4410b57d1e"
+    },
+    "units/loadtxt-csv/gas-ethylene-co-part2.csv": {
+      "bytes": 52640181,
+      "sha256": "d37a5582a430b28f1df5fb0ad5b71ed9a6b343fc33d0458f669f9f9a348f879f"
+    },
+    "units/loadtxt-csv/gas-ethylene-co-part3.csv": {
+      "bytes": 52412954,
+      "sha256": "9981789ba70c01b506f7bd72b4fbbfd0a801ce7cd33467e246abaa54b691c39e"
+    },
+    "units/datetime-iso/chicago-crimes-2010-2014-part0.npz": {
+      "bytes": 100749150,
+      "sha256": "6ac026895e8bc5fc0d4ca2a9f3446aa01ae36bfcaa290c76a382cbcae1b75f99"
+    },
+    "units/datetime-iso/chicago-crimes-2010-2014-part1.npz": {
+      "bytes": 100749150,
+      "sha256": "2f582b806881185a45d8088968ffeb6a17357053c48abaddfdd6aac942e58079"
+    },
+    "units/datetime-iso/chicago-crimes-2010-2014-part2.npz": {
+      "bytes": 100749150,
+      "sha256": "95241067499fdc1a6e6163ac5652e7c38a092d5cbf5358693939d6a25a6502e4"
+    },
+    "units/datetime-iso/chicago-crimes-2015-2019-part0.npz": {
+      "bytes": 81912702,
+      "sha256": "3668c599b952e04e47e9380ffba615ae19731a10862da77a265cfaad3fc60e9b"
+    },
+    "units/datetime-iso/chicago-crimes-2015-2019-part1.npz": {
+      "bytes": 81912702,
+      "sha256": "75ea3a063e74df966fc1ea3f79fc3dbf76644d5ec2b3e325fa01c68ab6e38b58"
+    },
+    "units/datetime-iso/chicago-crimes-2015-2019-part2.npz": {
+      "bytes": 81912702,
+      "sha256": "2304e8980eadb4c0f5eacbd611daf7d3fc731fc9a56f9397a807dbeecaa56843"
+    },
+    "units/float-format/ea-river-level-group0.npy": {
+      "bytes": 1248008,
+      "sha256": "383d59c95947d56224cc22524cb5cbebc88ef7b0222d25a78f969e1f67d3367c"
+    },
+    "units/float-format/ea-river-level-group1.npy": {
+      "bytes": 1220288,
+      "sha256": "8764ffba3edfb7d3c958b0a1c9fd588635a49053e013dc9b37aa9325e9ea0c1c"
+    },
+    "units/float-format/ea-river-level-group2.npy": {
+      "bytes": 1118464,
+      "sha256": "1b56a70556f3696623c22a63ea24c1ad4f11fa52b72d3deeea2307d21b336212"
+    },
+    "units/float-format/ea-river-level-group3.npy": {
+      "bytes": 1065656,
+      "sha256": "2f24d8934585a2c2e5bb75b1441d9edd8196dc71c63e443bd2645708554b83dd"
+    },
+    "units/float-format/uci-online-news-popularity.npy": {
+      "bytes": 9440128,
+      "sha256": "9781a7cfc6abc707dfa4b0856351e98be5b86639d55bd469755d24a09d71b0e6"
+    },
+    "units/float-format/uci-sgemm-runtimes.npy": {
+      "bytes": 7731328,
+      "sha256": "392adf03253910ade78c53525d87592eeb4b33e52f52901f5cb032e979fa5ef2"
+    }
+  }
+}

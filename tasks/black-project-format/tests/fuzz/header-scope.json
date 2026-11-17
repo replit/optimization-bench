@@ -1,0 +1,69 @@
+{
+  "archive_sha256": "a4bba75d9fe04c23a5b0935e3cca7b5155dcbde11154fd4ecef69c3845dafd5a",
+  "c_cpp_source_paths": [],
+  "file_inventory_sha256": "7364fb6b824f32aacc346a235b0e57e2856a6fe094777e1bcd7d38d42c93360b",
+  "files_scanned": 460,
+  "finding": "No C/C++ headers or C/C++ sources in the pinned upstream archive",
+  "format": "black-public-header-scope-v1",
+  "generated_mypyc_headers": "Build/dependency internals, not asserted as a documented C consumer API",
+  "header_paths": [],
+  "independent_review": {
+    "reviewer_role": "Independent automated public-source header-scope audit",
+    "audited_at_utc": "2026-11-15T07:45:26.355157+00:00",
+    "method": "Fresh anonymous pinned public-archive retrieval; authenticate bytes; enumerate/hash every regular file without extraction; inspect packaging and documented Python/CLI interfaces",
+    "decision": "No public C/C++ header-consumer matrix for this pinned Python API feature",
+    "independently_verified_archive_sha256": "a4bba75d9fe04c23a5b0935e3cca7b5155dcbde11154fd4ecef69c3845dafd5a",
+    "independently_verified_files": 460,
+    "independently_verified_file_inventory_sha256": "7364fb6b824f32aacc346a235b0e57e2856a6fe094777e1bcd7d38d42c93360b",
+    "verified_support_documents": 7,
+    "limitations": [
+      "Generated private CPython/mypyc headers and CPyDef exports are implementation interop",
+      "Native wheel must still import/load its required PyInit ABI",
+      "Python API, lifecycle and native instrumentation obligations remain",
+      "Reopen applicability if packaging later exposes public C/C++ headers"
+    ]
+  },
+  "legal_include_contexts_claimed": [],
+  "matrix_applicability": "not-applicable-to-pinned-Python-public-API-feature",
+  "qualification": "independently reviewed header scope only; not full surface or native qualification",
+  "source_commit": "87928e6d6761a4a6d22250e1fee5601b3998086e",
+  "standards_claimed": [],
+  "support_evidence": [
+    {
+      "path": "LICENSE",
+      "sha256": "9c0428f0c3b4779850cf5bd96e11aaa8afc72d4a86d4a36223d7aba2e58d6e00",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/LICENSE"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "b1d2dbc9eb9220d341dffb79d644c9f29b44dcf41d31edf8e2513a441ac4e6e2",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/pyproject.toml"
+    },
+    {
+      "path": "README.md",
+      "sha256": "97699d63ef95072bbbd1bcdf1768d33879e93f6279d6ef86a6c3a808555ab6e3",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/README.md"
+    },
+    {
+      "path": "docs/usage_and_configuration/the_basics.md",
+      "sha256": "542a4e31b08dd32fdbb1d9196889af3a1187e09fc3c41df88826aafaf907de7f",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/usage_and_configuration/the_basics.md"
+    },
+    {
+      "path": "docs/usage_and_configuration/black_as_a_server.md",
+      "sha256": "057b1d372d56e15bdbeecb70678c6ed21df67e8a24f972784027e9f52056fc89",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/usage_and_configuration/black_as_a_server.md"
+    },
+    {
+      "path": "docs/usage_and_configuration/file_collection_and_discovery.md",
+      "sha256": "84a37184dcacb261bcaf609dcfca3a40829270ebe05610a899a05f77f5247857",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/usage_and_configuration/file_collection_and_discovery.md"
+    },
+    {
+      "path": "docs/guides/using_black_with_jupyter_notebooks.md",
+      "sha256": "78748e752006bcae4798c0d2dcafca71fd2e2fe69bf688046010d011124eadd8",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/guides/using_black_with_jupyter_notebooks.md"
+    }
+  ],
+  "task": "black-project-format"
+}

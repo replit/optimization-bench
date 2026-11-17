@@ -1,0 +1,48 @@
+{
+  "timed_surface": "public_cli",
+  "id": "ruff-project-lint",
+  "name": "Ruff",
+  "language": "Rust",
+  "title": "Lint and format-check real Python projects with Ruff",
+  "job": "Projects lint and format-check their original configured trees with Ruff in CI. Each project operation runs 14 cold Ruff processes on a fresh project copy: the original `ruff check`, `ruff check --select ALL --statistics` in stable and `--preview` modes for target versions py39 through py314, and `ruff format --check`, with eight Rayon threads and cache and fixes disabled.",
+  "code": "environment/workload/task.py",
+  "operations": [
+    "pandas: original pre-commit-selected paths split into disjoint CLI batches",
+    "FastAPI: check fastapi tests docs_src scripts"
+  ],
+  "editable": "Only allowlisted Rust production files within the twenty source roots in release.json. Original inline-test tails and documentation comments remain byte-identical. Tests, manifests, dependencies, generated code, build settings, driver, inputs and project trees are protected.",
+  "families": {
+    "primary": "Configured whole-project lint",
+    "options": "Original pandas force-exclude and exit-non-zero-on-fix flags; JSON diagnostics; fixes and persistent cache disabled"
+  },
+  "size_meaning": "Original project file inventory and frozen selected path batches.",
+  "variables": [
+    "Project configuration and selected lint rules",
+    "File count and source sizes",
+    "Original CLI batch boundaries"
+  ],
+  "options": "RAYON_NUM_THREADS=8; --no-cache --no-fix --output-format=json; unchanged upstream release profile (fat LTO).",
+  "outputs": "Per project, cli-output-v1 JSON containing every batch's exit code and complete stdout/stderr bytes encoded in base64; length and SHA-256 must equal the pinned baseline.",
+  "contract": "Byte-identical cli-output-v1 per project, unchanged supported CLI/API behavior and upstream baseline test outcomes. No input detection, hidden delegation, persistent caches, changed commands or arguments, or surviving helper processes.",
+  "limits": "Linux amd64, pinned Rust 1.99.0 and source-built Ruff 0.16.10. Clean public projects do not prove correctness on diagnostic-producing code; held-out and mutation controls are required.",
+  "sources": [
+    "crates/ruff/src/commands/check.rs",
+    "crates/ruff/src/commands/linter.rs",
+    "crates/ruff_linter/src/linter.rs",
+    "crates/ruff_workspace/src/resolver.rs"
+  ],
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "preparation": "SHA-256-pinned Ruff and Rust archives, Cargo.lock-verified vendored dependencies, complete original Git trees checked against blob/file inventories, committed source checkout and prebuilt offline baseline.",
+  "source_identity": {
+    "upstream_repository": "https://github.com/astral-sh/ruff",
+    "upstream_commit": "3265ed1f944c98bb4c04d632fbefb1257cdb583d",
+    "archive_sha256": "646895bfc295414071d68a8fe0c467a7e9eb704e559b1919aec9928c77dd11d0"
+  },
+  "example_count": 2,
+  "status": "qualification-pending",
+  "input_edition_note": "Each of the four cases (pandas and FastAPI public; HTTPX and Rich held-out) runs its original `ruff check` plus a CI-style matrix (`ruff check --select ALL --statistics`, stable and `--preview`, target versions py39 through py314) and `ruff format --check`, so every timed unit lasts about a second or more. Projects, file inventories and the original command are unchanged; expected outputs were generated with the pristine Ruff build.",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "run_mode": "standalone",
+  "packaging_status": "public-task-private-judge"
+}

@@ -1,0 +1,46 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/sqlfluff/src/sqlfluff" }]
+
+[task]
+name = "optimbench/sqlfluff-project-lint"
+version = "1.0.0"
+description = "Run configured-project lint, PostgreSQL auto-fix, Snowflake/Jinja lint and complete BigQuery syntax export with one rebuilt candidate."
+keywords = ["optimbench", "performance", "python", "sql", "linter", "cli", "standalone"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "723150396a9445f75bdfef3d6e9f971df2a93711"
+baseline_git_tree = "bfbce0ef42b9cc50e6ed4375141502a07698225a"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "SQLFluff (sqlfluff/sqlfluff)"
+language = "Python"
+run_mode = "standalone"
+upstream_repo = "https://github.com/sqlfluff/sqlfluff"
+upstream_commit = "0348222a3bcdb0226563f7349c5a39beb0641955"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = true
+verifier_ready = false
+
+[verifier]
+timeout_sec = 5400.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:sqlfluff-project-lint-1.0.0@sha256:33c16710b5306c99c57735b5e5b3b1bb5100c7314cc637acdf8cb33e031e2c79"
+network_mode = "no-network"
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384

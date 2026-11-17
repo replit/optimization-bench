@@ -1,0 +1,59 @@
+{
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0 (2026-10-29): adds the webpack-esm performance unit (minify() with module: true, two compress passes, ecma 2015 and mangling, once per unminified ES-module library dist file from pinned npm packages) next to the unchanged existing minification unit. Existing workload, inputs and references unchanged.",
+  "v1_1_changelog": "workload unchanged; source-map realism deferred",
+  "registered_library_coverage": "unmeasured",
+  "baseline_source_sha256": "6297e8d1db990c0ba388d159c6ffe5ead4ac5aac68401a65ffc12bff68757fcb",
+  "edition": "devtools-fresh-20261023",
+  "loading_probe_command": [
+    "node",
+    "--input-type=module",
+    "-e",
+    "import{minify}from'/candidate/project/main.js'; const r=await minify('function f(a){return a+0}'); if(typeof r.code!=='string')throw Error('minify failed'); console.log(JSON.stringify({entry:'/candidate/project/main.js',node:process.version}));"
+  ],
+  "platform": "linux/amd64",
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".js"
+    ],
+    "max_source_bytes": 20000000,
+    "max_source_files": 1000,
+    "protected_paths": [],
+    "source_roots": [
+      "lib"
+    ]
+  },
+  "status": "qualification-pending",
+  "task": "terser-minify",
+  "upstream_test_command": [
+    "npm",
+    "test"
+  ],
+  "upstream_timeout": 7200,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

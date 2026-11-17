@@ -1,0 +1,80 @@
+{
+  "calibration_max_age_seconds": 86400,
+  "case_roles": {
+    "heldout": {
+      "batch": "performance",
+      "webpack-esm": "performance"
+    },
+    "public": {
+      "batch": "performance",
+      "webpack-esm": "performance"
+    }
+  },
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "case_budget": 24,
+    "case_timeout_seconds": 30,
+    "command": [
+      "node",
+      "/verifier-differential/run.mjs"
+    ],
+    "enabled": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "time_cap_seconds": 600
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "performance_units": {
+    "heldout": {
+      "cdnjs-assets": [
+        "batch"
+      ],
+      "webpack-esm": [
+        "webpack-esm"
+      ]
+    },
+    "public": {
+      "cdnjs-assets": [
+        "batch"
+      ],
+      "webpack-esm": [
+        "webpack-esm"
+      ]
+    }
+  },
+  "pids_limit": 512,
+  "process_state": {
+    "enabled": true,
+    "kind": "node"
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "entries": [
+      {
+        "mode": "import",
+        "path": "project/main.js"
+      },
+      {
+        "mode": "require",
+        "path": "project/dist/bundle.min.js"
+      }
+    ],
+    "kind": "javascript"
+  },
+  "qualification_notes": "Two unchanged performance units: `cdnjs-assets` is the original cdnjs batch minus the non-commercially licensed Highmaps 6.0.3 input (149 assets); `webpack-esm` minifies seven pinned npm ES-module dist files with webpack 5's production-default Terser options. Each unit is one Node process. Every remaining public input and all held-out inputs keep their exact original output commitments. Public inputs are acquired before timing and mounted at runtime, not redistributed in the final image. Held-out inputs use verifier-only authenticated acquisition.",
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "warmups": 1
+}

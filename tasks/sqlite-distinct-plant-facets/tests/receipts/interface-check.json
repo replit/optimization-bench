@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "components": [
+    {
+      "passed": true,
+      "removed": [],
+      "changed": [],
+      "baseline_items": 279,
+      "candidate_items": 279,
+      "kind": "symbols",
+      "baseline_sha256": "3c7d67e3f47a8622f852b10ac0827962cc0d6178623dba353a729b1f07710d9a"
+    },
+    {
+      "passed": true,
+      "removed": [],
+      "changed": [],
+      "baseline_items": 364,
+      "candidate_items": 364,
+      "declaration_extraction": {
+        "baseline": {
+          "mode": "preprocessed",
+          "commands": [
+            {
+              "compiler": "cc",
+              "language": "c",
+              "flags": [
+                "-I",
+                "/candidate",
+                "-I",
+                "/candidate/objects"
+              ]
+            }
+          ],
+          "build_metadata": [
+            "objects/Makefile",
+            "source/ext/vec1/Makefile"
+          ],
+          "headers": {
+            "objects/sqlite3.h": {
+              "mode": "preprocessed"
+            }
+          }
+        },
+        "candidate": {
+          "mode": "preprocessed",
+          "commands": [
+            {
+              "compiler": "cc",
+              "language": "c",
+              "flags": [
+                "-I",
+                "/candidate",
+                "-I",
+                "/candidate/objects"
+              ]
+            }
+          ],
+          "build_metadata": [
+            "objects/Makefile",
+            "source/ext/vec1/Makefile"
+          ],
+          "headers": {
+            "objects/sqlite3.h": {
+              "mode": "preprocessed"
+            }
+          }
+        }
+      },
+      "kind": "declarations",
+      "baseline_sha256": "548412e70d1f82107cad0ce8280c7ece637eaf173d9d1acacc90281b66e9bea7"
+    }
+  ]
+}

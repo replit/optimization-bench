@@ -1,0 +1,28 @@
+{
+  "format": "optimbench-inputs-v1",
+  "task": "ruff-project-lint",
+  "edition": "ruff-cases-v1",
+  "note": "Frozen original disjoint CLI batches; cli-output-v1 exit status/stdout/stderr result.",
+  "splits": {
+    "train": [
+      {
+        "docs": [
+          {
+            "path": "pandas",
+            "sha256": "ea7d6e16b5fed68373a2d63deb65f987a212ac462776602cd429eda4c61ae829",
+            "bytes": 925334,
+            "expect_len": 180579,
+            "expect_sha": "7397333232c494f17eafac2be4b845659049f2dd8d4fa73de50178651109e6f3"
+          },
+          {
+            "path": "fastapi",
+            "sha256": "8528a02ebbecf67032fe9b6a383c94513699f38255f8d0e66fa3d97b61239134",
+            "bytes": 1968,
+            "expect_len": 124839,
+            "expect_sha": "6d7ab69486c58f9c66cc3de16830bee3754a5d3d501dec0f7511f52434afdc5b"
+          }
+        ]
+      }
+    ]
+  }
+}

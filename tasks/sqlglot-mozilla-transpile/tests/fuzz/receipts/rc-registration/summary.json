@@ -1,0 +1,40 @@
+{
+  "build_sha256": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+  "candidate_qualification": false,
+  "cli_affinity": "shared Framework2 cc0f3f5 observer records actual affinity",
+  "cpu_1_2_4_8": "Shared 50ae082 replay active; no result claimed",
+  "format": "optimbench-fuzz-v1",
+  "fresh_observations_per_case_per_arm": 2,
+  "gates": {
+    "aliasing": "passed",
+    "cli_faults": "earlier real CPU0 smoke passed; final protected ENV/full CPU replay pending",
+    "header_consumers": "not_applicable independently reviewed pinned purePython feature",
+    "repeat_in_process": "passed",
+    "stream_faults": "passed"
+  },
+  "image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "known_gaps": [
+    "Full transitive public surface/opts/custom subclasses incomplete",
+    "Full hardening campaigns and changed-coverage adequacy incomplete",
+    "No model candidate tested by these pristine/pristine smoke receipts"
+  ],
+  "library_affinity": "actual sched_getaffinity inside every observation",
+  "library_cases": 8,
+  "persistent_calls_per_arm": 16,
+  "process_state_acceptance": "Separate mandatory shared gate not claimed here",
+  "public_callback_error_cases": 4,
+  "registered": {
+    "CLI_CASES": true,
+    "GATES": [
+      "aliasing",
+      "repeat_in_process",
+      "stream_faults"
+    ],
+    "HEADER_CONSUMERS": true
+  },
+  "scope": "Real pristine/pristine pinned Docker library RC smoke on physical CPU0; not candidate qualification",
+  "shared_unit_tests": 90,
+  "source_pin": "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76",
+  "task_unit_tests": 18,
+  "timing_performed": false
+}

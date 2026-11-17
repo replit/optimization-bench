@@ -1,0 +1,23 @@
+{
+  "format": "git-rc-pristine-smoke-v1",
+  "judge_revision": "331098d53464b053bc52b8d8011bd40f5c0eb74c",
+  "image": "sha256:a3127576b96c8419d26d2ef5f8513883eb4e6f3429cfe87b49223e40a0efea25",
+  "build_inventory_sha256": "c1c0118e6eb3797319917c26cc38ffadc583b374142de4de9252b0999460c341",
+  "arms": "pristine-vs-pristine",
+  "cpuset": "0-7",
+  "cases": 11,
+  "native_calls_per_persistent_worker": 22,
+  "registration_gate_results": {
+    "stream_faults": "passed",
+    "repeat_in_process": "passed",
+    "aliasing": "passed"
+  },
+  "exact_effects_checked": true,
+  "per_observation_native_affinity_checked": true,
+  "per_call_native_lifecycle_checked": true,
+  "production_candidate_replay": false,
+  "archive": "rc-pristine-smoke.tar.gz",
+  "archive_sha256": "c5721cf09847a29fc7fbf22b40278b8a5f9bd23c7f10c61d6babeb5f6a952026",
+  "probe_source_sha256": "26283296d6ffeea65d0c5c00ee440f73345fdb242206b9d6feffc840cff0860c",
+  "limitations": "Bounded smoke only. Complete campaign qualification and runtime process-state gate remain controller-owned."
+}

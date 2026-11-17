@@ -1,0 +1,190 @@
+{
+  "adapter_id": "sqlfluff.mutable-block-config.v1",
+  "cases": [
+    {
+      "case_id": "A",
+      "faults": {},
+      "operations": [
+        {
+          "config": {
+            "comma": {
+              "spacing_before": "touch"
+            }
+          },
+          "handle": "A",
+          "op": "factory"
+        },
+        {
+          "factory": "A",
+          "handle": "first",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "factory": "A",
+          "handle": "second",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "handle": "first",
+          "kwargs": {
+            "after": "touch",
+            "before": "any"
+          },
+          "op": "incorporate"
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "config": {
+            "comma": {
+              "spacing_after": "touch"
+            }
+          },
+          "handle": "B",
+          "op": "factory"
+        },
+        {
+          "factory": "B",
+          "handle": "other",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "handle": "other",
+          "kwargs": {
+            "before": "single"
+          },
+          "op": "incorporate"
+        },
+        {
+          "factory": "A",
+          "handle": "third",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "handle": "first",
+          "op": "observe"
+        }
+      ],
+      "surface_id": "sqlfluff.utils.reflow.config.ReflowConfig.get_block_config"
+    },
+    {
+      "case_id": "B",
+      "faults": {},
+      "operations": [
+        {
+          "config": {
+            "comma": {
+              "spacing_before": "single"
+            }
+          },
+          "handle": "A",
+          "op": "factory"
+        },
+        {
+          "factory": "A",
+          "handle": "first",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "factory": "A",
+          "handle": "second",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "handle": "first",
+          "kwargs": {
+            "after": "touch",
+            "before": "any"
+          },
+          "op": "incorporate"
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "config": {
+            "comma": {
+              "spacing_after": "touch"
+            }
+          },
+          "handle": "B",
+          "op": "factory"
+        },
+        {
+          "factory": "B",
+          "handle": "other",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "handle": "other",
+          "kwargs": {
+            "before": "single"
+          },
+          "op": "incorporate"
+        },
+        {
+          "factory": "A",
+          "handle": "third",
+          "op": "get",
+          "types": [
+            "comma"
+          ]
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "handle": "first",
+          "op": "observe"
+        }
+      ],
+      "surface_id": "sqlfluff.utils.reflow.config.ReflowConfig.get_block_config"
+    }
+  ],
+  "format": "judge-generic-api-sequence-v1",
+  "order": [
+    "A",
+    "B",
+    "A"
+  ],
+  "repetitions": 3,
+  "request_id": "mutable-isolation",
+  "task": "sqlfluff-project-lint"
+}

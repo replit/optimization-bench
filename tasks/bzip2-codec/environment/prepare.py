@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+"""Image-build input authentication and exact original public commitment gate."""
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+sys.path.insert(0, "/app/workload")
+from runner import locked_cases
+from task import references
+
+workload = Path("/app/workload")
+cases = locked_cases(workload / "inputs")
+if len(sys.argv) > 1:
+    build = Path(sys.argv[1])
+    result = subprocess.run([str(build / "run")], check=True, capture_output=True, text=True)
+    got = {}
+    for line in result.stdout.splitlines():
+        name, size, sha = line.split("\t")
+        if name in got:
+            raise ValueError("Duplicate output")
+        got[name] = (int(size), sha)
+    expected = {r["path"]: (r["expect_len"], r["expect_sha"])
+                for r in references(workload / "inputs")}
+    if got != expected:
+        raise ValueError("Pinned complete-output baseline mismatch")
+    print(f"Authenticated all {len(got)} original public commitments")

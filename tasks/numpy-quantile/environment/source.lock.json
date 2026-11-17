@@ -1,0 +1,16 @@
+{
+  "task": "numpy-quantile",
+  "source_repository": "https://github.com/numpy/numpy",
+  "source_version": "2.5.4",
+  "upstream": {
+    "url": "https://files.pythonhosted.org/packages/95/b0/c7453d0b6e2073c3264468b106ee1563750cecc910965e67357e3698c83e/numpy-2.5.4.tar.gz",
+    "sha256": "9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a",
+    "bytes": 20866315,
+    "kind": "sdist"
+  },
+  "base_image": "python:3.12-slim-bookworm@sha256:54c85f3c47607a77f32adec749d3c81d1348bf25833671f512b26a9b6d778cb3",
+  "platform": "linux/amd64",
+  "commit": null,
+  "compiler_package_policy": "Base image digest pinned; apt package versions recorded during validation. Cross-host toolchain identity requires a published image digest.",
+  "dependency_policy": "No runtime downloads; fixed source and build settings; NumPy toolchain Python versions pinned in requirements-toolchain.txt."
+}

@@ -1,0 +1,24 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "numpy-quantile",
+  "language": "mixed",
+  "status": "draft-readiness",
+  "contract_sources": [
+    "tasks/numpy-quantile/instruction.md",
+    "tasks/numpy-quantile/tests/judge.json",
+    "tasks/numpy-quantile/tests/differential/README.md",
+    "numpy 2.5.4 numpy.quantile/nanquantile/percentile/nanpercentile/median/nanmedian documentation"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {"profile": "TBD: design section 4 group, declared before results"},
+  "resources": {
+    "peak_memory": {"mode": "report-only", "verdict_impact": false}
+  }
+}

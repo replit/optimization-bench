@@ -1,0 +1,20 @@
+[package]
+name = "optimbench-sanitizer-controls"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "safe"
+path = "safe.rs"
+
+[[bin]]
+name = "race"
+path = "race.rs"
+
+[[bin]]
+name = "miri-safe"
+path = "miri-safe.rs"
+
+[[bin]]
+name = "miri-bad"
+path = "miri-bad.rs"

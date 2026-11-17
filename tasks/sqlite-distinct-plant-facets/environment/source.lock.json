@@ -1,0 +1,11 @@
+{
+  "baseline_git_commit": "4e225016bd10704fbdfe7d2decdd4c04a285d91e",
+  "baseline_git_tree": "0ea58193086cadd4ae4fb73e1d712b9419f08b69",
+  "schema_version": 1,
+  "upstream": {
+    "bytes": 13458547,
+    "commit": "57520227c95396ce39ba6ecaac8d475b78dd3964",
+    "sha256": "11e88a37e198edb4895357a160651017da0fe9cf83e4a988503e35d9bb2d97b8",
+    "url": "https://codeload.github.com/sqlite/sqlite/tar.gz/57520227c95396ce39ba6ecaac8d475b78dd3964"
+  }
+}

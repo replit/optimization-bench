@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "url": "https://codeload.github.com/tukaani-project/xz/tar.gz/299eb5c3f597f107fd6019bf156885ac8bfaa5ea",
+    "commit": "299eb5c3f597f107fd6019bf156885ac8bfaa5ea",
+    "sha256": "c1f497513e85cbc2f3760990a6ed9cbebe6386f273481b87251d0d6eb481c51a",
+    "bytes": 1740597
+  }
+}

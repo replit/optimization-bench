@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-26",
+  "scope": "Post-qualification metadata and focused regression checks; no new performance samples",
+  "canonical_catalog_check": "passed",
+  "task_shells": {
+    "checked": 22,
+    "passed": 22,
+    "library_executions": 0,
+    "scored_qualification": false
+  },
+  "task_preparation_helper_tests": {
+    "run": 11,
+    "passed": 11
+  },
+  "catalog_binding_tests": {
+    "run": 4,
+    "passed": 4
+  },
+  "generic_preparation_tests": {
+    "run": 9,
+    "passed": 3,
+    "skipped": 6
+  },
+  "build_script_current_files_sha256": "5e5612ff084a9c862e5225e3a286ab8b7374165cbd6bde7b2ff577971198654b",
+  "git_diff_check": "passed",
+  "per_family_cgroup_throttling": {
+    "patch-myers": {
+      "readings": 496,
+      "maximum_throttled_usec": 0,
+      "missing": 0
+    },
+    "shortstat-myers": {
+      "readings": 496,
+      "maximum_throttled_usec": 0,
+      "missing": 0
+    },
+    "patch-histogram": {
+      "readings": 496,
+      "maximum_throttled_usec": 0,
+      "missing": 0
+    }
+  },
+  "per_family_host_steal_and_sibling_attribution": "unavailable; session-wide counters only",
+  "claimable": false,
+  "calibration_eligible": false
+}

@@ -1,0 +1,20 @@
+{
+  "allowed_extensions": [
+    ".c",
+    ".h",
+    ".jq",
+    ".l",
+    ".y"
+  ],
+  "max_source_bytes": 20000000,
+  "max_source_files": 1000,
+  "protected_paths": [
+    "src/jq_test.c"
+  ],
+  "protected_symlinks": {
+    "docs/content/manual/manual.yml": "v1.8/manual.yml"
+  },
+  "source_roots": [
+    "src"
+  ]
+}

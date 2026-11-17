@@ -1,0 +1,40 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/serde-json/src" }]
+[task]
+name = "optimbench/serde-json-production-crate-index-ingestion"
+version = "1.0.0"
+description = "Optimize one resident unit ingesting distinct complete Rust registry histories with full output verification."
+keywords = ["optimbench", "rust", "json", "registry"]
+[metadata]
+category = "library-optimization"
+[metadata.optimbench]
+baseline_git_tree = "5986ca6d571db1f4f733b78aa9428a4f8f86b73a"
+baseline_git_commit = "48ffa39cf6ce033c7fdcb985d68eae8dd4dc711c"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "serde_json"
+language = "Rust"
+run_mode = "resident-process"
+upstream_repo = "https://github.com/serde-rs/json"
+upstream_commit = "20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = false
+verifier_ready = false
+[verifier]
+timeout_sec = 5400.0
+environment_mode = "separate"
+network_mode = "no-network"
+[agent]
+timeout_sec = 7200.0
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:serde-json-production-crate-index-ingestion-1.0.0@sha256:68df1e25b1ecb42905872929031eae9f6719cf28b0e21d1a5c3428cebd8abea6"
+network_mode = "no-network"
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384

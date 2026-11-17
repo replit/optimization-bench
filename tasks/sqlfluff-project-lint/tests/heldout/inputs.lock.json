@@ -1,0 +1,299 @@
+{
+  "files": {
+    "files/9198f972f90dbf3fb67c2f4209636e8a4e28c087df245ad6988ae82366e8a988": {
+      "bytes": 839,
+      "sha256": "9198f972f90dbf3fb67c2f4209636e8a4e28c087df245ad6988ae82366e8a988"
+    },
+    "projects/mimic-bigquery/.sqlfluff": {
+      "bytes": 636,
+      "sha256": "fb5e9f62caaea3273ac20475543d055f088b43a73086d2f1340e84dfe2139991"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/comorbidity/charlson.sql": {
+      "bytes": 13725,
+      "sha256": "1a6d13edbef12fad4deec3748d5ac903357233fdcf2ca4bd183db257ca915fb2"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/demographics/age.sql": {
+      "bytes": 1527,
+      "sha256": "b91101e98437f96ffdf7b9136a4506ab6a790b1f63572ffcd14c31a28ee273d6"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/demographics/icustay_detail.sql": {
+      "bytes": 1676,
+      "sha256": "35103cee621ed025d266e6c4c59916515ad2ecf59e6b1f1962bff5821e463cd8"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/demographics/icustay_hourly.sql": {
+      "bytes": 1499,
+      "sha256": "6e20f8fba635f25708b29b48f926c4bd68da691bfae66a04fba394593c8c1f28"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/demographics/icustay_times.sql": {
+      "bytes": 680,
+      "sha256": "a26457b40e30eb4d6dbd98809ab0a39044d014806554c3f2c065262d6cb14bcc"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/demographics/weight_durations.sql": {
+      "bytes": 3684,
+      "sha256": "82e23dd4ac6d0dc316438d08ee3f5edab2c4ca0f6535c23b3ab40eb7cafcd795"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_bg.sql": {
+      "bytes": 1894,
+      "sha256": "3c2ff855bc1fea224d78c50e5905f652e100d75857ef9cf909be8fc10e92a352"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_bg_art.sql": {
+      "bytes": 1903,
+      "sha256": "f3ef6de5f9b071736c19bc27eedeb2509173d9084019ced555ac8dc882683fac"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_gcs.sql": {
+      "bytes": 1856,
+      "sha256": "ebbabc9c407dcea8acc5363636ee6218723192aa6122e49e2e4d553ce958a4a5"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_height.sql": {
+      "bytes": 634,
+      "sha256": "4ac0656fe4336995f39871093a445b2b46df86dda3d81ff791575bc4d3a98352"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_lab.sql": {
+      "bytes": 7037,
+      "sha256": "bf7b2828579565b923b9c132a3e0c3ec66ee61abf69b0f1c27b034039e72a0cf"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_rrt.sql": {
+      "bytes": 630,
+      "sha256": "24b7035b85822139f5b7ab952598ff2dcd35067040dd23c239e6db81ce43c859"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_sofa.sql": {
+      "bytes": 9433,
+      "sha256": "e56ae4c67d7b19bf8d47f262011bcd888bdb04160b1e9ce744423243b867892e"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_urine_output.sql": {
+      "bytes": 552,
+      "sha256": "2ddae1a9d4d0040bedbbb24b552576375f8aa4311e7c9b7ee2603227c5502f11"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_vitalsign.sql": {
+      "bytes": 1240,
+      "sha256": "f85ecb807cbd23090b41f02af2253cf2e46ba8d50e8734fb2577be3a4b9af700"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_weight.sql": {
+      "bytes": 858,
+      "sha256": "be5dbedf07b372ebb5e57f9a8004beaa988ac347e73822b72aedba34af3b69a3"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/bg.sql": {
+      "bytes": 8367,
+      "sha256": "90a7f58852b5af97cfce799e9e76a9754c765e2fb9593860ca6bf85b60a5cd55"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/blood_differential.sql": {
+      "bytes": 6864,
+      "sha256": "a93f21dfb29e00b1450fabff5572830a2a5930f1229dbe43f816dd1b8b8235f1"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/cardiac_marker.sql": {
+      "bytes": 860,
+      "sha256": "a8e02e5df6089cb4c26cf7c5779a999cf20b5708071f5ae113b570b5f1ac7b36"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/chemistry.sql": {
+      "bytes": 2969,
+      "sha256": "b674ae2e12fe859c44850a5e8268f3a18ccb934fb9f0ab47112af0c346364d70"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/coagulation.sql": {
+      "bytes": 1164,
+      "sha256": "d6f9ba24d8872e3eaed92707522dd2f24a51f879dd77feebe25ee9c6b08225dc"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/complete_blood_count.sql": {
+      "bytes": 1409,
+      "sha256": "8eb94ba8891e0effa66c7a62c76e648d9f42e8941f97f052c92a0823434bae92"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/creatinine_baseline.sql": {
+      "bytes": 1985,
+      "sha256": "3ca2e029f27025df7c96b5364e4bc7acf7165510340160f9f32406a3e838cdda"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/enzyme.sql": {
+      "bytes": 1686,
+      "sha256": "5c719b94ec9947366f4eb191687e12f2b80931764272c3c6988506ef716647cd"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/gcs.sql": {
+      "bytes": 4606,
+      "sha256": "77d14660a8322928069c049cd1aa28eb8f356b7751f73eba2625358266f3039e"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/height.sql": {
+      "bytes": 1313,
+      "sha256": "9b024d54f770b9a8e1f1ac0afe84fe5918295155eaa95872a849ef112c76d492"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/icp.sql": {
+      "bytes": 645,
+      "sha256": "d7a6ad8f8c455f2f177c26749a0fbf80d000e652dfda276b9782fa7dcd99f62c"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/inflammation.sql": {
+      "bytes": 519,
+      "sha256": "88b7cc933d2832aed284a489ee67a3a156e67365c96e60706fb6eb6c537590c9"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/oxygen_delivery.sql": {
+      "bytes": 3977,
+      "sha256": "b3c9df45c64ac7364e98c8eba0ebf233dc153ffecdc8ad23bb4b9cea53bd2752"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/rhythm.sql": {
+      "bytes": 973,
+      "sha256": "97a4b14b1d493605f91ce7587e05fdf0990e1ba1cdfe5562d2e522996219517d"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/urine_output.sql": {
+      "bytes": 1168,
+      "sha256": "51de17db6f24817d1c442654f01b2423e49001738682c0b9d2d6025a3407301a"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/urine_output_rate.sql": {
+      "bytes": 4600,
+      "sha256": "2a94ace1b31094d311b32ae3256eeba0ed6ff000fb57fe30b9917de89db5d7ff"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/ventilator_setting.sql": {
+      "bytes": 3192,
+      "sha256": "80ac2b4bde1d4e8324f1818bd36c453fe0b70b2e90e228762ecfe65fcc757708"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/measurement/vitalsign.sql": {
+      "bytes": 3498,
+      "sha256": "9a618fb7f6bf74ed1571e08088b09d1f27a8ccf8b1054082a94270cde456ab0d"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/acei.sql": {
+      "bytes": 969,
+      "sha256": "6a5ec32282f6e5207d33818b689fb1c52d41c075f36a0dbc6eeb135afb510110"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/antibiotic.sql": {
+      "bytes": 10091,
+      "sha256": "300816a74a070b2dffe6c5aa982e8103c46080fa5ed98cf5fffd36a245b24be2"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/arb.sql": {
+      "bytes": 961,
+      "sha256": "e24b91d1ecf8eaef598129b7e9cf14e21b2ff27491407c08fbb07efab9b35d97"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/dobutamine.sql": {
+      "bytes": 369,
+      "sha256": "7b74249ebca27705ed5e31de753189c60a27e002a50c29745ff0bffee6e27ad5"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/dopamine.sql": {
+      "bytes": 366,
+      "sha256": "4809121abcd1bd3d827a3025b7427f959dc99a53bbbee7dbe109c957145ff74d"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/epinephrine.sql": {
+      "bytes": 373,
+      "sha256": "97c1c3cf8c549fb7546c85c7a66902911cc217fd39fd29b3a15070e83d6a2e5a"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/milrinone.sql": {
+      "bytes": 349,
+      "sha256": "5ff338dcfd6d66733ae2a543bf6180a635518772bc9ea88591552df86a00794e"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/neuroblock.sql": {
+      "bytes": 434,
+      "sha256": "1e42f6d1f894f593eb315ab1f876ca4777892c65f89113a768c7e003db3ac19f"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/norepinephrine.sql": {
+      "bytes": 728,
+      "sha256": "4972b33d3dce3aa0f8626f790b19d4cff033436e0910845f795c7e2a55ec1d28"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/norepinephrine_equivalent_dose.sql": {
+      "bytes": 1458,
+      "sha256": "b4c4840d06b079344194eb038bb295b009ddd2ad630b57c5a5dbbb03e7cef11c"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/nsaid.sql": {
+      "bytes": 1529,
+      "sha256": "5289cf2b0e5c6e1f05030c843560ad36c10c03303492d5cadf60acace92aeccc"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/phenylephrine.sql": {
+      "bytes": 470,
+      "sha256": "173331e5ad8a011e4c9d24faae342ad3a1de5e645879210715885d099c6032a3"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/vasoactive_agent.sql": {
+      "bytes": 4664,
+      "sha256": "7c8fd57ead83e4b8edf3867204b23fac3d06c141bc8ada8be8fa6513dab1b390"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/medication/vasopressin.sql": {
+      "bytes": 591,
+      "sha256": "13a5e11dd3a4275ffc64dc4f588c04773f6439889fabb2791a2f23edbed2e43b"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/organfailure/kdigo_creatinine.sql": {
+      "bytes": 1865,
+      "sha256": "a7daeaf1c58c6f3b6a3f6fb0e8b7623e1b922123451ee485cc93bb4beb8b30b4"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/organfailure/kdigo_stages.sql": {
+      "bytes": 5363,
+      "sha256": "ecfa0c8c343d3d210a4bf1d59882d83472f4ad02001ae87a605a3695be262d55"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/organfailure/kdigo_uo.sql": {
+      "bytes": 3733,
+      "sha256": "7b4e012a2dc3c1c50f080372edc003aec5f7d3388a3a4d788d4b3cd89c71d2d2"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/organfailure/meld.sql": {
+      "bytes": 5449,
+      "sha256": "a7ce07eb899fcdcf5fc6e2f2200adcc0af320767acc404c7a13a6bf5de919679"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/score/apsiii.sql": {
+      "bytes": 33214,
+      "sha256": "9692a6342940d7c2f885a67db72fc18ce38eab174c4e360a3fe82262d03085c0"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/score/lods.sql": {
+      "bytes": 7568,
+      "sha256": "97d645d39862837b29872571121c3581107ff12cd1f0e6d6217548088e3f410d"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/score/oasis.sql": {
+      "bytes": 11023,
+      "sha256": "7b5082e8e66df40a95590567ab4dad7ef28e44d4a0be7b921d02186c6616a19e"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/score/sapsii.sql": {
+      "bytes": 17503,
+      "sha256": "a7f474712fd8e8e68b7293d1e70e7f42b19fe2712c9c8a8b14149a20a1f52df7"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/score/sirs.sql": {
+      "bytes": 3392,
+      "sha256": "5f2ec6dab9e0bd26c8e5873e19442717616b1287eefc3de60b5fda0da557e9b8"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/score/sofa.sql": {
+      "bytes": 12361,
+      "sha256": "a2dcdfa54c7d981c6846e9afdc8492656cfa8aa85137033becec8ac5dc8c1099"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/sepsis/sepsis3.sql": {
+      "bytes": 2824,
+      "sha256": "1d06e0efed85220c8a9cfd27ee9ee50e4dfbbe7a4975a7d2f7af72a92766692a"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/sepsis/suspicion_of_infection.sql": {
+      "bytes": 7200,
+      "sha256": "2347c2101df9cddbdb1a280bcb8a39f9186c95126e2cf00cbe3e94b7fa3efac8"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/treatment/code_status.sql": {
+      "bytes": 2469,
+      "sha256": "b8c92ff0d4c724ab2f5c069735aa5c0b5608842f1450da933190c5bc38ecca67"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/treatment/crrt.sql": {
+      "bytes": 5762,
+      "sha256": "6fffa92ab889ef5701d0bce0f246eef67e64adb2714cb95f2fd466183d6bd17a"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/treatment/invasive_line.sql": {
+      "bytes": 4544,
+      "sha256": "61c8d3a30219a7d5e3380b3375b0ae595d524b280f1a69f24dcdb3e5a1fe2f7c"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/treatment/rrt.sql": {
+      "bytes": 13309,
+      "sha256": "9b0b11a15f442b402701424a83229df0ee03a9225fc267d27faa4cc2d3089f8b"
+    },
+    "projects/mimic-bigquery/mimic-iv/concepts/treatment/ventilation.sql": {
+      "bytes": 9357,
+      "sha256": "8d7ce56f2d71c8aab18625c7af03c7324cdabfd87c8a431077d755672909a2b2"
+    },
+    "projects/pagila-schema/.sqlfluff": {
+      "bytes": 67,
+      "sha256": "c2c342ca97c510ee13cf75ba0976d794ebc293cf4d422e34c68956ad1e37c20a"
+    },
+    "projects/pagila-schema/LICENSE.txt": {
+      "bytes": 988,
+      "sha256": "dcc10ac50b94172e627f7a5ec9c08f9e4568e6dd51a952f96ec09506f70163fb"
+    },
+    "projects/pagila-schema/README.md": {
+      "bytes": 32227,
+      "sha256": "46d477d73f97abc78774be5337fec7e00cbb53903bfa9f2bfd15a7cc3f127592"
+    },
+    "projects/pagila-schema/pagila-schema.sql": {
+      "bytes": 89841,
+      "sha256": "071ee940a73c8f4fad2997185788065291607e2c55559e3747959e8275391536"
+    },
+    "projects/stripe-postgres/.sqlfluff": {
+      "bytes": 272,
+      "sha256": "01dd313b8ad015e4157a21923c90728e0f8fb1d808e2076f680dacc8643ac1c8"
+    },
+    "projects/stripe-postgres/internal/queries/queries.sql": {
+      "bytes": 24228,
+      "sha256": "1a75037834aa2661a9fc215a3f5bbb7ad24f2c04ac666e57dfd88b879557d08a"
+    }
+  },
+  "provenance": "built-new-v1.1-extended",
+  "schema_version": 1,
+  "task": "sqlfluff-project-lint"
+}

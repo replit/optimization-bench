@@ -1,0 +1,44 @@
+{
+  "schema": "optimbench-runner-toolchains-v1",
+  "scope": "reference runner and explicit task-image overlays, not production toolchain replacements",
+  "native": {
+    "debian_snapshot": "20261025T000000Z",
+    "llvm": "16.0.6 (15~deb12u1)",
+    "aflplusplus": "4.04c",
+    "package_closure": "/opt/fuzz-os-packages.lock"
+  },
+  "rust": {
+    "cargo_fuzz": "0.13.2",
+    "cargo_fuzz_crate_sha256": "5acfd01930e49823e58c30dd8012d3338a620377d7c7d4cc140ca4b2169400e2",
+    "nightly": "nightly-2026-10-01",
+    "nightly_manifest_sha256": "dd6769c70aab36f52d21f834e16e4991d2afe156c705d8a45f725bed8181446c",
+    "nightly_component_xz_sha256": {
+      "cargo": "7bf1fb270da7eaff50abde4b6dccfff3e4193241b8fe47793954f941fdb3c42e",
+      "rustc": "e5be3443efda4a8e6fe3b9ab81cebff29a539cd12932faa37df8a6ad2d8684b2",
+      "rust-std": "32ae13688c188ace89bbff2564aaa1b193a233cd3d155644219c56212915abb8",
+      "rust-src": "c88c3e64e73461bbca1d1e49a99d62e82b2106c4a6d3122d4ed9fe520e4dbdf0",
+      "llvm-tools-preview": "124e838166b19bdf9d3a90c6cf9b89249150bd86491ad8d4ee3f9ba531c873be",
+      "miri-preview": "77ef5fb329eebe6f6189d8e17ec7b3757ab482efaaa50afb289fc371703de0ed"
+    },
+    "property_and_fuzz_dependencies": "rust/Cargo.lock",
+    "standard_library_dependencies": "matching pinned rust-src library/Cargo.lock"
+  },
+  "go": {
+    "toolchain": "task image, GOTOOLCHAIN=local",
+    "rapid": "v1.2.0",
+    "dependency_checksums": "go/go.sum"
+  },
+  "python": {
+    "interpreter": "task image, no ABI downgrade",
+    "wheel_lock": "python.lock",
+    "wheel_abis": ["cp312", "cp313", "cp314"],
+    "architecture": "linux-x86_64"
+  },
+  "javascript": {
+    "node": "task image, no libc replacement",
+    "npm_lock": "package-lock.json",
+    "jazzer_source_commit": "f3eb99cb0ea20fe45356535b1f60f86741974e72",
+    "jazzer_source_archive_sha256": "2c8c23ffb3d12ae3d0171ed6ee15c51a4ab0a0b5bf53d9474819877368eb3900",
+    "jazzer_compiler_rt_archive_sha256": "200b32c897b1171824462706f577d7f1d6175da602eccfe570d2dceeac11d490"
+  }
+}

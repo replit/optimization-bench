@@ -1,0 +1,30 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "serde-json-production-crate-index-ingestion",
+  "language": "rust",
+  "contract_sources": [
+    "instruction.md:preserve public exports/features/generic Serde integration/ownership/error behavior",
+    "Rust std::io::Read and std::io::Write contracts",
+    "serde_json 1.0.154 public Serialize/Deserialize/StreamDeserializer documentation"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {
+    "profile": "XZ-serde_json-SpaceWasm-Zrip-jq-NumPy",
+    "property_seconds": 1200,
+    "coverage_guided_seconds": 3600,
+    "fault_state_seconds": 1200,
+    "sanitizer_seconds_per_build": 1800,
+    "case_timeout_seconds": 30,
+    "cases_per_seed": 120
+  },
+  "resources": {
+    "peak_memory": {"mode": "report-only", "verdict_impact": false}
+  }
+}

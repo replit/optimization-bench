@@ -1,0 +1,12 @@
+{
+  "api": true,
+  "broken_rejected_each_family": true,
+  "fresh_independent_git_equal": true,
+  "fuzz": true,
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "passed": true,
+  "process_state": true,
+  "public_exact_families": 3,
+  "timing_qualification": false,
+  "upstream": true
+}

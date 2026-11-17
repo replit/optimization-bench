@@ -1,0 +1,67 @@
+schema_version = "1.4"
+artifacts = [
+  { source = "/app/ruff/crates/ruff/src" },
+  { source = "/app/ruff/crates/ruff_linter/src" },
+  { source = "/app/ruff/crates/ruff_workspace/src" },
+  { source = "/app/ruff/crates/ruff_cache/src" },
+  { source = "/app/ruff/crates/ruff_diagnostics/src" },
+  { source = "/app/ruff/crates/ruff_notebook/src" },
+  { source = "/app/ruff/crates/ruff_source_file/src" },
+  { source = "/app/ruff/crates/ruff_text_size/src" },
+  { source = "/app/ruff/crates/ruff_ranged_value/src" },
+  { source = "/app/ruff/crates/ruff_python_parser/src" },
+  { source = "/app/ruff/crates/ruff_python_ast/src" },
+  { source = "/app/ruff/crates/ruff_python_semantic/src" },
+  { source = "/app/ruff/crates/ruff_python_index/src" },
+  { source = "/app/ruff/crates/ruff_python_importer/src" },
+  { source = "/app/ruff/crates/ruff_python_edits/src" },
+  { source = "/app/ruff/crates/ruff_python_codegen/src" },
+  { source = "/app/ruff/crates/ruff_python_literal/src" },
+  { source = "/app/ruff/crates/ruff_python_stdlib/src" },
+  { source = "/app/ruff/crates/ruff_python_trivia/src" },
+  { source = "/app/ruff/crates/ruff_db/src/diagnostic" },
+]
+
+[task]
+name = "optimbench/ruff-project-lint"
+version = "0.3.0"
+description = "Speed up source-built Ruff on the original pandas and FastAPI lint workflows plus a CI-style check and format-check matrix: fresh CLI processes per project, eight Rayon threads, cache and fixes off, identical exit status, stdout and stderr."
+keywords = ["optimbench", "performance", "rust", "linter", "cli", "standalone"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "16b6a6ad9804d3d982862be0710e829e72baf381"
+baseline_git_tree = "fcd093243ceb39862ffb0db3685faa4b113acf81"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-pending"
+library = "Ruff (astral-sh/ruff)"
+language = "Rust"
+run_mode = "standalone"
+upstream_repo = "https://github.com/astral-sh/ruff"
+upstream_commit = "3265ed1f944c98bb4c04d632fbefb1257cdb583d"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = true
+verifier_ready = false
+
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:ruff-project-lint-1.0.0@sha256:3c0678aa7f26ad43daa7344ed1eedea821815439b48acd88d9e58cacdab7e2ba"
+network_mode = "no-network"
+build_timeout_sec = 7200.0
+cpus = 8
+memory_mb = 16384

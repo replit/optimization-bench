@@ -1,0 +1,128 @@
+diff --git a/lib/ast.js b/lib/ast.js
+index e2fb192..92f675c 100644
+--- a/lib/ast.js
++++ b/lib/ast.js
+@@ -3244,16 +3244,22 @@ const walk_abort = Symbol("abort walk");
+ 
+ /* -----[ TreeWalker ]----- */
+ 
++Object.defineProperty(AST_Node.prototype, '_tw_kind', { value: 0, writable: true });
++Object.defineProperty(AST_Lambda.prototype, '_tw_kind', { value: 1, writable: true });
++Object.defineProperty(AST_Directive.prototype, '_tw_kind', { value: 2, writable: true });
++Object.defineProperty(AST_Class.prototype, '_tw_kind', { value: 3, writable: true });
++
+ class TreeWalker {
+     constructor(callback) {
+         this.visit = callback;
++        this._uses_descend = callback === undefined || callback.length > 1;
+         this.stack = [];
+         this.directives = Object.create(null);
+     }
+ 
+     _visit(node, descend) {
+         this.push(node);
+-        var ret = this.visit(node, descend ? function() {
++        var ret = this.visit(node, descend && this._uses_descend ? function() {
+             descend.call(node);
+         } : noop);
+         if (!ret && descend) {
+@@ -3268,11 +3274,12 @@ class TreeWalker {
+     }
+ 
+     push(node) {
+-        if (node instanceof AST_Lambda) {
++        const kind = node._tw_kind;
++        if (kind === 1) {
+             this.directives = Object.create(this.directives);
+-        } else if (node instanceof AST_Directive && !this.directives[node.value]) {
+-            this.directives[node.value] = node;
+-        } else if (node instanceof AST_Class) {
++        } else if (kind === 2) {
++            if (!this.directives[node.value]) this.directives[node.value] = node;
++        } else if (kind === 3) {
+             this.directives = Object.create(this.directives);
+             if (!this.directives["use strict"]) {
+                 this.directives["use strict"] = node;
+@@ -3283,7 +3290,8 @@ class TreeWalker {
+ 
+     pop() {
+         var node = this.stack.pop();
+-        if (node instanceof AST_Lambda || node instanceof AST_Class) {
++        const kind = node._tw_kind;
++        if (kind === 1 || kind === 3) {
+             this.directives = Object.getPrototypeOf(this.directives);
+         }
+     }
+diff --git a/lib/output.js b/lib/output.js
+index 34b5a0c..6e76d3e 100644
+--- a/lib/output.js
++++ b/lib/output.js
+@@ -619,12 +619,16 @@ function OutputStream(options) {
+         OUTPUT.append(str);
+         has_parens = str[str.length - 1] == "(";
+         current_pos += str.length;
+-        var a = str.split(/\r?\n/), n = a.length - 1;
+-        current_line += n;
+-        current_col += a[0].length;
+-        if (n > 0) {
+-            ensure_line_len();
+-            current_col = a[n].length;
++        if (str.indexOf("\n") < 0) {
++            current_col += str.length;
++        } else {
++            var a = str.split(/\r?\n/), n = a.length - 1;
++            current_line += n;
++            current_col += a[0].length;
++            if (n > 0) {
++                ensure_line_len();
++                current_col = a[n].length;
++            }
+         }
+         last = str;
+     }
+diff --git a/lib/scope.js b/lib/scope.js
+index c4a86e8..635fd22 100644
+--- a/lib/scope.js
++++ b/lib/scope.js
+@@ -1064,23 +1064,18 @@ const base54 = (() => {
+     const leading = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$_".split("");
+     const digits = "0123456789".split("");
+     let chars;
+-    let frequency;
++    let freq_codes = new Float64Array(128);
+     function reset() {
+-        frequency = new Map();
+-        leading.forEach(function(ch) {
+-            frequency.set(ch, 0);
+-        });
+-        digits.forEach(function(ch) {
+-            frequency.set(ch, 0);
+-        });
++        freq_codes = new Float64Array(128);
+     }
+     function consider(str, delta) {
+         for (var i = str.length; --i >= 0;) {
+-            frequency.set(str[i], frequency.get(str[i]) + delta);
++            const code = str.charCodeAt(i);
++            if (code < 128) freq_codes[code] += delta;
+         }
+     }
+     function compare(a, b) {
+-        return frequency.get(b) - frequency.get(a);
++        return freq_codes[b.charCodeAt(0)] - freq_codes[a.charCodeAt(0)];
+     }
+     function sort() {
+         chars = mergeSort(leading, compare).concat(mergeSort(digits, compare));
+diff --git a/lib/unicode.js b/lib/unicode.js
+index 20a2a17..e65e709 100644
+--- a/lib/unicode.js
++++ b/lib/unicode.js
+@@ -32,6 +32,8 @@ export function is_basic_identifier_string(str) {
+ }
+ 
+ export function get_full_char(str, pos) {
++    const code = str.charCodeAt(pos);
++    if (!(code >= 0xd800 && code <= 0xdfff)) return str.charAt(pos);
+     if (is_surrogate_pair_head(str.charCodeAt(pos))) {
+         if (is_surrogate_pair_tail(str.charCodeAt(pos + 1))) {
+             return str.charAt(pos) + str.charAt(pos + 1);

@@ -1,0 +1,56 @@
+{
+  "format": "goldmark-reviewed-cli-scope-v1",
+  "task": "goldmark-gfm-html",
+  "upstream_commit": "9ac8030064518346e4c9d7847c85278c3a5244ee",
+  "reviewer": "Current pinned-source release audit; native gate execution is required separately",
+  "public_feature": "Pinned upstream Go Markdown library",
+  "public_markdown_cli": {
+    "applicable": false,
+    "reason": "No upstream Markdown conversion CLI in the pinned public library feature; _tools dispatches only development generators.",
+    "source_path": "_tools/main.go",
+    "sha256": "0c574bfa2ca6a0aef8c8816fa8ceee33126219532dc3846cecf2021a7e7c50b6",
+    "subcommands": [
+      "oss-fuzz-corpus",
+      "unicode-case-folding-map",
+      "emb-structs"
+    ]
+  },
+  "benchmark_driver": {
+    "source_path": "environment/workload/native/main.go",
+    "sha256": "ceba47a510fe47688a82b93f87feab0770f14bc47c3cc6197eba017d7b56749a",
+    "description": "Protected synthetic TSV input/output-path driver writes .out or .err files; converted Markdown is not written to stdout.",
+    "file_io_evidence_mandatory": false,
+    "evidence_status": "conditionally_not_applicable",
+    "reason": "The protected synthetic harness is not a public library surface. Its OS file operations are outside Goldmark; its library calls parse byte slices and render to io.Writer.",
+    "shared_classification": "Driver-I/O exclusions require registered covering library faults and repeat/lifecycle gates; missing coverage remains unmeasured.",
+    "healthy_output_oracle": "Frozen workload exact/declared comparator; unchanged",
+    "covering_callbacks": ["stream_faults", "repeat_in_process"],
+    "covering_callback_evidence": [
+      {
+        "gate": "stream_faults",
+        "surface_id": "parser.Parse+html.Render",
+        "library_io_surface": "html.Render(io.Writer, source, parser-produced AST)",
+        "evidence": "rc_driver.py: GFM and other constructor-valid modes; healthy, partial accepted writes followed by sentinel error, EINTR; two fresh observations per arm"
+      },
+      {
+        "gate": "repeat_in_process",
+        "surface_id": "parser.Parse+html.Render",
+        "evidence": "rc_driver.py: healthy GFM and other modes; native persistent A/B/A with fresh oracle and concrete lifecycle snapshots",
+        "execution_requirement": "Current native writer-fault and repeat/lifecycle callbacks must actually pass; source review and registration alone are not execution evidence"
+      }
+    ],
+    "registration_condition": {
+      "required_library_callbacks": ["stream_faults", "repeat_in_process"],
+      "required_passing_library_gates": ["stream_faults", "repeat_in_process"],
+      "missing_callback_status": "unmeasured",
+      "gate_success_still_required": true,
+      "enforcement": "Shared controller requires actual passed stream/repeat gates; task-side presence check alone is insufficient"
+    }
+  },
+  "limitations": [
+    "No fabricated small/large converted-stdout command",
+    "No blanket library fault or repeat/lifecycle pass from this exclusion",
+    "Public io.Writer stream faults remain independently applicable",
+    "This scope does not waive aliasing, process-state, CPU-subset or deep-hardening obligations"
+  ]
+}

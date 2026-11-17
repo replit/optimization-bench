@@ -1,0 +1,76 @@
+{
+  "recipe_version": 2,
+  "case_id": "ranked-documents-public",
+  "license": "PSF-2.0 and Apache-2.0, with retained file-specific notices",
+  "sources": [
+    {
+      "recipe_version": 1,
+      "case_id": "ranked-documents-public",
+      "repository": "https://github.com/python/cpython",
+      "commit": "8183fa5e3f78ca6ab862de7fb8b14f3d929421e0",
+      "archive_url": "https://codeload.github.com/python/cpython/tar.gz/8183fa5e3f78ca6ab862de7fb8b14f3d929421e0",
+      "archive_prefix": "cpython-8183fa5e3f78ca6ab862de7fb8b14f3d929421e0",
+      "archive_bytes": 29848572,
+      "archive_sha256": "75847d11f01bbadc218f8a7aa96bcdc406fb68c74576aa50f14346a39bf50404",
+      "license": "PSF-2.0 with preserved file-specific notices",
+      "notices": [
+        "LICENSE",
+        "Doc/license.rst",
+        "Doc/howto/mro.rst",
+        "Doc/library/hashlib.rst"
+      ],
+      "document_root": "Doc/",
+      "suffixes": [
+        ".rst"
+      ],
+      "question_root": "Doc/faq/",
+      "exclude_path_prefixes": [
+        "Doc/tools/",
+        "Doc/build/",
+        "Doc/_build/",
+        "Doc/.build/",
+        "Doc/generated/",
+        "Doc/_generated/",
+        "Doc/locale/",
+        "Doc/locales/",
+        "Doc/translations/",
+        "Doc/venv/",
+        "Doc/.venv/"
+      ],
+      "exclude_exact_paths": [
+        "Doc/whatsnew/changelog.rst"
+      ],
+      "id": "cpython"
+    },
+    {
+      "id": "requests",
+      "repository": "https://github.com/psf/requests",
+      "commit": "b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+      "archive_url": "https://codeload.github.com/psf/requests/tar.gz/b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+      "archive_prefix": "requests-b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+      "archive_bytes": 4056381,
+      "archive_sha256": "f43c1e132868abb6a7002ec4a4232b86610bf55c2deba17ef7b53cdc39794eae",
+      "license": "Apache-2.0",
+      "notices": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "document_root": "docs/",
+      "question_root": "docs/community/faq.rst",
+      "suffixes": [
+        ".rst"
+      ],
+      "exclude_path_prefixes": [
+        "docs/_build/",
+        "docs/_generated/",
+        "docs/generated/",
+        "docs/locale/",
+        "docs/locales/",
+        "docs/translations/",
+        "docs/venv/",
+        "docs/.venv/"
+      ],
+      "exclude_exact_paths": []
+    }
+  ]
+}

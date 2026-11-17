@@ -1,0 +1,12 @@
+{
+  "format": "optimbench-fuzz-v1",
+  "sha256": {
+    "passed-cpu-correctness.json": "b79aecc493107c575978f46f1985c745fae13228dbca291ef33430ec6c6a2f2a",
+    "passed-raw-inventory.json.gz": "db2d34c3af285bca74deb268316c17546799e64e7617029723f9d4293da4ef31",
+    "passed-raw.tar.gz": "271469eb19d2183842f3500dd448907414c71a76975a8957660b63a6d94fe486",
+    "summary.json": "c15895a3a2dfd699b07c682d695e03217471d3e1f4fbedff54f0777df8e8ed39",
+    "unmeasured-shared-version-mismatch-cpu-correctness.json": "cc63f7d705058de4b0fefe9534569ea8c1b02254f5b647b19100a9e94602d738",
+    "unmeasured-shared-version-mismatch-raw-inventory.json.gz": "8972bc4a5799b79972545384728a755a4689deba96622396acee3ccdcd6e3234",
+    "unmeasured-shared-version-mismatch-raw.tar.gz": "91b7d320732c2c2ec8840db3c0e8c664c9a3a7a1b166cd8cfe6d207112dff7cd"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "build_environment": {
+    "CGO_ENABLED": "0",
+    "GOMAXPROCS": "8",
+    "GOPROXY": "file:///app/offline-module-proxy",
+    "GOSUMDB": "off",
+    "GOTOOLCHAIN": "local"
+  },
+  "build_source_env": "OPTIMBENCH_SOURCE",
+  "calibration_max_age_seconds": 86400,
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "stderr_contract": "cli-stderr-contract-v1",
+    "case_budget": 12,
+    "case_timeout_seconds": 30,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "enabled": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "time_cap_seconds": 600
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "pids_limit": 512,
+  "performance_units": {
+    "heldout": {
+      "heldout-openapi": ["heldout-openapi"],
+      "stream_geojson_private": ["stream_geojson_private"],
+      "group_gharchive_private": ["group_gharchive_private"],
+      "csv_gharchive_private": ["csv_gharchive_private"]
+    }
+  },
+  "process_state": {
+    "enabled": true,
+    "kind": "native"
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "components": [
+      {
+        "dynamic": true,
+        "files": [
+          "project/.libs/libjq.so"
+        ],
+        "kind": "symbols"
+      },
+      {
+        "files": [
+          "project/src/jq.h",
+          "project/src/jv.h"
+        ],
+        "kind": "declarations",
+        "language": "c"
+      }
+    ],
+    "kind": "composite"
+  },
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "upstream_gate": {
+    "command": [
+      "python3",
+      "/judge-task-tests/upstream.py",
+      "jq"
+    ],
+    "report": "upstream.json",
+    "timeout": 7200
+  },
+  "warmups": 1
+}

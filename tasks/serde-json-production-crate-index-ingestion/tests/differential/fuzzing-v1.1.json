@@ -1,0 +1,23 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "serde-json-production-crate-index-ingestion",
+  "status": "reference-slice-not-qualified",
+  "contract_sources": ["instruction.md", "tests/judge.json:public_interface", "std::io::Write"],
+  "public_surfaces": [
+    {"id": "serde_json::to_writer", "generator": "writer_faults.case_at", "oracle": "writer_faults.semantic"},
+    {"id": "serde_json::to_writer_pretty", "generator": "writer_faults.case_at", "oracle": "writer_faults.semantic"},
+    {"id": "serde_json::Serializer::new", "generator": "writer_faults.case_at", "oracle": "writer_faults.semantic"},
+    {"id": "serde_json::Serializer::pretty", "generator": "writer_faults.case_at", "oracle": "writer_faults.semantic"}
+  ],
+  "fault_models": ["short-write", "partial-then-error", "error-before-first-byte", "write-zero", "one-shot-EINTR", "flush-error"],
+  "compared": ["termination", "result", "error-category", "io-error-kind", "accepted-bytes", "exit-code", "stderr-class"],
+  "diagnostic_only": ["write-call-count", "write-call-chunking", "panic-message"],
+  "seed_list": [1729, 2718, 31415],
+  "budget": {"cases_per_seed": 30, "case_timeout_seconds": 30, "total_seconds": 1800},
+  "adequacy": {
+    "status": "undertested",
+    "reason": "Reference writer slice only; full public-surface mapping, coverage-guided phase, changed-line/branch evidence and task mutation qualification remain phase 2."
+  },
+  "hidden": true,
+  "reads_heldout": false
+}

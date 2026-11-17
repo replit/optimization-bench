@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task": "bzip2-codec",
+  "visibility": "public",
+  "format": "optimbench-locked-cases-v1",
+  "cases": "workload/manifest.json",
+  "inputs_lock": "workload/public-inputs.lock.json",
+  "inputs_lock_sha256": "72058be15a8d676c34dec09651ea61c2e9eecf817fc9ebce1b4e05ba8375ace9",
+  "references": "workload/baseline-outputs.json"
+}

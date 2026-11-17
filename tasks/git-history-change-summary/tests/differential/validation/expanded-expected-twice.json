@@ -1,0 +1,89 @@
+{
+  "counts_per_repository": [
+    4096,
+    2048,
+    2048
+  ],
+  "global_distinct_commits": 32768,
+  "image_note": "Existing pristine source/toolchain image with read-only mounted new canonical inputs; not the final new-data image.",
+  "maximum_size_probe": "Completed before stop instruction arrived; not used in the task definition.",
+  "new_aa_runs": 0,
+  "repository_count_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "reserved_repositories_unchanged": true,
+  "source_pin": "a018953688f1b10bddf91bff8747068f5f4746a4",
+  "source_root": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "toolchain_image_for_reference_generation": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+  "units": [
+    {
+      "bytes": 649275479,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 327256894,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1NjYzMjQ4MiwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "sha256": "fb3b5f09bf8a0a792c6594f0e4aec5a3ebbbe6953e4f5ddd1dabada4f86b0e28",
+      "two_independent_pristine_outputs_byte_equal": true,
+      "unit": "patch-myers"
+    },
+    {
+      "bytes": 969875,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 311411523,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1NjYzMjQ4MiwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "sha256": "5aa92f4e76197559ab786e6b1770fa23849a3fd9a4c9f3de90c456d68e3b1a6b",
+      "two_independent_pristine_outputs_byte_equal": true,
+      "unit": "shortstat-myers"
+    },
+    {
+      "bytes": 146607583,
+      "container_prepare": {
+        "argv": [
+          "/app/workload/guards/warm_git_objects.py",
+          "--steps",
+          "/judge-steps.json",
+          "--inputs",
+          "/app/workload/inputs"
+        ],
+        "duration_ns": 355696950,
+        "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+        "exit_code": 0,
+        "leftovers": [],
+        "stderr_base64": "",
+        "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1NjYzMjQ4MiwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+        "timed": false
+      },
+      "sha256": "fe96df3f8427b30ec5793d0489ce0f2012169a5847d35745dbfd006817591a8e",
+      "two_independent_pristine_outputs_byte_equal": true,
+      "unit": "patch-histogram"
+    }
+  ]
+}

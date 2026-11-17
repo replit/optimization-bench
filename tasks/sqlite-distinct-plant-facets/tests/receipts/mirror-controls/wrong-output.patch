@@ -1,0 +1,36 @@
+diff --git a/src/vdbeapi.c b/src/vdbeapi.c
+index d277bc3..4a658de 100644
+--- a/src/vdbeapi.c
++++ b/src/vdbeapi.c
+@@ -104,6 +104,11 @@ static SQLITE_NOINLINE void invokeProfileCallback(sqlite3 *db, Vdbe *p){
+ */
+ int sqlite3_finalize(sqlite3_stmt *pStmt){
+   int rc;
++  sqlite3 *faultDb = 0;
++  if( pStmt && sqlite3_sql(pStmt)
++      && sqlite3_strnicmp(sqlite3_sql(pStmt),"VACUUM",6)==0 ){
++    faultDb = ((Vdbe*)pStmt)->db;
++  }
+   if( pStmt==0 ){
+     /* IMPLEMENTATION-OF: R-57228-12904 Invoking sqlite3_finalize() on a NULL
+     ** pointer is a harmless no-op. */
+@@ -120,6 +125,9 @@ int sqlite3_finalize(sqlite3_stmt *pStmt){
+     rc = sqlite3ApiExit(db, rc);
+     sqlite3LeaveMutexAndCloseZombie(db);
+   }
++  if( faultDb && rc==SQLITE_OK ){
++    rc = sqlite3_exec(faultDb,"PRAGMA user_version=3",0,0,0);
++  }
+   return rc;
+ }
+ 
+@@ -1968,6 +1976,9 @@ int sqlite3_bind_text16(
+ #endif /* SQLITE_OMIT_UTF16 */
+ int sqlite3_bind_value(sqlite3_stmt *pStmt, int i, const sqlite3_value *pValue){
+   int rc;
++  if( sqlite3_value_type((sqlite3_value*)pValue)==SQLITE_TEXT ){
++    return sqlite3_bind_text(pStmt,i,"wrong",-1,SQLITE_STATIC);
++  }
+   switch( sqlite3_value_type((sqlite3_value*)pValue) ){
+     case SQLITE_INTEGER: {
+       rc = sqlite3_bind_int64(pStmt, i, pValue->u.i);

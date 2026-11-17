@@ -1,0 +1,40 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "terser-minify",
+  "language": "javascript",
+  "contract_sources": [
+    "instruction.md",
+    "upstream/317f449862b8d48756818cdcaf67c22c31ec852c/README.md",
+    "upstream/317f449862b8d48756818cdcaf67c22c31ec852c/tools/terser.d.ts"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {
+    "profile": "Goldmark/sqlfmt/Black/SQLFluff/SQLGlot/Terser",
+    "grammar_property_seconds": 900,
+    "coverage_guided_seconds": 2700,
+    "state_determinism_seconds": 900,
+    "sanitizer_replay_seconds_if_applicable": 1200,
+    "case_timeout_seconds": 20,
+    "declared_large_case_timeout_seconds": 60,
+    "initial_case_limit": 128
+  },
+  "resources": {
+    "peak_memory": {"mode": "report-only", "verdict_impact": false}
+  },
+  "status": "initial-public-API-state-adapter; not full-task qualification",
+  "unresolved": [
+    "corrected public surface extraction",
+    "CLI effects and remaining exported hooks",
+    "public corpus freeze and task-bound coverage-guided campaign",
+    "changed executable line/branch/error-lifecycle denominator",
+    "compiled non-equivalent mutant portfolio",
+    "review of callback ordering guarantees and error fault domains"
+  ]
+}

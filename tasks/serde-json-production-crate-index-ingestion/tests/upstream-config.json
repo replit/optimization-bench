@@ -1,0 +1,10 @@
+{
+  "task": "serde-json-production-crate-index-ingestion",
+  "upstream_test_command": [
+    "cargo",
+    "test",
+    "--all-targets",
+    "--offline",
+    "--locked"
+  ]
+}

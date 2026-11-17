@@ -1,0 +1,108 @@
+{
+  "build_environment": {
+    "CGO_ENABLED": "0",
+    "GOMAXPROCS": "8",
+    "GOPROXY": "file:///app/offline-module-proxy",
+    "GOSUMDB": "off",
+    "GOTOOLCHAIN": "local"
+  },
+  "build_source_env": "OPTIMBENCH_SOURCE",
+  "calibration_max_age_seconds": 86400,
+  "case_roles": {
+    "heldout": {
+      "heldout-stream-decode": "performance",
+      "heldout-stream-decode-concat": "correctness",
+      "heldout-stream-decode-crc-flip": "correctness",
+      "source-files": "performance"
+    },
+    "public": {
+      "batch": "performance",
+      "stream-decode": "performance",
+      "stream-decode-concat": "correctness",
+      "stream-decode-crc-flip": "correctness"
+    }
+  },
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "case_budget": 12,
+    "case_timeout_seconds": 30,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "enabled": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "time_cap_seconds": 600
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "performance_units": {
+    "heldout": {
+      "source-files": [
+        "source-files"
+      ],
+      "stream-decode": [
+        "heldout-stream-decode"
+      ]
+    },
+    "public": {
+      "batch": [
+        "batch"
+      ],
+      "stream-decode": [
+        "stream-decode"
+      ]
+    }
+  },
+  "pids_limit": 512,
+  "process_state": {
+    "enabled": true,
+    "kind": "native"
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "components": [
+      {
+        "dynamic": false,
+        "files": [
+          "cmake/liblzma.a"
+        ],
+        "kind": "symbols"
+      },
+      {
+        "files": [
+          "project/src/liblzma/api/*.h",
+          "project/src/liblzma/api/lzma/*.h"
+        ],
+        "kind": "declarations",
+        "language": "c"
+      }
+    ],
+    "kind": "composite"
+  },
+  "qualification_notes": "Two frozen performance units per scope: the original preset-6 compression case (public `batch`, held-out `source-files`) and `stream-decode`, which decodes complete single-block upstream .tar.xz release archives with lzma_stream_decoder(UINT64_MAX, LZMA_CONCATENATED) in one fresh process per archive. Decode results are the decoded byte count plus a protected XXH64 digest of every decoded byte. Correctness-only cases check CRC64 rejection and concatenated streams.",
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "upstream_gate": {
+    "command": [
+      "python3",
+      "/judge-task-tests/upstream.py",
+      "xz"
+    ],
+    "report": "upstream.json",
+    "timeout": 7200
+  },
+  "warmups": 1
+}

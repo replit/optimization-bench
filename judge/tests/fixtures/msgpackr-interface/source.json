@@ -1,0 +1,17 @@
+{
+  "upstream_commit": "5960fb03d0dc6f3dcdd8e7a818ddd02f0e40c347",
+  "archive_sha256": "bf7c25534341e38b025f39038e68e0d3766836705c0d667cf0afe1be8c5a1697",
+  "dependency_lock_sha256": "3e0c86e2bc76493b6e47573f39551fbd284d8a68bb60e6a5599e8fb348e344d9",
+  "build": "Original npm run build on pinned Node22.22.1, original frozen dependencies; dist/node.cjs is the unmodified original build output. Unit fixture uses upstream optional pure-JS fallback; separate native-enabled original image audit performed. No corpus or timing qualification.",
+  "files": {
+    "package.json": "9b0645fe3f9791cd68897ab04c5e77cc9903a6d9832fc52d9ecc00ac67329f11",
+    "index.js": "fc9b0ccf607f3199e7c33fc6af70652572ff6338e91539eba4f2e3d42acc69fb",
+    "node-index.js": "e6217b2b310e751aff02243feb2d318828121fa4d393ac45691aed8d55bc2b49",
+    "pack.js": "f6ae55ee1389afeb4d7bd5e9927d495c8a6155a18fa286a6b28ccde0dbcee20c",
+    "unpack.js": "f2325a1f1329e7a0685b4b56f2e354309de4aeaa954c3c81bc66847a15642000",
+    "iterators.js": "ec16cafa78127d4f49f315bae3c87f9a309c6f1ef93a09da60b5404635d7d47e",
+    "stream.js": "c524e2ea2f167b9568e605d18ebbce84b64f3b29d007d8faff635b373c984a37",
+    "dist/node.cjs": "c12e5f036b530eba8457b7d1ab6c6cc53c2053f2fd6f291fd3596f0594d1d88e",
+    "LICENSE": "d00470775464c789c7ac04cfba3bf1b79ef149790eb72556d1c51d8f50c8e7f3"
+  }
+}

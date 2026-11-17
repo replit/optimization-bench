@@ -1,0 +1,3172 @@
+{
+  "cases": [
+    {
+      "id": "encode-1-000",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/000.raw",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-000",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/000-1.bz2",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-000",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/000.raw",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-000",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/000-9.bz2",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-001",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/001.raw",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-001",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/001-1.bz2",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-001",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/001.raw",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-001",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/001-9.bz2",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-002",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/002.raw",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-002",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/002-1.bz2",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-002",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/002.raw",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-002",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/002-9.bz2",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-003",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/003.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-003",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/003-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-003",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/003.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-003",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/003-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-004",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/004.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-004",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/004-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-004",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/004.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-004",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/004-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-005",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/005.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-005",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/005-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-005",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/005.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-005",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/005-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-006",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/006.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-006",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/006-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-006",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/006.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-006",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/006-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-007",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/007.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-007",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/007-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-007",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/007.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-007",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/007-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-008",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/008.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-008",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/008-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-008",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/008.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-008",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/008-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-009",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/009.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-009",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/009-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-009",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/009.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-009",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/009-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-010",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/010.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-010",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/010-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-010",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/010.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-010",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/010-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-011",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/011.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-011",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/011-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-011",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/011.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-011",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/011-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-012",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/012.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-012",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/012-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-012",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/012.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-012",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/012-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-013",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/013.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-013",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/013-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-013",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/013.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-013",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/013-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-014",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/014.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-014",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/014-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-014",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/014.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-014",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/014-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-015",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/015.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-015",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/015-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-015",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/015.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-015",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/015-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-016",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/016.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-016",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/016-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-016",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/016.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-016",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/016-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-017",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/017.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-017",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/017-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-017",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/017.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-017",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/017-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-018",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/018.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-018",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/018-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-018",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/018.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-018",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/018-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-019",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/019.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-019",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/019-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-019",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/019.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-019",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/019-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-020",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/020.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-020",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/020-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-020",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/020.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-020",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/020-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-021",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/021.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-021",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/021-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-021",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/021.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-021",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/021-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-022",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/022.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-022",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/022-1.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-022",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/022.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-022",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/022-9.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-023",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/023.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-023",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/023-1.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-023",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/023.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-023",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/023-9.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-024",
+      "direction": "encode",
+      "level": 1,
+      "input": "corpus/inputs/024.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-024",
+      "direction": "decode",
+      "level": 1,
+      "input": "corpus/reference/024-1.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-024",
+      "direction": "encode",
+      "level": 9,
+      "input": "corpus/inputs/024.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-024",
+      "direction": "decode",
+      "level": 9,
+      "input": "corpus/reference/024-9.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "guard-0000",
+      "input": "guards/inputs/0000.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0001",
+      "input": "guards/inputs/0001.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0002",
+      "input": "guards/inputs/0002.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0003",
+      "input": "guards/inputs/0003.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0004",
+      "input": "guards/inputs/0004.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0005",
+      "input": "guards/inputs/0005.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0006",
+      "input": "guards/inputs/0006.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0007",
+      "input": "guards/inputs/0007.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0008",
+      "input": "guards/inputs/0008.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0009",
+      "input": "guards/inputs/0009.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0010",
+      "input": "guards/inputs/0010.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0011",
+      "input": "guards/inputs/0011.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 7
+    },
+    {
+      "id": "guard-0012",
+      "input": "guards/inputs/0012.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0013",
+      "input": "guards/inputs/0013.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0014",
+      "input": "guards/inputs/0014.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0015",
+      "input": "guards/inputs/0015.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0016",
+      "input": "guards/inputs/0016.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0017",
+      "input": "guards/inputs/0017.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0018",
+      "input": "guards/inputs/0018.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0019",
+      "input": "guards/inputs/0019.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0020",
+      "input": "guards/inputs/0020.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0021",
+      "input": "guards/inputs/0021.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0022",
+      "input": "guards/inputs/0022.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0023",
+      "input": "guards/inputs/0023.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0024",
+      "input": "guards/inputs/0024.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0025",
+      "input": "guards/inputs/0025.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0026",
+      "input": "guards/inputs/0026.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0027",
+      "input": "guards/inputs/0027.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0028",
+      "input": "guards/inputs/0028.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0029",
+      "input": "guards/inputs/0029.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0030",
+      "input": "guards/inputs/0030.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0031",
+      "input": "guards/inputs/0031.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0032",
+      "input": "guards/inputs/0032.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0033",
+      "input": "guards/inputs/0033.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0034",
+      "input": "guards/inputs/0034.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0035",
+      "input": "guards/inputs/0035.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0036",
+      "input": "guards/inputs/0036.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0037",
+      "input": "guards/inputs/0037.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0038",
+      "input": "guards/inputs/0038.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0039",
+      "input": "guards/inputs/0039.bin",
+      "scored": false,
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0040",
+      "input": "guards/inputs/0040.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0041",
+      "input": "guards/inputs/0041.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 65521
+    },
+    {
+      "id": "guard-0060",
+      "input": "guards/inputs/0060.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0061",
+      "input": "guards/inputs/0061.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0062",
+      "input": "guards/inputs/0062.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0063",
+      "input": "guards/inputs/0063.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0064",
+      "input": "guards/inputs/0064.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0065",
+      "input": "guards/inputs/0065.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0066",
+      "input": "guards/inputs/0066.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0067",
+      "input": "guards/inputs/0067.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0068",
+      "input": "guards/inputs/0068.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0069",
+      "input": "guards/inputs/0069.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0070",
+      "input": "guards/inputs/0070.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0071",
+      "input": "guards/inputs/0071.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0072",
+      "input": "guards/inputs/0072.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0073",
+      "input": "guards/inputs/0073.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0074",
+      "input": "guards/inputs/0074.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0075",
+      "input": "guards/inputs/0075.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0076",
+      "input": "guards/inputs/0076.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0077",
+      "input": "guards/inputs/0077.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0078",
+      "input": "guards/inputs/0078.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0079",
+      "input": "guards/inputs/0079.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0080",
+      "input": "guards/inputs/0080.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0081",
+      "input": "guards/inputs/0081.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0082",
+      "input": "guards/inputs/0082.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0083",
+      "input": "guards/inputs/0083.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0084",
+      "input": "guards/inputs/0084.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0085",
+      "input": "guards/inputs/0085.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0086",
+      "input": "guards/inputs/0086.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0087",
+      "input": "guards/inputs/0087.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0088",
+      "input": "guards/inputs/0088.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0089",
+      "input": "guards/inputs/0089.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0090",
+      "input": "guards/inputs/0090.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0091",
+      "input": "guards/inputs/0091.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0092",
+      "input": "guards/inputs/0092.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0093",
+      "input": "guards/inputs/0093.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0094",
+      "input": "guards/inputs/0094.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0095",
+      "input": "guards/inputs/0095.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0096",
+      "input": "guards/inputs/0096.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0097",
+      "input": "guards/inputs/0097.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0098",
+      "input": "guards/inputs/0098.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0099",
+      "input": "guards/inputs/0099.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0100",
+      "input": "guards/inputs/0100.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0101",
+      "input": "guards/inputs/0101.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0102",
+      "input": "guards/inputs/0102.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0103",
+      "input": "guards/inputs/0103.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0104",
+      "input": "guards/inputs/0104.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0105",
+      "input": "guards/inputs/0105.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0106",
+      "input": "guards/inputs/0106.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0107",
+      "input": "guards/inputs/0107.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0108",
+      "input": "guards/inputs/0108.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0109",
+      "input": "guards/inputs/0109.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0110",
+      "input": "guards/inputs/0110.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0111",
+      "input": "guards/inputs/0111.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0112",
+      "input": "guards/inputs/0112.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0113",
+      "input": "guards/inputs/0113.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0114",
+      "input": "guards/inputs/0114.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0115",
+      "input": "guards/inputs/0115.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0116",
+      "input": "guards/inputs/0116.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0117",
+      "input": "guards/inputs/0117.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0118",
+      "input": "guards/inputs/0118.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0119",
+      "input": "guards/inputs/0119.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0120",
+      "input": "guards/inputs/0120.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0121",
+      "input": "guards/inputs/0121.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0122",
+      "input": "guards/inputs/0122.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0123",
+      "input": "guards/inputs/0123.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0124",
+      "input": "guards/inputs/0124.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0125",
+      "input": "guards/inputs/0125.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0126",
+      "input": "guards/inputs/0126.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0127",
+      "input": "guards/inputs/0127.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0128",
+      "input": "guards/inputs/0128.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0129",
+      "input": "guards/inputs/0129.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0130",
+      "input": "guards/inputs/0130.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0131",
+      "input": "guards/inputs/0131.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0132",
+      "input": "guards/inputs/0132.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0133",
+      "input": "guards/inputs/0133.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0134",
+      "input": "guards/inputs/0134.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0135",
+      "input": "guards/inputs/0135.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0142",
+      "input": "guards/inputs/0142.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0143",
+      "input": "guards/inputs/0143.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0144",
+      "input": "guards/inputs/0144.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0145",
+      "input": "guards/inputs/0145.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0146",
+      "input": "guards/inputs/0146.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0147",
+      "input": "guards/inputs/0147.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0148",
+      "input": "guards/inputs/0148.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0149",
+      "input": "guards/inputs/0149.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0150",
+      "input": "guards/inputs/0150.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0151",
+      "input": "guards/inputs/0151.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0152",
+      "input": "guards/inputs/0152.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0153",
+      "input": "guards/inputs/0153.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0154",
+      "input": "guards/inputs/0154.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0155",
+      "input": "guards/inputs/0155.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0156",
+      "input": "guards/inputs/0156.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0157",
+      "input": "guards/inputs/0157.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0158",
+      "input": "guards/inputs/0158.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0159",
+      "input": "guards/inputs/0159.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0160",
+      "input": "guards/inputs/0160.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0161",
+      "input": "guards/inputs/0161.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0162",
+      "input": "guards/inputs/0162.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0163",
+      "input": "guards/inputs/0163.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0164",
+      "input": "guards/inputs/0164.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0165",
+      "input": "guards/inputs/0165.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0166",
+      "input": "guards/inputs/0166.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0167",
+      "input": "guards/inputs/0167.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0168",
+      "input": "guards/inputs/0168.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0169",
+      "input": "guards/inputs/0169.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0170",
+      "input": "guards/inputs/0170.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0171",
+      "input": "guards/inputs/0171.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0172",
+      "input": "guards/inputs/0172.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0173",
+      "input": "guards/inputs/0173.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0174",
+      "input": "guards/inputs/0174.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0175",
+      "input": "guards/inputs/0175.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0176",
+      "input": "guards/inputs/0176.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0177",
+      "input": "guards/inputs/0177.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0178",
+      "input": "guards/inputs/0178.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0179",
+      "input": "guards/inputs/0179.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0180",
+      "input": "guards/inputs/0180.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0181",
+      "input": "guards/inputs/0181.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0182",
+      "input": "guards/inputs/0182.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0183",
+      "input": "guards/inputs/0183.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0184",
+      "input": "guards/inputs/0184.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0185",
+      "input": "guards/inputs/0185.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0186",
+      "input": "guards/inputs/0186.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0187",
+      "input": "guards/inputs/0187.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0188",
+      "input": "guards/inputs/0188.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0189",
+      "input": "guards/inputs/0189.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0190",
+      "input": "guards/inputs/0190.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0191",
+      "input": "guards/inputs/0191.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0192",
+      "input": "guards/inputs/0192.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0193",
+      "input": "guards/inputs/0193.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0194",
+      "input": "guards/inputs/0194.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0195",
+      "input": "guards/inputs/0195.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0196",
+      "input": "guards/inputs/0196.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0197",
+      "input": "guards/inputs/0197.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0198",
+      "input": "guards/inputs/0198.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0199",
+      "input": "guards/inputs/0199.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0200",
+      "input": "guards/inputs/0200.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0201",
+      "input": "guards/inputs/0201.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0202",
+      "input": "guards/inputs/0202.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0203",
+      "input": "guards/inputs/0203.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0204",
+      "input": "guards/inputs/0204.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0205",
+      "input": "guards/inputs/0205.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0206",
+      "input": "guards/inputs/0206.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0207",
+      "input": "guards/inputs/0207.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0208",
+      "input": "guards/inputs/0208.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0209",
+      "input": "guards/inputs/0209.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0210",
+      "input": "guards/inputs/0210.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0211",
+      "input": "guards/inputs/0211.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0212",
+      "input": "guards/inputs/0212.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0213",
+      "input": "guards/inputs/0213.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0214",
+      "input": "guards/inputs/0214.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0215",
+      "input": "guards/inputs/0215.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0216",
+      "input": "guards/inputs/0216.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093
+    },
+    {
+      "id": "guard-0217",
+      "input": "guards/inputs/0217.bin",
+      "scored": false,
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093
+    },
+    {
+      "id": "small-text-pg145",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg145.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg550",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg550.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg507",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg507.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2165",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2165.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2171",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2171.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg27",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg27.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg110",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg110.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg122",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg122.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg143",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg143.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg153",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg153.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2153",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2153.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg4276",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg4276.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg394",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg394.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2521",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2521.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2522",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2522.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg225",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg225.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg325",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg325.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg697",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg697.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg708",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg708.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg709",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg709.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg130",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg130.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg204",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg204.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg223",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg223.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg470",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg470.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1695",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1695.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg269",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg269.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg555",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg555.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1477",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1477.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1870",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1870.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2830",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2830.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg113",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg113.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg146",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg146.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg384",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg384.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg459",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg459.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg460",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg460.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg770",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg770.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg778",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg778.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg794",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg794.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg836",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg836.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg837",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg837.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg144",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg144.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1245",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1245.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg5670",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg5670.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg29220",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg29220.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg63022",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg63022.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg217",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg217.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg4240",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg4240.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg4216",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg4216.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg4520",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg4520.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg8914",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg8914.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg166",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg166.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg284",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg284.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg267",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg267.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg283",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg283.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg311",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg311.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg176",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg176.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg177",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg177.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg178",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg178.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg179",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg179.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg208",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg208.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg219",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg219.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg451",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg451.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg220",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg220.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg493",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg493.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg494",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg494.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "guard-small-text-allocation-cap",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-allocation-cap.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536,
+      "allocation_limit": 2500000
+    },
+    {
+      "id": "guard-small-text-block-crc",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-block-crc.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "guard-small-text-truncated",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-truncated.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "guard-small-text-trailing",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-trailing.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536
+    }
+  ]
+}

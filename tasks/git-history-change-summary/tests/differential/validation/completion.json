@@ -1,0 +1,10 @@
+{
+  "differential": true,
+  "hacker_solver_model_runs": 0,
+  "heldout": "unavailable",
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "interface": true,
+  "public_controls": true,
+  "timing_or_measurability_claim": false,
+  "upstream": true
+}

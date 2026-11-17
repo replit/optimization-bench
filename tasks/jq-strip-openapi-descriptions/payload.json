@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "task": "jq-strip-openapi-descriptions",
+  "files": [
+    {
+      "scope": "public",
+      "name": "1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d",
+      "destination": "environment/workload/inputs/files/1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d",
+      "bytes": 7747347,
+      "sha256": "1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/ec2/2016-11-15/openapi.json",
+        "bytes": 7747347,
+        "sha256": "1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c",
+      "destination": "environment/workload/inputs/files/1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c",
+      "bytes": 1027748,
+      "sha256": "1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/s3/2006-03-01/openapi.json",
+        "bytes": 1027748,
+        "sha256": "1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "6e8e7818b3f7bdfa712837492fdc4901c1a6279fa47b529d18f3e0989e493b1a",
+      "destination": "environment/workload/inputs/files/6e8e7818b3f7bdfa712837492fdc4901c1a6279fa47b529d18f3e0989e493b1a",
+      "bytes": 604990,
+      "sha256": "6e8e7818b3f7bdfa712837492fdc4901c1a6279fa47b529d18f3e0989e493b1a",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e",
+      "destination": "environment/workload/inputs/files/b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e",
+      "bytes": 1092600,
+      "sha256": "b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/cloudformation/2010-05-15/openapi.json",
+        "bytes": 1092600,
+        "sha256": "b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5",
+      "destination": "environment/workload/inputs/files/f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5",
+      "bytes": 812741,
+      "sha256": "f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/ecs/2014-11-13/openapi.json",
+        "bytes": 812741,
+        "sha256": "f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c",
+      "destination": "environment/workload/inputs/files/ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c",
+      "bytes": 2592266,
+      "sha256": "ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/rds/2014-10-31/openapi.json",
+        "bytes": 2592266,
+        "sha256": "ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df",
+      "destination": "environment/workload/inputs/files/c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df",
+      "bytes": 988509,
+      "sha256": "c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/cloudfront/2020-05-31/openapi.json",
+        "bytes": 988509,
+        "sha256": "c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c",
+      "destination": "environment/workload/inputs/files/e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c",
+      "bytes": 2743239,
+      "sha256": "e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/sagemaker/2017-07-24/openapi.json",
+        "bytes": 2743239,
+        "sha256": "e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4",
+      "destination": "environment/workload/inputs/files/9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4",
+      "bytes": 658333,
+      "sha256": "9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/dynamodb/2012-08-10/openapi.json",
+        "bytes": 658333,
+        "sha256": "9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c",
+      "destination": "environment/workload/inputs/files/975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c",
+      "bytes": 668993,
+      "sha256": "975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/apigateway/2015-07-09/openapi.json",
+        "bytes": 668993,
+        "sha256": "975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf",
+      "destination": "environment/workload/inputs/files/0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf",
+      "bytes": 1844598,
+      "sha256": "0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/iam/2010-05-08/openapi.json",
+        "bytes": 1844598,
+        "sha256": "0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428",
+      "destination": "environment/workload/inputs/files/d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428",
+      "bytes": 1698120,
+      "sha256": "d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/glue/2017-03-31/openapi.json",
+        "bytes": 1698120,
+        "sha256": "d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "41d7c860c6e52c0854913270019c3a14afacbe513613a06b67de65f09a4dc2e9",
+      "destination": "environment/workload/inputs/files/41d7c860c6e52c0854913270019c3a14afacbe513613a06b67de65f09a4dc2e9",
+      "bytes": 318857,
+      "sha256": "41d7c860c6e52c0854913270019c3a14afacbe513613a06b67de65f09a4dc2e9",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "9b88acc1454d5145509cf3a88684300670e8f4440a43a5732fbf292d8eeacbfa",
+      "destination": "environment/workload/inputs/files/9b88acc1454d5145509cf3a88684300670e8f4440a43a5732fbf292d8eeacbfa",
+      "bytes": 478250,
+      "sha256": "9b88acc1454d5145509cf3a88684300670e8f4440a43a5732fbf292d8eeacbfa",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "82e5208e1901e0f7975cb3e99ea940cb116c44693a15a4c2875dc4c174de4134",
+      "destination": "environment/workload/inputs/files/82e5208e1901e0f7975cb3e99ea940cb116c44693a15a4c2875dc4c174de4134",
+      "bytes": 244694,
+      "sha256": "82e5208e1901e0f7975cb3e99ea940cb116c44693a15a4c2875dc4c174de4134",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7",
+      "destination": "environment/workload/inputs/files/c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7",
+      "bytes": 632030,
+      "sha256": "c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/route53/2013-04-01/openapi.json",
+        "bytes": 632030,
+        "sha256": "c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "3504629364457876ef66960cabb78ae1e9147b4cfa00c0d8c1257700d2606708",
+      "destination": "environment/workload/inputs/files/3504629364457876ef66960cabb78ae1e9147b4cfa00c0d8c1257700d2606708",
+      "bytes": 302177,
+      "sha256": "3504629364457876ef66960cabb78ae1e9147b4cfa00c0d8c1257700d2606708",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "76cfa4cd60546916c1d6c1a898bb72743bda1342e4844e470a728e22a9fb55a5",
+      "destination": "environment/workload/inputs/files/76cfa4cd60546916c1d6c1a898bb72743bda1342e4844e470a728e22a9fb55a5",
+      "bytes": 609855,
+      "sha256": "76cfa4cd60546916c1d6c1a898bb72743bda1342e4844e470a728e22a9fb55a5",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c",
+      "destination": "environment/workload/inputs/files/12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c",
+      "bytes": 1390382,
+      "sha256": "12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/amazonaws.com/ssm/2014-11-06/openapi.json",
+        "bytes": 1390382,
+        "sha256": "12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "5638c4ddded2dddd618e29f14c6287f6c54eab94494e2997be3da219f942516d",
+      "destination": "environment/workload/inputs/files/5638c4ddded2dddd618e29f14c6287f6c54eab94494e2997be3da219f942516d",
+      "bytes": 376357,
+      "sha256": "5638c4ddded2dddd618e29f14c6287f6c54eab94494e2997be3da219f942516d",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa",
+      "destination": "environment/workload/inputs/files/da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa",
+      "bytes": 1206318,
+      "sha256": "da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/twilio.com/api/1.42.0/openapi.json",
+        "bytes": 1206318,
+        "sha256": "da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "c7cbbef1b72e7e214cd846c89e2f0b968dcb4680e5cd2ae711b75f14e8b774e3",
+      "destination": "environment/workload/inputs/files/c7cbbef1b72e7e214cd846c89e2f0b968dcb4680e5cd2ae711b75f14e8b774e3",
+      "bytes": 210428,
+      "sha256": "c7cbbef1b72e7e214cd846c89e2f0b968dcb4680e5cd2ae711b75f14e8b774e3",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "764d164266c478e61742de51c87d7ac14be43e7e32b047157dd83da5b539434e",
+      "destination": "environment/workload/inputs/files/764d164266c478e61742de51c87d7ac14be43e7e32b047157dd83da5b539434e",
+      "bytes": 384903,
+      "sha256": "764d164266c478e61742de51c87d7ac14be43e7e32b047157dd83da5b539434e",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "c0f78375d5d269b96a95637bd2eaa87b8f29c430c0bc49b1499a9f1f6eb9e143",
+      "destination": "environment/workload/inputs/files/c0f78375d5d269b96a95637bd2eaa87b8f29c430c0bc49b1499a9f1f6eb9e143",
+      "bytes": 169157,
+      "sha256": "c0f78375d5d269b96a95637bd2eaa87b8f29c430c0bc49b1499a9f1f6eb9e143",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58",
+      "destination": "environment/workload/inputs/files/d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58",
+      "bytes": 1452351,
+      "sha256": "d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/box.com/2.0.0/openapi.json",
+        "bytes": 1452351,
+        "sha256": "d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "d64b718d898f5f0d3da615e61a9491e31f603dff4dbd64ba6365b472026b1b87",
+      "destination": "environment/workload/inputs/files/d64b718d898f5f0d3da615e61a9491e31f603dff4dbd64ba6365b472026b1b87",
+      "bytes": 192450,
+      "sha256": "d64b718d898f5f0d3da615e61a9491e31f603dff4dbd64ba6365b472026b1b87",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "664fde9931941ae811ff98d087e40306553024928ed206547173704029a932ae",
+      "destination": "environment/workload/inputs/files/664fde9931941ae811ff98d087e40306553024928ed206547173704029a932ae",
+      "bytes": 252760,
+      "sha256": "664fde9931941ae811ff98d087e40306553024928ed206547173704029a932ae",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "302d8b77cdae034f7af7594aa88918253af3204a865882903c908edd6dccb1e3",
+      "destination": "environment/workload/inputs/files/302d8b77cdae034f7af7594aa88918253af3204a865882903c908edd6dccb1e3",
+      "bytes": 248140,
+      "sha256": "302d8b77cdae034f7af7594aa88918253af3204a865882903c908edd6dccb1e3",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12",
+      "destination": "environment/workload/inputs/files/1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12",
+      "bytes": 974313,
+      "sha256": "1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://api.apis.guru/v2/specs/xero.com/xero_accounting/2.9.4/openapi.json",
+        "bytes": 974313,
+        "sha256": "1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "ab6f6264cc78efbccb5f0978c830269e579a97e993f31b3ede3f0c763582a8e0",
+      "destination": "environment/workload/inputs/files/ab6f6264cc78efbccb5f0978c830269e579a97e993f31b3ede3f0c763582a8e0",
+      "bytes": 132217,
+      "sha256": "ab6f6264cc78efbccb5f0978c830269e579a97e993f31b3ede3f0c763582a8e0",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/dedfee9ad6a676c2f7186b8e2137d887d6449cad8b7af8253aecdaae24b27977",
+      "destination": "tests/heldout/files/dedfee9ad6a676c2f7186b8e2137d887d6449cad8b7af8253aecdaae24b27977",
+      "bytes": 3319366,
+      "sha256": "dedfee9ad6a676c2f7186b8e2137d887d6449cad8b7af8253aecdaae24b27977"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_github_ghes_3_0.json",
+      "destination": "tests/heldout/expected/heldout_github_ghes_3_0.json",
+      "bytes": 1655878,
+      "sha256": "eeb5271c38d089e6d329eae046ac87738e0e60f8b7bf9c4d2c74cee1b6b20d83"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/b72e9c05af5670233b58a61aeca45aaf10ab6c5e774230ca82b95e32ce6b75ea",
+      "destination": "tests/heldout/files/b72e9c05af5670233b58a61aeca45aaf10ab6c5e774230ca82b95e32ce6b75ea",
+      "bytes": 4684318,
+      "sha256": "b72e9c05af5670233b58a61aeca45aaf10ab6c5e774230ca82b95e32ce6b75ea"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_stripe_2022.json",
+      "destination": "tests/heldout/expected/heldout_stripe_2022.json",
+      "bytes": 1405866,
+      "sha256": "260c2abd4ac292a6f70a28107c7a557ab14a61ecc3df4caaba4b12523bc3a428"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7",
+      "destination": "tests/heldout/files/742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7",
+      "bytes": 1237332,
+      "sha256": "742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_slack.json",
+      "destination": "tests/heldout/expected/heldout_slack.json",
+      "bytes": 320292,
+      "sha256": "20dc3f34a8d52f73a5a2d0f4a33bcc592408dae4310aa706a0ceb14f04040f60"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/8ce3450e18f3381dd6b2936db2172ecb5bf8a7f6549ecb51ec3cd01b7c30fa3b",
+      "destination": "tests/heldout/files/8ce3450e18f3381dd6b2936db2172ecb5bf8a7f6549ecb51ec3cd01b7c30fa3b",
+      "bytes": 1194330,
+      "sha256": "8ce3450e18f3381dd6b2936db2172ecb5bf8a7f6549ecb51ec3cd01b7c30fa3b"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_discord.json",
+      "destination": "tests/heldout/expected/heldout_discord.json",
+      "bytes": 549735,
+      "sha256": "5a2fce90325d2a87ac4233ed4786ac4ca5110fa57febc507b426f0849c167220"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/8f394230ec35016d559bfa242ec4f644468317bc91b3928cd73d579b8955792e",
+      "destination": "tests/heldout/files/8f394230ec35016d559bfa242ec4f644468317bc91b3928cd73d579b8955792e",
+      "bytes": 6563615,
+      "sha256": "8f394230ec35016d559bfa242ec4f644468317bc91b3928cd73d579b8955792e"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_elasticsearch.json",
+      "destination": "tests/heldout/expected/heldout_elasticsearch.json",
+      "bytes": 2477314,
+      "sha256": "0bb6f3fac37e759cf8d4bf59a124fd3fe7f09ff67bd493f3f60c512cc20e453c"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/cf628212ef590622596362692360c838d3303f8d45ec7f66ff86a75a94148228",
+      "destination": "tests/heldout/files/cf628212ef590622596362692360c838d3303f8d45ec7f66ff86a75a94148228",
+      "bytes": 4294088,
+      "sha256": "cf628212ef590622596362692360c838d3303f8d45ec7f66ff86a75a94148228"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_kubernetes.json",
+      "destination": "tests/heldout/expected/heldout_kubernetes.json",
+      "bytes": 1472253,
+      "sha256": "8c89a106d6c435e5f32489984fe9603014ef510e10d107557ea2e5a90b931766"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/daf75417abefdd10657e1099e3151faba1b58308c405ecc3dea3219a79e73af7",
+      "destination": "tests/heldout/files/daf75417abefdd10657e1099e3151faba1b58308c405ecc3dea3219a79e73af7",
+      "bytes": 940604,
+      "sha256": "daf75417abefdd10657e1099e3151faba1b58308c405ecc3dea3219a79e73af7"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_kubernetes_apps_v1.json",
+      "destination": "tests/heldout/expected/heldout_kubernetes_apps_v1.json",
+      "bytes": 206593,
+      "sha256": "6108c2c0f0b696439252e324d270e703991b3d22ca97277cbd9dbf626fe08589"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/8c51c61f95563546cbf6cd45a763d452d07d3fa61bf06c15acc7172df37b2d71",
+      "destination": "tests/heldout/files/8c51c61f95563546cbf6cd45a763d452d07d3fa61bf06c15acc7172df37b2d71",
+      "bytes": 2142412,
+      "sha256": "8c51c61f95563546cbf6cd45a763d452d07d3fa61bf06c15acc7172df37b2d71"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_kubernetes_core_v1.json",
+      "destination": "tests/heldout/expected/heldout_kubernetes_core_v1.json",
+      "bytes": 486203,
+      "sha256": "a2983d020c7ab20bb3cec9ed628039a885c73b167836d0488cd0568bfaa89d9d"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/files/099a2bc8a7d83f30c12b882be05d84831c449f1950ced11f97781a66d57a1ac1",
+      "destination": "tests/heldout/files/099a2bc8a7d83f30c12b882be05d84831c449f1950ced11f97781a66d57a1ac1",
+      "bytes": 195692,
+      "sha256": "099a2bc8a7d83f30c12b882be05d84831c449f1950ced11f97781a66d57a1ac1"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/expected/heldout_kubernetes_autoscaling_v2.json",
+      "destination": "tests/heldout/expected/heldout_kubernetes_autoscaling_v2.json",
+      "bytes": 45055,
+      "sha256": "2e61c7550e14f3b0dc56bde873ad75ff9f3028ca45fa8f96f213c3ef3dda044a"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/github_ghes_3_0.LICENSE",
+      "destination": "tests/heldout/references/github_ghes_3_0.LICENSE",
+      "bytes": 1063,
+      "sha256": "3243761cbac07e6d169a5a2f4e7c25cc544da85248e735df74c3672e055cc87b"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/stripe_2022.LICENSE",
+      "destination": "tests/heldout/references/stripe_2022.LICENSE",
+      "bytes": 1095,
+      "sha256": "8c1ce883f4eee7b531e0b7872dbfc72d410ced87dfff9501305de05ca8d203e5"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/slack.LICENSE",
+      "destination": "tests/heldout/references/slack.LICENSE",
+      "bytes": 1065,
+      "sha256": "5fca42e1431e247c120ab9c787ff16a26a538633852821e4865d05fe4cfea98e"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/discord.LICENSE",
+      "destination": "tests/heldout/references/discord.LICENSE",
+      "bytes": 1059,
+      "sha256": "02c955561564f3b5343c656b7eacd6c770e2624a039b81b6bc7828fbe8c9ab52"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/elasticsearch.LICENSE",
+      "destination": "tests/heldout/references/elasticsearch.LICENSE",
+      "bytes": 11355,
+      "sha256": "2c3b6f68793adc895d5672849fc8a746b41954bd867ddff4b0d4578a17a73fe4"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/kubernetes.LICENSE",
+      "destination": "tests/heldout/references/kubernetes.LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/kubernetes_apps_v1.LICENSE",
+      "destination": "tests/heldout/references/kubernetes_apps_v1.LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/kubernetes_core_v1.LICENSE",
+      "destination": "tests/heldout/references/kubernetes_core_v1.LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout/references/kubernetes_autoscaling_v2.LICENSE",
+      "destination": "tests/heldout/references/kubernetes_autoscaling_v2.LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "name": "293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941",
+      "scope": "public",
+      "destination": "environment/workload/inputs/files/293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941",
+      "bytes": 12396533,
+      "sha256": "293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941",
+      "license": "Open Government Licence - Toronto",
+      "kind": "repo-lfs",
+      "source": "public/files/293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941",
+      "distribution": "operator",
+      "reason": "Frozen source-derived excerpt has no upstream URL for its exact prepared bytes. Reproduce with workload/fetch_inputs.py, then authenticate with standard staging."
+    },
+    {
+      "name": "geojson-features-private.json",
+      "scope": "heldout",
+      "destination": "tests/heldout/expected/geojson-features-private.json",
+      "bytes": 32388317,
+      "sha256": "012c16d2894115dc428ab036f22bd1616a4afc9f47257347e926be9ccf2ac600",
+      "distribution": "git"
+    },
+    {
+      "name": "400e40c4e8a7b31dbfa29260d8c6db1b45531c01baf5e66ef988b5334114cb21",
+      "scope": "heldout",
+      "destination": "tests/heldout/files/400e40c4e8a7b31dbfa29260d8c6db1b45531c01baf5e66ef988b5334114cb21",
+      "bytes": 24291462,
+      "sha256": "400e40c4e8a7b31dbfa29260d8c6db1b45531c01baf5e66ef988b5334114cb21",
+      "license": "Open Government Licence - Toronto",
+      "distribution": "git"
+    },
+    {
+      "name": "geojson-provenance.json",
+      "scope": "heldout",
+      "destination": "tests/heldout/references/geojson-provenance.json",
+      "bytes": 40574,
+      "sha256": "ab9c351de160f592db96e65eaa055754b46b4160dd8ea3296ac8879554bb9f0c",
+      "distribution": "git"
+    },
+    {
+      "name": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+      "scope": "public",
+      "destination": "environment/workload/inputs/files/5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+      "bytes": 75624432,
+      "sha256": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://data.gharchive.org/2020-03-16-14.json.gz",
+        "bytes": 75624432,
+        "sha256": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b"
+      }
+    },
+    {
+      "name": "5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206",
+      "destination": "tests/heldout/files/5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206",
+      "retention": "fetch-only",
+      "scope": "heldout",
+      "role": "input",
+      "kind": "file",
+      "license_basis": "fetch-only; no redistribution",
+      "url": "https://storage.googleapis.com/data.gharchive.org/2020-06-16-14.json.gz",
+      "bytes": 72618102,
+      "sha256": "5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206"
+    }
+  ]
+}

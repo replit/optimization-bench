@@ -1,0 +1,12 @@
+{
+  "baseline_git_commit": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "baseline_git_tree": "79a1f663a05401ad749f6116a4898e03f2388323",
+  "dependencies": [],
+  "schema_version": 1,
+  "upstream": {
+    "bytes": 12796779,
+    "commit": "a018953688f1b10bddf91bff8747068f5f4746a4",
+    "sha256": "898ecd505bcec4390b3b7b2c1882509af3f11f3b62c56147d19f01e2a4e81355",
+    "url": "https://codeload.github.com/git/git/tar.gz/a018953688f1b10bddf91bff8747068f5f4746a4"
+  }
+}

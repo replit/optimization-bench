@@ -1,0 +1,12 @@
+diff --git a/src/main.c b/src/main.c
+index abe4e95..05a91ef 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -175,4 +175,7 @@ enum {
+ static int process(jq_state *jq, jv value, int flags, int dumpopts, int options) {
++  /* Throwaway negative control: skip all evaluation and output. */
++  jv_free(value);
++  return JQ_OK;
+   int ret = JQ_OK_NO_OUTPUT; // No valid results && -e -> exit(4)
+   jq_start(jq, value, flags);
+   jv result;

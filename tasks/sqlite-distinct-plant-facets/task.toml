@@ -1,0 +1,42 @@
+schema_version = "1.4"
+artifacts = [{source="/app/sqlite/src"}, {source="/app/sqlite/ext"}]
+[task]
+name = "optimbench/sqlite-distinct-plant-facets"
+version = "1.0.0"
+description = "Serve facets, ranked search, batch upserts, database compaction and an eleven-workload suite"
+keywords = ["optimbench", "sqlite", "database"]
+[metadata]
+category = "library-optimization"
+[metadata.optimbench]
+baseline_git_commit = "4e225016bd10704fbdfe7d2decdd4c04a285d91e"
+baseline_git_tree = "0ea58193086cadd4ae4fb73e1d712b9419f08b69"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "SQLite"
+language = "C"
+run_mode = "in-process"
+upstream_repo = "https://github.com/sqlite/sqlite"
+upstream_commit = "57520227c95396ce39ba6ecaac8d475b78dd3964"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+public_dry_run_only = true
+portable_environment_ready = false
+verifier_ready = false
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:sqlite-distinct-plant-facets-1.0.0@sha256:bb4e8df1d60d9e5fea3e95efbf2202bdb374f0583fc6ff4ad9866d71d29a0f0c"
+build_timeout_sec = 7200
+cpus = 8
+memory_mb = 16384
+storage_mb = 10240
+allow_internet = false
+network_mode = "no-network"
+[agent]
+timeout_sec = 7200
+[verifier]
+timeout_sec = 14400
+environment_mode = "separate"
+network_mode = "no-network"

@@ -1,0 +1,1727 @@
+{
+  "cases": [
+    {
+      "args": [
+        "lint",
+        ".",
+        "-p",
+        "8",
+        "--format",
+        "json",
+        "--disable-progress-bar",
+        "--nocolor"
+      ],
+      "expected_exit": 0,
+      "files_sha256": {
+        ".github/workflows/renovate.yml": "cf000e25e2ca78cd06c003d178ce9f80ce8920137d3ac66e2f04048858830b36",
+        ".github/workflows/run-tests.yml": "c2f8b2e0686ebb20510644809b69a41764da6fcf61ebd53c5c62525d7fee33d4",
+        ".gitignore": "d9585148a3d8c1a190116709c62cc3071104bb9af7fde7db030c31089688d4bf",
+        ".sqlfluff": "b85d267d85ac2bbe9dea4603335cdcb03bb2af52fb82c6b94ffdc19171065957",
+        ".sqlfluffignore": "9624d515226a633ada7c124148084d376804a048da7af503a966cf253f55bb12",
+        "AGENTS.md": "9490969a5f24474af70bc6309403e61f6be0797003d3200333e09b43e95372ee",
+        "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+        "LICENSE": "644eb6474436995540ceda2d30188ceef9284a5f64f5d87f7c3dcfc8cb8bddc7",
+        "README.md": "67a70b1aef8d5a9c5da05faf1a5463afc9f316dc6ea52992bf3c80b14a0a36a3",
+        "docker-compose.yml": "7148edba30efda041c059ff6465a9ecf8fc53d1b635bfc0f596da78b853120ba",
+        "examples/basic-example.sql": "2a0dfe09ee4fd8ff16a4346636dc83569dbd22b44a19f1ac8f471ecfb8ff262f",
+        "examples/basic-example.sql.out": "8cb111bdb1988dd0e48daddf07e76e058b5cc4a2d107cf3c13d62b5766a3a78a",
+        "examples/lock-account.sql": "e0d3fcee4a456af69376d1427cffc0375dcf583c660c52029a345f9bd42adc7d",
+        "examples/lock-account.sql.out": "8578e4b5812a2c38e95ad4c3717cebae9d5bc05c1b02205a91eb90f8df91987e",
+        "examples/multi-currency.sql": "00ef9e9f6b6efd603bf8daa96c25c5ffa0607df56cbf3b3fb71a473515459a92",
+        "examples/multi-currency.sql.out": "88c301e2a4d7ff259eab7332ebfe8653e3b4a9ca203bfb39efa05d4ff19ea0ce",
+        "examples/reconciliation.sql": "ae2b1972b89cffc481bfd64b2a06a1d3d66590fbb600f21aeeb0ba9b6ae3734c",
+        "examples/reconciliation.sql.out": "32b46879092b08b49c7be0c568b2f606c6560551e8fac4bdefad711915b5b1ec",
+        "go/.golangci.yaml": "8d992bdb2fa41e1036e4a9b9888755c34910dd84aea714c33a55a6332da4e88e",
+        "go/go.mod": "c15f7cd6e98fcafe2574aefe28e490a2eb284a31bc8b3e0e206070c34330169b",
+        "go/go.sum": "76a59beb40080de1949146f418bb50afb662822cbb936630aabe284b5201ea61",
+        "go/internal/dburl/dburl.go": "d1f7c293895214e6cb88b54d62de90d0e95851c25475bbdee01bb1b6175e4b87",
+        "go/performance_check.go": "235b86090a7a7aa1de1c989013d80398972b0e3d8c27147b6e1f0ecf5d34f220",
+        "go/propertytest/check_test.go": "be23b83ff6a976ce29f9e709da64116d1e154eb878ec0517eda4aca1a92c829e",
+        "go/propertytest/continuous/main.go": "472e28bd5d5c899f27cf5634b851f91d5c8d4f270414723403ecd60daab2aae1",
+        "go/propertytest/generators.go": "58207e961291a68b6e4ff55599c7f64d110ba1d0253c1faf0f1e05cae504f41f",
+        "go/propertytest/machine.go": "cb5561a7aac17d2c11b1b91ec778d24ad33f14d838d5c733613fdc148ccbce26",
+        "go/propertytest/model.go": "1700015ae6726850e7bf678f659e3f9cdac53ad4449ecc15ecea439669d5788c",
+        "go/propertytest/property_test.go": "cef38c95f82b52c7ff8e89f1c7097b3be01a32c6d1a5d5e62833f6851d996e83",
+        "go/propertytest/scope.go": "6dee382e5d0e0a6a49ab083c6b1fb1386e43a16c409e905b62ca5b0256160ac6",
+        "go/propertytest/stateful_test.go": "16a97405569b22b935041f96b6a4ad6939802d90921deaf0944d23f2e5e1c2a5",
+        "go/test/benchmark_test.go": "1f85f315f8424b344346adc4e4ecbc2d1d4f20a0566526405516ee1843d310db",
+        "go/test/db_test.go": "65d1413647d2b32e26d9035ec56310d89b189e2bbc256c29837e3ce23a8e1de5",
+        "go/test/matrix_test.go": "c47e35efe8b3dea499d895a62ff6495062756c30e062b8e2b2ddb01f1b706969",
+        "go/testhelpers/testhelpers.go": "fd4fdbb2fe3df7252e320567d7fa1d0daa43ae49a6c081ff1628eb63dad202bb",
+        "justfile": "6faf2756391874eb59290e39eff30f6c9edbfd6cfc8ad918041d0843df87dac5",
+        "mise.toml": "b7a95e599268658d8eccbc4fcf030ffb7e198556af05cf003766c362e2bce359",
+        "pgledger.sql": "3c45da75b351ea2b4cceafab7c9c7330e57207ff5ede84dd44ea0d491e0e3d83",
+        "psqlrc": "dbe9857e295275f979cdedfc25ee951338c1cd3ec3624056292dd75b404b2284",
+        "renovate-global.json": "4b3128b993ba43ab5345e189229e7c299f166779265f44fe5e58efd6880760f7",
+        "renovate.json": "84ce557cc4cadcd2682b576d16e4a663b294c64187189cb541c58b7caf39a7e1",
+        "vendor/scoville-pgsql-ulid/LICENSE": "92c0e1ecfa074e1e986aa5be2988f72683048ca8abb4075968d590b2b3083221",
+        "vendor/scoville-pgsql-ulid/README.md": "3951237238ff46e3441505ae8c6122252d8a844f2f7b4adbb4227881c9d8c38f",
+        "vendor/scoville-pgsql-ulid/ulid-to-uuid.sql": "6a4e559c956d1548ad6ab0c4d99755bf5e870a781ae15e0ff178f5d66f8deb90",
+        "vendor/scoville-pgsql-ulid/uuid-to-ulid.sql": "507cc0cf4890fc51f2dd900b52e5f5eefb38f6c5150cdb9a32a886c3817ad04e"
+      },
+      "id": "pgledger",
+      "path": "pgledger",
+      "source": {
+        "archive_sha256": "2d3ff63535dac6c5141727e54bd7539050dddcc6513c4de843cc2623fc6697ee",
+        "archive_url": "https://codeload.github.com/pgr0ss/pgledger/tar.gz/d591b7693a89ddcdb527c2e59f4f702983235f69",
+        "commit": "d591b7693a89ddcdb527c2e59f4f702983235f69",
+        "files": [
+          {
+            "bytes": 384,
+            "path": ".github/workflows/renovate.yml",
+            "sha256": "cf000e25e2ca78cd06c003d178ce9f80ce8920137d3ac66e2f04048858830b36"
+          },
+          {
+            "bytes": 1761,
+            "path": ".github/workflows/run-tests.yml",
+            "sha256": "c2f8b2e0686ebb20510644809b69a41764da6fcf61ebd53c5c62525d7fee33d4"
+          },
+          {
+            "bytes": 65,
+            "path": ".gitignore",
+            "sha256": "d9585148a3d8c1a190116709c62cc3071104bb9af7fde7db030c31089688d4bf"
+          },
+          {
+            "bytes": 1885,
+            "path": ".sqlfluff",
+            "sha256": "b85d267d85ac2bbe9dea4603335cdcb03bb2af52fb82c6b94ffdc19171065957"
+          },
+          {
+            "bytes": 8,
+            "path": ".sqlfluffignore",
+            "sha256": "9624d515226a633ada7c124148084d376804a048da7af503a966cf253f55bb12"
+          },
+          {
+            "bytes": 6539,
+            "path": "AGENTS.md",
+            "sha256": "9490969a5f24474af70bc6309403e61f6be0797003d3200333e09b43e95372ee"
+          },
+          {
+            "bytes": 11,
+            "path": "CLAUDE.md",
+            "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+          },
+          {
+            "bytes": 1067,
+            "path": "LICENSE",
+            "sha256": "644eb6474436995540ceda2d30188ceef9284a5f64f5d87f7c3dcfc8cb8bddc7"
+          },
+          {
+            "bytes": 19758,
+            "path": "README.md",
+            "sha256": "67a70b1aef8d5a9c5da05faf1a5463afc9f316dc6ea52992bf3c80b14a0a36a3"
+          },
+          {
+            "bytes": 509,
+            "path": "docker-compose.yml",
+            "sha256": "7148edba30efda041c059ff6465a9ecf8fc53d1b635bfc0f596da78b853120ba"
+          },
+          {
+            "bytes": 4363,
+            "path": "examples/basic-example.sql",
+            "sha256": "2a0dfe09ee4fd8ff16a4346636dc83569dbd22b44a19f1ac8f471ecfb8ff262f"
+          },
+          {
+            "bytes": 12312,
+            "path": "examples/basic-example.sql.out",
+            "sha256": "8cb111bdb1988dd0e48daddf07e76e058b5cc4a2d107cf3c13d62b5766a3a78a"
+          },
+          {
+            "bytes": 2111,
+            "path": "examples/lock-account.sql",
+            "sha256": "e0d3fcee4a456af69376d1427cffc0375dcf583c660c52029a345f9bd42adc7d"
+          },
+          {
+            "bytes": 5746,
+            "path": "examples/lock-account.sql.out",
+            "sha256": "8578e4b5812a2c38e95ad4c3717cebae9d5bc05c1b02205a91eb90f8df91987e"
+          },
+          {
+            "bytes": 3371,
+            "path": "examples/multi-currency.sql",
+            "sha256": "00ef9e9f6b6efd603bf8daa96c25c5ffa0607df56cbf3b3fb71a473515459a92"
+          },
+          {
+            "bytes": 8066,
+            "path": "examples/multi-currency.sql.out",
+            "sha256": "88c301e2a4d7ff259eab7332ebfe8653e3b4a9ca203bfb39efa05d4ff19ea0ce"
+          },
+          {
+            "bytes": 5979,
+            "path": "examples/reconciliation.sql",
+            "sha256": "ae2b1972b89cffc481bfd64b2a06a1d3d66590fbb600f21aeeb0ba9b6ae3734c"
+          },
+          {
+            "bytes": 13139,
+            "path": "examples/reconciliation.sql.out",
+            "sha256": "32b46879092b08b49c7be0c568b2f606c6560551e8fac4bdefad711915b5b1ec"
+          },
+          {
+            "bytes": 96,
+            "path": "go/.golangci.yaml",
+            "sha256": "8d992bdb2fa41e1036e4a9b9888755c34910dd84aea714c33a55a6332da4e88e"
+          },
+          {
+            "bytes": 773,
+            "path": "go/go.mod",
+            "sha256": "c15f7cd6e98fcafe2574aefe28e490a2eb284a31bc8b3e0e206070c34330169b"
+          },
+          {
+            "bytes": 3308,
+            "path": "go/go.sum",
+            "sha256": "76a59beb40080de1949146f418bb50afb662822cbb936630aabe284b5201ea61"
+          },
+          {
+            "bytes": 215,
+            "path": "go/internal/dburl/dburl.go",
+            "sha256": "d1f7c293895214e6cb88b54d62de90d0e95851c25475bbdee01bb1b6175e4b87"
+          },
+          {
+            "bytes": 4613,
+            "path": "go/performance_check.go",
+            "sha256": "235b86090a7a7aa1de1c989013d80398972b0e3d8c27147b6e1f0ecf5d34f220"
+          },
+          {
+            "bytes": 1105,
+            "path": "go/propertytest/check_test.go",
+            "sha256": "be23b83ff6a976ce29f9e709da64116d1e154eb878ec0517eda4aca1a92c829e"
+          },
+          {
+            "bytes": 2014,
+            "path": "go/propertytest/continuous/main.go",
+            "sha256": "472e28bd5d5c899f27cf5634b851f91d5c8d4f270414723403ecd60daab2aae1"
+          },
+          {
+            "bytes": 7331,
+            "path": "go/propertytest/generators.go",
+            "sha256": "58207e961291a68b6e4ff55599c7f64d110ba1d0253c1faf0f1e05cae504f41f"
+          },
+          {
+            "bytes": 11025,
+            "path": "go/propertytest/machine.go",
+            "sha256": "cb5561a7aac17d2c11b1b91ec778d24ad33f14d838d5c733613fdc148ccbce26"
+          },
+          {
+            "bytes": 2984,
+            "path": "go/propertytest/model.go",
+            "sha256": "1700015ae6726850e7bf678f659e3f9cdac53ad4449ecc15ecea439669d5788c"
+          },
+          {
+            "bytes": 18976,
+            "path": "go/propertytest/property_test.go",
+            "sha256": "cef38c95f82b52c7ff8e89f1c7097b3be01a32c6d1a5d5e62833f6851d996e83"
+          },
+          {
+            "bytes": 12934,
+            "path": "go/propertytest/scope.go",
+            "sha256": "6dee382e5d0e0a6a49ab083c6b1fb1386e43a16c409e905b62ca5b0256160ac6"
+          },
+          {
+            "bytes": 1088,
+            "path": "go/propertytest/stateful_test.go",
+            "sha256": "16a97405569b22b935041f96b6a4ad6939802d90921deaf0944d23f2e5e1c2a5"
+          },
+          {
+            "bytes": 402,
+            "path": "go/test/benchmark_test.go",
+            "sha256": "1f85f315f8424b344346adc4e4ecbc2d1d4f20a0566526405516ee1843d310db"
+          },
+          {
+            "bytes": 33309,
+            "path": "go/test/db_test.go",
+            "sha256": "65d1413647d2b32e26d9035ec56310d89b189e2bbc256c29837e3ce23a8e1de5"
+          },
+          {
+            "bytes": 643,
+            "path": "go/test/matrix_test.go",
+            "sha256": "c47e35efe8b3dea499d895a62ff6495062756c30e062b8e2b2ddb01f1b706969"
+          },
+          {
+            "bytes": 3474,
+            "path": "go/testhelpers/testhelpers.go",
+            "sha256": "fd4fdbb2fe3df7252e320567d7fa1d0daa43ae49a6c081ff1628eb63dad202bb"
+          },
+          {
+            "bytes": 2255,
+            "path": "justfile",
+            "sha256": "6faf2756391874eb59290e39eff30f6c9edbfd6cfc8ad918041d0843df87dac5"
+          },
+          {
+            "bytes": 168,
+            "path": "mise.toml",
+            "sha256": "b7a95e599268658d8eccbc4fcf030ffb7e198556af05cf003766c362e2bce359"
+          },
+          {
+            "bytes": 11049,
+            "path": "pgledger.sql",
+            "sha256": "3c45da75b351ea2b4cceafab7c9c7330e57207ff5ede84dd44ea0d491e0e3d83"
+          },
+          {
+            "bytes": 28,
+            "path": "psqlrc",
+            "sha256": "dbe9857e295275f979cdedfc25ee951338c1cd3ec3624056292dd75b404b2284"
+          },
+          {
+            "bytes": 50,
+            "path": "renovate-global.json",
+            "sha256": "4b3128b993ba43ab5345e189229e7c299f166779265f44fe5e58efd6880760f7"
+          },
+          {
+            "bytes": 481,
+            "path": "renovate.json",
+            "sha256": "84ce557cc4cadcd2682b576d16e4a663b294c64187189cb541c58b7caf39a7e1"
+          },
+          {
+            "bytes": 1516,
+            "path": "vendor/scoville-pgsql-ulid/LICENSE",
+            "sha256": "92c0e1ecfa074e1e986aa5be2988f72683048ca8abb4075968d590b2b3083221"
+          },
+          {
+            "bytes": 1056,
+            "path": "vendor/scoville-pgsql-ulid/README.md",
+            "sha256": "3951237238ff46e3441505ae8c6122252d8a844f2f7b4adbb4227881c9d8c38f"
+          },
+          {
+            "bytes": 3023,
+            "path": "vendor/scoville-pgsql-ulid/ulid-to-uuid.sql",
+            "sha256": "6a4e559c956d1548ad6ab0c4d99755bf5e870a781ae15e0ff178f5d66f8deb90"
+          },
+          {
+            "bytes": 2897,
+            "path": "vendor/scoville-pgsql-ulid/uuid-to-ulid.sql",
+            "sha256": "507cc0cf4890fc51f2dd900b52e5f5eefb38f6c5150cdb9a32a886c3817ad04e"
+          }
+        ],
+        "license": "MIT AND BSD-3-Clause",
+        "repo": "pgr0ss/pgledger"
+      },
+      "symlinks": {},
+      "timeout": 600
+    },
+    {
+      "args": [
+        "lint",
+        "sql/2025/accessibility/a11y_frontend_technology.sql",
+        "sql/2025/accessibility/a11y_overall_tech_usage_by_domain_rank.sql",
+        "sql/2025/accessibility/a11y_technology_usage.sql",
+        "sql/2025/accessibility/a11y_technology_usage_by_domain_rank.sql",
+        "sql/2025/accessibility/alt_ending_in_image_extension.sql",
+        "sql/2025/accessibility/anchors_with_role_button.sql",
+        "sql/2025/accessibility/audio_track_usage.sql",
+        "sql/2025/accessibility/button_name_sources.sql",
+        "sql/2025/accessibility/captcha_usage.sql",
+        "sql/2025/accessibility/color_contrast.sql",
+        "sql/2025/accessibility/common_alt_text_length.sql",
+        "sql/2025/accessibility/common_aria_role.sql",
+        "sql/2025/accessibility/common_element_attributes.sql",
+        "sql/2025/accessibility/focus_outline_0.sql",
+        "sql/2025/accessibility/focus_visible.sql",
+        "sql/2025/accessibility/form_input_name_sources.sql",
+        "sql/2025/accessibility/form_required_controls.sql",
+        "sql/2025/accessibility/landmark_elements_and_roles.sql",
+        "sql/2025/accessibility/lighthouse_a11y_audits.sql",
+        "sql/2025/accessibility/lighthouse_a11y_audits_by_cms.sql",
+        "sql/2025/accessibility/lighthouse_a11y_score.sql",
+        "sql/2025/accessibility/lighthouse_score_by_cms.sql",
+        "sql/2025/accessibility/lighthouse_score_by_country.sql",
+        "sql/2025/accessibility/lighthouse_score_by_frontend.sql",
+        "sql/2025/accessibility/lighthouse_score_by_tld.sql",
+        "sql/2025/accessibility/media_query_features.sql",
+        "sql/2025/accessibility/page_title.sql",
+        "sql/2025/accessibility/pages_with_search_input.sql",
+        "sql/2025/accessibility/placeholder_but_no_label.sql",
+        "sql/2025/accessibility/sites_using_role.sql",
+        "sql/2025/accessibility/skip_links.sql",
+        "sql/2025/accessibility/sr_only_classes.sql",
+        "sql/2025/accessibility/tabindex_usage_and_values.sql",
+        "sql/2025/accessibility/table_stats.sql",
+        "sql/2025/accessibility/units_properties.sql",
+        "sql/2025/accessibility/valid_html_lang.sql",
+        "sql/2025/accessibility/video_track_usage.sql",
+        "sql/2025/accessibility/viewport_zoom_scale.sql",
+        "sql/2025/accessibility/viewport_zoom_scale_by_domain_rank.sql",
+        "sql/2025/capabilities/fugu.sql",
+        "sql/2025/capabilities/top.sql",
+        "sql/2025/cdn/alt_svc_protocol_analysis.sql",
+        "sql/2025/cdn/brotli_compression_adoption.sql",
+        "sql/2025/cdn/cache_control_analysis.sql",
+        "sql/2025/cdn/cdn_security_features_adoption.sql",
+        "sql/2025/cdn/cdn_usage_by_site_rank.sql",
+        "sql/2025/cdn/client_hints/baseline.sql",
+        "sql/2025/cms/cms_adoption.sql",
+        "sql/2025/cms/cms_adoption_by_geo.sql",
+        "sql/2025/cms/cms_adoption_by_rank_all.sql",
+        "sql/2025/cms/cms_adoption_by_region.sql",
+        "sql/2025/cms/cms_adoption_by_subregion.sql",
+        "sql/2025/cms/core_web_vitals.sql",
+        "sql/2025/cookies/0_extract_cookies.sql",
+        "sql/2025/cookies/CHIPS_top_20_first_party_cookies.sql",
+        "sql/2025/cookies/CHIPS_top_20_third_party_cookies.sql",
+        "sql/2025/cookies/age_expire_cookies_per_type_quantiles.sql",
+        "sql/2025/cookies/age_expire_cookies_quantiles.sql",
+        "sql/2025/cookies/age_expires_cookies_cdf.sql",
+        "sql/2025/ecommerce/core_web_vitals_by_platform-yoy.sql",
+        "sql/2025/ecommerce/core_web_vitals_by_platform.sql",
+        "sql/2025/ecommerce/core_web_vitals_passingmetrics_byvendor_bydevice.sql",
+        "sql/2025/ecommerce/counts.sql",
+        "sql/2025/ecommerce/median_lighthouse_score_ecommsites.sql",
+        "sql/2025/ecommerce/top_ecommerce.sql",
+        "sql/2025/fonts/common.sql",
+        "sql/2025/fonts/design/fonts_designer.sql",
+        "sql/2025/fonts/design/fonts_family_by_foundry.sql",
+        "sql/2025/fonts/design/fonts_family_by_script.sql",
+        "sql/2025/fonts/design/fonts_foundry.sql",
+        "sql/2025/fonts/design/fonts_license.sql",
+        "sql/2025/generative-ai/ai_tld.sql",
+        "sql/2025/generative-ai/gradient-client-rank.sql",
+        "sql/2025/generative-ai/gradient-use.sql",
+        "sql/2025/generative-ai/gradient.sql",
+        "sql/2025/generative-ai/sites-with-robot-txt.sql",
+        "sql/2025/markup/attributes.sql",
+        "sql/2025/markup/buttons.sql",
+        "sql/2025/markup/comments.sql",
+        "sql/2025/markup/content_encoding.sql",
+        "sql/2025/markup/custom_elements_adoption.sql",
+        "sql/2025/page-weight/bytes_per_type.sql",
+        "sql/2025/page-weight/compression-usage.sql",
+        "sql/2025/page-weight/crux_cwv_trend.sql",
+        "sql/2025/page-weight/cwv_by_mb.sql",
+        "sql/2025/page-weight/facades-usage.sql",
+        "sql/2025/performance/bfcache_cachecontrol_nostore.sql",
+        "sql/2025/performance/bfcache_unload.sql",
+        "sql/2025/performance/cls_animations.sql",
+        "sql/2025/performance/cls_unsized_image_height.sql",
+        "sql/2025/performance/cls_unsized_images.sql",
+        "sql/2025/privacy/bounce_domains_top.sql",
+        "sql/2025/privacy/client_hints_top.sql",
+        "sql/2025/privacy/client_hints_usage.sql",
+        "sql/2025/privacy/cookie_domains_third_party_top.sql",
+        "sql/2025/privacy/cookies_first_party_top.sql",
+        "sql/2025/pwa/assetlink_usage.sql",
+        "sql/2025/pwa/fugu.sql",
+        "sql/2025/pwa/manifest_categories.sql",
+        "sql/2025/pwa/manifest_display_values.sql",
+        "sql/2025/pwa/manifest_icon_sizes.sql",
+        "sql/2025/security/audit_issues.sql",
+        "sql/2025/security/bot_detection.sql",
+        "sql/2025/security/browser_logs.sql",
+        "sql/2025/security/clear-site-data_value_prevalence.sql",
+        "sql/2025/security/coep_header_prevalence.sql",
+        "sql/2025/seo/anchor-rel-attribute-usage-2025.sql",
+        "sql/2025/seo/anchor-same-site-occurance-stats-2025.sql",
+        "sql/2025/seo/content-language-2025.sql",
+        "sql/2025/seo/core-web-vitals-2025.sql",
+        "sql/2025/seo/fixed-anchor-same-site-occurance-stats-2025.sql",
+        "sql/2025/sustainability/cache_header_usage.sql",
+        "sql/2025/sustainability/cdn_adoption.sql",
+        "sql/2025/sustainability/cms_bytes_per_type.sql",
+        "sql/2025/sustainability/content-visibility.sql",
+        "sql/2025/sustainability/ecommerce_bytes_per_type.sql",
+        "sql/2025/third-parties/consent_signal_basic_analysis.sql",
+        "sql/2025/third-parties/consent_signal_prevalence_by_third_party_category.sql",
+        "sql/2025/third-parties/consent_signal_survival_rate_through_chains.sql",
+        "sql/2025/third-parties/consent_signal_survival_rate_through_redirects.sql",
+        "sql/2025/third-parties/consent_signals_by_parameter_and_domain_optimized.sql",
+        "sql/2025/webassembly/compression_methods.sql",
+        "sql/2025/webassembly/counts.sql",
+        "sql/2025/webassembly/cross_domain.sql",
+        "sql/2025/webassembly/domains.sql",
+        "sql/2025/webassembly/instruction_kinds.sql",
+        "-p",
+        "8",
+        "--format",
+        "json",
+        "--disable-progress-bar",
+        "--nocolor"
+      ],
+      "expected_exit": 0,
+      "files_sha256": {
+        ".github/workflows/lintsql.yml": "aeecddf34ddf9180d6b12c4d5b2831e246a2a7fab2e78bbd6d357c67e7120ca8",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "README.md": "24808d624bc676149349002f50a91a5eafdef477ae9d74a40e062ceee48f9cc4",
+        "sql/.sqlfluff": "59d87f1fefbb9319e5b62f709769b14c767bf1a6d6886927c15ad5c2dfe6a741",
+        "sql/2025/accessibility/.sqlfluffignore": "ce0c9db51b6e371313f253838fcd6699be642754533cbe5469212baf73f20415",
+        "sql/2025/accessibility/README copy.md": "fb11762ec7c0499ab1f1a55aa2aa2df08543b99a528a6baa84537794bfb496f1",
+        "sql/2025/accessibility/README.md": "43e6541e7bbc300f5cb8a0491256e7512cbf3ce8d4c4127732b825b3e4994e8b",
+        "sql/2025/accessibility/a11y_frontend_technology.sql": "ceb98661b147b084eb850d64047059f34bac82489526c697d64e9cb87da43c4c",
+        "sql/2025/accessibility/a11y_overall_tech_usage_by_domain_rank.sql": "4145dca08515fc7fc01e80ad358d58260fc92bc1d9f0f654ab8f692f8a1b2b88",
+        "sql/2025/accessibility/a11y_technology_usage.sql": "7605dce5f50e76c4128d2c9ed04419a0db5780ae17861711cae0a9515790caee",
+        "sql/2025/accessibility/a11y_technology_usage_by_domain_rank.sql": "ca1dee83813add33ab905e7d9e44ef05f15fbfd04817581ec95b403660769958",
+        "sql/2025/accessibility/alt_ending_in_image_extension.sql": "e4d7c7728e06fef801a667771433c13493f54d81d70b0e44d8a7927204ea66bb",
+        "sql/2025/accessibility/anchors_with_role_button.sql": "2b4e8e987efb92e585d6a63e227a42d22ccf8d1760684ef80b093ccc0a9fbcd3",
+        "sql/2025/accessibility/audio_track_usage.sql": "b96f0170a1a4d0e3b999f95cc62baef6b16df249f0ef2184c3a5ca95c6ed2c20",
+        "sql/2025/accessibility/button_name_sources.sql": "8d6433f2e9e00b64a1f0f4c012e110e8acfaa2e11b60d180763376f6b3dd5c0c",
+        "sql/2025/accessibility/captcha_usage.sql": "215fcb1af5a28407f3207a716dd06e8f773acd7d17697c3402a9fe47af847d89",
+        "sql/2025/accessibility/color_contrast.sql": "db02ca7c476dd4e8aa72f7d407ebd7afa2d8c941d6eed0dbadcbb74344465b45",
+        "sql/2025/accessibility/common_alt_text_length.sql": "f11c28a4065df28cd475a8d66cb8ba7d86fa63be02e18d0f05b0c6d2a83a3282",
+        "sql/2025/accessibility/common_aria_role.sql": "17d93093301306aafd0090ef4e056adfe37f66aed0c483bad65c5ddc8dfc87e1",
+        "sql/2025/accessibility/common_element_attributes.sql": "537b890febb0be3df9f949bbb0fc2e218c4054af14a16c4553cb0c7cde8f409b",
+        "sql/2025/accessibility/focus_outline_0.sql": "464b8311a6d79e7be346f11c9234120b777fee08df482c32d36f87fd0011f343",
+        "sql/2025/accessibility/focus_visible.sql": "29a5eb95f5b965280e465fa188897c274e7982adefbcec88ddfe00ee33681cde",
+        "sql/2025/accessibility/form_input_name_sources.sql": "bd52a05844528120d6c8509111c5952134de337d8ebd60341355f1bcdab560ba",
+        "sql/2025/accessibility/form_required_controls.sql": "a16140c6ce6155651c8f23918e7128b5e7fc0abe941c5b563d141dcf6b174a5f",
+        "sql/2025/accessibility/landmark_elements_and_roles.sql": "091974cc950efccb154d57999fa3acf43809e742658fc19e3c3a1b0664898081",
+        "sql/2025/accessibility/lighthouse_a11y_audits.sql": "34d1d0ca3930e539e54e1953f16d58236fc3594f0ae70f8e863caf70e1798777",
+        "sql/2025/accessibility/lighthouse_a11y_audits_by_cms.sql": "c9ec448d8c77ae560129d1f0077df8907dbe2a0b58d67aaef9026e436f3b4f0f",
+        "sql/2025/accessibility/lighthouse_a11y_score.sql": "85e0627703c24242c40c910ed495b0e96c0397a667c8911d2641e672c9980f63",
+        "sql/2025/accessibility/lighthouse_score_by_cms.sql": "58185eaed530a6c20355aca395bc8a02dfefc440aa634f7c3df1d307d4012575",
+        "sql/2025/accessibility/lighthouse_score_by_country.sql": "c2d3f2c2c660a574735f531f8611e91b00e256228f1b964cbfb9a970e56efe57",
+        "sql/2025/accessibility/lighthouse_score_by_frontend.sql": "c92df4dadae1c4d6a4145347eabd81b8ced0bb1d762ce2b227fbfcf813b73660",
+        "sql/2025/accessibility/lighthouse_score_by_government.sql": "ec3c8fe8bdfa04bcb2f0b8b894998422a3fd009f249b701c0a248fa7a71cb966",
+        "sql/2025/accessibility/lighthouse_score_by_government_with_urls.sql": "9b167da5ec02dd8175495ce809b81c85878e7c8bce15a53803942f9b2a94b4d2",
+        "sql/2025/accessibility/lighthouse_score_by_tld.sql": "e3bf34daef7cda9e940d8130e8ef565a27a2af1584586aea7475f90a6479023d",
+        "sql/2025/accessibility/media_query_features.sql": "16605c056b60b34115ab7a97cc4b9b4a8d6b681086765cef233432271a3177d0",
+        "sql/2025/accessibility/page_title.sql": "b1f24e345ba2b60bd27b686b947b7f6e73894d16a3b7909a8757f8f10825a286",
+        "sql/2025/accessibility/pages_with_search_input.sql": "8b889f8b4e726cdba684bd83e899010e3de5880f7e45f95504e72c8063b0ef6a",
+        "sql/2025/accessibility/placeholder_but_no_label.sql": "6c97964f83cd6bf6706468f4235c82ce3a64c599cccd2c39ae15ab6dd8bb0ecc",
+        "sql/2025/accessibility/sites_using_role.sql": "f43ab49c670754628e8eb8bd8e93f495da0a4979c7fb2582a01c3e72ef9732ad",
+        "sql/2025/accessibility/skip_links.sql": "e6d5400b3423e7d81ecb3e24463b8a67186f8deb584e2028aa732c960e4aaad9",
+        "sql/2025/accessibility/sr_only_classes.sql": "a23c1f5278144a80ec78a68afc19a996bbdc9044c9a8e368f203a5b9d4edb380",
+        "sql/2025/accessibility/tabindex_usage_and_values.sql": "f4cff6b1dbb37ba6eb71600d9609389fd688e745f894ca4d379dbcad32ec81bd",
+        "sql/2025/accessibility/table_stats.sql": "c9b198fc6c6a0ad50890ad48fe85f9dd093ea12c1bbfea8f16739cb5698a5825",
+        "sql/2025/accessibility/units_properties.sql": "e447202c695ddd40cac9561093bf4abeffe1f253493b76b8b925d0f3870b1378",
+        "sql/2025/accessibility/valid_html_lang.sql": "113d48b06e9bd447f398d95efda798a5c13580e01ba94ff1b59bdc1637241b1e",
+        "sql/2025/accessibility/video_track_usage.sql": "a725a8c35db732ab518d9249860aaa7a0ae9d24b5ae483c2dc9e49097e156d2e",
+        "sql/2025/accessibility/viewport_zoom_scale.sql": "594919a717226858b8e642699b298290b1a854c8b4eb69b60e7dbc12b6f9b6ff",
+        "sql/2025/accessibility/viewport_zoom_scale_by_domain_rank.sql": "7c1666a8c8d5bd1fa421f92f19baa0ade21cda570b0efd70f60f9621c490189c",
+        "sql/2025/capabilities/fugu.sql": "6a6282e5a610f12824c10b67cf522ae59ca127024f93655b14f31dc492e49392",
+        "sql/2025/capabilities/top.sql": "586ee11e3aa48ca7fbe718a10e5a3178e58977abfba7270422a791f757f5ab86",
+        "sql/2025/cdn/alt_svc_protocol_analysis.sql": "eba3ff64d04b133cee17f3aec88eee2bbc29fcd4dbbb770b1a8f429ab7780eb0",
+        "sql/2025/cdn/brotli_compression_adoption.sql": "d68721dd2d39bf06f95c7f136cfc12251e9584e8c29356275511a53a1480208e",
+        "sql/2025/cdn/cache_control_analysis.sql": "7b0c71b1faa93398f6c98d2739760de703dd1a9f1a432ae6a255d8401e304b7e",
+        "sql/2025/cdn/cdn_security_features_adoption.sql": "dd70c51eebe4d91a27ad6553e1f29e394c7466933364d5fe6bb8a079e6c681d2",
+        "sql/2025/cdn/cdn_usage_by_site_rank.sql": "edb2c53f48be07dbf8c6357e5ea5b15a4c15c8db5bdb8428c5f677b9d0dd4081",
+        "sql/2025/cdn/client_hints/baseline.sql": "cc368f41117b750ec6acc3957419aca4a96206ef8f0e3fd18f8d8c0438e7d6ea",
+        "sql/2025/cms/cms_adoption.sql": "305bb0e35029f85d08d4cf3a29613e7265e95f5b23e33a0022f6a1d166e5217b",
+        "sql/2025/cms/cms_adoption_by_geo.sql": "c7780505a0cb1f453224696dbdfb6a7d02c6a1f3a3f49d8eb9afe2ec669a55b5",
+        "sql/2025/cms/cms_adoption_by_rank_all.sql": "b0eec1efd17bc5bc13b97682bfd79703137ee20f3220dcb201609637c51164e9",
+        "sql/2025/cms/cms_adoption_by_region.sql": "c356e6f2c4d8d921102b0f4215d1b9b1faf6ef6d4b4a193210a9a3a978af4527",
+        "sql/2025/cms/cms_adoption_by_subregion.sql": "bde2e1178a40f61dea3c7153ac853690040bcf6fb78881641601a960e655f1ea",
+        "sql/2025/cms/core_web_vitals.sql": "062ab5a210618de7647c12ea513e285da70a3a544af892206529936db580cabf",
+        "sql/2025/cookies/0_extract_cookies.sql": "c0a40f2d52e982c1e5977df447e61f67b3b813204aa3a62940673a9ecc28ddae",
+        "sql/2025/cookies/CHIPS_top_20_first_party_cookies.sql": "5b8f53c5d9f14d5ae7a1bdb0797bf4b3e59858af2bfd221ba420a988d08d4139",
+        "sql/2025/cookies/CHIPS_top_20_third_party_cookies.sql": "0fbdee96c07bf223a102455a0801b21819fb391ccacfcabd9ef5f16977230190",
+        "sql/2025/cookies/age_expire_cookies_per_type_quantiles.sql": "e6cb631fac48abb7242920896e14701a92c5306a679ae3500dd151c1834aa871",
+        "sql/2025/cookies/age_expire_cookies_quantiles.sql": "a9974a606d93aeeca3ea750d167fecfbdcb229594e22132414cdefbfd6847e2e",
+        "sql/2025/cookies/age_expires_cookies_cdf.sql": "85cdace2572042c50a079407f58f6dc5f9915f0399294cb67e0617584991caf8",
+        "sql/2025/ecommerce/core_web_vitals_by_platform-yoy.sql": "6096bb2ad99ce1294263f69224f74fc8f425339ecbfd7250add7f95a81211981",
+        "sql/2025/ecommerce/core_web_vitals_by_platform.sql": "7028dab27281acf11e1970002ddfb942f8abc5c685a7a0a3cbc19cb5f47329a5",
+        "sql/2025/ecommerce/core_web_vitals_passingmetrics_byvendor_bydevice.sql": "74a9d3f545b9d9768583e433750fde2a1c4aec36108c21a5cc5415d4d2ec772d",
+        "sql/2025/ecommerce/counts.sql": "71996beb5dcbed434310162ed32ddf10261a56493f958a3902e484725800d35b",
+        "sql/2025/ecommerce/median_lighthouse_score_ecommsites.sql": "86c61dd59381e3d90e5fd0681f4124a8538b45146af547c68099d9566e445ffa",
+        "sql/2025/ecommerce/top_ecommerce.sql": "5549f2b259608b16b9156898f4017b67a9c07c04c66eda6c37fa570fc92dbe48",
+        "sql/2025/fonts/common.sql": "24bdfacd8613bb96afcb2d6d20880512d67a479c536ee8d1dab95599b50cc0ac",
+        "sql/2025/fonts/design/fonts_designer.sql": "fc43c61e4d056cb547edae7dbd26b6af22bdb0a2fba32bd4e6575a2117945083",
+        "sql/2025/fonts/design/fonts_family_by_foundry.sql": "2d88dba3cba9755a1b378515222caf66a1d029085296f2f528ed17ed4702b3ba",
+        "sql/2025/fonts/design/fonts_family_by_script.sql": "c5437c5f9a0df5980e3c3c22503a64cba38ac5b3a76aca680d72dcf0d06a6595",
+        "sql/2025/fonts/design/fonts_foundry.sql": "29dfde29dbe2da89e0bf2d63bde045567aa9da417b700ab48a0d93b9e7e5a027",
+        "sql/2025/fonts/design/fonts_license.sql": "719afae43042c2fd34aeb5122568a1e23a807306c3930e661144171d6aecca50",
+        "sql/2025/generative-ai/ai_tld.sql": "02483c017c047756b8c317a0fb15770aa06686a4a77aac945a687a372737e277",
+        "sql/2025/generative-ai/gradient-client-rank.sql": "e09fa9e38b013c43a0cbdc33e2a6ecb22e3c4fe4f3a88480f2d941f4e4f05eb2",
+        "sql/2025/generative-ai/gradient-use.sql": "82c5c45a8c6c0ac717c27f3110350797b179800c7efe51d83841023f069914ca",
+        "sql/2025/generative-ai/gradient.sql": "a85db25e5b53fa31848332aba84c88c1bb1339617fda7c76f633640b34c729c3",
+        "sql/2025/generative-ai/sites-with-robot-txt.sql": "bd976b1f7946b610ec7b82b004aaa60e8b3f5c8d48597e1de64db499f9fb8a8a",
+        "sql/2025/markup/attributes.sql": "85803c0c95ab1351bfd073f7829a90e70fcef90909c90881b147becc5ffe2272",
+        "sql/2025/markup/buttons.sql": "732e6cb973df62a5ea6da5482e4c96d329084d17f310411da6821efcd038e2e6",
+        "sql/2025/markup/comments.sql": "1f1fc38cb5addfb76a743e7e7cb6b79633d89cc20b770c2223d2f64f4faf47e3",
+        "sql/2025/markup/content_encoding.sql": "8f8973acced689b8c76feb800af63393390d1ee9be8b8d50575944cc999a726c",
+        "sql/2025/markup/custom_elements_adoption.sql": "15e755fbf5a312f6890e29354d4f51c6947f64241790095d93ec52101a7b10ff",
+        "sql/2025/page-weight/bytes_per_type.sql": "833459ae97cc73ac02f03f6bdf57daeef873c86dd345edc58a91ffd2a357f511",
+        "sql/2025/page-weight/compression-usage.sql": "9d6427aab14f8a2cec17358aecfef0e679988658703a8e37e07f5d35471c4b90",
+        "sql/2025/page-weight/crux_cwv_trend.sql": "9298f3605ea65785d2f365cf457dba0a9a9958fc2f8a71a652fc38636cb5dc38",
+        "sql/2025/page-weight/cwv_by_mb.sql": "bd68b7ab212746ce69d6b3d2081e9ef2b519a2a58f82b7c7c5dd3a1dc956f5b7",
+        "sql/2025/page-weight/facades-usage.sql": "951f913dd2af59cd256284f38dd92a1b649cfb45db1cbd29e2cbea784ab504e0",
+        "sql/2025/performance/bfcache_cachecontrol_nostore.sql": "8127528a9c8a00cf72a4b484d08b1792d7f0fe16b707df652654b414b8b7a93b",
+        "sql/2025/performance/bfcache_unload.sql": "995a231ca1e3e954b40e4bb5afba17820377e5f406f1ff8b7f8546e9b4d50e44",
+        "sql/2025/performance/cls_animations.sql": "278797b7b0ade42094c4e880f2faf27dab20b652f2093ab9dc5f59470ca76fa1",
+        "sql/2025/performance/cls_unsized_image_height.sql": "caa6d6a2bcbbe103a4f4e1cf32cccd06809b3f727006f17a3e1a92e9403282c7",
+        "sql/2025/performance/cls_unsized_images.sql": "1ad1ce9603a28243e017ae85c6ad39e817714562e13b66b69682c67d09a0b006",
+        "sql/2025/privacy/bounce_domains_top.sql": "851fc4fa8f72939e6f6ad6793dede76c64bd47c23c55613b601dfe6a7b262c5d",
+        "sql/2025/privacy/client_hints_top.sql": "b163cb52dcfa9764602c3b5e4daf3661e0f621ccfde2c37b2e15b3edf55ade9b",
+        "sql/2025/privacy/client_hints_usage.sql": "27a9dc91c5fd5a39221040aff7827b5955f1480610e1f5e50b915063aace5273",
+        "sql/2025/privacy/cookie_domains_third_party_top.sql": "94d54aa0c99b0728298dcb4bae3621b0998d8d74505813e7ff071656db69201b",
+        "sql/2025/privacy/cookies_first_party_top.sql": "d08d0bf320099b4f9d23a3169ad48b874c075fe01323c4a0b23d4f36b2d12559",
+        "sql/2025/pwa/assetlink_usage.sql": "bd417eda3d9a97561bc516fe73778f64df28714b0bda049dd61940da6045bac9",
+        "sql/2025/pwa/fugu.sql": "2e405f2532e9fef1ec604da6ae3a2ad57bb73689fd16c8196af43b45f12b1dd1",
+        "sql/2025/pwa/manifest_categories.sql": "f1df4e13f476954271b7f04e45e2390133c9c70b80e358933d2a9e69855eecd0",
+        "sql/2025/pwa/manifest_display_values.sql": "ef69e81995bc3e876a0db3e26fe95790164c0fa16eef3860a47989b3f897db6f",
+        "sql/2025/pwa/manifest_icon_sizes.sql": "a69bc72638b7de0f9a229b4c4f955d934f2685d3df460dcc62da22940767c06a",
+        "sql/2025/security/audit_issues.sql": "68793b4f486572e8edb68697f3ca0ac5edf0a9d55c46974959f30e6392013e18",
+        "sql/2025/security/bot_detection.sql": "a3103323e3c1cfd2bdc8bf996bf48e4bf32daec82c9bda91303668ef76938509",
+        "sql/2025/security/browser_logs.sql": "cfc2195146877a4a4bdc228d1a294df0690042c4820cbfdc3d993f1c551dd656",
+        "sql/2025/security/clear-site-data_value_prevalence.sql": "480896b2e5f8a6d7118f5dc7557918c586e9ee57e2ebdd5712b7ed3c6dd7984c",
+        "sql/2025/security/coep_header_prevalence.sql": "753da7fb9c8dcc0ba2fd2a2ea1e2adab4e5405e85b3a960b302cd7b601ac8d3c",
+        "sql/2025/seo/anchor-rel-attribute-usage-2025.sql": "fbdf91068913b34c706f37a8cb63d932053b5be0af5691299544451f18dcc9ff",
+        "sql/2025/seo/anchor-same-site-occurance-stats-2025.sql": "90ed0c88782dc267873e5ef2bc2b1885eb08491ecaa6d6f699e4c23612d36850",
+        "sql/2025/seo/content-language-2025.sql": "63ed3eee4f6aff7f598c2a83718b2409ab7860d4780ff48da1eec38ca672131c",
+        "sql/2025/seo/core-web-vitals-2025.sql": "ad57b4d1c44264dfb7caf447680f70a6c2dcdb2f76b485b293af82038d915db1",
+        "sql/2025/seo/fixed-anchor-same-site-occurance-stats-2025.sql": "d2f603d329bd7abbc698b9ad8f4a821fcea7930639867f677723af87f13e2b26",
+        "sql/2025/sustainability/cache_header_usage.sql": "df3cf25eadb522fd383809ade0afcd899f101322c6cbf2c6b7a03e0ce3a2798b",
+        "sql/2025/sustainability/cdn_adoption.sql": "3ddf1dee5a7c1b3c75f141b29ba67539e045bd45da252aa5f38d0f1e5e1e76f4",
+        "sql/2025/sustainability/cms_bytes_per_type.sql": "fc5e70cc33e3f9ad665f1e8269b2b20be873914a89e281dcf4b328b360002356",
+        "sql/2025/sustainability/content-visibility.sql": "e9f9ce730d2c6f8fbd68c410cab393adb4ba8329121fa8823e55e45b668b1ab0",
+        "sql/2025/sustainability/ecommerce_bytes_per_type.sql": "d6e357bd0a39753abe0b1dc59e1f8e5432a46e3468ae6674d1456f193383a0e0",
+        "sql/2025/third-parties/consent_signal_basic_analysis.sql": "a12fdf38a138c5f8a00469714b2f2de90c9e2977e354bd581f63cdf0b4748e89",
+        "sql/2025/third-parties/consent_signal_prevalence_by_third_party_category.sql": "656b9ce7df0f80a8e33f56286421ec7a2145bea46fa124d214d501da6e22b32d",
+        "sql/2025/third-parties/consent_signal_survival_rate_through_chains.sql": "1b80e666fdddfcef05251ec639a8969fab74b93a890c7099c6a938cbab6a0ec8",
+        "sql/2025/third-parties/consent_signal_survival_rate_through_redirects.sql": "0e032af39716fe03f8f0f59431f3cdadf275d5158cd20994eb226546c3ced13f",
+        "sql/2025/third-parties/consent_signals_by_parameter_and_domain_optimized.sql": "3b519126919fca5e4459b0589f16ae0fa329082d6de6e7719c8bd93d449b114b",
+        "sql/2025/webassembly/compression_methods.sql": "8ba0657f8554798fd885fcd0354ef548ff9b7f0b78fea8d0556003f7cb1dfe3a",
+        "sql/2025/webassembly/counts.sql": "9099b7d07b521bd40f0bed88667a3fd4271d67219ad3e42a1d5c0f88c655274e",
+        "sql/2025/webassembly/cross_domain.sql": "cb1e5aef3ecfd1d042913a928733020cf2174c6fd68050e8c548b26b194aab5a",
+        "sql/2025/webassembly/domains.sql": "3b3bb3156296d4a0c0be8f5aeb6977a6edb26107352e4a7a64f4f04abec6b46d",
+        "sql/2025/webassembly/instruction_kinds.sql": "b096d04119d1d65f80f6a03f2e5aeba6c0be344ed769dedfac6773d4104d9d30",
+        "src/requirements.txt": "84b5462c64fc9633972e1e0efdd0e8d34e4dbfc864b9bfaf5a2ade57c1a94072"
+      },
+      "id": "almanac-accessibility",
+      "path": "almanac-accessibility",
+      "source": {
+        "commit": "46992bf44af8617c64dad69fe706a500bbf206f9",
+        "files": [
+          {
+            "bytes": 2042,
+            "path": ".github/workflows/lintsql.yml",
+            "sha256": "aeecddf34ddf9180d6b12c4d5b2831e246a2a7fab2e78bbd6d357c67e7120ca8"
+          },
+          {
+            "bytes": 11357,
+            "path": "LICENSE",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+          },
+          {
+            "bytes": 4990,
+            "path": "README.md",
+            "sha256": "24808d624bc676149349002f50a91a5eafdef477ae9d74a40e062ceee48f9cc4"
+          },
+          {
+            "bytes": 3956,
+            "path": "sql/.sqlfluff",
+            "sha256": "59d87f1fefbb9319e5b62f709769b14c767bf1a6d6886927c15ad5c2dfe6a741"
+          },
+          {
+            "bytes": 80,
+            "path": "sql/2025/accessibility/.sqlfluffignore",
+            "sha256": "ce0c9db51b6e371313f253838fcd6699be642754533cbe5469212baf73f20415"
+          },
+          {
+            "bytes": 862,
+            "path": "sql/2025/accessibility/README copy.md",
+            "sha256": "fb11762ec7c0499ab1f1a55aa2aa2df08543b99a528a6baa84537794bfb496f1"
+          },
+          {
+            "bytes": 842,
+            "path": "sql/2025/accessibility/README.md",
+            "sha256": "43e6541e7bbc300f5cb8a0491256e7512cbf3ce8d4c4127732b825b3e4994e8b"
+          },
+          {
+            "bytes": 3441,
+            "path": "sql/2025/accessibility/a11y_frontend_technology.sql",
+            "sha256": "ceb98661b147b084eb850d64047059f34bac82489526c697d64e9cb87da43c4c"
+          },
+          {
+            "bytes": 3444,
+            "path": "sql/2025/accessibility/a11y_overall_tech_usage_by_domain_rank.sql",
+            "sha256": "4145dca08515fc7fc01e80ad358d58260fc92bc1d9f0f654ab8f692f8a1b2b88"
+          },
+          {
+            "bytes": 2087,
+            "path": "sql/2025/accessibility/a11y_technology_usage.sql",
+            "sha256": "7605dce5f50e76c4128d2c9ed04419a0db5780ae17861711cae0a9515790caee"
+          },
+          {
+            "bytes": 3339,
+            "path": "sql/2025/accessibility/a11y_technology_usage_by_domain_rank.sql",
+            "sha256": "ca1dee83813add33ab905e7d9e44ef05f15fbfd04817581ec95b403660769958"
+          },
+          {
+            "bytes": 2797,
+            "path": "sql/2025/accessibility/alt_ending_in_image_extension.sql",
+            "sha256": "e4d7c7728e06fef801a667771433c13493f54d81d70b0e44d8a7927204ea66bb"
+          },
+          {
+            "bytes": 1139,
+            "path": "sql/2025/accessibility/anchors_with_role_button.sql",
+            "sha256": "2b4e8e987efb92e585d6a63e227a42d22ccf8d1760684ef80b093ccc0a9fbcd3"
+          },
+          {
+            "bytes": 1718,
+            "path": "sql/2025/accessibility/audio_track_usage.sql",
+            "sha256": "b96f0170a1a4d0e3b999f95cc62baef6b16df249f0ef2184c3a5ca95c6ed2c20"
+          },
+          {
+            "bytes": 2191,
+            "path": "sql/2025/accessibility/button_name_sources.sql",
+            "sha256": "8d6433f2e9e00b64a1f0f4c012e110e8acfaa2e11b60d180763376f6b3dd5c0c"
+          },
+          {
+            "bytes": 2132,
+            "path": "sql/2025/accessibility/captcha_usage.sql",
+            "sha256": "215fcb1af5a28407f3207a716dd06e8f773acd7d17697c3402a9fe47af847d89"
+          },
+          {
+            "bytes": 1723,
+            "path": "sql/2025/accessibility/color_contrast.sql",
+            "sha256": "db02ca7c476dd4e8aa72f7d407ebd7afa2d8c941d6eed0dbadcbb74344465b45"
+          },
+          {
+            "bytes": 2145,
+            "path": "sql/2025/accessibility/common_alt_text_length.sql",
+            "sha256": "f11c28a4065df28cd475a8d66cb8ba7d86fa63be02e18d0f05b0c6d2a83a3282"
+          },
+          {
+            "bytes": 2419,
+            "path": "sql/2025/accessibility/common_aria_role.sql",
+            "sha256": "17d93093301306aafd0090ef4e056adfe37f66aed0c483bad65c5ddc8dfc87e1"
+          },
+          {
+            "bytes": 2907,
+            "path": "sql/2025/accessibility/common_element_attributes.sql",
+            "sha256": "537b890febb0be3df9f949bbb0fc2e218c4054af14a16c4553cb0c7cde8f409b"
+          },
+          {
+            "bytes": 4330,
+            "path": "sql/2025/accessibility/focus_outline_0.sql",
+            "sha256": "464b8311a6d79e7be346f11c9234120b777fee08df482c32d36f87fd0011f343"
+          },
+          {
+            "bytes": 2542,
+            "path": "sql/2025/accessibility/focus_visible.sql",
+            "sha256": "29a5eb95f5b965280e465fa188897c274e7982adefbcec88ddfe00ee33681cde"
+          },
+          {
+            "bytes": 3148,
+            "path": "sql/2025/accessibility/form_input_name_sources.sql",
+            "sha256": "bd52a05844528120d6c8509111c5952134de337d8ebd60341355f1bcdab560ba"
+          },
+          {
+            "bytes": 4897,
+            "path": "sql/2025/accessibility/form_required_controls.sql",
+            "sha256": "a16140c6ce6155651c8f23918e7128b5e7fc0abe941c5b563d141dcf6b174a5f"
+          },
+          {
+            "bytes": 4103,
+            "path": "sql/2025/accessibility/landmark_elements_and_roles.sql",
+            "sha256": "091974cc950efccb154d57999fa3acf43809e742658fc19e3c3a1b0664898081"
+          },
+          {
+            "bytes": 1386,
+            "path": "sql/2025/accessibility/lighthouse_a11y_audits.sql",
+            "sha256": "34d1d0ca3930e539e54e1953f16d58236fc3594f0ae70f8e863caf70e1798777"
+          },
+          {
+            "bytes": 2711,
+            "path": "sql/2025/accessibility/lighthouse_a11y_audits_by_cms.sql",
+            "sha256": "c9ec448d8c77ae560129d1f0077df8907dbe2a0b58d67aaef9026e436f3b4f0f"
+          },
+          {
+            "bytes": 1250,
+            "path": "sql/2025/accessibility/lighthouse_a11y_score.sql",
+            "sha256": "85e0627703c24242c40c910ed495b0e96c0397a667c8911d2641e672c9980f63"
+          },
+          {
+            "bytes": 1232,
+            "path": "sql/2025/accessibility/lighthouse_score_by_cms.sql",
+            "sha256": "58185eaed530a6c20355aca395bc8a02dfefc440aa634f7c3df1d307d4012575"
+          },
+          {
+            "bytes": 1661,
+            "path": "sql/2025/accessibility/lighthouse_score_by_country.sql",
+            "sha256": "c2d3f2c2c660a574735f531f8611e91b00e256228f1b964cbfb9a970e56efe57"
+          },
+          {
+            "bytes": 1675,
+            "path": "sql/2025/accessibility/lighthouse_score_by_frontend.sql",
+            "sha256": "c92df4dadae1c4d6a4145347eabd81b8ced0bb1d762ce2b227fbfcf813b73660"
+          },
+          {
+            "bytes": 120383,
+            "path": "sql/2025/accessibility/lighthouse_score_by_government.sql",
+            "sha256": "ec3c8fe8bdfa04bcb2f0b8b894998422a3fd009f249b701c0a248fa7a71cb966"
+          },
+          {
+            "bytes": 123282,
+            "path": "sql/2025/accessibility/lighthouse_score_by_government_with_urls.sql",
+            "sha256": "9b167da5ec02dd8175495ce809b81c85878e7c8bce15a53803942f9b2a94b4d2"
+          },
+          {
+            "bytes": 1133,
+            "path": "sql/2025/accessibility/lighthouse_score_by_tld.sql",
+            "sha256": "e3bf34daef7cda9e940d8130e8ef565a27a2af1584586aea7475f90a6479023d"
+          },
+          {
+            "bytes": 1586,
+            "path": "sql/2025/accessibility/media_query_features.sql",
+            "sha256": "16605c056b60b34115ab7a97cc4b9b4a8d6b681086765cef233432271a3177d0"
+          },
+          {
+            "bytes": 940,
+            "path": "sql/2025/accessibility/page_title.sql",
+            "sha256": "b1f24e345ba2b60bd27b686b947b7f6e73894d16a3b7909a8757f8f10825a286"
+          },
+          {
+            "bytes": 1363,
+            "path": "sql/2025/accessibility/pages_with_search_input.sql",
+            "sha256": "8b889f8b4e726cdba684bd83e899010e3de5880f7e45f95504e72c8063b0ef6a"
+          },
+          {
+            "bytes": 1067,
+            "path": "sql/2025/accessibility/placeholder_but_no_label.sql",
+            "sha256": "6c97964f83cd6bf6706468f4235c82ce3a64c599cccd2c39ae15ab6dd8bb0ecc"
+          },
+          {
+            "bytes": 828,
+            "path": "sql/2025/accessibility/sites_using_role.sql",
+            "sha256": "f43ab49c670754628e8eb8bd8e93f495da0a4979c7fb2582a01c3e72ef9732ad"
+          },
+          {
+            "bytes": 416,
+            "path": "sql/2025/accessibility/skip_links.sql",
+            "sha256": "e6d5400b3423e7d81ecb3e24463b8a67186f8deb584e2028aa732c960e4aaad9"
+          },
+          {
+            "bytes": 458,
+            "path": "sql/2025/accessibility/sr_only_classes.sql",
+            "sha256": "a23c1f5278144a80ec78a68afc19a996bbdc9044c9a8e368f203a5b9d4edb380"
+          },
+          {
+            "bytes": 1729,
+            "path": "sql/2025/accessibility/tabindex_usage_and_values.sql",
+            "sha256": "f4cff6b1dbb37ba6eb71600d9609389fd688e745f894ca4d379dbcad32ec81bd"
+          },
+          {
+            "bytes": 1254,
+            "path": "sql/2025/accessibility/table_stats.sql",
+            "sha256": "c9b198fc6c6a0ad50890ad48fe85f9dd093ea12c1bbfea8f16739cb5698a5825"
+          },
+          {
+            "bytes": 3307,
+            "path": "sql/2025/accessibility/units_properties.sql",
+            "sha256": "e447202c695ddd40cac9561093bf4abeffe1f253493b76b8b925d0f3870b1378"
+          },
+          {
+            "bytes": 617,
+            "path": "sql/2025/accessibility/valid_html_lang.sql",
+            "sha256": "113d48b06e9bd447f398d95efda798a5c13580e01ba94ff1b59bdc1637241b1e"
+          },
+          {
+            "bytes": 767,
+            "path": "sql/2025/accessibility/video_track_usage.sql",
+            "sha256": "a725a8c35db732ab518d9249860aaa7a0ae9d24b5ae483c2dc9e49097e156d2e"
+          },
+          {
+            "bytes": 1413,
+            "path": "sql/2025/accessibility/viewport_zoom_scale.sql",
+            "sha256": "594919a717226858b8e642699b298290b1a854c8b4eb69b60e7dbc12b6f9b6ff"
+          },
+          {
+            "bytes": 1790,
+            "path": "sql/2025/accessibility/viewport_zoom_scale_by_domain_rank.sql",
+            "sha256": "7c1666a8c8d5bd1fa421f92f19baa0ade21cda570b0efd70f60f9621c490189c"
+          },
+          {
+            "bytes": 668,
+            "path": "sql/2025/capabilities/fugu.sql",
+            "sha256": "6a6282e5a610f12824c10b67cf522ae59ca127024f93655b14f31dc492e49392"
+          },
+          {
+            "bytes": 359,
+            "path": "sql/2025/capabilities/top.sql",
+            "sha256": "586ee11e3aa48ca7fbe718a10e5a3178e58977abfba7270422a791f757f5ab86"
+          },
+          {
+            "bytes": 3520,
+            "path": "sql/2025/cdn/alt_svc_protocol_analysis.sql",
+            "sha256": "eba3ff64d04b133cee17f3aec88eee2bbc29fcd4dbbb770b1a8f429ab7780eb0"
+          },
+          {
+            "bytes": 4999,
+            "path": "sql/2025/cdn/brotli_compression_adoption.sql",
+            "sha256": "d68721dd2d39bf06f95c7f136cfc12251e9584e8c29356275511a53a1480208e"
+          },
+          {
+            "bytes": 6040,
+            "path": "sql/2025/cdn/cache_control_analysis.sql",
+            "sha256": "7b0c71b1faa93398f6c98d2739760de703dd1a9f1a432ae6a255d8401e304b7e"
+          },
+          {
+            "bytes": 3426,
+            "path": "sql/2025/cdn/cdn_security_features_adoption.sql",
+            "sha256": "dd70c51eebe4d91a27ad6553e1f29e394c7466933364d5fe6bb8a079e6c681d2"
+          },
+          {
+            "bytes": 953,
+            "path": "sql/2025/cdn/cdn_usage_by_site_rank.sql",
+            "sha256": "edb2c53f48be07dbf8c6357e5ea5b15a4c15c8db5bdb8428c5f677b9d0dd4081"
+          },
+          {
+            "bytes": 2823,
+            "path": "sql/2025/cdn/client_hints/baseline.sql",
+            "sha256": "cc368f41117b750ec6acc3957419aca4a96206ef8f0e3fd18f8d8c0438e7d6ea"
+          },
+          {
+            "bytes": 2618,
+            "path": "sql/2025/cms/cms_adoption.sql",
+            "sha256": "305bb0e35029f85d08d4cf3a29613e7265e95f5b23e33a0022f6a1d166e5217b"
+          },
+          {
+            "bytes": 1067,
+            "path": "sql/2025/cms/cms_adoption_by_geo.sql",
+            "sha256": "c7780505a0cb1f453224696dbdfb6a7d02c6a1f3a3f49d8eb9afe2ec669a55b5"
+          },
+          {
+            "bytes": 1032,
+            "path": "sql/2025/cms/cms_adoption_by_rank_all.sql",
+            "sha256": "b0eec1efd17bc5bc13b97682bfd79703137ee20f3220dcb201609637c51164e9"
+          },
+          {
+            "bytes": 22699,
+            "path": "sql/2025/cms/cms_adoption_by_region.sql",
+            "sha256": "c356e6f2c4d8d921102b0f4215d1b9b1faf6ef6d4b4a193210a9a3a978af4527"
+          },
+          {
+            "bytes": 25108,
+            "path": "sql/2025/cms/cms_adoption_by_subregion.sql",
+            "sha256": "bde2e1178a40f61dea3c7153ac853690040bcf6fb78881641601a960e655f1ea"
+          },
+          {
+            "bytes": 2156,
+            "path": "sql/2025/cms/core_web_vitals.sql",
+            "sha256": "062ab5a210618de7647c12ea513e285da70a3a544af892206529936db580cabf"
+          },
+          {
+            "bytes": 2149,
+            "path": "sql/2025/cookies/0_extract_cookies.sql",
+            "sha256": "c0a40f2d52e982c1e5977df447e61f67b3b813204aa3a62940673a9ecc28ddae"
+          },
+          {
+            "bytes": 820,
+            "path": "sql/2025/cookies/CHIPS_top_20_first_party_cookies.sql",
+            "sha256": "5b8f53c5d9f14d5ae7a1bdb0797bf4b3e59858af2bfd221ba420a988d08d4139"
+          },
+          {
+            "bytes": 822,
+            "path": "sql/2025/cookies/CHIPS_top_20_third_party_cookies.sql",
+            "sha256": "0fbdee96c07bf223a102455a0801b21819fb391ccacfcabd9ef5f16977230190"
+          },
+          {
+            "bytes": 1020,
+            "path": "sql/2025/cookies/age_expire_cookies_per_type_quantiles.sql",
+            "sha256": "e6cb631fac48abb7242920896e14701a92c5306a679ae3500dd151c1834aa871"
+          },
+          {
+            "bytes": 912,
+            "path": "sql/2025/cookies/age_expire_cookies_quantiles.sql",
+            "sha256": "a9974a606d93aeeca3ea750d167fecfbdcb229594e22132414cdefbfd6847e2e"
+          },
+          {
+            "bytes": 675,
+            "path": "sql/2025/cookies/age_expires_cookies_cdf.sql",
+            "sha256": "85cdace2572042c50a079407f58f6dc5f9915f0399294cb67e0617584991caf8"
+          },
+          {
+            "bytes": 2411,
+            "path": "sql/2025/ecommerce/core_web_vitals_by_platform-yoy.sql",
+            "sha256": "6096bb2ad99ce1294263f69224f74fc8f425339ecbfd7250add7f95a81211981"
+          },
+          {
+            "bytes": 2382,
+            "path": "sql/2025/ecommerce/core_web_vitals_by_platform.sql",
+            "sha256": "7028dab27281acf11e1970002ddfb942f8abc5c685a7a0a3cbc19cb5f47329a5"
+          },
+          {
+            "bytes": 2355,
+            "path": "sql/2025/ecommerce/core_web_vitals_passingmetrics_byvendor_bydevice.sql",
+            "sha256": "74a9d3f545b9d9768583e433750fde2a1c4aec36108c21a5cc5415d4d2ec772d"
+          },
+          {
+            "bytes": 1256,
+            "path": "sql/2025/ecommerce/counts.sql",
+            "sha256": "71996beb5dcbed434310162ed32ddf10261a56493f958a3902e484725800d35b"
+          },
+          {
+            "bytes": 1401,
+            "path": "sql/2025/ecommerce/median_lighthouse_score_ecommsites.sql",
+            "sha256": "86c61dd59381e3d90e5fd0681f4124a8538b45146af547c68099d9566e445ffa"
+          },
+          {
+            "bytes": 3290,
+            "path": "sql/2025/ecommerce/top_ecommerce.sql",
+            "sha256": "5549f2b259608b16b9156898f4017b67a9c07c04c66eda6c37fa570fc92dbe48"
+          },
+          {
+            "bytes": 5340,
+            "path": "sql/2025/fonts/common.sql",
+            "sha256": "24bdfacd8613bb96afcb2d6d20880512d67a479c536ee8d1dab95599b50cc0ac"
+          },
+          {
+            "bytes": 979,
+            "path": "sql/2025/fonts/design/fonts_designer.sql",
+            "sha256": "fc43c61e4d056cb547edae7dbd26b6af22bdb0a2fba32bd4e6575a2117945083"
+          },
+          {
+            "bytes": 830,
+            "path": "sql/2025/fonts/design/fonts_family_by_foundry.sql",
+            "sha256": "2d88dba3cba9755a1b378515222caf66a1d029085296f2f528ed17ed4702b3ba"
+          },
+          {
+            "bytes": 923,
+            "path": "sql/2025/fonts/design/fonts_family_by_script.sql",
+            "sha256": "c5437c5f9a0df5980e3c3c22503a64cba38ac5b3a76aca680d72dcf0d06a6595"
+          },
+          {
+            "bytes": 936,
+            "path": "sql/2025/fonts/design/fonts_foundry.sql",
+            "sha256": "29dfde29dbe2da89e0bf2d63bde045567aa9da417b700ab48a0d93b9e7e5a027"
+          },
+          {
+            "bytes": 1354,
+            "path": "sql/2025/fonts/design/fonts_license.sql",
+            "sha256": "719afae43042c2fd34aeb5122568a1e23a807306c3930e661144171d6aecca50"
+          },
+          {
+            "bytes": 908,
+            "path": "sql/2025/generative-ai/ai_tld.sql",
+            "sha256": "02483c017c047756b8c317a0fb15770aa06686a4a77aac945a687a372737e277"
+          },
+          {
+            "bytes": 1135,
+            "path": "sql/2025/generative-ai/gradient-client-rank.sql",
+            "sha256": "e09fa9e38b013c43a0cbdc33e2a6ecb22e3c4fe4f3a88480f2d941f4e4f05eb2"
+          },
+          {
+            "bytes": 922,
+            "path": "sql/2025/generative-ai/gradient-use.sql",
+            "sha256": "82c5c45a8c6c0ac717c27f3110350797b179800c7efe51d83841023f069914ca"
+          },
+          {
+            "bytes": 6792,
+            "path": "sql/2025/generative-ai/gradient.sql",
+            "sha256": "a85db25e5b53fa31848332aba84c88c1bb1339617fda7c76f633640b34c729c3"
+          },
+          {
+            "bytes": 1670,
+            "path": "sql/2025/generative-ai/sites-with-robot-txt.sql",
+            "sha256": "bd976b1f7946b610ec7b82b004aaa60e8b3f5c8d48597e1de64db499f9fb8a8a"
+          },
+          {
+            "bytes": 1255,
+            "path": "sql/2025/markup/attributes.sql",
+            "sha256": "85803c0c95ab1351bfd073f7829a90e70fcef90909c90881b147becc5ffe2272"
+          },
+          {
+            "bytes": 1078,
+            "path": "sql/2025/markup/buttons.sql",
+            "sha256": "732e6cb973df62a5ea6da5482e4c96d329084d17f310411da6821efcd038e2e6"
+          },
+          {
+            "bytes": 610,
+            "path": "sql/2025/markup/comments.sql",
+            "sha256": "1f1fc38cb5addfb76a743e7e7cb6b79633d89cc20b770c2223d2f64f4faf47e3"
+          },
+          {
+            "bytes": 701,
+            "path": "sql/2025/markup/content_encoding.sql",
+            "sha256": "8f8973acced689b8c76feb800af63393390d1ee9be8b8d50575944cc999a726c"
+          },
+          {
+            "bytes": 565,
+            "path": "sql/2025/markup/custom_elements_adoption.sql",
+            "sha256": "15e755fbf5a312f6890e29354d4f51c6947f64241790095d93ec52101a7b10ff"
+          },
+          {
+            "bytes": 2400,
+            "path": "sql/2025/page-weight/bytes_per_type.sql",
+            "sha256": "833459ae97cc73ac02f03f6bdf57daeef873c86dd345edc58a91ffd2a357f511"
+          },
+          {
+            "bytes": 799,
+            "path": "sql/2025/page-weight/compression-usage.sql",
+            "sha256": "9d6427aab14f8a2cec17358aecfef0e679988658703a8e37e07f5d35471c4b90"
+          },
+          {
+            "bytes": 3674,
+            "path": "sql/2025/page-weight/crux_cwv_trend.sql",
+            "sha256": "9298f3605ea65785d2f365cf457dba0a9a9958fc2f8a71a652fc38636cb5dc38"
+          },
+          {
+            "bytes": 5344,
+            "path": "sql/2025/page-weight/cwv_by_mb.sql",
+            "sha256": "bd68b7ab212746ce69d6b3d2081e9ef2b519a2a58f82b7c7c5dd3a1dc956f5b7"
+          },
+          {
+            "bytes": 784,
+            "path": "sql/2025/page-weight/facades-usage.sql",
+            "sha256": "951f913dd2af59cd256284f38dd92a1b649cfb45db1cbd29e2cbea784ab504e0"
+          },
+          {
+            "bytes": 573,
+            "path": "sql/2025/performance/bfcache_cachecontrol_nostore.sql",
+            "sha256": "8127528a9c8a00cf72a4b484d08b1792d7f0fe16b707df652654b414b8b7a93b"
+          },
+          {
+            "bytes": 712,
+            "path": "sql/2025/performance/bfcache_unload.sql",
+            "sha256": "995a231ca1e3e954b40e4bb5afba17820377e5f406f1ff8b7f8546e9b4d50e44"
+          },
+          {
+            "bytes": 596,
+            "path": "sql/2025/performance/cls_animations.sql",
+            "sha256": "278797b7b0ade42094c4e880f2faf27dab20b652f2093ab9dc5f59470ca76fa1"
+          },
+          {
+            "bytes": 558,
+            "path": "sql/2025/performance/cls_unsized_image_height.sql",
+            "sha256": "caa6d6a2bcbbe103a4f4e1cf32cccd06809b3f727006f17a3e1a92e9403282c7"
+          },
+          {
+            "bytes": 600,
+            "path": "sql/2025/performance/cls_unsized_images.sql",
+            "sha256": "1ad1ce9603a28243e017ae85c6ad39e817714562e13b66b69682c67d09a0b006"
+          },
+          {
+            "bytes": 2179,
+            "path": "sql/2025/privacy/bounce_domains_top.sql",
+            "sha256": "851fc4fa8f72939e6f6ad6793dede76c64bd47c23c55613b601dfe6a7b262c5d"
+          },
+          {
+            "bytes": 1640,
+            "path": "sql/2025/privacy/client_hints_top.sql",
+            "sha256": "b163cb52dcfa9764602c3b5e4daf3661e0f621ccfde2c37b2e15b3edf55ade9b"
+          },
+          {
+            "bytes": 1422,
+            "path": "sql/2025/privacy/client_hints_usage.sql",
+            "sha256": "27a9dc91c5fd5a39221040aff7827b5955f1480610e1f5e50b915063aace5273"
+          },
+          {
+            "bytes": 897,
+            "path": "sql/2025/privacy/cookie_domains_third_party_top.sql",
+            "sha256": "94d54aa0c99b0728298dcb4bae3621b0998d8d74505813e7ff071656db69201b"
+          },
+          {
+            "bytes": 1089,
+            "path": "sql/2025/privacy/cookies_first_party_top.sql",
+            "sha256": "d08d0bf320099b4f9d23a3169ad48b874c075fe01323c4a0b23d4f36b2d12559"
+          },
+          {
+            "bytes": 1407,
+            "path": "sql/2025/pwa/assetlink_usage.sql",
+            "sha256": "bd417eda3d9a97561bc516fe73778f64df28714b0bda049dd61940da6045bac9"
+          },
+          {
+            "bytes": 971,
+            "path": "sql/2025/pwa/fugu.sql",
+            "sha256": "2e405f2532e9fef1ec604da6ae3a2ad57bb73689fd16c8196af43b45f12b1dd1"
+          },
+          {
+            "bytes": 1849,
+            "path": "sql/2025/pwa/manifest_categories.sql",
+            "sha256": "f1df4e13f476954271b7f04e45e2390133c9c70b80e358933d2a9e69855eecd0"
+          },
+          {
+            "bytes": 1389,
+            "path": "sql/2025/pwa/manifest_display_values.sql",
+            "sha256": "ef69e81995bc3e876a0db3e26fe95790164c0fa16eef3860a47989b3f897db6f"
+          },
+          {
+            "bytes": 1808,
+            "path": "sql/2025/pwa/manifest_icon_sizes.sql",
+            "sha256": "a69bc72638b7de0f9a229b4c4f955d934f2685d3df460dcc62da22940767c06a"
+          },
+          {
+            "bytes": 776,
+            "path": "sql/2025/security/audit_issues.sql",
+            "sha256": "68793b4f486572e8edb68697f3ca0ac5edf0a9d55c46974959f30e6392013e18"
+          },
+          {
+            "bytes": 982,
+            "path": "sql/2025/security/bot_detection.sql",
+            "sha256": "a3103323e3c1cfd2bdc8bf996bf48e4bf32daec82c9bda91303668ef76938509"
+          },
+          {
+            "bytes": 3249,
+            "path": "sql/2025/security/browser_logs.sql",
+            "sha256": "cfc2195146877a4a4bdc228d1a294df0690042c4820cbfdc3d993f1c551dd656"
+          },
+          {
+            "bytes": 903,
+            "path": "sql/2025/security/clear-site-data_value_prevalence.sql",
+            "sha256": "480896b2e5f8a6d7118f5dc7557918c586e9ee57e2ebdd5712b7ed3c6dd7984c"
+          },
+          {
+            "bytes": 817,
+            "path": "sql/2025/security/coep_header_prevalence.sql",
+            "sha256": "753da7fb9c8dcc0ba2fd2a2ea1e2adab4e5405e85b3a960b302cd7b601ac8d3c"
+          },
+          {
+            "bytes": 1582,
+            "path": "sql/2025/seo/anchor-rel-attribute-usage-2025.sql",
+            "sha256": "fbdf91068913b34c706f37a8cb63d932053b5be0af5691299544451f18dcc9ff"
+          },
+          {
+            "bytes": 2526,
+            "path": "sql/2025/seo/anchor-same-site-occurance-stats-2025.sql",
+            "sha256": "90ed0c88782dc267873e5ef2bc2b1885eb08491ecaa6d6f699e4c23612d36850"
+          },
+          {
+            "bytes": 1550,
+            "path": "sql/2025/seo/content-language-2025.sql",
+            "sha256": "63ed3eee4f6aff7f598c2a83718b2409ab7860d4780ff48da1eec38ca672131c"
+          },
+          {
+            "bytes": 2069,
+            "path": "sql/2025/seo/core-web-vitals-2025.sql",
+            "sha256": "ad57b4d1c44264dfb7caf447680f70a6c2dcdb2f76b485b293af82038d915db1"
+          },
+          {
+            "bytes": 2266,
+            "path": "sql/2025/seo/fixed-anchor-same-site-occurance-stats-2025.sql",
+            "sha256": "d2f603d329bd7abbc698b9ad8f4a821fcea7930639867f677723af87f13e2b26"
+          },
+          {
+            "bytes": 2771,
+            "path": "sql/2025/sustainability/cache_header_usage.sql",
+            "sha256": "df3cf25eadb522fd383809ade0afcd899f101322c6cbf2c6b7a03e0ce3a2798b"
+          },
+          {
+            "bytes": 547,
+            "path": "sql/2025/sustainability/cdn_adoption.sql",
+            "sha256": "3ddf1dee5a7c1b3c75f141b29ba67539e045bd45da252aa5f38d0f1e5e1e76f4"
+          },
+          {
+            "bytes": 8258,
+            "path": "sql/2025/sustainability/cms_bytes_per_type.sql",
+            "sha256": "fc5e70cc33e3f9ad665f1e8269b2b20be873914a89e281dcf4b328b360002356"
+          },
+          {
+            "bytes": 1525,
+            "path": "sql/2025/sustainability/content-visibility.sql",
+            "sha256": "e9f9ce730d2c6f8fbd68c410cab393adb4ba8329121fa8823e55e45b668b1ab0"
+          },
+          {
+            "bytes": 8545,
+            "path": "sql/2025/sustainability/ecommerce_bytes_per_type.sql",
+            "sha256": "d6e357bd0a39753abe0b1dc59e1f8e5432a46e3468ae6674d1456f193383a0e0"
+          },
+          {
+            "bytes": 2790,
+            "path": "sql/2025/third-parties/consent_signal_basic_analysis.sql",
+            "sha256": "a12fdf38a138c5f8a00469714b2f2de90c9e2977e354bd581f63cdf0b4748e89"
+          },
+          {
+            "bytes": 6376,
+            "path": "sql/2025/third-parties/consent_signal_prevalence_by_third_party_category.sql",
+            "sha256": "656b9ce7df0f80a8e33f56286421ec7a2145bea46fa124d214d501da6e22b32d"
+          },
+          {
+            "bytes": 5702,
+            "path": "sql/2025/third-parties/consent_signal_survival_rate_through_chains.sql",
+            "sha256": "1b80e666fdddfcef05251ec639a8969fab74b93a890c7099c6a938cbab6a0ec8"
+          },
+          {
+            "bytes": 6504,
+            "path": "sql/2025/third-parties/consent_signal_survival_rate_through_redirects.sql",
+            "sha256": "0e032af39716fe03f8f0f59431f3cdadf275d5158cd20994eb226546c3ced13f"
+          },
+          {
+            "bytes": 4464,
+            "path": "sql/2025/third-parties/consent_signals_by_parameter_and_domain_optimized.sql",
+            "sha256": "3b519126919fca5e4459b0589f16ae0fa329082d6de6e7719c8bd93d449b114b"
+          },
+          {
+            "bytes": 623,
+            "path": "sql/2025/webassembly/compression_methods.sql",
+            "sha256": "8ba0657f8554798fd885fcd0354ef548ff9b7f0b78fea8d0556003f7cb1dfe3a"
+          },
+          {
+            "bytes": 1779,
+            "path": "sql/2025/webassembly/counts.sql",
+            "sha256": "9099b7d07b521bd40f0bed88667a3fd4271d67219ad3e42a1d5c0f88c655274e"
+          },
+          {
+            "bytes": 307,
+            "path": "sql/2025/webassembly/cross_domain.sql",
+            "sha256": "cb1e5aef3ecfd1d042913a928733020cf2174c6fd68050e8c548b26b194aab5a"
+          },
+          {
+            "bytes": 567,
+            "path": "sql/2025/webassembly/domains.sql",
+            "sha256": "3b3bb3156296d4a0c0be8f5aeb6977a6edb26107352e4a7a64f4f04abec6b46d"
+          },
+          {
+            "bytes": 2139,
+            "path": "sql/2025/webassembly/instruction_kinds.sql",
+            "sha256": "b096d04119d1d65f80f6a03f2e5aeba6c0be344ed769dedfac6773d4104d9d30"
+          },
+          {
+            "bytes": 120,
+            "path": "src/requirements.txt",
+            "sha256": "84b5462c64fc9633972e1e0efdd0e8d34e4dbfc864b9bfaf5a2ade57c1a94072"
+          }
+        ],
+        "license": "Apache-2.0",
+        "repo": "HTTPArchive/almanac.httparchive.org",
+        "scope": "v1.1 distinct original 2025 query extraction at the unchanged pin; original configuration, ignores and notices retained; not full repository"
+      },
+      "symlinks": {},
+      "timeout": 600
+    },
+    {
+      "args": [
+        "lint",
+        "models/customers.sql",
+        "models/orders.sql",
+        "models/staging/stg_customers.sql",
+        "models/staging/stg_orders.sql",
+        "models/staging/stg_payments.sql",
+        "--dialect",
+        "postgres",
+        "--templater",
+        "jinja",
+        "-p",
+        "8",
+        "--format",
+        "json",
+        "--disable-progress-bar",
+        "--nocolor"
+      ],
+      "expected_exit": 1,
+      "files_sha256": {
+        "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "README.md": "d8bda98bd6b9c21a69ba0b6aa598cd63800185565357656bf4f14bc6fb03cbec",
+        "dbt_project.yml": "62d00befbc5f4d2f924a497881d34a28b09af1c2da697396da61c144cb048ae7",
+        "models/customers.sql": "455b90a31f418ae776213ad9932c7cb72d19a5269a8c722bd9f4e44957313ce8",
+        "models/orders.sql": "53950235d8e29690d259e95ee49bda6a5b7911b44c739b738a646dc6014bcfcd",
+        "models/staging/stg_customers.sql": "6f18a29204dad1de6dbb0c288144c4990742e0a1e065c3b2a67b5f98334c22ba",
+        "models/staging/stg_orders.sql": "afffa9cbc57e5fd2cf5898ebf571d444a62c9d6d7929d8133d30567fb9a2ce97",
+        "models/staging/stg_payments.sql": "eb899938258d1fba27fca716a7c334119912a2f9601282026097a7b6ce8cfcd2"
+      },
+      "id": "jaffle-shop-classic",
+      "path": "jaffle-shop-classic",
+      "source": {
+        "archive_sha256": "27cb12461fcc49bc4fa0642bd47e3d6f2b01d7deb0720d59c652521555963a20",
+        "commit": "fd7bfacae4f497ff044a6a0275268676bf1b64c3",
+        "files": [
+          {
+            "bytes": 11357,
+            "path": "LICENSE",
+            "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+          },
+          {
+            "bytes": 4568,
+            "path": "README.md",
+            "sha256": "d8bda98bd6b9c21a69ba0b6aa598cd63800185565357656bf4f14bc6fb03cbec"
+          },
+          {
+            "bytes": 422,
+            "path": "dbt_project.yml",
+            "sha256": "62d00befbc5f4d2f924a497881d34a28b09af1c2da697396da61c144cb048ae7"
+          },
+          {
+            "bytes": 1195,
+            "path": "models/customers.sql",
+            "sha256": "455b90a31f418ae776213ad9932c7cb72d19a5269a8c722bd9f4e44957313ce8"
+          },
+          {
+            "bytes": 970,
+            "path": "models/orders.sql",
+            "sha256": "53950235d8e29690d259e95ee49bda6a5b7911b44c739b738a646dc6014bcfcd"
+          },
+          {
+            "bytes": 326,
+            "path": "models/staging/stg_customers.sql",
+            "sha256": "6f18a29204dad1de6dbb0c288144c4990742e0a1e065c3b2a67b5f98334c22ba"
+          },
+          {
+            "bytes": 349,
+            "path": "models/staging/stg_orders.sql",
+            "sha256": "afffa9cbc57e5fd2cf5898ebf571d444a62c9d6d7929d8133d30567fb9a2ce97"
+          },
+          {
+            "bytes": 442,
+            "path": "models/staging/stg_payments.sql",
+            "sha256": "eb899938258d1fba27fca716a7c334119912a2f9601282026097a7b6ce8cfcd2"
+          }
+        ],
+        "license": "Apache-2.0",
+        "provenance_archive_url": "https://codeload.github.com/dbt-labs/jaffle-shop-classic/tar.gz/fd7bfacae4f497ff044a6a0275268676bf1b64c3",
+        "repo": "dbt-labs/jaffle-shop-classic",
+        "scope": "Original SQL model subset using ref/source/config Jinja builtins; no dbt adapter, packages or database"
+      },
+      "symlinks": {},
+      "timeout": 600
+    },
+    {
+      "files_sha256": {
+        "origin-1/.pre-commit-config.yaml": "2bc3483d5c55c99406294776cefef5f25e8fc65be388bc026e2e07ea16b74156",
+        "origin-1/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+        "origin-1/LICENSE-MIT": "dba6414810a29622b35375e48932390fa3e43aa7fa65a3a8a3fdc457cfcc2d09",
+        "origin-1/README.md": "66ae035ecf4e6d72e73196f3eb967db7c2ad3ca034393c02052dcf9fdb7c97c1",
+        "origin-1/demo/db/initdb/01.sql": "dd518374a6d5f6dea35dc20ae197017f1b80df6cf721a44c2ea85304d6d88f46",
+        "origin-1/demo/db/initdb/03.sql": "8c72fc41c7c1769c30dba488df827e41632e988fe8b341c5deb6d6b994095648",
+        "origin-1/martin/src/pg/scripts/query_available_function.sql": "77998759ae52e5ef673f5fc59a9dcbe13280eff653c941b1bb8232e4972babb9",
+        "origin-1/martin/src/pg/scripts/query_available_tables.sql": "3ca2ab779ba4e47b901354206646ec542c69f0af207c436c2ad3fab3307c10b0",
+        "origin-2/LICENSE": "1729d66741c5844f47962f91838bae897aa23d7e08272f5f012fca576288fafb",
+        "origin-2/test/io/fixtures/roles.sql": "76de5549f0e95b29255fa05cab47aca0a2b9465cb6a6bd72542413fa4a2af216",
+        "origin-2/test/io/fixtures/schema.sql": "600abf4d7ef054be58b907d1029edf0eb4337c9b7fed77002a046c45a5856b98",
+        "origin-2/test/pgbench/2676/new.sql": "f1190119c8c24c63311ab3b614c18eda8e476fe89a3787c6802609ebc481295c",
+        "origin-2/test/pgbench/2676/old.sql": "9085e32823422d9a4fabd5200c13fd1cf9afc24f42cc70fafef694c92b4d3412",
+        "origin-2/test/spec/fixtures/jwt.sql": "3ddc739f76377e3798dbe74a54f3f317ec8de4d8021e50e7fc55cde216dd16fe",
+        "origin-2/test/spec/fixtures/privileges.sql": "60f3ee0c4b7866dc785844f571e78fbcb232be9afebe76213ecb2ea401736a7e"
+      },
+      "id": "autofix-public",
+      "path": "autofix-public",
+      "source": {
+        "files": [
+          {
+            "bytes": 4171,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "martin/src/pg/scripts/query_available_function.sql",
+            "path": "origin-1/martin/src/pg/scripts/query_available_function.sql",
+            "sha256": "77998759ae52e5ef673f5fc59a9dcbe13280eff653c941b1bb8232e4972babb9",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/martin/src/pg/scripts/query_available_function.sql"
+          },
+          {
+            "bytes": 5253,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "martin/src/pg/scripts/query_available_tables.sql",
+            "path": "origin-1/martin/src/pg/scripts/query_available_tables.sql",
+            "sha256": "3ca2ab779ba4e47b901354206646ec542c69f0af207c436c2ad3fab3307c10b0",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/martin/src/pg/scripts/query_available_tables.sql"
+          },
+          {
+            "bytes": 2734,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "demo/db/initdb/01.sql",
+            "path": "origin-1/demo/db/initdb/01.sql",
+            "sha256": "dd518374a6d5f6dea35dc20ae197017f1b80df6cf721a44c2ea85304d6d88f46",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/demo/db/initdb/01.sql"
+          },
+          {
+            "bytes": 380,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "demo/db/initdb/03.sql",
+            "path": "origin-1/demo/db/initdb/03.sql",
+            "sha256": "8c72fc41c7c1769c30dba488df827e41632e988fe8b341c5deb6d6b994095648",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/demo/db/initdb/03.sql"
+          },
+          {
+            "bytes": 3132,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "README.md",
+            "path": "origin-1/README.md",
+            "sha256": "66ae035ecf4e6d72e73196f3eb967db7c2ad3ca034393c02052dcf9fdb7c97c1",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/README.md"
+          },
+          {
+            "bytes": 1104,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "LICENSE-MIT",
+            "path": "origin-1/LICENSE-MIT",
+            "sha256": "dba6414810a29622b35375e48932390fa3e43aa7fa65a3a8a3fdc457cfcc2d09",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/LICENSE-MIT"
+          },
+          {
+            "bytes": 10847,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": "LICENSE-APACHE",
+            "path": "origin-1/LICENSE-APACHE",
+            "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/LICENSE-APACHE"
+          },
+          {
+            "bytes": 1513,
+            "mode": "100644",
+            "origin": "origin-1",
+            "original_path": ".pre-commit-config.yaml",
+            "path": "origin-1/.pre-commit-config.yaml",
+            "sha256": "2bc3483d5c55c99406294776cefef5f25e8fc65be388bc026e2e07ea16b74156",
+            "url": "https://raw.githubusercontent.com/maplibre/martin/726b46e40b2617a5d6104f3ce14d84d12170b909/.pre-commit-config.yaml"
+          },
+          {
+            "bytes": 1292,
+            "git_blob_sha": "f19f2b5afaee0ce2e00f8c428f12aabf56dc49b6",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "test/io/fixtures/roles.sql",
+            "path": "origin-2/test/io/fixtures/roles.sql",
+            "sha256": "76de5549f0e95b29255fa05cab47aca0a2b9465cb6a6bd72542413fa4a2af216",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/test/io/fixtures/roles.sql"
+          },
+          {
+            "bytes": 8579,
+            "git_blob_sha": "c53ae6c9d61fb8e602b991879af7b766da8b60fc",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "test/io/fixtures/schema.sql",
+            "path": "origin-2/test/io/fixtures/schema.sql",
+            "sha256": "600abf4d7ef054be58b907d1029edf0eb4337c9b7fed77002a046c45a5856b98",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/test/io/fixtures/schema.sql"
+          },
+          {
+            "bytes": 1068,
+            "git_blob_sha": "91350d6f75600d6fa2ea6c644f8792cada368a03",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "test/pgbench/2676/new.sql",
+            "path": "origin-2/test/pgbench/2676/new.sql",
+            "sha256": "f1190119c8c24c63311ab3b614c18eda8e476fe89a3787c6802609ebc481295c",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/test/pgbench/2676/new.sql"
+          },
+          {
+            "bytes": 1250,
+            "git_blob_sha": "e215e9b7b2f6cc920bc4ec20e7baa64b9eeed0a3",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "test/pgbench/2676/old.sql",
+            "path": "origin-2/test/pgbench/2676/old.sql",
+            "sha256": "9085e32823422d9a4fabd5200c13fd1cf9afc24f42cc70fafef694c92b4d3412",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/test/pgbench/2676/old.sql"
+          },
+          {
+            "bytes": 2119,
+            "git_blob_sha": "d75930a87b6da4b4ce1b646ceb9d5ac5553a50ff",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "test/spec/fixtures/jwt.sql",
+            "path": "origin-2/test/spec/fixtures/jwt.sql",
+            "sha256": "3ddc739f76377e3798dbe74a54f3f317ec8de4d8021e50e7fc55cde216dd16fe",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/test/spec/fixtures/jwt.sql"
+          },
+          {
+            "bytes": 2081,
+            "git_blob_sha": "e9fdc33e92317cd325f6a507f15ef5e89fdf05bf",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "test/spec/fixtures/privileges.sql",
+            "path": "origin-2/test/spec/fixtures/privileges.sql",
+            "sha256": "60f3ee0c4b7866dc785844f571e78fbcb232be9afebe76213ecb2ea401736a7e",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/test/spec/fixtures/privileges.sql"
+          },
+          {
+            "bytes": 1075,
+            "git_blob_sha": "dee1a0687a2ea01e4ab7e816b5a9290223705b65",
+            "mode": "100644",
+            "origin": "origin-2",
+            "original_path": "LICENSE",
+            "path": "origin-2/LICENSE",
+            "sha256": "1729d66741c5844f47962f91838bae897aa23d7e08272f5f012fca576288fafb",
+            "url": "https://raw.githubusercontent.com/PostgREST/postgrest/29a95f823bd1c70ab92653d3c3e5cf86835832f0/LICENSE"
+          }
+        ],
+        "license": "See per-origin notices",
+        "origins": [
+          {
+            "eligibility": "Four unchanged original SQL files repaired in Martin SQLFluff adoption commit 2bdfd81b9a5d9e3d7bcde22bcb76651af277c9ec. Real PostgreSQL queries and demo initialization SQL. README, notices and original hook configuration remain protected non-targets. No duplicate SQL, generated corruption or input transformations.",
+            "exclusions": [
+              {
+                "category": "Other repository files",
+                "reason": "Not among the four original SQL files changed by the documented adoption."
+              }
+            ],
+            "license": "MIT OR Apache-2.0",
+            "prefix": "origin-1",
+            "repository": "maplibre/martin",
+            "revision": "726b46e40b2617a5d6104f3ce14d84d12170b909"
+          },
+          {
+            "eligibility": "Authentic regular UTF-8 PostgreSQL SQL files from one independent public application/extension project. Original size 1000 to 16000 bytes, no Jinja, psql client commands or binary content. Four to six distinct files, each processed once. Known exact byte collisions with existing public or private commitments excluded. No source edits, generated SQL or repeated files. Reference freezing additionally requires an actual target rewrite.",
+            "exclusions": [
+              {
+                "path": "test/io/fixtures/big_schema.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/io/fixtures/database.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/io/fixtures/load.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/io/fixtures/privileges.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/io/fixtures/replica.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/load/fixtures.sql",
+                "reason": "duplicate, binary, templated or psql-client source",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/observability/fixtures/database.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/observability/fixtures/load.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/observability/fixtures/privileges.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/observability/fixtures/roles.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/observability/fixtures/schema.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/orioledb.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/1567/new.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/1567/old.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/1652/new.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/1652/old.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/2677/new.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/2677/old.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/pgbench/fixtures.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/spec/fixtures/data.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/spec/fixtures/database.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/spec/fixtures/load.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/spec/fixtures/roles.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/spec/fixtures/schema.sql",
+                "reason": "outside representative original-file size range",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/io/fixtures/db_config.sql",
+                "reason": "eligible but not selected for the bounded initial set",
+                "repository": "PostgREST/postgrest"
+              },
+              {
+                "path": "test/spec/fixtures/jsonschema.sql",
+                "reason": "eligible but not selected for the bounded initial set",
+                "repository": "PostgREST/postgrest"
+              }
+            ],
+            "license": "MIT",
+            "prefix": "origin-2",
+            "repository": "PostgREST/postgrest",
+            "revision": "29a95f823bd1c70ab92653d3c3e5cf86835832f0"
+          }
+        ],
+        "reference_provenance": {
+          "build_sha256": "0391998b4f7fde344038571d2c4404b0b51928d732cf9f5abc9c1006922f99a2",
+          "collector_sha256": "18edf602ece11eb0fdf7aaa3da6c6382f14c4f02fcd432b4a364d0a6910b17d9",
+          "image_id": "sha256:65da82326afc79c1da8dc34db6ea6b3735a0e517f3912ec9e3eadaef51d6feb0",
+          "input_inventory_sha256": "57bf503d79c0dd2223c8cb88efa3a0246c746c3e97c1c88d2f814bf6d04a6081",
+          "pristine_python_sources_match": true,
+          "python_source_files": 268,
+          "reference_sha256": "d8888ac004d35da68aad28a3d7023cb7a9a1ba15d76517d177294fba3631e261",
+          "upstream_commit": "0348222a3bcdb0226563f7349c5a39beb0641955"
+        },
+        "selection": "One serial PostgreSQL auto-fix operation on distinct, unchanged SQL files from multiple authentic source projects. Project-relative paths remain under separate origin namespaces. Inputs are selected once, without repetition, generated SQL or padding. Whole project origins separate public and private sets."
+      },
+      "symlinks": {}
+    },
+    {
+      "files_sha256": {
+        "LICENSE": "400380d4712abc544688b762a2464b6fab80f14487bd774dcfb78b22b437cfd0",
+        "README.md": "d13faec818d2ec9801175f8d42cdc5e377c7b0f2b86de137f8d831c5a490e6b4",
+        "site/sfguides/src/aws-s3-data-intelligence-with-cortex-ai-functions-search-analyst-and-agents/assets/15_validation_queries.sql": "b83f398586b950ef75e1c5c1639bee2893db5a19a75bf912bdc5df1d6d5e22d6",
+        "site/sfguides/src/build-an-ai-assistant-for-telco-with-aisql-and-snowflake-intelligence/assets/sql/04_deploy_cortex_analyst.sql": "f622678d25de911ad2c600d981a59c8217e93b0a682849332e21af361bba4837",
+        "site/sfguides/src/cdc-snowpipestreaming-dynamictables/files/Data_Engineering_Streams_CDC_DT_VHOL.sql": "3c3822ea045b768dcadfb14d619836709352aee67191d1a0c03bfc011bfbcee5",
+        "site/sfguides/src/getting-started-with-batch-cortex-search/code/setup_wikipedia_search.sql": "56daeea34c809b2efa68fea03e26c2028235cc774b2ff67da60a47887ae1a685",
+        "site/sfguides/src/getting-started-with-streams-and-tasks/files/Data_Engineering_Streams_Tasks_VHOL.sql": "98d8c879e997de994cef4d55b1592c3f1e81b444f24d6be3cb30971229675852",
+        "site/sfguides/src/multi-index-cortex-search-build-a-retail-catalog-search-app/code/setup_snowfield_pro_search.sql": "75529fd04a085511e9bfb54170121c9d307f7f77cfd8aff6d10466f17e8f5336"
+      },
+      "id": "snowflake-public",
+      "path": "snowflake-public",
+      "source": {
+        "commit": "f7fcfaba78cbea3aeaf34bc8470c2ad051c3edaa",
+        "license": "Apache-2.0",
+        "repo": "Snowflake-Labs/sfquickstarts"
+      },
+      "symlinks": {}
+    },
+    {
+      "files_sha256": {
+        "LICENSE": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+        "sql/moz-fx-data-shared-prod/telemetry_derived/clients_daily_v6/query.sql": "f7b8151a89da6546ca50d48d50d40da5fe61ae3b8833e01328136e0480b72246"
+      },
+      "id": "syntax-tree-public",
+      "path": "syntax-tree-public",
+      "source": {
+        "commit": "c5dcc248916a4eb19b1b37cb4780fa794bb1fa56",
+        "license": "MPL-2.0",
+        "repo": "mozilla/bigquery-etl"
+      },
+      "symlinks": {}
+    }
+  ],
+  "edition": "v1.1-extended",
+  "schema_version": 1,
+  "task": "sqlfluff-project-lint",
+  "visibility": "public"
+}

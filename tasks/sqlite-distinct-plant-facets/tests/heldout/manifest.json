@@ -1,0 +1,609 @@
+{
+  "format": "optimbench-inputs-v1",
+  "splits": {
+    "heldout": [
+      {
+        "docs": [
+          {
+            "bytes": 3796992,
+            "expect_len": 1827605,
+            "expect_sha": "df572ec08a1c38be86ea1182e56929abdb3a4ec2958b17cba995f1c378c032a9",
+            "family": "country-filtered-facets",
+            "membership_sha256": "e50c81ebd1a0a46933547cbc9b85642eed28fa74dfef4fa6c7afb18820863f6a",
+            "path": "distinct-plant-facets-heldout",
+            "requests": 12788,
+            "requests_bytes": 258011,
+            "requests_sha256": "0ccaf6f1413ad86b93ae73780d4efc2ccb5ffe945d405ff4e5e20b73b2e9fb79",
+            "sha256": "238912370ec1de1c670e158e239f7bd1da7f2e1afe332356580c7feed326bead"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "family": "ranked-documents",
+            "path": "ranked-documents-heldout",
+            "bytes": 23867392,
+            "sha256": "6ef8711bae150d9fbcb1283416f8358b8955fa65d2db83c9e51dc8902e4c450f",
+            "requests": 149,
+            "requests_bytes": 27224,
+            "requests_sha256": "1e4edbaf6d014b775d03b5c055b64aa9806fee5c1a69faf1aae5bb7f716da44e",
+            "expect_len": 7119466,
+            "expect_sha": "a1cc2a7797c8918b0a66e9f58560edcb2c32d1af2b7bf4787d468f998f6ea5e3"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "bytes": 172122112,
+            "expect_len": 561,
+            "expect_sha": "2e55948351580577a0d7901b04c37be59738cc25a7803b0532c89fefb849c6cc",
+            "family": "geonames-damaged-plus-sample-db",
+            "files": [
+              {
+                "name": "geonames-IN-ZA.corrupt-s2.db",
+                "bytes": 172122112,
+                "sha256": "4b52b4760f6b81b53325c8b9acc36dc6d80f4892e62c40101b78e95241ba0941",
+                "derive": {
+                  "builder": "geonames-integrity",
+                  "raw": [
+                    {
+                      "name": "IN.zip",
+                      "url": "https://download.geonames.org/export/dump/IN.zip",
+                      "bytes": 15754123,
+                      "sha256": "c70b96358e9fa3c455028cb58b306cb8927474d67454681a6b971b39ff6b2c28"
+                    },
+                    {
+                      "name": "ZA.zip",
+                      "url": "https://download.geonames.org/export/dump/ZA.zip",
+                      "bytes": 2694968,
+                      "sha256": "2e7abb558d84ca5ac9d579d206ca87f8694066a777c41c46187d2abcfa336765"
+                    }
+                  ],
+                  "params": {
+                    "seed": 2,
+                    "n": 12
+                  }
+                }
+              },
+              {
+                "name": "northwind.db",
+                "bytes": 24702976,
+                "sha256": "2f4f5c68dfcd33ba27373eae48c7a4869800c68095ee0f9f0da494f83382a877",
+                "url": "https://raw.githubusercontent.com/jpwhite3/northwind-SQLite3/807e2172c45402a1873cfd68b51e36959470fd2e/dist/northwind.db"
+              }
+            ],
+            "path": "integrity-check-heldout",
+            "sha256": "4b52b4760f6b81b53325c8b9acc36dc6d80f4892e62c40101b78e95241ba0941",
+            "workload": "integrity-check"
+          },
+          {
+            "bytes": 16553361,
+            "expect_len": 314,
+            "expect_sha": "9c11c7ce60b0cca3e689512c741d0a8328591e74a6e54401d318395726216960",
+            "family": "tatoeba-language-export",
+            "files": [
+              {
+                "name": "jpn_sentences.tsv",
+                "bytes": 16553361,
+                "sha256": "76c0aeb25ad63d5a07085d1c7693858aa1d286d9159acd11beefb3a5f6a2493a",
+                "derive": {
+                  "builder": "bunzip2",
+                  "raw": [
+                    {
+                      "name": "jpn_sentences.tsv.bz2",
+                      "url": "https://downloads.tatoeba.org/exports/per_language/jpn/jpn_sentences.tsv.bz2",
+                      "bytes": 3417887,
+                      "sha256": "25d727283d297f812b2c9ec36f3a6812a8a60ed9d6d5427978c4e020a83782c3"
+                    }
+                  ],
+                  "params": {}
+                }
+              },
+              {
+                "name": "spa_sentences.tsv",
+                "bytes": 24252726,
+                "sha256": "c84900a8ac7b4b8724032964651a57d4e134d040875c350aae6951a5605b7fec",
+                "derive": {
+                  "builder": "bunzip2",
+                  "raw": [
+                    {
+                      "name": "spa_sentences.tsv.bz2",
+                      "url": "https://downloads.tatoeba.org/exports/per_language/spa/spa_sentences.tsv.bz2",
+                      "bytes": 6370284,
+                      "sha256": "29efd66854f11ad3480720ceda6e7b42563d40df4e660d9b0721c56a61753e9a"
+                    }
+                  ],
+                  "params": {}
+                }
+              }
+            ],
+            "path": "tatoeba-create-index-heldout",
+            "sha256": "76c0aeb25ad63d5a07085d1c7693858aa1d286d9159acd11beefb3a5f6a2493a",
+            "workload": "tatoeba-create-index"
+          },
+          {
+            "bytes": 10571776,
+            "expect_len": 1584709,
+            "expect_sha": "3d9bbbe107aa0487269be88cbcd5898a90aa5aa60ba04b2a3b54a246e05f5f32",
+            "family": "usgs-comcat-network-parity",
+            "files": [
+              {
+                "name": "quakes.db",
+                "bytes": 10571776,
+                "sha256": "7814e6129597f7b63ecf80ae44b588c2b1baa351c75ac0e9c7b4cb9301d9e0fa",
+                "derive": {
+                  "builder": "usgs-geojson",
+                  "raw": [
+                    {
+                      "name": "usgs_2022-01.geojson",
+                      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-01-01&endtime=2022-01-15&orderby=time-asc",
+                      "bytes": 4216885,
+                      "sha256": "26cf3cfaade2aaba54f2fdc56d387988933e5005a4716d4e0aa5012756ccecac"
+                    },
+                    {
+                      "name": "usgs_2022-02.geojson",
+                      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-02-01&endtime=2022-02-15&orderby=time-asc",
+                      "bytes": 4296024,
+                      "sha256": "5a19b3b42773f4f3ae03fcec60f8d9772ae02ba47f1233eb13b80409e727c9bb"
+                    },
+                    {
+                      "name": "usgs_2022-03.geojson",
+                      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-03-01&endtime=2022-03-15&orderby=time-asc",
+                      "bytes": 4085292,
+                      "sha256": "240188ef37423bea45ad9de42c0fc6379173090f68049c4109210777eebceecc"
+                    },
+                    {
+                      "name": "usgs_2022-04.geojson",
+                      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-04-01&endtime=2022-04-15&orderby=time-asc",
+                      "bytes": 4160332,
+                      "sha256": "9be7c44c67891eff43548b80ce6bf65f7f41d72238cd9cdff54c29a9e3e99265"
+                    },
+                    {
+                      "name": "usgs_2022-05.geojson",
+                      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-05-01&endtime=2022-05-15&orderby=time-asc",
+                      "bytes": 4014929,
+                      "sha256": "29910b7cd833713e00aab69a8765520d30c1d02c217c80cbf6255c5535e05b85"
+                    },
+                    {
+                      "name": "usgs_2022-06.geojson",
+                      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-06-01&endtime=2022-06-15&orderby=time-asc",
+                      "bytes": 3801571,
+                      "sha256": "8aad965c7813ae4ca05ceacc89f7b15a04cbff6daf062de2f9fd0cc0bf983238"
+                    }
+                  ],
+                  "params": {
+                    "parity": 1
+                  }
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 1344,
+                "sha256": "56d338f8ff77850cf0fee949325e89c6b911fd2468ad407f604c40d7d624e7ed"
+              }
+            ],
+            "path": "usgs-geojson-json-heldout",
+            "requests": 42,
+            "sha256": "7814e6129597f7b63ecf80ae44b588c2b1baa351c75ac0e9c7b4cb9301d9e0fa",
+            "workload": "usgs-geojson-json"
+          },
+          {
+            "bytes": 243785728,
+            "expect_len": 89775497,
+            "expect_sha": "d661131c6eaf30ef8889469c4fc5fbab7fd7f77be4f2034a0c5855817589b4b0",
+            "family": "noaa-storm-events-state-parity",
+            "files": [
+              {
+                "name": "storms.db",
+                "bytes": 243785728,
+                "sha256": "ebcff78e58592bba412b450bb9ef2cdf8d7f2b0a7c24edb31d6b133f2acf7d9a",
+                "derive": {
+                  "builder": "storm-events",
+                  "raw": [
+                    {
+                      "name": "storms_2000.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2000_c20260323.csv.gz",
+                      "bytes": 7914864,
+                      "sha256": "a4ca5b02ad766bf50db2b192c127b625018f66bb9fb4d9746677d39ba2e392ab"
+                    },
+                    {
+                      "name": "storms_2001.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2001_c20260323.csv.gz",
+                      "bytes": 6876091,
+                      "sha256": "77a84aa66aaa9f7f95a15ecb2d18451bc05be801ea10f606d2e83fb44f737e51"
+                    },
+                    {
+                      "name": "storms_2002.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2002_c20260323.csv.gz",
+                      "bytes": 7196867,
+                      "sha256": "6f941b2ea120245e2e924093032c91c3377e7d1ea2c9163593456facb9ebe185"
+                    },
+                    {
+                      "name": "storms_2003.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2003_c20260323.csv.gz",
+                      "bytes": 7213001,
+                      "sha256": "f6d23ba4043394a517c8c6b0db8346f940a1de3fb8cac76eee773c5797243e3c"
+                    },
+                    {
+                      "name": "storms_2004.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2004_c20260323.csv.gz",
+                      "bytes": 7335278,
+                      "sha256": "b0827cd69b8d0ddc1446d8a322132502a05af19b1193c15eae118f13396844e3"
+                    },
+                    {
+                      "name": "storms_2005.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2005_c20260323.csv.gz",
+                      "bytes": 7765419,
+                      "sha256": "d68e3cbfbe5fb79f720eccea372c53585614bab618f3c2a4433e47767f54e55f"
+                    },
+                    {
+                      "name": "storms_2006.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2006_c20260323.csv.gz",
+                      "bytes": 7590951,
+                      "sha256": "a958ea15688b3346fd69efe53e91b4d57a26f8e6f99e1ddcc3b92c2eb2d57d0b"
+                    },
+                    {
+                      "name": "storms_2007.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2007_c20260323.csv.gz",
+                      "bytes": 9775676,
+                      "sha256": "e8289daa871946230862e2ca0d119195df7108e4a680fe83e3d419f3f21a7524"
+                    },
+                    {
+                      "name": "storms_2008.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2008_c20260323.csv.gz",
+                      "bytes": 12276398,
+                      "sha256": "c97260e82760b17bc571d55e1ca1f5073ccc0558b774313d46dddc3e1ef39b37"
+                    },
+                    {
+                      "name": "storms_2009.csv.gz",
+                      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2009_c20260323.csv.gz",
+                      "bytes": 10335606,
+                      "sha256": "c04d6e0173153475440cb614bd019287986c74c311c61864478f9087d7d1b357"
+                    }
+                  ],
+                  "params": {
+                    "parity": 1
+                  }
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 4983,
+                "sha256": "a0baf67b63ecf737184e25a524a909239724e06bb2de668696956f842219ab4f"
+              }
+            ],
+            "path": "storms-printf-report-heldout",
+            "requests": 332,
+            "sha256": "ebcff78e58592bba412b450bb9ef2cdf8d7f2b0a7c24edb31d6b133f2acf7d9a",
+            "workload": "storms-printf-report"
+          },
+          {
+            "bytes": 168173568,
+            "expect_len": 72569727,
+            "expect_sha": "7f94c3f4a795c9393f43d85f842b25e0ea9d46cde197368606847344efcbbf99",
+            "family": "geonames-us-state-parity",
+            "files": [
+              {
+                "name": "places.db",
+                "bytes": 168173568,
+                "sha256": "f3f6355deb2ae684115f7b8f94a5382b9bf46d44333880e30428c85304912998",
+                "derive": {
+                  "builder": "geonames-rtree",
+                  "raw": [
+                    {
+                      "name": "geonames_US.zip",
+                      "url": "https://download.geonames.org/export/dump/US.zip",
+                      "bytes": 71108369,
+                      "sha256": "53cdf92067e9a15ed1f414951e9fbe9fa0abc27048856f5d459a7d0778982a96"
+                    }
+                  ],
+                  "params": {
+                    "parity": 1
+                  }
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 2778410,
+                "sha256": "0e277f4b717c229b943521a9072601b24dc5c7f17f7d58ca7eb9e45eb1ef95cb"
+              }
+            ],
+            "path": "geonames-rtree-heldout",
+            "requests": 81479,
+            "sha256": "f3f6355deb2ae684115f7b8f94a5382b9bf46d44333880e30428c85304912998",
+            "workload": "geonames-rtree"
+          },
+          {
+            "bytes": 283987968,
+            "expect_len": 242451,
+            "expect_sha": "0bb9345d40309d22920cdc9c10a3341d99d0bc1e0148f574e140068fa5992771",
+            "family": "municipal-payroll-publisher",
+            "files": [
+              {
+                "name": "ledger.db",
+                "bytes": 283987968,
+                "sha256": "e81d778b2687e02ce298ea4e10d8fe657d1617048b3f6fe9858dd967a58275cd",
+                "derive": {
+                  "builder": "payroll-ledger",
+                  "raw": [
+                    {
+                      "name": "la_payroll.csv",
+                      "url": "https://controllerdata.lacity.org/resource/g9h8-fvhu.csv?$select=row_id,pay_year,fms_department_title,regular_pay,overtime_pay,all_other_pay,benefit_pay&$order=row_id&$limit=10000000",
+                      "bytes": 64303589,
+                      "sha256": "8ce0b9b24328f8671dee8d4e14f34b57e2430ffaf96deeef8b754e6530c462c3"
+                    }
+                  ],
+                  "params": {
+                    "group": "fms_department_title",
+                    "period": "pay_year",
+                    "periods": [],
+                    "components": [
+                      "regular_pay",
+                      "overtime_pay",
+                      "all_other_pay",
+                      "benefit_pay"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 1292,
+                "sha256": "75f2543ac8821b030ed99f58dbd55a47f1f5903b085aa3f15c380fffff31df3f"
+              }
+            ],
+            "path": "decimal-ledger-heldout",
+            "requests": 55,
+            "sha256": "e81d778b2687e02ce298ea4e10d8fe657d1617048b3f6fe9858dd967a58275cd",
+            "workload": "decimal-ledger"
+          },
+          {
+            "bytes": 274485248,
+            "expect_len": 2954552,
+            "expect_sha": "e24457f63b83d9a4241e3630e28e682753a7369f0207ffe842893cbf0f5e851a",
+            "family": "us-government-daily-monitoring",
+            "files": [
+              {
+                "name": "obs.db",
+                "bytes": 274485248,
+                "sha256": "a328db8ae61d03a88c5b3c341c97422d6d633899e1d88cc1ed30a23fecabe8b1",
+                "derive": {
+                  "builder": "daily-observations",
+                  "raw": [
+                    {
+                      "name": "usgs_dv_00060_ny_2015_2024.rdb",
+                      "url": "https://waterservices.usgs.gov/nwis/dv/?format=rdb&stateCd=ny&parameterCd=00060&statCd=00003&startDT=2015-01-01&endDT=2024-12-31&siteStatus=all",
+                      "bytes": 34603101,
+                      "sha256": "34e776f061717da9d20ae2117c6c1d4e9616b3feef0c3080ea862a4690018e7c"
+                    },
+                    {
+                      "name": "usgs_dv_00060_pa_2015_2024.rdb",
+                      "url": "https://waterservices.usgs.gov/nwis/dv/?format=rdb&stateCd=pa&parameterCd=00060&statCd=00003&startDT=2015-01-01&endDT=2024-12-31&siteStatus=all",
+                      "bytes": 33384090,
+                      "sha256": "9fc0258e004da81eb14b7e10a7f1ace9df301dcbabb85cb309f1f846f4840e72"
+                    },
+                    {
+                      "name": "usgs_dv_00060_ca_2015_2024.rdb",
+                      "url": "https://waterservices.usgs.gov/nwis/dv/?format=rdb&stateCd=ca&parameterCd=00060&statCd=00003&startDT=2015-01-01&endDT=2024-12-31&siteStatus=all",
+                      "bytes": 95402958,
+                      "sha256": "310a8d3999def9f3fd0bab9be994744d8d87433da5d6ad1dbeb044e51cebea95"
+                    },
+                    {
+                      "name": "usgs_dv_00060_tx_2015_2024.rdb",
+                      "url": "https://waterservices.usgs.gov/nwis/dv/?format=rdb&stateCd=tx&parameterCd=00060&statCd=00003&startDT=2015-01-01&endDT=2024-12-31&siteStatus=all",
+                      "bytes": 59815720,
+                      "sha256": "599876dbbe12e7914bda01271181efe075f081ecaa401a8fc904a9482da48adb"
+                    }
+                  ],
+                  "params": {
+                    "format": "usgs-nwis-dv"
+                  }
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 35295,
+                "sha256": "b00844c00ecb3180032d163ca83eed6d011dde8045feeb2783cbb7413f3bdb2e"
+              }
+            ],
+            "path": "percentile-heldout",
+            "requests": 2239,
+            "sha256": "a328db8ae61d03a88c5b3c341c97422d6d633899e1d88cc1ed30a23fecabe8b1",
+            "workload": "percentile"
+          },
+          {
+            "bytes": 504909824,
+            "expect_len": 48202194,
+            "expect_sha": "4780216a774147c2a267446e1512fe4761ee6c8b58833c37c8d062fdf85f18f7",
+            "family": "stackexchange-community",
+            "files": [
+              {
+                "name": "se.db",
+                "bytes": 504909824,
+                "sha256": "301ae4b1b212ca51c9d03adaa76900c0ac508617fe6132632078047ff9ceb9c2",
+                "derive": {
+                  "builder": "stackexchange",
+                  "raw": [
+                    {
+                      "name": "photo.stackexchange.com.7z",
+                      "url": "https://archive.org/download/stackexchange/photo.stackexchange.com.7z",
+                      "bytes": 114262856,
+                      "sha256": "64bbe87fa079e55067cf2a42c8cc6953332eebfa76db5f5703af3adc655e9f2b"
+                    }
+                  ],
+                  "params": {}
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 607716,
+                "sha256": "2a34b30fd37326025d0f5b30ffcb1c88d52de9417ba1b2edc34b6b5b54b751a1"
+              }
+            ],
+            "path": "fkey-cascade-heldout",
+            "requests": 55607,
+            "sha256": "301ae4b1b212ca51c9d03adaa76900c0ac508617fe6132632078047ff9ceb9c2",
+            "workload": "fkey-cascade"
+          },
+          {
+            "bytes": 423419904,
+            "expect_len": 10900579,
+            "expect_sha": "f15d5de04ab4b674c0036ec334a3321179a5e5d5b95476dd7a757b84091ae5a4",
+            "family": "static-gtfs-agency",
+            "files": [
+              {
+                "name": "gtfs.db",
+                "bytes": 423419904,
+                "sha256": "ab76837941e0aa2586b1f65a9820b31b3eb7a1ac64c975f79cb5c2273c04d640",
+                "derive": {
+                  "builder": "gtfs",
+                  "raw": [
+                    {
+                      "name": "gtfs_seq.zip",
+                      "url": "https://gtfsrt.api.translink.com.au/GTFS/SEQ_GTFS.zip",
+                      "bytes": 34992850,
+                      "sha256": "40c63030a0e0acfed6f7e803ae9ebb88da3d569658433d030b97c83eaed151c9"
+                    }
+                  ],
+                  "params": {}
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 126064,
+                "sha256": "fcaf45e07e06affd184a263efcf258fa884dbb72611fad63971de0025677ec47"
+              }
+            ],
+            "path": "gtfs-departure-join-heldout",
+            "requests": 4818,
+            "sha256": "ab76837941e0aa2586b1f65a9820b31b3eb7a1ac64c975f79cb5c2273c04d640",
+            "workload": "gtfs-departure-join"
+          },
+          {
+            "bytes": 13426688,
+            "expect_len": 2821856,
+            "expect_sha": "83b6cb22c93f3fa5d2710daefa40d84c299ef4c33e5fa8b297fc97002552e446",
+            "family": "ghcn-daily-station-network",
+            "files": [
+              {
+                "name": "ghcn.db",
+                "bytes": 13426688,
+                "sha256": "adc63a198569d514a408d09dc8ddd57547fac50987f55e5409d1962b8b0ed6ba",
+                "derive": {
+                  "builder": "ghcn-daily",
+                  "raw": [
+                    {
+                      "name": "USC00082944.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00082944.csv",
+                      "bytes": 8108345,
+                      "sha256": "271602fca840d468410fdcce719acc4c72b303b4c0624ea321cd645f5da605d5"
+                    },
+                    {
+                      "name": "USC00145363.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00145363.csv",
+                      "bytes": 9259559,
+                      "sha256": "e3c2b5e6842e890f6b20285f889ceda755b75e95020acdcfd87bc3e67b527256"
+                    },
+                    {
+                      "name": "USC00174566.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00174566.csv",
+                      "bytes": 6993105,
+                      "sha256": "fe2c371c6215edbc2192ccb7c17363b9301cbfc065e584fc00df85bfa512fb12"
+                    },
+                    {
+                      "name": "USC00215638.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00215638.csv",
+                      "bytes": 13851544,
+                      "sha256": "ed5c32c4e2d74bfa39f7fd7c4b779bb28288692f314cbe873b1fb03c382ce17d"
+                    },
+                    {
+                      "name": "USC00216152.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00216152.csv",
+                      "bytes": 2679984,
+                      "sha256": "e75c0951f4469078c36aab92dd0ac0a1f39e5257658b4918b86aaa02e5d5b8e8"
+                    },
+                    {
+                      "name": "USC00219046.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00219046.csv",
+                      "bytes": 8876895,
+                      "sha256": "da753cabb536b0c4c082fca3a50671f292e6cdaa2c104534c8de35271644dd76"
+                    },
+                    {
+                      "name": "USC00308906.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00308906.csv",
+                      "bytes": 2703931,
+                      "sha256": "9cbd47d4743b04a82721780ecb0a2037261c1fb48e84b7691c9300a6a9ba284d"
+                    },
+                    {
+                      "name": "USC00343497.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00343497.csv",
+                      "bytes": 7531492,
+                      "sha256": "33d6e2aa3ecedd4d38a5aa3934113a81581a40331a005502ce906eaa1c0e1c9f"
+                    },
+                    {
+                      "name": "USC00428705.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00428705.csv",
+                      "bytes": 5854836,
+                      "sha256": "eda15a4a9f2a53b589f8b5b44e873a4cbc6f8fe3a2b47b161178cd22be48551d"
+                    },
+                    {
+                      "name": "USC00446626.csv",
+                      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USC00446626.csv",
+                      "bytes": 6511238,
+                      "sha256": "ea0e4428ca3e276fd4ea530a702d90fe2fedc26f2e024bdead1afdcdd4fbe25f"
+                    }
+                  ],
+                  "params": {}
+                }
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 120,
+                "sha256": "b76506355c33af7bf1367004e789231ec98f56f907bc3edabc1b0422d1656865"
+              }
+            ],
+            "path": "ghcn-window-series-heldout",
+            "requests": 10,
+            "sha256": "adc63a198569d514a408d09dc8ddd57547fac50987f55e5409d1962b8b0ed6ba",
+            "workload": "ghcn-window-series"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "family": "batch-upsert",
+            "path": "batch-upsert-heldout",
+            "sha256": "a6bf42bd72a0c64ea16c17676c9bef80089f9f4ac5b376724ce6e4679cec84d5",
+            "bytes": 530993152,
+            "prepared_sha256": "dd7464f6e6ad27e3dadb00991d2a5dca34996fdeb4eacecd8a92aaecb3a5c71d",
+            "prepared_bytes": 265437184,
+            "requests": 1,
+            "records": 2241408,
+            "expect_len": 562783829,
+            "expect_sha": "052dab9418fb0e5aabf9ed4cdb917ec891aedacf6563c72efdbfe1f081cbc1f1"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "family": "mirror-vacuum",
+            "path": "mirror-vacuum-heldout",
+            "sha256": "a6bf42bd72a0c64ea16c17676c9bef80089f9f4ac5b376724ce6e4679cec84d5",
+            "bytes": 530993152,
+            "prepared_sha256": "bb61edb95068ec84f3f3efbb2dc9600f231735eefc50c7beb01fc9eac5d0ff1b",
+            "prepared_bytes": 530993152,
+            "requests": 1,
+            "records": 1371218,
+            "expect_len": 353029325,
+            "expect_sha": "d7127e0c89840f0653bcf58b310d07a9ffa025ba944edc01996c070ffd032211"
+          }
+        ]
+      }
+    ]
+  },
+  "task": "sqlite-distinct-plant-facets"
+}

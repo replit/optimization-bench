@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "url": "https://codeload.github.com/psf/black/tar.gz/87928e6d6761a4a6d22250e1fee5601b3998086e",
+    "commit": "87928e6d6761a4a6d22250e1fee5601b3998086e",
+    "sha256": "a4bba75d9fe04c23a5b0935e3cca7b5155dcbde11154fd4ecef69c3845dafd5a",
+    "bytes": 1293375
+  }
+}

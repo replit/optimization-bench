@@ -1,0 +1,68 @@
+{
+  "baseline_source_sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  },
+  "edition": "v1.0-project-lint-and-autofix",
+  "loading_probe_command": [
+    "python",
+    "-c",
+    "import sqlfluff,json; from pathlib import Path; assert Path(sqlfluff.__file__).is_relative_to('/candidate/runtime'); assert sqlfluff.__version__=='4.4.0'; assert sqlfluff.lint('select a from t',dialect='ansi'); print(json.dumps({'sqlfluff':sqlfluff.__file__,'version':sqlfluff.__version__}))"
+  ],
+  "platform": "linux/amd64",
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".py"
+    ],
+    "max_source_bytes": 20000000,
+    "max_source_files": 1000,
+    "protected_paths": [
+      "src/sqlfluff/utils/testing/*"
+    ],
+    "source_roots": [
+      "src/sqlfluff"
+    ]
+  },
+  "status": "qualification-pending",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "correctness_qualification": "pending-new-definition-registration-and-CPU-certification",
+  "task": "sqlfluff-project-lint",
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0: adds PostgreSQL project auto-fix, Snowflake project lint, and complete BigQuery syntax-tree export workloads.",
+  "upstream_test_command": [
+    "python",
+    "-m",
+    "pytest",
+    "test",
+    "/app/workload/driver/test_autofix_contract.py",
+    "--rootdir=.",
+    "-c",
+    "pyproject.toml",
+    "-n",
+    "2"
+  ],
+  "upstream_timeout": 7200
+}

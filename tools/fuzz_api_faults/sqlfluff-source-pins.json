@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+  "commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+  "files": {
+    "src/sqlfluff/core/parser/match_result.py": "2fc5869fd883bea49cd454c5c1377433db7b8b19cb8254684e5f173ed26d8908",
+    "src/sqlfluff/utils/reflow/config.py": "dc52bb87168660673e34f82e94b26839167f5e5f861db8390e96f2718ce801bb"
+  },
+  "schema": "pinned-public-factory-source-v1"
+}

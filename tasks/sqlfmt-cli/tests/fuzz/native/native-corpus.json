@@ -1,0 +1,176 @@
+{
+  "edition": "native-origins-v2",
+  "frozen": true,
+  "qualified": false,
+  "sources": [
+    {
+      "repository": "postgres/postgres",
+      "scope": "public",
+      "commit": "3d6a828938a5fa0444275d3d2f67b64ec3199eb7",
+      "archive_url": "https://codeload.github.com/postgres/postgres/tar.gz/3d6a828938a5fa0444275d3d2f67b64ec3199eb7",
+      "archive_sha256": "b90e598761827cee3477a6159653914a7fbf02602767ea7122762fa59611513a",
+      "archive_bytes": 29690076,
+      "notices": [
+        {
+          "path": "environment/notices/PostgreSQL-native-COPYRIGHT.txt",
+          "sha256": "5ed3ce5c9373dff7f98b1fae7a6c7ccd98df7d734d46d24c1bcebf1240be8307"
+        }
+      ]
+    },
+    {
+      "repository": "postgis/postgis",
+      "scope": "public",
+      "commit": "9e97dbf69ea7f8507acc2e11b326770e31dc8a82",
+      "archive_url": "https://codeload.github.com/postgis/postgis/tar.gz/9e97dbf69ea7f8507acc2e11b326770e31dc8a82",
+      "archive_sha256": "dd8c50448d001ba84d094f6d8a63ead72ef804f439d1e0538527f35381d5fdf6",
+      "archive_bytes": 16449869,
+      "notices": [
+        {
+          "path": "environment/notices/postgis-native-COPYING",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "environment/notices/postgis-native-LICENSE.TXT",
+          "sha256": "c6932c2f90517d5254f49c02f957d54b88b41ec662c2ca62a9488b0ab080b11d"
+        }
+      ]
+    },
+    {
+      "repository": "mozilla/bigquery-etl",
+      "scope": "private",
+      "commit": "c5dcc248916a4eb19b1b37cb4780fa794bb1fa56",
+      "archive_url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/c5dcc248916a4eb19b1b37cb4780fa794bb1fa56",
+      "archive_sha256": "d36192ee00d185c120a4a80286fbaa8f3a356c354b9f2fe9de3315476e16b1dc",
+      "archive_bytes": 4339612,
+      "notices": [
+        {
+          "path": "tests/fuzz/native/notices/bigquery-etl-native-LICENSE",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+        }
+      ]
+    },
+    {
+      "repository": "mozilla/bigquery-etl",
+      "scope": "private",
+      "commit": "937e8db2e042febc2aac5bbc56307639ff929d11",
+      "archive_url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/937e8db2e042febc2aac5bbc56307639ff929d11",
+      "archive_sha256": "b9064987672e24248c078ec200c5a9fd24a1ee28805219668e2866ffa61e98ee",
+      "archive_bytes": 3200549,
+      "notices": [
+        {
+          "path": "tests/fuzz/native/notices/bigquery-etl-937e8db2e042-LICENSE",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+        }
+      ]
+    },
+    {
+      "repository": "mozilla/bigquery-etl",
+      "scope": "private",
+      "commit": "a42cf8355859da24c21d6f4cdf94f98649b495c2",
+      "archive_url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/a42cf8355859da24c21d6f4cdf94f98649b495c2",
+      "archive_sha256": "78ff891e8b18c6dd0927988e56edd1147260b8f0750c8c22d794095cb1692051",
+      "archive_bytes": 2302918,
+      "notices": [
+        {
+          "path": "tests/fuzz/native/notices/bigquery-etl-a42cf8355859-LICENSE",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+        }
+      ]
+    },
+    {
+      "repository": "mozilla/bigquery-etl",
+      "scope": "private",
+      "commit": "c7f8c376b3b88dc26fc9cb3282e3a4f2ada2f6c0",
+      "archive_url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/c7f8c376b3b88dc26fc9cb3282e3a4f2ada2f6c0",
+      "archive_sha256": "78a684a6ea91ae5abe3c0ff2c734cc206ef6e6c9e1c34818ccc1215efc3e4592",
+      "archive_bytes": 1861130,
+      "notices": [
+        {
+          "path": "tests/fuzz/native/notices/bigquery-etl-c7f8c376b3b8-LICENSE",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+        }
+      ]
+    },
+    {
+      "repository": "postgis/postgis",
+      "scope": "public",
+      "commit": "30e191ee94f2a99964283066adfe268d71cdf15a",
+      "archive_url": "https://codeload.github.com/postgis/postgis/tar.gz/30e191ee94f2a99964283066adfe268d71cdf15a",
+      "archive_sha256": "0d706c5795b357b82a2d53f45681bda8b0b0b6e3569b97e615f4f5bb5e949b68",
+      "archive_bytes": 16459123,
+      "notices": [
+        {
+          "path": "environment/notices/postgis-30e191ee94f2-COPYING",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "environment/notices/postgis-30e191ee94f2-LICENSE.TXT",
+          "sha256": "55b69f22e1752830dd565852dc7ff242daf289dbd3a6bfede5db43f90d2e28c9"
+        }
+      ]
+    },
+    {
+      "repository": "postgres/postgres",
+      "scope": "public",
+      "commit": "3c17926eedd51c4094db7c62f59950918044ab1c",
+      "archive_url": "https://codeload.github.com/postgres/postgres/tar.gz/3c17926eedd51c4094db7c62f59950918044ab1c",
+      "archive_sha256": "ec35cc3f0dee2b4c9fb9504b73cce5d3e5ea9579b07be4f705cefe1b842b3681",
+      "archive_bytes": 25074916,
+      "notices": [
+        {
+          "path": "environment/notices/postgres-3c17926eedd5-COPYRIGHT",
+          "sha256": "31ccadc0a70e8e0e8a35c5833567b64388dfe34987d962e1911554e271294105"
+        }
+      ]
+    }
+  ],
+  "sizes": {
+    "public": {
+      "documents": 844,
+      "bytes": 17584937
+    },
+    "private": {
+      "documents": 2470,
+      "bytes": 6164010
+    }
+  },
+  "origin_separation": "Whole origins are disjoint within the native workload. No global historical uniqueness claim.",
+  "cross_set_exact_body_hash_overlap": 0,
+  "accepted_private_returned_errors": 4,
+  "oracle": "Complete unchanged formatter output, not an independent SQL semantic oracle.",
+  "single_pass": true,
+  "historical_private_commitments_preserved": 908,
+  "public_license_exclusion": {
+    "repository": "postgis/postgis",
+    "prefix": "extras/ogc_test_suite/",
+    "documents": 3,
+    "bytes": 63097,
+    "reason": "The applicable historical OGC redistribution grant could not be authenticated."
+  },
+  "historical_private_hash_exclusions": {
+    "documents": 598,
+    "bytes": 2607402,
+    "reason": "Preserve original private input secrecy without exposing matching identities."
+  },
+  "expected_returned_errors": {
+    "public": 1,
+    "private": 4
+  },
+  "expansion": {
+    "previous_edition": "native-origins-v1",
+    "reason": "GCP returned native durations below one second on the previous edition.",
+    "same_origin_sets": true,
+    "existing_native_inputs_and_outputs_preserved": true,
+    "historical_path_rule": "Historical paths must be absent from current snapshots and previously selected historical cohorts. Preprocessor suffix aliases are normalized.",
+    "semantic_uniqueness_claimed": false,
+    "public_literal_rule": "Doubled braces inside SQL quotes/comments are not treated as Jinja. Unquoted template markers remain excluded.",
+    "private_history_rule": "Authentic sql/ production definitions, no templates or expected-output fixtures.",
+    "historical_2019_mozilla_cohort": "Excluded before baseline because no root license grant was authenticated.",
+    "added": {
+      "public": 149,
+      "private": 456
+    },
+    "ogc_prefix_excluded_at_every_commit": true,
+    "repetition": false
+  }
+}

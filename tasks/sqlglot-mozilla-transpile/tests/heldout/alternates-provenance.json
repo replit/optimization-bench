@@ -1,0 +1,1560 @@
+{
+  "format": "sqlglot-alternates-private-v1",
+  "lineage": {
+    "format": "scratch-lineage-real-inputs-v1",
+    "source_archive": {
+      "url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/c5dcc248916a4eb19b1b37cb4780fa794bb1fa56",
+      "sha256": "d36192ee00d185c120a4a80286fbaa8f3a356c354b9f2fe9de3315476e16b1dc",
+      "bytes": 4339612
+    },
+    "source_commit": "c5dcc248916a4eb19b1b37cb4780fa794bb1fa56",
+    "source_license": "MPL-2.0, retained verbatim in the public image notices",
+    "selection": "Distinct nontrivial Mozilla query files, with publisher schemas for every base table.",
+    "transform": "SQL bytes unchanged. Publisher RECORD/REPEATED schemas become STRUCT/ARRAY types. Implicit project/dataset use the publisher query directory.",
+    "deduplication": "Reject identical raw/parsed SQL and related identifier/literal-normalized templates against all public inputs and within private.",
+    "eligibility": "Complete lineage graph with roots, no errors/logs/warnings.",
+    "split_rule": "SQLGlot/SQLMesh public, Mozilla private within this lineage workload.",
+    "rationale": "Keep the original conversion family unchanged while evaluating the new optimizer on a separate private origin.",
+    "limitations": "Development corpus, not an official qualification or timing admission.",
+    "aggregate": {
+      "new_private_optimizer_cases": 48,
+      "origin_repository_count": 1,
+      "source_project_dataset_groups": 20,
+      "counts": {
+        "all_sql_files": 2499,
+        "distinct_typed_queries_selected": 48,
+        "exact_public_or_selected_sql": 282,
+        "not_one_query": 852,
+        "outside_nontrivial_feature_envelope": 121,
+        "public_or_selected_sql_template_overlap": 4,
+        "publisher_query_and_view_files": 1702,
+        "publisher_schema_files": 1127,
+        "query_files_examined": 1702,
+        "referenced_schema_missing": 300,
+        "typed_catalog_tables": 771,
+        "unrendered_template": 95,
+        "unsupported_schema": 356
+      },
+      "public_origin_and_template_overlap": false,
+      "split_rule": "Origin-disjoint within the optimizer family, not across different workload families.",
+      "original_conversion_origin_overlap": "Mozilla origin retained unchanged in the original conversion family.",
+      "old_private_input_bodies_opened": false
+    },
+    "members": [
+      {
+        "source": "sql/glam-fenix-dev/glam_etl/firefox_desktop_glam_nightly__histogram_bucket_counts_v1/query.sql",
+        "source_sha256": "607e6404997ccce809b440a3231adcddca8854266236ecc76be608d5dd099951",
+        "group": "glam-fenix-dev.glam_etl",
+        "schema_sources": {
+          "glam-fenix-dev.glam_etl.firefox_desktop_glam_nightly__clients_histogram_aggregates_v1": {
+            "member": "sql/glam-fenix-dev/glam_etl/firefox_desktop_glam_nightly__clients_histogram_aggregates_v1/schema.yaml",
+            "sha256": "82d56319c8077afe43df1820cabff57a539157b9543f3932faec8ed07a4d716e"
+          }
+        },
+        "request_sha256": "63d00d89f3dd234b6b989e78fcb6baabf2ae0bb705f50afbcc99e33d3f687e8f",
+        "parsed_sql_sha256": "bb9ce4c57286723271f17966534209a37072767a1bc859c1ea0a9887ded0777b",
+        "template_sha256": "0f341ed278e65f378e151e1fb8916685773177b45ece97a438c104c62eacd9ea"
+      },
+      {
+        "source": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__extract_probe_counts_v1/query.sql",
+        "source_sha256": "2f9022611479b4eca72a88a968d03a56d2a37aa3b91cd89ce2d99e5082eee35c",
+        "group": "glam-fenix-dev.glam_etl",
+        "schema_sources": {
+          "glam-fenix-dev.glam_etl.org_mozilla_fenix_glam_nightly__view_probe_counts_v1": {
+            "member": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__view_probe_counts_v1/schema.yaml",
+            "sha256": "4a463005c96a40ba5f15d69488e56c9ca59a38f39827b0f2941906964ddc431c"
+          }
+        },
+        "request_sha256": "2a29b0015853b371d707ed4bef61cfc0428f8babe7ca9a833ab2e12b88399402",
+        "parsed_sql_sha256": "f165ed6040b64d8df8f8d5f228aeaa14f0ba8d2f64a06e70c290e9fd623195a3",
+        "template_sha256": "73547032dd7444579f819b3fefe8f0bc71a6688b0defe88a6aa787cbffbe47af"
+      },
+      {
+        "source": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__extract_user_counts_v1/query.sql",
+        "source_sha256": "0a768e1391c3a15ac06a09011dd80fbc9dd2ca1a4ffa0269d4dd2ebfd6e2db1b",
+        "group": "glam-fenix-dev.glam_etl",
+        "schema_sources": {
+          "glam-fenix-dev.glam_etl.org_mozilla_fenix_glam_nightly__view_user_counts_v1": {
+            "member": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__view_user_counts_v1/schema.yaml",
+            "sha256": "45cd0325c11ce3921e42ebdd81022b70e97023ec0d2c1c75ed6c0df04db05d6a"
+          }
+        },
+        "request_sha256": "0904010b1ad3e389856b6287d2402ada592795fb895ac52e74d614ec380b50c8",
+        "parsed_sql_sha256": "e10f5b49df266b9670cbe21d7b3209ace30aaf7773a04b7474de8b2159945f36",
+        "template_sha256": "d3b464038cb212bd7c4327bba9ffa2e2b9e3922ebebab8c9ee456149786ad361"
+      },
+      {
+        "source": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__histogram_bucket_counts_v1/query.sql",
+        "source_sha256": "51886de2d307467df10fae5f54e456cebc21d1ea390de36373de2dcf99615499",
+        "group": "glam-fenix-dev.glam_etl",
+        "schema_sources": {
+          "glam-fenix-dev.glam_etl.org_mozilla_fenix_glam_nightly__clients_histogram_aggregates_v1": {
+            "member": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__clients_histogram_aggregates_v1/schema.yaml",
+            "sha256": "82d56319c8077afe43df1820cabff57a539157b9543f3932faec8ed07a4d716e"
+          }
+        },
+        "request_sha256": "a2e5952465979aba8918aa09dfbf3d90c0dfe0fa83cc56039466cf0d1e103811",
+        "parsed_sql_sha256": "3c0a5a4b2fd0915000a0137b69f94e135d1b6d297f17ffcff3f169d8f1b889f0",
+        "template_sha256": "28da27235833ef9e115d7a5f8b499a2635d8940fdb2c0b0d0dd8020c5f3d71d5"
+      },
+      {
+        "source": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__latest_versions_v1/query.sql",
+        "source_sha256": "2857eaa6cb0c61d1670837c17c86621aea3545197802d21d62e2452646b85548",
+        "group": "glam-fenix-dev.glam_etl",
+        "schema_sources": {
+          "glam-fenix-dev.glam_etl.org_mozilla_fenix_glam_nightly__view_clients_daily_scalar_aggregates_v1": {
+            "member": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__view_clients_daily_scalar_aggregates_v1/schema.yaml",
+            "sha256": "5784ad6c363f89b6d1b02b74227414bafa2eaa2f913b721acdada03e478dd069"
+          }
+        },
+        "request_sha256": "9cec627cd07f3f92ca752b6d8409d55041cd4262ba70a943494320cf911020f1",
+        "parsed_sql_sha256": "55b51b9b38fca6b0f53e8430ffcbdc5c9a2cb5fa75cf3b6ca007e503562ee656",
+        "template_sha256": "14fbc42d25089af9e091003a94d7d25c783b50e59b72082147e0c7673542898b"
+      },
+      {
+        "source": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__scalar_probe_counts_v1/query.sql",
+        "source_sha256": "8474abd02720f4a4d514a153c776364475b27900962f4e3c30a5b43848f993c1",
+        "group": "glam-fenix-dev.glam_etl",
+        "schema_sources": {
+          "glam-fenix-dev.glam_etl.org_mozilla_fenix_glam_nightly__scalar_bucket_counts_v1": {
+            "member": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__scalar_bucket_counts_v1/schema.yaml",
+            "sha256": "2a09229fb0f0845f09439185f4209eab670af0822b63439be428db368f7f35d1"
+          }
+        },
+        "request_sha256": "c7ec0f9a82507b19005c68bfe826d4a29f30bee3112d00e4ea250070aea36821",
+        "parsed_sql_sha256": "17e8f0301e3b4267c27dd87b5183436ba6decf329fa855196f9ba8b6f875eacd",
+        "template_sha256": "a81ca48cbb2db10337cdd4a52b1d81f857fc790f968a22fbc437a3ee7ce93e0e"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/accounts_backend_derived/fxa_email_domain_counts_v1/query.sql",
+        "source_sha256": "ca2cb40d5029225dc29809a7e2dda20b7a5160d2302848b6d4341e815aed7350",
+        "group": "moz-fx-data-shared-prod.accounts_backend_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_emails_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_emails_v1/schema.yaml",
+            "sha256": "8ae1913cc2952fa0f819a064b0171a325ce5a559eee1a04a0c3bca7df37cda4c"
+          }
+        },
+        "request_sha256": "9453868209b4a4377e47ce00589bb1bdbebe75b70d0927dd3dfc898aad371631",
+        "parsed_sql_sha256": "14a49907711c3f13e0bbc256edbb5b73550420b0e32c328c0bc546b63bc797b6",
+        "template_sha256": "9db889a386f88ce1fb2470aa39c1fd9352bb006f007041b2c215f6a9d8336dcd"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/accounts_backend_derived/monitoring_db_counts_v1/query.sql",
+        "source_sha256": "440ac18cbbbf5e4ec1b5e6970e251a7a88a18ee807810f36e3f7b11bbb9458a5",
+        "group": "moz-fx-data-shared-prod.accounts_backend_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_account_customers_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_account_customers_v1/schema.yaml",
+            "sha256": "34a68e8f08513586578b6962a4dfcf1f46371865b803cdb7481e5fc8a01f0467"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_account_groups_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_account_groups_v1/schema.yaml",
+            "sha256": "088ad2996681fdfb8568ef216d1420ce47a92a073592050af81bc23da1591165"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_account_reset_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_account_reset_tokens_v1/schema.yaml",
+            "sha256": "7d736fec2f0535d010bc9cd97a65e01bf492fc5017626224ad1157245ebad9a1"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_accounts_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_accounts_v1/schema.yaml",
+            "sha256": "c1a2cce57a9e051f91cf376dd59135eb5bcebe87d6a3a74f7643c5f72721f697"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_carts_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_carts_v1/schema.yaml",
+            "sha256": "474945d666a0acc97e3e2c6df7bf505e085f481a3c315809372e8ba6c82945bb"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_deleted_accounts_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_deleted_accounts_v1/schema.yaml",
+            "sha256": "3ffd4d4242648245b94f95d3738d9a9b9e9f9364a372515fbbcd5832dcca1967"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_device_commands_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_device_commands_v1/schema.yaml",
+            "sha256": "d6bd493c08b4de2cf462d5d1f7becd404b1365b9423e51c6c23cf59663da4a59"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_devices_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_devices_v1/schema.yaml",
+            "sha256": "a1a6415a1f36514c5c4c0111c6d12e2dd15be37a44c1ecc180aaadaffbb8febd"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_domain_blocklist_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_domain_blocklist_v1/schema.yaml",
+            "sha256": "7829a94b0ac382509b9944c6257b570afd755d900cfcf7f058abfe892b8f09f4"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_email_blocklist_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_email_blocklist_v1/schema.yaml",
+            "sha256": "c9f3917fb922f35aae67f5c949ed4200706dfe16f6ffab3625ba5e7b996dbd34"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_email_bounces_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_email_bounces_v1/schema.yaml",
+            "sha256": "496f04d27d7e469bac599a2461dade5dc49fa6bdb7d1f43fa8c7083b1f265fe3"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_emails_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_emails_v1/schema.yaml",
+            "sha256": "8ae1913cc2952fa0f819a064b0171a325ce5a559eee1a04a0c3bca7df37cda4c"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_key_fetch_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_key_fetch_tokens_v1/schema.yaml",
+            "sha256": "513bf5843f77f2d6309ee834262987a3598f988ebd611f62afcd8242fe24f2fc"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_linked_accounts_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_linked_accounts_v1/schema.yaml",
+            "sha256": "faea606fccd524e290a1603814753f033a0bbb8f1fb88de7be5c1e5c2d9ffa40"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_oauth_account_activity_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_oauth_account_activity_v1/schema.yaml",
+            "sha256": "98f06de3ee32d3b68815e0e5dbc0679c9b7aef2abfdab29e3635a770cfc514c1"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_oauth_account_authorizations_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_oauth_account_authorizations_v1/schema.yaml",
+            "sha256": "8433893ae61a4f031ebdbd486dd65b7bc13d41ba25a781449b339ee78412a728"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_oauth_codes_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_oauth_codes_v1/schema.yaml",
+            "sha256": "63ffb52576cdf08eb59c6b7abcf38e06de0aa8ed1c51f61f80b7b00e6fa6ffd7"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_oauth_refresh_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_oauth_refresh_tokens_v1/schema.yaml",
+            "sha256": "4db4021d791016a42749f26d93cb574b04f0a68480c55cbad76a8daa092b82ba"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_passkey_wraps_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_passkey_wraps_v1/schema.yaml",
+            "sha256": "483815c9a5250be42836db38205005aba1c89631ea2fbfe35074802142b9be8c"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_passkeys_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_passkeys_v1/schema.yaml",
+            "sha256": "218224ddcd3efc56cf5788091fb6f0c199c47adc7cf2be12dca31b0a104bed8d"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_password_change_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_password_change_tokens_v1/schema.yaml",
+            "sha256": "513bf5843f77f2d6309ee834262987a3598f988ebd611f62afcd8242fe24f2fc"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_password_forgot_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_password_forgot_tokens_v1/schema.yaml",
+            "sha256": "ee86f76d6687b14094fe45f2448695dc5b8bec7ed71ed331f884056d40a8498a"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_paypal_customers_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_paypal_customers_v1/schema.yaml",
+            "sha256": "539936eb83eb5c445bbabfa7c7450f93615e5a60bcbc880b3f77b8f126e7344e"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_profile_avatar_selected_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_profile_avatar_selected_v1/schema.yaml",
+            "sha256": "5e14bd4dcd301df9a887fba79f081ff3e38367745db1a5ea4ea7e10faa7b6511"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_profile_avatars_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_profile_avatars_v1/schema.yaml",
+            "sha256": "2650562a7291c82aec4e9ee937de98758831649a2f93ad88e3db40fa595313a1"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_profile_profile_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_profile_profile_v1/schema.yaml",
+            "sha256": "2083f0e897b54ec9aee6027cdddccafe85af1db4c26b10dafb0846fe8060f79a"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_recovery_codes_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_recovery_codes_v1/schema.yaml",
+            "sha256": "1121877943a1f4141cbcfb0f13654ff0506d76becd5b4612454c10c34339d348"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_recovery_keys_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_recovery_keys_v1/schema.yaml",
+            "sha256": "0ae586be97dfc1c3fb52707a4160cd6b1d0db8057aa7bcd92467a601f2e8a080"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_recovery_phones_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_recovery_phones_v1/schema.yaml",
+            "sha256": "ff05ae2c3dbaad911f5e7d2afe28450ff043981729e51397fbb0909e6bde3a13"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_security_events_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_security_events_v1/schema.yaml",
+            "sha256": "c2fa395a555b77bc87cd6a69cd53c164d7138b6e39e9b512f46306340890ffa0"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_sent_emails_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_sent_emails_v1/schema.yaml",
+            "sha256": "619d7a2fbb1f046dea9af37dd375834f9af2251a172aecb4d2c3e5b7bf70112f"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_session_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_session_tokens_v1/schema.yaml",
+            "sha256": "2a282a5289cdd270132a121960e4d26fad8b8371946889d099302fb332be02ac"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_signin_codes_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_signin_codes_v1/schema.yaml",
+            "sha256": "4d02ac3003e0b634393b63e1bc383d5d562da62fa68dc9a6a085d1315518c50b"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_totp_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_totp_v1/schema.yaml",
+            "sha256": "fd84a865596793c4d6ec6acd465e70627fdbde5228c8d40301a234d025a4737d"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_unblock_codes_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_unblock_codes_v1/schema.yaml",
+            "sha256": "513bf5843f77f2d6309ee834262987a3598f988ebd611f62afcd8242fe24f2fc"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_unverified_tokens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_unverified_tokens_v1/schema.yaml",
+            "sha256": "1afa38da8d31e24acd3de60f0407d0ae69250d7414a79c32b70e22874abfa76e"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_verification_reminders_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_verification_reminders_v1/schema.yaml",
+            "sha256": "4ee46387f39715f500f23b4a9cdd7e2735d82b7b6ab2cf445521d856338cc0f7"
+          }
+        },
+        "request_sha256": "bcd3f835cc301ca788d3f87ecf6ed759b598c7a00f8bec1557fdedfa3c20821e",
+        "parsed_sql_sha256": "1f238b12e0b139eaa699404f213c45de3cbbed92f4ba01a26019ce7a96ae5ab9",
+        "template_sha256": "1fa162f67652c71e3337676dba21704ff7e3d74bec58453a05330b8be2bcec87"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/accounts_backend_derived/monitoring_db_recovery_phones_counts_v1/query.sql",
+        "source_sha256": "cfdd067b502cb4d868ee31b7fff04a2d399086e47d2a7412d3ec8d991802a30c",
+        "group": "moz-fx-data-shared-prod.accounts_backend_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_recovery_phones_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_recovery_phones_v1/schema.yaml",
+            "sha256": "ff05ae2c3dbaad911f5e7d2afe28450ff043981729e51397fbb0909e6bde3a13"
+          }
+        },
+        "request_sha256": "561cdb7874a1cec8c17aeb52c16c723c34531c74c214a2a6f6bca5e94f17dcec",
+        "parsed_sql_sha256": "41ac68f418fbcd885fbdd658dfde1c03e074a76f10140d9ea8a144d670199c32",
+        "template_sha256": "1db8e54efb982ead65f89c250775c78f9f0aafe3d40a7664775926041419dae3"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/accounts_backend_derived/users_services_last_seen_v1/query.sql",
+        "source_sha256": "ec7904795458924d6b2b1d9149f3892b14408f678a0396f6ac5ad83192a03079",
+        "group": "moz-fx-data-shared-prod.accounts_backend_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.accounts_backend_derived.users_services_daily_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_backend_derived/users_services_daily_v1/schema.yaml",
+            "sha256": "74716f49e7bb2e3c1f3a279a4e1a927a2e7f3cf8a89dca5462b2e97b2f506a1e"
+          },
+          "moz-fx-data-shared-prod.accounts_backend_derived.users_services_last_seen_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_backend_derived/users_services_last_seen_v1/schema.yaml",
+            "sha256": "1dc38712e28795523a93349902fce3f8df60cd0a9b252e63359925b817c8c9f5"
+          }
+        },
+        "request_sha256": "1acde8f957b17dcfe5043ecf25a1d683e7895b1e5bab1b70bbc0b9647b6d9c7a",
+        "parsed_sql_sha256": "8ceb61e64863134d55b03a8d9bdbcffc6a2a44da6691d148a5ea9eb01cc83836",
+        "template_sha256": "9017242a7b8f3c042c3c5546a714be69a25cd91f9c1891147556046bf7923ece"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/accounts_db_derived/accounts_aggregates_v1/query.sql",
+        "source_sha256": "2e8aa9bf38604b31dd50101b26bfabc409addcfe96a6c3336f9ef8a4adf434da",
+        "group": "moz-fx-data-shared-prod.accounts_db_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.accounts_db_derived.accounts_aggregates_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_derived/accounts_aggregates_v1/schema.yaml",
+            "sha256": "0aad4a1a9e2dec249730dc5f8458f12d65410997642a39707a4f447e41c217ee"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_accounts_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_accounts_v1/schema.yaml",
+            "sha256": "c1a2cce57a9e051f91cf376dd59135eb5bcebe87d6a3a74f7643c5f72721f697"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_recovery_keys_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_recovery_keys_v1/schema.yaml",
+            "sha256": "0ae586be97dfc1c3fb52707a4160cd6b1d0db8057aa7bcd92467a601f2e8a080"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_totp_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_totp_v1/schema.yaml",
+            "sha256": "fd84a865596793c4d6ec6acd465e70627fdbde5228c8d40301a234d025a4737d"
+          }
+        },
+        "request_sha256": "01617b1d18972863fe499a6f1800582c5a424e2d687fa788f082c744e5e4f8fb",
+        "parsed_sql_sha256": "b94835704447ef4e944749d906823b115c39f3960d74de78599f3cf3b4af64e1",
+        "template_sha256": "1b77166f2aacd4a01ffd115337f9e77c6947854be18dc3aacd4fd578633d5466"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/addons_derived/amo_stats_dau_combined_v1/query.sql",
+        "source_sha256": "cb52c4361959c7f82048c6306da274a4b7200dead30a1505aee924b701d63bc8",
+        "group": "moz-fx-data-shared-prod.addons_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.addons_derived.fenix_addons_by_client_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/fenix_addons_by_client_v1/schema.yaml",
+            "sha256": "64c91861e70a15b291811e0b0570e9cf48c84b1749dfcb0a71ac5d20da74608c"
+          },
+          "moz-fx-data-shared-prod.addons_derived.firefox_desktop_addons_by_client_legacy_source_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/firefox_desktop_addons_by_client_legacy_source_v1/schema.yaml",
+            "sha256": "e9c004efff2331b75344a6db4d7b23fb86f866439ef73f0a0e83732e250049b8"
+          },
+          "moz-fx-data-shared-prod.addons_derived.firefox_desktop_addons_by_client_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/firefox_desktop_addons_by_client_v1/schema.yaml",
+            "sha256": "f77f66156ace041caea4e77ab56bf95dcaaa94e5fdd51e00849dbbcc9eb6589f"
+          }
+        },
+        "request_sha256": "f810bd70b4b348caa0606e08dfc81250fadd6cd6367ca3cb0b853eecfdc4bb95",
+        "parsed_sql_sha256": "029981fb97c915603d72e637a9d2a5d0585c100f1fcfed57c291d6a7f19f572c",
+        "template_sha256": "92f4bc64193f7211d2510e5042f1db0b5fcb6e8a6215a5495af23d8ca1c7a65b"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/addons_derived/amo_stats_dau_legacy_source_v1/query.sql",
+        "source_sha256": "88a66e0b0a0cd55c48870400e1305cf7d3e8fa5fb94edbc87ecaa87bf504d170",
+        "group": "moz-fx-data-shared-prod.addons_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.addons_derived.fenix_addons_by_client_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/fenix_addons_by_client_v1/schema.yaml",
+            "sha256": "64c91861e70a15b291811e0b0570e9cf48c84b1749dfcb0a71ac5d20da74608c"
+          },
+          "moz-fx-data-shared-prod.addons_derived.firefox_desktop_addons_by_client_legacy_source_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/firefox_desktop_addons_by_client_legacy_source_v1/schema.yaml",
+            "sha256": "e9c004efff2331b75344a6db4d7b23fb86f866439ef73f0a0e83732e250049b8"
+          }
+        },
+        "request_sha256": "548dc0f83de2617543474251880feafbbadea21312564c3afe8f483e4e44fb87",
+        "parsed_sql_sha256": "8e2a6585d451cfccd21a79b3f2a22c2b70bc825b449ff53b1427db603a708d50",
+        "template_sha256": "bf586e6527da8c02b576fd964715b84c90918a11fec27ce7c8c79295e8dec4e6"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/addons_derived/amo_stats_dau_v1/query.sql",
+        "source_sha256": "1ca12b167986846dfb347fd8549519b1c8d63d8eeec7c9cc17cea1b8bf326b79",
+        "group": "moz-fx-data-shared-prod.addons_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.addons_derived.fenix_addons_by_client_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/fenix_addons_by_client_v1/schema.yaml",
+            "sha256": "64c91861e70a15b291811e0b0570e9cf48c84b1749dfcb0a71ac5d20da74608c"
+          },
+          "moz-fx-data-shared-prod.addons_derived.firefox_desktop_addons_by_client_v1": {
+            "member": "sql/moz-fx-data-shared-prod/addons_derived/firefox_desktop_addons_by_client_v1/schema.yaml",
+            "sha256": "f77f66156ace041caea4e77ab56bf95dcaaa94e5fdd51e00849dbbcc9eb6589f"
+          }
+        },
+        "request_sha256": "b8a72e613b1326eef31c975b37e2a1152b43f1eba742ba17ff3bff58d6620331",
+        "parsed_sql_sha256": "f3a567fae7ef39a6ef2eb52bb938b68dedd66a2eba1a6b77b276e8769ea7a054",
+        "template_sha256": "73f65ac883f5fd778580862e1ad2664005221bc04fe961f1a5a9047335e93a6d"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/braze_derived/fxa_services_v1/query.sql",
+        "source_sha256": "51debc04cf3f0563643cfb0a9976379447704aa48d5aa0a10a84b8b90e19186a",
+        "group": "moz-fx-data-shared-prod.braze_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_emails_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_emails_v1/schema.yaml",
+            "sha256": "8ae1913cc2952fa0f819a064b0171a325ce5a559eee1a04a0c3bca7df37cda4c"
+          },
+          "moz-fx-data-shared-prod.accounts_db_external.fxa_oauth_account_authorizations_v1": {
+            "member": "sql/moz-fx-data-shared-prod/accounts_db_external/fxa_oauth_account_authorizations_v1/schema.yaml",
+            "sha256": "8433893ae61a4f031ebdbd486dd65b7bc13d41ba25a781449b339ee78412a728"
+          }
+        },
+        "request_sha256": "320a7c6f85d9e5ae78175ee19f3841051d60e8adc4d7337c857e6f7283e78d7f",
+        "parsed_sql_sha256": "7fc6fe3e77f7d4e0625d51e83a43808c36cb065d8587a61623cf111e42e72c84",
+        "template_sha256": "ce07b4dfb4680e4be2fbaa6362fe6d69b7f22ecedc784ff53918d2b8127cb495"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/braze_external/braze_sends_combined_v1/query.sql",
+        "source_sha256": "55ae1aafbe9b6fe5366a514c484827c147a8e65e73b9cd9d5e0b0c3514a9e8e3",
+        "group": "moz-fx-data-shared-prod.braze_external",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.braze_external.braze_clicks_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_external/braze_clicks_v1/schema.yaml",
+            "sha256": "22fe35e5ac95448a9edddf3b45131e5a27af2f4b2eca3e1cc59cea06163f0dcd"
+          },
+          "moz-fx-data-shared-prod.braze_external.braze_opens_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_external/braze_opens_v1/schema.yaml",
+            "sha256": "a8c473b8aede74614fbaafbb9e83d6f498c3087e224c53e4ad1492c41ef7ff18"
+          },
+          "moz-fx-data-shared-prod.braze_external.braze_sends_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_external/braze_sends_v1/schema.yaml",
+            "sha256": "238328c0af48845af35628ace46594ede171131628513fae13a4b31e67d34319"
+          }
+        },
+        "request_sha256": "f841c885bd69412623846ee2e308a8467e9e62a26e6e1721303c641e69b01b4b",
+        "parsed_sql_sha256": "bda5d0c959ad431993c448c5d624d6247a7bb96a86256da860886829ffdac51e",
+        "template_sha256": "66a81e4a2272f9637b69c97b42233234a29bb7abb9ad9226177210a9b1fc6d90"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/braze_external/changed_firefox_subscriptions_sync_v1/query.sql",
+        "source_sha256": "de5c6e1557e11ad807daa7b6f74a7d23695f442447f44b1ae097fe7e670b4793",
+        "group": "moz-fx-data-shared-prod.braze_external",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.braze_derived.subscriptions_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_derived/subscriptions_v1/schema.yaml",
+            "sha256": "af6584c71ee0215fbde52c407ce31ca4ca44b2d68be95332b91a08d215436c4a"
+          },
+          "moz-fx-data-shared-prod.braze_external.changed_firefox_subscriptions_sync_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_external/changed_firefox_subscriptions_sync_v1/schema.yaml",
+            "sha256": "4dd41ece753a5c8448bf44b3e35ff5202e1bebc9c78f1409fddbce5765af2b6b"
+          }
+        },
+        "request_sha256": "9f3e590190b44c2109c493df6c70c6714f6057a100f79c8c5461bb5dbc2ef1ab",
+        "parsed_sql_sha256": "8f51895e3b1c248c7ae724f5fe93978aa3096e0c940db1638e81938b623aea9e",
+        "template_sha256": "293be78041fe85923fc1f7bbed6a2ef7448f624b1549b4a56649e12126153620"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/braze_external/changed_fxa_services_sync_v1/query.sql",
+        "source_sha256": "fb80c5110384f48a8db32851dc1bfc08e6200f37756d6daf08873ba6b7ef340a",
+        "group": "moz-fx-data-shared-prod.braze_external",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.braze_derived.fxa_services_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_derived/fxa_services_v1/schema.yaml",
+            "sha256": "49e031c353861eddcf679946f3ab3359042f7d6698746d0a1936b0e63ba16187"
+          },
+          "moz-fx-data-shared-prod.braze_external.changed_fxa_services_sync_v1": {
+            "member": "sql/moz-fx-data-shared-prod/braze_external/changed_fxa_services_sync_v1/schema.yaml",
+            "sha256": "03caba4c2e2e90cff5938edaa6ab018eb15eb2fec4f5b8d43667e30dfce3b9b5"
+          }
+        },
+        "request_sha256": "ac8a9f00b6565f56a096495a9ca3b52260dab0e6290e6070b06333d17a85608e",
+        "parsed_sql_sha256": "ab5e403fcc4951b87eac124907c1dd7baa5f05904fedded721dc253a3b063dae",
+        "template_sha256": "72241f3a582017bec01e3c48d4efd82513d5f07d33babd07cfe733bec39c02f1"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/fenix_derived/client_adclicks_history_v1/query.sql",
+        "source_sha256": "e796c4eaf7b1c816d53d38c00e858b8b07c090a9e2808dd8e3fe810d222d9d67",
+        "group": "moz-fx-data-shared-prod.fenix_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.fenix_derived.attributable_clients_v2": {
+            "member": "sql/moz-fx-data-shared-prod/fenix_derived/attributable_clients_v2/schema.yaml",
+            "sha256": "d2cf5ca416b3edd77416b09391fadbf567a2bc86a5284b6f208b6509741a0787"
+          },
+          "moz-fx-data-shared-prod.fenix_derived.client_adclicks_history_v1": {
+            "member": "sql/moz-fx-data-shared-prod/fenix_derived/client_adclicks_history_v1/schema.yaml",
+            "sha256": "9ed4205a7df41023fc0bba8ac38d70b59a3d9efe6212eee72e1806a09620e871"
+          }
+        },
+        "request_sha256": "e842e3874a67d17eb1dbed452e850b2121c25de8cd1ed75293ced476a28d1d15",
+        "parsed_sql_sha256": "21ea86163419f3cd5a981a5b7ccb22439c3ef30312b1563f72ee83e6c7fdaabd",
+        "template_sha256": "ecfcfc2867f8cba9995747a6f10046700979158c05a50d5a53cb8a5f617c58c3"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_users_last_seen_v2/query.sql",
+        "source_sha256": "b744cac53babeed76645b3136e76cc303f7cb26157c4c7fe804cefdcfc818630",
+        "group": "moz-fx-data-shared-prod.firefox_accounts_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_accounts_derived.fxa_users_daily_v2": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_users_daily_v2/schema.yaml",
+            "sha256": "f8d067e66ff7081e1cc4eab6200ce7c43697af8b59c3af9589858111e83a4d4c"
+          },
+          "moz-fx-data-shared-prod.firefox_accounts_derived.fxa_users_last_seen_v2": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_users_last_seen_v2/schema.yaml",
+            "sha256": "0a3048a3349456a66fe7ed60e72f78b7f61faaf0c43aba0bb5054e10a085f2d3"
+          }
+        },
+        "request_sha256": "e7664426b8ac91efec5b280474c013a1fb6745b861df9d8a71b58663e349a1f0",
+        "parsed_sql_sha256": "5335337db92e9ce1725fbf5e382b031ae4cd882f061952e4adc38e8d39a29754",
+        "template_sha256": "00c7d8716b84f954bdb45c1bf3d81d44e10ee8fced741e281b45c52ea5d3b4ca"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/adclick_history_v1/query.sql",
+        "source_sha256": "3e5f23933b83f6db6e4a482f3f10591e1ed38f0fdec2578c220aa82075704f27",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_desktop_derived.adclick_history_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/adclick_history_v1/schema.yaml",
+            "sha256": "7db3af1b0d3adb53b43afa5aa650d52d3c9d3490ee2d5072378752e82ae99b8d"
+          },
+          "moz-fx-data-shared-prod.search_derived.search_clients_daily_v8": {
+            "member": "sql/moz-fx-data-shared-prod/search_derived/search_clients_daily_v8/schema.yaml",
+            "sha256": "33a1a4cf03904981fb6dfb62512e5e371af8efc728691fce84655c3efb06f4db"
+          }
+        },
+        "request_sha256": "1095b3121ff9723555da67b3ae053fc256315bc1450b3e8afd126145a899e5d4",
+        "parsed_sql_sha256": "4159e9f6f1be39560dbe1b3cced087b7e293de3bc7af8f2e74c83986767c5023",
+        "template_sha256": "e4ac500dcedad59e32d3bceeea37b6e3febabe2c9566fa6cdb15c1ae81c1a8c6"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/client_ltv_v1/query.sql",
+        "source_sha256": "f2d5015efa0f7a72e089ea21f657a2a69e93136f50a49d67bdac3a0e77ea6587",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_desktop_derived.client_ltv_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/client_ltv_v1/schema.yaml",
+            "sha256": "359d138015f93a21994e828562b0106a441a18c3e59790f629dadd064936b841"
+          },
+          "moz-fx-data-shared-prod.firefox_desktop_derived.ltv_states_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/ltv_states_v1/schema.yaml",
+            "sha256": "9724fc212d710cea8b36156749637ad7ba8e49cbb6fc18c036ff2b54b2e5a75a"
+          }
+        },
+        "request_sha256": "b0ca59dca3004b1020ef5881a18e710dca5b2c33cbfa71ebcb21a51732a9ab7a",
+        "parsed_sql_sha256": "3a4da3ce6127ba0790ea605b1d3e8ec060fe58cc0d5e8d207faac3018b8f9d38",
+        "template_sha256": "0f2e8ced1284a80438d343c14d0295a12c52ce7e29dd85251880bfc6ff05ae56"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/locale_aggregates_v1/query.sql",
+        "source_sha256": "a02654b04ea785269937f87a86e19dc7f013163d404cfe7a27b3a7141abb6985",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.telemetry.desktop_active_users": {
+            "member": "sql/moz-fx-data-shared-prod/telemetry/desktop_active_users/schema.yaml",
+            "sha256": "e491e33c3cfe4fbd110547982635c0dda459795fb032c4bb47f8ad9ed8ae2933"
+          }
+        },
+        "request_sha256": "0262b61f99cfc8b4be23968d38998d7f32e956b406b9c897be7b0c37d93578c4",
+        "parsed_sql_sha256": "9415835844145686e3b55bf61649b90a3f85e1546ee995d89f13c11b57cddcf6",
+        "template_sha256": "34c539fe063ef18481c3ee6b8363209bf7b44e354b48566d957c05460c6d48e8"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/metrics_clients_first_seen_v1/query.sql",
+        "source_sha256": "3e661371b3926e0de05907c21466d2912f39393033b00cce492e27684638ae5c",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_desktop_derived.metrics_clients_daily_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/metrics_clients_daily_v1/schema.yaml",
+            "sha256": "2c8b3f8620c8923f7c44ffbf541cda123550f5039b2fbc8941fd4945c8db352f"
+          },
+          "moz-fx-data-shared-prod.firefox_desktop_derived.metrics_clients_first_seen_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/metrics_clients_first_seen_v1/schema.yaml",
+            "sha256": "238b0485dded2a076789b696f1eb049d941f9b0c80259d8b45561fb0a5cd0159"
+          }
+        },
+        "request_sha256": "88f426144a2a745e30e3157ecc50839338f9b3a62002e7ad7c55c25b98e0ea44",
+        "parsed_sql_sha256": "11ca300d5b63875d85a739be5f58aa93b9aa7b28b0556662b2f7e07b5e768b75",
+        "template_sha256": "2bf4218a5f492d0c72386fc06473399ba418eb679661738381e4023b8dc24d7e"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_client_tile_component_daily_v1/query.sql",
+        "source_sha256": "1f9f6aec51aed0e0c05295dc52e8d794ba3c6485fa494597dc6c25120cf376f1",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_desktop_derived.newtab_visits_daily_v2": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_visits_daily_v2/schema.yaml",
+            "sha256": "acc2e3fc577b3f27e5312744441e7af21389142ba893d671d7b9d7b89aad334f"
+          }
+        },
+        "request_sha256": "44f0ce52c1a1568842524f01cbff910308dd52750adb5e93df8c86c001233f38",
+        "parsed_sql_sha256": "53c9d764f76f6ae1056ca70dbe7b0913e95c64adf95c449e436df6d01deb183c",
+        "template_sha256": "4098d6ac0dc566a60f773e81d3806da98ed960e90b6485a67bcfee92fd11e620"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_clients_daily_v2/query.sql",
+        "source_sha256": "a108826e11f9073314faac472c83176ab35e4b3953981a6ab0b1b2d536dedd68",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_desktop_derived.newtab_visits_daily_v2": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_visits_daily_v2/schema.yaml",
+            "sha256": "acc2e3fc577b3f27e5312744441e7af21389142ba893d671d7b9d7b89aad334f"
+          }
+        },
+        "request_sha256": "db67f079adf6f2b4f6d8f217629755b02ae4350637ed5830a52f975c1bb3fd31",
+        "parsed_sql_sha256": "27e5445ed55cb1c00283f33946f046911a99c7ddd8f529e3e32cc994c47f31e3",
+        "template_sha256": "cab5db503309449ca890f2ff883043dcbd01126c3201ad15056c0b48ee03c192"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/resurrection_week_2_retention_v1/query.sql",
+        "source_sha256": "bd7514d02af8c3d1e6bef9fa3655c843edd4a7260e0781a432c6b561e193ca78",
+        "group": "moz-fx-data-shared-prod.firefox_desktop_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.telemetry.desktop_active_users": {
+            "member": "sql/moz-fx-data-shared-prod/telemetry/desktop_active_users/schema.yaml",
+            "sha256": "e491e33c3cfe4fbd110547982635c0dda459795fb032c4bb47f8ad9ed8ae2933"
+          }
+        },
+        "request_sha256": "10da41a984a3e04596bf613fdf26db9be190828c593c7784acfd654ff04c6c19",
+        "parsed_sql_sha256": "9c93a4cf01167851ef9fae461e841d5d1e93ed7f48876529f0a58d1b115381db",
+        "template_sha256": "88bd766ea8b573f91b63dd2ba7bb1113b1dfee215d402cc389c07c151b6037b9"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_ios_derived/client_ltv_v1/query.sql",
+        "source_sha256": "638a313ea425e963e5376a95783f41aafbea17d8e1731f3081db988856a625fa",
+        "group": "moz-fx-data-shared-prod.firefox_ios_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_ios_derived.client_ltv_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_ios_derived/client_ltv_v1/schema.yaml",
+            "sha256": "9c83518cdc634045cc2d9cc1c128cb655de62e95dc6d4a8cd56421a89a078e1e"
+          },
+          "moz-fx-data-shared-prod.firefox_ios_derived.ltv_states_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_ios_derived/ltv_states_v1/schema.yaml",
+            "sha256": "d4934f9befef27345aecd77485df57bb38bf0b32e6ecbe76392b7122f28e46c7"
+          }
+        },
+        "request_sha256": "f0d969a4945cdecc05b0b778428c1aa391248dc0748b0d0dfe5c918ed6614f38",
+        "parsed_sql_sha256": "1f3ce807b0c209d38aa1016f64bfa8d1a788205f3cdfa3847e858805d207dd28",
+        "template_sha256": "289b3f7f5ec2b069195a56ff0fa170e5d8db5df4de71831643e651aacb665910"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/firefox_whatsnew_summary_v1/query.sql",
+        "source_sha256": "e7743d2c3895aa902a762e1702521fa9347c99f05ca5ce4a0e5811a52c949285",
+        "group": "moz-fx-data-shared-prod.firefoxdotcom_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefoxdotcom_derived.www_site_hits_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_hits_v1/schema.yaml",
+            "sha256": "e67f17c15f9e5043098bab8e0cc065b737acb1687ceec8c3ad5deb59739dc364"
+          }
+        },
+        "request_sha256": "1efc3daa8222e0970ce34c6c1f08a7f9d6357be1cb19fd3914e95f1aa861d508",
+        "parsed_sql_sha256": "9d14625c982266ed11480e5f411071ed2adefd6ee36f26bdc5485fadd31b5297",
+        "template_sha256": "bd9fbbc8262fd7d4e1af77900c516b773da4fb41485ac5a0421e572be952b9f6"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/glean_ga_desktop_conversions_v1/query.sql",
+        "source_sha256": "de896bf752ad10cb54e5ab8b499823dc88842bc340c4c280da70ac73da4c9700",
+        "group": "moz-fx-data-shared-prod.firefoxdotcom_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefoxdotcom_derived.glean_ga_desktop_conversions_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/glean_ga_desktop_conversions_v1/schema.yaml",
+            "sha256": "071ecaa3a0770bf7b3e3c3c0044ed4e090a5fb247e8359ae38eb95b746b6813b"
+          },
+          "moz-fx-data-shared-prod.firefoxdotcom_derived.glean_gclid_conversions_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/glean_gclid_conversions_v1/schema.yaml",
+            "sha256": "2093a3aa10b93caf81f82f12c1222800740f5a2e24af82dfaf411240755e752d"
+          }
+        },
+        "request_sha256": "13c4727804cedfe1427441bb3847d9fa66b111c95ab58044f35328e40b21f718",
+        "parsed_sql_sha256": "eb857f36848ba83ab5dde1ed6c904b97e6ed314a526d9a4a38546b7354484b62",
+        "template_sha256": "b0c51aaaf744eb437ff6b7fdaec0fbd2a60d214f4eeb663709e890015597f226"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_events_metrics_v1/query.sql",
+        "source_sha256": "d9cd37d5fe4ad0d467d169fdf605d7fb50d6d1f41ac10f8c053c3a6c7f6172a8",
+        "group": "moz-fx-data-shared-prod.firefoxdotcom_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefoxdotcom_derived.www_site_hits_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_hits_v1/schema.yaml",
+            "sha256": "e67f17c15f9e5043098bab8e0cc065b737acb1687ceec8c3ad5deb59739dc364"
+          }
+        },
+        "request_sha256": "55989fe4d8da98ac65a3a208a1148a5c43a242ef120833d99ac4e5711df4d242",
+        "parsed_sql_sha256": "6b2ef41dabd28bfdadb066ba78b95530400f3f3fb70624333bfb3c25c4e636b2",
+        "template_sha256": "d42634c118c95aea838fd1a5ce92d0e4b7d935941b5992d0a2820e178f5db078"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_landing_page_metrics_v1/query.sql",
+        "source_sha256": "32a7e59c6f9df7fb34fbe0a07db9427486b71b8711eef18406b2360efb96c0e3",
+        "group": "moz-fx-data-shared-prod.firefoxdotcom_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefoxdotcom_derived.www_site_hits_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_hits_v1/schema.yaml",
+            "sha256": "e67f17c15f9e5043098bab8e0cc065b737acb1687ceec8c3ad5deb59739dc364"
+          }
+        },
+        "request_sha256": "cefc2dcc5042aabb7bb9eb9fc982446d654cff9977edee90238218847a76ae77",
+        "parsed_sql_sha256": "9e4365b5360fe22440b9fa440126e094eb03c7b8804f0c3df96e1130808bf05e",
+        "template_sha256": "b3b6e0ff2fb0d31bb082497ced5bb13fe01d86316dfd6edf76796b59657ba78b"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_page_metrics_v1/query.sql",
+        "source_sha256": "10a1572399540789afbad576d97034fb7172e4f660db32202cbffe4b7acd0359",
+        "group": "moz-fx-data-shared-prod.firefoxdotcom_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefoxdotcom_derived.www_site_hits_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_hits_v1/schema.yaml",
+            "sha256": "e67f17c15f9e5043098bab8e0cc065b737acb1687ceec8c3ad5deb59739dc364"
+          }
+        },
+        "request_sha256": "3d06d3c921fa4b9f7ac0eb29c3a09aa8e9239538f76b0ead51fd6b207decea3b",
+        "parsed_sql_sha256": "8a79eb0e4bc9d117726bf5aa40ca859613ec93ef4ef0390ed82838d225d0a6ae",
+        "template_sha256": "e94c84933d718eee4f47e058c0131c8ef19f0af7c114eefd6a6d72e08cfcd70e"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/google_ads_derived/fenix_gclid_conversions_v1/query.sql",
+        "source_sha256": "f037fe87c6d273abbf77f08579b556d304dee75655f9a6fa18ec49cb047ed5c5",
+        "group": "moz-fx-data-shared-prod.google_ads_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.google_ads.fenix_conversion_event_categorization": {
+            "member": "sql/moz-fx-data-shared-prod/google_ads/fenix_conversion_event_categorization/schema.yaml",
+            "sha256": "90f31cf7e36ac155d283835533ad3c5cc205d5423eede7fb1bc9dcd2a45c2081"
+          },
+          "moz-fx-data-shared-prod.google_ads_derived.fenix_gclid_conversions_v1": {
+            "member": "sql/moz-fx-data-shared-prod/google_ads_derived/fenix_gclid_conversions_v1/schema.yaml",
+            "sha256": "fbcfce62d624ff5df7375a6b30f0d64e435fcdc442eb046dd8cde31d4a17e892"
+          }
+        },
+        "request_sha256": "6684baeb6690ed586db7eb3cf2befa5506005b6004109d9bc3608719aa1a081e",
+        "parsed_sql_sha256": "09d7e4efce25e0c6140b3619e5d2823c0a9932abfd597c078bd899a5e9c4c25c",
+        "template_sha256": "f3de82c65039aad57387d5ab4096b754fa611a8aa9dc753e7bf2f7960e0f9f02"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/monitoring_derived/shredder_targets_joined_v1/query.sql",
+        "source_sha256": "ecb58886655b5d10e5763826daba233b87faa1d4c080698c1f1e1e983dd57510",
+        "group": "moz-fx-data-shared-prod.monitoring_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.monitoring_derived.bigquery_table_storage_v1": {
+            "member": "sql/moz-fx-data-shared-prod/monitoring_derived/bigquery_table_storage_v1/schema.yaml",
+            "sha256": "50a8873eb1645fbb6267f754e6b1d54d0d2f78977ad2fef26b024cb7eadefef7"
+          },
+          "moz-fx-data-shared-prod.monitoring_derived.bigquery_tables_inventory_v1": {
+            "member": "sql/moz-fx-data-shared-prod/monitoring_derived/bigquery_tables_inventory_v1/schema.yaml",
+            "sha256": "f914d5c4aafe2fc58be22d6a68583ed37db0f5af9bdd9d142c00109efb5b4262"
+          },
+          "moz-fx-data-shared-prod.monitoring_derived.jobs_by_organization_v1": {
+            "member": "sql/moz-fx-data-shared-prod/monitoring_derived/jobs_by_organization_v1/schema.yaml",
+            "sha256": "5cdfeeea0ed94a5792feac5abea999693fd2cf37a1dfc86cac8167ff2739d9f4"
+          },
+          "moz-fx-data-shared-prod.monitoring_derived.shredder_targets_v1": {
+            "member": "sql/moz-fx-data-shared-prod/monitoring_derived/shredder_targets_v1/schema.yaml",
+            "sha256": "f0af81b14662df1f27cd698e785f99153bf2fcab20080b4eb4ad7fb912f5fb7a"
+          }
+        },
+        "request_sha256": "8a323890b721fc53f8bbe8b21105c2e25f45104c4677183fb387efeb81379eb5",
+        "parsed_sql_sha256": "a1404af5068bb59741c5c55dd79def55aae57de6f2fb83ea068fa2142d437555",
+        "template_sha256": "448f7b9e4f6cbe0363079268a24dc6536a876744fd4ae7a8e40aa60107fa3181"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/monitoring_derived/zyte_rss_load_job_monitoring_v1/query.sql",
+        "source_sha256": "430670b70b4a00834a577a2348ea31e680843ef453eb49ef229bc92a44971647",
+        "group": "moz-fx-data-shared-prod.monitoring_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.monitoring_derived.jobs_by_organization_v1": {
+            "member": "sql/moz-fx-data-shared-prod/monitoring_derived/jobs_by_organization_v1/schema.yaml",
+            "sha256": "5cdfeeea0ed94a5792feac5abea999693fd2cf37a1dfc86cac8167ff2739d9f4"
+          }
+        },
+        "request_sha256": "1b587fbdb8d7142d04ba721c8b950d443ae326fd26828290b10e1e2b591c9018",
+        "parsed_sql_sha256": "f784f5f5cf0c5d6b1e7b610324825e78cf308ddb34d90f8efe616e76b24863e9",
+        "template_sha256": "e196899096c6e715fe5a3be2031bab936358f426a5dfe43c153c9538eeed85b4"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/mozilla_org_derived/www_site_landing_page_metrics_v2/query.sql",
+        "source_sha256": "740c6e614cc3b3c38feda92df3c28b3c5a4a772c422872f2b3be6ff06da6f5b2",
+        "group": "moz-fx-data-shared-prod.mozilla_org_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.mozilla_org_derived.www_site_hits_v2": {
+            "member": "sql/moz-fx-data-shared-prod/mozilla_org_derived/www_site_hits_v2/schema.yaml",
+            "sha256": "764c05ee5fe9c563e6e86cbb26f67a1e83dfa38116f90c771fe6352426ba9862"
+          }
+        },
+        "request_sha256": "10fac09b4be31f9df65f4e89ee48ae68cf8722177bd9a67fd048dd3f9f67d406",
+        "parsed_sql_sha256": "bdf191e327fd3ade51c82790bf78beb1b99adc240e642552cf7231762cf48339",
+        "template_sha256": "65f42935ab4c927afc212ccfe6dc510196d59f90e68afdfd6fdb218fbd3e3e88"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/plausible_derived/download_metrics_v1/query.sql",
+        "source_sha256": "0bb9fc87764a09988a0e5cfe25713b076e03df5f29a814f42d1715f67f5aa862",
+        "group": "moz-fx-data-shared-prod.plausible_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.plausible_external.events_v1": {
+            "member": "sql/moz-fx-data-shared-prod/plausible_external/events_v1/schema.yaml",
+            "sha256": "d4fac1105a55c1d316ce8cbf275f87aa7fe3f08eabdc57c0493b2622e62ea6ef"
+          },
+          "moz-fx-data-shared-prod.plausible_external.sessions_v1": {
+            "member": "sql/moz-fx-data-shared-prod/plausible_external/sessions_v1/schema.yaml",
+            "sha256": "f1459a058e13be9465c8f56be9b10224fe65bf606c9e84d2d6606452677819b5"
+          }
+        },
+        "request_sha256": "24ab45ce6f35e2e56bea0f65d286a1406c467477375ae955b018838c93f443e9",
+        "parsed_sql_sha256": "69e92db48bdfb821f8bd87cf6d9c249cc1175a7adc6485ec6c310665c8213924",
+        "template_sha256": "3166d859735c5b336e9258970820794daae3e42713c4a5688fd9217b7ae00f7e"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/search_derived/search_clients_last_seen_v1/query.sql",
+        "source_sha256": "b3b0761017f92ebbcd849df6b421c4a69139b777092b313de486133cc1c780e4",
+        "group": "moz-fx-data-shared-prod.search_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.search_derived.search_clients_daily_v8": {
+            "member": "sql/moz-fx-data-shared-prod/search_derived/search_clients_daily_v8/schema.yaml",
+            "sha256": "33a1a4cf03904981fb6dfb62512e5e371af8efc728691fce84655c3efb06f4db"
+          },
+          "moz-fx-data-shared-prod.search_derived.search_clients_last_seen_v1": {
+            "member": "sql/moz-fx-data-shared-prod/search_derived/search_clients_last_seen_v1/schema.yaml",
+            "sha256": "ab922045549d391b5054ca681adfc962a5e8c038d62279c29c7986a2031832eb"
+          }
+        },
+        "request_sha256": "88328ded47c00f6e41e56761db448734f6833116e9216d08294bfaee88293474",
+        "parsed_sql_sha256": "388f663d6fcf53ad4722b4187c1559462fabf9f915a3b3305eda595d0bfe4e53",
+        "template_sha256": "4fdfd230b237a6037c52944cdda74ed8054c0080d14eacc9580165e308872b0f"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/static/fxa_amplitude_export_users_last_seen/query.sql",
+        "source_sha256": "cd1294fdd04f5a988e2ad71f2a83d300d019f5b53a4c510fbfb89feb8b8e23bb",
+        "group": "moz-fx-data-shared-prod.static",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.static.fxa_amplitude_export_users_daily": {
+            "member": "sql/moz-fx-data-shared-prod/static/fxa_amplitude_export_users_daily/schema.yaml",
+            "sha256": "0fae1ae495c272e307abaa71614a3430d4b95c2b1ca2a99a72a91f3fd9efff73"
+          },
+          "moz-fx-data-shared-prod.static.fxa_amplitude_export_users_last_seen": {
+            "member": "sql/moz-fx-data-shared-prod/static/fxa_amplitude_export_users_last_seen/schema.yaml",
+            "sha256": "aa417132216378e04e6781095694eb2f1ad7ba0970fd62d3559510b356320d0b"
+          }
+        },
+        "request_sha256": "7078656b96d755679a912f28b544c69f31fe025cba43b019ea8446e723628bfb",
+        "parsed_sql_sha256": "2b580bb9c5144264f0a7ef3363541cc451f5895d1440d7e1bc4bd29bb428de32",
+        "template_sha256": "a9046f68e8b2a2d4a62f62745505a8eae4a1b8999471e385daf2f8ec531dfbae"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/stripe_external/customers_changelog_v1/query.sql",
+        "source_sha256": "aabe65662b050447c946764b9e66e5e86c7b6ec5df14d637555d401556622fc5",
+        "group": "moz-fx-data-shared-prod.stripe_external",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.stripe_external.coupon_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/coupon_v1/schema.yaml",
+            "sha256": "579e029394d65862da233439f6969b4d1be076390dd39df5788e26771c2ff82d"
+          },
+          "moz-fx-data-shared-prod.stripe_external.customer_discount_v2": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/customer_discount_v2/schema.yaml",
+            "sha256": "8c7ccace714866295b3fac67869e3e5d3ece40311e77cf739262e72089672c71"
+          },
+          "moz-fx-data-shared-prod.stripe_external.customer_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/customer_v1/schema.yaml",
+            "sha256": "75638f65ba3abc036c7437523b284202fd2dcf3202d245338c596cf7b9ab07d4"
+          },
+          "moz-fx-data-shared-prod.stripe_external.customers_changelog_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/customers_changelog_v1/schema.yaml",
+            "sha256": "d9fbe9f9130b682207c46f0db1becd00a60000ccee3a9316d13333ab0d53c221"
+          }
+        },
+        "request_sha256": "d9b60c9fd73dd5cfa372f30b600fad552311ea35f24301489441e770de42a9d5",
+        "parsed_sql_sha256": "182233a69fde31c80cb6a6186bf33a08224599d237e097679403ca7acfba0278",
+        "template_sha256": "4109fda4ae251655cacf60d0bfc84e0816af79c993a3f7fc066db983117307c6"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/subscription_platform_derived/nonprod_stripe_subscriptions_history_v1/query.sql",
+        "source_sha256": "1b1f817cf5909565c629d1945b319656a32273551279283c6aa6fc9c3b37c0e4",
+        "group": "moz-fx-data-shared-prod.subscription_platform_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.stripe_external.nonprod_card_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_card_v1/schema.yaml",
+            "sha256": "f1c816b4f389657a9a131a4a27fc394713757072c286db39eaf0b0d9aa8a03b0"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_charge_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_charge_v1/schema.yaml",
+            "sha256": "14e52782ee76eca3a390acc13d8c8e4b8dbc6f95b50e15381595dfb2b7b9df73"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_coupon_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_coupon_v1/schema.yaml",
+            "sha256": "579e029394d65862da233439f6969b4d1be076390dd39df5788e26771c2ff82d"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_customer_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_customer_v1/schema.yaml",
+            "sha256": "2a02bc3c42ecd14bbd4d895f12ea15dcc197db498692f77663b1a46d1acce02e"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_invoice_discount_v2": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_invoice_discount_v2/schema.yaml",
+            "sha256": "34ed3fc1989b7d677602f3293d134c64fae2518f6fe98ce6b8e300b43ae1744f"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_invoice_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_invoice_v1/schema.yaml",
+            "sha256": "97146182c9e89371873beeaf63c147a43b6a45c156049af2b219750146995d92"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_plan_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_plan_v1/schema.yaml",
+            "sha256": "4118ac7d8926c0e2d6af0d4f6452b8a23bd605e8b69a824543b2d59c02d3e2e1"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_product_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_product_v1/schema.yaml",
+            "sha256": "4c259c536b68599ef5f8559cf06b12c43bfc92db9f6fbe81a8b8ffe834fc0c40"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_promotion_code_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_promotion_code_v1/schema.yaml",
+            "sha256": "5187ff20d7eaee04eb8f859b5e576b6b523a4241b89cef2f3e0f6f4a2e227214"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_subscription_history_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_subscription_history_v1/schema.yaml",
+            "sha256": "f46ee9eeb7e51f63b08a24ed6b311df2137219553aa7ee4b1cb5301822be6759"
+          },
+          "moz-fx-data-shared-prod.stripe_external.nonprod_subscription_item_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_subscription_item_v1/schema.yaml",
+            "sha256": "e6ed40b15e1d58391cc7a3df2f6245d2edf3105d408ba2f0030c2b72db8cec74"
+          }
+        },
+        "request_sha256": "58aac7b8aa156e828dc64179ce0ec2191001cf60042f7b1b624ad1b9e52eaf6e",
+        "parsed_sql_sha256": "9e8d0d5dafc48811791066be76ecc58d32dddbc31104ffb634cddb5db5d9eee5",
+        "template_sha256": "77e0a2c1ae8286fb302b00c759f482648b44d6dc6cde775cb1b8e1d3f2db571d"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/subscription_platform_derived/services_v1/query.sql",
+        "source_sha256": "0b096b673ca196de355db7803485aa0c7a3601d78638ebf033183c494a33cfba",
+        "group": "moz-fx-data-shared-prod.subscription_platform_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.subscription_platform_derived.stripe_plans_v1": {
+            "member": "sql/moz-fx-data-shared-prod/subscription_platform_derived/stripe_plans_v1/schema.yaml",
+            "sha256": "841fcb71e2173a51194d2419d32e3fa547c0409f24c828ab2ca02a54d91a3d82"
+          },
+          "moz-fx-data-shared-prod.subscription_platform_derived.stripe_products_v1": {
+            "member": "sql/moz-fx-data-shared-prod/subscription_platform_derived/stripe_products_v1/schema.yaml",
+            "sha256": "a746e31e564291d36a8fbd15c62e4ae02a9224148389fe96b1d4492e7154d257"
+          }
+        },
+        "request_sha256": "57289fb91a77b788607b9dec016e9068d862a4d0b8472bba237c70f1a946667a",
+        "parsed_sql_sha256": "91f620daf59f42cf2cfd82d8420647a88d2643fe7de1aa98e1f94718d0c9cddd",
+        "template_sha256": "1f9561fa9f65feac94810b71bdd88f639ab30e095eb1eed591e2d888baed170a"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/subscription_platform_derived/stripe_subscriptions_history_v1/query.sql",
+        "source_sha256": "55c89b3011c3e37b41511af97adea3c96b269b2397beb76e9db4660975c03122",
+        "group": "moz-fx-data-shared-prod.subscription_platform_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.static.ca_postal_districts_v1": {
+            "member": "sql/moz-fx-data-shared-prod/static/ca_postal_districts_v1/schema.yaml",
+            "sha256": "9ca15e782ad05384d0df5bdcb470f0b49d729e0b24741381a542adda022039d7"
+          },
+          "moz-fx-data-shared-prod.static.us_zip_code_prefixes_v1": {
+            "member": "sql/moz-fx-data-shared-prod/static/us_zip_code_prefixes_v1/schema.yaml",
+            "sha256": "47472937088253ac5a472eecb61d33ca90bad8222aa530e8386e1098ea037cf2"
+          },
+          "moz-fx-data-shared-prod.stripe_external.card_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/card_v1/schema.yaml",
+            "sha256": "1b2d6b3f1eefcb786f7d8b2f8a0ec508fe0221f43115a59620c8700e9b0a7e46"
+          },
+          "moz-fx-data-shared-prod.stripe_external.charge_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/charge_v1/schema.yaml",
+            "sha256": "870f82bb80eeaafc17c051f6d53c6d4c6362ebe43d4375589dd4e2ef7b500320"
+          },
+          "moz-fx-data-shared-prod.stripe_external.coupon_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/coupon_v1/schema.yaml",
+            "sha256": "579e029394d65862da233439f6969b4d1be076390dd39df5788e26771c2ff82d"
+          },
+          "moz-fx-data-shared-prod.stripe_external.customer_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/customer_v1/schema.yaml",
+            "sha256": "75638f65ba3abc036c7437523b284202fd2dcf3202d245338c596cf7b9ab07d4"
+          },
+          "moz-fx-data-shared-prod.stripe_external.invoice_discount_v2": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/invoice_discount_v2/schema.yaml",
+            "sha256": "34ed3fc1989b7d677602f3293d134c64fae2518f6fe98ce6b8e300b43ae1744f"
+          },
+          "moz-fx-data-shared-prod.stripe_external.invoice_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/invoice_v1/schema.yaml",
+            "sha256": "f12c7570a6d207aec56b95dbdba001af2c301ba6b4cd626d323dbb58d71eb1b0"
+          },
+          "moz-fx-data-shared-prod.stripe_external.plan_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/plan_v1/schema.yaml",
+            "sha256": "4118ac7d8926c0e2d6af0d4f6452b8a23bd605e8b69a824543b2d59c02d3e2e1"
+          },
+          "moz-fx-data-shared-prod.stripe_external.pre_fivetran_customers_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/pre_fivetran_customers_v1/schema.yaml",
+            "sha256": "df5bb6c9b866207d403bc1c65dd16e5a5bfe889559d79359df3cf266ed1e0318"
+          },
+          "moz-fx-data-shared-prod.stripe_external.product_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/product_v1/schema.yaml",
+            "sha256": "4c259c536b68599ef5f8559cf06b12c43bfc92db9f6fbe81a8b8ffe834fc0c40"
+          },
+          "moz-fx-data-shared-prod.stripe_external.promotion_code_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/promotion_code_v1/schema.yaml",
+            "sha256": "5187ff20d7eaee04eb8f859b5e576b6b523a4241b89cef2f3e0f6f4a2e227214"
+          },
+          "moz-fx-data-shared-prod.stripe_external.refund_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/refund_v1/schema.yaml",
+            "sha256": "dee58f6d27d9df241b7ab24d53d7f11f43e343480ac4c51a7d857e7f39022763"
+          },
+          "moz-fx-data-shared-prod.stripe_external.subscription_history_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/subscription_history_v1/schema.yaml",
+            "sha256": "6be8b7313fdde686a11ea3eb50dbedefaffd14a1f5b34b2c790f78d39e5ffc2c"
+          },
+          "moz-fx-data-shared-prod.stripe_external.subscription_item_v1": {
+            "member": "sql/moz-fx-data-shared-prod/stripe_external/subscription_item_v1/schema.yaml",
+            "sha256": "e6ed40b15e1d58391cc7a3df2f6245d2edf3105d408ba2f0030c2b72db8cec74"
+          }
+        },
+        "request_sha256": "6bfecda3b012428b7594d76674b3866360a3f098138437f34ac25d2f74bb70ad",
+        "parsed_sql_sha256": "cdeffa5302139afe925f0f8378d2359007ed9cb5bc614117129d87bb799b5997",
+        "template_sha256": "86df408ae26e282691a8548e19e2e94d856316ecd62837c715ff478308fff9b2"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/active_users_rollup_shredder_v1/query.sql",
+        "source_sha256": "0703e640a6e62201ed0956c8182f8c6217deb5109a0faba7577a139534cfb1d3",
+        "group": "moz-fx-data-shared-prod.telemetry_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.telemetry.active_users": {
+            "member": "sql/moz-fx-data-shared-prod/telemetry/active_users/schema.yaml",
+            "sha256": "9649c477a58121446298ca8a32e559f5efac607808fe6d0b4b5549099dccbb41"
+          }
+        },
+        "request_sha256": "8dea6b881db81ccad4e026a0207f9cb795a5041afe91d738a27f1c1ca0634d9d",
+        "parsed_sql_sha256": "5f89bcaa861c3b42300681416b9d88b159d97c19f1d5a5bf770320a7df99804f",
+        "template_sha256": "9d1d642cff468a11c8e7eee97b62f2429a2f1b7af14585e6bde6b56ed4fc3a87"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_mau_per_os_v1/query.sql",
+        "source_sha256": "4b0d9e0c3f1616c5605b1f10bb6b0f20452ba288f111280e85e2875d6328afae",
+        "group": "moz-fx-data-shared-prod.telemetry_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.telemetry.active_users_aggregates": {
+            "member": "sql/moz-fx-data-shared-prod/telemetry/active_users_aggregates/schema.yaml",
+            "sha256": "b8d8240bc000c056530d2ab9ebab3bd98481725437223a557e59d39f074c59b4"
+          }
+        },
+        "request_sha256": "46c3259b69b0c32477d6a4dd00666f88dbd4bfa8d916dd6262a642c1bab93439",
+        "parsed_sql_sha256": "981b8a2d9c37de3da48b5c5512ae36868f58ad2a7764e79d010b257a66282bad",
+        "template_sha256": "6678a37ea98a2062157bb08175d59de18e9150ad194d725ea2a2befa9d783f6f"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_windows_versions_mau_per_os_v1/query.sql",
+        "source_sha256": "fd412b5abfe6cfa9a103274053bde106b2e17867ca48961cd3abe3ee200792dd",
+        "group": "moz-fx-data-shared-prod.telemetry_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.telemetry.active_users_aggregates": {
+            "member": "sql/moz-fx-data-shared-prod/telemetry/active_users_aggregates/schema.yaml",
+            "sha256": "b8d8240bc000c056530d2ab9ebab3bd98481725437223a557e59d39f074c59b4"
+          }
+        },
+        "request_sha256": "296248e34fdcaa3ea7a32ead29904f72a5d1a3be3aa765bd5554ad211db58584",
+        "parsed_sql_sha256": "3c0dbf89112a3fb72ddcaa0494b036e2ff53d968bd901414bbc4df09949c5161",
+        "template_sha256": "d5325364c0885d0f65ac0c64d3aff028f8b32c4bab8e599bc60adfd8b45aab28"
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_fxa_v2/query.sql",
+        "source_sha256": "f4832b7c8b29d1ad18cffe2f98d0eb834f74dcaa7b4feaac902b060f48ecfa93",
+        "group": "moz-fx-data-shared-prod.telemetry_derived",
+        "schema_sources": {
+          "moz-fx-data-shared-prod.firefox_accounts_derived.fxa_users_last_seen_v1": {
+            "member": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_users_last_seen_v1/schema.yaml",
+            "sha256": "1f3638dbe0e51aea1617aadd43e62f548eb8f90998661cb5136077b0fb6cb52c"
+          },
+          "moz-fx-data-shared-prod.static.country_names_v1": {
+            "member": "sql/moz-fx-data-shared-prod/static/country_names_v1/schema.yaml",
+            "sha256": "3998a6833975b119e57e204f7a7c0d61a2433f45425d2971ce8f9a3f25ad0ea4"
+          }
+        },
+        "request_sha256": "81598e6f7ca948366954588a5bc403f42b17d597b7635a2b008c5916cfe326c8",
+        "parsed_sql_sha256": "37b4093970f75d1eed4ec8db3c2f81ecd2691c66f08314a4bd7c2ab3e3df68b0",
+        "template_sha256": "0a16e6db5bf93f7aebe985849a8675e1f2af2b8988b554799f0b3cdbc01c2164"
+      }
+    ]
+  },
+  "diff": {
+    "original": {
+      "previous_archive": {
+        "repository": "mozilla/bigquery-etl",
+        "commit": "6acdebb4856b6786d9c1b54d79eaef9b3b15d243",
+        "url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/6acdebb4856b6786d9c1b54d79eaef9b3b15d243",
+        "bytes": 4263850,
+        "sha256": "32cbfd622f87291991d7e9b5ab9f981fd0c22cb081a489a3abbc69906300f1e7",
+        "selection": "Parent before the 100 most recent SQL-directory commits at the already pinned current revision"
+      },
+      "current_archive": {
+        "url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/c5dcc248916a4eb19b1b37cb4780fa794bb1fa56",
+        "sha256": "d36192ee00d185c120a4a80286fbaa8f3a356c354b9f2fe9de3315476e16b1dc",
+        "bytes": 4339612
+      },
+      "pairs": [
+        {
+          "source": "sql/moz-fx-data-shared-prod/accounts_backend_derived/monitoring_db_counts_v1/query.sql",
+          "before_sha256": "a0c9be161d0f18b53cad0c9227bd047da7acb6979b6ea5ddeab8a86ee20d718d",
+          "after_sha256": "440ac18cbbbf5e4ec1b5e6970e251a7a88a18ee807810f36e3f7b11bbb9458a5",
+          "non_keep_edits": 162
+        },
+        {
+          "source": "sql/moz-fx-data-shared-prod/contextual_services_derived/event_aggregates_suggest_v1/query.sql",
+          "before_sha256": "e4d3d9bfcadf314c475e3104889eb80c2d5716411e8e72606aef850f72d34166",
+          "after_sha256": "816e9770288145c75096551f561050092713aacc8f6398eb750b85d6e3ec8cf2",
+          "non_keep_edits": 33
+        },
+        {
+          "source": "sql/moz-fx-data-shared-prod/contextual_services_derived/event_aggregates_v1/query.sql",
+          "before_sha256": "2d44ec86dd8cd786870cd441e667d61c629c1fe670dc1cbcfee6660a6a614914",
+          "after_sha256": "7728e796cc0a889ad89b2d095db62914ef3df64fe458df01f85091135f3a240e",
+          "non_keep_edits": 61
+        },
+        {
+          "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/glean_ga_desktop_conversions_v1/query.sql",
+          "before_sha256": "9450a44df873db836d4bc86143cdff087b934b7e619985fd5ca8f09022c2e7db",
+          "after_sha256": "de896bf752ad10cb54e5ab8b499823dc88842bc340c4c280da70ac73da4c9700",
+          "non_keep_edits": 22
+        },
+        {
+          "source": "sql/moz-fx-data-shared-prod/search_terms_derived/adm_daily_dma_aggregates_v1/query.sql",
+          "before_sha256": "7c36cf7d3f3aaf2ad7878bd6dae2855e544a70eadca370d469f307954c744a0b",
+          "after_sha256": "6581f1623cdc7fd56f1442d5fdf21972403644ec9f507c4232074ce003939625",
+          "non_keep_edits": 1
+        },
+        {
+          "source": "sql/moz-fx-data-shared-prod/search_terms_derived/search_terms_daily_v1/query.sql",
+          "before_sha256": "d4e5ae2460f7263c3de51b18656bf3e197fe7e70f705ae781a86ccdb11ef1dfa",
+          "after_sha256": "02054bb352838d8a0a08854b97f857b0073d2668b8627924e7472720cdb7f079",
+          "non_keep_edits": 1
+        },
+        {
+          "source": "sql/moz-fx-data-shared-prod/sumo_metrics_derived/kitsune_questions_base_v1/query.sql",
+          "before_sha256": "9b85f38ab0cf9272b1c60b923eb163f2d0358b2e48857340a69e52d51cf32971",
+          "after_sha256": "3367cc922d1a0f6e0ed65e292b0fd91ec2193416225baf2707d07cc25e2532f5",
+          "non_keep_edits": 9
+        }
+      ],
+      "source_rule": "Same real file at two pinned repository revisions.",
+      "operation": "Full existing structural-diff contract with explicit source dialect."
+    },
+    "additional_older_archive": {
+      "url": "https://codeload.github.com/mozilla/bigquery-etl/tar.gz/335f1fb4396a3af85aa755f82c588084b287d302",
+      "sha256": "917c2783f1927cb123a5fe1f1e17d1405741a61a53aaad266823df20bb0bf282",
+      "bytes": 3963630,
+      "commit": "335f1fb4396a3af85aa755f82c588084b287d302"
+    },
+    "additional_pairs": [
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_clients_daily_v2/query.sql",
+        "before_sha256": "035f1c0e1c3f0b81c3e0d4679874867de8b10f9ba288693f2d3d07560a68d3a9",
+        "after_sha256": "a108826e11f9073314faac472c83176ab35e4b3953981a6ab0b1b2d536dedd68",
+        "non_keep_edits": 3
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_visits_daily_v2/query.sql",
+        "before_sha256": "aa9c8c377b9bd297b79c7bead043227129abadb25010e54827c6786cbe32a553",
+        "after_sha256": "ae29236589096c7c0a9c920ca81a2bf0c964616e068857f44118adb93f01b4bd",
+        "non_keep_edits": 15
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/widgets_visit_daily_v1/query.sql",
+        "before_sha256": "3824d8e319eb8635d114a835a03546a01438b7f44cc17981cb5f8aa70e5c6941",
+        "after_sha256": "efefd848b750e11f196f3e3bfe9471872e45297960483409bb40e551e898b013",
+        "non_keep_edits": 15
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/firefox_whatsnew_summary_v2/query.sql",
+        "before_sha256": "a12e2013e519360a541e07994fa4c7535362587d0e54c74cc008226418bbf1e3",
+        "after_sha256": "0611a319c98e346f3f5434b926136e1bbe6235c75d10ebe5f582c3978a6c522f",
+        "non_keep_edits": 45
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/monitoring_derived/metadata_completeness_v1/query.sql",
+        "before_sha256": "ba13797fae44a18eb28d89d7abc6d904ec08b6946c9fab66e1fd88d8839588a9",
+        "after_sha256": "7a8a543d2858e38e810d4dc0ed204f8dba6968401d398a88f1eb11f0030c79c3",
+        "non_keep_edits": 14
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/search_terms_derived/adm_daily_aggregates_v1/query.sql",
+        "before_sha256": "67707da0fc7a9eb09c6cf6f28111fe1ea9f95d3fa9b647c2ce729ab28050d9b2",
+        "after_sha256": "af88643c7555a11826aa62eb399dce9844efa01cf7e9b1e0c6855ef49a2c9a38",
+        "non_keep_edits": 6
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/sync_derived/mobile_v1/query.sql",
+        "before_sha256": "aaadf1654ba71a9ba9bb08848904437a7516acd8ca6a4d288f16ff8905be7b46",
+        "after_sha256": "ebad082508c3a96c1c2b098833164205753828038dcd8679a5e2c276db2bf044",
+        "non_keep_edits": 355
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/desktop_cohort_daily_retention_v1/query.sql",
+        "before_sha256": "cb1bcdfcb221a855048063c904b67891a8dcf0fa0c8f75bc3e6cad9d7958c40e",
+        "after_sha256": "ad8a443b560496d53e25a83613fa1fbcfcc12c13ee12dbad3e1f67a8745900ae",
+        "non_keep_edits": 21
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/desktop_new_profiles_aggregates_v1/query.sql",
+        "before_sha256": "c0873b875b8e3db6876c0dc62bb184b5fef3aca52694162d03345bc517d06113",
+        "after_sha256": "38151c038831fb976b2691ba21a7d73e8ecf6d52781e1653e1b7660b169dde66",
+        "non_keep_edits": 16
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/desktop_retention_clients_v1/query.sql",
+        "before_sha256": "4050b417b33c2c6f7bec24942b904a744bfbcf196f2f861decb44c79514a68be",
+        "after_sha256": "d132be3de4c47cbaa6d3f5e72b7a429763b9020ff59e497f2be48dcf92c85313",
+        "non_keep_edits": 23
+      },
+      {
+        "source": "sql/moz-fx-data-shared-prod/telemetry_derived/desktop_retention_clients_v2/query.sql",
+        "before_sha256": "d4ae5edfd2a5a8c1440c7cc3305a9da8bdb9d91c7c1937591ee97d68e28bb780",
+        "after_sha256": "7f5b768a77ae70827ce04e9b58f354b0907c8c8e25199a333707294ec43d63f6",
+        "non_keep_edits": 20
+      }
+    ],
+    "rule": "All compatible changed files in the next100 SQL-directory commits. No file reused."
+  },
+  "commitments": {
+    "private/lineage": [
+      {
+        "input_sha256": "571818eeb46887901c34da80ae0b8577fd5a48388a9aa7b3e01a13ebe05cf460",
+        "output_sha256": "6293109758a5a0bdc0c3f88316ac0ad1663ee1b44e9ab165863ad501c1c56149",
+        "output_bytes": 250089
+      },
+      {
+        "input_sha256": "e6ab0a0ce9cb762c23a2e4c2d24fdaf278777938ed0c157eab851ad5d129ce38",
+        "output_sha256": "ff4cdfb4eca010bb66f654b34bb6b59b8b33f915d43a29c8eee5777774ea78ff",
+        "output_bytes": 31174
+      },
+      {
+        "input_sha256": "7affc4feb80e1f5b7eda8b7601f910ecb42402daac62b8af07febaf40abf06ef",
+        "output_sha256": "719420fac4895c8a3943c5c8773cec2b292563e5451462d6773cc050db6d39cd",
+        "output_bytes": 30125
+      },
+      {
+        "input_sha256": "bbda6a1861502b2d6f32cd749463a7a630e49012ac1ec3fcd22661f97b493817",
+        "output_sha256": "f190505a967135dd0590c2539bd0d24b1c9633536c9c9f6460377e6bc1a1b021",
+        "output_bytes": 236527
+      },
+      {
+        "input_sha256": "7f1220bf44634a96d481b6b2fe07a83f8ae1aaec19e87eeca981656d81c0e6c2",
+        "output_sha256": "cb97b6ca784058504125407f889347f4cdc2ce91fc56d84af75699e301893af6",
+        "output_bytes": 22947
+      },
+      {
+        "input_sha256": "a04368c232ede8fd88da9884fe97a8ca21d9319262e51ba7aae72b1a8ab5006c",
+        "output_sha256": "f15ab2e1cb0dacb15d888bbc587f4aab337132f5d9c0bb04138b595d7a29c4f6",
+        "output_bytes": 41794
+      },
+      {
+        "input_sha256": "1834394b23df18301f1ed2456051883c1a397e4e4ea4ecea6581cb6a544ee64e",
+        "output_sha256": "3ff1ab1fb9bd4a20b55d564910f3fff75e715ec86822d8e9a704f39f38712d6f",
+        "output_bytes": 104172
+      },
+      {
+        "input_sha256": "b3da73a15f525b8adee1baa55d205d99a7953b48dd60b4a131f8486e8216459e",
+        "output_sha256": "d57956c2c8b01be074ee19be13e29ce2c167b9c2bb50ceb3d1a28b2e12dd0882",
+        "output_bytes": 225244
+      },
+      {
+        "input_sha256": "81328b6bf21c347cb900a0f51d488da897c7923da62d8e107c4da7c058f98ba4",
+        "output_sha256": "483921acd492d542f4382ae7e6b272b295eb93e1c38d0f4389d868564cf68793",
+        "output_bytes": 8905
+      },
+      {
+        "input_sha256": "d4ca61678e36cdddfabc8208d71c53bc58051f9fbdbe4a5f0cccf543ee493e6a",
+        "output_sha256": "2fe5240accca063024e09ff36ac35f67c18da96df4562744b472e38a2e3ee967",
+        "output_bytes": 37810
+      },
+      {
+        "input_sha256": "84bf4a9065307392821cfd99ae05745102d600e9bda3d802cf6b271c30e29a07",
+        "output_sha256": "300b1aef9ecfdadfba321ee2014d1623ffd8d07f5f14106ebaac3fa4073d05d7",
+        "output_bytes": 47389
+      },
+      {
+        "input_sha256": "6661733d205cf80dc96d1be7a261e30a670ff34c57488d5db099f33ba76495b0",
+        "output_sha256": "f39189d1650fa28374b97cc7b25c5ea2f9fa214c72c7b9cc4613d4ddf66e9700",
+        "output_bytes": 182842
+      },
+      {
+        "input_sha256": "48027bae6f93f71564f52f6c2eaf33de60c37ddf3488137100e4cba94ddd31f6",
+        "output_sha256": "13164033010bde4d56896f5ebf7d9449abd26777eb646868a89e2d9e9a1a8772",
+        "output_bytes": 167884
+      },
+      {
+        "input_sha256": "3555e1dc6c208ea74c844125883ba51fa0895beb15496896d288f6100512341f",
+        "output_sha256": "c664b384649dcace08534e9959a5ea1bdb7207a499b5a19b90663a176b676fdf",
+        "output_bytes": 169831
+      },
+      {
+        "input_sha256": "2a99ed9e1d9122b15b859f403d7f876a01116a81a228708d91f706ff24d00673",
+        "output_sha256": "101924068543772d98fd91a258b539c314c61a6073c0f4aa99cb035237518a74",
+        "output_bytes": 16426
+      },
+      {
+        "input_sha256": "dea77e0d83c608c653234b870babe2e05928c4a286c98f9d6254450d64f4a5b6",
+        "output_sha256": "7324b9e0b7409621868170433eb1b4d0a51b3628ef753dd72d1eab50a2b4cdb0",
+        "output_bytes": 104649
+      },
+      {
+        "input_sha256": "8b887f5de654704750f05e9b34e729da32bb6fed7379f6e25d5986fdbd3f3dce",
+        "output_sha256": "aef436acc1ca5db4afa7d495c72115ce33b6da8b4e86bb5cab535b987ee17183",
+        "output_bytes": 39894
+      },
+      {
+        "input_sha256": "ed7cbb78618b8ed9b25d690ec8c10dcf7d9cd5a147bbcaa6c4a4bbc143e49424",
+        "output_sha256": "a754f05ed2f4ad1b2d9fa596dc7bc5b9757a63579ae9d1a6421d2261ced2dfbb",
+        "output_bytes": 61387
+      },
+      {
+        "input_sha256": "2aaac494f37c9ab50e284c7cdf73163b4811a6ad669e513640c556d78d5463b6",
+        "output_sha256": "06bc80654a03bc5ad3f0146e6171b2a7ffc7507d24481066b3ea12a34137f792",
+        "output_bytes": 24822
+      },
+      {
+        "input_sha256": "f3f28a444f8dabdebba897383fa5bd489c702a654457305b464fd0261a31d315",
+        "output_sha256": "d852147386ea77a815560e0d9f5c2d6cdfbb867376cfc4ad7ed3d368aefe4086",
+        "output_bytes": 33698
+      },
+      {
+        "input_sha256": "1bb331d4e55ecd2dd8c6119b69dc303ec71a734676ba51c3aa067b3a44e693d9",
+        "output_sha256": "bf821d9d7ab773841bc14a77088f7c29ed8955704b9e273202b4db32a02e7ec2",
+        "output_bytes": 17834
+      },
+      {
+        "input_sha256": "20c1590b9b20d5404d711379f52f72378c2726bc1cdd356c44c3a18a644777b6",
+        "output_sha256": "ca1fa2d2226e14c0276dbac8184e75829bd7044f0f9ef4f8f052a9932e703bd0",
+        "output_bytes": 31213
+      },
+      {
+        "input_sha256": "3d5e826e506bf53887cbfc8bc1fafa8a59fee5d7c33c27b5aaf5b1e6cb777a9e",
+        "output_sha256": "4a5b48101cc3b46b293a922290f906c50b61beda7c0b3036d951c3389af43ccb",
+        "output_bytes": 46959
+      },
+      {
+        "input_sha256": "7210c7835d2608134943d848d6599fc078025c3ff9f424a34b52ccc3b18d251c",
+        "output_sha256": "956eb6c364124f1266629d52fd8b31d5194747584d43e8f31cb57f2ca28655a8",
+        "output_bytes": 59770
+      },
+      {
+        "input_sha256": "64d278a6d8470e300305fac761afaf4f6488dc8c2cefb5576251af3e89c38507",
+        "output_sha256": "6979430d1997e6099f090c6d27e08ea1957a3b5c51aa93b26b615baa00498f30",
+        "output_bytes": 51268
+      },
+      {
+        "input_sha256": "10f57c809671faa73923c31eec562525f738c680d02ea2f0aa5b87f42238e01a",
+        "output_sha256": "0822c1c923c0f02e5c8a55ce98d1022891aeaa3290b7f6c40634da55accf351e",
+        "output_bytes": 171200
+      },
+      {
+        "input_sha256": "23866a6745c1083097e498ee0e38ecb2239f443da1d09c10c60d4a183e379309",
+        "output_sha256": "7dc1db66dbf4f1a216ef206f8cc8d0d9370b47edd7e5953bbfdb3b93729be89e",
+        "output_bytes": 71420
+      },
+      {
+        "input_sha256": "030b87a9cc0903018f58c04fb9e4a352fa153f7977e3234bcdb86391f57ad7ed",
+        "output_sha256": "98eba8d3053a073bc1808e91bca4982d2f48252cfcbfdf2be86df922a826f9eb",
+        "output_bytes": 36197
+      },
+      {
+        "input_sha256": "0ec3227d4074de9cf377bcd18f0415d03418be4fb4ae16c971fdfc983da06e19",
+        "output_sha256": "368b714cc2e3c80c24dc38c656ea6f6f672cee57a64d2223c10b12f183cf3cc9",
+        "output_bytes": 39962
+      },
+      {
+        "input_sha256": "0c7a65878df19e76f50416aea075576144df6aba045648400e5e7ba520431d82",
+        "output_sha256": "6b5ef46f4460813ac909f1ad630fbfcdb1a6066a2386f1042baafc37e0e1cb5f",
+        "output_bytes": 53418
+      },
+      {
+        "input_sha256": "8d5c12cc612eafc8ad636be6519b8d2baa32f83a5ac280e7aa84f67ffe839443",
+        "output_sha256": "fcd5b4a39e07d06274e45260f237b8ba802d0bc9e1076163693eef31feed4731",
+        "output_bytes": 47775
+      },
+      {
+        "input_sha256": "57e19792e00cf3127b7e76893ae529c601a6b0874db03e44510b2fd5554fad77",
+        "output_sha256": "f8ca22f49a1a1c9daef8ef0a43554a4d2a114a402a335b64564cc1a8af5ed052",
+        "output_bytes": 65468
+      },
+      {
+        "input_sha256": "a2d413bcdcf5b38714ab2c9f72fc347977dee440bee9890b64baf4d8a951c9ba",
+        "output_sha256": "3d5921f4fa91fb7a52a553e98d07b5d1dccc91a02f9bf739b36f2108b414877a",
+        "output_bytes": 237202
+      },
+      {
+        "input_sha256": "9526d7279ebdcab61bce38b1eb1951a1bf37f3ece49772616c2d7d2144b41abe",
+        "output_sha256": "a5b319dc2da7048ded2da34919fc9f563e359028721afe4421be786f95d9edb3",
+        "output_bytes": 44131
+      },
+      {
+        "input_sha256": "8d87eb65e7a9dfb04b6e33d07b0248798530488dff7aacd63c4b41d6317f2583",
+        "output_sha256": "5be702326a6d484a9af239e5e2fb4563760945e9a5002e68e3466fecb490d3bd",
+        "output_bytes": 91708
+      },
+      {
+        "input_sha256": "4031beb4084233200c786fe71334a87ed05ec1a61bd4a39af729febd5042a647",
+        "output_sha256": "e569905fbd393996d97d40c05ee3dd09792e67a4eec5c24de88fcc8094e3aa84",
+        "output_bytes": 42579
+      },
+      {
+        "input_sha256": "fe63318df611cd1e6af0f25f0784271208c7dfe465eecb032bd286f39423e1cb",
+        "output_sha256": "8ae93fe7c30699767b4ea393673b9c5d19be33d5bfd799fb56964914069a37f1",
+        "output_bytes": 81833
+      },
+      {
+        "input_sha256": "5b5a6bd98f5e9ec7a13e6de4fd3c45e220c094d47e26af29dc6e1b191fdbf9fc",
+        "output_sha256": "1f584ccbfff360fa10aac7454116004db1579969e334d6473798fd32dd5de4f0",
+        "output_bytes": 33926
+      },
+      {
+        "input_sha256": "3a77e9be03ee6e243ae7c3ee56c47dfc66bc4b8eac1cf365d47b2de4e46a2b36",
+        "output_sha256": "9982703c20685eee8526032832b1332f179e2c7c99ea45f6800ee3542a146b6c",
+        "output_bytes": 227742
+      },
+      {
+        "input_sha256": "e8c0965d9db8375b6869b298f63ded21dd4ed0aba83635cab36a288f6f4b53db",
+        "output_sha256": "ae1e434fe215f274037f7a35b137a647bf15f066c2b127a77cf9140ec932e731",
+        "output_bytes": 30392
+      },
+      {
+        "input_sha256": "c36a3d427f75a46145a7181e47e6892a66c0b8d80fed7a34b7b9155d83161ea8",
+        "output_sha256": "b2be55e2b0e0c43db176e22b15a162ed0dc3ba2cfdeace802ba2fdf6551173a1",
+        "output_bytes": 107668
+      },
+      {
+        "input_sha256": "12ce22c77fbaf95f5492b11b0e3f604a4d58342bd95ae4c729eabe8b127270a5",
+        "output_sha256": "368f876e9a1ec32f68e71da79eca5cca08892f4c4fdd509aedd1d684b7669d49",
+        "output_bytes": 312498
+      },
+      {
+        "input_sha256": "1cefd2fe20ce83d888231dd2111ab6280609ada7be1aae94dcfd34f13d8e300e",
+        "output_sha256": "e4053a283d01f4281aeca08246dec445f20d6c69379de6f873d2d2a4641b62c7",
+        "output_bytes": 281296
+      },
+      {
+        "input_sha256": "5ca4c1f22be79b796a8c143fd69d55e4381e379c89e7d6d5d1c35c83a075343d",
+        "output_sha256": "7ec648cde5a18ccb551f0f64562988c29c4887c00798555fa224b49c5c6f39c1",
+        "output_bytes": 518426
+      },
+      {
+        "input_sha256": "dd3057a9e9caaae956549fa76bf7e771f797e1a222287bf869891d1601156092",
+        "output_sha256": "adc2e0f7ab03a239c48b9def255e0a2fec4af43a25a5f7a10063407405fb08a8",
+        "output_bytes": 25710
+      },
+      {
+        "input_sha256": "0d8e7e100bdde80d1cc5bfe65661b03fb687dc5c6a302a8719c2cefc325e6e63",
+        "output_sha256": "a81e491eb7d1d17578a1431ac6c61c9b445481cf3d5911680087405c17a47b90",
+        "output_bytes": 40015
+      },
+      {
+        "input_sha256": "bec72523e661ae14b2b3176bbb33fba127daa2f5b4f6e28a51e3a7e7dd07779e",
+        "output_sha256": "b3a21e9f04742c1db644e06eff8af66bf791d70a2cee1b772d8906151ba193ae",
+        "output_bytes": 46587
+      },
+      {
+        "input_sha256": "ca8317b6720c732bcb5da5817196a41aba600488c7353819c1160522325e59c8",
+        "output_sha256": "5ab7a946fb89a1e58e4aac2df3307be7771db6566fdea78d918dc1b1c086e01b",
+        "output_bytes": 68886
+      }
+    ],
+    "private/diff": [
+      {
+        "input_sha256": "4e8e31f0a44ce37294e4970a5a2737314ce262334ca9ac7c8b4c0dc7a669ccad",
+        "output_sha256": "f3b5b37ecb376e2d9b6ece3836340cac91486662c40cc7f589b50ce2e098660c",
+        "output_bytes": 965319
+      },
+      {
+        "input_sha256": "3090ed0922afab7005c3db77c66c0b7194ba0a0e2c69f02f52ac5a608e69adf0",
+        "output_sha256": "27ca3a5e3b190b13c734979b715c469e14872ebccd394eec8a8449aa8f58cb8b",
+        "output_bytes": 384483
+      },
+      {
+        "input_sha256": "22a99951b42a4a0c692ffc06ccf1db0ae9965949160fad4992b42c51bed59ffd",
+        "output_sha256": "39d36fc8615e4f81b40c8e9338275457509c092667c7a780411947111dff695f",
+        "output_bytes": 966654
+      },
+      {
+        "input_sha256": "3638c79b7b394f41fdd0909756a90c325018a1c69a9951fdfd9f358a7edfd63e",
+        "output_sha256": "d42913e0c05ace868e519955836d78866c78ff4fa97b01dd9767f464d28dac36",
+        "output_bytes": 99678
+      },
+      {
+        "input_sha256": "f0de1e729902017ac69fc7dfec652cc82047f18dfc8325a6bc855466699bd8a5",
+        "output_sha256": "14f12d78c05230b44d399424b948cb62ff3d756fea5c70b2fd35f6fcc79bb228",
+        "output_bytes": 42527
+      },
+      {
+        "input_sha256": "4b585a4436ee1ef751beccf7d158736041626b90c651c2584caf6314dae9b58d",
+        "output_sha256": "9353e16a1da6467ac63c353173a8aabd1b9976353ab19d59a9c79aa23d478fcb",
+        "output_bytes": 44995
+      },
+      {
+        "input_sha256": "ab236122680c7f9445cbdb9e0d69519ac6b0751b30a98f6aa2126cdac361482c",
+        "output_sha256": "65d8882fd9faece193ef9cdf31ab89103c70911f3ebd2335e8e406c52612479c",
+        "output_bytes": 38648
+      },
+      {
+        "input_sha256": "f2b4d0c4d97dd36b7814ac6572f8b5abb8c172516b9acbe95f927556f584db39",
+        "output_sha256": "dd8ffa3d403329632c33122ecfd35f057e1ed0f0aff94618119c150880fa3a6c",
+        "output_bytes": 261564
+      },
+      {
+        "input_sha256": "c8027f1442a55b065d59afeada58b496b66df082a90d289245497256f29c9958",
+        "output_sha256": "e9689b9d774c715be55f5ad469f333d269dd503216c56fb1073437d677b97da0",
+        "output_bytes": 1451374
+      },
+      {
+        "input_sha256": "485fe0c5a975a2387ea4616ebaf98c459b150c834fcbb57f474e2ebf5c4f0521",
+        "output_sha256": "4b159e9ceb157ffce1cdf192ce853c16d3db0a7512d02ce2a94833e7ab0e45d4",
+        "output_bytes": 331677
+      },
+      {
+        "input_sha256": "54bd40be48b8f857a561d619f7a6295484c3e8a2cb1a6f22c0985ac67e5b0ab5",
+        "output_sha256": "b8c1913449cbe31d4d07a167d9770831e84778df893848af1d5910e0f6093ccf",
+        "output_bytes": 174948
+      },
+      {
+        "input_sha256": "76fa4f799219a24cabfc3e58b7762ebd784e76230713d3a0daa0617c989621da",
+        "output_sha256": "2f1d11a52cb199b6ef84c939524513ec8430cde087ffc64c0313e6b47b2a06fb",
+        "output_bytes": 128082
+      },
+      {
+        "input_sha256": "7f8106a452b21354a5b8e8e13ab737a981f0cbc4b28f714d04ec316f32d4e0c6",
+        "output_sha256": "4c804e04c9175c0fb7d0fff3367f65cfd1bbb1d3cde49dcd1f1d7b69f7d49f70",
+        "output_bytes": 18364
+      },
+      {
+        "input_sha256": "57d8ec4d5d656fcb2c13c39c95d5e3a062c547a376ac1fa9d62a6d9f998a2af8",
+        "output_sha256": "447b9f3778e66618bfe2c77c06c036a2ebc18f3b3df508affc965ba401b55342",
+        "output_bytes": 1228517
+      },
+      {
+        "input_sha256": "6eb49f9fce6bb3b1856bb1ef38fa8eb95d19a57ac5c15ebcf132cda6ecefc510",
+        "output_sha256": "1b9f191b910e4c70a67efbf65eca8eed4799507c419eb738182182c1c4719a7e",
+        "output_bytes": 273409
+      },
+      {
+        "input_sha256": "14cbd36e3e51db02cba7658dea1633c071558df0ca6d7fecf0f44600bc1a5d83",
+        "output_sha256": "b94f253e578d83e4ad256e45d51ad91d24ded91e1eef48bc38c0c879693a0559",
+        "output_bytes": 132293
+      },
+      {
+        "input_sha256": "8997fd55df892ea242ec32f765cc47a18e56f6bbd7ffb7e1dfae88732f8c2824",
+        "output_sha256": "e3fa557fd0132e469c26c29a267f280866f2df6ade31d6ee0bd826c6acec3d9c",
+        "output_bytes": 322625
+      },
+      {
+        "input_sha256": "c12ccdb9b788b636103e706cbae89caf2ced11fe341b1f2626074b733dd89796",
+        "output_sha256": "0a9e298c835bd4b3a3e2eabd02c8fe4c2bbba63fb2eef29a1c3dd2109c2b8a38",
+        "output_bytes": 347366
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "release": "optimbench-v1.0",
+  "status": "pending",
+  "description": "No selected final 1.0 task/image qualifications yet. Run task smoke tests and fresh bound A/A qualification separately. Never copy v1.1 entries or promote development receipts without authenticating the exact final task, image, units and host.",
+  "tasks": {}
+}

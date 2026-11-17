@@ -1,0 +1,57 @@
+{
+  "performance_qualification": "pending explicit coordinator host-clear; no A/A or >=1s claim",
+  "raw_observations": "Verifier scratch only, not retained in Git.",
+  "schema_version": 1,
+  "source_pin": "a018953688f1b10bddf91bff8747068f5f4746a4",
+  "task": "git-history-change-summary",
+  "units": [
+    {
+      "broken": "incorrect",
+      "clocks_or_performance_claim": false,
+      "complete_byte_comparison": true,
+      "distinct_commits": 4096,
+      "do_nothing": "correct",
+      "executor": "shared LocalExecutor",
+      "expect_len": 156274047,
+      "expect_sha": "23d7e9d7ffda740454b7560c3140e52603118583b6a6fdae69685b45154774b4",
+      "family": "patch-myers",
+      "id": "patch-myers",
+      "incorrect_timing_suppressed": true,
+      "pristine_build": "/work/git/image/baseline",
+      "production_source_unchanged": true,
+      "repositories": 4
+    },
+    {
+      "broken": "incorrect",
+      "clocks_or_performance_claim": false,
+      "complete_byte_comparison": true,
+      "distinct_commits": 2048,
+      "do_nothing": "correct",
+      "executor": "shared LocalExecutor",
+      "expect_len": 244451,
+      "expect_sha": "eba916345195c6a95f607d8ef9aea266ba7edb958ea590084144372226b1c3bb",
+      "family": "shortstat-myers",
+      "id": "shortstat-myers",
+      "incorrect_timing_suppressed": true,
+      "pristine_build": "/work/git/image/baseline",
+      "production_source_unchanged": true,
+      "repositories": 4
+    },
+    {
+      "broken": "incorrect",
+      "clocks_or_performance_claim": false,
+      "complete_byte_comparison": true,
+      "distinct_commits": 2048,
+      "do_nothing": "correct",
+      "executor": "shared LocalExecutor",
+      "expect_len": 75643279,
+      "expect_sha": "e9cd33a2d79e016730072494521ed13ace37f81fdb361efc5651caba2ee6fbf2",
+      "family": "patch-histogram",
+      "id": "patch-histogram",
+      "incorrect_timing_suppressed": true,
+      "pristine_build": "/work/git/image/baseline",
+      "production_source_unchanged": true,
+      "repositories": 4
+    }
+  ]
+}

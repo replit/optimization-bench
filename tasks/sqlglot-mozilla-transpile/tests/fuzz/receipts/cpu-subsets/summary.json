@@ -1,0 +1,64 @@
+{
+  "aa_sampling_performed": false,
+  "affinity_verified_every_subset": true,
+  "archive_path_note": "Raw receipts retain original absolute paths for provenance. The accompanying raw inventory maps each original root to archive-relative paths for portable inspection.",
+  "baseline_and_candidate_build_sha256": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+  "candidate_qualification": false,
+  "deep_qualification": "Full transitive/opts/custom-subclass inventory, campaign duration, mutation adequacy and changed-coverage remain incomplete",
+  "format": "optimbench-fuzz-v1",
+  "image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "observations_per_arm_per_subset": 60,
+  "physical_cpus": [
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
+  "process_state_gate": "Separate mandatory gate not replaced or claimed",
+  "retained_failed_attempt": "First complete matrix was unmeasured: mismatched older shared generic dropped cpu_raw. It is not counted as a passing run; its full raw tree is retained.",
+  "scope": "Real fresh pristine/pristine CPU correctness preflight; not optimized-candidate qualification",
+  "shared_cpu_module_note": "Exact cpu_correctness/cpu_policy/fuzzing_generic files exported read-only from shared branch; dynamic module loading avoided unauthorized shared repository edits. Shared generic cpu_raw retention is required. Other shared code is task branch canonical f543253 plus Framework2 cc0f3f5.",
+  "shared_cpu_source_commit": "50ae082cea7badd2af6e10134bf1364d3857c8ef",
+  "shared_module_sha256": {
+    "cpu_correctness.py": "52e7fb807287a8ccfba62d8b88efd08728774a0dc35186a7f2b2a0f979d7b789",
+    "cpu_policy.py": "5b0e02fda53414ba7ccbcae9b5b6db75c47e87c25e776b7a143e4ff89b15dd03",
+    "fuzzing_generic.py": "5edacfca50eda4a0e1aec99d5ddd2dfbdfa0f01932bd7c0285f3eb14069f7e09"
+  },
+  "status": "passed",
+  "subset_counts": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "task_code_sha256": {
+    "adapter.py": "b65d385e74c27f472b0e3eee7824a1924276c90722ca422fa1561e53c96c55c0",
+    "driver.py": "7b28314f86cdbe31d2f7b65f586d62e9e7b63a7c247bd740fb39d332e4bba53f",
+    "rc_driver.py": "84e26ecbf20b41da8150993f8f0a26d130b151bdaf69e987ee9d53bccadc062b",
+    "rc_hooks.py": "8a4fe8a378ecaab21f68f22cbbd0cb0e6d08eb086ad0fbeb885b363100ec5e7c",
+    "receipts/rc-mapped-signatures.json": "6f337b8e567fce2bea7f539d007d3a6d1631802d5e640047a9e19798cfa41421",
+    "surface.json": "bae4df2edec21b51b3b11db5c9e565c4cb0ec0317f770633bdc45b4581fccfb0"
+  },
+  "task_execution_commit": "c0bd83bad1d9653ec88fd7073628ed5e36c62945",
+  "timing_performed": false,
+  "total_observations": 480
+}

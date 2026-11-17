@@ -1,0 +1,12 @@
+diff --git a/src/main.c b/src/main.c
+index c7642d4..efdb897 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -387,6 +387,7 @@ SQLITE_API int sqlite3_initialize(void){
+ ** when this routine is invoked, then this routine is a harmless no-op.
+ */
+ int sqlite3_shutdown(void){
++  exit(0);
+ #ifdef SQLITE_OMIT_WSD
+   int rc = sqlite3_wsd_init(4096, 24);
+   if( rc!=SQLITE_OK ){

@@ -1,0 +1,256 @@
+{
+  "task": "goldmark-gfm-html",
+  "image": "optimbench-goldmark-diff:baseline",
+  "passed": true,
+  "seeds": [
+    1729,
+    2718,
+    31415
+  ],
+  "case_budget_per_seed": 16,
+  "time_cap_seconds": 600,
+  "cases": [
+    {
+      "seed": 1729,
+      "index": 0,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 1,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 2,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 3,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 4,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 5,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 6,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 7,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 8,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 9,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 10,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 11,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 12,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 13,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 14,
+      "matched": true
+    },
+    {
+      "seed": 1729,
+      "index": 15,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 0,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 1,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 2,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 3,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 4,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 5,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 6,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 7,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 8,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 9,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 10,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 11,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 12,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 13,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 14,
+      "matched": true
+    },
+    {
+      "seed": 2718,
+      "index": 15,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 0,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 1,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 2,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 3,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 4,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 5,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 6,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 7,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 8,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 9,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 10,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 11,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 12,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 13,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 14,
+      "matched": true
+    },
+    {
+      "seed": 31415,
+      "index": 15,
+      "matched": true
+    }
+  ],
+  "coverage": "seeded differential",
+  "elapsed_seconds": 67.46300001499912
+}

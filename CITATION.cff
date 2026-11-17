@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use OptimizationBench, please cite it as below."
+title: "OptimizationBench: Can AI Agents Make Real Software Faster Without Breaking It?"
+type: software
+authors:
+  - given-names: "Vaibhav"
+    family-names: "Kumar"
+  - given-names: "Ibrahim"
+    family-names: "Sheikh"
+  - given-names: "Peter"
+    family-names: "Zhong"
+  - given-names: "Saurav"
+    family-names: "Joshi"
+  - given-names: "Patrick"
+    family-names: "Ma"
+  - given-names: "Robin"
+    family-names: "Newhouse"
+  - given-names: "Akshay"
+    family-names: "Budhkar"
+  - given-names: "Michele"
+    family-names: "Catasta"
+version: "1.0.0"
+date-released: "2026-11-16"
+license: Apache-2.0
+keywords:
+  - benchmark
+  - code optimization
+  - AI agents
+  - performance

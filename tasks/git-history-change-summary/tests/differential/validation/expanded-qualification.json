@@ -1,0 +1,82 @@
+{
+  "all_new_image_public_full_output_and_controls_passed": true,
+  "api_original_and_built_negative_passed": true,
+  "build_end": "2026-10-25T22:56:23.394138144Z",
+  "build_log_sha256": "4e7cd9eff8211425b6d604ca797e4821d20e621f294bd9a89ff5ca4a908abd5d",
+  "build_start": "2026-10-25T22:44:19.416064410Z",
+  "canonical_source_root": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "canonical_source_tree": "79a1f663a05401ad749f6116a4898e03f2388323",
+  "clean_build_context_commit": "9f149f8f3e680e26aeaddba667fd894e2d9dcbd5",
+  "clean_environment_only_build": true,
+  "discarded_maximum_probe": "Already completed before stop message; not used; no rerun or repetition/padding.",
+  "expected_outputs_regenerated_twice_byte_exact": true,
+  "family_counts": [
+    16384,
+    8192,
+    8192
+  ],
+  "global_distinct_commit_count": 32768,
+  "hard_minimum_seconds": 1,
+  "heldout_instances_created": 0,
+  "image": "sha256:60d0b356ce2ff6f18b4ce326e9cbae68d848e8e5870d911bea0819c8032de591",
+  "model_or_optimized_candidate_runs": 0,
+  "native_state_clean": true,
+  "new_corpus_AA_runs": 0,
+  "per_repository_counts": [
+    4096,
+    2048,
+    2048
+  ],
+  "preparation": {
+    "pack_index_files": 8,
+    "public_runs": 9,
+    "repositories": 4,
+    "timed": false,
+    "transport_bytes_per_run": 858420980
+  },
+  "public_repositories": [
+    "git",
+    "cargo",
+    "django",
+    "prettier"
+  ],
+  "qualification_status": "Correctness passed; expanded-corpus A/A NOT RUN, awaits review and explicit host-clear.",
+  "recorded_at": "2026-10-25T23:13:50.813157+00:00",
+  "repository_commit_count_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "reserved_repositories_unchanged": true,
+  "seven_seconds_was_planning_target_not_gate": true,
+  "single_run_sizing_only_seconds": [
+    14.313671805,
+    5.114118579,
+    6.35893373
+  ],
+  "source_pin": "a018953688f1b10bddf91bff8747068f5f4746a4",
+  "strict_fsck_new_repositories_passed_no_warnings": true,
+  "three_seed_fuzz_broken_shrink_two_replays_passed": true,
+  "unit_suites": {
+    "helper": {
+      "log_sha256": "873f0d6682dc8a9d2d9213062ba3b64c6222835ff33c199fed0833aeda8c7792",
+      "passed": true,
+      "skipped": 0,
+      "tests": 11
+    },
+    "judge": {
+      "log_sha256": "66728f567ba11220db338187695438da04e18da58a12ea0c2694bd6007d3e977",
+      "passed": true,
+      "skipped": 12,
+      "tests": 196
+    },
+    "tools": {
+      "log_sha256": "40612dbced045bbe50085ac853395587507bac06be179190da9741165f0516ae",
+      "passed": true,
+      "skipped": 10,
+      "tests": 144
+    }
+  },
+  "upstream_original_exact_identities": 139
+}

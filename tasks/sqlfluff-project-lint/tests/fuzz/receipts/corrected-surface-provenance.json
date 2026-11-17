@@ -1,0 +1,109 @@
+{
+  "extractor_revision": "9505ca9ddb6d4b80df70ff12046df4b7507f3213",
+  "metadata_revision": "9505ca9ddb6d4b80df70ff12046df4b7507f3213",
+  "upstream_commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+  "image": "sha256:cfec205d25d2f06c44445df781398264f6e8cf934a5c2ffa609acde9d595248f",
+  "config": {
+    "kind": "python",
+    "root": "runtime",
+    "packages": [
+      "sqlfluff"
+    ],
+    "interface": {
+      "documentation": [
+        "https://docs.sqlfluff.com/en/stable/reference/api.html"
+      ],
+      "documented_api": [
+        {
+          "name": "sqlfluff.core:Linter",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html"
+        },
+        {
+          "name": "sqlfluff.core:Lexer",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html"
+        },
+        {
+          "name": "sqlfluff.core:Parser",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html"
+        },
+        {
+          "name": "sqlfluff.core.config.fluffconfig:FluffConfig",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html"
+        },
+        {
+          "name": "sqlfluff.core.config.loader:load_config_string",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html"
+        },
+        {
+          "name": "sqlfluff.core.config.loader:load_config_file",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html"
+        },
+        {
+          "name": "sqlfluff.core.config.loader:load_config_resource",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html"
+        },
+        {
+          "name": "sqlfluff.core.config.loader:load_config_at_path",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html"
+        },
+        {
+          "name": "sqlfluff.core.config.loader:load_config_up_to_path",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/config.html"
+        },
+        {
+          "name": "sqlfluff.core.rules.base:*",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/rules.html"
+        },
+        {
+          "name": "sqlfluff.utils.functional.segments:*",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html"
+        },
+        {
+          "name": "sqlfluff.utils.functional.segment_predicates:*",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html"
+        },
+        {
+          "name": "sqlfluff.utils.functional.raw_file_slices:*",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html"
+        },
+        {
+          "name": "sqlfluff.utils.functional.raw_file_slice_predicates:*",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/functional.html"
+        },
+        {
+          "name": "sqlfluff.utils.reflow:ReflowSequence",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/reflow.html"
+        },
+        {
+          "name": "sqlfluff.utils.reflow.elements:ReflowPoint",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/reflow.html"
+        },
+        {
+          "name": "sqlfluff.utils.reflow.elements:ReflowBlock",
+          "documentation": "https://docs.sqlfluff.com/en/stable/reference/internals/reflow.html"
+        }
+      ],
+      "extension_points": [
+        {
+          "name": "sqlfluff.core.rules.base:BaseRule",
+          "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/rules.html"
+        },
+        {
+          "name": "sqlfluff.core.rules.crawlers:BaseCrawler",
+          "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/rules.html"
+        },
+        {
+          "name": "sqlfluff.core.plugin.hookspecs:PluginSpec",
+          "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/plugins.html"
+        },
+        {
+          "name": "sqlfluff.core.templaters.base:RawTemplater",
+          "documentation": "https://docs.sqlfluff.com/en/stable/guides/contributing/plugins.html"
+        }
+      ]
+    }
+  },
+  "report_sha256": "c4ff8b9e25a73c4f6268fc070195ea912e9a252b849b150d30b625228452d7a9",
+  "surface_record_count": 3897,
+  "mapping_status": "unmapped pending contract/precondition/generator inventory"
+}

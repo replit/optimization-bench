@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "mode": "buffer",
+      "preset": 6,
+      "extreme": false,
+      "check": 4,
+      "filter": 4,
+      "threads": 1,
+      "chunk": 1,
+      "out_chunk": 1,
+      "source": 6,
+      "other": 4,
+      "offset": 0,
+      "size": 0,
+      "mutation": 0,
+      "invalid": false,
+      "damage": "flip"
+    }
+  ]
+}

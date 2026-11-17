@@ -1,0 +1,6 @@
+{
+  "schema": "optimbench-public-input-packet-v1",
+  "mounts": [
+    "inputs/files"
+  ]
+}

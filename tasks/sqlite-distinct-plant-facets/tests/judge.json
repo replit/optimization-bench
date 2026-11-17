@@ -1,0 +1,91 @@
+{
+  "build_source_env": "SQLITE_SOURCE",
+  "calibration_max_age_seconds": 86400,
+  "case_roles": {
+    "public": {
+      "distinct-plant-facets-public": "correctness",
+      "batch-upsert-public": "correctness",
+      "mirror-vacuum-public": "correctness"
+    },
+    "heldout": {
+      "distinct-plant-facets-heldout": "correctness",
+      "batch-upsert-heldout": "correctness",
+      "mirror-vacuum-heldout": "correctness"
+    }
+  },
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "enabled": true,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "case_budget": 12,
+    "case_timeout_seconds": 30,
+    "time_cap_seconds": 600,
+    "memory": "4g"
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "minimum_pairs": 5,
+  "warmups": 1,
+  "memory": "16g",
+  "pids_limit": 512,
+  "noise_thresholds": {"max_steal": 0.01, "max_sibling_busy": 0.1, "max_throttled": 0.01},
+  "process_state": {"enabled": true, "kind": "native"},
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "kind": "composite",
+    "components": [
+      {"kind": "symbols", "files": ["objects/libsqlite3.a"], "dynamic": false},
+      {"kind": "declarations", "files": ["objects/sqlite3.h"], "language": "c"}
+    ]
+  },
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "public_dry_run_only": false,
+  "resident_protocol": true,
+  "source_path": "/app/sqlite",
+  "diagnostic_note": "Source-specific Intel/AMD public+held-out A/A is selected under the final v1.1 policy. Registered library callbacks and deep fuzz/mutation coverage remain unmeasured, not inherited passes or missing-hook score blockers.",
+  "qualification_notes": "Each original plant-key request is executed once per native batch. Independent complete outputs ×2 and disjointness must be evidenced; no sandbox A/A is authorized. Memory is reported, not a candidate correctness verdict.",
+  "upstream_gate": {
+    "command": ["python3", "/judge-task-tests/upstream.py"],
+    "report": "upstream.json",
+    "format": "identity-tests",
+    "timeout": 7200
+  },
+  "performance_units": {
+    "public": {
+      "ranked-documents-public": ["ranked-documents-public"],
+      "integrity-check-public": ["integrity-check-public"],
+      "tatoeba-create-index-public": ["tatoeba-create-index-public"],
+      "usgs-geojson-json-public": ["usgs-geojson-json-public"],
+      "storms-printf-report-public": ["storms-printf-report-public"],
+      "geonames-rtree-public": ["geonames-rtree-public"],
+      "decimal-ledger-public": ["decimal-ledger-public"],
+      "percentile-public": ["percentile-public"],
+      "fkey-cascade-public": ["fkey-cascade-public"],
+      "gtfs-departure-join-public": ["gtfs-departure-join-public"],
+      "ghcn-window-series-public": ["ghcn-window-series-public"]
+    },
+    "heldout": {
+      "ranked-documents-heldout": ["ranked-documents-heldout"],
+      "integrity-check-heldout": ["integrity-check-heldout"],
+      "tatoeba-create-index-heldout": ["tatoeba-create-index-heldout"],
+      "usgs-geojson-json-heldout": ["usgs-geojson-json-heldout"],
+      "storms-printf-report-heldout": ["storms-printf-report-heldout"],
+      "geonames-rtree-heldout": ["geonames-rtree-heldout"],
+      "decimal-ledger-heldout": ["decimal-ledger-heldout"],
+      "percentile-heldout": ["percentile-heldout"],
+      "fkey-cascade-heldout": ["fkey-cascade-heldout"],
+      "gtfs-departure-join-heldout": ["gtfs-departure-join-heldout"],
+      "ghcn-window-series-heldout": ["ghcn-window-series-heldout"]
+    }
+  }
+}

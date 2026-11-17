@@ -1,0 +1,36 @@
+{
+  "public_source_url": "https://data.gharchive.org/2020-03-16-14.json.gz",
+  "public_units": [
+    {
+      "path": "group-gharchive-public",
+      "batch": "group_gharchive_public",
+      "operation": "group-gharchive",
+      "sha256": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+      "bytes": 75624432,
+      "decoded_bytes": 570490215,
+      "decoded_sha256": "0c41bca3317d0881c9a6f16425ee743489553de74006e4137f35233b70b8fe98",
+      "expect_len": 8375829,
+      "expect_sha": "7a4ccaf495d3fdb8b80a3ae50a055a7e24fc44702ff6d2844bff0fb7176c4bf8"
+    },
+    {
+      "path": "csv-gharchive-public",
+      "batch": "csv_gharchive_public",
+      "operation": "csv-gharchive",
+      "sha256": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+      "bytes": 75624432,
+      "decoded_bytes": 570490215,
+      "decoded_sha256": "0c41bca3317d0881c9a6f16425ee743489553de74006e4137f35233b70b8fe98",
+      "expect_len": 15206681,
+      "expect_sha": "4a17a946a23450b8388e5a05e6937f33e25717c29effece5ede6366ae04f2868"
+    }
+  ],
+  "complete_independent_oracles": true,
+  "same_exact_eligibility_hours": true,
+  "different_days_same_publisher": true,
+  "cross_split_event_id_overlap": 0,
+  "repository_or_actor_disjointness_claimed": false,
+  "raw_event_redistribution_terms": "Unconfirmed. Fetch by pinned URL and SHA256.",
+  "old_inputs_references_and_membership_unchanged": true,
+  "expected_outputs": "Full stdout/stderr/status lengths and SHA256, not prefixes or samples.",
+  "private_membership_or_bodies_emitted": false
+}

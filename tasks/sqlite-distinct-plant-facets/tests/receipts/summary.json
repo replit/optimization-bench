@@ -1,0 +1,46 @@
+{
+  "task": "sqlite-distinct-plant-facets",
+  "library_source_modified": false,
+  "public_requests": 20855,
+  "heldout_requests": 12788,
+  "each_request_once": true,
+  "original_rows_conserved": 33643,
+  "overlap": {
+    "plant_ids": 0,
+    "country_groups": 0,
+    "complete_original_rows": 0,
+    "request_keys": 0
+  },
+  "native_exact_outputs_twice_each_scope": true,
+  "native_reference_origin": "fresh judge.build output",
+  "independent_original_row_result_reference_passed": true,
+  "all_original_2290_source_file_hashes_unchanged": true,
+  "upstream_selected_identities": 15676,
+  "upstream_selection_passed": true,
+  "interface_passed": true,
+  "state_passed": true,
+  "harbor_loader_passed": true,
+  "agent_trials": 0,
+  "timing_performed": false,
+  "minimum_unit_duration_verified": false,
+  "minimum_duration_owner": "GCP host, enforce >=1s without repetitions",
+  "public_aa_performed": false,
+  "heldout_aa_performed": false,
+  "qualified": false,
+  "claimable": false,
+  "pending": [
+    "GCP minimum/public A/A and heldout A/A",
+    "new comprehensive semantic/fault/mutation/resource fuzz admission evidence"
+  ],
+  "receipts_sha256": {
+    "distinct-input-freeze.json": "66e1ed9de08768d1b2f858d5ee51f2e7edd8c7a31efaf0e62630528275c73ea8",
+    "driver-invalid-request-checks.json": "08a0d5cf14bc8806932d585b4b157709ce72c49712f92bd3d3039d8656659ea4",
+    "exact-output-checks.json": "0c99782606725c7b052743a016c92134609b08d3cd526ad4a5b6eb7177e0533d",
+    "independent-input-audit.json": "354b916d9d3103a56f97b9aa6a72f175a11154dd4736b3d27114e32581c23a71",
+    "interface-check.json": "55b9206fabd986ef3f871dd054839bfa2519e6eb82233f02b629126e8bb378f0",
+    "native-build-receipt.json": "dcc17d15e1731c941a1424cb2649511f837631349f2997fb9efb63a1f2e7951b",
+    "source-and-loader-check.json": "57f399723fd4c4edc057201d6d501b7368329ecae188d8e5abce4620de743deb",
+    "state-check.json": "53f5ea9e9e2d708de5ee17f54fa9b1ecc689b7df4679e011b02d0b4866fe1392",
+    "upstream-selection.json.gz": "4d8672a48e51fb40dede2f3e622ae6953c8eefc52a7a82fdeb695eba8b4ade86"
+  }
+}

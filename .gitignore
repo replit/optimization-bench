@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.cache/
+.venv/
+.venv-host/
+.venv-portability/
+runs/
+artifacts/
+private-data/
+*.env
+
+# Operator-owned benchmark state belongs outside this checkout.
+/vault/
+/optimbench-devtools-state/
+
+# Private evaluator implementation belongs outside the public package.
+/evaluation/
+/results/v1.1/

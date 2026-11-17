@@ -1,0 +1,37 @@
+{
+  "task": "goldmark-gfm-html",
+  "upstream_commit": "9ac8030064518346e4c9d7847c85278c3a5244ee",
+  "source_staging_commit": "cdc681131c6756a770ad828b53f231876032439e",
+  "public_headers": [],
+  "native_translation_units": [
+    "_benchmark/cmark/cmark_benchmark.c"
+  ],
+  "native_explanation": "Only _benchmark/cmark/cmark_benchmark.c, a third-party cmark.h benchmark consumer; not Goldmark library code or public header.",
+  "cgo_source_files": [],
+  "header_consumer_matrix": {
+    "applicable": false,
+    "reason": "Pinned Goldmark module has no public C/C++ header or cgo API; public API is Go. Third-party cmark comparison consumer is outside the Goldmark API.",
+    "supported_c_cpp_dialects": [],
+    "scope_review": "Fresh pinned-source audit found no headers or cgo imports and only a third-party cmark benchmark consumer. This is not an API-completeness, CLI, race or native-load waiver.",
+    "independent_archive_sha256": "41b2ffc566812585d868c852b3c5fa3f3b69c61f2854337d33ad12e1c4d13486"
+  },
+  "upstream_support_evidence": {
+    "README.md": {
+      "sha256": "80b5c384c78d6a96002f23ef460e28046db52b78dfdbc84f212b602e088a00db"
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "1349cbaf6652c0c48a6d1951bd6abe441c44be17838bde64a5e0502a514807f7"
+    },
+    "Makefile": {
+      "sha256": "1f700157d6268952fd224ee4059c19e8822bf7bfc1e639ca4281e7883672f9f5"
+    },
+    "go.mod": {
+      "sha256": "e18ffb1f09e716c621483dfaa185a521786af5d85f6914860304aae61ba3b4d5"
+    },
+    "_benchmark/cmark/cmark_benchmark.c": {
+      "sha256": "d8aec818b16d284e2954e55bcbb4c8e3fc41cf191be383a401b1cbbe8b2bb469"
+    }
+  },
+  "go_module": "github.com/yuin/goldmark/v2, go 1.25",
+  "go_toolchain": "Pinned task golang 1.26.5 image"
+}

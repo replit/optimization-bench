@@ -1,0 +1,247 @@
+{
+  "contracts": {
+    "file_persistence": "LintedFile returned by public lint_string accepts encoding; public persist_tree writes fixes to owned files; UTF8 succeeds and ASCII Unicode output raises a stable encoding failure",
+    "persistent": "reuse a real public Linter; interleave explicit per-call FluffConfig dialect/rule/fix settings with fresh Linter instances and compare fresh-process oracles",
+    "read_failures": "public lint_paths accepts paths/processes/fix/apply_fixes; real missing/unreadable owned paths are observed, not mocked",
+    "returned_violations": "malformed SQL is a documented public input producing returned parse violations; all records and get_violations are observed without assuming exceptions",
+    "scope_limit": "only these registered public calls are covered; no arbitrary writer callback or complete API coverage is claimed"
+  },
+  "faults_are_OS_or_encoding_not_private_monkeypatches": true,
+  "format": "sqlfluff-rc-public-api-contract-evidence-v1",
+  "methods": {
+    "sqlfluff.core.linter.linted_file:LintedFile.fix_string": {
+      "definition_module": "sqlfluff.core.linter.linted_file",
+      "doc": "Obtain the changes to a path as a string.\n\nWe use the source mapping features of TemplatedFile\nto generate a list of \"patches\" which cover the non\ntemplated parts of the file and refer back to the locations\nin the original file.\n\nNB: This is MUCH FASTER than the original approach\nusing difflib in pre 0.4.0.\n\nThere is an important distinction here between Slices and\nSegments. A Slice is a portion of a file which is determined\nby the templater based on which portions of the source file\nare templated or not, and therefore before Lexing and so is\ncompletely dialect agnostic. A Segment is determined by the\nLexer from portions of strings after templating.",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        }
+      ]
+    },
+    "sqlfluff.core.linter.linted_file:LintedFile.get_violations": {
+      "definition_module": "sqlfluff.core.linter.linted_file",
+      "doc": "Get a list of violations, respecting filters and ignore options.\n\nOptionally now with filters.",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "rules"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "types"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "filter_ignore"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "filter_warning"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "warn_unused_ignores"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fixable"
+        }
+      ]
+    },
+    "sqlfluff.core.linter.linted_file:LintedFile.persist_tree": {
+      "definition_module": "sqlfluff.core.linter.linted_file",
+      "doc": "Persist changes to the given path.",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "suffix"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "formatter"
+        }
+      ]
+    },
+    "sqlfluff.core.linter.linter:Linter.lint_paths": {
+      "definition_module": "sqlfluff.core.linter.linter",
+      "doc": "Lint an iterable of paths.",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        },
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "paths"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fix"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "ignore_non_existent_files"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "ignore_files"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "processes"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "apply_fixes"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fixed_file_suffix"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fix_even_unparsable"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "retain_files"
+        }
+      ]
+    },
+    "sqlfluff.core.linter.linter:Linter.lint_string": {
+      "definition_module": "sqlfluff.core.linter.linter",
+      "doc": "Lint a string.\n\nReturns:\n    :obj:`LintedFile`: an object representing that linted file.",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "in_str"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fname"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fix"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "config"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "encoding"
+        }
+      ]
+    },
+    "sqlfluff.core.linter.linter:Linter.parse_string": {
+      "definition_module": "sqlfluff.core.linter.linter",
+      "doc": "Parse a string.",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        },
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "in_str"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "fname"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "config"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "encoding"
+        },
+        {
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "parse_statistics"
+        }
+      ]
+    },
+    "sqlfluff.core.linter.linting_result:LintingResult.as_records": {
+      "definition_module": "sqlfluff.core.linter.linting_result",
+      "doc": "Return the result as a list of dictionaries.\n\nEach record contains a key specifying the filepath, and a list of violations.\nThis method is useful for serialization as all objects will be builtin python\ntypes (ints, strs).",
+      "parameters": [
+        {
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        }
+      ]
+    }
+  },
+  "official_documentation": "https://docs.sqlfluff.com/en/stable/reference/api.html",
+  "public_export": "sqlfluff.core:Linter",
+  "source_files": {
+    "docs/source/reference/api.rst": {
+      "sha256": "f351327a1ab4d659ecd46fe8a16dc31a4b54c1ae88c224f0b98250ab3c952bc6",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/docs/source/reference/api.rst"
+    },
+    "src/sqlfluff/core/linter/linted_file.py": {
+      "sha256": "23019fc30326a979d95945a5613a683b07fec52a8b9eb787e3388ebd0e386388",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/src/sqlfluff/core/linter/linted_file.py"
+    },
+    "src/sqlfluff/core/linter/linter.py": {
+      "sha256": "541b38aa6b4c71f087a6faa3bb3f190f1fc8658afbd7d999c3b264cc0bb23bce",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/src/sqlfluff/core/linter/linter.py"
+    },
+    "src/sqlfluff/core/linter/linting_result.py": {
+      "sha256": "6ed9540e3bc3bb23e2a7f663025c03542dce0fb586f207cc83b7dbaef042ea65",
+      "source_url": "https://github.com/sqlfluff/sqlfluff/blob/0348222a3bcdb0226563f7349c5a39beb0641955/src/sqlfluff/core/linter/linting_result.py"
+    }
+  },
+  "upstream_commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+  "verdict_assignment": "frozen central judge.fuzzing_generic only"
+}

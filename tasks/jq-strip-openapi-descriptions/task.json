@@ -1,0 +1,18 @@
+{
+  "task_version": "1.0.0",
+  "code": "environment/workload/task.py",
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "contract": "Preserve original OpenAPI output bytes and supported jq behavior. All three CLI units compare complete stdout, stderr and exit status. Held-out GH Archive inputs are fetched outside Git. GH Archive event bodies are fetch-only and are not redistributed: no GH Archive event body or derived output body is committed.",
+  "example_count": 33,
+  "id": "jq-strip-openapi-descriptions",
+  "input_edition": "jq-gharchive-draft-20261029",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "language": "C",
+  "name": "jq",
+  "status": "qualification-in-progress",
+  "title": "Strip OpenAPI descriptions, stream GeoJSON and process GH Archive events",
+  "timed_surface": "public_cli",
+  "job": "Four equally weighted performance units share one jq build and image: the original native OpenAPI batch, GeoJSON feature streaming, complete-hour event grouping/counting/sorting, and complete-hour event-to-CSV conversion. The native unit contains 30 public documents; the three CLI units each consume one complete input. Downloads, gzip decoding and integrity checks occur before timing.\n\nThe image contains code and frozen metadata, not input bodies. Build guards read an authenticated public packet through transient read-only mounts; runtime setup supplies those same files read-only at `/app/workload/inputs/files` before execution. A bare image run without that packet fails closed. For setup, source export and separate public and held-out evaluation, follow the [public runtime packet guide](../../docs/public-runtime-packets.md) and the [judge guide](../../docs/judge.md). GH Archive event bodies and their derived outputs are fetch-only and not redistributed: the public and held-out hours are each downloaded from GH Archive at a pinned URL and SHA-256, outside the checkout.",
+  "heldout_readme_text": "Held-out data is partly stored and partly fetched. Nine OpenAPI specifications (four MIT, five Apache-2.0; their licence files are in `tests/heldout/references/`), one City of Toronto GeoJSON file (Open Government Licence \u2013 Toronto) and their ten expected outputs are stored with Git LFS under `tests/`, outside the agent image. The held-out GH Archive hour is fetch-only: verification downloads it from its pinned URL and checks its SHA-256 outside the repository, and only length and SHA-256 commitments of its outputs are stored."
+}

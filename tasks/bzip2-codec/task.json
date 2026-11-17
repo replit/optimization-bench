@@ -1,0 +1,30 @@
+{
+  "task_version": "1.0.0",
+  "code": "environment/workload/task.py",
+  "contract": "Byte-identical encoded stream and exact decoded original; retain CRCs, errors, full consumption and API behavior.",
+  "core_counts": [
+    1,
+    2,
+    4
+  ],
+  "development_entrypoint": "sh /app/workload/build.sh && /app/build/run",
+  "example_count": 253,
+  "id": "bzip2-codec",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "job": "Compress and decompress complete natural files at block-size settings 1 and 9; decode complete text archives in small-memory mode.",
+  "language": "C",
+  "measurement_boundary": "One protected native batch executes each distinct original codec operation once. Process startup, file I/O, allocation, checksums, finalization and flushed output are timed; container startup, input staging and host verification are excluded. A separate small-text-batch executes each of its complete text decodes once (75 public, 65 held-out); both units use one candidate codec build.",
+  "name": "bzip2",
+  "operations": [
+    "Streaming BZ2_bzCompress / BZ2_bzDecompress, fresh state per object, fixed 64 KiB I/O chunks",
+    "Complete text archive BZ2_bzDecompress, small=1, block size 9, 64 KiB I/O"
+  ],
+  "packaging_status": "public-task-private-judge",
+  "source_directory": "bzip2",
+  "status": "qualification-in-progress",
+  "timing": "Shared shim native process-start-to-exit protocol; no resident stop or result-export exclusion.",
+  "title": "Compress and decompress natural files with bzip2",
+  "readme_notes": "Each original public and held-out performance operation runs exactly once in one protected native process; the original individual operations and guards remain mandatory correctness-only cases. Native process startup, file I/O, allocation, CRCs, finalization and output flush are timed; input staging and authentication are not. Process startup may not exceed 2% of a unit. The small-text-batch unit decodes 75 public (65 held-out) complete block-9 text streams with small=1, grouped separately from the original batch and using the same codec build.",
+  "version": "1.0.8"
+}

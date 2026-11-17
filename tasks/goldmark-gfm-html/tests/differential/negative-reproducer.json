@@ -1,0 +1,2265 @@
+{
+  "task": "goldmark-gfm-html",
+  "seed": 1729,
+  "case": {
+    "kind": "api",
+    "sources": [
+      "# h\n"
+    ]
+  },
+  "baseline": {
+    "exit_code": 0,
+    "result": [
+      {
+        "mode": 0,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 1,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 2,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 3,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 4,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 5,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 6,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 7,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 8,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 9,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 10,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 11,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 12,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 13,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 14,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 15,
+        "operation": "reuse-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "fresh-0",
+        "output": "PGgxPmg8L2gxPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 16,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 17,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 18,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 19,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 20,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 21,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 22,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 23,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 24,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 25,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 26,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 27,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 28,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 29,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 30,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 31,
+        "operation": "reuse-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "fresh-0",
+        "output": "PGgxIGlkPSJoIj5oPC9oMT4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "mutated",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "mutated-after-interleave",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      }
+    ],
+    "stderr": "",
+    "leftovers": 0
+  },
+  "candidate": {
+    "exit_code": 0,
+    "result": [
+      {
+        "mode": 0,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 0,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 1,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 1,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 2,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 2,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 3,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 3,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 4,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 4,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 5,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 5,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 6,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 6,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 7,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 7,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 8,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 8,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 9,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 9,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 10,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 10,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 11,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 11,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 12,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 12,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 13,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 13,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 14,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 14,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 15,
+        "operation": "reuse-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "fresh-0",
+        "output": "PGgyPmg8L2gyPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 15,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 16,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 16,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 17,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 17,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 18,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 18,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 19,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 19,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 20,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 20,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 21,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 21,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 22,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 22,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 23,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 23,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 24,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 24,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 25,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 25,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 26,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 26,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 27,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 27,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 28,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 28,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 29,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 29,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 30,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 30,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      },
+      {
+        "mode": 31,
+        "operation": "reuse-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "fresh-0",
+        "output": "PGgyIGlkPSJoIj5oPC9oMj4K",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "mutated",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "mutated-after-interleave",
+        "output": "PGgzPmg8L2gzPgo=",
+        "error_type": "",
+        "error": ""
+      },
+      {
+        "mode": 31,
+        "operation": "writer-error",
+        "output": null,
+        "error_type": "*errors.errorString",
+        "error": "verifier writer failure"
+      }
+    ],
+    "stderr": "",
+    "leftovers": 0
+  },
+  "image": "optimbench-goldmark-diff:baseline"
+}

@@ -1,0 +1,2578 @@
+{
+  "build": {
+    "build_log_sha256": "ba81765c1e093ce5796d8a0aecf906db663adcc3b9fca476114f928cad7be782",
+    "library_flags": "-O2 -g -DNDEBUG",
+    "library_sha256": "e6b1695cbe3878fc82d87990df1ef3ba834ebf54947d8f4857c476c9f3ad5c27",
+    "probe_sha256": "9e4522212265ff7a7420506ef71e650a4a1094f9f9302fa60e03c5b0a084efd3"
+  },
+  "changes": [
+    {
+      "after_sha256": "035d1603c352a5c31df059b566c11d18c25957272f1bbd8af565fe11896032d2",
+      "before_sha256": "32b5377f7039cdd15b82bc0b09b04200a0891f847bdb02abb142f15c2faa3eee",
+      "path": "src/liblzma/lz/lz_encoder.c"
+    }
+  ],
+  "compiled": true,
+  "fresh_container_replay": false,
+  "id": "xz-lzma2-compress:unreported-owned-allocation",
+  "minimization": {
+    "input_bytes_after": 0,
+    "input_bytes_before": 131073,
+    "lower_input_bound": 0,
+    "preserved": [
+      "API",
+      "options",
+      "lifecycle",
+      "underreported-workspace"
+    ]
+  },
+  "minimized": [
+    {
+      "allocation_count": 21,
+      "case": {
+        "input_bytes": 0,
+        "input_chunk": 4096,
+        "mode": "raw-encode",
+        "output_chunk": 3072,
+        "preset": 0,
+        "threads": 2
+      },
+      "exit_code": 0,
+      "findings": [
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        }
+      ],
+      "peak_owned_bytes": 4919927,
+      "reason": null,
+      "transcript": "raw-encode-p0-n0-r0.jsonl",
+      "transcript_sha256": "e84b8b555d7df04ee4ab289b49526531c2460c70b30b92b76571e14c6f6f24a6",
+      "verdict": "contract_regression"
+    },
+    {
+      "allocation_count": 21,
+      "case": {
+        "input_bytes": 0,
+        "input_chunk": 4096,
+        "mode": "raw-encode",
+        "output_chunk": 3072,
+        "preset": 0,
+        "threads": 2
+      },
+      "exit_code": 0,
+      "findings": [
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        }
+      ],
+      "peak_owned_bytes": 4919927,
+      "reason": null,
+      "transcript": "raw-encode-p0-n0-r1.jsonl",
+      "transcript_sha256": "e84b8b555d7df04ee4ab289b49526531c2460c70b30b92b76571e14c6f6f24a6",
+      "verdict": "contract_regression"
+    }
+  ],
+  "non_equivalence_evidence": "Owned history allocation enlarged by 2097152 bytes while estimate is unchanged.",
+  "operator_class": "resource-reports",
+  "original": [
+    {
+      "allocation_count": 21,
+      "case": {
+        "input_bytes": 131073,
+        "input_chunk": 4096,
+        "mode": "raw-encode",
+        "output_chunk": 3072,
+        "preset": 0,
+        "threads": 2
+      },
+      "exit_code": 0,
+      "findings": [
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        }
+      ],
+      "peak_owned_bytes": 4919927,
+      "reason": null,
+      "transcript": "raw-encode-p0-n131073-r0.jsonl",
+      "transcript_sha256": "4233e0ec034551075f8dccb008228cd697421b92d9739010ecb8265f3aa6d0ba",
+      "verdict": "contract_regression"
+    },
+    {
+      "allocation_count": 21,
+      "case": {
+        "input_bytes": 131073,
+        "input_chunk": 4096,
+        "mode": "raw-encode",
+        "output_chunk": 3072,
+        "preset": 0,
+        "threads": 2
+      },
+      "exit_code": 0,
+      "findings": [
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 0,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 1,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "init",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "update",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        },
+        {
+          "category": "underreported-workspace",
+          "cycle": 2,
+          "observed_bytes": 4919927,
+          "phase": "finish",
+          "reported_bytes": 2855431,
+          "symbol": "lzma_raw_encoder_memusage"
+        }
+      ],
+      "peak_owned_bytes": 4919927,
+      "reason": null,
+      "transcript": "raw-encode-p0-n131073-r1.jsonl",
+      "transcript_sha256": "4233e0ec034551075f8dccb008228cd697421b92d9739010ecb8265f3aa6d0ba",
+      "verdict": "contract_regression"
+    }
+  ],
+  "reviewed_by": null,
+  "source_sha256": "4626abd1f70497b0b194fa2f3625045e7e9adf47f69c1a01bb80e5c0b6f58f0e",
+  "status": "killed-in-local-control-trial"
+}

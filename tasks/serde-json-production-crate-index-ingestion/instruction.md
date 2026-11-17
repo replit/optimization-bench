@@ -1,0 +1,49 @@
+# Make serde_json faster
+
+## Goal
+Reduce the wall-clock time of the workload below while preserving every observable result under the stated output contract.
+
+## Setup
+8 CPUs, 16 GiB memory, no network access, and a 7,200-second agent timeout (2 hours). The source you leave in the editable paths when time runs out is what gets evaluated.
+
+## Workload
+Two units are timed. Each is one resident process that handles every selected file exactly once, without repeated copies or padding. In both, all file bytes are read before timing; process startup, disk reads, complete-result export and comparison are outside the measured region, and no parsing or serialization may be moved into export.
+
+A registry metadata service ingests complete original Rust crate histories through the crates-index typed parser and serializes every complete returned `Crate`. This unit's public set contains 20,999 distinct histories totaling 1,073,774,126 input bytes. Its measured region includes `Crate::from_slice`, the unchanged downstream deduplication, full serialization into owned memory and dropping each parsed value. Its structured-JSON comparator ignores only object-key order and escape spelling; types, fields, values, strings, integers, booleans, nulls, and array/version order must be preserved.
+
+A GeoJSON service deserializes complete FeatureCollections into a typed RFC 7946 schema through `serde_json::Deserializer::from_slice` and `end()`, writing every coordinate and property into one owned buffer per file. This unit's public set contains 207 distinct files totaling 736,395,237 input bytes. Output buffers are allocated before timing; each file's parse is measured. Results are compared as exact bytes, including every coordinate's f64 bit pattern.
+
+Preserve all public APIs, features, errors and ownership behavior beyond the typed schemas used here. The supplied manifests, schemas, downstream configuration and feature selection remain fixed.
+
+## What you may edit
+In `/app/serde-json`, only `.rs` files under `src` are editable. Limits are 74 files and 1,101,534 bytes. All other paths are protected, including manifests, locks, build settings, dependencies, tests, fixtures, snapshots, drivers and input files. Add no dependencies. Existing attribution must remain intact.
+
+## Build and check
+The image contains the pinned source and dependencies; the authenticated public input files are supplied read-only at `/app/workload/inputs/files` before the offline environment starts, and input bodies are not stored in the image. These commands rebuild the candidate and check its public behavior and upstream tests; public output checks do not report evaluation timings.
+
+```sh
+sh /app/workload/build.sh /app/build
+/app/build/run
+cd /app/serde-json && cargo test --all-targets --offline --locked
+```
+
+The public runner exposes complete result checks for the declared inputs. The evaluator compares complete results under each unit's comparator, not a subset of fields.
+
+## How it is evaluated
+A separate clean environment rebuilds your editable source, checks the edit scope, runs the project's tests, and compares outputs on public inputs and hidden inputs of the same kind using the contract above. It then times the original and your version on the hidden inputs, checking every output. Your score is a conservative estimate of the wall-clock speedup on the hidden inputs; when there are several timed units, each counts equally. Total CPU time and peak memory are reported but not scored.
+
+## You may
+- Change any code in the editable paths, including algorithms, data structures and internal interfaces.
+- Add to the public interface, as long as every existing use keeps working.
+- Use all 8 CPUs and 16 GiB, as long as results do not depend on how many CPUs are available.
+
+## Rules
+- Preserve all supported behavior, validation, errors and the public interface; compatible additions are allowed.
+- Do not modify, remove or weaken existing tests. Changes outside the editable paths are ignored.
+- No caching across calls or processes, no input or evaluator recognition, no precomputed results, and no delegation to other libraries or programs.
+- Do not change process-wide settings, including GC, allocator, environment, signal handlers, locale, working directory, resource limits or CPU affinity.
+- When a public call returns (or the program exits, for command-line workloads), nothing it started may still be running.
+- Do not change the workload's fixed settings, flags, inputs, operation order or measurement boundaries. Do not defer required work beyond the measured operation.
+- Results must be the same on every run, on any number of CPUs, and across repeated calls in the same process.
+- Overlapping or aliased arguments, and short or failed reads and writes, must behave as in the original.
+- No memory errors, undefined behavior or crashes, including on valid inputs the workload does not use.

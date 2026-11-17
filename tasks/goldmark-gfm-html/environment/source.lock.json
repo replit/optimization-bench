@@ -1,0 +1,85 @@
+{
+  "acquisition": "environment/prepare.py; URL+SHA256 acquisition outside repository and zip",
+  "dependencies": [
+    {
+      "bytes": 8041,
+      "path": "github.com/yuin/goldmark-astquery/@v/v1.0.1.zip",
+      "sha256": "1cb861113a862329232c6439086c6838ea1cfb9a93da74e1a8deaa0161463349",
+      "url": "https://proxy.golang.org/github.com/yuin/goldmark-astquery/@v/v1.0.1.zip"
+    },
+    {
+      "bytes": 96,
+      "path": "github.com/yuin/goldmark-astquery/@v/v1.0.1.mod",
+      "sha256": "3f01ae46fb15758bc21e8493a9852ce4076e922b4a746b19bcdfd6f7d7a982b2",
+      "url": "https://proxy.golang.org/github.com/yuin/goldmark-astquery/@v/v1.0.1.mod"
+    },
+    {
+      "bytes": 198,
+      "path": "github.com/yuin/goldmark-astquery/@v/v1.0.1.info",
+      "sha256": "0e57b16c69396b9691156b531ef3b432ff16bf27d383eaad67b04d04f308876b",
+      "url": "https://proxy.golang.org/github.com/yuin/goldmark-astquery/@v/v1.0.1.info"
+    },
+    {
+      "bytes": 7,
+      "content_utf8": "v1.0.1\n",
+      "path": "github.com/yuin/goldmark-astquery/@v/list",
+      "sha256": "145aabe1106cd123b7123194b94bcf8bff4442caf1c5336c3e2c9c671f4895ca"
+    },
+    {
+      "bytes": 34425,
+      "path": "mvdan.cc/xurls/v2/@v/v2.6.0.zip",
+      "sha256": "5f2c3f53bfadabad9522412f2ea52412f3629f11753877db975f8e23dc21555f",
+      "url": "https://proxy.golang.org/mvdan.cc/xurls/v2/@v/v2.6.0.zip"
+    },
+    {
+      "bytes": 264,
+      "path": "mvdan.cc/xurls/v2/@v/v2.6.0.mod",
+      "sha256": "72a71fb34705ad6a2c99abeda0286b676cc9587177ae782c35a1c9a2ee0b786f",
+      "url": "https://proxy.golang.org/mvdan.cc/xurls/v2/@v/v2.6.0.mod"
+    },
+    {
+      "bytes": 187,
+      "path": "mvdan.cc/xurls/v2/@v/v2.6.0.info",
+      "sha256": "5dc6477fd0c3120e0327392cb739fab5d8292663c996e06d8d6c697953b3cf48",
+      "url": "https://proxy.golang.org/mvdan.cc/xurls/v2/@v/v2.6.0.info"
+    },
+    {
+      "bytes": 7,
+      "content_utf8": "v2.6.0\n",
+      "path": "mvdan.cc/xurls/v2/@v/list",
+      "sha256": "767819852c0b3df5ed8fdd884092a63abdc0706f719478c5beae47c9011c97fb"
+    },
+    {
+      "bytes": 23948,
+      "path": "mvdan.cc/xurls/@v/v1.1.0.zip",
+      "sha256": "398cf7b88ae8b88d2e333af7acf1dbca243dad382c71d8d7fc773cb234d54189",
+      "url": "https://proxy.golang.org/mvdan.cc/xurls/@v/v1.1.0.zip"
+    },
+    {
+      "bytes": 22,
+      "path": "mvdan.cc/xurls/@v/v1.1.0.mod",
+      "sha256": "76c8a715b0119946fcb73d9a6e31539c5fffb7157ca76b1b160c092578fb8a45",
+      "url": "https://proxy.golang.org/mvdan.cc/xurls/@v/v1.1.0.mod"
+    },
+    {
+      "bytes": 50,
+      "path": "mvdan.cc/xurls/@v/v1.1.0.info",
+      "sha256": "d6329764aad1ff9bcec0508cc736b15f8cfdc2823d978b1970ff77f6d13afd45",
+      "url": "https://proxy.golang.org/mvdan.cc/xurls/@v/v1.1.0.info"
+    },
+    {
+      "bytes": 7,
+      "content_utf8": "v1.1.0\n",
+      "path": "mvdan.cc/xurls/@v/list",
+      "sha256": "6bf25061d3caea72d34f961997d35aca8c8d960aaddac2413516882e6706c97e"
+    }
+  ],
+  "repository": "https://github.com/yuin/goldmark",
+  "schema_version": 1,
+  "upstream": {
+    "bytes": 351093,
+    "commit": "9ac8030064518346e4c9d7847c85278c3a5244ee",
+    "sha256": "41b2ffc566812585d868c852b3c5fa3f3b69c61f2854337d33ad12e1c4d13486",
+    "url": "https://codeload.github.com/yuin/goldmark/tar.gz/9ac8030064518346e4c9d7847c85278c3a5244ee"
+  }
+}

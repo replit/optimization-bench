@@ -1,0 +1,10 @@
+{
+  "base": "ubuntu@sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944",
+  "distribution": "retained local OCI layout and Docker tag only; no registry publication",
+  "image": "optimbench/jq-strip-openapi-descriptions@sha256:9052ad2241c561f2c3735e70cf0b666476aae9ab4d30440eba530b21c72cb21c",
+  "image_digest": "sha256:9052ad2241c561f2c3735e70cf0b666476aae9ab4d30440eba530b21c72cb21c",
+  "image_id": "sha256:0792ce8669721a4006e5e9d2e95837e644a7d543252ce659bedfbccc84281549",
+  "local_docker_tag": "optimbench/jq-strip-openapi-descriptions:jq-dev-20261023",
+  "platform": "linux/amd64",
+  "schema_version": 1
+}

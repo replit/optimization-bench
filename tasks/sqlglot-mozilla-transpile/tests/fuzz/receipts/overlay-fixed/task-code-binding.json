@@ -1,0 +1,13 @@
+{
+  "format": "optimbench-fuzz-v1",
+  "scope": "Task code used for final approved overlay smoke",
+  "sha256": {
+    "adapter.py": "72c6b4a348d0a041fd03172916448295e192fdede406d461d5c5a6edd9d7144a",
+    "coverage_guide.py": "a0af552ad282dfb3b6c7589fe6f4f34b4f7dd3415aa0486bcd1ac2f2b538baa1",
+    "driver.py": "5f9e419d789e68a60f8b3ccdfd2f8fb84bddcf105349708dbb569bd3bf2ef3d9",
+    "instrumentation_smoke.py": "ae933b9e0fd850b2fa298751caace86dca5a278b5a5f693406afdcddee4249be",
+    "property_generate.py": "bce64635422581849f63b6d76de02b330f509d11f0d4ffddecaccb6744d3d41b",
+    "sample-case.json": "20c644c1726e31461a8f75e5feedf0fc3269e6ba12592a13af4f4a79923b4596",
+    "surface.json": "bae4df2edec21b51b3b11db5c9e565c4cb0ec0317f770633bdc45b4581fccfb0"
+  }
+}

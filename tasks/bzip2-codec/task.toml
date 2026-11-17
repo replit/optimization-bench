@@ -1,0 +1,44 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/bzip2/blocksort.c" }, { source = "/app/bzip2/huffman.c" }, { source = "/app/bzip2/crctable.c" }, { source = "/app/bzip2/randtable.c" }, { source = "/app/bzip2/compress.c" }, { source = "/app/bzip2/decompress.c" }, { source = "/app/bzip2/bzlib.c" }, { source = "/app/bzip2/bzlib_private.h" }]
+
+[task]
+name = "optimbench/bzip2-codec"
+version = "1.0.0"
+description = "Compress and decompress complete natural files at block-size settings 1 and 9."
+keywords = ["optimbench", "performance", "library-optimization"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "9331e90397f09c942bc608770ed306c2c9168062"
+baseline_git_tree = "5844823ad461bc44b84b8ce5cc9da79c2ac2048e"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "bzip2"
+language = "C"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = false
+verifier_ready = false
+
+[verifier]
+timeout_sec = 3600.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+network_mode = "no-network"
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:bzip2-codec-1.0.0@sha256:439994885b52576940f66071414097dcf9cc6468b6020d4fcb25f3b809d30138"
+network_mode = "no-network"
+build_timeout_sec = 7200.0
+cpus = 8
+memory_mb = 16384

@@ -1,0 +1,192 @@
+{
+  "build_source_env": "NUMPY_SOURCE",
+  "calibration_max_age_seconds": 86400,
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "enabled": true,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "case_budget": 12,
+    "case_timeout_seconds": 30,
+    "time_cap_seconds": 600,
+    "memory": "4g"
+  },
+  "fixed_workload_threads": 1,
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "pids_limit": 512,
+  "process_state": {
+    "enabled": true,
+    "kind": "python",
+    "representative_operation": {
+      "module": "numpy",
+      "root": "/app/build/site",
+      "script": "differential/representative.py"
+    }
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_dry_run_only": false,
+  "public_interface": {
+    "kind": "python",
+    "packages": [
+      "numpy"
+    ],
+    "root": "site"
+  },
+  "relative_ci_half_width": 0.02,
+  "resident_protocol": true,
+  "review_required": false,
+  "qualification_notes": "Provisionally qualified on 2026-10-26 with rebuilt-original references, exact public/heldout controls, differential/interface/state/full-upstream gates and passing distinct-unit A/A in both scopes. Public: 18 pairs, 2.98657 pp CI spread; heldout: 16 pairs, 1.61026 pp. Receipts and infrastructure-recovery disclosure are in tests/receipts/qualification-2026-10-26. Host is unregistered: claimable remains false. Harbor 0.24 loader passed; no Harbor agent trial or registered calibration is claimed.",
+  "source_path": "/app/numpy",
+  "upstream_gate": {
+    "command": [
+      "/usr/bin/env",
+      "PATH=/app/build/site/bin:/usr/local/bin:/usr/bin:/bin",
+      "python3",
+      "-m",
+      "pytest",
+      "--pyargs",
+      "numpy",
+      "-n",
+      "8"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OPTIMBENCH_IMPORT_ROOT": "/app/build/site",
+      "OPTIMBENCH_PACKAGE": "numpy",
+      "OPTIMBENCH_REPORT": "/scratch/upstream.json",
+      "NPY_AVAILABLE_MEM": "2GB",
+      "PYTEST_PLUGINS": "gate_pytest",
+      "PYTHONPATH": "/app/build/site:/judge-controls"
+    },
+    "format": "pytest",
+    "report": "upstream.json",
+    "timeout": 3600
+  },
+  "warmups": 1,
+  "case_roles": {
+    "public": {
+      "natural-workload-warm-batch": "performance",
+      "taxi-2023-01--small-table": "correctness",
+      "taxi-2023-07--small-table": "correctness",
+      "taxi-2023-03--small-table": "correctness",
+      "taxi-2023-04--small-table": "correctness",
+      "taxi-2023-05--small-table": "correctness",
+      "taxi-2023-09--small-table": "correctness",
+      "taxi-2023-10--small-table": "correctness",
+      "taxi-2023-11--small-table": "correctness",
+      "electricity-2012-block1--strided-subset": "correctness",
+      "electricity-2012-block2--strided-subset": "correctness",
+      "generic-cube--time-quantile-maps": "correctness",
+      "generic-cube--transposed-time-view": "correctness",
+      "generic-cube--spatial-median": "correctness",
+      "generic-cube--strided-grid": "correctness",
+      "generic-cube--global-tails": "correctness",
+      "upstream-style-vector--quartiles": "correctness",
+      "upstream-style-table--columns": "correctness",
+      "correctness-linear-not-nearest--check": "correctness",
+      "correctness-repeated-unsorted-q--check": "correctness",
+      "correctness-nan-propagation--check": "correctness",
+      "correctness-singletons--check": "correctness",
+      "correctness-signed-zeros--check": "correctness",
+      "correctness-tuple-keepdims--check": "correctness",
+      "correctness-scalar-q--check": "correctness",
+      "correctness-tuple-keepdims--negative-stride": "correctness",
+      "interp-equalize": "performance",
+      "busday-calendar": "performance",
+      "random-dists": "performance",
+      "genfromtxt-catalog": "correctness",
+      "loadtxt-csv": "performance",
+      "datetime-iso": "performance",
+      "float-format": "performance"
+    },
+    "heldout": {
+      "heldout-natural-workload-warm-batch": "performance",
+      "taxi-2024-01--small-table": "correctness",
+      "taxi-2024-07--small-table": "correctness",
+      "taxi-2024-03--small-table": "correctness",
+      "taxi-2024-05--small-table": "correctness",
+      "taxi-2024-09--small-table": "correctness",
+      "taxi-2024-11--small-table": "correctness",
+      "electricity-2014-block1--strided-subset": "correctness",
+      "electricity-2014-block2--strided-subset": "correctness",
+      "weather-2018--strided-grid": "correctness",
+      "weather-2019--strided-grid": "correctness",
+      "weather-2022--strided-grid": "correctness",
+      "weather-2023--strided-grid": "correctness",
+      "heldout-interp-equalize": "performance",
+      "heldout-busday-calendar": "performance",
+      "heldout-random-dists": "performance",
+      "heldout-strings-text": "correctness",
+      "heldout-genfromtxt-catalog": "correctness",
+      "heldout-loadtxt-csv": "performance",
+      "heldout-datetime-iso": "performance",
+      "heldout-float-format": "performance"
+    }
+  },
+  "performance_units": {
+    "public": {
+      "warm-batch": [
+        "natural-workload-warm-batch"
+      ],
+      "interp-equalize": [
+        "interp-equalize"
+      ],
+      "busday-calendar": [
+        "busday-calendar"
+      ],
+      "random-dists": [
+        "random-dists"
+      ],
+      "loadtxt-csv": [
+        "loadtxt-csv"
+      ],
+      "datetime-iso": [
+        "datetime-iso"
+      ],
+      "float-format": [
+        "float-format"
+      ]
+    },
+    "heldout": {
+      "warm-batch": [
+        "heldout-natural-workload-warm-batch"
+      ],
+      "interp-equalize": [
+        "heldout-interp-equalize"
+      ],
+      "busday-calendar": [
+        "heldout-busday-calendar"
+      ],
+      "random-dists": [
+        "heldout-random-dists"
+      ],
+      "loadtxt-csv": [
+        "heldout-loadtxt-csv"
+      ],
+      "datetime-iso": [
+        "heldout-datetime-iso"
+      ],
+      "float-format": [
+        "heldout-float-format"
+      ]
+    }
+  },
+  "qualification_protocol": "distinct-input-units-eight-core-rmit-aa-v1"
+}

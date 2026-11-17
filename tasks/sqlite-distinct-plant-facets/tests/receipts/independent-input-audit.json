@@ -1,0 +1,29 @@
+{
+  "source_sha256": "fad42609630778a3eaa696888011d6a08430c930ace4d2d7128ba5f2902bdd18",
+  "original_rows_conserved": 33643,
+  "all_derived_values_audited_against_original": true,
+  "scopes": {
+    "public": {
+      "rows": 20855,
+      "country_groups": 78,
+      "source_values_and_schema_exact": true,
+      "requests_unique_and_cover_every_derived_row_once": true,
+      "membership_sha256": "325def4564a809983514f17a8ef6d6deb0ba9dfb0703a5ec2afa726dbf7b8e13"
+    },
+    "heldout": {
+      "rows": 12788,
+      "country_groups": 89,
+      "source_values_and_schema_exact": true,
+      "requests_unique_and_cover_every_derived_row_once": true,
+      "membership_sha256": "e50c81ebd1a0a46933547cbc9b85642eed28fa74dfef4fa6c7afb18820863f6a"
+    }
+  },
+  "overlap": {
+    "plant_ids": 0,
+    "country_groups": 0,
+    "complete_source_rows": 0,
+    "request_keys": 0
+  },
+  "timing_performed": false,
+  "qualified": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "description": "Every packaged task; payloads may be pending.",
+  "tasks": [
+    "black-project-format",
+    "bzip2-codec",
+    "git-history-change-summary",
+    "goldmark-gfm-html",
+    "jq-strip-openapi-descriptions",
+    "numpy-quantile",
+    "ruff-project-lint",
+    "serde-json-production-crate-index-ingestion",
+    "sqlfluff-project-lint",
+    "sqlfmt-cli",
+    "sqlglot-mozilla-transpile",
+    "sqlite-distinct-plant-facets",
+    "terser-minify",
+    "xz-lzma2-compress"
+  ]
+}

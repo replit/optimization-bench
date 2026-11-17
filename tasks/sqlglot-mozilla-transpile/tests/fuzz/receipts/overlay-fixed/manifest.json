@@ -1,0 +1,18 @@
+{
+  "framework_commit": "297e2d3f53aad039deab9af51a133960737986ea",
+  "scope": "Actual approved overlay smoke, not candidate or full campaign qualification",
+  "sha256": {
+    "atheris-discovery.json.gz": "4949cf60b1edd4be2e7c7c692fc857574fde3eb14a1e4ea6597ad1249c4a868a",
+    "build-receipt.json": "8259535de0d4d8591b21e394bd52d93904f9c8a6832787d289d44a327e3e69fa",
+    "build.log": "4765d4032bfc61bb9dda9780ec18b5b0330c92fcb7436c30a3938a224c0c3653",
+    "capabilities.json": "6d23ddd8bd37d0df4a9d151e9b1f22a7a0f2ab96630cb2fe6a08ea732ff07dc7",
+    "coverage-normalized.json.gz": "e43bc98ea7c7a99988280f3ed953083144a854d2668da4b185896fe1e9eb57a1",
+    "coverage-raw.json.gz": "e83b76d231bc0729020a999f8dff92dace92579ccbe040fe6a899de5bff24467",
+    "coverage-receipt.json": "5a93e49c4a89616c749d1198a0a0bb9ac1ca72b013317fd8fb150d75827c0237",
+    "image.json": "a97efa89e5f4cf6a5ecc60f5ebb6b819626f6d1ca12ace02dc82427cd6077239",
+    "property.json.gz": "2040806182ad1dca1fbda00247f2b2513138327f0ef2b6570a9a261961f2263d",
+    "steps.json": "f8e0f83b490d1a7438fa97770f841c1524623b620da0534c9313dfc8da0b0be4",
+    "summary.json": "b99438e40d5f6a204dac5977da512cb452870d4928aae8cde0e4acd7d9062d8a",
+    "task-code-binding.json": "ad92983b44e04446297253294f9fc0eeff318ee258add939e4209a5a7dd7e938"
+  }
+}

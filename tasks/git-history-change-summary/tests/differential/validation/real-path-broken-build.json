@@ -1,0 +1,42 @@
+{
+  "build_sha256": "79b189600e7ded10f9472137629bf0c5cb9bfd23d7dc90de6f1e89a2f8768aa9",
+  "claimable": false,
+  "compiler_cache_seed": null,
+  "cpuset": "0-7",
+  "executor": "shared DockerExecutor; source admission, not a timing sample",
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "source_sha256": "a4d090fed92c97750977c9913af469e767099a9016a3ed0416cc0ba6663cb4e8",
+  "steps": [
+    {
+      "exit_code": 0,
+      "leftovers": [],
+      "telemetry": {
+        "container_prepare": {
+          "argv": [
+            "/app/workload/guards/warm_git_objects.py",
+            "--steps",
+            "/judge-steps.json",
+            "--inputs",
+            "/app/workload/inputs"
+          ],
+          "duration_ns": 38671025,
+          "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+          "exit_code": 0,
+          "leftovers": [],
+          "stderr_base64": "",
+          "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+          "timed": false
+        },
+        "cpu.stat": "usage_usec 183182139\nuser_usec 152923205\nsystem_usec 30258934\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+        "execution_protocol": "process",
+        "exit_observation": {
+          "fallback_reason": null,
+          "method": "pidfd-poll"
+        },
+        "leftover_count": 0,
+        "memory.peak": "1349017600\n"
+      }
+    }
+  ],
+  "task": "git-history-change-summary"
+}

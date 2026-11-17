@@ -1,0 +1,243 @@
+{
+  "format": "optimbench-contract-control-catalog-v1",
+  "audit_base": "9a3b5a2de6",
+  "owner_brief": "ccdbc9def21c42682e2f15a92ad8f7c8e85210c7",
+  "qualification_status": "undertested",
+  "controls": [
+    {
+      "id": "sqlglot-private-malformed-join",
+      "task": "sqlglot-mozilla-transpile",
+      "kind": "must-not-flag",
+      "surface_id": "sqlglot.parser.Parser._implicit_unnests_to_explicit",
+      "precondition_id": "exclude-private-helper-and-missing-join-target",
+      "recipe": [
+        "from sqlglot import exp",
+        "from sqlglot.dialects.bigquery import BigQuery",
+        "tree = exp.select('*').from_('t')",
+        "tree.set('joins', [exp.Join()])",
+        "BigQuery().parser()._implicit_unnests_to_explicit(tree)"
+      ],
+      "contract_evidence": {
+        "source_commit": "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76",
+        "archive_sha256": "d553b6eddad6e7bdeb55b05a54e722e230b3a0cf2c3ce06cdd8558677d5dadd9",
+        "path": "sqlglot/parser.py",
+        "lines": [4336, 4343],
+        "invalid_state": "exp.Join() has this == None, not a valid parsed Join target",
+        "source": "Contract-only reproducer from task owner; independently replayed pinned public source"
+      },
+      "expected": {
+        "admission": "rejected",
+        "baseline_calls": 0,
+        "candidate_calls": 0,
+        "oracle_calls": 0,
+        "candidate_verdict": null
+      },
+      "integration_status": "real-shared-controller-spies; pending-task-adapter-precondition"
+    },
+    {
+      "id": "sqlglot-public-valid-ast",
+      "task": "sqlglot-mozilla-transpile",
+      "kind": "must-detect",
+      "surface_id": "sqlglot.parse_one",
+      "precondition_id": "parser-produced-valid-select",
+      "input": {"sql": "SELECT 1 AS a", "read": "bigquery", "write": "duckdb"},
+      "mutation": "Change the generated SQL semantic numeric literal from 1 to 2 in a disposable pristine build",
+      "expected": {"admission": "admitted", "oracle_equal": false, "fresh_replays": 2},
+      "integration_status": "real-shared-controller-positive; pending-task-adapter-mutant"
+    },
+    {
+      "id": "sqlglot-public-parser-error",
+      "task": "sqlglot-mozilla-transpile",
+      "kind": "must-detect",
+      "surface_id": "sqlglot.parse_one",
+      "precondition_id": "documented-malformed-sql-error-domain",
+      "input": {"sql": "SELECT (", "read": "bigquery"},
+      "mutation": "Change ParseError type or its contractually promised message",
+      "expected": {"admission": "admitted", "oracle_equal": false},
+      "contract_evidence": "tasks/sqlglot-mozilla-transpile/instruction.md#contract explicitly preserves exception type and message",
+      "integration_status": "real-shared-controller-error-pairs; pending-task-adapter-precondition"
+    },
+    {
+      "id": "serde-writer-call-partition",
+      "task": "serde-json-production-crate-index-ingestion",
+      "kind": "must-not-flag",
+      "surface_id": "serde_json::to_writer",
+      "difference": "Different call counts/chunk diagnostics, identical outcome and accepted bytes",
+      "expected": {"oracle_equal": true},
+      "integration_status": "existing-adapter-unit-control"
+    },
+    {
+      "id": "serde-writer-contractual-fields",
+      "task": "serde-json-production-crate-index-ingestion",
+      "kind": "must-detect",
+      "surface_id": "serde_json::to_writer",
+      "difference": "Changed accepted bytes, error category/I/O kind or panic presence",
+      "expected": {"oracle_equal": false},
+      "integration_status": "existing-adapter-unit-control"
+    },
+    {
+      "id": "numpy-storage-order-and-tolerance",
+      "task": "numpy-quantile",
+      "kind": "must-not-flag",
+      "surface_id": "numpy.quantile",
+      "difference": "Equivalent C/Fortran storage or float64 result variation inside protected 8eps tolerance; matching NaNs",
+      "expected": {"oracle_equal": true},
+      "integration_status": "protected-comparator-unit-control"
+    },
+    {
+      "id": "numpy-shape-dtype-nan-and-beyond-tolerance",
+      "task": "numpy-quantile",
+      "kind": "must-detect",
+      "surface_id": "numpy.quantile",
+      "difference": "Changed shape/dtype, finite versus NaN, or outside protected tolerance",
+      "expected": {"oracle_equal": false},
+      "integration_status": "protected-comparator-unit-control"
+    },
+    {
+      "id": "joined-transient-worker",
+      "task": "*",
+      "kind": "must-not-flag",
+      "difference": "Worker exists during a supported call and is joined before the contractual lifecycle boundary",
+      "expected": {"candidate_contract_failure": false},
+      "integration_status": "live-thread-canonical-controller-unit-control; pending-task-lifecycle-campaign"
+    },
+    {
+      "id": "surviving-worker-or-fd",
+      "task": "*",
+      "kind": "must-detect",
+      "difference": "Candidate-created worker/fd survives the contractual cleanup boundary",
+      "expected": {"candidate_contract_failure": true},
+      "integration_status": "live-thread-and-fd-canonical-controller-unit-control; pending-task-lifecycle-campaign"
+    },
+    {
+      "id": "memory-report-only",
+      "task": "*",
+      "kind": "must-not-flag",
+      "difference": "High per-unit peak-memory ratio or unavailable comparable peak metric, without other failures",
+      "expected": {"memory_verdict_impact": false},
+      "integration_status": "real-canonical-decision-unit-control; pending-task-peak-measurement"
+    },
+    {
+      "id": "header-supported-two-tu",
+      "task": "*",
+      "kind": "must-not-flag",
+      "difference": "Unchanged public header with a documented legal two-TU consumer in supported language/feature cells",
+      "expected": {"compile_each": "success", "link_together": "success"},
+      "integration_status": "real-framework2-runner-control; pending-task-inventory"
+    },
+    {
+      "id": "header-gnu89-inline-definitions",
+      "task": "*",
+      "kind": "must-detect",
+      "difference": "Disposable prototype-to-inline consumer header mutant compiles both TUs but fails GNU89 combined link; C99 with fixed external library succeeds",
+      "required_evidence": "Real task GNU89 support must be documented independently; synthetic fixture support is not task evidence",
+      "expected": {"compile_each": "success", "link_together": "failure"},
+      "integration_status": "real-framework2-runner-control; pending-task-inventory"
+    },
+    {
+      "id": "header-private-child-include",
+      "task": "*",
+      "kind": "must-not-flag",
+      "difference": "Harness includes an umbrella-only private child directly, violating declared include precondition",
+      "expected": {"pristine_compile": "failure", "candidate_contract_failure": false},
+      "integration_status": "real-framework2-baseline-failure-attribution; pending-task-inventory"
+    },
+    {
+      "id": "sqlfluff-mutable-block-config-independence",
+      "task": "sqlfluff-project-lint",
+      "kind": "must-detect",
+      "surface_id": "sqlfluff.utils.reflow.config.ReflowConfig.get_block_config",
+      "precondition_id": "documented-mutable-block-config-extension-api",
+      "recipe": [
+        "cfg = ReflowConfig.from_dict({})",
+        "a = cfg.get_block_config({'comma'})",
+        "a.incorporate(before='touch')",
+        "b = cfg.get_block_config({'comma'})",
+        "Observe a.spacing_before == 'touch' and b.spacing_before == 'single'"
+      ],
+      "contract_evidence": {
+        "commit": "0348222a3bcdb0226563f7349c5a39beb0641955",
+        "archive_sha256": "e0afbbc9db5ceda286c660caffa640a6aea92ba99e964b9b7522207e01322a38",
+        "sources": [
+          "docs/source/reference/internals/index.rst: plugin/rule authors are supported readers",
+          "docs/source/reference/internals/reflow.rst: Whitespace Reflow API for rules",
+          "src/sqlfluff/utils/reflow/config.py:17-38: mutable BlockConfig and named incorporate method",
+          "src/sqlfluff/utils/reflow/config.py:135-190: getter derives a block config from unchanged config"
+        ]
+      },
+      "expected": {"later_config_pollution": false, "raw_identity_required": false},
+      "integration_status": "pinned-pristine-legal-sequence-replayed; pending-task-adapter-candidate-control"
+    },
+    {
+      "id": "sqlfluff-frozen-match-result-dict-mutation",
+      "task": "sqlfluff-project-lint",
+      "kind": "scope-unresolved",
+      "surface_id": "sqlfluff.core.parser.match_result.MatchResult.empty_at",
+      "difference": "Mutating segment_kwargs inside a frozen MatchResult can mechanically affect a shared factory result",
+      "required_evidence": "MatchResult is frozen and append returns new objects; post-construction nested-dict mutation is not yet established as supported. Need contract review or a failure through a documented legal transition.",
+      "expected": {"candidate_verdict": null},
+      "integration_status": "public-extension-result-type; mutation-domain-unresolved"
+    },
+    {
+      "id": "factory-owned-mutable-and-retained-output",
+      "task": "*",
+      "kind": "must-detect",
+      "difference": "Legal mutation or interleaving changes a still-live independent caller-owned result or a later getter from unchanged config",
+      "expected": {"semantic_independence": true},
+      "required_evidence": "Ownership, mutability and retained-value lifetime are surface-specific; root identity alone is insufficient",
+      "integration_status": "real-owned-fixture-observation-controls; pending-per-task-ownership-inventory"
+    },
+    {
+      "id": "factory-immutable-interning-or-borrowed-view",
+      "task": "*",
+      "kind": "conditional-must-not-flag",
+      "difference": "Documented immutable interning, shallow-copy semantics or a borrowed live view, without violated value/lifetime promises",
+      "expected": {"raw_identity_required": false},
+      "integration_status": "real-owned-fixture-observation-controls; pending-per-task-ownership-inventory"
+    },
+    {
+      "id": "typed-exact-boolean-versus-number",
+      "task": "*",
+      "kind": "must-detect",
+      "difference": "True versus 1 in a typed exact outcome, despite Python dictionary equality",
+      "expected": {"oracle_equal": false},
+      "integration_status": "real-canonical-controller-negative-control"
+    },
+    {
+      "id": "go-panic-stack-frames",
+      "task": "sqlfmt-cli",
+      "kind": "conditional-must-not-flag",
+      "difference": "Different Go panic frames while approved error headline/class, exit, outputs and file effects match",
+      "required_evidence": "Reviewed v1.1 stderr policy: stack frames diagnostic unless explicitly promised; retain normal stderr/error headlines and raw logs",
+      "expected": {"oracle_equal": true},
+      "integration_status": "real-canonical-representation-control; pending-task-stderr-parser"
+    },
+    {
+      "id": "cli-buffered-output-faults",
+      "task": "*",
+      "kind": "must-detect",
+      "difference": "Swallowed ENOSPC/EPIPE/closed-stdout errors, including small flush-only and large write failures",
+      "expected": {"silent_success_allowed": false},
+      "required_evidence": "Apply only to real CLI output paths; preserve each CLI's documented signal/status/error policy and observe through a separate report channel",
+      "integration_status": "real-OS-disposable-CLI-controls; pending-per-task-fault-adapters"
+    },
+    {
+      "id": "cli-write-error-file-side-effects",
+      "task": "*",
+      "kind": "must-detect",
+      "difference": "Same nonzero exit and error but different promised file effects after stdout failure",
+      "expected": {"oracle_equal": false},
+      "required_evidence": "Compare actual option/error side-effect contract; do not invent universal rollback",
+      "integration_status": "real-OS-disposable-CLI-and-canonical-effect-control; pending-per-task-fault-adapters"
+    },
+    {
+      "id": "native-uncommitted-buffer",
+      "task": "*",
+      "kind": "conditional-must-not-flag",
+      "difference": "Different in-bounds uncommitted scratch bytes",
+      "required_evidence": "Pinned API/task contract confirms these bytes are unspecified; preserve status, committed output, legal partial effects, guards and sanitizers",
+      "expected": {"oracle_equal": true},
+      "integration_status": "pending-task-contract-review"
+    }
+  ]
+}

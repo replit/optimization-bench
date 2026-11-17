@@ -1,0 +1,2252 @@
+{
+  "files": [
+    {
+      "bytes": 6754304,
+      "destination": "environment/workload/inputs/files/3fd9bc747aee51d0d7704e6fee62f4bc6e486d144ba09db34ccc642c2e6c59ad",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "CC-BY-4.0 (World Resources Institute, Global Power Plant Database; see environment/notices/SUITE-INPUTS.md)",
+      "name": "public-db",
+      "reason": "New authenticated derived public SQLite subset has no published upstream URL for these exact prepared bytes. Store CC-BY-4.0 body in public LFS outside the agent environment; canonical staging verifies source-derived commitments.",
+      "scope": "public",
+      "sha256": "3fd9bc747aee51d0d7704e6fee62f4bc6e486d144ba09db34ccc642c2e6c59ad",
+      "source": "public/files/3fd9bc747aee51d0d7704e6fee62f4bc6e486d144ba09db34ccc642c2e6c59ad"
+    },
+    {
+      "bytes": 535697,
+      "destination": "environment/workload/inputs/files/52564d1dcdabe9da7913e1a799653cdc6e2ef8a9485819f3fd52f6f01628e62c",
+      "distribution": "git",
+      "license": "CC-BY-4.0 (World Resources Institute, Global Power Plant Database; see environment/notices/SUITE-INPUTS.md)",
+      "name": "public-tsv",
+      "reason": "Fixed disjoint derived country/entity subset of the attributed original WRI/Datasette database; not original database page layout.",
+      "scope": "public",
+      "sha256": "52564d1dcdabe9da7913e1a799653cdc6e2ef8a9485819f3fd52f6f01628e62c"
+    },
+    {
+      "bytes": 3796992,
+      "destination": "tests/heldout/files/238912370ec1de1c670e158e239f7bd1da7f2e1afe332356580c7feed326bead",
+      "distribution": "git",
+      "license": "CC-BY-4.0 (World Resources Institute, Global Power Plant Database; see environment/notices/SUITE-INPUTS.md)",
+      "name": "heldout-db",
+      "reason": "Fixed disjoint derived country/entity subset of the attributed original WRI/Datasette database; not original database page layout.",
+      "scope": "heldout",
+      "sha256": "238912370ec1de1c670e158e239f7bd1da7f2e1afe332356580c7feed326bead"
+    },
+    {
+      "bytes": 258011,
+      "destination": "tests/heldout/files/0ccaf6f1413ad86b93ae73780d4efc2ccb5ffe945d405ff4e5e20b73b2e9fb79",
+      "distribution": "git",
+      "license": "CC-BY-4.0 (World Resources Institute, Global Power Plant Database; see environment/notices/SUITE-INPUTS.md)",
+      "name": "heldout-tsv",
+      "reason": "Fixed disjoint derived country/entity subset of the attributed original WRI/Datasette database; not original database page layout.",
+      "scope": "heldout",
+      "sha256": "0ccaf6f1413ad86b93ae73780d4efc2ccb5ffe945d405ff4e5e20b73b2e9fb79"
+    },
+    {
+      "scope": "public",
+      "name": "public-ranked-input.db",
+      "destination": "environment/workload/inputs/files/3459573edf9dc8d19f3e81ff8bd2ede209dcd60ff881860572dd56ce7caffd7e",
+      "bytes": 19746816,
+      "sha256": "3459573edf9dc8d19f3e81ff8bd2ede209dcd60ff881860572dd56ce7caffd7e",
+      "license": "PSF-2.0 and Apache-2.0, with retained file-specific notices",
+      "reason": "The indexed SQLite file has no authenticated publisher endpoint for these exact prepared bytes. Follow the existing task's derived-database public-LFS route. The pinned source archive and deterministic reconstruction are recorded in workload/corpus.json and tools/author_sqlite_ranked.py.",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/3459573edf9dc8d19f3e81ff8bd2ede209dcd60ff881860572dd56ce7caffd7e"
+    },
+    {
+      "scope": "public",
+      "name": "public-ranked-requests.tsv",
+      "destination": "environment/workload/inputs/files/517bb2306a30724ff5144251086208b4c180dc316fecd8a1ce5d7c8fb56b78e8",
+      "bytes": 31239,
+      "sha256": "517bb2306a30724ff5144251086208b4c180dc316fecd8a1ce5d7c8fb56b78e8",
+      "license": "PSF-2.0 and Apache-2.0, with retained file-specific notices",
+      "reason": "New, project-disjoint documentation case. Exact transforms and authenticated upstream acquisition are retained with its packet provenance.",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-ranked-input.db",
+      "destination": "tests/heldout/files/6ef8711bae150d9fbcb1283416f8358b8955fa65d2db83c9e51dc8902e4c450f",
+      "bytes": 23867392,
+      "sha256": "6ef8711bae150d9fbcb1283416f8358b8955fa65d2db83c9e51dc8902e4c450f",
+      "license": "BSD and MIT, with retained file-specific notices",
+      "reason": "New, project-disjoint documentation case. Exact transforms and authenticated upstream acquisition are retained with its packet provenance."
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-ranked-requests.tsv",
+      "destination": "tests/heldout/files/1e4edbaf6d014b775d03b5c055b64aa9806fee5c1a69faf1aae5bb7f716da44e",
+      "bytes": 27224,
+      "sha256": "1e4edbaf6d014b775d03b5c055b64aa9806fee5c1a69faf1aae5bb7f716da44e",
+      "license": "BSD and MIT, with retained file-specific notices",
+      "reason": "New, project-disjoint documentation case. Exact transforms and authenticated upstream acquisition are retained with its packet provenance."
+    },
+    {
+      "scope": "heldout",
+      "name": "ranked-documents.bin",
+      "destination": "tests/heldout/references/ranked-documents.bin",
+      "bytes": 7119466,
+      "sha256": "a1cc2a7797c8918b0a66e9f58560edcb2c32d1af2b7bf4787d468f998f6ea5e3",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "ranked-provenance.json",
+      "destination": "tests/heldout/data/ranked-provenance.json",
+      "bytes": 210906,
+      "sha256": "ea77a29ddbf6492ed7c5a7620f085c113ca75f7be39774d34dbb7f6d99962c55",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "ranked-document-fingerprints.json",
+      "destination": "tests/heldout/data/ranked-document-fingerprints.json",
+      "bytes": 654363,
+      "sha256": "c0a82d9a74c3222c92b571ac251f4ee8be0ab412de930830475decce69b3aaf2",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "LICENSE",
+      "destination": "tests/heldout/data/ranked-notices/framework/LICENSE",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "LICENSE",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/LICENSE",
+      "bytes": 1100,
+      "sha256": "9821720b58d4a565b61321007a8ad43ab6991a3959e66cd5db4dd9eae69c7dfc",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "LICENSE.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/LICENSE.rst",
+      "bytes": 1476,
+      "sha256": "64c96919bbaf3a13baa0f10e418cc1fc88768ce1b9c07f5b7bf49f0fb23db106",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "LICENSE",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/LICENSE",
+      "bytes": 12834,
+      "sha256": "992c4c30277a0eef1bbc2d947b80cc91f2edd30be418fea11936da97bf152905",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "faq.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/faq.rst",
+      "bytes": 24943,
+      "sha256": "f0bd15af517408c8b5fdcffc322c7291ea2094715f55e6bb4eac1560ea1d3d90",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "how-to-release.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/how-to-release.rst",
+      "bytes": 6356,
+      "sha256": "ade375b11d5479b285fe8b4b38f478e28df66cf07f1bff80b0bea4a2e9760da2",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "index.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/index.rst",
+      "bytes": 2808,
+      "sha256": "e4dfc00154c209b9eafdeb1f0d006ad82dba8eecb916274cd0c65e6321707f88",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "install.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/install.rst",
+      "bytes": 4715,
+      "sha256": "ae06da75858d1911c9f6d9372cdf9dec3cb75f80d2764a44edff27abb97ed095",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "project-documentation.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/project-documentation.rst",
+      "bytes": 2531,
+      "sha256": "8a7c6c790593389bd1045a4ce0c6969748928f9b20fcca111b49baf3c1f66c22",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-0.6.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-0.6.rst",
+      "bytes": 4502,
+      "sha256": "0b59bdfd99366380db6f23e3e578f1290aa553707f00a2a809f55ad165cc9f42",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-0.7.0.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-0.7.0.rst",
+      "bytes": 4188,
+      "sha256": "631583e87a45053f723eee96af921ec2739c9a5b87df3f022e6209ce7741fb2c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-0.8.0.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-0.8.0.rst",
+      "bytes": 4890,
+      "sha256": "66f610b87f0e065c1260e4856427826279db63dff2c266f5f6e7b7aa7e78d430",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-0.9.0.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-0.9.0.rst",
+      "bytes": 5917,
+      "sha256": "f87c8da1e29e0fb1677e5dafc6eb62d1322a3140cbe900339928a17f8d80f06e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-2.3.1.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-2.3.1.rst",
+      "bytes": 2914,
+      "sha256": "eeaa43c7772446dd98596abcf5030d1874bd382e16d526f646a96ca2f150ed6e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-pypy2.7-v5.4.1.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-pypy2.7-v5.4.1.rst",
+      "bytes": 1958,
+      "sha256": "5ededfd86a3b6a3e319f0c145a8ecd1aa41b1bcc25a5843a589aa9446fd0e377",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-v7.3.0.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-v7.3.0.rst",
+      "bytes": 11704,
+      "sha256": "cb730917188cfa88fae773a84797f17aff885cae8679bd2d829f3e6683348b1b",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-v7.3.11.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-v7.3.11.rst",
+      "bytes": 7195,
+      "sha256": "b7bc5d71cc99bd432fc266f4a0559863aa7f8c659de391a5d260f0d10404ba44",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "release-v7.3.6.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/release-v7.3.6.rst",
+      "bytes": 11880,
+      "sha256": "e3cb004c65a28f8dec3ab14ac966b62944ffb781d4c75df17705dfd26921b3ff",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "video-index.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/video-index.rst",
+      "bytes": 6601,
+      "sha256": "7f0b50f2238eda9cc8acc52a9f13377d5cb36ed85ac36355020d8928f3db8dcb",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "whatsnew-2.3.1.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/whatsnew-2.3.1.rst",
+      "bytes": 639,
+      "sha256": "23ea172f7486d98f276d10b67f26f166147fa1cfb7e3d038816bbaa0fd1a285e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "whatsnew-pypy2-7.3.0.rst",
+      "destination": "tests/heldout/data/ranked-notices/interpreter-docs/pypy/doc/whatsnew-pypy2-7.3.0.rst",
+      "bytes": 1091,
+      "sha256": "955ce8193ac3a627ff5bae6fea895e0e1ec89c1719c7ba03549daf5e7b9fe90b",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.0.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/1.0.rst",
+      "bytes": 14595,
+      "sha256": "b2a5581c43b22756c63c6dfa0b7523c01b8e6cf5a3432a05b717f8f2e7b69fc9",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.4.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/1.4.rst",
+      "bytes": 23841,
+      "sha256": "2d8b049e5e84ee97a9689c6df2a61450c1bdbabefd2a4c37e4c58148399eda8c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "3.5.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/3.5.rst",
+      "bytes": 10469,
+      "sha256": "118e505dbc856fc314db34883943fc72e45f546cd35d53aef361ccbe2039e1d2",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "7.1.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/7.1.rst",
+      "bytes": 4534,
+      "sha256": "5e899582cec247009634ecceab19edc437d2f6c84c331fd3c9d1621e9ad630ab",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "7.2.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/7.2.rst",
+      "bytes": 7794,
+      "sha256": "72c548045e6353f67e4d0e343d9f92894f64c0876e176a223d497040b69e13ce",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "8.1.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/8.1.rst",
+      "bytes": 8523,
+      "sha256": "fe3e70b5f8ea2220a5110912e1faadc0298a8228f916f5f8672aa8cf906af6bd",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "8.2.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/changes/8.2.rst",
+      "bytes": 8822,
+      "sha256": "726d0095d3d67efaadc21a84005510deeaa92d65d552928a07f24f9d80362c23",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "sphinx-apidoc.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/man/sphinx-apidoc.rst",
+      "bytes": 4737,
+      "sha256": "85b6dad85eeae92f58954654b33b5f7a6450dcb38bc69caf70dd7cb10be20bc6",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "sphinx-quickstart.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/man/sphinx-quickstart.rst",
+      "bytes": 3947,
+      "sha256": "693462d5d18d9a63dbdb378c5b26c1acdc99aa0728c6ec0ce79c7dd8839006b7",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "deploying.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/tutorial/deploying.rst",
+      "bytes": 10918,
+      "sha256": "326f22940158451aa18f354e9acb3c41474504c5ea8b3515e90ba0231e422adb",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "configuration.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/usage/configuration.rst",
+      "bytes": 131414,
+      "sha256": "4fda87ae2d58ff0e095d61a7f27326e6d6728bf1361fdf30bd4a981fdd5dfe0e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "intl.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/usage/advanced/intl.rst",
+      "bytes": 14003,
+      "sha256": "a85ff213dd7f8784a2f1e61007af8769b36c424c13248d47924666e0ed6412ea",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "index.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/usage/builders/index.rst",
+      "bytes": 19637,
+      "sha256": "fbe79d53ec2607490f8a043996cdc06f183968a7fbdc894f4632aae82c538871",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "basics.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/usage/restructuredtext/basics.rst",
+      "bytes": 20849,
+      "sha256": "334ab52a165d708d99c3a01bc177b32d647d6ce5e806716ee31c0221df2a433c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "templating.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/development/html_themes/templating.rst",
+      "bytes": 15058,
+      "sha256": "ef6e101869718d8c3659ae3b4b59feac7f91fb3db68084f7b596e10870632fc8",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "adding_domain.rst",
+      "destination": "tests/heldout/data/ranked-notices/documentation-tool/doc/development/tutorials/adding_domain.rst",
+      "bytes": 8459,
+      "sha256": "d1122fd628d2e28a10d879e2d3af6974b49dc97bb5e4662a3976f717fccf54fe",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "copyright.rst",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/doc/build/copyright.rst",
+      "bytes": 1282,
+      "sha256": "a33076c9f325d58f1dfb85e120eb36ea8d1c5b1a7e9a52efc48b06be59b67750",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "changelog_03.rst",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/doc/build/changelog/changelog_03.rst",
+      "bytes": 83054,
+      "sha256": "1cc0d187fc8d30da8f4b23dfed83fe4787e53eb7c2a2f3997318e0d6f51f924f",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "changelog_11.rst",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/doc/build/changelog/changelog_11.rst",
+      "bytes": 101566,
+      "sha256": "c01a6592c4e7bb52693616b036dfe0abe1d564a9fc9c47e09f80856f77a909e5",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "changelog_13.rst",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/doc/build/changelog/changelog_13.rst",
+      "bytes": 163888,
+      "sha256": "c67ba34092d830c6a7f045c6d52485ba5a99e757eae4e369a03c3d1f54445999",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "changelog_14.rst",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/doc/build/changelog/changelog_14.rst",
+      "bytes": 401883,
+      "sha256": "3ad1f7369de41fe8ad66adff87ff6fa9d6ea0e3ca093867e9202b82d664058ac",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "changelog_20.rst",
+      "destination": "tests/heldout/data/ranked-notices/database-tool/doc/build/changelog/changelog_20.rst",
+      "bytes": 345103,
+      "sha256": "7aaad09264cfd9da178e7261afb8feefe9cf0ed9825885d730eb47380a2363f2",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "admin.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/faq/admin.txt",
+      "bytes": 6428,
+      "sha256": "db4984e87f3464458096740a015a46ad41ddcce3af469d50813a99385db3f0c4",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "general.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/faq/general.txt",
+      "bytes": 9777,
+      "sha256": "e100454d43e497fa58347dfa40cdb42f14a79d00b3b92bc9f1bf1570f03aeba0",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "troubleshooting.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/faq/troubleshooting.txt",
+      "bytes": 2022,
+      "sha256": "d4e9542f1488a501e0e01ef863ce755188f913b604c114196a40c3f9bfc59524",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "auth-remote-user.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/howto/auth-remote-user.txt",
+      "bytes": 6200,
+      "sha256": "769439d2b48d5f8cab8a56be9c898382da271f1756bfe1f9734d2aaaa52e055c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "custom-shell.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/howto/custom-shell.txt",
+      "bytes": 2638,
+      "sha256": "ee767b0771110f5b84f36d6f11c2e0bf517a900e0ed93e11aaa88c0259276aab",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "legacy-databases.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/howto/legacy-databases.txt",
+      "bytes": 2935,
+      "sha256": "fec144382743b8aca19c6fd85ef01e24ffca755b9e1e679f45a2b4a1caa30fc8",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "deprecation.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/deprecation.txt",
+      "bytes": 53013,
+      "sha256": "c2f39fd72d246be9576d348600d9649bf160fd44de24f7cd63833d6ae77c7bc8",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "git.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/git.txt",
+      "bytes": 9142,
+      "sha256": "08b995096f1ac35607895f1640c7c977ea261686f6e1f027d4f90867190a63fb",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "howto-release-django.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/howto-release-django.txt",
+      "bytes": 29311,
+      "sha256": "a2b47d04f1bd7ce990d68ab951e3663dd43ffcf92cd958e461dd06a8e2e86c22",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "install.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/intro/install.txt",
+      "bytes": 2808,
+      "sha256": "019fee54383a8582a8d47c0c61f23c09479d259d2e6e880df03d742ff7ace766",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "reusable-apps.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/intro/reusable-apps.txt",
+      "bytes": 14317,
+      "sha256": "9c28a8b20abdbae5eff0fe9c4a890a99d6bc482708fae063f82599b29dc65636",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "checks.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/checks.txt",
+      "bytes": 48271,
+      "sha256": "6fc0981502dc04d236c2e2002f8aa8c45226fe2c2302dc55ef5dc19b51c69acb",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "databases.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/databases.txt",
+      "bytes": 48333,
+      "sha256": "aa76a3c6bea109934043a0c7974e88a98ce066ca821c8ee64bed492ac933e11c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "django-admin.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/django-admin.txt",
+      "bytes": 75142,
+      "sha256": "4f088c2dab00e4d6cfd30b1b6beb832d3b7a809ce0f49e78cd93d9e22fc080ee",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "exceptions.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/exceptions.txt",
+      "bytes": 10486,
+      "sha256": "aa5c53418482d86363875ce8515d959d3c87aa6903320b122cc060a8c7bda3d0",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "middleware.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/middleware.txt",
+      "bytes": 26754,
+      "sha256": "60ece225992470a97493e73404374d73a314fda89b54b1c6135fb42ccd9cf21b",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "migration-operations.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/migration-operations.txt",
+      "bytes": 25408,
+      "sha256": "6a63fe92372a3883431c29dfc04d8aa1f990a629fc494d309bd065b472635ee4",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "settings.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/settings.txt",
+      "bytes": 119040,
+      "sha256": "219261f8fba7e81d02340b3e6631cef130e14b99ab30d293f9108a164f8e0ee1",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "urlresolvers.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/urlresolvers.txt",
+      "bytes": 10089,
+      "sha256": "4396c4d86eb17b0f0110d665f70cae0d1b3ed87cf063344f619cc61db67d6f52",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "urls.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/urls.txt",
+      "bytes": 8315,
+      "sha256": "12d181d705280cf096cad78305da2262a7061353947de3c7686515ed18016539",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "utils.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/utils.txt",
+      "bytes": 42723,
+      "sha256": "84bf2b45179fb3434bbd0f2c26e0a90cf498e3097924005f2a3abddca2dfd6bd",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "views.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/views.txt",
+      "bytes": 6462,
+      "sha256": "6bd396ac8fca0a2779c2d019bca1c27476141ca3d9bee4bc0ea3f0b19607b0c1",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.1.3.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.1.3.txt",
+      "bytes": 2283,
+      "sha256": "eabd5d9e1d03b188b351a6cc708094165dfda5e64db5bae04bda7d4578cd99b9",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.1.txt",
+      "bytes": 18507,
+      "sha256": "3f5934de8713dae80eb74970ec1e1a20937d31388a08dca85955b9d924305f37",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.10.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.10.1.txt",
+      "bytes": 3542,
+      "sha256": "a85e66b18af13da605b55eddc9f4ba14799afff17e3d5792fd019586a0cd26b8",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.10.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.10.txt",
+      "bytes": 55833,
+      "sha256": "7d36adfa44cecedebbe46ae4e70c35d019d8db317f3c54f4a7d28ddb49ab1837",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.11.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.11.txt",
+      "bytes": 37368,
+      "sha256": "f25295eb7de6d6f0cbcb0b9f713b1c1a1a68858cf608bc3d940da1ee9bd67651",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.2.4.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.2.4.txt",
+      "bytes": 3786,
+      "sha256": "90b41b207982eb9c45ed4a4874312d8320e2788f6ba69f6ed3dee2e8d2541f93",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.2.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.2.txt",
+      "bytes": 46948,
+      "sha256": "fe6d1eb6766b1acfdb2af5368e819796e069f22341cd64409940c4e6471be23f",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.3.6.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.3.6.txt",
+      "bytes": 3417,
+      "sha256": "808fb686e6d0a6373299421e4206edb1502efb52b321578ab240b85957724423",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.3.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.3.txt",
+      "bytes": 37366,
+      "sha256": "4e67946aa09a0e5e5e17234b5eebc4c8969a7ba570ddb11f2d3be087335fc7cb",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.4.14.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.4.14.txt",
+      "bytes": 3195,
+      "sha256": "2175a2e15094103e5a8aaa9a2d9a90f46aa75ec53eae3ed680b464160f8e3e3c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.4.2.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.4.2.txt",
+      "bytes": 2598,
+      "sha256": "eb17e31afc0e48ff0a222786dc2a5c005a127a7795c8dd5882412addba43b962",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.4.4.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.4.4.txt",
+      "bytes": 3801,
+      "sha256": "1ef71c837d9780ac9a5137b18c3a566fd49b92755c25e80ca77db4af080f500d",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.4.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.4.txt",
+      "bytes": 57804,
+      "sha256": "e5a92a17dc204868f493cdfacf1ebde9798339f501a69c5fedde0dead238a927",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.5.9.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.5.9.txt",
+      "bytes": 3190,
+      "sha256": "a905275070246ba7090704b603265e1787d5fc3ba6e99df2ef461f93372098e9",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.5.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.5.txt",
+      "bytes": 36415,
+      "sha256": "3cf0bb9e114614c65d37324307cec3c20132c1d11cf86f1a19999572af10e36d",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.6.6.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.6.6.txt",
+      "bytes": 4393,
+      "sha256": "633a7251e6084aa40c0966ac28409fa1fd6b11b31ee8dba026c59506b15d75b1",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.6.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.6.txt",
+      "bytes": 54855,
+      "sha256": "3d0c5a8c911ae41a1c32720e996360f7d257350729417ec3beb307589ca22dc4",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.7.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.7.txt",
+      "bytes": 81985,
+      "sha256": "90a23b7fb4b4d5453823773274191f2a3ec8e745cc69b2ed5cb745f34ed6d7f5",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.8.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.8.txt",
+      "bytes": 76743,
+      "sha256": "ba88b2a2ef4e1783312ef06f86e4b358aed6659ba69de88e19334184ea8232cc",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.9.2.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.9.2.txt",
+      "bytes": 4837,
+      "sha256": "65eb9dc91c05ee321404872cfcabd86913ae5e765e476127688549fdc229a364",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.9.3.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.9.3.txt",
+      "bytes": 4961,
+      "sha256": "717c1fac17299aaee4ac1e4f3c16065a72f78ee3a554c5596dc4e45502fc6d4a",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "1.9.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/1.9.txt",
+      "bytes": 62882,
+      "sha256": "46003a1b92f5d507f02658fcda6f2754fc97171b4a04aa2789a0ca3552216906",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.1.txt",
+      "bytes": 1906,
+      "sha256": "a91bc9d7896c6a53560045df50b0fa38f6bea831e296b33d8834ee7a0ee160e6",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.15.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.15.txt",
+      "bytes": 2533,
+      "sha256": "a75c17c5cbdcb7456cfcc4a7a2e99f8afaaa3252219e320c3253b8f61c39bc38",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.2.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.2.txt",
+      "bytes": 1543,
+      "sha256": "57ae5aeaa3fed60f3ec9dde9a2a3982484d6fcfd246fb2b2d340ec2afe5ee0c1",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.4.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.4.txt",
+      "bytes": 912,
+      "sha256": "4bf465d7f55103b2f84cb4a19e4cd7915d3cf81cd8bf67cec79cf9c422e372d9",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.5.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.5.txt",
+      "bytes": 1457,
+      "sha256": "8474fb11367e40ab6340b291ac48611f952ee06626822fd241d127149d20e831",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.6.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.6.txt",
+      "bytes": 928,
+      "sha256": "8f3fe0032d57f12593142a1250c7cddad3424de34291520b97a8154e1d24dbd7",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.8.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.8.txt",
+      "bytes": 316,
+      "sha256": "a4dcdea10ddafe2cd3684d3dc4198623a47ce55a525a27a65ed4bf7c9bfe1a14",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.1.txt",
+      "bytes": 18324,
+      "sha256": "54d3759a02020425da6f87839a495d5cc99e05e5cc39df4eab675aafec81cc40",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.2.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.2.1.txt",
+      "bytes": 3436,
+      "sha256": "e8ba057e3b6150d3efd89a2b2c93aa989afe65f185f3007513c1ada8e15b0f50",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.2.16.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.2.16.txt",
+      "bytes": 1521,
+      "sha256": "2bc161f30cc734f754ec0d0d6c8ea1b9d5fd3914e57317bc7ff2f1dca96bca77",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.2.8.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.2.8.txt",
+      "bytes": 2954,
+      "sha256": "803f4c525bbd21395dfe99f010907f9e71fa9489a16458da4cf8b331c89c5ed7",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "2.2.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/2.2.txt",
+      "bytes": 20177,
+      "sha256": "528358e2000723776bd572aa0d09eaf820034b6a84555a03d31d54f14dac5755",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "3.0.10.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/3.0.10.txt",
+      "bytes": 1520,
+      "sha256": "1c11561ce12ad879b253446f7749ce885ae6de7384a9317bd43699abc912b4c0",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "3.0.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/3.0.txt",
+      "bytes": 25911,
+      "sha256": "32cae2dbde301b35c22f0d584fa2d9b99a8f72ec48da376110407688f40a27eb",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "3.1.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/3.1.1.txt",
+      "bytes": 3797,
+      "sha256": "5040b05c88793ea1012f01b1961b7a204f28a0cf47e36c39157fa41eadaeaa11",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "5.1.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/5.1.txt",
+      "bytes": 18634,
+      "sha256": "9a5b5dd095b041be91805057afee5ce1136bf7af4a12de233195e1f80f629bef",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "5.2.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/5.2.txt",
+      "bytes": 17827,
+      "sha256": "f3eaee67a8fa5c24879de7f2b38a82ede0773284ad41d6eb61c6712fc5a4543b",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "security.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/releases/security.txt",
+      "bytes": 61439,
+      "sha256": "6423b2e7486f9c67af1b29ef7e0f2a72da7c0189b31950dbca35bc8b06e7becf",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "install.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/install.txt",
+      "bytes": 10260,
+      "sha256": "dcb47a1294004c7c647267bf857a5d72eb4e020fb5de28809eb7dc838250d97d",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "serialization.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/serialization.txt",
+      "bytes": 26525,
+      "sha256": "abb78503dea5ecdf94bd713ee489fce0b851c60e21a512c8a89e9379d8a6fdb4",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "settings.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/settings.txt",
+      "bytes": 10588,
+      "sha256": "5dfbc14c31cf64ad67697258e29c58694a38515d613f592b055f5a08388d788a",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "customizing.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/auth/customizing.txt",
+      "bytes": 50212,
+      "sha256": "532d317fa61dbbec1640f67c996552054f7aacdfea0f8918decedb688ea895f4",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "default.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/auth/default.txt",
+      "bytes": 70912,
+      "sha256": "23fffcdb191e368d4ac99ca391e846b7d9bb80018d00ccd6b6fbf2aa624112cc",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "index.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/auth/index.txt",
+      "bytes": 3216,
+      "sha256": "80ea32256ac642ab48e08cb254ad62f1c948deb9b8eff2b11f16950fee8f37ca",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "intro.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/class-based-views/intro.txt",
+      "bytes": 13219,
+      "sha256": "f0290c5e9e6b8df5daaf8a5c69e32b16184c438b194b85deae040f0e07f3cc8c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "multi-db.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/db/multi-db.txt",
+      "bytes": 31029,
+      "sha256": "4ba6bda747009b8eab0c26b1ca0a1f6c43ef9fc6c04f486172508fa0d4383d8f",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "sessions.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/http/sessions.txt",
+      "bytes": 36723,
+      "sha256": "179f45d2c54dc2e2c649e5e0ae699d984a4a67c2547809341822a02dd5368281",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "urls.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/http/urls.txt",
+      "bytes": 33484,
+      "sha256": "b254fd34bb1462aded7a81ef2fb5df36822724c1c41b1e0bd737204f8a4b3738",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "views.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/http/views.txt",
+      "bytes": 8269,
+      "sha256": "7c3091cadef391727e48555be1a782c57cbbbce039ad37991b2f77f53975165e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "advanced.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/testing/advanced.txt",
+      "bytes": 34735,
+      "sha256": "1731fffa945029917b93eb79cbdc045f8e401365721340766833ca4f8572a2e2",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "tools.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/topics/testing/tools.txt",
+      "bytes": 88341,
+      "sha256": "f80541fd9d5d2fece3c8aedb1b679d541d5e35bd08144fbf2ce57a6e385afb2a",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "auth.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/auth.txt",
+      "bytes": 31776,
+      "sha256": "71552aff657c785225d313e09ae8a0b5818db558cdba7e99b86be612fe2fabdd",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "contenttypes.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/contenttypes.txt",
+      "bytes": 25152,
+      "sha256": "31f0daf0c0c4ad8137d84d0c1b9825c914368aa354e68f35b15cc760c4f614c5",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "flatpages.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/flatpages.txt",
+      "bytes": 14707,
+      "sha256": "c05ce468042b094278331c7f081f65c0641313c92cb6f9601cff8f9126c1ac5e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "sitemaps.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/sitemaps.txt",
+      "bytes": 21011,
+      "sha256": "f5d304777e62402d3ebd18d8a1af556d248bcae957a53b33840cc19f9ade9c4f",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "staticfiles.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/staticfiles.txt",
+      "bytes": 21752,
+      "sha256": "fe1710e59d7bef55cc6a8954c7676bdeab9024735d265969d5c83086533fc6c5",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "syndication.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/syndication.txt",
+      "bytes": 42717,
+      "sha256": "bac81c90109218665463a0e176e5854261774f23a78822b700e8bb4605eee896",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "storage.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/files/storage.txt",
+      "bytes": 10305,
+      "sha256": "067f291ff629f3b00ac81f26cab1f47bb08b28718799f8d674c19da20c119d4e",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "meta.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/models/meta.txt",
+      "bytes": 6179,
+      "sha256": "e7a43f08b38b2ac43fbe77ca26e48d812dc95b3e310b19e4c4a387baefaf600f",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "options.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/models/options.txt",
+      "bytes": 17933,
+      "sha256": "d5ec6891467a6e80af0fbf059354ffbb400f96d41a0ff3e20ee1b5b0a6e48834",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "api.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/templates/api.txt",
+      "bytes": 41652,
+      "sha256": "09a2f0e1c23a3cb3b5421f064d23a8a6e53de38c8bac0b7d05637059283d888d",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "builtins.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/templates/builtins.txt",
+      "bytes": 89570,
+      "sha256": "586c1b31359f8f0b9975a34095909aaf88be0d1660437d402bdbe6000e951e17",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "actions.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/admin/actions.txt",
+      "bytes": 17080,
+      "sha256": "d17871344fc389fdc30252adeda0c2e7d204ef5735e874fbf20ea44fe87bfbb0",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "admindocs.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/admin/admindocs.txt",
+      "bytes": 5588,
+      "sha256": "e92c22abd36d2b86831ba5e3a7ecfd296aaba2991aa63910a631885a142d27ae",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "index.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/admin/index.txt",
+      "bytes": 138107,
+      "sha256": "b01451fc6a25d9a529b38b72b42a86065d38c62730edca4ad001c072adfc6dcd",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "geos.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/gis/geos.txt",
+      "bytes": 40024,
+      "sha256": "8d11680755abca2bb0a70f45ce4e09c6758ab08503723b6ecc956e7ed1f662fc",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "index.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/ref/contrib/gis/install/index.txt",
+      "bytes": 14886,
+      "sha256": "9d309e2f79411326df5a7093b2cc3c25a4762b8c56947f86945771c9181c759d",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "accessibility.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/contributing/accessibility.txt",
+      "bytes": 6996,
+      "sha256": "5791a336aeba8a3ecb8f35a71196fb022357e3f074b99a8bf8a25f949c3e1506",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "committing-code.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/contributing/committing-code.txt",
+      "bytes": 10201,
+      "sha256": "0658dc842ba14ec14b213b2e6ff8a0f504344c926d3bcca76923a1ee002efb9c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "new-contributors.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/contributing/new-contributors.txt",
+      "bytes": 6841,
+      "sha256": "23479d7d93353a7ae4d302ff9ccf54c49ee1fe18242c112d4ab7f98701bcda85",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "submitting-patches.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/contributing/writing-code/submitting-patches.txt",
+      "bytes": 18688,
+      "sha256": "73180fab4d52f6d6d296ed55c8719edd7c4a1e237a73a880933478933b6fc14c",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "unit-tests.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/internals/contributing/writing-code/unit-tests.txt",
+      "bytes": 20894,
+      "sha256": "a938d2eb834e4f90036aacbc18d25ed0d542cb0f3eafc7ec837677fd7f33a493",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "apache-auth.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/howto/deployment/wsgi/apache-auth.txt",
+      "bytes": 5255,
+      "sha256": "09155577b06c2628cd43b4d8ced526e6026ed43ee6d65e0b0305850ab5531787",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "scope": "heldout",
+      "name": "LICENSE.txt",
+      "destination": "tests/heldout/data/ranked-notices/framework/docs/_theme/djangodocs/static/fontawesome/LICENSE.txt",
+      "bytes": 1544,
+      "sha256": "6de8d0e48e1a0c7ae7584d1b102bf3ead55b45777a8a8042d4c6bc1e27d88e0b",
+      "reason": "Held-out ranked-documents provenance, reference output or licence notice; stored in Git LFS and authenticated at scoring."
+    },
+    {
+      "bytes": 1067008,
+      "destination": "environment/workload/inputs/files/bdf635be69850bd3be09c9a2dbeef7ddfb80036bd3ef3381383cd03b61e4a61a",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_Sqlite.sqlite",
+        "bytes": 1067008,
+        "sha256": "bdf635be69850bd3be09c9a2dbeef7ddfb80036bd3ef3381383cd03b61e4a61a"
+      },
+      "license": "MIT (Copyright (c) 2008-2024 Luis Rocha; see environment/notices/suite-inputs/chinook-database-LICENSE.md)",
+      "name": "Chinook_Sqlite.sqlite",
+      "scope": "public",
+      "sha256": "bdf635be69850bd3be09c9a2dbeef7ddfb80036bd3ef3381383cd03b61e4a61a",
+      "url": "https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_Sqlite.sqlite"
+    },
+    {
+      "bytes": 15122329,
+      "destination": "environment/workload/inputs/files/dcbe6ecd08297e537766218456bd1c26f054f1bf6f31fb817ccbbb074d6641dd",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "CC-BY-4.0",
+      "name": "MX.zip",
+      "reason": "Original raw upstream bytes for integrity-check from a rolling publisher endpoint (https://download.geonames.org/export/dump/MX.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "dcbe6ecd08297e537766218456bd1c26f054f1bf6f31fb817ccbbb074d6641dd",
+      "source": "public/files/dcbe6ecd08297e537766218456bd1c26f054f1bf6f31fb817ccbbb074d6641dd"
+    },
+    {
+      "bytes": 8110838,
+      "destination": "environment/workload/inputs/files/62408284157ad8a8a5d81438e01d504c6eff5d0e7a4fffb2e2bbe9debcdac192",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "CC-BY-4.0",
+      "name": "CA.zip",
+      "reason": "Original raw upstream bytes for integrity-check from a rolling publisher endpoint (https://download.geonames.org/export/dump/CA.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "62408284157ad8a8a5d81438e01d504c6eff5d0e7a4fffb2e2bbe9debcdac192",
+      "source": "public/files/62408284157ad8a8a5d81438e01d504c6eff5d0e7a4fffb2e2bbe9debcdac192"
+    },
+    {
+      "bytes": 12108183,
+      "destination": "environment/workload/inputs/files/ce1f925b5fa76535f970f0ff02dc35899a4dec6c2eefd526cf832b4c791625ea",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "CC-BY-2.0-FR",
+      "name": "deu_sentences.tsv.bz2",
+      "reason": "Original raw upstream bytes for tatoeba-create-index from a rolling publisher endpoint (https://downloads.tatoeba.org/exports/per_language/deu/deu_sentences.tsv.bz2); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "ce1f925b5fa76535f970f0ff02dc35899a4dec6c2eefd526cf832b4c791625ea",
+      "source": "public/files/ce1f925b5fa76535f970f0ff02dc35899a4dec6c2eefd526cf832b4c791625ea"
+    },
+    {
+      "bytes": 4216885,
+      "destination": "environment/workload/inputs/files/26cf3cfaade2aaba54f2fdc56d387988933e5005a4716d4e0aa5012756ccecac",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "usgs_2022-01.geojson",
+      "reason": "Original raw upstream bytes for usgs-geojson-json from a rolling publisher endpoint (https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-01-01&endtime=2022-01-15&orderby=time-asc); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "26cf3cfaade2aaba54f2fdc56d387988933e5005a4716d4e0aa5012756ccecac",
+      "source": "public/files/26cf3cfaade2aaba54f2fdc56d387988933e5005a4716d4e0aa5012756ccecac"
+    },
+    {
+      "bytes": 4296024,
+      "destination": "environment/workload/inputs/files/5a19b3b42773f4f3ae03fcec60f8d9772ae02ba47f1233eb13b80409e727c9bb",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "usgs_2022-02.geojson",
+      "reason": "Original raw upstream bytes for usgs-geojson-json from a rolling publisher endpoint (https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-02-01&endtime=2022-02-15&orderby=time-asc); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "5a19b3b42773f4f3ae03fcec60f8d9772ae02ba47f1233eb13b80409e727c9bb",
+      "source": "public/files/5a19b3b42773f4f3ae03fcec60f8d9772ae02ba47f1233eb13b80409e727c9bb"
+    },
+    {
+      "bytes": 4085292,
+      "destination": "environment/workload/inputs/files/240188ef37423bea45ad9de42c0fc6379173090f68049c4109210777eebceecc",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "usgs_2022-03.geojson",
+      "reason": "Original raw upstream bytes for usgs-geojson-json from a rolling publisher endpoint (https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-03-01&endtime=2022-03-15&orderby=time-asc); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "240188ef37423bea45ad9de42c0fc6379173090f68049c4109210777eebceecc",
+      "source": "public/files/240188ef37423bea45ad9de42c0fc6379173090f68049c4109210777eebceecc"
+    },
+    {
+      "bytes": 4160332,
+      "destination": "environment/workload/inputs/files/9be7c44c67891eff43548b80ce6bf65f7f41d72238cd9cdff54c29a9e3e99265",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "usgs_2022-04.geojson",
+      "reason": "Original raw upstream bytes for usgs-geojson-json from a rolling publisher endpoint (https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-04-01&endtime=2022-04-15&orderby=time-asc); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "9be7c44c67891eff43548b80ce6bf65f7f41d72238cd9cdff54c29a9e3e99265",
+      "source": "public/files/9be7c44c67891eff43548b80ce6bf65f7f41d72238cd9cdff54c29a9e3e99265"
+    },
+    {
+      "bytes": 4014929,
+      "destination": "environment/workload/inputs/files/29910b7cd833713e00aab69a8765520d30c1d02c217c80cbf6255c5535e05b85",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "usgs_2022-05.geojson",
+      "reason": "Original raw upstream bytes for usgs-geojson-json from a rolling publisher endpoint (https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-05-01&endtime=2022-05-15&orderby=time-asc); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "29910b7cd833713e00aab69a8765520d30c1d02c217c80cbf6255c5535e05b85",
+      "source": "public/files/29910b7cd833713e00aab69a8765520d30c1d02c217c80cbf6255c5535e05b85"
+    },
+    {
+      "bytes": 3801571,
+      "destination": "environment/workload/inputs/files/8aad965c7813ae4ca05ceacc89f7b15a04cbff6daf062de2f9fd0cc0bf983238",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "usgs_2022-06.geojson",
+      "reason": "Original raw upstream bytes for usgs-geojson-json from a rolling publisher endpoint (https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-06-01&endtime=2022-06-15&orderby=time-asc); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "8aad965c7813ae4ca05ceacc89f7b15a04cbff6daf062de2f9fd0cc0bf983238",
+      "source": "public/files/8aad965c7813ae4ca05ceacc89f7b15a04cbff6daf062de2f9fd0cc0bf983238"
+    },
+    {
+      "bytes": 896,
+      "destination": "environment/workload/inputs/files/6505cf0fad8eece307d89777a241a927af2905d1a092a3ef6e8c7fc7a468cff5",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (USGS)",
+      "name": "usgs-geojson-json-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "6505cf0fad8eece307d89777a241a927af2905d1a092a3ef6e8c7fc7a468cff5"
+    },
+    {
+      "bytes": 11729156,
+      "destination": "environment/workload/inputs/files/d109f8a6ab1a71e70f60fe42d30a0e31f370c904e248a51e5fe85573f904878e",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2010_c20260323.csv.gz",
+        "bytes": 11729156,
+        "sha256": "d109f8a6ab1a71e70f60fe42d30a0e31f370c904e248a51e5fe85573f904878e"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2010.csv.gz",
+      "scope": "public",
+      "sha256": "d109f8a6ab1a71e70f60fe42d30a0e31f370c904e248a51e5fe85573f904878e",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2010_c20260323.csv.gz"
+    },
+    {
+      "bytes": 15695066,
+      "destination": "environment/workload/inputs/files/be3b40cd098a879be12c2c3e614700560bd537e6178bba8b1aaf099f665dda40",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2011_c20260323.csv.gz",
+        "bytes": 15695066,
+        "sha256": "be3b40cd098a879be12c2c3e614700560bd537e6178bba8b1aaf099f665dda40"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2011.csv.gz",
+      "scope": "public",
+      "sha256": "be3b40cd098a879be12c2c3e614700560bd537e6178bba8b1aaf099f665dda40",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2011_c20260323.csv.gz"
+    },
+    {
+      "bytes": 14772227,
+      "destination": "environment/workload/inputs/files/061273bbe0ccc28edf9ef27391e1c4e8779fb9c1d36eb8de15386ee8e2d59c7f",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2012_c20261026.csv.gz",
+        "bytes": 14772227,
+        "sha256": "061273bbe0ccc28edf9ef27391e1c4e8779fb9c1d36eb8de15386ee8e2d59c7f"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2012.csv.gz",
+      "scope": "public",
+      "sha256": "061273bbe0ccc28edf9ef27391e1c4e8779fb9c1d36eb8de15386ee8e2d59c7f",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2012_c20261026.csv.gz"
+    },
+    {
+      "bytes": 11725909,
+      "destination": "environment/workload/inputs/files/4fa4036ed1c7ea9a779d5a5841d18de08596c423920189a9e6173488d1a98260",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2013_c20260323.csv.gz",
+        "bytes": 11725909,
+        "sha256": "4fa4036ed1c7ea9a779d5a5841d18de08596c423920189a9e6173488d1a98260"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2013.csv.gz",
+      "scope": "public",
+      "sha256": "4fa4036ed1c7ea9a779d5a5841d18de08596c423920189a9e6173488d1a98260",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2013_c20260323.csv.gz"
+    },
+    {
+      "bytes": 11084754,
+      "destination": "environment/workload/inputs/files/410b457b1b9628cfd63292848a626482a88714c8bd8c45d56a0469f9de05d078",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2014_c20260323.csv.gz",
+        "bytes": 11084754,
+        "sha256": "410b457b1b9628cfd63292848a626482a88714c8bd8c45d56a0469f9de05d078"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2014.csv.gz",
+      "scope": "public",
+      "sha256": "410b457b1b9628cfd63292848a626482a88714c8bd8c45d56a0469f9de05d078",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2014_c20260323.csv.gz"
+    },
+    {
+      "bytes": 10041550,
+      "destination": "environment/workload/inputs/files/c4a5a24b8c69ad2b6b867790ce298f5b642a60516c9fce5550a8d2f67cd7bf2e",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2015_c20260323.csv.gz",
+        "bytes": 10041550,
+        "sha256": "c4a5a24b8c69ad2b6b867790ce298f5b642a60516c9fce5550a8d2f67cd7bf2e"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2015.csv.gz",
+      "scope": "public",
+      "sha256": "c4a5a24b8c69ad2b6b867790ce298f5b642a60516c9fce5550a8d2f67cd7bf2e",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2015_c20260323.csv.gz"
+    },
+    {
+      "bytes": 9065715,
+      "destination": "environment/workload/inputs/files/d8e1389897df3557e74ba36820357f6962a7c0ca922595400fe74d883f7a5036",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2016_c20260323.csv.gz",
+        "bytes": 9065715,
+        "sha256": "d8e1389897df3557e74ba36820357f6962a7c0ca922595400fe74d883f7a5036"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2016.csv.gz",
+      "scope": "public",
+      "sha256": "d8e1389897df3557e74ba36820357f6962a7c0ca922595400fe74d883f7a5036",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2016_c20260323.csv.gz"
+    },
+    {
+      "bytes": 9340854,
+      "destination": "environment/workload/inputs/files/bd3ca72b71544222cba8aa2b29eb3f0efe050d3330a0c408e208befb66881750",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2017_c20260519.csv.gz",
+        "bytes": 9340854,
+        "sha256": "bd3ca72b71544222cba8aa2b29eb3f0efe050d3330a0c408e208befb66881750"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2017.csv.gz",
+      "scope": "public",
+      "sha256": "bd3ca72b71544222cba8aa2b29eb3f0efe050d3330a0c408e208befb66881750",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2017_c20260519.csv.gz"
+    },
+    {
+      "bytes": 9585982,
+      "destination": "environment/workload/inputs/files/19702480f50cd2a8dacce5e57891feba156afb87b1ea5cbb4eaeda69d2b964a4",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2018_c20260323.csv.gz",
+        "bytes": 9585982,
+        "sha256": "19702480f50cd2a8dacce5e57891feba156afb87b1ea5cbb4eaeda69d2b964a4"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2018.csv.gz",
+      "scope": "public",
+      "sha256": "19702480f50cd2a8dacce5e57891feba156afb87b1ea5cbb4eaeda69d2b964a4",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2018_c20260323.csv.gz"
+    },
+    {
+      "bytes": 11602648,
+      "destination": "environment/workload/inputs/files/f5043ecc776818b0feffdf1e0fcbaf63329db0635eab1057c7b8ba00ef332e3b",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2019_c20260323.csv.gz",
+        "bytes": 11602648,
+        "sha256": "f5043ecc776818b0feffdf1e0fcbaf63329db0635eab1057c7b8ba00ef332e3b"
+      },
+      "license": "US-Government-Public-Domain",
+      "name": "storms_2019.csv.gz",
+      "scope": "public",
+      "sha256": "f5043ecc776818b0feffdf1e0fcbaf63329db0635eab1057c7b8ba00ef332e3b",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2019_c20260323.csv.gz"
+    },
+    {
+      "bytes": 5210,
+      "destination": "environment/workload/inputs/files/0dd49fe190854c7417827df725bbdd4a11e6a996fb91f00c2add87989a83e65c",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (NOAA)",
+      "name": "storms-printf-report-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "0dd49fe190854c7417827df725bbdd4a11e6a996fb91f00c2add87989a83e65c"
+    },
+    {
+      "bytes": 71108369,
+      "destination": "environment/workload/inputs/files/53cdf92067e9a15ed1f414951e9fbe9fa0abc27048856f5d459a7d0778982a96",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "CC-BY-4.0",
+      "name": "geonames_US.zip",
+      "reason": "Original raw upstream bytes for geonames-rtree from a rolling publisher endpoint (https://download.geonames.org/export/dump/US.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "53cdf92067e9a15ed1f414951e9fbe9fa0abc27048856f5d459a7d0778982a96",
+      "source": "public/files/53cdf92067e9a15ed1f414951e9fbe9fa0abc27048856f5d459a7d0778982a96"
+    },
+    {
+      "bytes": 2624307,
+      "destination": "environment/workload/inputs/files/e8f60bac5986f8f56be0c35fddbf750c02ca5b04f4dc079b67e4cbc4b78c920f",
+      "license": "derived request list; source data CC-BY-4.0 (GeoNames)",
+      "name": "geonames-rtree-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "e8f60bac5986f8f56be0c35fddbf750c02ca5b04f4dc079b67e4cbc4b78c920f",
+      "kind": "repo-lfs",
+      "source": "public/files/e8f60bac5986f8f56be0c35fddbf750c02ca5b04f4dc079b67e4cbc4b78c920f",
+      "distribution": "operator"
+    },
+    {
+      "bytes": 291668559,
+      "destination": "environment/workload/inputs/files/a39d42e0c2037e197a01eef49f37fefd9c7ae5f8e4beb2156d1aabf7efe355d2",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "NYC-Open-Data-Terms",
+      "name": "nyc_payroll_fy2019_2024.csv",
+      "reason": "Original raw upstream bytes for decimal-ledger from a rolling publisher endpoint (https://data.cityofnewyork.us/resource/k397-673e.csv?$select=fiscal_year,agency_name,title_description,regular_gross_paid,total_ot_paid,total_other_pay&$where=fiscal_year%20between%202019%20and%202024&$order=:id&$limit=10000000); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "a39d42e0c2037e197a01eef49f37fefd9c7ae5f8e4beb2156d1aabf7efe355d2",
+      "source": "public/files/a39d42e0c2037e197a01eef49f37fefd9c7ae5f8e4beb2156d1aabf7efe355d2"
+    },
+    {
+      "bytes": 4238,
+      "destination": "environment/workload/inputs/files/18ca98faa731ac28d88ba183ccf3990a5989d6c14c0dae1883750d22df02c14b",
+      "distribution": "git",
+      "license": "derived request list; source data NYC-Open-Data-Terms",
+      "name": "decimal-ledger-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "18ca98faa731ac28d88ba183ccf3990a5989d6c14c0dae1883750d22df02c14b"
+    },
+    {
+      "bytes": 4552673,
+      "destination": "environment/workload/inputs/files/bb70b9a2050de500d5dde412d46045feca5c9699848a2a8111e166c47cd3fd05",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2016.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2016.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "bb70b9a2050de500d5dde412d46045feca5c9699848a2a8111e166c47cd3fd05",
+      "source": "public/files/bb70b9a2050de500d5dde412d46045feca5c9699848a2a8111e166c47cd3fd05"
+    },
+    {
+      "bytes": 5188737,
+      "destination": "environment/workload/inputs/files/0a09c955d4a84e604acfb3d3bfc864a4bff883eaca9ac1deb208563204256d74",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2017.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2017.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "0a09c955d4a84e604acfb3d3bfc864a4bff883eaca9ac1deb208563204256d74",
+      "source": "public/files/0a09c955d4a84e604acfb3d3bfc864a4bff883eaca9ac1deb208563204256d74"
+    },
+    {
+      "bytes": 6325876,
+      "destination": "environment/workload/inputs/files/a82e60b1bd486ebd23adacedd4f1822a41cda0985194b3a21898e135cdf468e5",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2018.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2018.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "a82e60b1bd486ebd23adacedd4f1822a41cda0985194b3a21898e135cdf468e5",
+      "source": "public/files/a82e60b1bd486ebd23adacedd4f1822a41cda0985194b3a21898e135cdf468e5"
+    },
+    {
+      "bytes": 7315771,
+      "destination": "environment/workload/inputs/files/88b9b0b1bbd0c7545ffc07959a5ecbd4c6fbe951c67ea648cef70cafe956af53",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2019.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2019.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "88b9b0b1bbd0c7545ffc07959a5ecbd4c6fbe951c67ea648cef70cafe956af53",
+      "source": "public/files/88b9b0b1bbd0c7545ffc07959a5ecbd4c6fbe951c67ea648cef70cafe956af53"
+    },
+    {
+      "bytes": 7911864,
+      "destination": "environment/workload/inputs/files/18283fe4ffceb53e3091a7fa7de57a2d5b925ce3d56a08d3518021e00212a3ec",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2020.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2020.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "18283fe4ffceb53e3091a7fa7de57a2d5b925ce3d56a08d3518021e00212a3ec",
+      "source": "public/files/18283fe4ffceb53e3091a7fa7de57a2d5b925ce3d56a08d3518021e00212a3ec"
+    },
+    {
+      "bytes": 9003762,
+      "destination": "environment/workload/inputs/files/c3f876f8cd898c3bd921db45e1a2dd39c52ed7f5bb48e82a600066a434f6afd4",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2021.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2021.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "c3f876f8cd898c3bd921db45e1a2dd39c52ed7f5bb48e82a600066a434f6afd4",
+      "source": "public/files/c3f876f8cd898c3bd921db45e1a2dd39c52ed7f5bb48e82a600066a434f6afd4"
+    },
+    {
+      "bytes": 9687295,
+      "destination": "environment/workload/inputs/files/82f5035943a447f8edebf1f0b3f774e08b81a250a86295871a8574726d6b2f94",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2022.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2022.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "82f5035943a447f8edebf1f0b3f774e08b81a250a86295871a8574726d6b2f94",
+      "source": "public/files/82f5035943a447f8edebf1f0b3f774e08b81a250a86295871a8574726d6b2f94"
+    },
+    {
+      "bytes": 9919616,
+      "destination": "environment/workload/inputs/files/4b40502e8147419643a1120c666c4aa952633094f21f65475844172bcc78833b",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2023.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2023.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "4b40502e8147419643a1120c666c4aa952633094f21f65475844172bcc78833b",
+      "source": "public/files/4b40502e8147419643a1120c666c4aa952633094f21f65475844172bcc78833b"
+    },
+    {
+      "bytes": 8405604,
+      "destination": "environment/workload/inputs/files/409c2d884935bd0a4099d640b7c526ecb0af1d3aac049697e34c2f9f69dbe91d",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "epa_88101_2024.zip",
+      "reason": "Original raw upstream bytes for percentile from a rolling publisher endpoint (https://aqs.epa.gov/aqsweb/airdata/daily_88101_2024.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "409c2d884935bd0a4099d640b7c526ecb0af1d3aac049697e34c2f9f69dbe91d",
+      "source": "public/files/409c2d884935bd0a4099d640b7c526ecb0af1d3aac049697e34c2f9f69dbe91d"
+    },
+    {
+      "bytes": 76775,
+      "destination": "environment/workload/inputs/files/16faf283f62d758a240371a9981dc632cb90baca8ca8bc54ea0dd8259f3aa6a8",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (EPA)",
+      "name": "percentile-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "16faf283f62d758a240371a9981dc632cb90baca8ca8bc54ea0dd8259f3aa6a8"
+    },
+    {
+      "bytes": 87555311,
+      "destination": "environment/workload/inputs/files/de98b85f9807a23dfc8c91006f8b59b2149089e94ea9d54676d215ea156a9ac6",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://archive.org/download/stackexchange/cooking.stackexchange.com.7z",
+        "bytes": 87555311,
+        "sha256": "de98b85f9807a23dfc8c91006f8b59b2149089e94ea9d54676d215ea156a9ac6"
+      },
+      "license": "CC-BY-SA-2.5 AND CC-BY-SA-3.0 AND CC-BY-SA-4.0 (Seasoned Advice contributors; per-post licence by contribution date; see environment/notices/STACK-EXCHANGE.md)",
+      "name": "cooking.stackexchange.com.7z",
+      "scope": "public",
+      "sha256": "de98b85f9807a23dfc8c91006f8b59b2149089e94ea9d54676d215ea156a9ac6",
+      "url": "https://archive.org/download/stackexchange/cooking.stackexchange.com.7z"
+    },
+    {
+      "bytes": 541453,
+      "destination": "environment/workload/inputs/files/73376af59af0ef9af69611eb65406e58d4883344d1bf1c36df100c5440b9cd12",
+      "distribution": "git",
+      "license": "CC-BY-SA-4.0 (adapted request list from Seasoned Advice / Cooking Stack Exchange content; see environment/notices/STACK-EXCHANGE.md)",
+      "name": "fkey-cascade-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "73376af59af0ef9af69611eb65406e58d4883344d1bf1c36df100c5440b9cd12"
+    },
+    {
+      "bytes": 26659136,
+      "destination": "environment/workload/inputs/files/cccabb9e4417f84b94c0f4a8a8062a395685f5f609e993bd4403dec627ac36c0",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "CC-BY-4.0",
+      "name": "gtfs_at.zip",
+      "reason": "Original raw upstream bytes for gtfs-departure-join from a rolling publisher endpoint (https://gtfs.at.govt.nz/gtfs.zip); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "cccabb9e4417f84b94c0f4a8a8062a395685f5f609e993bd4403dec627ac36c0",
+      "source": "public/files/cccabb9e4417f84b94c0f4a8a8062a395685f5f609e993bd4403dec627ac36c0"
+    },
+    {
+      "bytes": 197506,
+      "destination": "environment/workload/inputs/files/5012bf2da820393a15bb3d67890c329fe8233bc765192789bb682c7062e3d123",
+      "distribution": "git",
+      "license": "derived request list; source data CC-BY-4.0 (Auckland Transport)",
+      "name": "gtfs-departure-join-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "5012bf2da820393a15bb3d67890c329fe8233bc765192789bb682c7062e3d123"
+    },
+    {
+      "bytes": 9413338,
+      "destination": "environment/workload/inputs/files/d887b6c225e1e254602296ca7fe0885d5a357e479a397d6f9e48ceeeb5e3611f",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00003870.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00003870.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "d887b6c225e1e254602296ca7fe0885d5a357e479a397d6f9e48ceeeb5e3611f",
+      "source": "public/files/d887b6c225e1e254602296ca7fe0885d5a357e479a397d6f9e48ceeeb5e3611f"
+    },
+    {
+      "bytes": 8346033,
+      "destination": "environment/workload/inputs/files/0919f58ae0251775f9ae599653ee91e6583127fd28b5993d8fe90239fce57c94",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00003945.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00003945.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "0919f58ae0251775f9ae599653ee91e6583127fd28b5993d8fe90239fce57c94",
+      "source": "public/files/0919f58ae0251775f9ae599653ee91e6583127fd28b5993d8fe90239fce57c94"
+    },
+    {
+      "bytes": 10160492,
+      "destination": "environment/workload/inputs/files/a7373114d027da3f5e6c81b52e2890572e24474a14418bb5ebe53dd8ef9a55ae",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00012836.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00012836.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "a7373114d027da3f5e6c81b52e2890572e24474a14418bb5ebe53dd8ef9a55ae",
+      "source": "public/files/a7373114d027da3f5e6c81b52e2890572e24474a14418bb5ebe53dd8ef9a55ae"
+    },
+    {
+      "bytes": 11586277,
+      "destination": "environment/workload/inputs/files/cf134c1f6780810d2edf1c6c062002880f84a570f725fb928a847c9d57a905ce",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00012842.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00012842.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "cf134c1f6780810d2edf1c6c062002880f84a570f725fb928a847c9d57a905ce",
+      "source": "public/files/cf134c1f6780810d2edf1c6c062002880f84a570f725fb928a847c9d57a905ce"
+    },
+    {
+      "bytes": 10378987,
+      "destination": "environment/workload/inputs/files/f315344134e5e8ddfc9d54703e20df30f963228803d71a7cd6f13ea6b4358f58",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00012916.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00012916.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "f315344134e5e8ddfc9d54703e20df30f963228803d71a7cd6f13ea6b4358f58",
+      "source": "public/files/f315344134e5e8ddfc9d54703e20df30f963228803d71a7cd6f13ea6b4358f58"
+    },
+    {
+      "bytes": 10948681,
+      "destination": "environment/workload/inputs/files/6757d84997d7a7c033c0d07aaf3b1830fb09b784635c4b2c99e3781aa2cccec1",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00012921.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00012921.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "6757d84997d7a7c033c0d07aaf3b1830fb09b784635c4b2c99e3781aa2cccec1",
+      "source": "public/files/6757d84997d7a7c033c0d07aaf3b1830fb09b784635c4b2c99e3781aa2cccec1"
+    },
+    {
+      "bytes": 12439913,
+      "destination": "environment/workload/inputs/files/a7f2c51310fb9993f4c71bacda2e9fffc4945cfb3094396b9f8e2ec34bd7e8ac",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00013722.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00013722.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "a7f2c51310fb9993f4c71bacda2e9fffc4945cfb3094396b9f8e2ec34bd7e8ac",
+      "source": "public/files/a7f2c51310fb9993f4c71bacda2e9fffc4945cfb3094396b9f8e2ec34bd7e8ac"
+    },
+    {
+      "bytes": 12419325,
+      "destination": "environment/workload/inputs/files/2998b4e5c78308ead9cb6a6dc76d1ee629ad6658be4ca24743c3a067dd0d82c6",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00013743.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00013743.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "2998b4e5c78308ead9cb6a6dc76d1ee629ad6658be4ca24743c3a067dd0d82c6",
+      "source": "public/files/2998b4e5c78308ead9cb6a6dc76d1ee629ad6658be4ca24743c3a067dd0d82c6"
+    },
+    {
+      "bytes": 9727315,
+      "destination": "environment/workload/inputs/files/769a9371212a50e80cc8323eade11ae97acb106df13214bf602563fe7ad7c141",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00013782.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00013782.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "769a9371212a50e80cc8323eade11ae97acb106df13214bf602563fe7ad7c141",
+      "source": "public/files/769a9371212a50e80cc8323eade11ae97acb106df13214bf602563fe7ad7c141"
+    },
+    {
+      "bytes": 10589699,
+      "destination": "environment/workload/inputs/files/e11ef53ee6feff8a62153c3f2088f239f48b4062c4b6c7ff977e8245c8d9ba6d",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00013865.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00013865.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "e11ef53ee6feff8a62153c3f2088f239f48b4062c4b6c7ff977e8245c8d9ba6d",
+      "source": "public/files/e11ef53ee6feff8a62153c3f2088f239f48b4062c4b6c7ff977e8245c8d9ba6d"
+    },
+    {
+      "bytes": 11877484,
+      "destination": "environment/workload/inputs/files/8bff15d97eb966eefdaa5a5810bbe5b324778b989fb0f2f865bfb42e95d60d11",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00013882.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00013882.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "8bff15d97eb966eefdaa5a5810bbe5b324778b989fb0f2f865bfb42e95d60d11",
+      "source": "public/files/8bff15d97eb966eefdaa5a5810bbe5b324778b989fb0f2f865bfb42e95d60d11"
+    },
+    {
+      "bytes": 11699456,
+      "destination": "environment/workload/inputs/files/28032be65c04ed984569adadcefdae67b09848e9d2c657d4df9e19a5f42469c8",
+      "distribution": "operator",
+      "kind": "repo-lfs",
+      "license": "US-Government-Public-Domain",
+      "name": "USW00013957.csv",
+      "reason": "Original raw upstream bytes for ghcn-window-series from a rolling publisher endpoint (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/USW00013957.csv); bytes frozen at kit fetch time, so no authenticated fixed URL exists. Derived inputs are rebuilt from these bytes at image build.",
+      "scope": "public",
+      "sha256": "28032be65c04ed984569adadcefdae67b09848e9d2c657d4df9e19a5f42469c8",
+      "source": "public/files/28032be65c04ed984569adadcefdae67b09848e9d2c657d4df9e19a5f42469c8"
+    },
+    {
+      "bytes": 144,
+      "destination": "environment/workload/inputs/files/54614af766f09287e07b190395f1aa210210e8b695a2f1403f84ce19388efa69",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (NOAA)",
+      "name": "ghcn-window-series-requests-public",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "public",
+      "sha256": "54614af766f09287e07b190395f1aa210210e8b695a2f1403f84ce19388efa69"
+    },
+    {
+      "bytes": 172122112,
+      "destination": "tests/heldout/files/4b52b4760f6b81b53325c8b9acc36dc6d80f4892e62c40101b78e95241ba0941",
+      "distribution": "operator",
+      "license": "derived from source data CC-BY-4.0 (GeoNames)",
+      "name": "integrity-check-geonames-IN-ZA.corrupt-s2.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "4b52b4760f6b81b53325c8b9acc36dc6d80f4892e62c40101b78e95241ba0941"
+    },
+    {
+      "bytes": 24702976,
+      "destination": "tests/heldout/files/2f4f5c68dfcd33ba27373eae48c7a4869800c68095ee0f9f0da494f83382a877",
+      "distribution": "operator",
+      "license": "MIT (Copyright (c) 2016 JP White; see environment/notices/suite-inputs/northwind-SQLite3-LICENSE)",
+      "name": "northwind.db",
+      "reason": "Raw held-out upstream file consumed directly (byte-identical to the pinned upstream commit); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "2f4f5c68dfcd33ba27373eae48c7a4869800c68095ee0f9f0da494f83382a877",
+      "url": "https://raw.githubusercontent.com/jpwhite3/northwind-SQLite3/807e2172c45402a1873cfd68b51e36959470fd2e/dist/northwind.db"
+    },
+    {
+      "bytes": 16553361,
+      "destination": "tests/heldout/files/76c0aeb25ad63d5a07085d1c7693858aa1d286d9159acd11beefb3a5f6a2493a",
+      "distribution": "operator",
+      "license": "derived from source data CC-BY-2.0-FR (Tatoeba)",
+      "name": "tatoeba-create-index-jpn_sentences.tsv",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "76c0aeb25ad63d5a07085d1c7693858aa1d286d9159acd11beefb3a5f6a2493a"
+    },
+    {
+      "bytes": 24252726,
+      "destination": "tests/heldout/files/c84900a8ac7b4b8724032964651a57d4e134d040875c350aae6951a5605b7fec",
+      "distribution": "operator",
+      "license": "derived from source data CC-BY-2.0-FR (Tatoeba)",
+      "name": "tatoeba-create-index-spa_sentences.tsv",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "c84900a8ac7b4b8724032964651a57d4e134d040875c350aae6951a5605b7fec"
+    },
+    {
+      "bytes": 10571776,
+      "destination": "tests/heldout/files/7814e6129597f7b63ecf80ae44b588c2b1baa351c75ac0e9c7b4cb9301d9e0fa",
+      "distribution": "operator",
+      "license": "derived from source data US-Government-Public-Domain (USGS)",
+      "name": "usgs-geojson-json-quakes.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "7814e6129597f7b63ecf80ae44b588c2b1baa351c75ac0e9c7b4cb9301d9e0fa"
+    },
+    {
+      "bytes": 1344,
+      "destination": "tests/heldout/files/56d338f8ff77850cf0fee949325e89c6b911fd2468ad407f604c40d7d624e7ed",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (USGS)",
+      "name": "usgs-geojson-json-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "56d338f8ff77850cf0fee949325e89c6b911fd2468ad407f604c40d7d624e7ed"
+    },
+    {
+      "bytes": 243785728,
+      "destination": "tests/heldout/files/ebcff78e58592bba412b450bb9ef2cdf8d7f2b0a7c24edb31d6b133f2acf7d9a",
+      "distribution": "operator",
+      "license": "derived from source data US-Government-Public-Domain (NOAA)",
+      "name": "storms-printf-report-storms.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "ebcff78e58592bba412b450bb9ef2cdf8d7f2b0a7c24edb31d6b133f2acf7d9a"
+    },
+    {
+      "bytes": 4983,
+      "destination": "tests/heldout/files/a0baf67b63ecf737184e25a524a909239724e06bb2de668696956f842219ab4f",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (NOAA)",
+      "name": "storms-printf-report-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "a0baf67b63ecf737184e25a524a909239724e06bb2de668696956f842219ab4f"
+    },
+    {
+      "bytes": 168173568,
+      "destination": "tests/heldout/files/f3f6355deb2ae684115f7b8f94a5382b9bf46d44333880e30428c85304912998",
+      "distribution": "operator",
+      "license": "derived from source data CC-BY-4.0 (GeoNames)",
+      "name": "geonames-rtree-places.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "f3f6355deb2ae684115f7b8f94a5382b9bf46d44333880e30428c85304912998"
+    },
+    {
+      "bytes": 2778410,
+      "destination": "tests/heldout/files/0e277f4b717c229b943521a9072601b24dc5c7f17f7d58ca7eb9e45eb1ef95cb",
+      "distribution": "git",
+      "license": "derived request list; source data CC-BY-4.0 (GeoNames)",
+      "name": "geonames-rtree-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "0e277f4b717c229b943521a9072601b24dc5c7f17f7d58ca7eb9e45eb1ef95cb"
+    },
+    {
+      "bytes": 283987968,
+      "destination": "tests/heldout/files/e81d778b2687e02ce298ea4e10d8fe657d1617048b3f6fe9858dd967a58275cd",
+      "distribution": "operator",
+      "license": "derived from source data CC-BY-4.0 (City of Los Angeles, Controller payroll)",
+      "name": "decimal-ledger-ledger.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "e81d778b2687e02ce298ea4e10d8fe657d1617048b3f6fe9858dd967a58275cd"
+    },
+    {
+      "bytes": 1292,
+      "destination": "tests/heldout/files/75f2543ac8821b030ed99f58dbd55a47f1f5903b085aa3f15c380fffff31df3f",
+      "distribution": "git",
+      "license": "derived request list; source data CC-BY-4.0 (City of Los Angeles, Controller payroll)",
+      "name": "decimal-ledger-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "75f2543ac8821b030ed99f58dbd55a47f1f5903b085aa3f15c380fffff31df3f"
+    },
+    {
+      "bytes": 274485248,
+      "destination": "tests/heldout/files/a328db8ae61d03a88c5b3c341c97422d6d633899e1d88cc1ed30a23fecabe8b1",
+      "distribution": "operator",
+      "license": "derived from source data US-Government-Public-Domain (USGS NWIS)",
+      "name": "percentile-obs.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "a328db8ae61d03a88c5b3c341c97422d6d633899e1d88cc1ed30a23fecabe8b1"
+    },
+    {
+      "bytes": 35295,
+      "destination": "tests/heldout/files/b00844c00ecb3180032d163ca83eed6d011dde8045feeb2783cbb7413f3bdb2e",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (USGS NWIS)",
+      "name": "percentile-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "b00844c00ecb3180032d163ca83eed6d011dde8045feeb2783cbb7413f3bdb2e"
+    },
+    {
+      "bytes": 504909824,
+      "destination": "tests/heldout/files/301ae4b1b212ca51c9d03adaa76900c0ac508617fe6132632078047ff9ceb9c2",
+      "distribution": "operator",
+      "license": "CC-BY-SA-4.0 (adaptation of Photography Stack Exchange content; per-post CC-BY-SA-2.5/3.0/4.0 retained in content_license; see environment/notices/STACK-EXCHANGE.md)",
+      "name": "fkey-cascade-se.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "301ae4b1b212ca51c9d03adaa76900c0ac508617fe6132632078047ff9ceb9c2"
+    },
+    {
+      "bytes": 607716,
+      "destination": "tests/heldout/files/2a34b30fd37326025d0f5b30ffcb1c88d52de9417ba1b2edc34b6b5b54b751a1",
+      "distribution": "git",
+      "license": "CC-BY-SA-4.0 (adapted request list from Photography Stack Exchange content; see environment/notices/STACK-EXCHANGE.md)",
+      "name": "fkey-cascade-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "2a34b30fd37326025d0f5b30ffcb1c88d52de9417ba1b2edc34b6b5b54b751a1"
+    },
+    {
+      "bytes": 423419904,
+      "destination": "tests/heldout/files/ab76837941e0aa2586b1f65a9820b31b3eb7a1ac64c975f79cb5c2273c04d640",
+      "distribution": "operator",
+      "license": "derived from source data CC-BY-4.0 (Translink, Queensland)",
+      "name": "gtfs-departure-join-gtfs.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "ab76837941e0aa2586b1f65a9820b31b3eb7a1ac64c975f79cb5c2273c04d640"
+    },
+    {
+      "bytes": 126064,
+      "destination": "tests/heldout/files/fcaf45e07e06affd184a263efcf258fa884dbb72611fad63971de0025677ec47",
+      "distribution": "git",
+      "license": "derived request list; source data CC-BY-4.0 (Translink, Queensland)",
+      "name": "gtfs-departure-join-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "fcaf45e07e06affd184a263efcf258fa884dbb72611fad63971de0025677ec47"
+    },
+    {
+      "bytes": 13426688,
+      "destination": "tests/heldout/files/adc63a198569d514a408d09dc8ddd57547fac50987f55e5409d1962b8b0ed6ba",
+      "distribution": "operator",
+      "license": "derived from source data US-Government-Public-Domain (NOAA)",
+      "name": "ghcn-window-series-ghcn.db",
+      "reason": "Held-out input derived deterministically from authenticated raw upstream files (derive.py recipe in tests/heldout/manifest.json); stored in Git LFS and authenticated at scoring.",
+      "scope": "heldout",
+      "sha256": "adc63a198569d514a408d09dc8ddd57547fac50987f55e5409d1962b8b0ed6ba"
+    },
+    {
+      "bytes": 120,
+      "destination": "tests/heldout/files/b76506355c33af7bf1367004e789231ec98f56f907bc3edabc1b0422d1656865",
+      "distribution": "git",
+      "license": "derived request list; source data US-Government-Public-Domain (NOAA)",
+      "name": "ghcn-window-series-requests-heldout",
+      "reason": "Frozen request list from the candidate kit (one line per request, no duplicates).",
+      "scope": "heldout",
+      "sha256": "b76506355c33af7bf1367004e789231ec98f56f907bc3edabc1b0422d1656865"
+    },
+    {
+      "scope": "public",
+      "name": "public-mirror-incoming",
+      "destination": "environment/workload/inputs/files/4773bb79d07445fe62867aef01e69e6b707054b4e0cab71fa8e7263869e550a9",
+      "bytes": 354926592,
+      "sha256": "4773bb79d07445fe62867aef01e69e6b707054b4e0cab71fa8e7263869e550a9",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "Public domain and CC-BY-4.0",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/4773bb79d07445fe62867aef01e69e6b707054b4e0cab71fa8e7263869e550a9"
+    },
+    {
+      "scope": "public",
+      "name": "public-mirror-upsert-seed",
+      "destination": "environment/workload/inputs/files/894208bf76d020a1700ee31bd486bbfd6bbb17cfa578349f28f570b37a9b3599",
+      "bytes": 177561600,
+      "sha256": "894208bf76d020a1700ee31bd486bbfd6bbb17cfa578349f28f570b37a9b3599",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "Public domain and CC-BY-4.0",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/894208bf76d020a1700ee31bd486bbfd6bbb17cfa578349f28f570b37a9b3599"
+    },
+    {
+      "scope": "public",
+      "name": "public-batch-upsert.state.jsonl.gz",
+      "destination": "environment/workload/inputs/files/8487749df4bd300abee827c516c74607a2db6beafe544e468fce6c58cb47fb7c",
+      "bytes": 123464191,
+      "sha256": "8487749df4bd300abee827c516c74607a2db6beafe544e468fce6c58cb47fb7c",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "Public domain and CC-BY-4.0",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/8487749df4bd300abee827c516c74607a2db6beafe544e468fce6c58cb47fb7c"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-mirror-incoming",
+      "destination": "tests/heldout/files/a6bf42bd72a0c64ea16c17676c9bef80089f9f4ac5b376724ce6e4679cec84d5",
+      "bytes": 530993152,
+      "sha256": "a6bf42bd72a0c64ea16c17676c9bef80089f9f4ac5b376724ce6e4679cec84d5",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "CC-BY-4.0 (GeoNames; see environment/notices/SUITE-INPUTS.md)"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-mirror-upsert-seed",
+      "destination": "tests/heldout/files/dd7464f6e6ad27e3dadb00991d2a5dca34996fdeb4eacecd8a92aaecb3a5c71d",
+      "bytes": 265437184,
+      "sha256": "dd7464f6e6ad27e3dadb00991d2a5dca34996fdeb4eacecd8a92aaecb3a5c71d",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "CC-BY-4.0 (GeoNames; see environment/notices/SUITE-INPUTS.md)"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-mirror-before-vacuum",
+      "destination": "tests/heldout/files/bb61edb95068ec84f3f3efbb2dc9600f231735eefc50c7beb01fc9eac5d0ff1b",
+      "bytes": 530993152,
+      "sha256": "bb61edb95068ec84f3f3efbb2dc9600f231735eefc50c7beb01fc9eac5d0ff1b",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "CC-BY-4.0 (GeoNames; see environment/notices/SUITE-INPUTS.md)"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-batch-upsert.state.jsonl.gz",
+      "destination": "tests/heldout/references/batch-upsert.state.jsonl.gz",
+      "bytes": 117881716,
+      "sha256": "d99569353478323c8bcbbf7195b873822755735d3762821eaf420007b25fa875",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "CC-BY-4.0 (GeoNames; see environment/notices/SUITE-INPUTS.md)"
+    },
+    {
+      "scope": "heldout",
+      "name": "heldout-mirror-vacuum.state.jsonl.gz",
+      "destination": "tests/heldout/references/mirror-vacuum.state.jsonl.gz",
+      "bytes": 74859144,
+      "sha256": "e1e12f86bb45638b1a9bb928d019105ca61600310a0b46d5482af9b063564466",
+      "reason": "Exact authenticated alternate input or complete source-derived reference.",
+      "license": "CC-BY-4.0 (GeoNames; see environment/notices/SUITE-INPUTS.md)"
+    },
+    {
+      "scope": "heldout",
+      "name": "mirror-eligibility-commitment",
+      "destination": "tests/heldout/data/mirror-eligibility-commitment.json",
+      "bytes": 848,
+      "sha256": "d7a867bdaf7de933d147f28edb60323e2526db27682bc821ff826b26ec521358",
+      "reason": "Exact authenticated alternate input or complete source-derived reference."
+    },
+    {
+      "scope": "heldout",
+      "name": "mirror-acquisition",
+      "destination": "tests/heldout/data/mirror-acquisition.json",
+      "bytes": 725,
+      "sha256": "4c8aba0ac4993adc23ff1a02e465b0f1f8c2e549bd19b9f3d96dd1d681df4dcf",
+      "reason": "Exact authenticated alternate input or complete source-derived reference."
+    },
+    {
+      "scope": "heldout",
+      "name": "mirror-notice-1",
+      "destination": "tests/heldout/data/mirror-notice-1.txt",
+      "bytes": 8843,
+      "sha256": "b1957379b6c1242c700c98ac9a8aa0a09f56c3c0a50ee72175527005f48ef2c5",
+      "reason": "Exact authenticated alternate input or complete source-derived reference."
+    },
+    {
+      "scope": "public",
+      "name": "public-vacuum-expanded-incoming",
+      "destination": "environment/workload/inputs/files/57e230132964437dfd58c0a6e7e3cc0e1dbe0a4654b88d35a67cb7acec1266a2",
+      "bytes": 1447354368,
+      "sha256": "57e230132964437dfd58c0a6e7e3cc0e1dbe0a4654b88d35a67cb7acec1266a2",
+      "reason": "Whole-file public VACUUM expansion with complete source-derived reference.",
+      "license": "Public domain and CC-BY-4.0",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/57e230132964437dfd58c0a6e7e3cc0e1dbe0a4654b88d35a67cb7acec1266a2"
+    },
+    {
+      "scope": "public",
+      "name": "public-mirror-before-vacuum",
+      "destination": "environment/workload/inputs/files/9e445ffa209c1ebc374980c0ca7a1da9800c617967421d310ac4c60597852f61",
+      "bytes": 1447354368,
+      "sha256": "9e445ffa209c1ebc374980c0ca7a1da9800c617967421d310ac4c60597852f61",
+      "reason": "Whole-file public VACUUM expansion with complete source-derived reference.",
+      "license": "Public domain and CC-BY-4.0",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/9e445ffa209c1ebc374980c0ca7a1da9800c617967421d310ac4c60597852f61"
+    },
+    {
+      "scope": "public",
+      "name": "public-mirror-vacuum.state.jsonl.gz",
+      "destination": "environment/workload/inputs/files/8bd59c18b907e6acbc9d3a6fe123d188afca969a976304d5d907018fa10f2012",
+      "bytes": 209450905,
+      "sha256": "8bd59c18b907e6acbc9d3a6fe123d188afca969a976304d5d907018fa10f2012",
+      "reason": "Whole-file public VACUUM expansion with complete source-derived reference.",
+      "license": "Public domain and CC-BY-4.0",
+      "kind": "repo-lfs",
+      "distribution": "operator",
+      "source": "public/files/8bd59c18b907e6acbc9d3a6fe123d188afca969a976304d5d907018fa10f2012"
+    }
+  ],
+  "schema_version": 1,
+  "task": "sqlite-distinct-plant-facets"
+}

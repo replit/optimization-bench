@@ -1,0 +1,23 @@
+{
+  "conditions_verified": {
+    "all_untimed_checks_passed": true,
+    "evidence": "tests/differential/validation/warm-untimed-qualification.json",
+    "fuzz": "tests/differential/validation/warm-differential-smoke.json",
+    "generic_hook": "ffb7dbcaa8041e7c2bf51a9a1cf8220883998cdd",
+    "receipt_fix": "481c5d6576990f7477265a2f3cbf14d1a97ada34"
+  },
+  "coordinator_conversation_id": "71fa24c5-8bc1-482a-a146-45ef6c4a1676",
+  "decision": "approve",
+  "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+  "no_git_binary_preread": true,
+  "pregrant": "HOST-CLEAR PRE-GRANTED for the re-run A/A once step2 passes and VMquiet. Onlytimedsession; Peterworker hasnoclear. Sameapprovedprotocol:onecontainerperpair,30balancedpairs+1warmup,seed20261025,no trimming,stopfirstarmunder1sorfailedfamily. Reportfirst-versus-secondpositionratioeachfamily. Releaseclearwhen done.",
+  "quiet_check": {
+    "at": "2026-10-25T21:58:07.209334+00:00",
+    "loadavg": "0.33 1.36 1.28 1/390 53571",
+    "other_build_test_or_measurement_jobs": 0,
+    "running_containers": 0,
+    "two_second_cpu_busy_fraction": 0.0037511722413253734
+  },
+  "task_commit": "308ac7c31a7fc31f4e1bfdc72e2ab1e45c13e35e",
+  "verified_build_hash_source": "warm-public-controls.json, immutable unchanged source/builds since step2"
+}

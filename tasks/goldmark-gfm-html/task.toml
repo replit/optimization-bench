@@ -1,0 +1,46 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/goldmark/ast" }, { source = "/app/goldmark/parser" }, { source = "/app/goldmark/renderer" }, { source = "/app/goldmark/text" }, { source = "/app/goldmark/util" }, { source = "/app/goldmark/extension" }]
+
+[task]
+name = "optimbench/goldmark-gfm-html"
+version = "1.0.0"
+description = "v1.0 distinct-document GFM pipeline plus parse-only AST unit, one configured parser/renderer reused per unit"
+keywords = ["optimbench", "performance", "go", "markdown", "fresh-track"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "cdc681131c6756a770ad828b53f231876032439e"
+baseline_git_tree = "2580812bcf0fc9c8bab94d40b0be803d2433fbe8"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "baseline-reference-verified"
+library = "goldmark"
+language = "Go"
+run_mode = "in-process"
+upstream_repo = "https://github.com/yuin/goldmark"
+upstream_commit = "9ac8030064518346e4c9d7847c85278c3a5244ee"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = true
+verifier_ready = false
+
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:goldmark-gfm-html-1.0.0@sha256:764fc34d580be82c10a5ebf42d655230e95388f1086e281c2a7c132568fe8f9c"
+network_mode = "no-network"
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384

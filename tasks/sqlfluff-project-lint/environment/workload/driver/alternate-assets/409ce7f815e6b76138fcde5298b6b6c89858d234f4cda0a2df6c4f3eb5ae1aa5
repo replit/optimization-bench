@@ -1,0 +1,7 @@
+[sqlfluff]
+dialect = snowflake
+templater = jinja
+[sqlfluff:templater:jinja:context]
+database_name = BENCH_DATABASE
+schema_name = BENCH_SCHEMA
+warehouse_name = BENCH_WAREHOUSE

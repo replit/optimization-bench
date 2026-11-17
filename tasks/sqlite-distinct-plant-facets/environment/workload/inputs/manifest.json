@@ -1,0 +1,289 @@
+{
+  "format": "optimbench-inputs-v1",
+  "splits": {
+    "public": [
+      {
+        "docs": [
+          {
+            "bytes": 6754304,
+            "expect_len": 3323875,
+            "expect_sha": "962185e0b8d77186376a2a7b2afd91c81ffe6fb29297d48344086813568c41ca",
+            "family": "country-filtered-facets",
+            "membership_sha256": "325def4564a809983514f17a8ef6d6deb0ba9dfb0703a5ec2afa726dbf7b8e13",
+            "path": "distinct-plant-facets-public",
+            "requests": 20855,
+            "requests_bytes": 535697,
+            "requests_sha256": "52564d1dcdabe9da7913e1a799653cdc6e2ef8a9485819f3fd52f6f01628e62c",
+            "sha256": "3fd9bc747aee51d0d7704e6fee62f4bc6e486d144ba09db34ccc642c2e6c59ad"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "family": "ranked-documents",
+            "path": "ranked-documents-public",
+            "bytes": 19746816,
+            "sha256": "3459573edf9dc8d19f3e81ff8bd2ede209dcd60ff881860572dd56ce7caffd7e",
+            "requests": 178,
+            "requests_bytes": 31239,
+            "requests_sha256": "517bb2306a30724ff5144251086208b4c180dc316fecd8a1ce5d7c8fb56b78e8",
+            "expect_len": 10710770,
+            "expect_sha": "d6d228d6cda55800cd9f1464823acce30d14b27a89d052d7e7e8830d7345bf95"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "bytes": 1067008,
+            "expect_len": 615,
+            "expect_sha": "b0fe7b635e56cc6f2cd31217c2d102edc0b40e3f28eeb0be580f079e18240494",
+            "family": "geonames-damaged-plus-sample-db",
+            "files": [
+              {
+                "name": "Chinook_Sqlite.sqlite",
+                "bytes": 1067008,
+                "sha256": "bdf635be69850bd3be09c9a2dbeef7ddfb80036bd3ef3381383cd03b61e4a61a",
+                "url": "https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_Sqlite.sqlite"
+              },
+              {
+                "name": "geonames-MX-CA.corrupt-s1.db",
+                "bytes": 214286336,
+                "sha256": "84949d67f87e7d48cf59740a6911429194fe0cf8e8221d6786eeac1d9c95ddd6"
+              }
+            ],
+            "path": "integrity-check-public",
+            "sha256": "bdf635be69850bd3be09c9a2dbeef7ddfb80036bd3ef3381383cd03b61e4a61a",
+            "workload": "integrity-check"
+          },
+          {
+            "bytes": 47844009,
+            "expect_len": 172,
+            "expect_sha": "40a7df31508f476e628e3c2f0f1edc2347fc8ab69143b1f63c0e6f298ca4ea5b",
+            "family": "tatoeba-language-export",
+            "files": [
+              {
+                "name": "deu_sentences.tsv",
+                "bytes": 47844009,
+                "sha256": "5a4a0ed836aa5d8faaf91a9a2bde15bc71065ef693f63ddb126a7df339299efe"
+              }
+            ],
+            "path": "tatoeba-create-index-public",
+            "sha256": "5a4a0ed836aa5d8faaf91a9a2bde15bc71065ef693f63ddb126a7df339299efe",
+            "workload": "tatoeba-create-index"
+          },
+          {
+            "bytes": 18321408,
+            "expect_len": 1679678,
+            "expect_sha": "2fa82fa7b59c54690bdccaa83fc8d9c1ec076f8d74819af1f39e49925276c30b",
+            "family": "usgs-comcat-network-parity",
+            "files": [
+              {
+                "name": "quakes.db",
+                "bytes": 18321408,
+                "sha256": "5912c891bff202b761cca10f0e16dc54fe351bb20e647dc02e924265a43a50e0"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 896,
+                "sha256": "6505cf0fad8eece307d89777a241a927af2905d1a092a3ef6e8c7fc7a468cff5"
+              }
+            ],
+            "path": "usgs-geojson-json-public",
+            "requests": 28,
+            "sha256": "5912c891bff202b761cca10f0e16dc54fe351bb20e647dc02e924265a43a50e0",
+            "workload": "usgs-geojson-json"
+          },
+          {
+            "bytes": 304984064,
+            "expect_len": 116489553,
+            "expect_sha": "4ec31bc5f37a72b0794065a0465d85a1489f86aac2c1f086d231e937bc9b84d5",
+            "family": "noaa-storm-events-state-parity",
+            "files": [
+              {
+                "name": "storms.db",
+                "bytes": 304984064,
+                "sha256": "74b60b30abd0e1e03b424958d0ec7c5d72555264fe709861921cc83e4491395e"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 5210,
+                "sha256": "0dd49fe190854c7417827df725bbdd4a11e6a996fb91f00c2add87989a83e65c"
+              }
+            ],
+            "path": "storms-printf-report-public",
+            "requests": 330,
+            "sha256": "74b60b30abd0e1e03b424958d0ec7c5d72555264fe709861921cc83e4491395e",
+            "workload": "storms-printf-report"
+          },
+          {
+            "bytes": 179499008,
+            "expect_len": 78988890,
+            "expect_sha": "9d584972940c3cf2f589f8155bad4afe13958e7ef2bb8284033432abf75b7634",
+            "family": "geonames-us-state-parity",
+            "files": [
+              {
+                "name": "places.db",
+                "bytes": 179499008,
+                "sha256": "0040a59d631259ef2a86dd11a0832da03afe273ca9c4298f70ead07faded2f67"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 2624307,
+                "sha256": "e8f60bac5986f8f56be0c35fddbf750c02ca5b04f4dc079b67e4cbc4b78c920f"
+              }
+            ],
+            "path": "geonames-rtree-public",
+            "requests": 77768,
+            "sha256": "0040a59d631259ef2a86dd11a0832da03afe273ca9c4298f70ead07faded2f67",
+            "workload": "geonames-rtree"
+          },
+          {
+            "bytes": 425275392,
+            "expect_len": 122454,
+            "expect_sha": "a425bc812fe2f2e2adb74457823504c7e73f2e8757648f9d2e665d84be0894c5",
+            "family": "municipal-payroll-publisher",
+            "files": [
+              {
+                "name": "ledger.db",
+                "bytes": 425275392,
+                "sha256": "dde5a2286ac5756e308e7113c0a8af38f9f409472e96021a91780ac9271fa587"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 4238,
+                "sha256": "18ca98faa731ac28d88ba183ccf3990a5989d6c14c0dae1883750d22df02c14b"
+              }
+            ],
+            "path": "decimal-ledger-public",
+            "requests": 159,
+            "sha256": "dde5a2286ac5756e308e7113c0a8af38f9f409472e96021a91780ac9271fa587",
+            "workload": "decimal-ledger"
+          },
+          {
+            "bytes": 265089024,
+            "expect_len": 3526848,
+            "expect_sha": "13019e8c1d7adfc637fff90311e3d1d0f9296a02ddb0512c9d8695bbbc1f9f2c",
+            "family": "us-government-daily-monitoring",
+            "files": [
+              {
+                "name": "obs.db",
+                "bytes": 265089024,
+                "sha256": "34ea8beebc4739dc3c87b37958133d7a088102f182815282ea1e88bcb2ba61e5"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 76775,
+                "sha256": "16faf283f62d758a240371a9981dc632cb90baca8ca8bc54ea0dd8259f3aa6a8"
+              }
+            ],
+            "path": "percentile-public",
+            "requests": 4463,
+            "sha256": "34ea8beebc4739dc3c87b37958133d7a088102f182815282ea1e88bcb2ba61e5",
+            "workload": "percentile"
+          },
+          {
+            "bytes": 352595968,
+            "expect_len": 48565287,
+            "expect_sha": "4bc0037f9d9da6ba5b0576c45e8d80c04f0d457dc602454d0f2bf31bd69f98a6",
+            "family": "stackexchange-community",
+            "files": [
+              {
+                "name": "se.db",
+                "bytes": 352595968,
+                "sha256": "6608fc6ed25fd95f25fcc0a8fa647dcdd4a6390c576609fd0b529201dcb86b7b"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 541453,
+                "sha256": "73376af59af0ef9af69611eb65406e58d4883344d1bf1c36df100c5440b9cd12"
+              }
+            ],
+            "path": "fkey-cascade-public",
+            "requests": 49554,
+            "sha256": "6608fc6ed25fd95f25fcc0a8fa647dcdd4a6390c576609fd0b529201dcb86b7b",
+            "workload": "fkey-cascade"
+          },
+          {
+            "bytes": 150544384,
+            "expect_len": 31349127,
+            "expect_sha": "16cee5de03b64663367ab9882f8a31ffa60a20f0234d0d6a093aacd80aefbbaa",
+            "family": "static-gtfs-agency",
+            "files": [
+              {
+                "name": "gtfs.db",
+                "bytes": 150544384,
+                "sha256": "0885ceca58b3ff2bcdbc3ca17d5afc7dfae528d2f854041736ae250fe6481893"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 197506,
+                "sha256": "5012bf2da820393a15bb3d67890c329fe8233bc765192789bb682c7062e3d123"
+              }
+            ],
+            "path": "gtfs-departure-join-public",
+            "requests": 5809,
+            "sha256": "0885ceca58b3ff2bcdbc3ca17d5afc7dfae528d2f854041736ae250fe6481893",
+            "workload": "gtfs-departure-join"
+          },
+          {
+            "bytes": 13787136,
+            "expect_len": 1469582,
+            "expect_sha": "0d78c1de9b30baa3435ae3907449c51c4ee7e0a96f2a60d8534fd5d96255c27e",
+            "family": "ghcn-daily-station-network",
+            "files": [
+              {
+                "name": "ghcn.db",
+                "bytes": 13787136,
+                "sha256": "5f66db7353adb87e41a787bd39b75df8ca293ddbc7b0cd8d0b5047b6d50319df"
+              },
+              {
+                "name": "requests.tsv",
+                "bytes": 144,
+                "sha256": "54614af766f09287e07b190395f1aa210210e8b695a2f1403f84ce19388efa69"
+              }
+            ],
+            "path": "ghcn-window-series-public",
+            "requests": 12,
+            "sha256": "5f66db7353adb87e41a787bd39b75df8ca293ddbc7b0cd8d0b5047b6d50319df",
+            "workload": "ghcn-window-series"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "family": "batch-upsert",
+            "path": "batch-upsert-public",
+            "sha256": "4773bb79d07445fe62867aef01e69e6b707054b4e0cab71fa8e7263869e550a9",
+            "bytes": 354926592,
+            "prepared_sha256": "894208bf76d020a1700ee31bd486bbfd6bbb17cfa578349f28f570b37a9b3599",
+            "prepared_bytes": 177561600,
+            "requests": 1,
+            "records": 1109532,
+            "expect_len": 335490723,
+            "expect_sha": "ceb8033e5781aaa22558eefd6045c7b8a385ac5ceb5cdaddda85bf4327b4af5f"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "family": "mirror-vacuum",
+            "path": "mirror-vacuum-public",
+            "sha256": "57e230132964437dfd58c0a6e7e3cc0e1dbe0a4654b88d35a67cb7acec1266a2",
+            "bytes": 1447354368,
+            "prepared_sha256": "9e445ffa209c1ebc374980c0ca7a1da9800c617967421d310ac4c60597852f61",
+            "prepared_bytes": 1447354368,
+            "requests": 1,
+            "records": 1734800,
+            "expect_len": 549857847,
+            "expect_sha": "09c37466e87c9eb49feda8da689ecda36ddeb7e759e95dd9bed918f37345d1d8"
+          }
+        ]
+      }
+    ]
+  },
+  "task": "sqlite-distinct-plant-facets"
+}

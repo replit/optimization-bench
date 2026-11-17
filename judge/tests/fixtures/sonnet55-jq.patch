@@ -1,0 +1,63 @@
+diff --git a/src/jv.c b/src/jv.c
+index 930fb6f..4949fa7 100644
+--- a/src/jv.c
++++ b/src/jv.c
+@@ -99,10 +99,6 @@ typedef enum {
+ #define JVP_FLAGS_FALSE     JVP_MAKE_FLAGS(JV_KIND_FALSE, JVP_PAYLOAD_NONE)
+ #define JVP_FLAGS_TRUE      JVP_MAKE_FLAGS(JV_KIND_TRUE, JVP_PAYLOAD_NONE)
+ 
+-jv_kind jv_get_kind(jv x) {
+-  return JVP_KIND(x);
+-}
+-
+ const char* jv_kind_name(jv_kind k) {
+   switch (k) {
+   case JV_KIND_INVALID: return "<invalid>";
+@@ -2004,19 +2000,13 @@ jv jv_object_iter_value(jv object, int iter) {
+ /*
+  * Memory management
+  */
+-jv jv_copy(jv j) {
+-  if (JVP_IS_ALLOCATED(j)) {
+-    jvp_refcnt_inc(j.u.ptr);
+-  }
+-  return j;
+-}
+ 
+ /*
+  * Free children iteratively via a heap-allocated buffer to avoid
+  * recursion through jv_free, which would cause stack overflow on
+  * deeply nested values.
+  */
+-void jv_free(jv j) {
++void jv_free_slow(jv j) {
+   jv* pending = NULL;
+   size_t len = 0, cap = 0;
+   while (1) {
+diff --git a/src/jv.h b/src/jv.h
+index 0eac43e..c110383 100644
+--- a/src/jv.h
++++ b/src/jv.h
+@@ -51,13 +51,19 @@ typedef struct {
+  */
+ 
+ /* These functions borrow their jv arguments. */
+-jv_kind jv_get_kind(jv);
++static inline jv_kind jv_get_kind(jv x) { return (jv_kind)(x.kind_flags & 0xF); }
+ const char* jv_kind_name(jv_kind);
+ static int jv_is_valid(jv x) { return jv_get_kind(x) != JV_KIND_INVALID; }
+ 
+ /* Borrows its argument and returns a new reference to the same value. */
+-jv jv_copy(jv);
+-void jv_free(jv);
++void jv_free_slow(jv);
++static inline jv jv_copy(jv j) {
++  if (j.kind_flags & 0x80) ++*(int*)j.u.ptr;
++  return j;
++}
++static inline void jv_free(jv j) {
++  if (j.kind_flags & 0x80) jv_free_slow(j);
++}
+ 
+ /* Borrows its argument. */
+ int jv_get_refcnt(jv);

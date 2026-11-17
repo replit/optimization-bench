@@ -1,0 +1,280 @@
+{
+  "aa_sampling_performed": false,
+  "builds": {
+    "baseline": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+    "candidate": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477"
+  },
+  "image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "limits": {
+    "cases_per_gate": 256,
+    "observations_per_arm": 4096,
+    "seconds_per_subset": 900
+  },
+  "passed": false,
+  "records": [
+    {
+      "actual_cpus": [],
+      "affinity_verified": false,
+      "baseline_cases": 16,
+      "candidate_cases": 16,
+      "cpu_count": 1,
+      "execution_evidence": {
+        "bytes": 9051,
+        "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-1/executions.json",
+        "sha256": "e544061da81f1425a900180eecb54775b6d41ce0f3e55d9932adeaee7f14bf03"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 522419,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-1/aliasing.json",
+            "sha256": "50c4a6e64e4b31661f407527fa7f7e7eca7ce703b2fafc84bcc416ecc8c4debc"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 359997,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-1/cli_faults.json",
+            "sha256": "7f6c06e12aca9a0a571db19d26a66dfb8d5b9d66194184451d70130334050175"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-1/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 1205440,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-1/repeat_in_process.json",
+            "sha256": "78477b69d2000a1dc55ebc2b82404662771a4bd9a6953f64ab3cfa93db4439b4"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 517981,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-1/stream_faults.json",
+            "sha256": "519ac73db0991844e85aabddb3778210477d882ce366d3de7a89f1336d69aa39"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        }
+      },
+      "passed": false,
+      "requested_cpus": [
+        0
+      ],
+      "status": "unmeasured"
+    },
+    {
+      "actual_cpus": [],
+      "affinity_verified": false,
+      "baseline_cases": 16,
+      "candidate_cases": 16,
+      "cpu_count": 2,
+      "execution_evidence": {
+        "bytes": 9339,
+        "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-2/executions.json",
+        "sha256": "5f2559fe0aac2ba2073259191d9c06ea314d89462a1088e768fda4a8ba55dd2e"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 522587,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-2/aliasing.json",
+            "sha256": "1b61cc7d6521ea26be5dae628079e4d822aecfb043746e4ce525a0aba662dc2f"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 360730,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-2/cli_faults.json",
+            "sha256": "a73c372839efc2cc5fc5b94b505d6d9f433e2a6c797107333566ffc9f880b0c6"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-2/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 1206112,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-2/repeat_in_process.json",
+            "sha256": "d0fc8e9fe6b1096dcc5cc94e4a5b24981b2284ec0e1c57cf5a5cccd5c80870f5"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 518317,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-2/stream_faults.json",
+            "sha256": "590993c5f5c8213277163b40eccdc75cc6df0f0ba264a4ab42dfcc6e25c2f1f2"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        }
+      },
+      "passed": false,
+      "requested_cpus": [
+        0,
+        1
+      ],
+      "status": "unmeasured"
+    },
+    {
+      "actual_cpus": [],
+      "affinity_verified": false,
+      "baseline_cases": 16,
+      "candidate_cases": 16,
+      "cpu_count": 4,
+      "execution_evidence": {
+        "bytes": 9915,
+        "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-4/executions.json",
+        "sha256": "8a2d4f4e44527e5ef5cd014097a6339919dc1b800941a36803c9e4af2a036d63"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 522923,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-4/aliasing.json",
+            "sha256": "15a18b2d931305c9a055cc14bb9d57b424f0b0a3a9ca2c46df532c4dbbb1e33a"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 362202,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-4/cli_faults.json",
+            "sha256": "ee4c575146e44627f2d657f21d59440564a070dd783bcf2f533e3a2d0566936e"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-4/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 1207456,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-4/repeat_in_process.json",
+            "sha256": "6ab43f178dbfee69effd75768cfded735a76b729c6e8211824bd9982ca74dfc2"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 518989,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-4/stream_faults.json",
+            "sha256": "01c4dc154317896bfb75650734d358e5ce3a3fd20ae1a0fb51be4e2dcffa0eb2"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        }
+      },
+      "passed": false,
+      "requested_cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unmeasured"
+    },
+    {
+      "actual_cpus": [],
+      "affinity_verified": false,
+      "baseline_cases": 16,
+      "candidate_cases": 16,
+      "cpu_count": 8,
+      "execution_evidence": {
+        "bytes": 11067,
+        "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-8/executions.json",
+        "sha256": "d30b302ad2891d843e47407643635957e767fe56f279565f21f69ba00f514901"
+      },
+      "gates": {
+        "aliasing": {
+          "evidence": {
+            "bytes": 523595,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-8/aliasing.json",
+            "sha256": "b4c629b2ff94ac0a7805c4b63b00a6ae4e5705be13d3d2c258840dd13a2e79d5"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "cli_faults": {
+          "evidence": {
+            "bytes": 365146,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-8/cli_faults.json",
+            "sha256": "d43568da61762d3d7bde5a8125377c6948ad007ab184b7f5b249cbc7a2c83842"
+          },
+          "status": "passed"
+        },
+        "header_consumers": {
+          "evidence": {
+            "bytes": 3986,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-8/header_consumers.json",
+            "sha256": "b9ed983ffa56608ea3dba1998f7b3238d65e885321471566153dba8e7207c529"
+          },
+          "status": "not_applicable"
+        },
+        "repeat_in_process": {
+          "evidence": {
+            "bytes": 1210144,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-8/repeat_in_process.json",
+            "sha256": "3eaf2db280b2f6de0b5813b7eccc8bddb99eb03a8926c073f8c0e9505dd9c52d"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        },
+        "stream_faults": {
+          "evidence": {
+            "bytes": 520333,
+            "path": "/root/sqlglot-cpu-subsets-callback-final-smoke/cpu-8/stream_faults.json",
+            "sha256": "e925e3a7bacf666e455409731365ce14cdbe7ffd9d5ceba56e16bc1c11adadbb"
+          },
+          "reason": "Library callback did not retain raw CPU observations",
+          "status": "passed"
+        }
+      },
+      "passed": false,
+      "requested_cpus": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "unmeasured"
+    }
+  ],
+  "schema": "judge-cpu-correctness-v1",
+  "sources": null,
+  "status": "unmeasured",
+  "task": "sqlglot-mozilla-transpile",
+  "timing_performed": false
+}

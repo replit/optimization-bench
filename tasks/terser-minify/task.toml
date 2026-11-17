@@ -1,0 +1,46 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/terser/lib" }]
+
+[task]
+name = "optimbench/terser-minify"
+version = "1.0.0"
+description = "Speed up sequential minification of 149 unchanged JavaScript assets, preserving the exact pinned output and supported API behavior."
+keywords = ["optimbench", "performance", "javascript", "minifier", "in-process"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "a9d69dac8d3025d823831d355766121b3b85c264"
+baseline_git_tree = "d198ecbf7e06ab0d95b5734a67a744c5376e1c39"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "Terser (terser/terser)"
+language = "JavaScript"
+run_mode = "in-process"
+upstream_repo = "https://github.com/terser/terser"
+upstream_commit = "317f449862b8d48756818cdcaf67c22c31ec852c"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = true
+verifier_ready = false
+
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:terser-minify-1.0.0@sha256:8a9ff01e956a2f769e4adc5f667fa2a79585d0860bda5940d2a69112613cf050"
+network_mode = "no-network"
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384

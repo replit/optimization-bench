@@ -1,0 +1,66 @@
+{
+  "task_version": "1.0.0",
+  "baseline_source_sha256": "a4bba75d9fe04c23a5b0935e3cca7b5155dcbde11154fd4ecef69c3845dafd5a",
+  "edition": "v1.0-black-teeth-api-20261029",
+  "loading_probe_command": [
+    "python",
+    "-c",
+    "import black,blib2to3.pytree,json; from pathlib import Path; assert black.COMPILED; assert Path(black.__file__).is_relative_to('/candidate/runtime'); assert Path(blib2to3.pytree.__file__).is_relative_to('/candidate/runtime'); assert black.format_str('x=1',mode=black.Mode())=='x = 1\\n'; print(json.dumps({'black':black.__file__,'compiled':black.COMPILED,'version':black.__version__}))"
+  ],
+  "platform": "linux/amd64",
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".py"
+    ],
+    "max_source_bytes": 20000000,
+    "max_source_files": 1000,
+    "protected_paths": [],
+    "source_roots": [
+      "src/black",
+      "src/blib2to3",
+      "src/blackd"
+    ]
+  },
+  "status": "qualification-pending",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json#/tasks/black-project-format",
+  "correctness_qualification": "pending-new-definition-registration-and-CPU-certification",
+  "task": "black-project-format",
+  "upstream_test_command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests",
+    "-k",
+    "not incompatible_with_mypyc",
+    "-n",
+    "8"
+  ],
+  "upstream_timeout": 7200,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  },
+  "v1_0_changelog": "v1.0 (2026-10-29): new workloads warm-snippets (black.format_str per documentation fragment) and editor-ranges (black.format_file_contents(fast=False, lines=...) per editor range request), each one resident warm process timing only its call loop; existing-workload fixes: the startup-dominated Django/mypy/Tornado checks are replaced by a SQLAlchemy CI check with real violations, the Django line-length-79 migration is kept, a correctness-only empty-project startup probe (<= 2% share) is added, held-out units are replaced by a google-cloud-retail CI check and a Faker migration, check outputs drop the scratch path, and build_source_env is set; input changes: new public and held-out inputs for all of the above (v1.1 inputs piptools/astroid/mypy/tornado/django-check retired)."
+}

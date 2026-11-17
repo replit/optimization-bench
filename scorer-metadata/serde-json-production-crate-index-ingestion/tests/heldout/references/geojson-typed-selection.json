@@ -1,0 +1,10 @@
+{
+  "unit": "geojson-typed",
+  "case": "geojson-typed-corpus",
+  "files": 194,
+  "bytes": 1044274820,
+  "selection": "every geoBoundaries gbOpen ADM1 catalog entry (api/current/gbOpen/ALL/ADM1) whose meanVertices x admUnitCount <= 2.5M (excludes CAN, PHL, CHL, NZL), de-duplicated by download URL; commit-pinned GitHub LFS media URLs; no transformation",
+  "lineage": "geoBoundaries (William & Mary geoLab); disjoint from public Natural Earth and MLIT/japan-topography",
+  "expected": "pristine judge driver --check-batch, two fresh runs, byte-identical",
+  "license_basis": "fetch-only; no redistribution (geoBoundaries gbOpen CC BY 4.0 / ODbL per source)"
+}

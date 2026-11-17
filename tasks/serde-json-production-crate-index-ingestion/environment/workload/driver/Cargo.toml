@@ -1,0 +1,9 @@
+[package]
+name = "optimbench-serde-index-smoke"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+crates-index = { git = "https://github.com/frewsxcv/rust-crates-index", rev = "f455167c669cd3e7660c434b8022dbbde97286e6" }
+serde_json = "=1.0.154"

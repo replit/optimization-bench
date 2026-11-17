@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "bytes": 344,
+      "original_public_path": "1decaa305d53c3ca",
+      "path": "018745170d6130d820b842008929d25d7b8489b6085f757b63e399dbaaa35643.sql",
+      "sha256": "018745170d6130d820b842008929d25d7b8489b6085f757b63e399dbaaa35643"
+    },
+    {
+      "bytes": 508,
+      "original_public_path": "aaa8aa6fc673b61c",
+      "path": "0244a96a0612776cea0ab0874b82c1d964a75b43d1819341845fd0579dbfbb57.sql",
+      "sha256": "0244a96a0612776cea0ab0874b82c1d964a75b43d1819341845fd0579dbfbb57"
+    },
+    {
+      "bytes": 303,
+      "original_public_path": "f04036f2331adb0a",
+      "path": "030b3fb7a580bf327005a9a3a687b6b112435e5ba5b0e927fe91e0ecf02b0cae.sql",
+      "sha256": "030b3fb7a580bf327005a9a3a687b6b112435e5ba5b0e927fe91e0ecf02b0cae"
+    },
+    {
+      "bytes": 1686,
+      "original_public_path": "c5f824d6fecc485a",
+      "path": "03ffbbdabd1560475194b3c4db682a8f5f35478fc81970deacd71139aacfab23.sql",
+      "sha256": "03ffbbdabd1560475194b3c4db682a8f5f35478fc81970deacd71139aacfab23"
+    },
+    {
+      "bytes": 2925,
+      "original_public_path": "1d134c1985600073",
+      "path": "0446839ac5d98206c13be9a42ce4a8540bd85cf521a35d790aa393a282266175.sql",
+      "sha256": "0446839ac5d98206c13be9a42ce4a8540bd85cf521a35d790aa393a282266175"
+    },
+    {
+      "bytes": 288,
+      "original_public_path": "188a32a4c231e1c0",
+      "path": "046070f0a0fcd2db8c895e5672de2a3add46b8394ab447bcd80feae7aa411354.sql",
+      "sha256": "046070f0a0fcd2db8c895e5672de2a3add46b8394ab447bcd80feae7aa411354"
+    },
+    {
+      "bytes": 4271,
+      "original_public_path": "848e2c71a89a95e7",
+      "path": "05983a3b39179f0228e87c84a651c606515d9032a654d14612c7a1efd3c3ec06.sql",
+      "sha256": "05983a3b39179f0228e87c84a651c606515d9032a654d14612c7a1efd3c3ec06"
+    },
+    {
+      "bytes": 822,
+      "original_public_path": "4bf7dca0c98faf00",
+      "path": "074759208941499f51f83f879425e7bf8bc4b365fe57fb66ddcb3f9255ac26fa.sql",
+      "sha256": "074759208941499f51f83f879425e7bf8bc4b365fe57fb66ddcb3f9255ac26fa"
+    }
+  ],
+  "format": "sqlglot-fuzz-public-corpus-v1",
+  "oracle_values_read": false,
+  "provenance_note": "Original Mozilla public workload bytes; license/provenance remain bound by the unchanged task public payload and notices.",
+  "selection": "First eight public/train documents sorted by SHA-256, 0<bytes<=16000",
+  "source_manifest": "environment/workload/inputs/manifest.json",
+  "source_manifest_sha256": "46406bb8fe838ca0870f00065da87b446ee513f8f47bb9bfe6be65701ce19573",
+  "source_visibility": "environment/public-workloads.lock.json: visibility=public",
+  "split": "public/train"
+}

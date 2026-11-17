@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "path": "frozen-interned/replay-0/stdout.jsonl.gz",
+      "raw_bytes": 739619,
+      "raw_path": "frozen-interned/replay-0/stdout.jsonl",
+      "raw_sha256": "ff09452e06d64e2c0f879633f59e48dc7c5178e335106969e3eb91fcd2fa868d",
+      "stored_sha256": "fa049b82cef72bf39b00288df3d44098d004f08f776910a1c119260d8bc8e5ac"
+    },
+    {
+      "path": "frozen-interned/replay-1/stdout.jsonl.gz",
+      "raw_bytes": 739619,
+      "raw_path": "frozen-interned/replay-1/stdout.jsonl",
+      "raw_sha256": "80089ccc2e34e30916d38a41cb6fc705471c01242db58eb7413659f3f7b2180c",
+      "stored_sha256": "dbbc3671facb5168fccfcc5aa3545d871e92ddaf1d366ba937ff93102b132a2c"
+    },
+    {
+      "path": "pristine/replay-0/stdout.jsonl.gz",
+      "raw_bytes": 739619,
+      "raw_path": "pristine/replay-0/stdout.jsonl",
+      "raw_sha256": "d26d188447995edba3096d2f80914701fd34c16c549c66a68ba61ce55575e44a",
+      "stored_sha256": "55bcfd6d5c66d99e4ad760e933d9558335baa94064e9f5b192fd20a78293e24c"
+    },
+    {
+      "path": "pristine/replay-1/stdout.jsonl.gz",
+      "raw_bytes": 739619,
+      "raw_path": "pristine/replay-1/stdout.jsonl",
+      "raw_sha256": "9d0baf728583f6c5095a1710df0f013b5df12c9b572078909bd973b621c4f16f",
+      "stored_sha256": "7fb2d3c16f20b58ef431c7221ba8121905b1b4fd6cb07b64417cdeb24b8374bb"
+    },
+    {
+      "path": "shared-mutable/replay-0/stdout.jsonl.gz",
+      "raw_bytes": 739529,
+      "raw_path": "shared-mutable/replay-0/stdout.jsonl",
+      "raw_sha256": "d40cadd9216105e8fc6076091e77ed38650d6eab804893d3a661797cea2b2494",
+      "stored_sha256": "d620c49479bbfbdc1b49f9e3fb29a2d9537fcb2176245bfc404393cdff58348f"
+    },
+    {
+      "path": "shared-mutable/replay-1/stdout.jsonl.gz",
+      "raw_bytes": 739529,
+      "raw_path": "shared-mutable/replay-1/stdout.jsonl",
+      "raw_sha256": "81e2e31600d7b0ac6e16a4d8d7bd80776ce22951e5a40432afde9bc15afbb07e",
+      "stored_sha256": "0e9fe1100dbb50a3c76ba879fd717fe43b7df055ea915dd9af3b08ee5d9f73a0"
+    }
+  ],
+  "schema": "generic-api-raw-artifacts-v1"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "black-public-format-str-identity",
+  "purpose": "Disposable pristine-source native semantic regression control, not an optimizer patch",
+  "source_commit": "87928e6d6761a4a6d22250e1fee5601b3998086e",
+  "path": "src/black/__init__.py",
+  "surface_id": "black.format_str",
+  "needle": "    dst_contents = _format_str_once(src_contents, mode=mode, lines=lines)\n",
+  "replacement": "    dst_contents = src_contents\n",
+  "required_occurrences": 1,
+  "expected_failure_class": "successful_public_return_value_difference",
+  "compile_requirement": "Actual pinned mypyc native build through unchanged judge.build; syntax/bytecode compilation alone does not count",
+  "non_equivalence_witness": "x=1\\n formats differently from the pinned public format_str result",
+  "qualification": "Control only; one native mutant is not the required twenty-mutant portfolio"
+}

@@ -1,0 +1,2188 @@
+{
+  "task": "bzip2-codec",
+  "kind": "bzip2",
+  "cases": [
+    {
+      "id": "encode-1-000",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/000.raw",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-000",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/000-1.bz2",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-000",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/000.raw",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-000",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/000-9.bz2",
+      "family": "documents",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-001",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/001.raw",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-001",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/001-1.bz2",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-001",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/001.raw",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-001",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/001-9.bz2",
+      "family": "tables",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-002",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/002.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-002",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/002-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-002",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/002.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-002",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/002-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-003",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/003.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-003",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/003-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-003",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/003.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-003",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/003-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-004",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/004.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-004",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/004-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-004",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/004.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-004",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/004-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-005",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/005.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-005",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/005-1.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-005",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/005.raw",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-005",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/005-9.bz2",
+      "family": "json",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-006",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/006.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-006",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/006-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-006",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/006.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-006",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/006-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-007",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/007.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-007",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/007-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-007",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/007.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-007",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/007-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-008",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/008.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-008",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/008-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-008",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/008.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-008",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/008-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-009",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/009.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-009",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/009-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-009",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/009.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-009",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/009-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-010",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/010.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-010",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/010-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-010",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/010.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-010",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/010-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-011",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/011.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-011",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/011-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-011",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/011.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-011",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/011-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-012",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/012.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-012",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/012-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-012",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/012.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-012",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/012-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-013",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/013.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-013",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/013-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-013",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/013.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-013",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/013-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-014",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/014.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-014",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/014-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-014",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/014.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-014",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/014-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-015",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/015.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-015",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/015-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-015",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/015.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-015",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/015-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-016",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/016.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-016",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/016-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-016",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/016.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-016",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/016-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-017",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/017.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-017",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/017-1.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-017",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/017.raw",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-017",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/017-9.bz2",
+      "family": "source",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-018",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/018.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-018",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/018-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-018",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/018.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-018",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/018-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-019",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/019.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-019",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/019-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-019",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/019.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-019",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/019-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-020",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/020.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-020",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/020-1.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-020",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/020.raw",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-020",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/020-9.bz2",
+      "family": "web",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-021",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/021.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-021",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/021-1.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-021",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/021.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-021",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/021-9.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-022",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/022.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-022",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/022-1.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-022",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/022.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-022",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/022-9.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-1-023",
+      "direction": "encode",
+      "level": 1,
+      "input": "dev/inputs/023.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-1-023",
+      "direction": "decode",
+      "level": 1,
+      "input": "dev/reference/023-1.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "encode-9-023",
+      "direction": "encode",
+      "level": 9,
+      "input": "dev/inputs/023.raw",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "decode-9-023",
+      "direction": "decode",
+      "level": 9,
+      "input": "dev/reference/023-9.bz2",
+      "family": "measurements",
+      "chunk": 65536
+    },
+    {
+      "id": "guard-000",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0000.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-001",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0001.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-002",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 1,
+      "input": "regressions/inputs/0002.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-003",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0003.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-004",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0004.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-005",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 1,
+      "input": "regressions/inputs/0005.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-006",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0006.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-007",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0007.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-008",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 1,
+      "input": "regressions/inputs/0008.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-009",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0009.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-010",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0010.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-011",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 1,
+      "input": "regressions/inputs/0011.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-012",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0012.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-013",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0013.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-014",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 1,
+      "input": "regressions/inputs/0014.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-015",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0015.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-016",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 1,
+      "input": "regressions/inputs/0016.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-017",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 1,
+      "input": "regressions/inputs/0017.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-018",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0018.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-019",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0019.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-020",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0020.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-021",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0021.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-022",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0022.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-023",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0023.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-024",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0024.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-025",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0025.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-026",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0026.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-027",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0027.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-028",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0028.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-029",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0029.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-030",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0030.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-031",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0031.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-032",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0032.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-033",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0033.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-034",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0034.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-035",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0035.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-036",
+      "direction": "encode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0036.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-037",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0037.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-038",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0038.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-039",
+      "direction": "encode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0039.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-040",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 4093,
+      "input": "regressions/inputs/0040.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-041",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 4093,
+      "input": "regressions/inputs/0041.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-042",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0042.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-043",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0043.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-044",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0044.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-045",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0045.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-046",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0046.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-047",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0047.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-048",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0048.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-049",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0049.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-050",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0050.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-051",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0051.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-052",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0052.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-053",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0053.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-054",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0054.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-055",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0055.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-056",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0056.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-057",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0057.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-058",
+      "direction": "decode",
+      "level": 1,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0058.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-059",
+      "direction": "decode",
+      "level": 1,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0059.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-060",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0060.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-061",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0061.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-062",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0062.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-063",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0063.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-064",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0064.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-065",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0065.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-066",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0066.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-067",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0067.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-068",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0068.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-069",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0069.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-070",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0070.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-071",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0071.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-072",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0072.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-073",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0073.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-074",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0074.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-075",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0075.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-076",
+      "direction": "decode",
+      "level": 9,
+      "small": 0,
+      "chunk": 17,
+      "input": "regressions/inputs/0076.bin",
+      "scored": false
+    },
+    {
+      "id": "guard-077",
+      "direction": "decode",
+      "level": 9,
+      "small": 1,
+      "chunk": 17,
+      "input": "regressions/inputs/0077.bin",
+      "scored": false
+    },
+    {
+      "id": "small-text-pg98",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg98.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1400",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1400.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg46",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg46.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg564",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg564.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg580",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg580.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg105",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg105.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg121",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg121.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg141",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg141.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg158",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg158.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg161",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg161.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2701",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2701.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1900",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1900.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2694",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2694.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg4045",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg4045.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg8118",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg8118.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg74",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg74.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg76",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg76.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg70",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg70.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg86",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg86.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg91",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg91.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg108",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg108.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg139",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg139.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg126",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg126.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg244",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg244.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg290",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg290.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg35",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg35.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg36",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg36.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg159",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg159.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg456",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg456.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg524",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg524.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg215",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg215.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg910",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg910.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg310",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg310.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg318",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg318.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg710",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg710.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg120",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg120.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg43",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg43.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg136",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg136.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg280",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg280.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg281",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg281.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg174",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg174.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg885",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg885.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg301",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg301.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg773",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg773.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg774",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg774.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg345",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg345.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1188",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1188.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2520",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2520.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg3095",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg3095.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg3781",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg3781.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg11",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg11.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg12",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg12.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg13",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg13.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg620",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg620.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg651",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg651.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg155",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg155.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg583",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg583.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg170",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg170.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1438",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1438.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1586",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1586.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1028",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1028.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg9182",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg9182.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg771",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg771.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg1260",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg1260.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg30486",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg30486.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg514",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg514.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2726",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2726.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg163",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg163.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2786",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2786.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg2787",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg2787.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg33",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg33.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg77",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg77.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg508",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg508.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg512",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg512.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "small-text-pg513",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/pg513.bz2",
+      "family": "small-memory-text",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "guard-small-text-allocation-cap",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-allocation-cap.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536,
+      "allocation_limit": 2500000
+    },
+    {
+      "id": "guard-small-text-block-crc",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-block-crc.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "guard-small-text-truncated",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-truncated.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536
+    },
+    {
+      "id": "guard-small-text-trailing",
+      "direction": "decode",
+      "level": 9,
+      "input": "small-text/guard-trailing.bz2",
+      "family": "small-memory-guard",
+      "small": 1,
+      "chunk": 65536
+    }
+  ]
+}

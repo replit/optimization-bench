@@ -1,0 +1,37 @@
+[
+  {
+    "id": "patch-myers",
+    "expect_len": 91420531,
+    "expect_sha": "b673e58e95e477f8c06b8bcf58bfd5dc6d89ad350db44aeaac625d856fb7725a"
+  },
+  {
+    "id": "shortstat-myers",
+    "expect_len": 255891,
+    "expect_sha": "55cc0bb94a2a2e0fc412c5d053151d4e3ae76e94bf544d1f7b0578c17284143f"
+  },
+  {
+    "id": "patch-histogram",
+    "expect_len": 30219611,
+    "expect_sha": "284e3cd689bc9198c63571f05585a6ddc34eb1a89e97e733f92307ad2815c5fe"
+  },
+  {
+    "id": "patch-ignore-all-space",
+    "expect_len": 41763375,
+    "expect_sha": "31949423ce74d4daf1c5fb48362e43ba64346f10bd81e5169b4b5c1eac1b45d4"
+  },
+  {
+    "id": "patch-patience",
+    "expect_len": 37010513,
+    "expect_sha": "df53da9b6d71ed93f88e187c4f3a5d035f698695ea704eb6039027e308b94571"
+  },
+  {
+    "id": "patch-full-context",
+    "expect_len": 198100933,
+    "expect_sha": "50fdc0a33a6c8924ae5a5e7da9aa6e72d57c217dc84f94d714772744043f3aa9"
+  },
+  {
+    "id": "merge-file",
+    "expect_len": 130251804,
+    "expect_sha": "eea693fc496d1358ca3cdb83e4891ad9a320ba222a4718f8df1771c7ce929bee"
+  }
+]

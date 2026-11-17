@@ -1,0 +1,66 @@
+{
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0 (2026-10-29): adds the stream-decode performance unit (lzma_stream_decoder with a chunked lzma_code loop over complete upstream .tar.xz release archives, one fresh process per archive) next to the unchanged preset-6 compression unit. Existing workload, inputs and references unchanged.",
+  "v1_1_changelog": "instruction-only + RC hooks; workload unchanged from v1.0",
+  "correctness_qualification": "unmeasured; no inherited qualification",
+  "baseline_git_commit": "b08d2f70929593905d133761d639dd29bc9df2b2",
+  "baseline_git_tree": "d8ab9627f367fbb86b19aea806d66647ff6a26cd",
+  "baseline_source_sha256": "c1f497513e85cbc2f3760990a6ed9cbebe6386f273481b87251d0d6eb481c51a",
+  "edition": "source-text-20261023",
+  "loading_probe_command": [
+    "/app/build/xz-driver",
+    "/app/workload/inputs/files/022dbb96c9671688d49ec0ec2bfa19000e91e82b1769b0d3b1027484209ad39c"
+  ],
+  "platform": "linux/amd64",
+  "schema_version": 1,
+  "source_policy": {
+    "allowed_extensions": [
+      ".c",
+      ".h",
+      ".S",
+      ".s"
+    ],
+    "max_source_bytes": 20000000,
+    "max_source_files": 2000,
+    "protected_paths": [],
+    "source_roots": [
+      "src/liblzma"
+    ]
+  },
+  "status": "qualification-pending",
+  "timing_qualification": null,
+  "task": "xz-lzma2-compress",
+  "upstream_test_command": [
+    "ctest",
+    "--test-dir",
+    "/app/build/cmake",
+    "--output-on-failure",
+    "-j8"
+  ],
+  "upstream_timeout": 7200,
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

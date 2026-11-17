@@ -1,0 +1,14 @@
+diff --git a/src/main.c b/src/main.c
+index abe4e95..7fca910 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -177,6 +177,9 @@ static int process(jq_state *jq, jv value, int flags, int dumpopts, int options)
+   jq_start(jq, value, flags);
+   jv result;
+   while (jv_is_valid(result = jq_next(jq))) {
++    /* Throwaway negative control: compute the result, then corrupt it. */
++    jv_free(result);
++    result = jv_null();
+     if ((options & RAW_OUTPUT) && jv_get_kind(result) == JV_KIND_STRING) {
+       if (options & ASCII_OUTPUT) {
+         jv_dumpf(jv_copy(result), stdout, JV_PRINT_ASCII);

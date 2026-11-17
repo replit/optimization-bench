@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "current": "repo-lfs-public-gzip-v4",
+  "versions": [
+    {
+      "id": "url-recipes-v1",
+      "sha256": "74db67f533a91ea05e44e814a26c289e0d605efd15095ad24ba92f62a2322ca1",
+      "payload_kinds": [
+        "file"
+      ],
+      "features": [
+        "url-recipes-v1"
+      ],
+      "source_commit": "f3ccea8961"
+    },
+    {
+      "id": "git-history-v1",
+      "sha256": "e36bf555495cea93003150eee44cc5b87335cc21692d0ba6df254a0d40706991",
+      "payload_kinds": [
+        "file",
+        "git-history"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1"
+      ],
+      "source_commit": "8ae7954b89",
+      "unsupported_recipes": [
+        "png-rgb24"
+      ],
+      "reason": "RGB24 output authentication incorrectly treats the acquisition recipe kind as a top-level payload kind."
+    },
+    {
+      "id": "git-history-v1-portable",
+      "sha256": "980aa11388a9d07dded896d556568386384ce94aa8560ad5a03a438b2b8cace0",
+      "payload_kinds": [
+        "file",
+        "git-history"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt"
+      ],
+      "source_commit": "6fb16e050c",
+      "revoked": true,
+      "reason": "Standalone CLI reads private payload.json after public validation; unusable in public-only image contexts for every payload kind."
+    },
+    {
+      "id": "git-history-v1-public-cli",
+      "sha256": "aacc3a25ed3754fad0137e8730cabdfb34bf5ec4d8de07653f7ee3beef6e4fae",
+      "payload_kinds": [
+        "file",
+        "git-history"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt",
+        "public-only-cli-receipt"
+      ],
+      "unsupported_recipes": [
+        "png-rgb24"
+      ],
+      "reason": "RGB24 output authentication incorrectly treats the acquisition recipe kind as a top-level payload kind."
+    },
+    {
+      "id": "git-history-v1-recipe-bytes",
+      "sha256": "f720d230ce6e9c0593f0f0c4c593083724c9a636df1522ab37785e2ff82385b1",
+      "payload_kinds": [
+        "file",
+        "git-history"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt",
+        "public-only-cli-receipt",
+        "recipe-output-byte-authentication"
+      ]
+    },
+    {
+      "id": "repo-lfs-public-v1",
+      "revoked": true,
+      "reason": "Final standalone CLI check rejects the newly declared repo-lfs kind; use repo-lfs-public-v2.",
+      "sha256": "994f3c7feceaeeca09bf1f378dcf0c2abd97eae29a0ff14eb6fc58bc1fa98fc2",
+      "payload_kinds": [
+        "file",
+        "git-history",
+        "repo-lfs"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt",
+        "public-only-cli-receipt",
+        "recipe-output-byte-authentication",
+        "repo-lfs-public-staging"
+      ]
+    },
+    {
+      "id": "repo-lfs-public-v2",
+      "sha256": "68aa1b3a84ed91a90a634e88b89efd48d521f6afa121c4b940336d095d8ec151",
+      "payload_kinds": [
+        "file",
+        "git-history",
+        "repo-lfs"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt",
+        "public-only-cli-receipt",
+        "recipe-output-byte-authentication",
+        "repo-lfs-public-staging"
+      ]
+    },
+    {
+      "id": "repo-lfs-public-http-retry-v3",
+      "sha256": "c471a0e41c35fc0c0ec609489d3de301130ae60203b9dab6d270aa345e22ee24",
+      "payload_kinds": [
+        "file",
+        "git-history",
+        "repo-lfs"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt",
+        "public-only-cli-receipt",
+        "recipe-output-byte-authentication",
+        "repo-lfs-public-staging",
+        "bounded-public-http-retries"
+      ]
+    },
+    {
+      "id": "repo-lfs-public-gzip-v4",
+      "sha256": "0a7acb9d0afcd4d8af44a6db0b753db5a3a15a2805b218dd2cb400ad9c102e0f",
+      "payload_kinds": [
+        "file",
+        "git-history",
+        "repo-lfs"
+      ],
+      "features": [
+        "url-recipes-v1",
+        "git-history-v1",
+        "absolute-git-tool-receipt",
+        "public-only-cli-receipt",
+        "recipe-output-byte-authentication",
+        "repo-lfs-public-staging",
+        "bounded-public-http-retries",
+        "gzip-member-slice-v1"
+      ]
+    }
+  ]
+}

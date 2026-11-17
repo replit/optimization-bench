@@ -1,0 +1,1275 @@
+{
+  "format": "optimbench-inputs-v1",
+  "task": "terser-minify",
+  "provenance": "recovered-requalified (not proven original)",
+  "splits": {
+    "heldout": [
+      {
+        "docs": [
+          {
+            "path": "money.js",
+            "sha256": "1ebf2f09485f89b7ae27bea6b8ee6a4f095be7ed87001529b68e7a688c4fe22c",
+            "bytes": 5111,
+            "source_filename": "money.js.js",
+            "expect_len": 1213,
+            "expect_sha": "6a948157b1d9eacaa8caee3144b30f377a4fccd1b8d43bd559e69e8836dd7057"
+          },
+          {
+            "path": "jQuery.x18n",
+            "sha256": "2b311f9447bd0c5362ce5d322f6010adf529713a087edd3106fd8fc6a646a7d4",
+            "bytes": 11808,
+            "source_filename": "jQuery.x18n.js",
+            "expect_len": 5901,
+            "expect_sha": "f54174af298094e39015c722ff5bed3194de6649459f322cc06e22674fe6a31c"
+          },
+          {
+            "path": "jquery-watch",
+            "sha256": "283b66c4fd41b5e31a3092b4aa6cee9b2ae6d4f76ac5036eaad58a7d8e0e2531",
+            "bytes": 6448,
+            "source_filename": "jquery-watch.js",
+            "expect_len": 1670,
+            "expect_sha": "3aeae3d0459f40fb52c2cfacab6db63eb2f85861abc39a31af103edf453b26cc"
+          },
+          {
+            "path": "OrgChart.js",
+            "sha256": "943c41cb221f7db7646d8e3d88a8375d2e0f61580fcd4c7e53d9bd6a45ced7bb",
+            "bytes": 78280,
+            "source_filename": "OrgChart.js.js",
+            "expect_len": 39437,
+            "expect_sha": "1a662924259a580fbf1dfddbcc1044f825f39d53e9e3368da2c4df2cddb104ee"
+          },
+          {
+            "path": "corti",
+            "sha256": "f69a9dd49918dde28c4e83a6f1dbefeaaee1ee4f02cc39bf843454588e514057",
+            "bytes": 9928,
+            "source_filename": "corti.js",
+            "expect_len": 5615,
+            "expect_sha": "80725f6352e83caeb3c081049400b1a9b350dd920d61a5e10baf6d8d0c2040a6"
+          },
+          {
+            "path": "jquery-mousewheel",
+            "sha256": "ca6ed6b8f937a4d5ad42ec2dec05d22031d26dc0b1a741650d98e397ffb5fc2a",
+            "bytes": 8510,
+            "source_filename": "jquery-mousewheel.js",
+            "expect_len": 2671,
+            "expect_sha": "d0eb6129deea2abb3172559e2c8865cc4c0b6b278e6b985d67790eb3c1c49c7a"
+          },
+          {
+            "path": "fastselect",
+            "sha256": "ffcf127c3ecdabacecf7db4829e0d38125bd218f2abe6b7b9c5a8f4fe7fd0253",
+            "bytes": 21746,
+            "source_filename": "fastselect.js",
+            "expect_len": 11277,
+            "expect_sha": "017c7bbbeba83ddfb3f9fc19da724b7319b9089751263a0c8eca8e600c05da6e"
+          },
+          {
+            "path": "imgLiquid",
+            "sha256": "50d21b0272e2d0b405f2cb29c13f81ded0a2638b2b2f08bd04d758e6de24de3a",
+            "bytes": 11973,
+            "source_filename": "imgLiquid.js",
+            "expect_len": 5052,
+            "expect_sha": "fc17954d6637f1a6b410289ae7b8f878497f55d9ef580d801c5ef1c56457d9fe"
+          },
+          {
+            "path": "jquery.meiomask",
+            "sha256": "25400adb8ffda7db219ae22cd05d9e6a2ad4bbfb7b0e3ae99d2f897ed6b21cbd",
+            "bytes": 32686,
+            "source_filename": "jquery.meiomask.js",
+            "expect_len": 10601,
+            "expect_sha": "bf297a7b1d6d409caee4bf1d68759c3bca8ae179956b920da9930ce8a1d2455a"
+          },
+          {
+            "path": "highchartTable",
+            "sha256": "c23705bd1357020c72114bf3d6db3c0ea54bf12213d423c57be901bdbbd6f334",
+            "bytes": 19801,
+            "source_filename": "highchartTable.js",
+            "expect_len": 7981,
+            "expect_sha": "106d111da3178d081200f1bc7ce47293df4cde52ec0dc7c2c4b9ce39c6ecdeb5"
+          },
+          {
+            "path": "stats.js",
+            "sha256": "9b9e06b9de815c42e92ba1fc614dc7f7177bcb94b9aad082517eb6dc41b3a199",
+            "bytes": 3571,
+            "source_filename": "stats.js.js",
+            "expect_len": 1776,
+            "expect_sha": "99d004b25d1b284040b8be94ddea98543e24e4661a4076afa5a6f17e25da83b8"
+          },
+          {
+            "path": "eventemitter3",
+            "sha256": "1560f251de5d28d2c15ff070215d2c5c0fa06f1a92e8d6522bbee37e06d2a6b5",
+            "bytes": 9141,
+            "source_filename": "eventemitter3.js",
+            "expect_len": 3151,
+            "expect_sha": "7c1ee020c14283c1e70c06dc41c1cb4c4b5fbda1ec445d01c570f7c643771282"
+          },
+          {
+            "path": "bootstrap-calendar",
+            "sha256": "8ebfa0ea622a61ce95b4cb5243619cc232b0af8c8f75ef94eab492df2ee6e6ff",
+            "bytes": 36958,
+            "source_filename": "bootstrap-calendar.js",
+            "expect_len": 21867,
+            "expect_sha": "e95149511b800d118133a2f6db5832170ebbd20f1617df69de8c3454f15e1489"
+          },
+          {
+            "path": "videojs-vast-plugin",
+            "sha256": "9bc8af25d16a60c1f852f613207339d64a1a7ddd9517226c1a92985916352057",
+            "bytes": 10712,
+            "source_filename": "videojs-vast-plugin.js",
+            "expect_len": 4208,
+            "expect_sha": "3b1737c6df9930cb455672444357b4b1f0c784a19992b9d3676a7c03e6dcf9c2"
+          },
+          {
+            "path": "blueimp-file-upload",
+            "sha256": "f233076c34329027babb3bc5c68d9635e31c99369f8fb6ea4dea68f0fb6b65d2",
+            "bytes": 56631,
+            "source_filename": "blueimp-file-upload.js",
+            "expect_len": 18824,
+            "expect_sha": "dc5d0d59211bbb82439694a31aeb71ad27e7b2582c499f65130a0ac39f76fcc0"
+          },
+          {
+            "path": "angular-confirm",
+            "sha256": "6730b1828e36b941b76d03b2c3be8c1f78f9b2351b2d6def477cc8d934e18084",
+            "bytes": 4356,
+            "source_filename": "angular-confirm.js",
+            "expect_len": 2163,
+            "expect_sha": "4995af9098070700d8b3f87b9d67db03343b3bb90a15cceb1dbc767c7140fde3"
+          },
+          {
+            "path": "json-formatter",
+            "sha256": "149d8d1b00ff99ae54d101030136e9e6aceb00a2c1ee4dcda3e1047fc7ca8cdf",
+            "bytes": 8809,
+            "source_filename": "json-formatter.js",
+            "expect_len": 4124,
+            "expect_sha": "3fb761cc5376d3ee3d669f03407b356293ca22a73f2e334b0513bad5f52bd191"
+          },
+          {
+            "path": "jspdf-autotable",
+            "sha256": "37021db51be2d69869b6aa31f04eef79a46ce372850465c5c497541eb15d56e7",
+            "bytes": 85983,
+            "source_filename": "jspdf-autotable.js",
+            "expect_len": 32112,
+            "expect_sha": "4efb457e3532660a9ffcb2aec712433968890144faa1a60bb7695baf40ed0a74"
+          },
+          {
+            "path": "simple-slider",
+            "sha256": "d7d384db5851b40948846c6105809ccc23d950a8e2185a6d6aabf60b211e6fe5",
+            "bytes": 6123,
+            "source_filename": "simple-slider.js",
+            "expect_len": 2179,
+            "expect_sha": "6ead871aff4873abf1654b310a6d2770a6b1044dc1e6d306b67e6c40a91059e7"
+          },
+          {
+            "path": "fetch-jsonp",
+            "sha256": "5ed6cbd6de5a4c66989373749bd94b7885b24471f0d416728d57b10478acb541",
+            "bytes": 4104,
+            "source_filename": "fetch-jsonp.js",
+            "expect_len": 1558,
+            "expect_sha": "6c97a43b0139a6586c52da42f1d0d54d59f5985127f545160d7e311024073b71"
+          },
+          {
+            "path": "radio",
+            "sha256": "5e9d43ae560a0a6ed1306c5b760636e7174ed928600ab61592f77e9f52617138",
+            "bytes": 6285,
+            "source_filename": "radio.js",
+            "expect_len": 1034,
+            "expect_sha": "903de840ba55525976047311c5b11638045f196536bc2b14c568e61d70ce32b5"
+          },
+          {
+            "path": "sticky-sidebar",
+            "sha256": "cd462f079da3e59a76281632e548607976e4a9d1f8141ab92bd1b8958b1658a9",
+            "bytes": 25589,
+            "source_filename": "sticky-sidebar.js",
+            "expect_len": 10348,
+            "expect_sha": "e33959990dd15476d760c27b72b5c53f62e8d16ccf1cf36c1103739777b07801"
+          },
+          {
+            "path": "Ripple.js",
+            "sha256": "d61bd745a355e9483efa07342ffe495388b74c8fe96a3a50df9a9f644b0c4337",
+            "bytes": 4787,
+            "source_filename": "Ripple.js.js",
+            "expect_len": 1624,
+            "expect_sha": "916e4b3d808a8a5ad16a849bfb772313e08467d538e0c3e0142377c5c4b8d5e9"
+          },
+          {
+            "path": "angular-dialog-service",
+            "sha256": "01bc9529f8996423e58b7e020aa0cfb96304d4bd9d90d4a8718e6d152cbdb805",
+            "bytes": 20153,
+            "source_filename": "angular-dialog-service.js",
+            "expect_len": 8577,
+            "expect_sha": "f8349a12ed95bedbe2db7eb8688d6fd106b2514675140d115b020a06349c5457"
+          },
+          {
+            "path": "angular-gravatar",
+            "sha256": "12149b8983bcc48371e9864322a8613e996bf36a541d4456e11f1334554ec311",
+            "bytes": 15748,
+            "source_filename": "angular-gravatar.js",
+            "expect_len": 4941,
+            "expect_sha": "32448dcd4e0dfd4cd3de9b03f6eeb8aeecddb2983b1369ec497dbe8064178421"
+          },
+          {
+            "path": "jquerykeyframes",
+            "sha256": "c0af2d73d2ef60b524d38a12ad38b85bc9cc6fd2118b9d6359b040a6e75b6bcc",
+            "bytes": 6326,
+            "source_filename": "jquerykeyframes.js",
+            "expect_len": 2477,
+            "expect_sha": "01af7b1e8f7c581992fdacdb9ba6008f0a6ad6877cb5d72dff56931c1a70266a"
+          },
+          {
+            "path": "pts",
+            "sha256": "865b8dfcb746a5ad3f62556152589ce6e2c82173fa8429064f98a5a711c40adc",
+            "bytes": 324145,
+            "source_filename": "pts.js",
+            "expect_len": 189114,
+            "expect_sha": "27f4df94c00b453735e2b7050276fd94868af62a5f7cd6f9f58a0bf202dad690"
+          },
+          {
+            "path": "Swiper",
+            "sha256": "47ca12dfc5df6b0d4571a0c06685029fda32e14b6bc104307a0f91f53c9bd9b5",
+            "bytes": 433054,
+            "source_filename": "Swiper.js",
+            "expect_len": 153463,
+            "expect_sha": "cc1b2a359968d9b3f6ede763f071dd96e01bd7923ff45f384924ed17d221cd4d"
+          },
+          {
+            "path": "jquery-popup-overlay",
+            "sha256": "a2d2326d986622d7a4b6baff9f7f2490e7dcbb79b4c1870b5f53311e34477b0b",
+            "bytes": 34187,
+            "source_filename": "jquery-popup-overlay.js",
+            "expect_len": 10934,
+            "expect_sha": "9b40529b145df48c2cc1ed721e1fe1dcf7341a949c846ab3294180ec00c18514"
+          },
+          {
+            "path": "angular-ui-router.statehelper",
+            "sha256": "6d3c45cbe837863b99b69b677a5daba3218001eaa27f6cefa25fee74d8455e52",
+            "bytes": 3403,
+            "source_filename": "angular-ui-router.statehelper.js",
+            "expect_len": 757,
+            "expect_sha": "8a1541e1eb26a46d03553aa360fafea2cc66ae5c5a24f6f2803168390dfd7aa2"
+          },
+          {
+            "path": "ng-parallax",
+            "sha256": "e514957a40bfb2d08c4fffb4baf29926d8dd6aaa5cc1883d15b57cbdfa72440a",
+            "bytes": 2343,
+            "source_filename": "ng-parallax.js",
+            "expect_len": 1246,
+            "expect_sha": "292f8ee0d24823c4f48a0bba351a4d890d5a047932d4397ede89cc311a93b23d"
+          },
+          {
+            "path": "responsive-carousel",
+            "sha256": "32f2b20ed456cfd27b6e5639b1f19447d429650bd9260e666dcc90238401029f",
+            "bytes": 9672,
+            "source_filename": "responsive-carousel.js",
+            "expect_len": 4143,
+            "expect_sha": "d5f054b0f39da5796c6b679c2d3c5e64ac7abb6a1d13b74ea079e6a3ab288a77"
+          },
+          {
+            "path": "gas",
+            "sha256": "ba4d15eef77786d1933d03b526f96a13cada30ad66c28f9f29720a21e3816f7b",
+            "bytes": 52188,
+            "source_filename": "gas.js",
+            "expect_len": 15614,
+            "expect_sha": "21c20854065ae1b908b995ebff0964dba7b8664f27d739305bd3765d65e3c24e"
+          },
+          {
+            "path": "phery.js",
+            "sha256": "8ac0e1cb471ddf3987ec5d1de34e899bd5043abde4ee4c42f86a1f9fb96bb5f3",
+            "bytes": 85453,
+            "source_filename": "phery.js.js",
+            "expect_len": 32552,
+            "expect_sha": "4fade0ed8a238a7702d3e0840b788b2c3194fd2b2c78890313c9a3ef46d1cfd2"
+          },
+          {
+            "path": "sharer.js",
+            "sha256": "2a66b74b73b24c6305e74dbed75bd275c1ede3ff95b3223148d695429d948621",
+            "bytes": 15479,
+            "source_filename": "sharer.js.js",
+            "expect_len": 7874,
+            "expect_sha": "6572e9a6b07203beddfcb1004f23841f1a11c9a840342809875c4e429a0fb6ca"
+          },
+          {
+            "path": "smartbanner.js",
+            "sha256": "44ec9b76a29688633ab9f379227c32a88cd74cb4edfd6ac4f1c6c8f18a4b0121",
+            "bytes": 10912,
+            "source_filename": "smartbanner.js.js",
+            "expect_len": 6213,
+            "expect_sha": "05a4b6bc4031318348c86ff45529b506c2ac5854bd9660b8d297b6c0d1520eab"
+          },
+          {
+            "path": "three.meshline",
+            "sha256": "2d641e92a9941f2703118d1136d810ef1385ed2bbd74550a95444e40de81edc9",
+            "bytes": 22277,
+            "source_filename": "three.meshline.js",
+            "expect_len": 12803,
+            "expect_sha": "0bd537f9c66a1eade626fb1ffd3d5735d41b825cf826a08ed862ee50828199f0"
+          },
+          {
+            "path": "monkberry",
+            "sha256": "8b77aea109ed1b156a5183dd49f1fa82fa614adf4e3a9546d922d5d04088aa54",
+            "bytes": 11252,
+            "source_filename": "monkberry.js",
+            "expect_len": 3565,
+            "expect_sha": "fefd7202216fdab8164d14a37e99b350d04ba2f678af1ab56306fcf95cb55812"
+          },
+          {
+            "path": "favico.js",
+            "sha256": "0b10e11f94d57e878b715096ae1bfbdc46449bee84779fc339c32db1c48fa433",
+            "bytes": 20258,
+            "source_filename": "favico.js.js",
+            "expect_len": 8746,
+            "expect_sha": "d947f3802857787ae103d55cf0861ffb0f3df99aadefdbefc7d62b8387adb2c8"
+          },
+          {
+            "path": "page.js",
+            "sha256": "755f05426c3b6e00887c798a8827a732e4126433c80aea6b7f1886fb5edebfd3",
+            "bytes": 31759,
+            "source_filename": "page.js.js",
+            "expect_len": 11301,
+            "expect_sha": "148a3d7155cc67bfa0cedb6ee7777d899273a3397b477aced9c6b85648bf7744"
+          },
+          {
+            "path": "humanize-plus",
+            "sha256": "4b0f3148422cdceec25a1cc605f9505a61310ea8c2711f71ffb27be3940c95c6",
+            "bytes": 17188,
+            "source_filename": "humanize-plus.js",
+            "expect_len": 6158,
+            "expect_sha": "a39de3d82db1523c2f058533c46eb1828616bd3c3f38da0e492912d21f921bec"
+          },
+          {
+            "path": "jinq",
+            "sha256": "4f002293b7750497940a4f219865317d5864de422fc2a7cac004ba513c77d776",
+            "bytes": 46192,
+            "source_filename": "jinq.js",
+            "expect_len": 10775,
+            "expect_sha": "03701797f51e24ed39d41aaafe82db91d929744ead0a660026b93ed4588c094b"
+          },
+          {
+            "path": "countdown",
+            "sha256": "f3eeffefe3e221388e337f1a551f883b25a293518c00cd4c886ebcb13ec1895d",
+            "bytes": 28509,
+            "source_filename": "countdown.js",
+            "expect_len": 7219,
+            "expect_sha": "8111f831ebfbb4eaa8aad4970cf6701e173c26c8be0567afbe53a9ac274f1133"
+          },
+          {
+            "path": "angular-md5",
+            "sha256": "e9482dd1a9e3d7640e1666a08cc035f8e170fe02252d6d8eb454f0ee9629fff7",
+            "bytes": 9263,
+            "source_filename": "angular-md5.js",
+            "expect_len": 4146,
+            "expect_sha": "50833faca0d561edf37d937ddb9e134505e236213f915e212d228929206403b6"
+          },
+          {
+            "path": "timer.jquery",
+            "sha256": "55aa9e1aab0f38c6fa29ceac17865a75773fc67da66790c3f4d90565e86cca78",
+            "bytes": 13310,
+            "source_filename": "timer.jquery.js",
+            "expect_len": 5381,
+            "expect_sha": "1404925f4ed3847ebb57a5e0ed0561fc8ff23cd2a834fc5d362f2bb6b2c961fd"
+          },
+          {
+            "path": "dinero.js",
+            "sha256": "226e73caf4d8089013554ccb696906953e400f5133e9d1b8e4c04749dbb22091",
+            "bytes": 63569,
+            "source_filename": "dinero.js.js",
+            "expect_len": 10280,
+            "expect_sha": "abeeec834399459073627849baf49d46a508575cd0c5af42eaf21c05083bcf27"
+          },
+          {
+            "path": "angularjs-datepicker",
+            "sha256": "e7f4c37b2b5769d6f3ce22204b8032e420b065d528ba3f8bff8e1f14d03ca181",
+            "bytes": 38623,
+            "source_filename": "angularjs-datepicker.js",
+            "expect_len": 16524,
+            "expect_sha": "0e2cb37c9318cf4794c252a4ec96202ac418fc74f74a9b42c1c72375aabebbeb"
+          },
+          {
+            "path": "blob-polyfill",
+            "sha256": "eb559a71c5884d27dd8018177045bfbeabf44605e3109ba847a875bdeac616c8",
+            "bytes": 20673,
+            "source_filename": "blob-polyfill.js",
+            "expect_len": 9048,
+            "expect_sha": "28113d138ef9ad40118a3ac184400339cf350b6b1244526270bca1862447d1d7"
+          },
+          {
+            "path": "js-signals",
+            "sha256": "6a125d66ab702275db3640af8c2ef83a7d775b4149489db4aad7f36922c51f11",
+            "bytes": 15748,
+            "source_filename": "js-signals.js",
+            "expect_len": 3054,
+            "expect_sha": "de15eaa3acca3075acbcc0a0bb31aa1533cdc333a7392d4afc75791f898eba11"
+          },
+          {
+            "path": "jclic.js",
+            "sha256": "7a53c2a544eb5fd4dfbe758ae5500863d42359aea185a352be9a70d9ee5e546a",
+            "bytes": 1166973,
+            "source_filename": "jclic.js.js",
+            "expect_len": 387480,
+            "expect_sha": "f1c33a9827bf494a2629ecd6654c55f0eacc7e9c3688c38cf8e4c7d1c25220c0"
+          },
+          {
+            "path": "angular-chart.js",
+            "sha256": "b339e35da612c62ca8b1a1f2bf4fad34f1e94aa3a9dd17aca22d4998af139690",
+            "bytes": 15344,
+            "source_filename": "angular-chart.js.js",
+            "expect_len": 5994,
+            "expect_sha": "bbcdfbcfc297f97b5f212b0e9f05a536e8a04db4cb47dce4316856ac9a877a44"
+          },
+          {
+            "path": "egjs-axes",
+            "sha256": "76bdba133e3b42cb81e293042e69e502ab73d2bbb7952b55822bb217a192e490",
+            "bytes": 146146,
+            "source_filename": "egjs-axes.js",
+            "expect_len": 42040,
+            "expect_sha": "f883531e3259b33ddf1b10527c5e094b7b1f6b5828ae11217f331bc86c46c4d8"
+          },
+          {
+            "path": "annyang",
+            "sha256": "8db40c53d407f7baf4a2f9ccdb40f48ec74484acd9a4468876ae8428a47722c2",
+            "bytes": 9432,
+            "source_filename": "annyang.js",
+            "expect_len": 5890,
+            "expect_sha": "ab22f09df530881e9a5eb8b11ddbd3869c19604fd8eac9f9ca25bb7eca33d5be"
+          },
+          {
+            "path": "amplifyjs",
+            "sha256": "e22132ed0c87d0c4c2fff91a24d0f2540498b8b6a4229454b2634eb1984b3d88",
+            "bytes": 21201,
+            "source_filename": "amplifyjs.js",
+            "expect_len": 8458,
+            "expect_sha": "ecd28830913d3eb75d077a1622d141008863f8a2a563324d84793245705a96c7"
+          },
+          {
+            "path": "qrcodejs",
+            "sha256": "f3f78b1fabdbaa28e135f2f46817f8ac6d19d05cde9cd6d86ee47657fcd221b1",
+            "bytes": 33782,
+            "source_filename": "qrcodejs.js",
+            "expect_len": 19743,
+            "expect_sha": "8cb8815200f765affd4d839dc99216411c5cb3210197e1d18421484ca5bc272e"
+          },
+          {
+            "path": "jsdiff",
+            "sha256": "5773c7efb34715bb9a9b6a9ebf5b0ff00f85f9efa6d9fd69fc65e181364f7b2e",
+            "bytes": 111301,
+            "source_filename": "jsdiff.js",
+            "expect_len": 23163,
+            "expect_sha": "80da4a1638abc248d995550404646ef7a19a36cbce6414e76aaa9d31d23c0ecf"
+          },
+          {
+            "path": "impetus",
+            "sha256": "eef8e384a58ea47b5656fe38f696e055a8eda9522e50e1325a1a5abb698be853",
+            "bytes": 16239,
+            "source_filename": "impetus.js",
+            "expect_len": 3732,
+            "expect_sha": "a0d1b5f02d0a4689f31bfb185443077abccec4b65a0da37b71486690b71a30b1"
+          },
+          {
+            "path": "rowgrid.js",
+            "sha256": "f103defb9260729fedfc8b841be152ad021504987aa51809bd0bbd9d56da10c4",
+            "bytes": 5299,
+            "source_filename": "rowgrid.js.js",
+            "expect_len": 2207,
+            "expect_sha": "e3f67e395ec5ef67c316c65bef06d20f54c6e8435ef577a03558467784acd5d9"
+          },
+          {
+            "path": "openplayerjs",
+            "sha256": "8b78531205f28b6f58e3f4d388f0b583820dc4962770f6555c80b8b335a134f8",
+            "bytes": 359228,
+            "source_filename": "openplayerjs.js",
+            "expect_len": 161811,
+            "expect_sha": "267c8e33c3ec0aa33803d7d1acaa020c089c61f15518380805c619049db6c0cf"
+          },
+          {
+            "path": "SlickNav",
+            "sha256": "f23a3d4b06753f2e2e40228e1cab7ed665cf9ede5fecee99918ed62d7c54eed8",
+            "bytes": 21072,
+            "source_filename": "SlickNav.js",
+            "expect_len": 8315,
+            "expect_sha": "5b223b6add7cc3b42f01e92a519e8677ec5925f503dec34e7d0f19bbfd813c54"
+          },
+          {
+            "path": "webuploader",
+            "sha256": "f35fdd745c28238171ac24fd081e4eaf80c04ac713c8e2f2911e51e39472f598",
+            "bytes": 225615,
+            "source_filename": "webuploader.js",
+            "expect_len": 56451,
+            "expect_sha": "4d0fa2fd9e61bc11e91c5169d91ae38a55af54b3a4ddf8e7f30e0d06872220dd"
+          },
+          {
+            "path": "jplayer",
+            "sha256": "12c42dd1208733744070ed50e6e0ab09b220358a59628829ac2bb064c39ce4a1",
+            "bytes": 121204,
+            "source_filename": "jplayer.js",
+            "expect_len": 60591,
+            "expect_sha": "b6473bf3c6134a623bafe4f3ce9df0b3b43626f6958d27b6e5d2e00733cbe1fc"
+          },
+          {
+            "path": "autocomplete.js",
+            "sha256": "d0a20e32645461cdb70e552ce40bbca7e9789019899b83efd68204a2cebfe423",
+            "bytes": 78630,
+            "source_filename": "autocomplete.js.js",
+            "expect_len": 36148,
+            "expect_sha": "16132276c95da391f12d7e6fa9df2b1e90b73833a251871b88b388a17e4b836b"
+          },
+          {
+            "path": "mui",
+            "sha256": "6fdc4702a5c356d2394530697e922dc361c5f396acba29d440d308502d88a3b8",
+            "bytes": 261154,
+            "source_filename": "mui.js",
+            "expect_len": 121483,
+            "expect_sha": "6be81e6d79f963d60951d63f8e34b44ec042329698a317ad505f604a21dabcb1"
+          },
+          {
+            "path": "sentient-lang",
+            "sha256": "89d6b1275e1450a889da0dc980bbab43527121138441e78ddf673f3dd2a30296",
+            "bytes": 348573,
+            "source_filename": "sentient-lang.js",
+            "expect_len": 346851,
+            "expect_sha": "0c8b51cbf7bd6d16c7ce5ec19d981828c770e0c4d06af549fae1c2a5801c1d65"
+          },
+          {
+            "path": "emberFire",
+            "sha256": "1d6d4418a6fe3632ecf87c84c9c1a2ef23695052ce90bf9ff08101a2e2a47684",
+            "bytes": 50435,
+            "source_filename": "emberFire.js",
+            "expect_len": 19109,
+            "expect_sha": "d933176fdfde2b4dbe5b5450881e1a6768df980bfbce7263df994273a01c5580"
+          },
+          {
+            "path": "angular-permission",
+            "sha256": "40469a1adb04a1589ad1cd4e2aa83ea3e46b802659e2e356d7a453de9ca52f52",
+            "bytes": 39796,
+            "source_filename": "angular-permission.js",
+            "expect_len": 8158,
+            "expect_sha": "cfe5a6dc70b55f30c0b39e061cfda30fa64e10435b313ba4e7842e3b52f33ba9"
+          },
+          {
+            "path": "Base64URL-ArrayBuffer",
+            "sha256": "c524d8a97d3122a8ca74929fb352f7f11769d9d4e0e067972b08f8e9e9aef8db",
+            "bytes": 1295,
+            "source_filename": "Base64URL-ArrayBuffer.js",
+            "expect_len": 1255,
+            "expect_sha": "4f8bc2b31a78c4585bfab6fc1e0bf49b9963e668c9d093b5d01778a07e2c1a18"
+          },
+          {
+            "path": "qwerty-hancock",
+            "sha256": "eb2e4b4cbceb3917758394578cc02ad0cec1f5dd193b8120f7fcfd70d12cb3c6",
+            "bytes": 23387,
+            "source_filename": "qwerty-hancock.js",
+            "expect_len": 8037,
+            "expect_sha": "e8832178d4ce03f75a2aeb200653ae74ab67ffaf2e780d7b4b10b77c94ee8fd6"
+          },
+          {
+            "path": "crossroads",
+            "sha256": "cbe44e829674a6bcb7dd1317c62074f929b48f89f1ad3483397bad3fe53987e6",
+            "bytes": 24138,
+            "source_filename": "crossroads.js",
+            "expect_len": 7435,
+            "expect_sha": "cdc2b071d93e0a86bc9d2ae4afd000146b6943e4f71c1d6e74d09d70d01156ea"
+          },
+          {
+            "path": "libphonenumber",
+            "sha256": "ea7ca8bd2ab1c12305b0025987e146f968b792fd056c6f91b7565920e6e01edd",
+            "bytes": 188985,
+            "source_filename": "libphonenumber.js",
+            "expect_len": 50006,
+            "expect_sha": "426fed0d115d21f8262596a30ff1cdc877f6ac40eb3609bb3b00d5f50f4941d9"
+          },
+          {
+            "path": "angular-socket-io",
+            "sha256": "f23d085ce2a00e45ef630322b31a597fede2b030a95d93401cb8222a129c2127",
+            "bytes": 3261,
+            "source_filename": "angular-socket-io.js",
+            "expect_len": 1131,
+            "expect_sha": "d0d60d6c4cc71d5c1fa0f3541c72f990326c25cc80bfd673807871e51407d907"
+          },
+          {
+            "path": "flocks.js",
+            "sha256": "d77507ea04909ec79ff8b064f52edcd5b89cfb887d6853d383a0c388cab5c8c3",
+            "bytes": 20449,
+            "source_filename": "flocks.js.js",
+            "expect_len": 5137,
+            "expect_sha": "5a012fbcc8770858b990d6a9e6d8582056a2ecdcce2d94f45c2a2ca6a6d25784"
+          },
+          {
+            "path": "react-disqus-thread",
+            "sha256": "849e5bc3ece89a62141b22f489319dd9da2e13e75718a533dbe057db00d2eb58",
+            "bytes": 8125,
+            "source_filename": "react-disqus-thread.js",
+            "expect_len": 2655,
+            "expect_sha": "aa8d6fa53711c54d7b99a9c020204bbdff6328d8041645da674783b60dcd52c1"
+          },
+          {
+            "path": "stackblur-canvas",
+            "sha256": "7953af95f8f6945b58c5d9c1d0b8106c50ebd6af9338a847cd586b183e0ee9f5",
+            "bytes": 21024,
+            "source_filename": "stackblur-canvas.js",
+            "expect_len": 6898,
+            "expect_sha": "3a49dfe855e6620b665b040f51f67b0062a6cbd37423ab743458f57a99cfd698"
+          },
+          {
+            "path": "Fort.js",
+            "sha256": "96c59997e1923f32ba2bc4d3998c6310afd749b563804d02c97d7995733fd37e",
+            "bytes": 11218,
+            "source_filename": "Fort.js.js",
+            "expect_len": 5698,
+            "expect_sha": "3282cad7b30c703de4b983a02c278652e435633a9162ce25b3ad2d32a201b28c"
+          },
+          {
+            "path": "shpjs",
+            "sha256": "7a41a70f4509b5d60c8c2516597e93ddc2eff1c9b052a8179be09e34d0a98a58",
+            "bytes": 233136,
+            "source_filename": "shpjs.js",
+            "expect_len": 99473,
+            "expect_sha": "d34e3fed195e28263682b6f3869f5c1601c8d143687b8f558d648812d30e15ee"
+          },
+          {
+            "path": "prism",
+            "sha256": "35e108df2d4482e4984bda7ffaed21d525652cedbe603307c6ef3d77dde0d946",
+            "bytes": 15672,
+            "source_filename": "prism.js",
+            "expect_len": 8685,
+            "expect_sha": "ce91d4f4a1c20ee3deb9f32339d26a24f2922a898836b33016821c57b4a079f9"
+          },
+          {
+            "path": "mark.js",
+            "sha256": "2f257849e20bc385cdf0f59a03276a3abf290a9bfd45565b546c211ab727c7ee",
+            "bytes": 33665,
+            "source_filename": "mark.js.js",
+            "expect_len": 16674,
+            "expect_sha": "16926388e208a29779f05cee216526af637b7d47e6ebbb3f6524f1f5649ef44f"
+          },
+          {
+            "path": "pure.js",
+            "sha256": "cc457a12643c6376a5f65564d3812775b0bc4f4f2062eca430581d94371f74e7",
+            "bytes": 24159,
+            "source_filename": "pure.js.js",
+            "expect_len": 10825,
+            "expect_sha": "656f765094dffd3482e63dca8f9d3d8282f2ac16a735e2bcf7286b10111ad503"
+          },
+          {
+            "path": "spf",
+            "sha256": "19d911381ea1b83833cae6998e46e6499d67c5676895572219ed5ffcb1e9c748",
+            "bytes": 34636,
+            "source_filename": "spf.js",
+            "expect_len": 34233,
+            "expect_sha": "286f10c6fad8fdb43c6a8d06c328887ce8c44d0c5afe006b45c8fab2517883b4"
+          },
+          {
+            "path": "z-schema",
+            "sha256": "3675701e7d7ef6ad97c1411c0406638558fed28fac0bf33d2a07991a3a2e8ba6",
+            "bytes": 9054,
+            "source_filename": "z-schema.js",
+            "expect_len": 4480,
+            "expect_sha": "228844e0fcac48ddf2642ece6284502e22fc530ce0e316211e2ec30a6af520f8"
+          },
+          {
+            "path": "jquery-extendext",
+            "sha256": "0f6eb997fc43d2a88d74ada1ed00ed50f6c08dde18f8a358d35ce6606ede6a2f",
+            "bytes": 4556,
+            "source_filename": "jquery-extendext.js",
+            "expect_len": 1087,
+            "expect_sha": "1e829e946c7b8d8db9b6ffb4947138eaa4a555e6ca17d4c2872421f997ebce73"
+          },
+          {
+            "path": "backbone.layoutmanager",
+            "sha256": "12921f0d8bee5a3cc9cb66d7c8e0ef7be8b8fb496db79a006e8cf93d75210eb7",
+            "bytes": 38359,
+            "source_filename": "backbone.layoutmanager.js",
+            "expect_len": 9019,
+            "expect_sha": "ed9bda0481bb1fbb285b4b114536d536ab587970cc1cd3b538049ba23e8a6b43"
+          },
+          {
+            "path": "mootable-hashmap",
+            "sha256": "7102e08abd346b040fb22f6f896dcf511256b0bcc2b9e75b8d360d2ca8aac1b6",
+            "bytes": 179204,
+            "source_filename": "mootable-hashmap.js",
+            "expect_len": 67427,
+            "expect_sha": "8d093618c19fa398ce1cb633a03d9837774cf1452a911d3d2b1dc12d6e668d8c"
+          },
+          {
+            "path": "angular",
+            "sha256": "b010bf5269e19f2f5e4ab532f1c1d7fce9753f035064293d0c90762852af96d0",
+            "bytes": 1541809,
+            "source_filename": "angular.js",
+            "expect_len": 311988,
+            "expect_sha": "e4f32237ed6a29edaa979013b6ded5d5cb42b01d89577e8c0fb6699d0905c786"
+          },
+          {
+            "path": "angular-ui-grid",
+            "sha256": "85465560402697897b827e963a9500dc514489ca714df47c2e4fb29409b4ae20",
+            "bytes": 1201365,
+            "source_filename": "angular-ui-grid.js",
+            "expect_len": 353452,
+            "expect_sha": "0070f4ec43091112684516138347711232ed2c350584f34d3020952e86cc610a"
+          },
+          {
+            "path": "clipboard.js",
+            "sha256": "ba5f78267d0c04e8a31aebd7860c7fd7fc236891cddd477a4c7fdc19a0eb176e",
+            "bytes": 26807,
+            "source_filename": "clipboard.js.js",
+            "expect_len": 9248,
+            "expect_sha": "66124aed4a9f53844a6fc2bd336224d4d11dc1469686c964795e59fa2c000045"
+          },
+          {
+            "path": "jQuery-QueryBuilder",
+            "sha256": "10bcb1d1af097f38779b236a78f90be0dd726540c8c9b9b2fe71531d036e52b7",
+            "bytes": 196315,
+            "source_filename": "jQuery-QueryBuilder.js",
+            "expect_len": 71650,
+            "expect_sha": "5e66d6549bfe8991d9fec5366ef5eac511cbfa15afaf3faf6038caad9b7406d5"
+          },
+          {
+            "path": "ready.js",
+            "sha256": "b106c8c5480da30cb319adf081fd662f2eaaa6ce558d0df1b7b16718d279f353",
+            "bytes": 474,
+            "source_filename": "ready.js.js",
+            "expect_len": 148,
+            "expect_sha": "c95834014ec077abc74b99a503d36f974760e06dd6a945ca124e6832200e89b9"
+          },
+          {
+            "path": "cyclejs-core",
+            "sha256": "88ecc42f9c9bfd0b23f6ed60dfc23561e496b333acd13c9cfa362cd210616f7b",
+            "bytes": 9969,
+            "source_filename": "cyclejs-core.js",
+            "expect_len": 4007,
+            "expect_sha": "45499f9c7ea6b18fbc1acb094ea099971ec2c31c83b645a55a71b2c3d8ca0ea9"
+          },
+          {
+            "path": "backbone.projections",
+            "sha256": "2d34989e06eb175b7bba56723d9b942c9b9ad96c7d3b0ed55ad525ab8b4400bd",
+            "bytes": 9446,
+            "source_filename": "backbone.projections.js",
+            "expect_len": 5538,
+            "expect_sha": "1e2f804731be1f9ca2d8c3b500aafd3341dfc3799a1b49b9135a00714a947fd9"
+          },
+          {
+            "path": "store2",
+            "sha256": "08ec6e29c27374b3cb340c00118e8dd0df645584a984002cc71e8f61881c5165",
+            "bytes": 11082,
+            "source_filename": "store2.js",
+            "expect_len": 4388,
+            "expect_sha": "5437fe4354901dc7b930b5ef17bfccfd92c139e5f69c96946c462f514ef17804"
+          },
+          {
+            "path": "qrcode-generator",
+            "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780",
+            "bytes": 56694,
+            "source_filename": "qrcode-generator.js",
+            "expect_len": 20433,
+            "expect_sha": "d8ce08e2791106683ec56b46a04d3634e7454980972abb77b1cc8c955bfcc7d4"
+          },
+          {
+            "path": "instafeed.js",
+            "sha256": "7d8a2441aca938a2c9bf81bfc17eeb354027a8c2421e143045508630592ea00f",
+            "bytes": 13256,
+            "source_filename": "instafeed.js.js",
+            "expect_len": 6654,
+            "expect_sha": "3fe10ac2271f54abd4452910d68ef9e1425540e9445eaec7f4714bcf69d0fecd"
+          },
+          {
+            "path": "jquery-jkit",
+            "sha256": "11b9635568d37dea545b703af501cb4600c9edcdfc68731f156290e02fbf5d15",
+            "bytes": 92696,
+            "source_filename": "jquery-jkit.js",
+            "expect_len": 51907,
+            "expect_sha": "117d78deb13de048168bbe9a85e93bd4c1c462eaf8a96cfd61eb820feecdae54"
+          },
+          {
+            "path": "angular-ui-codemirror",
+            "sha256": "62f0b065dbcdd2d312009dde95e951be2b108baa33d6ee3312e7d83458605b04",
+            "bytes": 4551,
+            "source_filename": "angular-ui-codemirror.js",
+            "expect_len": 1673,
+            "expect_sha": "739d559bffb3de220c8a52f8914eb086747cacb92f0ae3fdd14d67c79c4d7451"
+          },
+          {
+            "path": "jsmediatags",
+            "sha256": "3342db151ce39c5939b1acd9d2ffbe354b5129e5c168ccd2076ad28d503b5bf5",
+            "bytes": 120381,
+            "source_filename": "jsmediatags.js",
+            "expect_len": 49423,
+            "expect_sha": "7680c06aa8831e7d5fd6b64b73a04962617cd3e207b8cec7f84a2ddc41edd639"
+          },
+          {
+            "path": "progressStep",
+            "sha256": "8a3d3f478ab2e96359c175f050338784a25531287cad723ae83703df4943737e",
+            "bytes": 11200,
+            "source_filename": "progressStep.js",
+            "expect_len": 2981,
+            "expect_sha": "b2e72b4387a48d5607f022116b40ead5c69ba4c7948db62131bd25c6dd1a4df0"
+          },
+          {
+            "path": "jQuery.highlightRegex",
+            "sha256": "917b25ff4653dbdec25952128b19c6fb25abe8fdc3ee2afae25abd5e4fef1e0e",
+            "bytes": 3119,
+            "source_filename": "jQuery.highlightRegex.js",
+            "expect_len": 1142,
+            "expect_sha": "591764d2126aed035cd2ca101b449af50f76b66d85f034d11535c39ebeab38e4"
+          },
+          {
+            "path": "bootstrap-growl",
+            "sha256": "7150f50a2f84bed8647971bd0e0eed20db8f34d3e833924971b2e237cb98255b",
+            "bytes": 2061,
+            "source_filename": "bootstrap-growl.js",
+            "expect_len": 1090,
+            "expect_sha": "70ae570f07ffa6f65b2a83bfeb9dfc31c27612020c3459982d484309c7de90fa"
+          },
+          {
+            "path": "browser-deeplink",
+            "sha256": "cf26197e818b4e64adc4da72c19ef2e632cb9207aedca1f039aa1e7be31d185f",
+            "bytes": 5459,
+            "source_filename": "browser-deeplink.js",
+            "expect_len": 1436,
+            "expect_sha": "5e78caf37e4f819000395e52d9843392f1d96aff364edddb8feeb00467bb6ebb"
+          },
+          {
+            "path": "oppia",
+            "sha256": "e97c1d9975e64e72efba66e3923436cf636a47eaeb08d69d2f4ffa6357381290",
+            "bytes": 12740,
+            "source_filename": "oppia.js",
+            "expect_len": 4089,
+            "expect_sha": "a2c372c07acd9b6a5f42a0d2fd5e3b6ad7ca6e5d5a34f29a739935a70966aeb7"
+          },
+          {
+            "path": "backbone-tastypie",
+            "sha256": "ae2dd8ff6e8c32301b1204dc565149afba61170d4026e503f8e55cdc615457ae",
+            "bytes": 5518,
+            "source_filename": "backbone-tastypie.js",
+            "expect_len": 2107,
+            "expect_sha": "cac80d1558a9a1063e65be213fa15a5832a7e04972e761cfa62122e8a5cd558d"
+          },
+          {
+            "path": "tippy.js",
+            "sha256": "00c38b71f2a6e021a420a8b968c5d210bcf717b434492d072963a24cbb6d7b55",
+            "bytes": 77897,
+            "source_filename": "tippy.js.js",
+            "expect_len": 27301,
+            "expect_sha": "3948bc01cc89a2efa228b402b9fb22839e72731b6ce7e126c5336bf12646bbcf"
+          },
+          {
+            "path": "flux",
+            "sha256": "998781e8448fbf6404cae9b1a81254051af8bce264c6621d93fc3f8e25e96fbe",
+            "bytes": 12043,
+            "source_filename": "flux.js",
+            "expect_len": 3137,
+            "expect_sha": "a1bd010af11e7a6b5e63b3c976e3d1f2fb0b768c8857e3a76ef514b7cef72124"
+          },
+          {
+            "path": "alt",
+            "sha256": "d43c690155fd6ab1aa67aaab73ff2d08357317721f3ce9be5948be6cf8af037e",
+            "bytes": 57028,
+            "source_filename": "alt.js",
+            "expect_len": 22190,
+            "expect_sha": "577a9fb47ba387b83bc996c23fc7d3830bfc22501ea5449e1fbfcf836266b4c8"
+          },
+          {
+            "path": "jInvertScroll",
+            "sha256": "1431faed9153bb8f832f7d6e0094754c9cd37ab8a0a83e7e3924db4fe7ca3778",
+            "bytes": 4743,
+            "source_filename": "jInvertScroll.js",
+            "expect_len": 984,
+            "expect_sha": "9c7c3289f3f31aee98e3b87a09c6eb9224de837861d11db99658f71905b6a7d6"
+          },
+          {
+            "path": "chillout",
+            "sha256": "0a66da30a287f7dc16a411298f0601aae1c37f006999986e3358cce84ec1828f",
+            "bytes": 13793,
+            "source_filename": "chillout.js",
+            "expect_len": 4976,
+            "expect_sha": "ef6db110b31868668bada498f4511357186535c44c94186d2fa91f5cd3ebdbed"
+          },
+          {
+            "path": "jquery-nice-select",
+            "sha256": "cebb7776fb386c1fc6f0ef7168aa12642441058942bf91e0403ed1b15665ed37",
+            "bytes": 5825,
+            "source_filename": "jquery-nice-select.js",
+            "expect_len": 2822,
+            "expect_sha": "f56865f3d6ffac43866e36a142bcd0c26860e0ef4a2d9251c43db92ed13768f0"
+          },
+          {
+            "path": "mercury",
+            "sha256": "ec94c1f3db427df2b4f9d6f6a648324854a37a32d5efaaa53479fe8cb561c912",
+            "bytes": 109969,
+            "source_filename": "mercury.js",
+            "expect_len": 45230,
+            "expect_sha": "24a85994acd81e9206bf201111acc65442690869b8c2041be2c2195d12419cb4"
+          },
+          {
+            "path": "numl",
+            "sha256": "34b3bf0439147b67b487e21bd8c0b900cf7ad4f8f9b7de91309a0966705dcfb2",
+            "bytes": 465,
+            "source_filename": "numl.js",
+            "expect_len": 464,
+            "expect_sha": "7ef3fa7f44bf9afb3a3f4735ca12c03aa4767c00001193e3569873e7689f2868"
+          },
+          {
+            "path": "jsgrid",
+            "sha256": "2b12cc321a243f56b6fe84c8de228a8940221d4aa3700634e5b5f5bd4f25beb6",
+            "bytes": 75998,
+            "source_filename": "jsgrid.js",
+            "expect_len": 36876,
+            "expect_sha": "260b69359ac380ade6d61f992d356f7780fe61fc947392bf4dbccbdd5ff88e1b"
+          },
+          {
+            "path": "jquery.rateit",
+            "sha256": "394b311ea187178762fc0b61d7a2a82cc08421695b5f65408e11545cb0516216",
+            "bytes": 20586,
+            "source_filename": "jquery.rateit.js",
+            "expect_len": 7205,
+            "expect_sha": "07bcb4439b733308babdcf2bd2626b7c041469dcb87ac9d44113dfae06fd086d"
+          },
+          {
+            "path": "angular-elastic",
+            "sha256": "6ea130a349336589fd8005d5fb58c08865345168110b9b853643a27fa42ea7d6",
+            "bytes": 7963,
+            "source_filename": "angular-elastic.js",
+            "expect_len": 3027,
+            "expect_sha": "5ac744e98aac06189b7a51dbfc7d56c6bbcfe00929d09298978d2160bf0d4c1e"
+          },
+          {
+            "path": "jquery-color",
+            "sha256": "d429fb4dd7c788c7046d3ba4bbded94521add9bdd2bd97ed1089faf143201c2f",
+            "bytes": 16278,
+            "source_filename": "jquery-color.js",
+            "expect_len": 6465,
+            "expect_sha": "ddf2acb5657d04cd0bea79fb3555e727ad0da671b59294365d1cb621d1a0b723"
+          },
+          {
+            "path": "startbootstrap-creative",
+            "sha256": "5ffce3068e28a7310d70e16f1f8f34a5831d1ab586ef28df13592ab105b65a1a",
+            "bytes": 1668,
+            "source_filename": "startbootstrap-creative.js",
+            "expect_len": 926,
+            "expect_sha": "1a1c9327a8e1bce5453bd9e7fcb65c2e1167f37d8675ebf1cb198f5e2986b742"
+          },
+          {
+            "path": "load.js",
+            "sha256": "d6be608bedbc13b7de4d09c85ffef595b829ceee3875de510ddc97aa8b9f26b3",
+            "bytes": 2441,
+            "source_filename": "load.js.js",
+            "expect_len": 1880,
+            "expect_sha": "808f82c9ae9ae31212054cd4d97d539de2c45c2adacf7127cc3e8eb625ccf67d"
+          },
+          {
+            "path": "jQuery.my",
+            "sha256": "43501a8f5f5df650c776a99a2889a2a8537d299838d9b00c637a158fef3459a3",
+            "bytes": 136467,
+            "source_filename": "jQuery.my.js",
+            "expect_len": 59480,
+            "expect_sha": "726dbbbffc1ba728ab1c1499af5a41a93d61e52a4d4149937a46d5797d2eca20"
+          },
+          {
+            "path": "tern",
+            "sha256": "6afc558feb0687d518669a3345ff5238994e422929244c9577ab8678bb537f38",
+            "bytes": 41510,
+            "source_filename": "tern.js",
+            "expect_len": 19953,
+            "expect_sha": "45289689c75d02445109a671f0be499a6bd981d866dc3c1fea3ad1bd3676eee2"
+          },
+          {
+            "path": "markerclustererplus",
+            "sha256": "35c00ab623ff0bb1f48d6a450a85dd7343a2e83308c974dcdf287217a17d79f2",
+            "bytes": 52955,
+            "source_filename": "markerclustererplus.js",
+            "expect_len": 16579,
+            "expect_sha": "6a6328e7832d664adbfda7a72d3da53bf962174b75f0f906995a439eb93b51c1"
+          },
+          {
+            "path": "classlist",
+            "sha256": "3cb79e59443dd34370cb0f1e655eb9a8eba086c03ea4c6c2b66705ac3912d90e",
+            "bytes": 6275,
+            "source_filename": "classlist.js",
+            "expect_len": 2619,
+            "expect_sha": "211db7ae1d9c35fdf020a5fb9a8186d30a3ba323d2ca2bac625a74e7acd6a116"
+          },
+          {
+            "path": "jQuery.BlackAndWhite",
+            "sha256": "aa7a5624e487b6953d24bf60d2808874b78a4cae0c16720444a856186ceedd9b",
+            "bytes": 13059,
+            "source_filename": "jQuery.BlackAndWhite.js",
+            "expect_len": 3197,
+            "expect_sha": "aa5a09ad75b7e4bd0795429114b7276abc5236d275932a81032379dc45f89053"
+          },
+          {
+            "path": "reel.js",
+            "sha256": "6aacf5e0eee8dec7d1bd2d58688d7fcc535c76046c250854794ab18767d65173",
+            "bytes": 124573,
+            "source_filename": "reel.js.js",
+            "expect_len": 20269,
+            "expect_sha": "a4f84e2d7135b0f253f2b54820f54022e5fdb472161456e9773eedd01e8fef64"
+          },
+          {
+            "path": "dialog-polyfill",
+            "sha256": "7d5b4a5c45b61245429184d1a4af62dcf5d3a05d346428c5b00dcf4d7e901994",
+            "bytes": 29167,
+            "source_filename": "dialog-polyfill.js",
+            "expect_len": 11640,
+            "expect_sha": "dff8e24073efd4f0de242ad679db59dfa40c149394ae166b20418912f435b78b"
+          },
+          {
+            "path": "PullToRefresh",
+            "sha256": "d952558bb736ba3b673550e2bb13d5803808a328c80fe810600ffae609d0deaf",
+            "bytes": 10877,
+            "source_filename": "PullToRefresh.js",
+            "expect_len": 6946,
+            "expect_sha": "4cfb64107f617f34e5c5fd7f37650eb1c70db2500e08e57fee9a150e46036acb"
+          },
+          {
+            "path": "range.js",
+            "sha256": "afc0cba30bcd671f94a2e30660b454b8b1b74b9ebfba6c682238337dccaa9f4c",
+            "bytes": 2348,
+            "source_filename": "range.js.js",
+            "expect_len": 768,
+            "expect_sha": "74338f7cb8b38b8a46aea358771e9c037c48abb842a6a114941434addd95e629"
+          },
+          {
+            "path": "ui.multiselect",
+            "sha256": "d69c98cf5dd219af53bb0b640cac253a26c74d9a71c5c8d546d8255a459900ac",
+            "bytes": 11024,
+            "source_filename": "ui.multiselect.js",
+            "expect_len": 7264,
+            "expect_sha": "b3c136a9b9ce4903759c3bf08ff2564aa84acbd89a63782d4982f1de9cc73be6"
+          },
+          {
+            "path": "flexnav",
+            "sha256": "498c6aa182584e49679565b4bd86f46146004c67a553b265329e3cf05629906e",
+            "bytes": 5456,
+            "source_filename": "flexnav.js",
+            "expect_len": 3203,
+            "expect_sha": "db72bee1ce1b538759c321599d83b320b3d7781f7c81fe9044df9f03cbc8b83d"
+          },
+          {
+            "path": "iDevice.js",
+            "sha256": "52172eecc64e6d4f8644143dfef94658dab189c40daedc75005894204a0eb80c",
+            "bytes": 3261,
+            "source_filename": "iDevice.js.js",
+            "expect_len": 1910,
+            "expect_sha": "e0778c61bdc39c49ce3bb00e993293850c01f5f0cbe10e44ca68cd76ea395783"
+          },
+          {
+            "path": "material-kit",
+            "sha256": "7016b3e57c12780230ec133e50d85f584cbff611fac048a9026d306af69abbdc",
+            "bytes": 9097,
+            "source_filename": "material-kit.js",
+            "expect_len": 5314,
+            "expect_sha": "af5ad17803824bf61bc7b09f822f1745dfbbe199090acf786d8886725bcc012e"
+          },
+          {
+            "path": "textAngular",
+            "sha256": "6be1ae80cbaf9474627d3f6eadc1e35661be2cdbaaad460eb201b129444c4950",
+            "bytes": 234592,
+            "source_filename": "textAngular.js",
+            "expect_len": 63985,
+            "expect_sha": "c64c7b36f7985ddfeeb80c2822e566630bb6e7f2b12ed83ed647351d9be86920"
+          },
+          {
+            "path": "radash",
+            "sha256": "cf8c79e4060924215cc87e7ec6fa1a01a20248f7ed139ceeb67d8900d3c59afc",
+            "bytes": 29425,
+            "source_filename": "radash.js",
+            "expect_len": 11792,
+            "expect_sha": "81996e607a097aea84a8e76e4386a297ae49977537f6e22b4a1d1c67537862ab"
+          },
+          {
+            "path": "lightslider",
+            "sha256": "7569790da1a5a39dd553d07e81b75746184f40b575aeefb52d6ccf4b65d82ac6",
+            "bytes": 48218,
+            "source_filename": "lightslider.js",
+            "expect_len": 15805,
+            "expect_sha": "2502cef577a7ef18d341f3a21c70aa8db6f3456a2a12f85facd2e45f2a4250d1"
+          },
+          {
+            "path": "vue-validator",
+            "sha256": "5c97bab30701131bcf66927e85f9e43e43e83a084fa3094adbe68614651a225d",
+            "bytes": 689,
+            "source_filename": "vue-validator.js",
+            "expect_len": 328,
+            "expect_sha": "e9c87a7f9d4d8ef62d904e5571dd2155ff5882a82e8ae7464c552d54cc07bf02"
+          },
+          {
+            "path": "anyjs",
+            "sha256": "309b0aa5e9cd64f6b5ddf5a3159272344a8541b0eacd4443ace2b3a4065bdd93",
+            "bytes": 140563,
+            "source_filename": "anyjs.js",
+            "expect_len": 34791,
+            "expect_sha": "e168f498bcdeb48bdd7f25c97a38ac643eb5b4f2e172789e833c8377aea2f341"
+          },
+          {
+            "path": "twgl.js",
+            "sha256": "a2b4855bd6591108e68bc89e972d0734c78072bb3da646a4675db9b1e699b168",
+            "bytes": 262596,
+            "source_filename": "twgl.js.js",
+            "expect_len": 57886,
+            "expect_sha": "5b9b65eee2a606b08ef15e5aa610adfbe7cb91e313ca88b235eaebf838657d02"
+          },
+          {
+            "path": "chartist",
+            "sha256": "3729fc702400af74c396dc1010d0bbbdb1d068b2b2f71baaf31a27d8135980f9",
+            "bytes": 178767,
+            "source_filename": "chartist.js",
+            "expect_len": 39566,
+            "expect_sha": "40bd748b07e640d6f433da0629def38f000c15712acce56418d2bc7e679279e1"
+          },
+          {
+            "path": "request",
+            "sha256": "8add87cb60d62ceeca63981bb4426b1fffb4fef65303f31b688eb1f1c425274f",
+            "bytes": 3994,
+            "source_filename": "request.js",
+            "expect_len": 1964,
+            "expect_sha": "8dfc4d807300312eb200d0d8abe10d898b47a191954fd8e10fae95befa771c8a"
+          },
+          {
+            "path": "Buttons",
+            "sha256": "7c8e73a328a2c7c86c32996757c9fa19ee990672a4a09a542f38f196338a8462",
+            "bytes": 3405,
+            "source_filename": "Buttons.js",
+            "expect_len": 1189,
+            "expect_sha": "4cf971024d203431295a2fe779f3aeb7426d15c14776bc68ef2b1e7492b508e3"
+          },
+          {
+            "path": "waterfall.js",
+            "sha256": "77326d7790bae55eb5bbbccb5dcf75a1d60a85a0d4e2691d6904f4d99a577a78",
+            "bytes": 3171,
+            "source_filename": "waterfall.js.js",
+            "expect_len": 1321,
+            "expect_sha": "664ac7e7caf7b0b8de3e6ab2167e771b5f52005e88cf0b7f2ee19634f3c80342"
+          },
+          {
+            "path": "EaselJS",
+            "sha256": "0549849caa7ea3dfd7d6fb3c3a388b4c08210312870ddf4a772214ce6a991e09",
+            "bytes": 580293,
+            "source_filename": "EaselJS.js",
+            "expect_len": 126945,
+            "expect_sha": "a2f8c6f60016876b071590131dcc6285e0ca39ab1754fa395075bfc9acb01f40"
+          },
+          {
+            "path": "web-starter-kit",
+            "sha256": "8c36278fd228248d90ee88fa89ae673e2707e9636aa6436670299248d8f8ba72",
+            "bytes": 1541,
+            "source_filename": "web-starter-kit.js",
+            "expect_len": 509,
+            "expect_sha": "4ad0addb3716da9e93d54607941d6b5f5246e13a75cead2d87dcf89f4de9c751"
+          },
+          {
+            "path": "jquery-visible",
+            "sha256": "f7e17a4090c835c12b22e5395556ccc68f9c7db0c12a85f0c201ec95cb10ce74",
+            "bytes": 2948,
+            "source_filename": "jquery-visible.js",
+            "expect_len": 801,
+            "expect_sha": "84761981183c66c1ae27cb0c069aaeff853c90d825578ac0e9c4ead00846e466"
+          },
+          {
+            "path": "esri-leaflet-related",
+            "sha256": "5d20a16047207a040d38d00d6cd6e7743bbe008bba5ec4e69c5c74f99e184765",
+            "bytes": 1680,
+            "source_filename": "esri-leaflet-related.js",
+            "expect_len": 1451,
+            "expect_sha": "23666473a579c84fef80d620b345be01a5bf9f563ce894e8080cdc442ad6cdcd"
+          },
+          {
+            "path": "ng-bs-daterangepicker",
+            "sha256": "31e4aeb2d9afe848d731c09542408cb7c2f3c601359ae05aa26b1d546abf9582",
+            "bytes": 3392,
+            "source_filename": "ng-bs-daterangepicker.js",
+            "expect_len": 1689,
+            "expect_sha": "163ea0c45f48022258b0d0faba950d7a7622ab1a4f80191505aabb990b676186"
+          }
+        ]
+      }
+    ],
+    "webpack-esm": [
+      {
+        "docs": [
+          {
+            "path": "mobx",
+            "sha256": "a5d3e252a2d12dbf410a3759e7e6e0fdd21ef66e46bbb6c89c6c712376bd8a74",
+            "bytes": 210132,
+            "source_filename": "mobx.esm.js",
+            "expect_len": 84207,
+            "expect_sha": "17a4d060bced816f2bcdb3337a0f180ee194544fddb0fce0306a33b5a5cf07d8"
+          },
+          {
+            "path": "yjs",
+            "sha256": "dd7ed48eae204b28ce6b3ef998585b155a75472c82fde8f6aa4cae25b8dd1cd1",
+            "bytes": 298212,
+            "source_filename": "yjs.mjs",
+            "expect_len": 78495,
+            "expect_sha": "6e80a8d61ab7656479b9986717bd0b66422f80491200b855040bbf744b2d8ae7"
+          },
+          {
+            "path": "zod",
+            "sha256": "17435ea7cb27d56b11c6fd64401001084fd6ab8b8f1c501442dfb2d1eabe10b6",
+            "bytes": 149466,
+            "source_filename": "index.mjs",
+            "expect_len": 60091,
+            "expect_sha": "8477f744e29fcc70907a1d2b311216520d01e13c75303850ac8966878cd99d87"
+          },
+          {
+            "path": "prosemirror-view",
+            "sha256": "33b4ad831a9f9b956bd4955894cd9d579246cad9e646082c591224e3e0338ca6",
+            "bytes": 239318,
+            "source_filename": "index.js",
+            "expect_len": 95038,
+            "expect_sha": "42b29e1914665f0a3ad1504b51ce8f59e1597ae9ee9690f7d2873461effa5906"
+          },
+          {
+            "path": "prosemirror-model",
+            "sha256": "363838ba10be7d2c11bd4b5532fe93e24a34bb5ba8071915b98a590f66b30bce",
+            "bytes": 122956,
+            "source_filename": "index.js",
+            "expect_len": 44053,
+            "expect_sha": "dfdbec3244efcd390530adffab086fd4258f082c946c47d515e658fdf9e50d8d"
+          },
+          {
+            "path": "prosemirror-transform",
+            "sha256": "be1f142aa993175d3a7f5d97e815f3cbf2400016030785b40ca663ac1bf6646b",
+            "bytes": 81572,
+            "source_filename": "index.js",
+            "expect_len": 30603,
+            "expect_sha": "eedc7a61e33f69e8a3ef1d0ab26f714aea5883878173c22e464301fbff9b3df8"
+          },
+          {
+            "path": "prosemirror-state",
+            "sha256": "846f82e7dfc7bfaa2ba8bc93f2c0b620cf0c78324a49163bdf5bcc64e4ba4293",
+            "bytes": 36248,
+            "source_filename": "index.js",
+            "expect_len": 12051,
+            "expect_sha": "b3d8df3c063ea4cafb4b59f140ca1f504b40b0061b123f60f39d1aada17679a4"
+          },
+          {
+            "path": "katex",
+            "sha256": "3de582c88577c17a667658525d0387138a02467d822fda25cc00e5886ca496ef",
+            "bytes": 606245,
+            "source_filename": "katex.mjs",
+            "expect_len": 281787,
+            "expect_sha": "ebc828fe6f87d07e4a15857e7ec11f524fa613448d72c1ab6d32545827cc6996"
+          },
+          {
+            "path": "ethers",
+            "sha256": "6aaaee71880e705071ac4b32c988fe5bde122b7d1a4399f70bf0e5c461ef646d",
+            "bytes": 987069,
+            "source_filename": "ethers.js",
+            "expect_len": 376066,
+            "expect_sha": "9c42afc3e4ae4b2ebb972cc16a7c82791791b81aeedf3ce2c10f122ad401e633"
+          },
+          {
+            "path": "fabric",
+            "sha256": "3e2c689f6d4354c029bbf8a7f600f80017060da4e0cf484ceed8957c1042f099",
+            "bytes": 944146,
+            "source_filename": "index.mjs",
+            "expect_len": 318681,
+            "expect_sha": "b37909b1f280cbeb4423a5b62073c71e5e0669779a603bda8bec027e7570cc74"
+          },
+          {
+            "path": "pdf-lib",
+            "sha256": "4bd8dd3155d7b1062a161567bf68168c55283bd5fad6a638b16ae028846b52c5",
+            "bytes": 1587811,
+            "source_filename": "pdf-lib.esm.js",
+            "expect_len": 526945,
+            "expect_sha": "c0db98a3f9b2a29522b5866acbb14d331ec2578248303451e7883b28d51aeec4"
+          }
+        ]
+      }
+    ]
+  }
+}

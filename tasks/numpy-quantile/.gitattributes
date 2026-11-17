@@ -1,0 +1,4 @@
+# A/A receipts are retained byte-for-byte as the pipeline wrote them.
+tests/receipts/** -whitespace
+# Verbatim third-party licence texts for held-out inputs are content-locked.
+tests/notices/** -text -whitespace

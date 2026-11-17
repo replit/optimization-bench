@@ -1,0 +1,100 @@
+{
+  "build_source_env": "BLACK_SOURCE",
+  "calibration_max_age_seconds": 86400,
+  "case_roles": {
+    "heldout": {
+      "faker-reformat": "performance",
+      "gcp-retail-check": "performance",
+      "snippets-heldout": "performance",
+      "ranges-heldout": "performance"
+    },
+    "public": {
+      "django-reformat": "performance",
+      "sqlalchemy-check": "performance",
+      "startup-empty": "correctness",
+      "snippets-public": "performance",
+      "ranges-public": "performance"
+    }
+  },
+  "claimable": false,
+  "cores": 8,
+  "differential": {
+    "stderr_contract": "cli-stderr-contract-v1",
+    "enabled": true,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "case_budget": 18,
+    "case_timeout_seconds": 30,
+    "time_cap_seconds": 600
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "performance_units": {
+    "heldout": {
+      "faker-reformat": [
+        "faker-reformat"
+      ],
+      "gcp-retail-check": [
+        "gcp-retail-check"
+      ],
+      "warm-snippets": [
+        "snippets-heldout"
+      ],
+      "editor-ranges": [
+        "ranges-heldout"
+      ]
+    },
+    "public": {
+      "django-reformat": [
+        "django-reformat"
+      ],
+      "sqlalchemy-check": [
+        "sqlalchemy-check"
+      ],
+      "warm-snippets": [
+        "snippets-public"
+      ],
+      "editor-ranges": [
+        "ranges-public"
+      ]
+    }
+  },
+  "pids_limit": 512,
+  "process_state": {
+    "enabled": true,
+    "kind": "python"
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "kind": "python",
+    "packages": [
+      "black"
+    ],
+    "root": "runtime"
+  },
+  "qualification_notes": "There are four equally weighted public timed units: django-reformat, sqlalchemy-check, warm-snippets and editor-ranges. startup-empty is a separate correctness-only probe, never a fifth timed unit. The held-out split has four corresponding units. See [tests/README.md](tests/README.md) for clean-checkout acquisition, candidate export and self-hosted judge commands.",
+  "relative_ci_half_width": 0.02,
+  "resident_protocol": false,
+  "review_required": true,
+  "startup_probe": {
+    "case": "startup-empty",
+    "maximum_share": 0.02,
+    "samples": 9,
+    "scope": "public"
+  },
+  "warmups": 1
+}

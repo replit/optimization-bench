@@ -1,0 +1,96 @@
+{
+  "adapter_id": "sqlfluff.frozen-match-result.v1",
+  "cases": [
+    {
+      "case_id": "A",
+      "faults": {},
+      "operations": [
+        {
+          "handle": "first",
+          "index": 0,
+          "op": "empty"
+        },
+        {
+          "handle": "second",
+          "index": 0,
+          "op": "empty"
+        },
+        {
+          "handle": "other",
+          "index": 1,
+          "op": "empty"
+        },
+        {
+          "handle": "combined",
+          "left": "first",
+          "op": "append",
+          "right": "other"
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "handle": "again",
+          "index": 0,
+          "op": "empty"
+        },
+        {
+          "handle": "first",
+          "op": "observe"
+        }
+      ],
+      "surface_id": "sqlfluff.core.parser.match_result.MatchResult.empty_at"
+    },
+    {
+      "case_id": "B",
+      "faults": {},
+      "operations": [
+        {
+          "handle": "first",
+          "index": 2,
+          "op": "empty"
+        },
+        {
+          "handle": "second",
+          "index": 2,
+          "op": "empty"
+        },
+        {
+          "handle": "other",
+          "index": 3,
+          "op": "empty"
+        },
+        {
+          "handle": "combined",
+          "left": "first",
+          "op": "append",
+          "right": "other"
+        },
+        {
+          "handle": "second",
+          "op": "observe"
+        },
+        {
+          "handle": "again",
+          "index": 2,
+          "op": "empty"
+        },
+        {
+          "handle": "first",
+          "op": "observe"
+        }
+      ],
+      "surface_id": "sqlfluff.core.parser.match_result.MatchResult.empty_at"
+    }
+  ],
+  "format": "judge-generic-api-sequence-v1",
+  "order": [
+    "A",
+    "B",
+    "A"
+  ],
+  "repetitions": 3,
+  "request_id": "frozen-control",
+  "task": "sqlfluff-project-lint"
+}

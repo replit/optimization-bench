@@ -1,0 +1,114 @@
+diff --git a/src/sqlfluff/__init__.py b/src/sqlfluff/__init__.py
+index 957a3b4..2615245 100644
+--- a/src/sqlfluff/__init__.py
++++ b/src/sqlfluff/__init__.py
+@@ -3,10 +3,9 @@
+ import sys
+ from importlib import metadata
+ 
+-try:
+-    import pytest  # isort: skip
+-except ImportError:  # pragma: no cover
+-    pytest = None  # type: ignore[assignment]
++# Only register assertion rewriting if pytest is already loaded (i.e. we're
++# running under it). Importing pytest here unconditionally is slow.
++pytest = sys.modules.get("pytest")
+ 
+ # Expose the public API.
+ from sqlfluff.api import fix, lint, list_dialects, list_rules, parse
+diff --git a/src/sqlfluff/core/dialects/__init__.py b/src/sqlfluff/core/dialects/__init__.py
+index 0d8572c..3af587b 100644
+--- a/src/sqlfluff/core/dialects/__init__.py
++++ b/src/sqlfluff/core/dialects/__init__.py
+@@ -98,12 +98,20 @@ def dialect_readout() -> Iterator[DialectTuple]:
+         )
+ 
+ 
++_expanded_dialects: dict[str, Dialect] = {}
++
++
+ def dialect_selector(s: str) -> Dialect:
+     """Return a dialect given its name."""
++    cached = _expanded_dialects.get(s)
++    if cached is not None:
++        return cached
+     dialect = load_raw_dialect(s)
+     # Expand any callable references at this point.
+     # NOTE: The result of .expand() is a new class.
+-    return dialect.expand()
++    expanded = dialect.expand()
++    _expanded_dialects[s] = expanded
++    return expanded
+ 
+ 
+ __all__ = [
+diff --git a/src/sqlfluff/core/linter/runner.py b/src/sqlfluff/core/linter/runner.py
+index bad4b6a..ed93447 100644
+--- a/src/sqlfluff/core/linter/runner.py
++++ b/src/sqlfluff/core/linter/runner.py
+@@ -9,6 +9,7 @@ Implements various runner types for SQLFluff:
+ 
+ import bdb
+ import functools
++import gc
+ import logging
+ import multiprocessing
+ import multiprocessing.dummy
+@@ -295,11 +296,23 @@ class MultiProcessRunner(ParallelRunner):
+     # In testing we've found no significant difference between "fork"
+     # and "spawn", and so settle on "spawn" for all operating system.
+     # https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods
+-    POOL_TYPE = multiprocessing.get_context("spawn").Pool
++    POOL_TYPE = multiprocessing.get_context("fork").Pool
++
++    @classmethod
++    def _create_pool(
++        cls, processes: int, initializer: Callable[[], None]
++    ) -> multiprocessing.pool.Pool:
++        # Move everything loaded so far out of the collector's view, so
++        # forked workers don't copy-on-write those pages.
++        gc.collect()
++        gc.freeze()
++        return super()._create_pool(processes, initializer)
+ 
+     @classmethod
+     def _init_global(cls) -> None:  # pragma: no cover
+         super()._init_global()
++        # Collect far less often in short-lived workers.
++        gc.set_threshold(100_000, 20, 20)
+ 
+         # Disable signal handling in the child processes to let the parent
+         # control all KeyboardInterrupt handling (Control C). This is
+diff --git a/src/sqlfluff/core/parser/segments/base.py b/src/sqlfluff/core/parser/segments/base.py
+index 6e2a452..6d591ff 100644
+--- a/src/sqlfluff/core/parser/segments/base.py
++++ b/src/sqlfluff/core/parser/segments/base.py
+@@ -691,9 +691,7 @@ class BaseSegment(metaclass=SegmentMetaclass):
+     def class_is_type(cls, *seg_type: str) -> bool:
+         """Is this segment class (or its parent) of the given type."""
+         # Use set intersection
+-        if cls._class_types.intersection(seg_type):
+-            return True
+-        return False
++        return not cls._class_types.isdisjoint(seg_type)
+ 
+     @classmethod
+     def structural_simplify(
+diff --git a/src/sqlfluff/core/parser/segments/raw.py b/src/sqlfluff/core/parser/segments/raw.py
+index b2dbbc1..3bf0cb9 100644
+--- a/src/sqlfluff/core/parser/segments/raw.py
++++ b/src/sqlfluff/core/parser/segments/raw.py
+@@ -186,9 +186,10 @@ class RawSegment(BaseSegment):
+ 
+     def is_type(self, *seg_type: str) -> bool:
+         """Extend the parent class method with the surrogate types."""
+-        if set(self.instance_types).intersection(seg_type):
+-            return True
+-        return self.class_is_type(*seg_type)
++        for t in self.instance_types:
++            if t in seg_type:
++                return True
++        return not self._class_types.isdisjoint(seg_type)
+ 
+     def get_raw_segments(self) -> list["RawSegment"]:
+         """Iterate raw segments, mostly for searching."""

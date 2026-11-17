@@ -1,0 +1,10 @@
+diff --git a/src/builtin.jq b/src/builtin.jq
+--- a/src/builtin.jq
++++ b/src/builtin.jq
+@@ -215,5 +215,5 @@ def walk(f):
+     elif type == "array" then map(w)
+     else .
+     end
+-    | f;
++    | .;
+   w;

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "task": "git-history-change-summary",
+  "edition": "pristine-replacement-20261025",
+  "repository_pins": "workload/corpus.json",
+  "membership": "workload/inputs/manifest.json",
+  "frozen_rules": {
+    "before_new_baseline_timing": true,
+    "public_selection": "First8192nonmergecommits in original git rev-list --topo-order from Git/Cargo/Django/Prettier pinnedHEADs; equal25%repository countmix.",
+    "unit_split": {"patch-myers": 4096, "shortstat-myers": 2048, "patch-histogram": 2048},
+    "counts_are_per_repository": true,
+    "unique_repository_commit_pairs": 32768,
+    "no_repeat_multiplier": true,
+    "grouping": "One normal diff-tree --stdin process per repository per unit; all commit lists disjoint across units.",
+    "cache_policy": "Normal per-process Git caches and OS page cache; no input/result caches or precomputed patches.",
+    "minimum_seconds_per_unit": 1,
+    "measurability_status": "Expanded-batch unpaired sizing14.31/5.11/6.36s is planning only; hardminimum1s. A/A awaits newimage/controls/review/hostclear. PriorfailedA/Aarchives retained, not current qualification.",
+    "heldout_disjointness": "Repository-level canonical identity, including forks/mirrors/renames; separate builder only.",
+    "reserved_repositories": "tests/heldout/repository-reservations.json",
+    "full_outputs_required": true,
+    "runtime_network": "none"
+  }
+}

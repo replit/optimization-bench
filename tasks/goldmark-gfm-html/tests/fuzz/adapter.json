@@ -1,0 +1,25 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "goldmark-gfm-html",
+  "language": "go",
+  "contract_sources": [
+    "instruction.md at cb9732c09a8cd420d20754bc6cc039225e794796",
+    "upstream README.md, CONTRIBUTING.md, Go API comments at 9ac8030064518346e4c9d7847c85278c3a5244ee"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {"profile": "Goldmark, sqlfmt, Black, SQLFluff, SQLGlot, Terser"},
+  "resources": {"peak_memory": {"mode": "report-only", "verdict_impact": false}},
+  "qualification_status": "undertested",
+  "qualification_blockers": [
+    "Corrected exported/re-exported public inventory not yet bound",
+    "Framework 2 native Go worker/coverage capability receipt not yet bound",
+    "Formal campaigns, changed branches and 20-mutant qualification pending"
+  ]
+}

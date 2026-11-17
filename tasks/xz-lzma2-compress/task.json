@@ -1,0 +1,54 @@
+{
+  "task_version": "1.0.0",
+  "code": "environment/workload/task.py",
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "contract": "Exact complete outputs, supported behavior, errors and all upstream tests.",
+  "editable": "Production C and headers under src/liblzma; retain upstream tests.",
+  "example_count": 57,
+  "families": [
+    [
+      "source-text",
+      "Complete unchanged source files from independent public projects."
+    ],
+    [
+      "release-archive-xz",
+      "Complete unchanged single-block upstream .tar.xz release archives, decoded in full."
+    ],
+    [
+      "xz-container-contract",
+      "Correctness-only CRC64-rejection and concatenated-stream inputs derived from public source files."
+    ]
+  ],
+  "id": "xz-lzma2-compress",
+  "input_edition": "source-text-dev-20261023",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "job": "Compress independent unchanged source files using one fresh preset-6 library call per file, and stream-decode complete upstream .tar.xz release archives with one fresh decoder per archive.",
+  "language": "C",
+  "limits": "Source-file compression is not all binary data or all liblzma configurations.",
+  "name": "XZ liblzma",
+  "operations": [
+    "lzma_easy_buffer_encode(6, LZMA_CHECK_CRC64, ...)",
+    "lzma_stream_decoder(UINT64_MAX, LZMA_CONCATENATED) with chunked lzma_code (64 KiB in/out, LZMA_RUN then LZMA_FINISH)"
+  ],
+  "options": "Preset 6; CRC64; fresh per-input context; no persistent state. Decode: no memory limit, concatenated streams, integrity checks verified.",
+  "outputs": "One complete XZ stream per input, with pinned byte length and SHA-256. Decode: decoded byte count plus XXH64 of every decoded byte, or the exact error.",
+  "packaging_status": "public-task",
+  "preparation": "Use the pinned source and offline worker; build into a fresh directory.",
+  "size_meaning": "Original complete-file byte length and structure.",
+  "smoke_status": "passed",
+  "source_bytes": 7612040,
+  "sources": [
+    "src/liblzma/api/lzma/container.h",
+    "README"
+  ],
+  "status": "qualification-in-progress",
+  "title": "Compress source files and decode release archives with XZ Utils",
+  "variables": [
+    "Source project",
+    "Source size",
+    "Source language",
+    "Text structure"
+  ],
+  "heldout_readme_text": "Held-out release archives are fetch-only; verification acquires and authenticates them outside the repository. The other held-out input bodies and all held-out expected outputs are stored with Git LFS and authenticated at scoring."
+}

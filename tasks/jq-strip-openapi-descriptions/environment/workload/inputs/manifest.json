@@ -1,0 +1,415 @@
+{
+  "format": "optimbench-inputs-v1",
+  "splits": {
+    "dev": [
+      {
+        "docs": [
+          {
+            "batch": "batch",
+            "bytes": 7747347,
+            "expect_len": 2213750,
+            "expect_sha": "bf90dd03f47de5466acbb525526a3b7835c54e5269c8ff7512f26e28a5369a61",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_ec2",
+            "original_path": "inputs/amazonaws_com_ec2.json",
+            "path": "amazonaws_com_ec2",
+            "sha256": "1161b0e945f029950552de3582c6d3d1f2d51c9046efbb5cc6688617f9fd781d"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1027748,
+            "expect_len": 201070,
+            "expect_sha": "be1995e476cd304693272d31a7704724ca0bd30bb5c473335695e61d09f549bb",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_s3",
+            "original_path": "inputs/amazonaws_com_s3.json",
+            "path": "amazonaws_com_s3",
+            "sha256": "1503e59f693ab475b165ab210a3f330fbeceff42e6edf5e9eda02eefa3a23e8c"
+          },
+          {
+            "batch": "batch",
+            "bytes": 604990,
+            "expect_len": 173461,
+            "expect_sha": "d21487c4cc0691dfaac9145a5445540bda2b89e729e1fa6b846241366206f0c5",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_lambda",
+            "original_path": "inputs/amazonaws_com_lambda.json",
+            "path": "amazonaws_com_lambda",
+            "sha256": "6e8e7818b3f7bdfa712837492fdc4901c1a6279fa47b529d18f3e0989e493b1a"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1092600,
+            "expect_len": 257353,
+            "expect_sha": "d45b35689a0db1f3cbd5009c33e6b611ef0c78004881da9033710a0d4fcb52a8",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_cloudformation",
+            "original_path": "inputs/amazonaws_com_cloudformation.json",
+            "path": "amazonaws_com_cloudformation",
+            "sha256": "b1c23965bd66b02d452519e7c1e3ef9af4f6376e7852f05c48938c74d452e07e"
+          },
+          {
+            "batch": "batch",
+            "bytes": 812741,
+            "expect_len": 181666,
+            "expect_sha": "822807e9df28f056509c962a404cd608d1a83fd4d86a9e5ffba7eaa6ff5d0c7a",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_ecs",
+            "original_path": "inputs/amazonaws_com_ecs.json",
+            "path": "amazonaws_com_ecs",
+            "sha256": "f089fac929e7b192a17c80ed7bf6421702659f20828f176169bda517042710a5"
+          },
+          {
+            "batch": "batch",
+            "bytes": 2592266,
+            "expect_len": 614239,
+            "expect_sha": "c82e8862a2c4ff3ff4fb8c4ac75d120a092bbc2121885301434d8ec668fd41ea",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_rds",
+            "original_path": "inputs/amazonaws_com_rds.json",
+            "path": "amazonaws_com_rds",
+            "sha256": "ce6022e5f3faaf499e881633f8f9b1ed52a63b8470577b8bb86bb7c2823e313c"
+          },
+          {
+            "batch": "batch",
+            "bytes": 988509,
+            "expect_len": 262261,
+            "expect_sha": "e065f4ff57448a04b72826a4ae9e6c12b59edb18403c32a7d6c6535b19656179",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_cloudfront",
+            "original_path": "inputs/amazonaws_com_cloudfront.json",
+            "path": "amazonaws_com_cloudfront",
+            "sha256": "c5ef5a590dc8d4aedfabb1d3ee20a3b8dea4e394e89975d5762793b7743780df"
+          },
+          {
+            "batch": "batch",
+            "bytes": 2743239,
+            "expect_len": 849376,
+            "expect_sha": "606c530ce0c9051980638e85d4df9314336210866327c1460d1cab538829db21",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_sagemaker",
+            "original_path": "inputs/amazonaws_com_sagemaker.json",
+            "path": "amazonaws_com_sagemaker",
+            "sha256": "e73a5464793dcce45abf9b403427d024b433f01adb8597fba0eabc70bf8be36c"
+          },
+          {
+            "batch": "batch",
+            "bytes": 658333,
+            "expect_len": 167104,
+            "expect_sha": "85456efcf232ad4cead2833e44d5f7a06176b59a5e3077f9c7be921a8a9d6693",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_dynamodb",
+            "original_path": "inputs/amazonaws_com_dynamodb.json",
+            "path": "amazonaws_com_dynamodb",
+            "sha256": "9b4b80e4c9716e024c3077df959a328186d1dd32f5cbfbd16f14204a239e49f4"
+          },
+          {
+            "batch": "batch",
+            "bytes": 668993,
+            "expect_len": 197402,
+            "expect_sha": "450e139a3b7d5b542dac8439d205ce1a53fc76c994e5fd49f1143e1bf8023de7",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_apigateway",
+            "original_path": "inputs/amazonaws_com_apigateway.json",
+            "path": "amazonaws_com_apigateway",
+            "sha256": "975051bce590011c6249f4a9288e9971c75c197ee295e46c19b69e81c9075c8c"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1844598,
+            "expect_len": 477946,
+            "expect_sha": "6d15d7074fe2ca0719d8a8b44016414d17483bbd07c4e701bedc5b9b8c86cf52",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_iam",
+            "original_path": "inputs/amazonaws_com_iam.json",
+            "path": "amazonaws_com_iam",
+            "sha256": "0a757164b70fe92482fd731aa28f089de4e5fdc45f1a1d66db427646d6ae43cf"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1698120,
+            "expect_len": 564594,
+            "expect_sha": "1fa838954a6bd4e6090ff7aeefe7b3d00e72581b1d4853da2aeeb85853edaaa8",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_glue",
+            "original_path": "inputs/amazonaws_com_glue.json",
+            "path": "amazonaws_com_glue",
+            "sha256": "d5f6abb31b9570f8a111d55ab1c8441daa35bcaff80ea6503ccb1a35f6647428"
+          },
+          {
+            "batch": "batch",
+            "bytes": 318857,
+            "expect_len": 66917,
+            "expect_sha": "74ae292ef6d773bbdae057a6294b4d1f737ea61fe380533cc4d655176902b7de",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_sqs",
+            "original_path": "inputs/amazonaws_com_sqs.json",
+            "path": "amazonaws_com_sqs",
+            "sha256": "41d7c860c6e52c0854913270019c3a14afacbe513613a06b67de65f09a4dc2e9"
+          },
+          {
+            "batch": "batch",
+            "bytes": 478250,
+            "expect_len": 135608,
+            "expect_sha": "90e390f98c56d042100f7ab626332f532f1adbea6a2bb3aa3436bb10d9c7f803",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_sns",
+            "original_path": "inputs/amazonaws_com_sns.json",
+            "path": "amazonaws_com_sns",
+            "sha256": "9b88acc1454d5145509cf3a88684300670e8f4440a43a5732fbf292d8eeacbfa"
+          },
+          {
+            "batch": "batch",
+            "bytes": 244694,
+            "expect_len": 68467,
+            "expect_sha": "506ff7eb8089d8d7250c27d5c0d255f180030992e9facf211a3f037a884dfef6",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_kinesis",
+            "original_path": "inputs/amazonaws_com_kinesis.json",
+            "path": "amazonaws_com_kinesis",
+            "sha256": "82e5208e1901e0f7975cb3e99ea940cb116c44693a15a4c2875dc4c174de4134"
+          },
+          {
+            "batch": "batch",
+            "bytes": 632030,
+            "expect_len": 145914,
+            "expect_sha": "5632f2f0a0a4d2d2dc9f9e0310855d01436fdb8f6ba1b45354cf7bce5ecaca59",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_route53",
+            "original_path": "inputs/amazonaws_com_route53.json",
+            "path": "amazonaws_com_route53",
+            "sha256": "c13c6b2c39136d0f8b40d13a29fc625713e9e74bdd1ab050e506e421ea36cdf7"
+          },
+          {
+            "batch": "batch",
+            "bytes": 302177,
+            "expect_len": 99133,
+            "expect_sha": "3f7a3c9ccb6d1a41981a2c71f3f729aecf2b6f22b5cc8e1ee4d5895cd1508447",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_logs",
+            "original_path": "inputs/amazonaws_com_logs.json",
+            "path": "amazonaws_com_logs",
+            "sha256": "3504629364457876ef66960cabb78ae1e9147b4cfa00c0d8c1257700d2606708"
+          },
+          {
+            "batch": "batch",
+            "bytes": 609855,
+            "expect_len": 134212,
+            "expect_sha": "e178d44570b0a72cedbc70d9c15fdeeec7a698c066fdb0b865e49f72d406604b",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_kms",
+            "original_path": "inputs/amazonaws_com_kms.json",
+            "path": "amazonaws_com_kms",
+            "sha256": "76cfa4cd60546916c1d6c1a898bb72743bda1342e4844e470a728e22a9fb55a5"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1390382,
+            "expect_len": 431475,
+            "expect_sha": "8c9289988901d1f3866dc575a670b862bb25fb19c65bf86d96d5017a8fd80a8c",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_ssm",
+            "original_path": "inputs/amazonaws_com_ssm.json",
+            "path": "amazonaws_com_ssm",
+            "sha256": "12574a5bd9490c824e09aba0751c3a674d1012e1e8fb4e2b8a4a1abc4a2eab3c"
+          },
+          {
+            "batch": "batch",
+            "bytes": 376357,
+            "expect_len": 94585,
+            "expect_sha": "f6ba8f633bfbee483294ae840614d1ba31e344f34a2b4285e37285a4a3c2eab1",
+            "family": "openapi",
+            "group": "amazonaws.com",
+            "id": "amazonaws_com_eks",
+            "original_path": "inputs/amazonaws_com_eks.json",
+            "path": "amazonaws_com_eks",
+            "sha256": "5638c4ddded2dddd618e29f14c6287f6c54eab94494e2997be3da219f942516d"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1206318,
+            "expect_len": 398800,
+            "expect_sha": "003fe188a86a571b3fe4ece93d8f67a3bee0b478d0dccfb39b018291cbc33d85",
+            "family": "openapi",
+            "group": "twilio.com",
+            "id": "twilio_com_api",
+            "original_path": "inputs/twilio_com_api.json",
+            "path": "twilio_com_api",
+            "sha256": "da7415f66ddf68ca230abda171c15ad08e32c290045f9865f6a4460b0adc58aa"
+          },
+          {
+            "batch": "batch",
+            "bytes": 210428,
+            "expect_len": 62069,
+            "expect_sha": "5edfc5e0524fd73d18ee700356acc287f3443fdfb034380498fbdae611bbc8ad",
+            "family": "openapi",
+            "group": "twilio.com",
+            "id": "twilio_com_twilio_chat_v2",
+            "original_path": "inputs/twilio_com_twilio_chat_v2.json",
+            "path": "twilio_com_twilio_chat_v2",
+            "sha256": "c7cbbef1b72e7e214cd846c89e2f0b968dcb4680e5cd2ae711b75f14e8b774e3"
+          },
+          {
+            "batch": "batch",
+            "bytes": 384903,
+            "expect_len": 120073,
+            "expect_sha": "747aad452aac46df5afcdc15d63d51e469654fa9f6b8effb519f0d76adc2c3d1",
+            "family": "openapi",
+            "group": "twilio.com",
+            "id": "twilio_com_twilio_conversations_v1",
+            "original_path": "inputs/twilio_com_twilio_conversations_v1.json",
+            "path": "twilio_com_twilio_conversations_v1",
+            "sha256": "764d164266c478e61742de51c87d7ac14be43e7e32b047157dd83da5b539434e"
+          },
+          {
+            "batch": "batch",
+            "bytes": 169157,
+            "expect_len": 57311,
+            "expect_sha": "bc4a58b5cb2e470e3b0bb8e19de94bd391ab56ad6fe2c111d9020b400d3fdd9c",
+            "family": "openapi",
+            "group": "twilio.com",
+            "id": "twilio_com_twilio_flex_v1",
+            "original_path": "inputs/twilio_com_twilio_flex_v1.json",
+            "path": "twilio_com_twilio_flex_v1",
+            "sha256": "c0f78375d5d269b96a95637bd2eaa87b8f29c430c0bc49b1499a9f1f6eb9e143"
+          },
+          {
+            "batch": "batch",
+            "bytes": 1452351,
+            "expect_len": 405304,
+            "expect_sha": "1a9ebd79e4cb7f201385069ae1d71120ad0f8fdda8c98504948e99bef3bd72f3",
+            "family": "openapi",
+            "group": "box.com",
+            "id": "box_com",
+            "original_path": "inputs/box_com.json",
+            "path": "box_com",
+            "sha256": "d377227c5cf71625eb9d7567dd096ba2507568712c5e3fb5691b5d13c11e6a58"
+          },
+          {
+            "batch": "batch",
+            "bytes": 192450,
+            "expect_len": 77291,
+            "expect_sha": "da7314f0af85dc33b98b0bebce579f3d8cd4ff10f95a2405fac855049d335d61",
+            "family": "openapi",
+            "group": "apache.org",
+            "id": "apache_org_airflow",
+            "original_path": "inputs/apache_org_airflow.json",
+            "path": "apache_org_airflow",
+            "sha256": "d64b718d898f5f0d3da615e61a9491e31f603dff4dbd64ba6365b472026b1b87"
+          },
+          {
+            "batch": "batch",
+            "bytes": 252760,
+            "expect_len": 101433,
+            "expect_sha": "67f1230bb54417178fc44578e04759b8acee8a239ef6805c74d318b841f70845",
+            "family": "openapi",
+            "group": "anchore.io",
+            "id": "anchore_io",
+            "original_path": "inputs/anchore_io.json",
+            "path": "anchore_io",
+            "sha256": "664fde9931941ae811ff98d087e40306553024928ed206547173704029a932ae"
+          },
+          {
+            "batch": "batch",
+            "bytes": 248140,
+            "expect_len": 95035,
+            "expect_sha": "c1d7bc6c926e547a341b8745b3928485b8f51ba33f422cac1795cdd939b5d562",
+            "family": "openapi",
+            "group": "appwrite.io",
+            "id": "appwrite_io_server",
+            "original_path": "inputs/appwrite_io_server.json",
+            "path": "appwrite_io_server",
+            "sha256": "302d8b77cdae034f7af7594aa88918253af3204a865882903c908edd6dccb1e3"
+          },
+          {
+            "batch": "batch",
+            "bytes": 974313,
+            "expect_len": 584525,
+            "expect_sha": "5d091a11f003c849587c2985d32d8b2202c84687046ec43d9d3c14d90e41bfee",
+            "family": "openapi",
+            "group": "xero.com",
+            "id": "xero_com_xero_accounting",
+            "original_path": "inputs/xero_com_xero_accounting.json",
+            "path": "xero_com_xero_accounting",
+            "sha256": "1c72bca077fc62931fe2be34f717f4cf6c10475768f3e3f7d55f48e9beb6ac12"
+          },
+          {
+            "batch": "batch",
+            "bytes": 132217,
+            "expect_len": 58466,
+            "expect_sha": "f22a5cf68aab7bf6a3857481e7163f33a9a6cecb6a66c4be37e813345c0fa267",
+            "family": "openapi",
+            "group": "netlify.com",
+            "id": "netlify_com",
+            "original_path": "inputs/netlify_com.json",
+            "path": "netlify_com",
+            "sha256": "ab6f6264cc78efbccb5f0978c830269e579a97e993f31b3ede3f0c763582a8e0"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "path": "geojson-features-public",
+            "sha256": "293d2db480d4a787168805c02ea53ace1e96a636af3dcea0a6e07b113d35c941",
+            "bytes": 12396533,
+            "batch": "stream_geojson_public",
+            "operation": "stream-geojson",
+            "expect_len": 14895373,
+            "expect_sha": "1157ffba62b5a5de2080630b321c43695a30c33a924a800e7a2777bf134700ab"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "path": "group-gharchive-public",
+            "batch": "group_gharchive_public",
+            "operation": "group-gharchive",
+            "sha256": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+            "bytes": 75624432,
+            "decoded_bytes": 570490215,
+            "decoded_sha256": "0c41bca3317d0881c9a6f16425ee743489553de74006e4137f35233b70b8fe98",
+            "expect_len": 8375829,
+            "expect_sha": "7a4ccaf495d3fdb8b80a3ae50a055a7e24fc44702ff6d2844bff0fb7176c4bf8"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "path": "csv-gharchive-public",
+            "batch": "csv_gharchive_public",
+            "operation": "csv-gharchive",
+            "sha256": "5e5ba630d82d46cd7074c3cb2022cc35e2fc5a6a432c33c432e1026722ad812b",
+            "bytes": 75624432,
+            "decoded_bytes": 570490215,
+            "decoded_sha256": "0c41bca3317d0881c9a6f16425ee743489553de74006e4137f35233b70b8fe98",
+            "expect_len": 15206681,
+            "expect_sha": "4a17a946a23450b8388e5a05e6937f33e25717c29effece5ede6366ae04f2868"
+          }
+        ]
+      }
+    ]
+  },
+  "task": "jq-strip-openapi-descriptions"
+}

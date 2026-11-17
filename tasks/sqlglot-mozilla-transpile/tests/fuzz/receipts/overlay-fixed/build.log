@@ -1,0 +1,45 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  222.8kB
+Step 1/8 : ARG TASK_IMAGE=python:3.12-slim-bookworm@sha256:54c85f3c47607a77f32adec749d3c81d1348bf25833671f512b26a9b6d778cb3
+Step 2/8 : FROM ${TASK_IMAGE}
+ ---> 26160f935ba6
+Step 3/8 : USER root
+ ---> Using cache
+ ---> 8096b25f934a
+Step 4/8 : COPY tools/fuzz_runners/python.lock /opt/fuzz-runners/python.lock
+ ---> 249063509f36
+Step 5/8 : RUN python -m venv /opt/fuzz-python  && PIP_NO_INDEX=0 /opt/fuzz-python/bin/pip install --require-hashes --only-binary=:all: -r /opt/fuzz-runners/python.lock  && /opt/fuzz-python/bin/python -c "import pathlib,site; pathlib.Path(site.getsitepackages()[0], 'optimbench_coverage.pth').write_text('import coverage; coverage.process_startup()\\n')"
+ ---> Running in 5fd1781fcd98
+Collecting atheris==3.1.0 (from -r /opt/fuzz-runners/python.lock (line 1))
+  Downloading atheris-3.1.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (36.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.8/36.8 MB 112.9 MB/s  0:00:00
+Collecting coverage==7.17.0 (from -r /opt/fuzz-runners/python.lock (line 5))
+  Downloading coverage-7.17.0-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (261 kB)
+Collecting hypothesis==6.170.12 (from -r /opt/fuzz-runners/python.lock (line 11))
+  Downloading hypothesis-6.170.12-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 45.9 MB/s  0:00:00
+Collecting sortedcontainers==2.4.0 (from -r /opt/fuzz-runners/python.lock (line 16))
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Installing collected packages: sortedcontainers, atheris, hypothesis, coverage
+
+Successfully installed atheris-3.1.0 coverage-7.17.0 hypothesis-6.170.12 sortedcontainers-2.4.0
+[91m
+[notice] A new release of pip is available: 26.1.2 -> 26.2.2
+[notice] To update, run: /opt/fuzz-python/bin/python -m pip install --upgrade pip
+[0m ---> Removed intermediate container 5fd1781fcd98
+ ---> 628ff54e6711
+Step 6/8 : ENV PATH=/opt/fuzz-python/bin:$PATH PYTHONHASHSEED=0 PYTHONDONTWRITEBYTECODE=1
+ ---> Running in f5183fde588f
+ ---> Removed intermediate container f5183fde588f
+ ---> b0777cbe53a6
+Step 7/8 : COPY tools/fuzz_runners /opt/fuzz-runners
+ ---> e4f6ca51b441
+Step 8/8 : WORKDIR /work
+ ---> Running in 7b5f7d91cdb5
+ ---> Removed intermediate container 7b5f7d91cdb5
+ ---> c498ddea6cb8
+Successfully built c498ddea6cb8
+Successfully tagged optimbench:sqlglot-fuzz-instrumented

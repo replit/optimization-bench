@@ -1,0 +1,20 @@
+{
+  "source_commit": "317f449862b8d48756818cdcaf67c22c31ec852c",
+  "archive_sha256": "1469cd7c12bf88653ff93b2237fd350b563eb590ec5350cbf770efa8eec0befb",
+  "archive_bytes": 555103,
+  "file_count": 324,
+  "file_manifest_sha256": "3ae366289af3d9774607fb81fd83a8a197a8d496a2432da82bf8e4b9f4a55fac",
+  "manifest_encoding": "SHA256 of UTF-8 JSON relative-path:SHA256 mapping, sorted keys, compact separators",
+  "scan": "All regular archive files; suffixes .h .hh .hpp .hxx .c .cc .cpp .cxx .node .gyp",
+  "header_paths": [],
+  "native_paths": [],
+  "package_entry": "JavaScript main.js and dist/bundle.min.js; TypeScript tools/terser.d.ts",
+  "public_cli": "bin/terser exists and is applicable, independently of C/C++ headers",
+  "contract_files_sha256": {
+    "README.md": "8e9e0a7f8d8d57de42e36b003d1628aaa22559330c15fe96e2e926db691c9523",
+    "package.json": "22ac1ee8fda1c4088a9d1615c5aacaa0562939d89dce2ff8bdfae7b3ff029067",
+    "tools/terser.d.ts": "0b215f03e21d3b61e59ec62ae5ffe869b8f8db497ee1999f7aee263aafe2e38c",
+    "main.js": "3ad9e454673cf22659f32a321eca3d6ceca190cf3073f7445b1002d0371334f2"
+  },
+  "scope": "Only the pinned JS/TS feature; no fabricated C/C++ dialect matrix or waiver for a changed native feature."
+}

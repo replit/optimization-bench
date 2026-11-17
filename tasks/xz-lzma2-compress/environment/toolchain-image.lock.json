@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "image_id": "sha256:b9e485d4a3bc6efa60fc5150444a82f3d96991fdcec7caa1d0f3e7a0b5859321",
+  "platform": "linux/amd64",
+  "base_image": "docker.io/library/ubuntu@sha256:42527649dbc4f9197a6073f426f488cbff0e9cc9f2afce32d91c383e4875634a",
+  "packages_lock": "environment/toolchain-packages.lock.json",
+  "packages_lock_sha256": "a049c78d7cf57fe04a1e68f50f57db3501c1b5ad879416ce2bd158cd6b5a9da6"
+}

@@ -1,0 +1,36 @@
+{
+  "build_image": "sha256:0e29d16c7c6e18db2f3504b4a981e3a4a51bbd10b31f6e325d0a9a5691c9b016",
+  "comparator": "complete strict structured JSON; object-key order/escape spelling only ignored",
+  "correctness": {
+    "heldout": {
+      "exact_structured_json_match": true,
+      "expected_commitment_sha256": "d1304e5f419dfa1bd1f52a40afc909f6f52d52861bd6595d1bfb194f686efb8a",
+      "files": 22272,
+      "input_bytes": 1073746268,
+      "output_canonical_bytes": 987399847,
+      "replays": 2
+    },
+    "public": {
+      "exact_structured_json_match": true,
+      "expected_commitment_sha256": "4ab92b5b209bff3e059a494f41c360f87c33e3b5fd87d4a398b882f86c988964",
+      "files": 20999,
+      "input_bytes": 1073774126,
+      "output_canonical_bytes": 986684168,
+      "replays": 2
+    }
+  },
+  "current_expected_outputs": "Per-file complete canonical length/SHA256 in heldout manifest; both pristine replays agree",
+  "driver_sha256": "cf12b2f018b000a4ae984543df51ff4b3f701dd8e18f417157e62d62290b8f38",
+  "format": "serde-realism-pristine-correctness-v1",
+  "legacy_complete_output_commitments_matched": {
+    "bevy": true,
+    "diesel": true,
+    "image": true,
+    "nalgebra": true,
+    "opencv": true,
+    "winit": true
+  },
+  "legacy_expected_fixtures": "Original six retained unchanged; not repeated workload inputs",
+  "mode": "--check-batch; no SIGSTOP or performance timer",
+  "timing_performed": false
+}

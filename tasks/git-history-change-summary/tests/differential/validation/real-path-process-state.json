@@ -1,0 +1,281 @@
+{
+  "baseline": {
+    "native_processes": [
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-1",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-1",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      },
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-2",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-2",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      },
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-3",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-3",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      },
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-4",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-4",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      }
+    ],
+    "rule_d_leftover_threads": 0,
+    "rule_d_leftovers": 0
+  },
+  "baseline_probe_id": "process-state-qdumqrt4",
+  "candidate": {
+    "native_processes": [
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-1",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-1",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      },
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-2",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-2",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      },
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-3",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-3",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      },
+      {
+        "children": 0,
+        "environment": [
+          "GIT_ATTR_NOSYSTEM=1",
+          "GIT_CONFIG_COUNT=1",
+          "GIT_CONFIG_GLOBAL=/dev/null",
+          "GIT_CONFIG_KEY_0=safe.directory",
+          "GIT_CONFIG_NOSYSTEM=1",
+          "GIT_CONFIG_VALUE_0=*",
+          "GIT_EXEC_PATH=/root/libexec/git-core",
+          "GIT_PAGER=cat",
+          "GIT_PREFIX=",
+          "HOME=/scratch/home-4",
+          "LC_ALL=C.UTF-8",
+          "LD_PRELOAD=/scratch/state.so",
+          "OPTIMBENCH_STATE_FILE=/scratch/native-state.jsonl",
+          "PATH=/root/libexec/git-core:/usr/local/bin:/usr/bin:/bin",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "PYTHONHASHSEED=0",
+          "TMPDIR=/scratch/tmp-4",
+          "TZ=UTC"
+        ],
+        "fp_rounding_mode": 0,
+        "mxcsr_control": 0,
+        "threads": 1
+      }
+    ],
+    "rule_d_leftover_threads": 0,
+    "rule_d_leftovers": 0
+  },
+  "candidate_probe_id": "process-state-q4_dfam7",
+  "claimable": false,
+  "container_prepare": {
+    "baseline": {
+      "argv": [
+        "/app/workload/guards/warm_git_objects.py",
+        "--steps",
+        "/judge-steps.json",
+        "--inputs",
+        "/app/workload/inputs"
+      ],
+      "duration_ns": 367115396,
+      "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+      "exit_code": 0,
+      "leftovers": [],
+      "stderr_base64": "",
+      "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+      "timed": false
+    },
+    "candidate": {
+      "argv": [
+        "/app/workload/guards/warm_git_objects.py",
+        "--steps",
+        "/judge-steps.json",
+        "--inputs",
+        "/app/workload/inputs"
+      ],
+      "duration_ns": 186554265,
+      "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+      "exit_code": 0,
+      "leftovers": [],
+      "stderr_base64": "",
+      "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDg1ODQyMDk4MCwgImZpbGVzX3JlYWQiOiA4LCAic2VsZWN0ZWRfcmVwb3NpdG9yaWVzIjogNCwgInN0YXR1cyI6ICJwcmVwYXJlZCJ9Cg==",
+      "timed": false
+    }
+  },
+  "differences": {},
+  "elapsed_seconds": 98.8796407459995,
+  "execution_coverage": {
+    "baseline": {
+      "files": [],
+      "kind": "native",
+      "reason": "No separate native coverage build configured",
+      "run_id": "process-state-qdumqrt4",
+      "status": "unavailable"
+    },
+    "candidate": {
+      "files": [],
+      "kind": "native",
+      "reason": "No separate native coverage build configured",
+      "run_id": "process-state-q4_dfam7",
+      "status": "unavailable"
+    }
+  },
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "passed": true,
+  "speedup": null,
+  "status": "passed"
+}

@@ -1,0 +1,17 @@
+{
+  "archive_sha256": "c1f497513e85cbc2f3760990a6ed9cbebe6386f273481b87251d0d6eb481c51a",
+  "edits": [
+    {
+      "after": "mf->buffer = lzma_alloc(mf->size + LZMA_MEMCMPLEN_EXTRA + 2097152,\n\t\t\t\tallocator);",
+      "before": "mf->buffer = lzma_alloc(mf->size + LZMA_MEMCMPLEN_EXTRA,\n\t\t\t\tallocator);",
+      "original_sha256": "32b5377f7039cdd15b82bc0b09b04200a0891f847bdb02abb142f15c2faa3eee",
+      "path": "src/liblzma/lz/lz_encoder.c"
+    }
+  ],
+  "id": "xz-lzma2-compress:unreported-owned-allocation",
+  "language": "c",
+  "mandatory": true,
+  "non_equivalence_evidence": "Owned history allocation enlarged by 2097152 bytes while estimate is unchanged.",
+  "operator_class": "resource-reports",
+  "upstream_commit": "299eb5c3f597f107fd6019bf156885ac8bfaa5ea"
+}

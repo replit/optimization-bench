@@ -1,0 +1,249 @@
+[
+  {
+    "repository": "mongodb/mongo-python-driver",
+    "commit": "808767cdcc6c432eb1cda0c6e4ace6142a32366a",
+    "licence_spdx": "Apache-2.0",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/mongodb/mongo-python-driver/808767cdcc6c432eb1cda0c6e4ace6142a32366a/LICENSE",
+        "bytes": 11357,
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ]
+  },
+  {
+    "repository": "yt-project/yt",
+    "commit": "d48eb7eb5287763501d8c90071b03b7b63c7dfdb",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "COPYING",
+        "url": "https://raw.githubusercontent.com/yt-project/yt/d48eb7eb5287763501d8c90071b03b7b63c7dfdb/COPYING",
+        "bytes": 3496,
+        "sha256": "ecf0a0f60d4be99c3fa2477ab440130a98426799eb836caa593d89669675ffb4"
+      }
+    ]
+  },
+  {
+    "repository": "scrapinghub/spidermon",
+    "commit": "5bac6dd768463ece308ca67dc9fd18525364c940",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/scrapinghub/spidermon/5bac6dd768463ece308ca67dc9fd18525364c940/LICENSE",
+        "bytes": 1504,
+        "sha256": "c5393484216d1e4c92558880d63b7a24d602371274b932436e444fb28a013702"
+      }
+    ]
+  },
+  {
+    "repository": "scrapinghub/scrapyrt",
+    "commit": "066cdafb9dc5e864f3e1dd19cb7fafec7fefb7fe",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/scrapinghub/scrapyrt/066cdafb9dc5e864f3e1dd19cb7fafec7fefb7fe/LICENSE",
+        "bytes": 1514,
+        "sha256": "0631962ef84ad618081a068631f311c652bce2593902606e4d2b2883f998a1fb"
+      }
+    ]
+  },
+  {
+    "repository": "rapidfuzz/RapidFuzz",
+    "commit": "09328422916b13181238660cd3b23a71905d1ec9",
+    "licence_spdx": "MIT",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/rapidfuzz/RapidFuzz/09328422916b13181238660cd3b23a71905d1ec9/LICENSE",
+        "bytes": 1092,
+        "sha256": "f34ccdffdff56fc417785915eedf18601d5479755df3c472b2c754c29802d683"
+      }
+    ]
+  },
+  {
+    "repository": "getlogbook/logbook",
+    "commit": "ce2772f50eee0957f8e57f8ff6832de7b1bc5d3d",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/getlogbook/logbook/ce2772f50eee0957f8e57f8ff6832de7b1bc5d3d/LICENSE",
+        "bytes": 1525,
+        "sha256": "5187d311b2de7c67ce4ae6067c36eb62c5c87ff617d0a772ddaa27ef721f0a13"
+      }
+    ]
+  },
+  {
+    "repository": "django-commons/django-hosts",
+    "commit": "e538c46a9f0746a7bf00d78379dcc12c04b8aa03",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/django-commons/django-hosts/e538c46a9f0746a7bf00d78379dcc12c04b8aa03/LICENSE",
+        "bytes": 4620,
+        "sha256": "bf6f6725316f95deb088d1e91ac02ca1591e8f855eef7997dbd754af0fa84d43"
+      }
+    ]
+  },
+  {
+    "repository": "mozilla/django-csp",
+    "commit": "f58220fb2ac20f77c70bd772a37637031e96b803",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/mozilla/django-csp/f58220fb2ac20f77c70bd772a37637031e96b803/LICENSE",
+        "bytes": 1525,
+        "sha256": "953357e1cf68fb4573017169f66d8fa43da39adca30f742ef6b2bba0c67b75b2"
+      }
+    ]
+  },
+  {
+    "repository": "jackmpcollins/magentic",
+    "commit": "58b72cf58134b9b888a9518932465d7187448e92",
+    "licence_spdx": "MIT",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/jackmpcollins/magentic/58b72cf58134b9b888a9518932465d7187448e92/LICENSE",
+        "bytes": 1069,
+        "sha256": "43a15f3e1eb00e4307f7646797fabd7323b53a4c457e17d7797828abae08809c"
+      }
+    ]
+  },
+  {
+    "repository": "nnaisense/evotorch",
+    "commit": "cebcac4f20979078becf8b908016cd8e5e6714a4",
+    "licence_spdx": "Apache-2.0",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/nnaisense/evotorch/cebcac4f20979078becf8b908016cd8e5e6714a4/LICENSE",
+        "bytes": 10173,
+        "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+      }
+    ]
+  },
+  {
+    "repository": "ics-py/ics-py",
+    "commit": "3b7d07295f60a5d607ee0fa3a552c252f9e163f0",
+    "licence_spdx": "Apache-2.0",
+    "license_files": [
+      {
+        "path": "LICENSE.rst",
+        "url": "https://raw.githubusercontent.com/ics-py/ics-py/3b7d07295f60a5d607ee0fa3a552c252f9e163f0/LICENSE.rst",
+        "bytes": 9722,
+        "sha256": "fcc6fc6a37db875fa9115848f8ecd14579acb0af09e537c7df7166599e0cbdd8"
+      }
+    ]
+  },
+  {
+    "repository": "AIM-Harvard/pyradiomics",
+    "commit": "8ed579383b44806651c463d5e691f3b2b57522ab",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/AIM-Harvard/pyradiomics/8ed579383b44806651c463d5e691f3b2b57522ab/LICENSE.txt",
+        "bytes": 1467,
+        "sha256": "5c1fc504fb0865a72a29e035b25ef3513e6d7e9c7169cb445eae855f03b006e2"
+      }
+    ]
+  },
+  {
+    "repository": "deepcharles/ruptures",
+    "commit": "ee1c8ff8a548d54c641b2bb471562165931f31c7",
+    "licence_spdx": "BSD-2-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/deepcharles/ruptures/ee1c8ff8a548d54c641b2bb471562165931f31c7/LICENSE",
+        "bytes": 1332,
+        "sha256": "f29c48be39fff974e2d631b2317c194409531cc86e16e05f3968ead0456bc920"
+      }
+    ]
+  },
+  {
+    "repository": "jsonpickle/jsonpickle",
+    "commit": "f65cfa880c321ff9b58ad5c71576c8758b492fc7",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/jsonpickle/jsonpickle/f65cfa880c321ff9b58ad5c71576c8758b492fc7/LICENSE",
+        "bytes": 1547,
+        "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+      }
+    ]
+  },
+  {
+    "repository": "mamba-org/mamba",
+    "commit": "2f35fbc771825acd2bfacb54a2cc7e9e5624c5e5",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/mamba-org/mamba/2f35fbc771825acd2bfacb54a2cc7e9e5624c5e5/LICENSE",
+        "bytes": 1483,
+        "sha256": "41fd98a468e39d319911bd94f4e65d6ad6a7ea66559dd5aa4112f138ff9b629a"
+      }
+    ]
+  },
+  {
+    "repository": "intel/neural-compressor",
+    "commit": "7749b814de4b7a4fe66867228c7c86146f4a736a",
+    "licence_spdx": "Apache-2.0",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/intel/neural-compressor/7749b814de4b7a4fe66867228c7c86146f4a736a/LICENSE",
+        "bytes": 11360,
+        "sha256": "c61eb7ccdfa46756c6b45df0bc2277866d7e29c4a14567e476f38f632ea1e7c8"
+      }
+    ]
+  },
+  {
+    "repository": "ServiceNow/BrowserGym",
+    "commit": "27a90ce815098f43414e93491e06907af468e45b",
+    "licence_spdx": "Apache-2.0",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/ServiceNow/BrowserGym/27a90ce815098f43414e93491e06907af468e45b/LICENSE",
+        "bytes": 579,
+        "sha256": "b192c58991e8ff585cc574615d40e74185404d4b96c1109d423071ab1367344b"
+      }
+    ]
+  },
+  {
+    "repository": "run-llama/llama_cloud_services",
+    "commit": "f385e96ab82ddb88330277c34394546398c8bed0",
+    "licence_spdx": "MIT",
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/run-llama/llama_cloud_services/f385e96ab82ddb88330277c34394546398c8bed0/LICENSE",
+        "bytes": 1067,
+        "sha256": "aee447b9e648c98196c5f5c73e880a0cbfc0bc5a2e50a86bea868f2f59ccea7a"
+      }
+    ]
+  },
+  {
+    "repository": "numpy/numpy",
+    "commit": "7be480da5f24a0e49d92e27cdc106f77ea8a2e6a",
+    "licence_spdx": "BSD-3-Clause",
+    "license_files": [
+      {
+        "path": "LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/numpy/numpy/7be480da5f24a0e49d92e27cdc106f77ea8a2e6a/LICENSE.txt",
+        "bytes": 1543,
+        "sha256": "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491"
+      }
+    ]
+  }
+]

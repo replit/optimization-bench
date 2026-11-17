@@ -1,0 +1,17 @@
+{
+  "archive_sha256": "c1f497513e85cbc2f3760990a6ed9cbebe6386f273481b87251d0d6eb481c51a",
+  "edits": [
+    {
+      "after": "return lzma_raw_coder_memusage(&coder_find, filters) / 2;",
+      "before": "return lzma_raw_coder_memusage(&coder_find, filters);",
+      "original_sha256": "d027b86e651e34e8c432c3a4c925bebbda44bec341fe1269843b911521c83012",
+      "path": "src/liblzma/common/filter_encoder.c"
+    }
+  ],
+  "id": "xz-lzma2-compress:underreport-owned-workspace",
+  "language": "c",
+  "mandatory": true,
+  "non_equivalence_evidence": "Public estimate divided by two while owned allocations are unchanged.",
+  "operator_class": "resource-reports",
+  "upstream_commit": "299eb5c3f597f107fd6019bf156885ac8bfaa5ea"
+}

@@ -1,0 +1,164 @@
+{
+  "format": "optimbench-locked-cases-v1",
+  "task": "numpy-quantile",
+  "visibility": "private-heldout",
+  "cases": "heldout/cases.json",
+  "lock": "heldout/inputs.lock.json",
+  "references": "heldout/baseline-outputs.json",
+  "splits": {
+    "heldout": [
+      {
+        "docs": [
+          {
+            "path": "heldout-natural-workload-warm-batch",
+            "sha256": "ebc8869ca3c13a78edd83c7aca0446436c384c7fadf2cc86fe32ff90372e8e1d",
+            "bytes": 23189,
+            "expect_len": 2004720,
+            "expect_sha": "0fb21b06028eaf5a6c5b9afbd5cc1e51f762ffb67423203047b3333e4145ffcf"
+          },
+          {
+            "path": "taxi-2024-01--small-table",
+            "sha256": "79f0a0fde46dd692f7d29f32403f59c51fa38c3a6e1f18358d6f521591ea72b4",
+            "bytes": 469,
+            "expect_len": 224,
+            "expect_sha": "a72470153fc34b94969bc12d76326f4dc70163b86acee8bff5ca3a7b38b61c75"
+          },
+          {
+            "path": "taxi-2024-07--small-table",
+            "sha256": "9d05fd6ce3201deeec4cdbd15d07ff6fdedcf9b5ad21542afedfe0161c2a0955",
+            "bytes": 469,
+            "expect_len": 224,
+            "expect_sha": "c37ff7be6c2c027233e371edf24a8e307ac349ba332d4e991bc0d00fcbeb0b0c"
+          },
+          {
+            "path": "taxi-2024-03--small-table",
+            "sha256": "0fac119272e34f38ecbb638d035da75c98f80104f19a290af63fc741f1afab85",
+            "bytes": 469,
+            "expect_len": 224,
+            "expect_sha": "382f95ca6a3ca04d679704b440a61e23667e77509beef8c0ab46c480700b9d55"
+          },
+          {
+            "path": "taxi-2024-05--small-table",
+            "sha256": "a9535048158fbd9b975f10c31c3c24616ec3a318d3c56146330266b7388c630f",
+            "bytes": 469,
+            "expect_len": 224,
+            "expect_sha": "a22e61a527b948b852c807f8d861222a1e1011e7acaf47d7668bd9069f384ba1"
+          },
+          {
+            "path": "taxi-2024-09--small-table",
+            "sha256": "f7de16871b41513e166a5a02aebd25fc387ee845c6402d80ec641e8a1b5337c0",
+            "bytes": 469,
+            "expect_len": 224,
+            "expect_sha": "0d8d4b7abfe4bb709549fe4d4184607b95d5bfbd80feb5d4822a16c0d65e1c82"
+          },
+          {
+            "path": "taxi-2024-11--small-table",
+            "sha256": "3989a75ac51d3870ad1fe0a16b67887bbddf34b92617851d5613210cb7009f43",
+            "bytes": 469,
+            "expect_len": 224,
+            "expect_sha": "ae0ff24ca783877a6dee3e88b89e254a425aeb06f68f96c896fff62d5c426398"
+          },
+          {
+            "path": "electricity-2014-block1--strided-subset",
+            "sha256": "90710dda98769a14ef6397d826315479972502d8b90a6241a71c3e7ca3d73e95",
+            "bytes": 476,
+            "expect_len": 2792,
+            "expect_sha": "2b5cd4d08baf776deb5bdb1f388b7a26fcd5f332cfcc67b9c2f4af2dc8bf00bb"
+          },
+          {
+            "path": "electricity-2014-block2--strided-subset",
+            "sha256": "dc2a10e32ee55745a2d60e402a67b34deae9e6974993f9b21805345eca2d7a27",
+            "bytes": 476,
+            "expect_len": 2792,
+            "expect_sha": "fba80948743af916da985da9fb15adca72406c63fb7c7c8b05a7e94c151cc461"
+          },
+          {
+            "path": "weather-2018--strided-grid",
+            "sha256": "8e39d8c8d63c3655e1859a95e0e77530dcc18067fcbb8f835f6d930327fd1ab2",
+            "bytes": 587,
+            "expect_len": 362432,
+            "expect_sha": "13f87b5d9f74c6ecba2a9b48801c1fb1ac947339b899d5f39e652f5586bfb80e"
+          },
+          {
+            "path": "weather-2019--strided-grid",
+            "sha256": "b6ebafd7d73543cdb37e06c6d0c6e3d3f3045762a7e5e1faa97861a80de8e8f2",
+            "bytes": 587,
+            "expect_len": 362432,
+            "expect_sha": "ac2fee661b2061cb5be69164592b16fd014e13d63f3bc4ed8b6360779c0e5743"
+          },
+          {
+            "path": "weather-2022--strided-grid",
+            "sha256": "c477d7f41daabad648bb304f405aad2ac6a34d8a815c43362bd02deb23535991",
+            "bytes": 587,
+            "expect_len": 362432,
+            "expect_sha": "0e47da70beac02252e3a5c25798f5fdaf86303f41e4f821573e52ad0b4fca4c7"
+          },
+          {
+            "path": "weather-2023--strided-grid",
+            "sha256": "6f1917cbf01365cd2e1f4f89108656a53789b225ea302fad379f071e40b0f961",
+            "bytes": 587,
+            "expect_len": 362432,
+            "expect_sha": "bff398cf4c7140e397670cfddbb9e42689f4d62276891e1575520ec46904e203"
+          },
+          {
+            "path": "heldout-interp-equalize",
+            "sha256": "7e996079e231603cc5def7efe89477b9f8be0290849dad6df534071ba42d3ba4",
+            "bytes": 520,
+            "expect_len": 414950944,
+            "expect_sha": "3a20aac71381826c5e6eedcaa7a201060b9c05af0a1ab14718cd4b693442df5d"
+          },
+          {
+            "path": "heldout-busday-calendar",
+            "sha256": "d015cdc344204363cbc29d3d765136a05c6db1e40dd1e3c8ac301e4fb47013f2",
+            "bytes": 2379,
+            "expect_len": 453698775,
+            "expect_sha": "5a55b34be83197ce72f7421f602296fc0f605505a305bb066cc00f9fffd16cad"
+          },
+          {
+            "path": "heldout-random-dists",
+            "sha256": "bad6ce5fcc5322c10d7fb50dbb57309bf17cfbeec19afe888a4474cf3c8cce45",
+            "bytes": 807,
+            "expect_len": 561290656,
+            "expect_sha": "0bb627877ba355aae6e91a4186f407aa510e0fc561827bef4b187ae5afff9532"
+          },
+          {
+            "path": "heldout-strings-text",
+            "sha256": "e5f1497b95a48bc228a01d9cc43f7bb9ab140a89c923c215bc684df9fad86ac8",
+            "bytes": 1644,
+            "expect_len": 3232826397,
+            "expect_sha": "d972d00f01ff5843e7381cbd9c1a301038264e22ade1b37da6b83443fa30a0c0"
+          },
+          {
+            "path": "heldout-genfromtxt-catalog",
+            "sha256": "676fc018c290d2ef8c40d6e475b5b78444e24868045fe280d831c3b7a05f55a8",
+            "bytes": 575,
+            "expect_len": 128736344,
+            "expect_sha": "c675b4631de79bd1edbcfe755eeb295f80b9ed58866d94736674684dcc0eb97b"
+          },
+          {
+            "path": "heldout-loadtxt-csv",
+            "sha256": "93bdf11ea71db07e6f4a94c62936f1df9be2320abcd0c5754dc7a8c21acb5362",
+            "bytes": 606,
+            "expect_len": 218880512,
+            "expect_sha": "bfb2883a84d745987b97df5e86b2b0a926bb9356f906352221fe8b12252e1447"
+          },
+          {
+            "path": "heldout-datetime-iso",
+            "sha256": "89966b1805f7fd9470e391f3396d261bdb88cd2607c1d3cfa8687ec43822252a",
+            "bytes": 1656,
+            "expect_len": 220388124,
+            "expect_sha": "2c3694e81e49c0db3c70827bdffc5cb9c31c1e019a43d0715862e48d2ecd6bcc"
+          },
+          {
+            "path": "heldout-float-format",
+            "sha256": "78e77c19c140e435d9f027caa1be003acd0a1c33c209033677984c95d36acfff",
+            "bytes": 959,
+            "expect_len": 698340864,
+            "expect_sha": "3993998ac7578f5c5cfab685cf45cbb26e930a715cd9eb3266a18455087c72a0"
+          }
+        ]
+      }
+    ]
+  },
+  "provenance": "recovered-requalified (not proven original)"
+}

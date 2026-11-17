@@ -1,0 +1,11 @@
+{
+  "base_commit": "d5d54067b66b5c0160cb4f8430b29e121ffa5785",
+  "manifests": {
+    "environment/workload/inputs/manifest.json": {
+      "canonical_sha256": "341f02c4052de1483f2885d1caf475ba984c29e331ceb7d8ae668a1e49e95175"
+    },
+    "tests/heldout/manifest.json": {
+      "canonical_sha256": "951f95b1bb8733e8d7022c8ab01d4094a7cebeb73ef37bef5bc79b3ef6099d3a"
+    }
+  }
+}

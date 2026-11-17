@@ -1,0 +1,65 @@
+{
+  "timed_surface": "public_cli",
+  "task_version": "1.0.0",
+  "id": "black-project-format",
+  "interface": {
+    "documentation": [
+      "https://black.readthedocs.io/en/stable/",
+      "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/src/black/__init__.py"
+    ],
+    "documented_api": [],
+    "extension_points": []
+  },
+  "name": "Black",
+  "language": "Python + mypyc",
+  "title": "Check and reformat real Python projects",
+  "job": "Projects check formatting in CI and apply formatting changes during style migrations. The four timed units are django-reformat, sqlalchemy-check, warm-snippets and editor-ranges. Each project case is one cold `python -m black` process on a fresh original project tree with eight workers. The warm-process API units format documentation code fragments with black.format_str and serve editor range-formatting requests with black.format_file_contents(..., lines=...). Each selected input is visited once per operation without repetition or padding. startup-empty is a separate correctness-only probe on an empty project.",
+  "code": "environment/workload/task.py",
+  "operations": [
+    "python -m black --check ./lib/ ./test/ ./examples/ setup.py doc/build/conf.py (SQLAlchemy at the parent of its 'update to black 26.3.1' commit, tox.ini CI command; 161 files would be reformatted)",
+    "python -m black --quiet --line-length 79 . (original Django tree, in-place formatting changes)",
+    "python -m black --check . on an empty project (correctness-only startup probe; not timed as a unit)",
+    "black.format_str(code, mode=Mode(...)) per documentation code fragment, one resident warm process (3,765 public fragments)",
+    "black.format_file_contents(text, fast=False, mode=Mode(), lines=ranges) per editor range request, one resident warm process (9 public requests)"
+  ],
+  "editable": "Python under src/black, src/blib2to3 and src/blackd. pyproject.toml, build settings (mypyc, optimization level, version), grammars and other data files, tests, dependencies, the driver, project trees and inputs are protected.",
+  "families": {
+    "primary": "Configured CI --check on an original tree with real formatting violations (SQLAlchemy), plus one realistic narrower-line-length in-place Django reformat. Held-out data applies the same two operations to disjoint projects (google-cloud-retail CI check; Faker line-length-79 migration).",
+    "startup": "Correctness-only empty-project check that bounds process startup share (startup_probe, <= 2%).",
+    "warm_snippets": "Code blocks extracted by blacken-docs from documentation of projects that run the blacken-docs pre-commit hook (and CPython Doc/), each with its project's hook settings; split by repository/organisation.",
+    "editor_ranges": "Complete Python files at a real commit with the line ranges that commit changed (git diff -U0 new-side hunks): CPython Lib/ public, numpy held-out."
+  },
+  "size_meaning": "Files Black processes per operation (about 1,000 to 2,900) and their total size. API units: number of calls and fragment/file bytes per resident batch.",
+  "variables": [
+    "Project and its pyproject configuration (line length, target versions, extend-exclude)",
+    "Number and size of files",
+    "Check with violations versus in-place reformat",
+    "API entry point (format_str vs format_file_contents with lines=) and per-call Mode"
+  ],
+  "options": "BLACK_NUM_WORKERS=8; fresh cache and config directories; release native build (HATCH_BUILD_HOOK_ENABLE_MYPYC=true, MYPYC_OPT_LEVEL=3).",
+  "outputs": "Per operation: exit status, stdout, canonical stderr error headlines/classes and every file and symlink left in the tree, serialized as black-output-v1 and compared by length and SHA-256 with the pinned baseline. Runtime stack frames and addresses are not diagnostic contract data. API units: one canonical black-api-result-v1 JSON per batch holding every per-call result (formatted text, null for NothingChanged, or [exception class, message]), compared by length and SHA-256.",
+  "contract": "Byte-identical black-output-v1 result per operation; upstream tests keep the baseline's results (native build, plus the mypyc-incompatible tests as pure Python); native build loaded; no helper processes outliving the operation, no caches or files outside declared outputs, no input or evaluator detection, no delegation.",
+  "limits": "Linux amd64, Python 3.14.6, source-built native Black. Four public performance units (two project CLI operations, warm-snippets and editor-ranges) plus a correctness-only startup probe; held-out operations change symmetrically on disjoint data. No repeated inputs within a unit or padding; units are >= 13 s on the development host and startup share is <= 2%. Upstream tests and unformatted-code controls remain mandatory. Not a cross-platform qualification.",
+  "sources": [
+    "src/black/__init__.py",
+    "src/black/linegen.py",
+    "src/black/concurrency.py",
+    "src/blib2to3/pgen2/driver.py",
+    "src/blib2to3/pgen2/tokenize.py",
+    "src/black/ranges.py",
+    "src/black/parsing.py"
+  ],
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "preparation": "Pinned Black archive (sha256-checked) committed to /app/black; hash-locked Python dependencies; original Django and SQLAlchemy archives (sha256-checked, complete inventories verified) and an empty project in /app/projects; native baseline prebuilt in /app/baseline-build.",
+  "source_identity": {
+    "upstream_repository": "https://github.com/psf/black",
+    "upstream_commit": "87928e6d6761a4a6d22250e1fee5601b3998086e",
+    "archive_sha256": "a4bba75d9fe04c23a5b0935e3cca7b5155dcbde11154fd4ecef69c3845dafd5a"
+  },
+  "example_count": 5,
+  "status": "qualification-in-progress",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "run_mode": "standalone",
+  "packaging_status": "public-task-private-judge"
+}

@@ -1,0 +1,66 @@
+{
+  "task_version": "1.0.0",
+  "v1_1_changelog": "instruction-only + RC hooks; workload unchanged from v1.0",
+  "v1_0_changelog": "v1.0: adds schema-aware optimizer, column-lineage and structural-diff workloads as equal-weight units in the existing image, and expands the original private conversion set from 122 to 327 files (205 distinct Mozilla view definitions from the original snapshot). Original public conversion commitments, source scope and shared policy are unchanged. Private coverage and ownership remain unqualified.",
+  "correctness_qualification": "unmeasured; no inherited qualification",
+  "schema_version": 1,
+  "task": "sqlglot-mozilla-transpile",
+  "edition": "sql-analysis-draft-20261029",
+  "backend": "sqlglot",
+  "platform": "linux/amd64",
+  "baseline_source_sha256": "d553b6eddad6e7bdeb55b05a54e722e230b3a0cf2c3ce06cdd8558677d5dadd9",
+  "source_lock": "environment/source.lock.json",
+  "source_policy": {
+    "source_roots": [
+      "sqlglot"
+    ],
+    "allowed_extensions": [
+      ".py"
+    ],
+    "protected_paths": [],
+    "max_source_files": 2048,
+    "max_source_bytes": 33554432
+  },
+  "upstream_test_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-t",
+    "."
+  ],
+  "upstream_test_environment": {
+    "SKIP_INTEGRATION": "1",
+    "OPTIMBENCH_UNITTEST_EXCLUDE": "tests.test_optimizer.TestOptimizer.test_tpch tests.test_optimizer.TestOptimizer.test_tpcds"
+  },
+  "upstream_timeout": 7200,
+  "status": "timing-qualified",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

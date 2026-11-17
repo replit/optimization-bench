@@ -1,0 +1,29 @@
+{
+  "cargo_lock_sha256": "afea7ed1bf25dc2dcc7fffe0551dd85abc164e09a675e561fa402d01df0f4bdf",
+  "docker_archive_sha256": "f02a36abd521dbf3146a28d64e585375df5656a4c75a996d2cca708cc7fb11a2",
+  "docker_image": "sha256:b37a4d56eedb5e42bca59c8d4782fa550e741fba5dbce943c53767d3ceee57e6",
+  "docker_image_origin": "node@sha256:363e1587494626837fa7f9a23bdb453d13b0ff3c67c705c2805cfc69c2d2fad7",
+  "locked_registry_packages": 505,
+  "profile": "unchanged release (fat LTO)",
+  "ruff": {
+    "archive_bytes": 13967087,
+    "archive_sha256": "646895bfc295414071d68a8fe0c467a7e9eb704e559b1919aec9928c77dd11d0",
+    "archive_url": "https://codeload.github.com/astral-sh/ruff/tar.gz/3265ed1f944c98bb4c04d632fbefb1257cdb583d",
+    "commit": "3265ed1f944c98bb4c04d632fbefb1257cdb583d",
+    "ref": "0.16.10",
+    "repository": "https://github.com/astral-sh/ruff"
+  },
+  "rust": "1.99.0",
+  "rust_distribution": {
+    "archive_sha256": "891c6366d7100feda0bca4c03ce63f3c9ac827cbebbc283e7433061d42c6a376",
+    "archive_url": "https://static.rust-lang.org/dist/rust-1.99.0-x86_64-unknown-linux-gnu.tar.xz",
+    "components": [
+      "rustc",
+      "cargo",
+      "rust-std-x86_64-unknown-linux-gnu"
+    ],
+    "host": "x86_64-unknown-linux-gnu",
+    "rustc_commit": "b940084d7eb6a299eb4bfeb8e34901bc051e7ac4"
+  },
+  "rust_toolchain_archive_sha256": "891c6366d7100feda0bca4c03ce63f3c9ac827cbebbc283e7433061d42c6a376"
+}

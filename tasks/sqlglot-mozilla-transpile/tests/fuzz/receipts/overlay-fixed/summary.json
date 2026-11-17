@@ -1,0 +1,27 @@
+{
+  "atheris_scope": "30-run one-arm discovery smoke, not a 45-minute differential campaign",
+  "atheris_smoke_observations": 30,
+  "build_sha256": "19d1a7298b8d7332a764a1ee69fd77604e90f54e2426446a8d822bcdb3e52477",
+  "candidate_qualification": false,
+  "changed_coverage_adequacy": "not-measured",
+  "coverage_status": "available",
+  "coverage_task_files": 48,
+  "executor_environment_note": "Shared executor sanitizes image ENV; trusted steps explicitly preserve parent PIP_NO_INDEX=1.",
+  "format": "optimbench-fuzz-v1",
+  "parent_task_image": "sha256:26160f935ba63787bb3704fa3b575684cb842bab670331c9a758af28b32319cd",
+  "property_examples": 30,
+  "runner_image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "runtime_offline_setting_preserved": true,
+  "scope": "Pinned-task capability and one-case coverage smoke",
+  "source_sha256": "1fb06e382c7953fea39452126906ce1289719e694e7b7914cca1f28177ee5823",
+  "timing_performed": false,
+  "tools": {
+    "PIP_NO_INDEX": "1",
+    "python": "3.14.6 (main, Aug  5 2026, 01:07:16) [GCC 14.2.0]",
+    "tools": {
+      "atheris": "3.1.0",
+      "coverage": "7.17.0",
+      "hypothesis": "6.170.12"
+    }
+  }
+}

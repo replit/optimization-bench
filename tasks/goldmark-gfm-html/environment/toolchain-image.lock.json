@@ -1,0 +1,86 @@
+{
+  "base": "golang:1.26.5-bookworm@sha256:53eeac89074db483fdf0ab3be1df32bf6e47562263d2d0d6baa7f26acb4957dd",
+  "digest_kind": "OCI image manifest, not Docker config ID",
+  "image": "optimbench/goldmark-gfm-html@sha256:23439cb394570e920ab16d0ff9e57fba60072a20e48e610ba0ba57e43f14e05a",
+  "image_digest": "sha256:23439cb394570e920ab16d0ff9e57fba60072a20e48e610ba0ba57e43f14e05a",
+  "image_id": "sha256:7394e2b7f920e6caef3ed8aaeef3348ebe5d1a1eb08e5eb3ee1f1b184fcd2527",
+  "manifest": {
+    "config": {
+      "digest": "sha256:7394e2b7f920e6caef3ed8aaeef3348ebe5d1a1eb08e5eb3ee1f1b184fcd2527",
+      "mediaType": "application/vnd.oci.image.config.v1+json",
+      "size": 5413
+    },
+    "layers": [
+      {
+        "digest": "sha256:c9d7ea9d207ee303beb70619f8d234730e7fe8e1d4dbe8b333ba5e300d918267",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 51056566
+      },
+      {
+        "digest": "sha256:34cc1ee43d5a1562153c14fda91fe7a666ac301641b5abcf83269eb9d2a42dd4",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 24627826
+      },
+      {
+        "digest": "sha256:5834885656326e9535f99afcd80c931953d70988d521c845d3558567eaf8d99d",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 66567058
+      },
+      {
+        "digest": "sha256:58dd602f424d95e955d26a6c23fbb43991cb1f479083257f571f848a531fd909",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 95507690
+      },
+      {
+        "digest": "sha256:ded19bcaa5b8dce38c4ba78025ace9424eddcdcd624d7453a4c8e04a2ec7ce3c",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 69704446
+      },
+      {
+        "digest": "sha256:22f291db8983b0c48c6539e1de08575f36b9a85aaf607b14dfc64974783821b6",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 130
+      },
+      {
+        "digest": "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 34
+      },
+      {
+        "digest": "sha256:a9341a334cb02150fd5e928f2828205463c173df5f344b5e1607d207068ba490",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 1298
+      },
+      {
+        "digest": "sha256:dd95772663b985231f9e164fa8825069c6537800bb0392648ed7bd82c990c6cb",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 364587
+      },
+      {
+        "digest": "sha256:8b6cc8f9cf3e857ff0c05204bc34e26cae99bd494da02fdc090ea4880939caba",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 61297
+      },
+      {
+        "digest": "sha256:12fca8ac406fef0ba79647115542c9a943368cca24defc3d5751c992da19445b",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 12845456
+      },
+      {
+        "digest": "sha256:db1dd747dacc093c99851c4d5f3da5264e2d26d968d0da2cd1aca71b0fb0cd5a",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 71429
+      },
+      {
+        "digest": "sha256:37139efca75a426c85bf5d76c5c416fd3ac276925e03bf240d157840a234c515",
+        "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+        "size": 2066
+      }
+    ],
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "schemaVersion": 2
+  },
+  "platform": "linux/amd64",
+  "published": false,
+  "schema_version": 1
+}

@@ -1,0 +1,27 @@
+{
+  "format": "goldmark-public-alias-domain-review-v1",
+  "reviewed_commit": "491748b4d974605fa977bb40a587255f63702d3c",
+  "reviewer": "Independent Validation 2",
+  "status": "approved for narrow public ownership probe",
+  "surface_id": "ast.NewDocument.Metadata+ast.NewParagraph",
+  "upstream_commit": "9ac8030064518346e4c9d7847c85278c3a5244ee",
+  "evidence": [
+    {
+      "path": "ast/block.go",
+      "sha256": "40671d2031435ec383e1a1d71f61d50c82c4546ee67c582098c59c314075c17a",
+      "finding": "NewDocument and NewParagraph explicitly return new nodes; child append/remove operations are public."
+    },
+    {
+      "path": "extension/footnote_test.go",
+      "sha256": "6c512121ab143fab23617f5a5b2f6752363d92dea410ae35441262f6d7516f73",
+      "finding": "Pinned upstream test writes node.Metadata()[footnote-prefix] at line 31 and reads OwnerDocument().Metadata()[footnote-prefix] in the later callback at line 95, demonstrating live getter mutation/use."
+    }
+  ],
+  "receipt_review": "Reviewer verified all compressed and uncompressed alias receipt hashes: three positive cases passed and one cached-singleton control was a contract_regression.",
+  "limitations": [
+    "Not complete AST or public API coverage",
+    "No borrowed-buffer defensive-copy promise",
+    "No source-admission, process-state or full CPU-subset waiver",
+    "No new target execution or receipt reclassification"
+  ]
+}

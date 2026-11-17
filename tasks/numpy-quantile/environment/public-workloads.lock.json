@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task": "numpy-quantile",
+  "visibility": "public",
+  "format": "optimbench-locked-cases-v1",
+  "cases": "workload/manifest.json",
+  "inputs_lock": "workload/public-inputs.lock.json",
+  "inputs_lock_sha256": "bcc360c86c8eee1ad6f7a3980395e088e38176b942d9bf9933bc587293f4f0b7",
+  "references": "workload/baseline-outputs.json"
+}

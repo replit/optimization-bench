@@ -1,0 +1,12 @@
+{
+  "name": "optimbench-fuzz-runner-tools",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@jazzer.js/core": "4.0.0",
+    "fast-check": "4.10.2",
+    "istanbul-lib-coverage": "3.2.2",
+    "istanbul-lib-source-maps": "5.0.6",
+    "istanbul-lib-instrument": "6.0.3"
+  }
+}

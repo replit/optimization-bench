@@ -1,0 +1,63 @@
+{
+  "version": "bzip2-workload-v2",
+  "split": "dev",
+  "target_lifetime_seconds": 5,
+  "minimum_seconds": 2,
+  "target_batch_seconds": 2,
+  "family_balance": "Equal baseline runtime budget per family, rounded up to complete passes over intact files.",
+  "corpus_manifest_sha256": "dd42cc2150050b98aba87a3b7e8bf0690be0ce4de3b7436269b8b2e543566f90",
+  "cases": {
+    "encode-1": {
+      "family_passes": {
+        "documents": 4,
+        "tables": 2,
+        "json": 26,
+        "source": 8,
+        "web": 22,
+        "measurements": 2
+      },
+      "measured_batches": 2,
+      "independent_files": 24,
+      "output_bytes_per_batch": 8971800
+    },
+    "encode-9": {
+      "family_passes": {
+        "documents": 3,
+        "tables": 2,
+        "json": 26,
+        "source": 8,
+        "web": 21,
+        "measurements": 2
+      },
+      "measured_batches": 2,
+      "independent_files": 24,
+      "output_bytes_per_batch": 7709780
+    },
+    "decode-1": {
+      "family_passes": {
+        "documents": 9,
+        "tables": 4,
+        "json": 79,
+        "source": 24,
+        "web": 52,
+        "measurements": 3
+      },
+      "measured_batches": 2,
+      "independent_files": 24,
+      "output_bytes_per_batch": 78391468
+    },
+    "decode-9": {
+      "family_passes": {
+        "documents": 7,
+        "tables": 4,
+        "json": 81,
+        "source": 25,
+        "web": 55,
+        "measurements": 3
+      },
+      "measured_batches": 2,
+      "independent_files": 24,
+      "output_bytes_per_batch": 76057275
+    }
+  }
+}

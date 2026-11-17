@@ -1,0 +1,5 @@
+# Fetched public inputs and local build output; never committed.
+
+# Authenticated build-time or operator-staged public bytes.
+environment/workload/inputs/files/
+environment/notices/cli-*

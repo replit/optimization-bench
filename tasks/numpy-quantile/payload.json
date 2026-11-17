@@ -1,0 +1,1415 @@
+{
+  "schema_version": 1,
+  "task": "numpy-quantile",
+  "files": [
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-01.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-01.npy",
+      "bytes": 32000128,
+      "sha256": "125c990fea8a2e0f2dd0f659fdc19298289ff0addecf38217b4d8050a8c0e151",
+      "kind": "repo-lfs",
+      "source": "public/files/125c990fea8a2e0f2dd0f659fdc19298289ff0addecf38217b4d8050a8c0e151",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-01-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-01-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "9dd6fed2d92f170797d5faf199285a04766f84f9a6ad8b9a8a5feff562b31593",
+      "kind": "repo-lfs",
+      "source": "public/files/9dd6fed2d92f170797d5faf199285a04766f84f9a6ad8b9a8a5feff562b31593",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-07.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-07.npy",
+      "bytes": 32000128,
+      "sha256": "4758b11796c9a9daaaf953a710c7751a05c8bfa65ee362d27fb8a3826e9673bf",
+      "kind": "repo-lfs",
+      "source": "public/files/4758b11796c9a9daaaf953a710c7751a05c8bfa65ee362d27fb8a3826e9673bf",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-07-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-07-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "0ab0cd946bda2a7f3a3c98da5801b71fb17202891cfdd7ad13a026d699944fb2",
+      "kind": "repo-lfs",
+      "source": "public/files/0ab0cd946bda2a7f3a3c98da5801b71fb17202891cfdd7ad13a026d699944fb2",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-03.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-03.npy",
+      "bytes": 32000128,
+      "sha256": "3038468225d5fc3348bff7f9e26d8d1c04c8786f0d69db105d1540bbaceba35c",
+      "kind": "repo-lfs",
+      "source": "public/files/3038468225d5fc3348bff7f9e26d8d1c04c8786f0d69db105d1540bbaceba35c",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-03-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-03-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "1720516ab7b305140dbc35b71f9c41488f90a8259de25b3091fd63a2e30c50e7",
+      "kind": "repo-lfs",
+      "source": "public/files/1720516ab7b305140dbc35b71f9c41488f90a8259de25b3091fd63a2e30c50e7",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-04.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-04.npy",
+      "bytes": 32000128,
+      "sha256": "5f93229a200c94845e8ffc036d04ff1bbffa369cd49dee4a69c6fc51eb0bb657",
+      "kind": "repo-lfs",
+      "source": "public/files/5f93229a200c94845e8ffc036d04ff1bbffa369cd49dee4a69c6fc51eb0bb657",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-04-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-04-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "77b6a3ebf27968fdfd394566daa6146c6ea1eccea8a38fcffaf227aa4ff29778",
+      "kind": "repo-lfs",
+      "source": "public/files/77b6a3ebf27968fdfd394566daa6146c6ea1eccea8a38fcffaf227aa4ff29778",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-05.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-05.npy",
+      "bytes": 32000128,
+      "sha256": "319a3a0c6c90371f286e4fd352223609e948b33677116ac5c7c66bdcaaa69fa4",
+      "kind": "repo-lfs",
+      "source": "public/files/319a3a0c6c90371f286e4fd352223609e948b33677116ac5c7c66bdcaaa69fa4",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-05-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-05-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "ffba943da3ee65819339fcb277d90273012af2dcf368606f7cb3d6dd2bb9c6ca",
+      "kind": "repo-lfs",
+      "source": "public/files/ffba943da3ee65819339fcb277d90273012af2dcf368606f7cb3d6dd2bb9c6ca",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-09.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-09.npy",
+      "bytes": 32000128,
+      "sha256": "30eb4d54236b35dcb208c829b89f4ee605e1ec6827103a1029de7b51977de306",
+      "kind": "repo-lfs",
+      "source": "public/files/30eb4d54236b35dcb208c829b89f4ee605e1ec6827103a1029de7b51977de306",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-09-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-09-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "6ca900775dc0052b90ddb3ac25473c110a43b4ab292999908e007182535043f7",
+      "kind": "repo-lfs",
+      "source": "public/files/6ca900775dc0052b90ddb3ac25473c110a43b4ab292999908e007182535043f7",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-10.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-10.npy",
+      "bytes": 32000128,
+      "sha256": "0b711eba6c0b883722854a567055fe1931d3480e4ae6a403b6a032c79a6f86ae",
+      "kind": "repo-lfs",
+      "source": "public/files/0b711eba6c0b883722854a567055fe1931d3480e4ae6a403b6a032c79a6f86ae",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-10-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-10-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "3f82f0f816cbf1d7c5351d75571a30361f200d9db9fc7ba14f1b79226c9d2fce",
+      "kind": "repo-lfs",
+      "source": "public/files/3f82f0f816cbf1d7c5351d75571a30361f200d9db9fc7ba14f1b79226c9d2fce",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-11.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-11.npy",
+      "bytes": 32000128,
+      "sha256": "c4569a9ccbee45e8c76b9dbc94fcc6ab7395cf54ac5ed38c4e45bf5243cbb41d",
+      "kind": "repo-lfs",
+      "source": "public/files/c4569a9ccbee45e8c76b9dbc94fcc6ab7395cf54ac5ed38c4e45bf5243cbb41d",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/taxi-2023-11-source-rows.npy",
+      "destination": "environment/workload/inputs/data/arrays/taxi-2023-11-source-rows.npy",
+      "bytes": 8000128,
+      "sha256": "5f324529d0924dacc7f641cef2710c2d5f35718fa6da0aaeeb6f7d41d9be9621",
+      "kind": "repo-lfs",
+      "source": "public/files/5f324529d0924dacc7f641cef2710c2d5f35718fa6da0aaeeb6f7d41d9be9621",
+      "reason": "v1.1 workload extension: prepared from the authenticated upstream NYC TLC parquet named in sources.json with the reproduced selection recipe (recipe verified to reproduce taxi-2023-01 array and row-index bytes exactly). Same dataset and rights basis as taxi-2023-01/07.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/electricity-2012-block1.npy",
+      "destination": "environment/workload/inputs/data/arrays/electricity-2012-block1.npy",
+      "bytes": 20800640,
+      "sha256": "cef587b0a50d3136b03dd5da8c22f07eca2eb6d127b49be6e127718d38312bd7",
+      "kind": "repo-lfs",
+      "source": "public/files/cef587b0a50d3136b03dd5da8c22f07eca2eb6d127b49be6e127718d38312bd7",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/electricity-2012-block2.npy",
+      "destination": "environment/workload/inputs/data/arrays/electricity-2012-block2.npy",
+      "bytes": 20800640,
+      "sha256": "391b1629b186d6767bef7c4b04c5a69cea8585a4e374adc429db95f638bccfc8",
+      "kind": "repo-lfs",
+      "source": "public/files/391b1629b186d6767bef7c4b04c5a69cea8585a4e374adc429db95f638bccfc8",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/generic-cube.npy",
+      "destination": "environment/workload/inputs/data/arrays/generic-cube.npy",
+      "bytes": 1474688,
+      "sha256": "351d25fd25d9b13d27e9cc5f557db78114376b0aefd17d08d1dcd4680c0909dc",
+      "kind": "repo-lfs",
+      "source": "public/files/351d25fd25d9b13d27e9cc5f557db78114376b0aefd17d08d1dcd4680c0909dc",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/upstream-style-vector.npy",
+      "destination": "environment/workload/inputs/data/arrays/upstream-style-vector.npy",
+      "bytes": 40128,
+      "sha256": "4676286399a6f13883002611473f0b621acce4bb22e0a5682deeb5528df39a9a",
+      "kind": "repo-lfs",
+      "source": "public/files/4676286399a6f13883002611473f0b621acce4bb22e0a5682deeb5528df39a9a",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/upstream-style-table.npy",
+      "destination": "environment/workload/inputs/data/arrays/upstream-style-table.npy",
+      "bytes": 24128,
+      "sha256": "245250689f5432930653eb0f602727b5dde4b5f70b7a8b7fdc5ed77a07fe3c72",
+      "kind": "repo-lfs",
+      "source": "public/files/245250689f5432930653eb0f602727b5dde4b5f70b7a8b7fdc5ed77a07fe3c72",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-linear-not-nearest.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-linear-not-nearest.npy",
+      "bytes": 160,
+      "sha256": "541d861cae967ddcb7e4302e667018eda4143b31e384a025aacdb0c06013257c",
+      "kind": "repo-lfs",
+      "source": "public/files/541d861cae967ddcb7e4302e667018eda4143b31e384a025aacdb0c06013257c",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-repeated-unsorted-q.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-repeated-unsorted-q.npy",
+      "bytes": 168,
+      "sha256": "298b764533a5a612e9ffd7fa3535617f0feec026d172ae6befbcef6f835d6729",
+      "kind": "repo-lfs",
+      "source": "public/files/298b764533a5a612e9ffd7fa3535617f0feec026d172ae6befbcef6f835d6729",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-nan-propagation.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-nan-propagation.npy",
+      "bytes": 176,
+      "sha256": "2aaa4e93165098d1b8733d63c32b2a15db01808f90843710e4ac6306e5e41978",
+      "kind": "repo-lfs",
+      "source": "public/files/2aaa4e93165098d1b8733d63c32b2a15db01808f90843710e4ac6306e5e41978",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-singletons.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-singletons.npy",
+      "bytes": 136,
+      "sha256": "5974a8a9ec1347e98a0f57899928643309d575057ae60fbafda087e8bb36f812",
+      "kind": "repo-lfs",
+      "source": "public/files/5974a8a9ec1347e98a0f57899928643309d575057ae60fbafda087e8bb36f812",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-signed-zeros.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-signed-zeros.npy",
+      "bytes": 160,
+      "sha256": "3fb81dfe6760758e6b1b0b3c11f91bd7cac438dc6c7864e8c012afbb9e6be106",
+      "kind": "repo-lfs",
+      "source": "public/files/3fb81dfe6760758e6b1b0b3c11f91bd7cac438dc6c7864e8c012afbb9e6be106",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-tuple-keepdims.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-tuple-keepdims.npy",
+      "bytes": 224,
+      "sha256": "9a5dcbe87237f495d1e45e8129a526ee07bd47dab3e2225d61fd98747602753a",
+      "kind": "repo-lfs",
+      "source": "public/files/9a5dcbe87237f495d1e45e8129a526ee07bd47dab3e2225d61fd98747602753a",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "arrays/correctness-scalar-q.npy",
+      "destination": "environment/workload/inputs/data/arrays/correctness-scalar-q.npy",
+      "bytes": 144,
+      "sha256": "89037df0a20f276247396618946c005eaf9784081c38de4db5832cabc77be74e",
+      "kind": "repo-lfs",
+      "source": "public/files/89037df0a20f276247396618946c005eaf9784081c38de4db5832cabc77be74e",
+      "reason": "Original prepared packet recovered and authenticated against both original public manifests; no stable authenticated upstream recipe for these exact prepared bytes. Owner approved public LFS 2026-10-25.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/baseline-outputs.json",
+      "destination": "tests/heldout/baseline-outputs.json",
+      "bytes": 3170,
+      "sha256": "857bc5a3e50641b013e451c78d035323f16edd4a5e7de059c91ba99c63d24dc6",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/cases.json",
+      "destination": "tests/heldout/cases.json",
+      "bytes": 82098,
+      "sha256": "bd3c0b121adaff4c6b27cd74ad4d984ef87f331f8d057357d01e6ee92f7bd2cc",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/electricity-2014-block1.npy",
+      "destination": "tests/heldout/data/arrays/electricity-2014-block1.npy",
+      "bytes": 31115648,
+      "sha256": "f6167800d80fce7e5af4cad30b67653c3a4e00f9f3f182c36e354ba22f08fd05",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/electricity-2014-block2.npy",
+      "destination": "tests/heldout/data/arrays/electricity-2014-block2.npy",
+      "bytes": 31115648,
+      "sha256": "c88bc247372eb21711ecbb860130d3b8a10b9872824f235b399b569b2e7c928a",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/taxi-2024-01.npy",
+      "destination": "tests/heldout/data/arrays/taxi-2024-01.npy",
+      "bytes": 32000128,
+      "sha256": "049445645a29e39b51a8f41489a47e894037acf2fa7dfd8f4df1f50b0b67fa26",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/taxi-2024-07.npy",
+      "destination": "tests/heldout/data/arrays/taxi-2024-07.npy",
+      "bytes": 32000128,
+      "sha256": "d3fc42671d5d8331f9948a54111ec7a3bcd923401341c684bdcc3f137359f0ea",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/weather-2018.npy",
+      "destination": "tests/heldout/data/arrays/weather-2018.npy",
+      "bytes": 15347648,
+      "sha256": "3b2b590be34d0a0abb8023216717105813f8e373cc32653a1ce671e7f2814115",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/weather-2019.npy",
+      "destination": "tests/heldout/data/arrays/weather-2019.npy",
+      "bytes": 15347648,
+      "sha256": "70d52a36accce31f012abfd124dd08ec99211db05502900842e788e8cbedfae6",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/weather-2022.npy",
+      "destination": "tests/heldout/data/arrays/weather-2022.npy",
+      "bytes": 15347648,
+      "sha256": "5ba6bcfcaf3bc2a9424f76abf5b7339359f7803285cc268f02c3b53d92eb234c",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/weather-2023.npy",
+      "destination": "tests/heldout/data/arrays/weather-2023.npy",
+      "bytes": 15347648,
+      "sha256": "ea59a379a036fdfe968bcb2d0f624247a15c8e105054be9059ed3c919ebd2486",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/electricity-2014-block1--strided-subset",
+      "destination": "tests/heldout/expected/electricity-2014-block1--strided-subset",
+      "bytes": 2808,
+      "sha256": "2b5cd4d08baf776deb5bdb1f388b7a26fcd5f332cfcc67b9c2f4af2dc8bf00bb",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/electricity-2014-block2--strided-subset",
+      "destination": "tests/heldout/expected/electricity-2014-block2--strided-subset",
+      "bytes": 2808,
+      "sha256": "fba80948743af916da985da9fb15adca72406c63fb7c7c8b05a7e94c151cc461",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/taxi-2024-01--small-table",
+      "destination": "tests/heldout/expected/taxi-2024-01--small-table",
+      "bytes": 239,
+      "sha256": "a72470153fc34b94969bc12d76326f4dc70163b86acee8bff5ca3a7b38b61c75",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/taxi-2024-07--small-table",
+      "destination": "tests/heldout/expected/taxi-2024-07--small-table",
+      "bytes": 239,
+      "sha256": "c37ff7be6c2c027233e371edf24a8e307ac349ba332d4e991bc0d00fcbeb0b0c",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/weather-2018--strided-grid",
+      "destination": "tests/heldout/expected/weather-2018--strided-grid",
+      "bytes": 362450,
+      "sha256": "13f87b5d9f74c6ecba2a9b48801c1fb1ac947339b899d5f39e652f5586bfb80e",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/weather-2019--strided-grid",
+      "destination": "tests/heldout/expected/weather-2019--strided-grid",
+      "bytes": 362450,
+      "sha256": "ac2fee661b2061cb5be69164592b16fd014e13d63f3bc4ed8b6360779c0e5743",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/weather-2022--strided-grid",
+      "destination": "tests/heldout/expected/weather-2022--strided-grid",
+      "bytes": 362450,
+      "sha256": "0e47da70beac02252e3a5c25798f5fdaf86303f41e4f821573e52ad0b4fca4c7",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/weather-2023--strided-grid",
+      "destination": "tests/heldout/expected/weather-2023--strided-grid",
+      "bytes": 362450,
+      "sha256": "bff398cf4c7140e397670cfddbb9e42689f4d62276891e1575520ec46904e203",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/6f1917cbf01365cd2e1f4f89108656a53789b225ea302fad379f071e40b0f961",
+      "destination": "tests/heldout/files/6f1917cbf01365cd2e1f4f89108656a53789b225ea302fad379f071e40b0f961",
+      "bytes": 587,
+      "sha256": "6f1917cbf01365cd2e1f4f89108656a53789b225ea302fad379f071e40b0f961",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/79f0a0fde46dd692f7d29f32403f59c51fa38c3a6e1f18358d6f521591ea72b4",
+      "destination": "tests/heldout/files/79f0a0fde46dd692f7d29f32403f59c51fa38c3a6e1f18358d6f521591ea72b4",
+      "bytes": 469,
+      "sha256": "79f0a0fde46dd692f7d29f32403f59c51fa38c3a6e1f18358d6f521591ea72b4",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/8e39d8c8d63c3655e1859a95e0e77530dcc18067fcbb8f835f6d930327fd1ab2",
+      "destination": "tests/heldout/files/8e39d8c8d63c3655e1859a95e0e77530dcc18067fcbb8f835f6d930327fd1ab2",
+      "bytes": 587,
+      "sha256": "8e39d8c8d63c3655e1859a95e0e77530dcc18067fcbb8f835f6d930327fd1ab2",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/90710dda98769a14ef6397d826315479972502d8b90a6241a71c3e7ca3d73e95",
+      "destination": "tests/heldout/files/90710dda98769a14ef6397d826315479972502d8b90a6241a71c3e7ca3d73e95",
+      "bytes": 476,
+      "sha256": "90710dda98769a14ef6397d826315479972502d8b90a6241a71c3e7ca3d73e95",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/9d05fd6ce3201deeec4cdbd15d07ff6fdedcf9b5ad21542afedfe0161c2a0955",
+      "destination": "tests/heldout/files/9d05fd6ce3201deeec4cdbd15d07ff6fdedcf9b5ad21542afedfe0161c2a0955",
+      "bytes": 469,
+      "sha256": "9d05fd6ce3201deeec4cdbd15d07ff6fdedcf9b5ad21542afedfe0161c2a0955",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/b6ebafd7d73543cdb37e06c6d0c6e3d3f3045762a7e5e1faa97861a80de8e8f2",
+      "destination": "tests/heldout/files/b6ebafd7d73543cdb37e06c6d0c6e3d3f3045762a7e5e1faa97861a80de8e8f2",
+      "bytes": 587,
+      "sha256": "b6ebafd7d73543cdb37e06c6d0c6e3d3f3045762a7e5e1faa97861a80de8e8f2",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/c477d7f41daabad648bb304f405aad2ac6a34d8a815c43362bd02deb23535991",
+      "destination": "tests/heldout/files/c477d7f41daabad648bb304f405aad2ac6a34d8a815c43362bd02deb23535991",
+      "bytes": 587,
+      "sha256": "c477d7f41daabad648bb304f405aad2ac6a34d8a815c43362bd02deb23535991",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/dc2a10e32ee55745a2d60e402a67b34deae9e6974993f9b21805345eca2d7a27",
+      "destination": "tests/heldout/files/dc2a10e32ee55745a2d60e402a67b34deae9e6974993f9b21805345eca2d7a27",
+      "bytes": 476,
+      "sha256": "dc2a10e32ee55745a2d60e402a67b34deae9e6974993f9b21805345eca2d7a27",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/inputs.lock.json",
+      "destination": "tests/heldout/inputs.lock.json",
+      "bytes": 7744,
+      "sha256": "6bbebe4cedf140af6425fbad0e247c9aa5d93f2d059d403a26ea3bc65cb27a9e",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/manifest.json",
+      "destination": "tests/heldout/manifest.json",
+      "bytes": 7055,
+      "sha256": "206d3d84f7cb87d5edb6888724bd460925a9a753305edf9cc9736aab30fa50ac",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/requalification.json",
+      "destination": "tests/heldout/requalification.json",
+      "bytes": 19362,
+      "sha256": "1b47b786bbf5772bc5610e37a85a14f923ff87218656815e9eb1c4b54dcabf06",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/workload/corpus.json",
+      "destination": "tests/heldout/workload/corpus.json",
+      "bytes": 93176,
+      "sha256": "45ef30eecf343df31ec51ab5ecb4007664d885ff9cf6816e046b55096bc084ea",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/taxi-2024-03.npy",
+      "destination": "tests/heldout/data/arrays/taxi-2024-03.npy",
+      "bytes": 32000128,
+      "sha256": "115b7bdde8e635eb3799a211ed65fa99583feec2dce352123fe594c056bb2961",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/taxi-2024-05.npy",
+      "destination": "tests/heldout/data/arrays/taxi-2024-05.npy",
+      "bytes": 32000128,
+      "sha256": "a70fed4844cce945ab21247233269f36d558df89d46ba487ad84f7e15e7a31c6",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/taxi-2024-09.npy",
+      "destination": "tests/heldout/data/arrays/taxi-2024-09.npy",
+      "bytes": 32000128,
+      "sha256": "94b2b8a5f313f5d20d19e0e9e3730d1be7de4865a736c607123d677a1e20d34c",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/arrays/taxi-2024-11.npy",
+      "destination": "tests/heldout/data/arrays/taxi-2024-11.npy",
+      "bytes": 32000128,
+      "sha256": "7d81e044b182ae11d7293765cad6a0b5e2f2b557db5bd557420ae8a50f25d99b",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/taxi-2024-03--small-table",
+      "destination": "tests/heldout/expected/taxi-2024-03--small-table",
+      "bytes": 239,
+      "sha256": "382f95ca6a3ca04d679704b440a61e23667e77509beef8c0ab46c480700b9d55",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/0fac119272e34f38ecbb638d035da75c98f80104f19a290af63fc741f1afab85",
+      "destination": "tests/heldout/files/0fac119272e34f38ecbb638d035da75c98f80104f19a290af63fc741f1afab85",
+      "bytes": 469,
+      "sha256": "0fac119272e34f38ecbb638d035da75c98f80104f19a290af63fc741f1afab85",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/taxi-2024-05--small-table",
+      "destination": "tests/heldout/expected/taxi-2024-05--small-table",
+      "bytes": 239,
+      "sha256": "a22e61a527b948b852c807f8d861222a1e1011e7acaf47d7668bd9069f384ba1",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/a9535048158fbd9b975f10c31c3c24616ec3a318d3c56146330266b7388c630f",
+      "destination": "tests/heldout/files/a9535048158fbd9b975f10c31c3c24616ec3a318d3c56146330266b7388c630f",
+      "bytes": 469,
+      "sha256": "a9535048158fbd9b975f10c31c3c24616ec3a318d3c56146330266b7388c630f",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/taxi-2024-09--small-table",
+      "destination": "tests/heldout/expected/taxi-2024-09--small-table",
+      "bytes": 239,
+      "sha256": "0d8d4b7abfe4bb709549fe4d4184607b95d5bfbd80feb5d4822a16c0d65e1c82",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/f7de16871b41513e166a5a02aebd25fc387ee845c6402d80ec641e8a1b5337c0",
+      "destination": "tests/heldout/files/f7de16871b41513e166a5a02aebd25fc387ee845c6402d80ec641e8a1b5337c0",
+      "bytes": 469,
+      "sha256": "f7de16871b41513e166a5a02aebd25fc387ee845c6402d80ec641e8a1b5337c0",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/taxi-2024-11--small-table",
+      "destination": "tests/heldout/expected/taxi-2024-11--small-table",
+      "bytes": 239,
+      "sha256": "ae0ff24ca783877a6dee3e88b89e254a425aeb06f68f96c896fff62d5c426398",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/3989a75ac51d3870ad1fe0a16b67887bbddf34b92617851d5613210cb7009f43",
+      "destination": "tests/heldout/files/3989a75ac51d3870ad1fe0a16b67887bbddf34b92617851d5613210cb7009f43",
+      "bytes": 469,
+      "sha256": "3989a75ac51d3870ad1fe0a16b67887bbddf34b92617851d5613210cb7009f43",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/heldout-natural-workload-warm-batch",
+      "destination": "tests/heldout/expected/heldout-natural-workload-warm-batch",
+      "bytes": 2006932,
+      "sha256": "0fb21b06028eaf5a6c5b9afbd5cc1e51f762ffb67423203047b3333e4145ffcf",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/ebc8869ca3c13a78edd83c7aca0446436c384c7fadf2cc86fe32ff90372e8e1d",
+      "destination": "tests/heldout/files/ebc8869ca3c13a78edd83c7aca0446436c384c7fadf2cc86fe32ff90372e8e1d",
+      "bytes": 23189,
+      "sha256": "ebc8869ca3c13a78edd83c7aca0446436c384c7fadf2cc86fe32ff90372e8e1d",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/a70b6a0a13cf58633925ce8b74c7b0bddedc7719870329334aec74dedf632536",
+      "destination": "tests/heldout/files/a70b6a0a13cf58633925ce8b74c7b0bddedc7719870329334aec74dedf632536",
+      "bytes": 10315,
+      "sha256": "a70b6a0a13cf58633925ce8b74c7b0bddedc7719870329334aec74dedf632536",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/c55d0e1250cc4ebb29c85cca9a47bed71b09a246e62322d3cea3082708f0c544",
+      "destination": "tests/heldout/files/c55d0e1250cc4ebb29c85cca9a47bed71b09a246e62322d3cea3082708f0c544",
+      "bytes": 6355,
+      "sha256": "c55d0e1250cc4ebb29c85cca9a47bed71b09a246e62322d3cea3082708f0c544",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/2ae321ea7e136f017960cf18f0379e7a6f4b219e94b868f959a8349408e0f3c6",
+      "destination": "tests/heldout/files/2ae321ea7e136f017960cf18f0379e7a6f4b219e94b868f959a8349408e0f3c6",
+      "bytes": 3155,
+      "sha256": "2ae321ea7e136f017960cf18f0379e7a6f4b219e94b868f959a8349408e0f3c6",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/771236dc27517cc44f4e9e8335d3476c9c5b64beffa6c0f0345cc3f93e11bf24",
+      "destination": "tests/heldout/files/771236dc27517cc44f4e9e8335d3476c9c5b64beffa6c0f0345cc3f93e11bf24",
+      "bytes": 3797,
+      "sha256": "771236dc27517cc44f4e9e8335d3476c9c5b64beffa6c0f0345cc3f93e11bf24",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/46ec8aab21df86e191e9f0ff0eabd30663f2e5aa23249878d26efabfbe0b8270",
+      "destination": "tests/heldout/files/46ec8aab21df86e191e9f0ff0eabd30663f2e5aa23249878d26efabfbe0b8270",
+      "bytes": 11018,
+      "sha256": "46ec8aab21df86e191e9f0ff0eabd30663f2e5aa23249878d26efabfbe0b8270",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/83b4450afd1e7245a30dc31d4ba614ea7ac46a398f8978d70ed4decd85303496",
+      "destination": "tests/heldout/files/83b4450afd1e7245a30dc31d4ba614ea7ac46a398f8978d70ed4decd85303496",
+      "bytes": 9289,
+      "sha256": "83b4450afd1e7245a30dc31d4ba614ea7ac46a398f8978d70ed4decd85303496",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/fd08056c2d65240ed084e277050dc80c2e0d3d2ab810de44df949b6ce26a2588",
+      "destination": "tests/heldout/files/fd08056c2d65240ed084e277050dc80c2e0d3d2ab810de44df949b6ce26a2588",
+      "bytes": 9318,
+      "sha256": "fd08056c2d65240ed084e277050dc80c2e0d3d2ab810de44df949b6ce26a2588",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/02180d44ee1fc338972075f8f471ac2e467e6c5fbd268f288159895f5879349c",
+      "destination": "tests/heldout/files/02180d44ee1fc338972075f8f471ac2e467e6c5fbd268f288159895f5879349c",
+      "bytes": 1392,
+      "sha256": "02180d44ee1fc338972075f8f471ac2e467e6c5fbd268f288159895f5879349c",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/7e996079e231603cc5def7efe89477b9f8be0290849dad6df534071ba42d3ba4",
+      "destination": "tests/heldout/files/7e996079e231603cc5def7efe89477b9f8be0290849dad6df534071ba42d3ba4",
+      "bytes": 520,
+      "sha256": "7e996079e231603cc5def7efe89477b9f8be0290849dad6df534071ba42d3ba4",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/bad6ce5fcc5322c10d7fb50dbb57309bf17cfbeec19afe888a4474cf3c8cce45",
+      "destination": "tests/heldout/files/bad6ce5fcc5322c10d7fb50dbb57309bf17cfbeec19afe888a4474cf3c8cce45",
+      "bytes": 807,
+      "sha256": "bad6ce5fcc5322c10d7fb50dbb57309bf17cfbeec19afe888a4474cf3c8cce45",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/e5f1497b95a48bc228a01d9cc43f7bb9ab140a89c923c215bc684df9fad86ac8",
+      "destination": "tests/heldout/files/e5f1497b95a48bc228a01d9cc43f7bb9ab140a89c923c215bc684df9fad86ac8",
+      "bytes": 1644,
+      "sha256": "e5f1497b95a48bc228a01d9cc43f7bb9ab140a89c923c215bc684df9fad86ac8",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/676fc018c290d2ef8c40d6e475b5b78444e24868045fe280d831c3b7a05f55a8",
+      "destination": "tests/heldout/files/676fc018c290d2ef8c40d6e475b5b78444e24868045fe280d831c3b7a05f55a8",
+      "bytes": 575,
+      "sha256": "676fc018c290d2ef8c40d6e475b5b78444e24868045fe280d831c3b7a05f55a8",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/93bdf11ea71db07e6f4a94c62936f1df9be2320abcd0c5754dc7a8c21acb5362",
+      "destination": "tests/heldout/files/93bdf11ea71db07e6f4a94c62936f1df9be2320abcd0c5754dc7a8c21acb5362",
+      "bytes": 606,
+      "sha256": "93bdf11ea71db07e6f4a94c62936f1df9be2320abcd0c5754dc7a8c21acb5362",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/89966b1805f7fd9470e391f3396d261bdb88cd2607c1d3cfa8687ec43822252a",
+      "destination": "tests/heldout/files/89966b1805f7fd9470e391f3396d261bdb88cd2607c1d3cfa8687ec43822252a",
+      "bytes": 1656,
+      "sha256": "89966b1805f7fd9470e391f3396d261bdb88cd2607c1d3cfa8687ec43822252a",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/78e77c19c140e435d9f027caa1be003acd0a1c33c209033677984c95d36acfff",
+      "destination": "tests/heldout/files/78e77c19c140e435d9f027caa1be003acd0a1c33c209033677984c95d36acfff",
+      "bytes": 959,
+      "sha256": "78e77c19c140e435d9f027caa1be003acd0a1c33c209033677984c95d36acfff",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "public",
+      "name": "units/interp-equalize/srtm-N45E006.npy",
+      "destination": "environment/workload/inputs/data/units/interp-equalize/srtm-N45E006.npy",
+      "bytes": 25934530,
+      "sha256": "bdac8783e5d1ce26a7f59dd9a60531817d363c4f6b6605d56b632e4144153495",
+      "kind": "repo-lfs",
+      "source": "public/files/bdac8783e5d1ce26a7f59dd9a60531817d363c4f6b6605d56b632e4144153495",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/interp-equalize/srtm-N45E007.npy",
+      "destination": "environment/workload/inputs/data/units/interp-equalize/srtm-N45E007.npy",
+      "bytes": 25934530,
+      "sha256": "61d5bd149bc5df5d1c6d7c7ed182984f40e8afbbed16ed59a75ad01c0a6c1ba2",
+      "kind": "repo-lfs",
+      "source": "public/files/61d5bd149bc5df5d1c6d7c7ed182984f40e8afbbed16ed59a75ad01c0a6c1ba2",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/interp-equalize/srtm-N46E007.npy",
+      "destination": "environment/workload/inputs/data/units/interp-equalize/srtm-N46E007.npy",
+      "bytes": 25934530,
+      "sha256": "da30cd89db1eaa09d2ebb1385d37f1ee5a05d0bcecd5a9fb9bd6511237804290",
+      "kind": "repo-lfs",
+      "source": "public/files/da30cd89db1eaa09d2ebb1385d37f1ee5a05d0bcecd5a9fb9bd6511237804290",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/interp-equalize/srtm-N46E008.npy",
+      "destination": "environment/workload/inputs/data/units/interp-equalize/srtm-N46E008.npy",
+      "bytes": 25934530,
+      "sha256": "22e9e0fd26f33f2c8cc12feb0ad0db54ece4fcd6551a1f7232a8c97ea9006532",
+      "kind": "repo-lfs",
+      "source": "public/files/22e9e0fd26f33f2c8cc12feb0ad0db54ece4fcd6551a1f7232a8c97ea9006532",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/busday-calendar/dates-nyc-dob-part0.npz",
+      "destination": "environment/workload/inputs/data/units/busday-calendar/dates-nyc-dob-part0.npz",
+      "bytes": 31732468,
+      "sha256": "dfa020386ad8cf39a5e33ed6f18d3088e7e73eff8d49d0ae569beaf0e9f0f0af",
+      "kind": "repo-lfs",
+      "source": "public/files/dfa020386ad8cf39a5e33ed6f18d3088e7e73eff8d49d0ae569beaf0e9f0f0af",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/busday-calendar/dates-nyc-dob-part1.npz",
+      "destination": "environment/workload/inputs/data/units/busday-calendar/dates-nyc-dob-part1.npz",
+      "bytes": 31732468,
+      "sha256": "ae2fc5a98bca7347e92e2cd358f540355d48273de2fa60da23d9c2c750d2dd58",
+      "kind": "repo-lfs",
+      "source": "public/files/ae2fc5a98bca7347e92e2cd358f540355d48273de2fa60da23d9c2c750d2dd58",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/random-dists/census-county-2010-2014.npz",
+      "destination": "environment/workload/inputs/data/units/random-dists/census-county-2010-2014.npz",
+      "bytes": 630112,
+      "sha256": "84db7b8abe7b5543722aaa7cdf418ea4edbabb98bd20c7795779585a0cc14520",
+      "kind": "repo-lfs",
+      "source": "public/files/84db7b8abe7b5543722aaa7cdf418ea4edbabb98bd20c7795779585a0cc14520",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/random-dists/census-county-2015-2019.npz",
+      "destination": "environment/workload/inputs/data/units/random-dists/census-county-2015-2019.npz",
+      "bytes": 630112,
+      "sha256": "a7b894b0203e568b97ca1564871ae6f6146d4a72aa8752b368f9aa7e935184be",
+      "kind": "repo-lfs",
+      "source": "public/files/a7b894b0203e568b97ca1564871ae6f6146d4a72aa8752b368f9aa7e935184be",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/random-dists/census-county-2020-2023.npz",
+      "destination": "environment/workload/inputs/data/units/random-dists/census-county-2020-2023.npz",
+      "bytes": 504752,
+      "sha256": "62c801ae1661ff6e313b228042458d773c1f70cd36f1c0c6ffd49b727d8adc16",
+      "kind": "repo-lfs",
+      "source": "public/files/62c801ae1661ff6e313b228042458d773c1f70cd36f1c0c6ffd49b727d8adc16",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/genfromtxt-catalog/usgs-comcat-2021.csv",
+      "destination": "environment/workload/inputs/data/units/genfromtxt-catalog/usgs-comcat-2021.csv",
+      "bytes": 11334393,
+      "sha256": "587bc7e45c10ca5f6fff185dff788cd444ee7edacb55aa5d7f50a4b55f9818b2",
+      "kind": "repo-lfs",
+      "source": "public/files/587bc7e45c10ca5f6fff185dff788cd444ee7edacb55aa5d7f50a4b55f9818b2",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/genfromtxt-catalog/usgs-comcat-2022.csv",
+      "destination": "environment/workload/inputs/data/units/genfromtxt-catalog/usgs-comcat-2022.csv",
+      "bytes": 10470851,
+      "sha256": "bd6aff040f6d08295d1abcd6d6830715c5800e2d81feb1d082c0286537b2650c",
+      "kind": "repo-lfs",
+      "source": "public/files/bd6aff040f6d08295d1abcd6d6830715c5800e2d81feb1d082c0286537b2650c",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/genfromtxt-catalog/usgs-comcat-2023.csv",
+      "destination": "environment/workload/inputs/data/units/genfromtxt-catalog/usgs-comcat-2023.csv",
+      "bytes": 10569500,
+      "sha256": "92dbcd53cc5407ee652911a9603620ee66b39105caf4d3bbedf667c442460217",
+      "kind": "repo-lfs",
+      "source": "public/files/92dbcd53cc5407ee652911a9603620ee66b39105caf4d3bbedf667c442460217",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/genfromtxt-catalog/usgs-comcat-2024.csv",
+      "destination": "environment/workload/inputs/data/units/genfromtxt-catalog/usgs-comcat-2024.csv",
+      "bytes": 11118508,
+      "sha256": "c84f72dda84b39698e08dc63b176df0bab0be3ad3488e3127abc68699802b2a5",
+      "kind": "repo-lfs",
+      "source": "public/files/c84f72dda84b39698e08dc63b176df0bab0be3ad3488e3127abc68699802b2a5",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/loadtxt-csv/yearpredictionmsd-part0.csv",
+      "destination": "environment/workload/inputs/data/units/loadtxt-csv/yearpredictionmsd-part0.csv",
+      "bytes": 52207739,
+      "sha256": "07573250b101fdbfed6ad49b6408d029bdfa0f70338580bc99b6e74443763ff5",
+      "kind": "repo-lfs",
+      "source": "public/files/07573250b101fdbfed6ad49b6408d029bdfa0f70338580bc99b6e74443763ff5",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/loadtxt-csv/yearpredictionmsd-part1.csv",
+      "destination": "environment/workload/inputs/data/units/loadtxt-csv/yearpredictionmsd-part1.csv",
+      "bytes": 52208218,
+      "sha256": "e31361152389546c09441dfa763f644ad7c853275abe1356c4abc54c07b05999",
+      "kind": "repo-lfs",
+      "source": "public/files/e31361152389546c09441dfa763f644ad7c853275abe1356c4abc54c07b05999",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/loadtxt-csv/yearpredictionmsd-part2.csv",
+      "destination": "environment/workload/inputs/data/units/loadtxt-csv/yearpredictionmsd-part2.csv",
+      "bytes": 52218145,
+      "sha256": "9fb094fe7d939671bbb2c26ceabf9dd9f023aba874929b00ff0c74acb4451792",
+      "kind": "repo-lfs",
+      "source": "public/files/9fb094fe7d939671bbb2c26ceabf9dd9f023aba874929b00ff0c74acb4451792",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/loadtxt-csv/yearpredictionmsd-part3.csv",
+      "destination": "environment/workload/inputs/data/units/loadtxt-csv/yearpredictionmsd-part3.csv",
+      "bytes": 52205439,
+      "sha256": "44523ecf3dd4db89e5aea83eb0dbe96a5411ea476adaf52ece06ccb4a11526f1",
+      "kind": "repo-lfs",
+      "source": "public/files/44523ecf3dd4db89e5aea83eb0dbe96a5411ea476adaf52ece06ccb4a11526f1",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-01-created-closed.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-01-created-closed.npz",
+      "bytes": 40174878,
+      "sha256": "c77b6570d0be5788ad868faf0112cc9159048ae31d73236c9b1e1bfe82cf2128",
+      "kind": "repo-lfs",
+      "source": "public/files/c77b6570d0be5788ad868faf0112cc9159048ae31d73236c9b1e1bfe82cf2128",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-01-created-resolution.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-01-created-resolution.npz",
+      "bytes": 40174878,
+      "sha256": "c564d871b3bd7fe742a4a0d30407f0df2415adaeb26bbba70ec8c0586a45a40b",
+      "kind": "repo-lfs",
+      "source": "public/files/c564d871b3bd7fe742a4a0d30407f0df2415adaeb26bbba70ec8c0586a45a40b",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-02-created-closed.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-02-created-closed.npz",
+      "bytes": 41400870,
+      "sha256": "7f3289fec5f7461f2529151eb7123483ad5bc0c5c7a0775a15427fe2f8e9f75c",
+      "kind": "repo-lfs",
+      "source": "public/files/7f3289fec5f7461f2529151eb7123483ad5bc0c5c7a0775a15427fe2f8e9f75c",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-02-created-resolution.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-02-created-resolution.npz",
+      "bytes": 41400870,
+      "sha256": "06f9623fb691332331d19271545faa13a46f0f1df043fdb781fc0cbf1212b0f5",
+      "kind": "repo-lfs",
+      "source": "public/files/06f9623fb691332331d19271545faa13a46f0f1df043fdb781fc0cbf1212b0f5",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-03-created-closed.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-03-created-closed.npz",
+      "bytes": 41579902,
+      "sha256": "7706b9ed5e18c5ba3417381549efce85c8611552a7ae1b004fbceed6793e34c7",
+      "kind": "repo-lfs",
+      "source": "public/files/7706b9ed5e18c5ba3417381549efce85c8611552a7ae1b004fbceed6793e34c7",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-03-created-resolution.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-03-created-resolution.npz",
+      "bytes": 41579902,
+      "sha256": "6abb64752f030aee0baa954927a285526cc508d762a93f299ba193916f67a556",
+      "kind": "repo-lfs",
+      "source": "public/files/6abb64752f030aee0baa954927a285526cc508d762a93f299ba193916f67a556",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-04-created-closed.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-04-created-closed.npz",
+      "bytes": 42526214,
+      "sha256": "f1fa4e3594cc90042833d0177a53524d2f08ccee9c54db041280cd282a5cb36f",
+      "kind": "repo-lfs",
+      "source": "public/files/f1fa4e3594cc90042833d0177a53524d2f08ccee9c54db041280cd282a5cb36f",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-04-created-resolution.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-04-created-resolution.npz",
+      "bytes": 42526214,
+      "sha256": "6d4245e36e3382084f381023789170ae004be09b4a5708539d74de547d33565b",
+      "kind": "repo-lfs",
+      "source": "public/files/6d4245e36e3382084f381023789170ae004be09b4a5708539d74de547d33565b",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-05-created-closed.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-05-created-closed.npz",
+      "bytes": 46700990,
+      "sha256": "48c02f3fced7950ae31be589afccb46bf6d97273c35295bbf6077c26a2c16583",
+      "kind": "repo-lfs",
+      "source": "public/files/48c02f3fced7950ae31be589afccb46bf6d97273c35295bbf6077c26a2c16583",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-05-created-resolution.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-05-created-resolution.npz",
+      "bytes": 46700990,
+      "sha256": "937eab0e809dcbea88b526d41a015a4750cfcdabb41f17b745351d0e47334a49",
+      "kind": "repo-lfs",
+      "source": "public/files/937eab0e809dcbea88b526d41a015a4750cfcdabb41f17b745351d0e47334a49",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-06-created-closed.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-06-created-closed.npz",
+      "bytes": 45842078,
+      "sha256": "e870553ced353f64beb62a8794da09ca54d1ca4d2fdfc79afa8e6e0a1c96a5ce",
+      "kind": "repo-lfs",
+      "source": "public/files/e870553ced353f64beb62a8794da09ca54d1ca4d2fdfc79afa8e6e0a1c96a5ce",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/datetime-iso/nyc311-2023-06-created-resolution.npz",
+      "destination": "environment/workload/inputs/data/units/datetime-iso/nyc311-2023-06-created-resolution.npz",
+      "bytes": 45842078,
+      "sha256": "3ebf5b70b90ed1387a01bbdf4829831e80c25d17645f057a00b8eff09601a567",
+      "kind": "repo-lfs",
+      "source": "public/files/3ebf5b70b90ed1387a01bbdf4829831e80c25d17645f057a00b8eff09601a567",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/float-format/usgs-iv-discharge-de-2023.npy",
+      "destination": "environment/workload/inputs/data/units/float-format/usgs-iv-discharge-de-2023.npy",
+      "bytes": 7237016,
+      "sha256": "1c47bb6bb291573b739b05c90369dd95d20b810954490face41df9934890424e",
+      "kind": "repo-lfs",
+      "source": "public/files/1c47bb6bb291573b739b05c90369dd95d20b810954490face41df9934890424e",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "public",
+      "name": "units/float-format/usgs-iv-discharge-me-2023.npy",
+      "destination": "environment/workload/inputs/data/units/float-format/usgs-iv-discharge-me-2023.npy",
+      "bytes": 15821056,
+      "sha256": "45c63d69c4d003817127dc743ed5504b6c6817e88ae3a85f6709d28c8e0ecf7e",
+      "kind": "repo-lfs",
+      "source": "public/files/45c63d69c4d003817127dc743ed5504b6c6817e88ae3a85f6709d28c8e0ecf7e",
+      "reason": "Prepared suite input derived from pinned upstream bytes by the unit's recorded transformation (provenance.json suite_units); the conversion kit is not in the repository, so the exact prepared bytes ship as public LFS.",
+      "distribution": "operator"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/interp-equalize/srtm-S13W072.npy",
+      "destination": "tests/heldout/data/units/interp-equalize/srtm-S13W072.npy",
+      "bytes": 25934530,
+      "sha256": "3ea890301b6d45183e7abf1c8d95a846042bec941ec0be46ed7cdc99610a0554",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/interp-equalize/srtm-S14W072.npy",
+      "destination": "tests/heldout/data/units/interp-equalize/srtm-S14W072.npy",
+      "bytes": 25934530,
+      "sha256": "458247c913d5d4787dcbd598e8a576190704fea082816be483114bdeb780ff17",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/interp-equalize/srtm-S16W069.npy",
+      "destination": "tests/heldout/data/units/interp-equalize/srtm-S16W069.npy",
+      "bytes": 25934530,
+      "sha256": "459fd79e446b5006a7adc94c19c8b5a4867c2bf36eed73a83921b0a32538e2de",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/interp-equalize/srtm-S33W070.npy",
+      "destination": "tests/heldout/data/units/interp-equalize/srtm-S33W070.npy",
+      "bytes": 25934530,
+      "sha256": "282a87af7345c484c073ae1e48e72bd4d1896da24fbfad72976b6056d84d0da9",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/busday-calendar/dates-austin-permits.npz",
+      "destination": "tests/heldout/data/units/busday-calendar/dates-austin-permits.npz",
+      "bytes": 45699412,
+      "sha256": "7b66caf65ab5e8fb61e1c43963d80118a4fa0ac5981f000b9d685d57ee4008a9",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/busday-calendar/dates-chicago-licenses.npz",
+      "destination": "tests/heldout/data/units/busday-calendar/dates-chicago-licenses.npz",
+      "bytes": 6774820,
+      "sha256": "0e85b41cdce1b55fe15f5dded255b8f851c97725505bbc32ae0a88ca6fa7137a",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/busday-calendar/dates-chicago-permits.npz",
+      "destination": "tests/heldout/data/units/busday-calendar/dates-chicago-permits.npz",
+      "bytes": 20429860,
+      "sha256": "7e09a2888a4a0ce492f029612a056aa9e770b771cee2395a2104921622b19465",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/busday-calendar/dates-sf-permits.npz",
+      "destination": "tests/heldout/data/units/busday-calendar/dates-sf-permits.npz",
+      "bytes": 15623596,
+      "sha256": "23297aae45fbdb71160854a65bb95609f836a7d4d0c18b95d54226f3fc441886",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/random-dists/worldbank-1960-1979.npz",
+      "destination": "tests/heldout/data/units/random-dists/worldbank-1960-1979.npz",
+      "bytes": 212912,
+      "sha256": "07d7ea3dd25a2d0f6b30f80f36f7ff96ce05efc444630833b45fada43be41bfe",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/random-dists/worldbank-1980-1999.npz",
+      "destination": "tests/heldout/data/units/random-dists/worldbank-1980-1999.npz",
+      "bytes": 213312,
+      "sha256": "3da7086b5b178c1817eb5b4ffbfe75d38d68530add80e8385c50b00cbb580dd2",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/random-dists/worldbank-2000-2024.npz",
+      "destination": "tests/heldout/data/units/random-dists/worldbank-2000-2024.npz",
+      "bytes": 266712,
+      "sha256": "8210cdad5ea2009f0570660637a1dedefb6d714485156b301860e6b740afd0ca",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/strings-text/cpython-lib-group0.npy",
+      "destination": "tests/heldout/data/units/strings-text/cpython-lib-group0.npy",
+      "bytes": 96000128,
+      "sha256": "61260b4b3ca4c0a8d19af772f5cf0b6fa1d7e2aa38cfa710ddeca85ce44d97b0",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/strings-text/cpython-lib-group1.npy",
+      "destination": "tests/heldout/data/units/strings-text/cpython-lib-group1.npy",
+      "bytes": 92032128,
+      "sha256": "cad6466555e7bc32f77ebe3c63f0ce0b135f4324eaecec970cba7c4df20f49d9",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/strings-text/cpython-lib-group2.npy",
+      "destination": "tests/heldout/data/units/strings-text/cpython-lib-group2.npy",
+      "bytes": 93110848,
+      "sha256": "5a209075818ce9cc5c506c069f2ddec8d49013e21634ba781e83b5250fbaa906",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/strings-text/cpython-lib-group3.npy",
+      "destination": "tests/heldout/data/units/strings-text/cpython-lib-group3.npy",
+      "bytes": 96000128,
+      "sha256": "e891e03ee874f59df3c9fc1834edcc92bf02dcbdbb8ad0899e5965ee14e4afd4",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/genfromtxt-catalog/geonet-2005-2009.csv",
+      "destination": "tests/heldout/data/units/genfromtxt-catalog/geonet-2005-2009.csv",
+      "bytes": 12055792,
+      "sha256": "14d567ea8e84af106df369f0f80d10e972a76d479c73f870100815c183547539",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/genfromtxt-catalog/geonet-2010-2014.csv",
+      "destination": "tests/heldout/data/units/genfromtxt-catalog/geonet-2010-2014.csv",
+      "bytes": 13527364,
+      "sha256": "0f7d520c32df5cb239c5beefd6ce9bf43ddd324c0e8bce9d4b70addacc9b37ef",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/genfromtxt-catalog/geonet-2015-2019.csv",
+      "destination": "tests/heldout/data/units/genfromtxt-catalog/geonet-2015-2019.csv",
+      "bytes": 11571629,
+      "sha256": "c11f141b6d27b6aedff3ad75924eaf07bf82bac89512a0cf1b9d4de72dfd8f3e",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/genfromtxt-catalog/geonet-2020-2025.csv",
+      "destination": "tests/heldout/data/units/genfromtxt-catalog/geonet-2020-2025.csv",
+      "bytes": 11498311,
+      "sha256": "e7d094aa9b9bca250fa04e86695bc063af033501c38521c55cc7bfe6e64dddea",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part0.csv",
+      "destination": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part0.csv",
+      "bytes": 51707705,
+      "sha256": "df29cbed063e3043b078b6bbfd7a61c5c05c8441dee8a9a4b28bb09310d1a996",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part1.csv",
+      "destination": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part1.csv",
+      "bytes": 51977487,
+      "sha256": "259521899908d6abd825a47c65fdc1119969c190da0545fac76c5c4410b57d1e",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part2.csv",
+      "destination": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part2.csv",
+      "bytes": 52640181,
+      "sha256": "d37a5582a430b28f1df5fb0ad5b71ed9a6b343fc33d0458f669f9f9a348f879f",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part3.csv",
+      "destination": "tests/heldout/data/units/loadtxt-csv/gas-ethylene-co-part3.csv",
+      "bytes": 52412954,
+      "sha256": "9981789ba70c01b506f7bd72b4fbbfd0a801ce7cd33467e246abaa54b691c39e",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/datetime-iso/chicago-crimes-2010-2014-part0.npz",
+      "destination": "tests/heldout/data/units/datetime-iso/chicago-crimes-2010-2014-part0.npz",
+      "bytes": 100749150,
+      "sha256": "6ac026895e8bc5fc0d4ca2a9f3446aa01ae36bfcaa290c76a382cbcae1b75f99",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/datetime-iso/chicago-crimes-2010-2014-part1.npz",
+      "destination": "tests/heldout/data/units/datetime-iso/chicago-crimes-2010-2014-part1.npz",
+      "bytes": 100749150,
+      "sha256": "2f582b806881185a45d8088968ffeb6a17357053c48abaddfdd6aac942e58079",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/datetime-iso/chicago-crimes-2010-2014-part2.npz",
+      "destination": "tests/heldout/data/units/datetime-iso/chicago-crimes-2010-2014-part2.npz",
+      "bytes": 100749150,
+      "sha256": "95241067499fdc1a6e6163ac5652e7c38a092d5cbf5358693939d6a25a6502e4",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/datetime-iso/chicago-crimes-2015-2019-part0.npz",
+      "destination": "tests/heldout/data/units/datetime-iso/chicago-crimes-2015-2019-part0.npz",
+      "bytes": 81912702,
+      "sha256": "3668c599b952e04e47e9380ffba615ae19731a10862da77a265cfaad3fc60e9b",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/datetime-iso/chicago-crimes-2015-2019-part1.npz",
+      "destination": "tests/heldout/data/units/datetime-iso/chicago-crimes-2015-2019-part1.npz",
+      "bytes": 81912702,
+      "sha256": "75ea3a063e74df966fc1ea3f79fc3dbf76644d5ec2b3e325fa01c68ab6e38b58",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/datetime-iso/chicago-crimes-2015-2019-part2.npz",
+      "destination": "tests/heldout/data/units/datetime-iso/chicago-crimes-2015-2019-part2.npz",
+      "bytes": 81912702,
+      "sha256": "2304e8980eadb4c0f5eacbd611daf7d3fc731fc9a56f9397a807dbeecaa56843",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/float-format/ea-river-level-group0.npy",
+      "destination": "tests/heldout/data/units/float-format/ea-river-level-group0.npy",
+      "bytes": 1248008,
+      "sha256": "383d59c95947d56224cc22524cb5cbebc88ef7b0222d25a78f969e1f67d3367c",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/float-format/ea-river-level-group1.npy",
+      "destination": "tests/heldout/data/units/float-format/ea-river-level-group1.npy",
+      "bytes": 1220288,
+      "sha256": "8764ffba3edfb7d3c958b0a1c9fd588635a49053e013dc9b37aa9325e9ea0c1c",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/float-format/ea-river-level-group2.npy",
+      "destination": "tests/heldout/data/units/float-format/ea-river-level-group2.npy",
+      "bytes": 1118464,
+      "sha256": "1b56a70556f3696623c22a63ea24c1ad4f11fa52b72d3deeea2307d21b336212",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/float-format/ea-river-level-group3.npy",
+      "destination": "tests/heldout/data/units/float-format/ea-river-level-group3.npy",
+      "bytes": 1065656,
+      "sha256": "2f24d8934585a2c2e5bb75b1441d9edd8196dc71c63e443bd2645708554b83dd",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/float-format/uci-online-news-popularity.npy",
+      "destination": "tests/heldout/data/units/float-format/uci-online-news-popularity.npy",
+      "bytes": 9440128,
+      "sha256": "9781a7cfc6abc707dfa4b0856351e98be5b86639d55bd469755d24a09d71b0e6",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/data/units/float-format/uci-sgemm-runtimes.npy",
+      "destination": "tests/heldout/data/units/float-format/uci-sgemm-runtimes.npy",
+      "bytes": 7731328,
+      "sha256": "392adf03253910ade78c53525d87592eeb4b33e52f52901f5cb032e979fa5ef2",
+      "distribution": "lfs"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/d015cdc344204363cbc29d3d765136a05c6db1e40dd1e3c8ac301e4fb47013f2",
+      "destination": "tests/heldout/files/d015cdc344204363cbc29d3d765136a05c6db1e40dd1e3c8ac301e4fb47013f2",
+      "bytes": 2379,
+      "sha256": "d015cdc344204363cbc29d3d765136a05c6db1e40dd1e3c8ac301e4fb47013f2",
+      "distribution": "lfs"
+    }
+  ]
+}

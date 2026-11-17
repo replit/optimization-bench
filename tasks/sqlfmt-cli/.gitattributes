@@ -1,0 +1,14 @@
+# Input bytes are part of the workload, validated by hashes.
+environment/workload/inputs/** -text -whitespace
+# New protected membership metadata follows the private bodies into LFS.
+tests/heldout/native-*.json filter=lfs diff=lfs merge=lfs -text
+tests/fuzz/native/native-public-reference.bin filter=lfs diff=lfs merge=lfs -text
+environment/notices/* -text -whitespace
+tests/fuzz/native/notices/* -text -whitespace
+tests/fuzz/notices/* -text -whitespace linguist-vendored=true
+
+# Unmodified upstream license notices are vendored, not task implementation.
+environment/notices/*COPYRIGHT* linguist-vendored=true
+environment/notices/*COPYING linguist-vendored=true
+environment/notices/*LICENSE.TXT linguist-vendored=true
+tests/fuzz/native/notices/*-LICENSE linguist-vendored=true

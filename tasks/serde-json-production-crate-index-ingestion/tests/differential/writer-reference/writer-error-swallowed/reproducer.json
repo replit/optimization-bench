@@ -1,0 +1,132 @@
+{
+  "baseline": {
+    "exit_code": 0,
+    "output": {
+      "format": "optimbench-writer-observations-v1",
+      "observations": [
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::to_writer",
+          "written_hex": ""
+        },
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::to_writer_pretty",
+          "written_hex": ""
+        },
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::Serializer::new",
+          "written_hex": ""
+        },
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::Serializer::pretty",
+          "written_hex": ""
+        }
+      ]
+    },
+    "stderr_class": "empty"
+  },
+  "fresh_process_replay_matched": true,
+  "minimized_case": {
+    "error_kind": "PermissionDenied",
+    "fail_after": 0,
+    "mode": "error",
+    "value": {}
+  },
+  "mismatch_signature": [
+    [
+      "serde_json::to_writer",
+      "outcome"
+    ]
+  ],
+  "mutant": "writer-error-swallowed",
+  "mutant_observation": {
+    "exit_code": 0,
+    "output": {
+      "format": "optimbench-writer-observations-v1",
+      "observations": [
+        {
+          "outcome": {
+            "result": "ok",
+            "termination": "return"
+          },
+          "surface": "serde_json::to_writer",
+          "written_hex": ""
+        },
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::to_writer_pretty",
+          "written_hex": ""
+        },
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::Serializer::new",
+          "written_hex": ""
+        },
+        {
+          "outcome": {
+            "category": "Io",
+            "io_kind": "PermissionDenied",
+            "result": "error",
+            "termination": "return"
+          },
+          "surface": "serde_json::Serializer::pretty",
+          "written_hex": ""
+        }
+      ]
+    },
+    "stderr_class": "empty"
+  },
+  "original_case": {
+    "error_kind": "PermissionDenied",
+    "fail_after": 0,
+    "mode": "error",
+    "value": {
+      "array": [
+        null,
+        true,
+        2,
+        -0.0
+      ],
+      "object": {
+        "a": [],
+        "b": {},
+        "salt": "\n"
+      },
+      "text": "\u03bb\ud83d\ude42\\\"\nxx"
+    }
+  },
+  "seed": 1729
+}

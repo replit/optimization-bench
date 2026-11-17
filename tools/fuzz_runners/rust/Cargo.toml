@@ -1,0 +1,8 @@
+[package]
+name = "optimbench-fuzz-tools"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proptest = "=1.12.0"
+libfuzzer-sys = "=0.4.12"

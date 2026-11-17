@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "task": "black-project-format",
+  "files": [
+    {
+      "scope": "public",
+      "name": "environment/workload/inputs/files/b80177c55d82c34cb6a33ca9168a05bc2b60b0f2198f7af1e11785701af596b5",
+      "destination": "workload/inputs/files/b80177c55d82c34cb6a33ca9168a05bc2b60b0f2198f7af1e11785701af596b5",
+      "bytes": 262,
+      "sha256": "b80177c55d82c34cb6a33ca9168a05bc2b60b0f2198f7af1e11785701af596b5",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "96079efcefd1f9c345d9920d0705503678d24c4c7855f8beabfde25ded96c07f",
+      "destination": "workload/inputs/files/96079efcefd1f9c345d9920d0705503678d24c4c7855f8beabfde25ded96c07f",
+      "bytes": 282,
+      "sha256": "96079efcefd1f9c345d9920d0705503678d24c4c7855f8beabfde25ded96c07f",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "73c545f1b1d2e45c21014c2ca1fb79d823262d26aa98cd33181eb54adc145614",
+      "destination": "workload/inputs/files/73c545f1b1d2e45c21014c2ca1fb79d823262d26aa98cd33181eb54adc145614",
+      "bytes": 226,
+      "sha256": "73c545f1b1d2e45c21014c2ca1fb79d823262d26aa98cd33181eb54adc145614",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "data/empty",
+      "destination": "workload/inputs/data/empty",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "312916b7fdc92637a7219ed5c488122fe32a238a30bebc2d2166820c844473c6",
+      "destination": "workload/inputs/files/312916b7fdc92637a7219ed5c488122fe32a238a30bebc2d2166820c844473c6",
+      "bytes": 935658,
+      "sha256": "312916b7fdc92637a7219ed5c488122fe32a238a30bebc2d2166820c844473c6",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "755e9a56b94da74f31e626957188f05f85cd85d50a1d7a63d8903851434e9545",
+      "destination": "workload/inputs/files/755e9a56b94da74f31e626957188f05f85cd85d50a1d7a63d8903851434e9545",
+      "bytes": 494658,
+      "sha256": "755e9a56b94da74f31e626957188f05f85cd85d50a1d7a63d8903851434e9545",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "6fdee965b603663bea0009c7411b978003c84423c0becf89df96243a2bb2e963",
+      "destination": "workload/inputs/files/6fdee965b603663bea0009c7411b978003c84423c0becf89df96243a2bb2e963",
+      "bytes": 425807,
+      "sha256": "6fdee965b603663bea0009c7411b978003c84423c0becf89df96243a2bb2e963",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "44564e5d3e1f1adfb7dc032ff08716860d8efc401dcc7bd23a791474607cd791",
+      "destination": "workload/inputs/files/44564e5d3e1f1adfb7dc032ff08716860d8efc401dcc7bd23a791474607cd791",
+      "bytes": 582114,
+      "sha256": "44564e5d3e1f1adfb7dc032ff08716860d8efc401dcc7bd23a791474607cd791",
+      "distribution": "git"
+    }
+  ]
+}

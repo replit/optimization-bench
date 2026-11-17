@@ -1,0 +1,28 @@
+{
+  "build_argv": [
+    "docker",
+    "build",
+    "--build-arg",
+    "TASK_IMAGE=sha256:26160f935ba63787bb3704fa3b575684cb842bab670331c9a758af28b32319cd",
+    "-f",
+    "/root/optimbench/tools/fuzz_runners/images/python.Dockerfile",
+    "-t",
+    "optimbench:sqlglot-fuzz-instrumented",
+    "/tmp/fuzz-image-context-pxvpdn53"
+  ],
+  "build_log_sha256": "4b8277a61b85c33aa5a9b5dae7869625c4282604aad593904f92d305175b9323",
+  "dependency_locks": {
+    "go/go.sum": "b8ca4f829fbc76244f036300a051e26483b236c255183de966818bba748cac00",
+    "package-lock.json": "eacbd85321472ed9e2fd5cf7f5e72c57a23251f9676fbc259daecce2a4e863d9",
+    "python.lock": "dc572e581cd8e973e3beb29c4651b1438a77e9e63900a7861140e722fea8604f",
+    "rust/Cargo.lock": "5fd6511c13d3a968867cb42ae8329614f8550d3a02f365df70611b4ec0543842"
+  },
+  "exit_code": 1,
+  "language": "python",
+  "parent_primary_toolchain": "Python 3.14.6",
+  "parent_task_image": "sha256:26160f935ba63787bb3704fa3b575684cb842bab670331c9a758af28b32319cd",
+  "reason": "overlay build failed; inspect bound build log; do not change task toolchain implicitly",
+  "recipe_sha256": "692fef2986886fc1e81872730892c8b13dce10939562259c5608bd3c8d7f3b8a",
+  "schema": "optimbench-runner-image-v1",
+  "status": "unsupported"
+}

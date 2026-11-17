@@ -1,0 +1,11 @@
+# Test-only closure for SQLGlot's unmodified upstream suite (python -m unittest).
+# duckdb==1.5.6 is from the historical source lock. pandas, numpy, pytz and their
+# dependencies were resolved during the slim-format migration (2026-10-23) because
+# the qualified image recording them is unavailable. Not historical pins.
+duckdb==1.5.6 --hash=sha256:19c5e485e59613b8878d1670bcaa7a010f53c5a4da5ae8e08863e5e529ca6182
+numpy==2.5.4 --hash=sha256:d549420b8858885cea8838a727842249218b9c1da24dd517e25c9c7a948310a3
+pandas==3.1.0 --hash=sha256:e4455cdcc03e42c17233184e8e4ea65c3ed2925d8b1d9d7dd8e6fced3f6e43c1
+python-dateutil==3.0.0 --hash=sha256:3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd
+pytz==2026.5 --hash=sha256:e658af3757f9e26a9d25dd2aff38335acd92bc9104f890a894b2c1ba28311b03
+six==1.17.0 --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274
+tzdata==2026.5 --hash=sha256:b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac

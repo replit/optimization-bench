@@ -1,0 +1,53 @@
+{
+  "edition": "v1.3-alternates-draft",
+  "format": "optimbench-inputs-v1",
+  "splits": {
+    "heldout": [
+      {
+        "docs": [
+          {
+            "bytes": 839,
+            "expect_len": 289027,
+            "expect_sha": "497746b5635ceb79abb4c8828ddd848956c586d31f0bfece397d6313052265ab",
+            "path": "configured-private-projects-extended",
+            "sha256": "9198f972f90dbf3fb67c2f4209636e8a4e28c087df245ad6988ae82366e8a988"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "bytes": 762,
+            "expect_len": 148949,
+            "expect_sha": "06c958b8a543711ad5b5c4615490f8fc7637b7c299ed647f8c5a48cafa3e98d3",
+            "path": "project-autofix-evaluation",
+            "sha256": "7080c000a08174775238671aa6544fc22d3d09c57f1f7f61fcbc086ce451ca34"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "bytes": 1042,
+            "expect_len": 186447,
+            "expect_sha": "6dacac48211669ba468d09913d4b9144722f69397de375b12d8f8828e63302c1",
+            "path": "project-snowflake-evaluation",
+            "sha256": "4943d6d64fad772b3d466527f543472e676bade7acaff97d675803c042944ab3"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "bytes": 441,
+            "expect_len": 4276312,
+            "expect_sha": "b7400f27bf9b78321f0f937480c1d63293a822042d10226aa453a617e87a1ec8",
+            "path": "project-syntax-tree-evaluation",
+            "sha256": "643190c6b39ac1475f9adf84ccb4a228205e40950142142ed8f0edd3475a223d"
+          }
+        ]
+      }
+    ]
+  },
+  "task": "sqlfluff-project-lint"
+}

@@ -1,0 +1,325 @@
+{
+  "current_files_sha256": {
+    "environment/.dockerignore": "7005035559143cd2bd47bc85eb46c85fce7ad7faea64763b371bde62c08ddb02",
+    "environment/Dockerfile": "4dcb9fb6943a1308d222588baa0dfd048b69dacfb7957530df00ba7628703a05",
+    "environment/README.md": "69f1758a6844b677918a2b275f302adbff94d8de3a1ab5fb881b3030af81c90b",
+    "environment/notices/DISTRIBUTION.md": "c8fd272553c9822be5c6267462cb9aa767e4b331ae482668a5ced2d3c55ff6c7",
+    "environment/notices/autofix/origin-1/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+    "environment/notices/autofix/origin-1/LICENSE-MIT": "dba6414810a29622b35375e48932390fa3e43aa7fa65a3a8a3fdc457cfcc2d09",
+    "environment/notices/autofix/origin-2/LICENSE": "1729d66741c5844f47962f91838bae897aa23d7e08272f5f012fca576288fafb",
+    "environment/payload-public.json": "146091649c6e3b633c24a8f73d2781104bb8e94d7dbf0ed9a243dcc58d1d9759",
+    "environment/payload_check.py": "c471a0e41c35fc0c0ec609489d3de301130ae60203b9dab6d270aa345e22ee24",
+    "environment/prepare.py": "b102fd36d013f24eada8a592f3e2f647955e8730a579ffd31637335fb0d60ef7",
+    "environment/pristine-files.lock.json": "814bdd53520babfaddd3a10d07b08408b8537ca0cb0e76167cadd47f232b2ebf",
+    "environment/public-workloads.lock.json": "fa949760f076743bf2a8dbf565f300f0a0718f68eea1645dcb3897e9b2199e85",
+    "environment/requirements.lock": "4c7435428d22e2012b4d6852f99f6f2ff30c66ecdc3ff8f2dda97ba2a5fb54ef",
+    "environment/source.lock.json": "6929b53f178676a43605d8641bc83f11ee8a97d4e07f4cb006b6bca63918d7a6",
+    "environment/workload/build.sh": "57fbb955454180bb4247f199a7cfe5a676ddf3c7efa0b85a72d140ed42a27aea",
+    "environment/workload/driver/alternate-assets/409ce7f815e6b76138fcde5298b6b6c89858d234f4cda0a2df6c4f3eb5ae1aa5": "409ce7f815e6b76138fcde5298b6b6c89858d234f4cda0a2df6c4f3eb5ae1aa5",
+    "environment/workload/driver/alternate-assets/508783bf9523b229fc925e0ae6ea29bd92f5e6ee5ca2aa25ff1b4d9887036332": "508783bf9523b229fc925e0ae6ea29bd92f5e6ee5ca2aa25ff1b4d9887036332",
+    "environment/workload/driver/alternate-assets/c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "environment/workload/driver/alternates.py": "c810f56d839e0b1627e7eba4eec50a4e285d02d7ddca80d96128bcd2f5d9da9e",
+    "environment/workload/driver/autofix.cfg": "991a1338f5d987c5c9d24053ab304fcc7fc8366674fe12b018226fd4042ff996",
+    "environment/workload/driver/autofix.py": "18edf602ece11eb0fdf7aaa3da6c6382f14c4f02fcd432b4a364d0a6910b17d9",
+    "environment/workload/driver/export_tree.py": "f0a36ed0042de114018f861d084a32d16a1858b6d496510b2b5f59bf0861d19b",
+    "environment/workload/driver/test_autofix_contract.py": "b1628299b4cb00db08dee1ff16fc13de84b382cea1dfa189d98a76197640067e",
+    "environment/workload/guards/capture_autofix.py": "4256aedb595a7a8fcc6e1a474c071e7d3c5f5c2d39854ccd02a4394575f3427e",
+    "environment/workload/runner.py": "78720e32703d9d24624d81f1ebe260c2a40e871d830bd63d08ce6c839cdc76c6",
+    "environment/workload/task.py": "a18ffe896fc717aff3f9506760474611e438e347eaa9200ffad6a10a963c94c7",
+    "instruction.md": "79bd9d45d85faafd400d1ec48e8aac61e64ec90a2597e5493012615844a0ad93",
+    "release.json": "c4c2c187632a1b9b54d8fb7cd03bbf0f8a8a0d95d69f4be27dc90c8553b926e0",
+    "task.json": "bc314833c36a85c817d3b23e70f0385b40bd42f13cbd41f111b63a460b7fe5b9",
+    "task.toml": "38e2bf12db2cd507c28c6e66ed65a7f5c5da3f2356dd4031b90920a7ca622751",
+    "tests/Dockerfile": "1b5a1edd27a048c800a0ba99f6f3c98ac245282c5bb53ddefb3d341fae98b5a5",
+    "tests/README.md": "2696658b1cccf98853900bd40e09db740f06b6526c2ca3c04f4dddaa8d07412b",
+    "tests/differential/generate.py": "b476531b3718ba1442a899cc9dc1738dba104ac3b2141a39ba17b7b9c7b2dc4f",
+    "tests/differential/run.py": "7de7fbcac5953ff1538ef19476dbc02583ee816270872252c8a43ca77b32a04c",
+    "tests/fuzz/README.md": "e26c3d89ef2895d12b4d444a59d287be0f691c3263991083dfa6085af8e64bbd",
+    "tests/fuzz/adapter.json": "b7e2c5349f4681a2f2f107099d3caf3ab1c2d7bf2dbc1cff515a7381af634cf0",
+    "tests/fuzz/adapter.py": "8dffb60f10a0d6898c1e04dbb0149974446b99062268aa7e1a0a5cd97da50cb7",
+    "tests/fuzz/bind_surface.py": "9b8a928ece1f1329c2d1a39d36d3ef50018173bcc1b5e447dbe3f5157d0b3279",
+    "tests/fuzz/driver.py": "537ae0f9ade311f8457be3077291dcb91f16d566bf6a2d50800d944dd5f367f2",
+    "tests/fuzz/driver_smoke.py": "1a3ceab5692615c0c04a59799b9bdac800dc4c77655a40a98f0a6f24b4924130",
+    "tests/fuzz/inventory.py": "c4a80b8ee259ddd57a7005b484d6bb9f9a17d6b41a0b458e8a49ab6cfe0ba068",
+    "tests/fuzz/public-scope.json": "2b6aed1e003d64e1594f74d032b712b9c72fbd6857c2ba5fe39578656f8f12ca",
+    "tests/fuzz/rc-api-contracts.json": "df78dad4ea871abce1de4df420d410421f0ef4dbbd49c2a3bd9efafc6e597301",
+    "tests/fuzz/rc_api_cases.py": "a073b034f9c763ed20b07e35c94b91666bc0e4cdb69383986afdb03e9b409814",
+    "tests/fuzz/rc_api_facts.py": "248de97961592afb9cfb70f6e6add7df02892822ef77596e875dbe0afbd1dd39",
+    "tests/fuzz/rc_api_worker.py": "9e5d526a1127609d5169f9916066089f41c9e67e77bedacf5b5a6ec6fde82584",
+    "tests/fuzz/rc_cli.py": "0324ecea9e92d3e914fc67bd32b157f50ca1c609f0d453869c10fe716d715c78",
+    "tests/fuzz/rc_driver.py": "2d9f1b41a4c95ffb13139fd8f9154d42c3a3e13562e7f017bcf36e38af73e08d",
+    "tests/fuzz/rc_hooks.py": "596d3b01c9f62944e451c197450919446897f2fb7e28a74f6054398247e13859",
+    "tests/fuzz/rc_replay.py": "bc926839c8f9a5b64473462b1b6265bb8e2b212c12d5426c94a150f59cb4c9ab",
+    "tests/fuzz/surface.json": "57fa3ae58a6da05ed751c9692ce7ccf9b2592242b0114b21ccc50d1a0968b251",
+    "tests/fuzz/test_adapter.py": "247bd1e8759b5b1298110ed7abf36fe8c54ca03ab764dcf6f190e5e537751393",
+    "tests/fuzz/test_rc_api.py": "6b382843ef9477cb6223b028f9cd014995cace5964cdf0741f57a7c84e79e862",
+    "tests/fuzz/test_rc_driver.py": "b1ab1fde17fb3372c3444034c7b1df5c7747d83c664e69c31b2b267555e0599c",
+    "tests/fuzz/test_rc_registrations.py": "be7e0c95a6569a1f77cf51f947f9f6a05d2a6b00c2bb4fc0d14a54a4cfc74158",
+    "tests/heldout.lock.json": "0e5f0a43669d4da0163c5eb2a7d2ce8a3bef9fd5d2add03dfb1389530b2dcd4d",
+    "tests/heldout/alternate-sources.json": "0df714c37d493ac286de951157c6fea35e5ac7bc9c39cc4aa2b1960e20ac2188",
+    "tests/heldout/autofix-sources.json": "dce7e4c51c5c399f5f85d5835354415c19aba8aea099f165f146228a04c4087f",
+    "tests/heldout/expected/autofix-v1.json": "06c958b8a543711ad5b5c4615490f8fc7637b7c299ed647f8c5a48cafa3e98d3",
+    "tests/heldout/expected/configured-private-projects-extended.out": "497746b5635ceb79abb4c8828ddd848956c586d31f0bfece397d6313052265ab",
+    "tests/heldout/expected/snowflake-v1.json": "6dacac48211669ba468d09913d4b9144722f69397de375b12d8f8828e63302c1",
+    "tests/heldout/expected/syntax-tree-v1.json": "b7400f27bf9b78321f0f937480c1d63293a822042d10226aa453a617e87a1ec8",
+    "tests/heldout/files/4943d6d64fad772b3d466527f543472e676bade7acaff97d675803c042944ab3": "4943d6d64fad772b3d466527f543472e676bade7acaff97d675803c042944ab3",
+    "tests/heldout/files/643190c6b39ac1475f9adf84ccb4a228205e40950142142ed8f0edd3475a223d": "643190c6b39ac1475f9adf84ccb4a228205e40950142142ed8f0edd3475a223d",
+    "tests/heldout/files/7080c000a08174775238671aa6544fc22d3d09c57f1f7f61fcbc086ce451ca34": "7080c000a08174775238671aa6544fc22d3d09c57f1f7f61fcbc086ce451ca34",
+    "tests/heldout/files/9198f972f90dbf3fb67c2f4209636e8a4e28c087df245ad6988ae82366e8a988": "9198f972f90dbf3fb67c2f4209636e8a4e28c087df245ad6988ae82366e8a988",
+    "tests/heldout/inputs.lock.json": "2564fcdb1ebb89691412017d9de5a72923be2e4f01a615f1a5498bbbb675c8b2",
+    "tests/heldout/manifest.json": "c7c3b7708fc407325e93c5d6ec134ceefda92e0b26e9c18a301cd336bf0752c5",
+    "tests/heldout/projects/autofix-evaluation/origin-1/LICENSE": "a3ce61e0031bdcad1024b1bf50ded2359602160f00e0cac8e509752273df6179",
+    "tests/heldout/projects/autofix-evaluation/origin-1/pgmq-extension/sql/pgmq--0.14.3--0.15.0.sql": "7031878a87ca72debaf538152149d2101b2c5f2b077a949d178cb23acd2c848a",
+    "tests/heldout/projects/autofix-evaluation/origin-1/pgmq-extension/sql/pgmq--0.24.0--0.25.0.sql": "67362cd81899c9c64b7e712fd473275d1ad6cf0126e2c4bb13e23f63e6abd53c",
+    "tests/heldout/projects/autofix-evaluation/origin-1/pgmq-extension/sql/pgmq--0.25.0--0.26.0.sql": "6c0035971f16fa25858c44251d3bf850e745f67fa9adad5399b79606e65e02e1",
+    "tests/heldout/projects/autofix-evaluation/origin-1/pgmq-extension/sql/pgmq--1.5.0--1.5.1.sql": "28c25b057b60148ecd8a578d5cb764ae3075c48b3df516d98f2afea9ed4cb1af",
+    "tests/heldout/projects/autofix-evaluation/origin-1/pgmq-extension/sql/pgmq--1.5.2--1.6.0.sql": "da0c8a9a778c92071deecd9dc61b5e10fc2185fc49743948eb145adc71be4757",
+    "tests/heldout/projects/autofix-evaluation/origin-1/pgmq-extension/test/sql/security_search_path.sql": "80c5dd628dc7415d6f2a7c37bc5b31812c763284b436bad273cad25f61bfb5f1",
+    "tests/heldout/projects/autofix-evaluation/origin-2/LICENSE": "9b78bbb5a12f0e1928691f09604c788f8b8b4db59cdb82f9924679cf9beae5d2",
+    "tests/heldout/projects/autofix-evaluation/origin-2/test/sql/bigint_is_string.sql": "4805c8d34e82a18c99d908a858328a29502c709f423402b254e6ffe207e53db6",
+    "tests/heldout/projects/autofix-evaluation/origin-2/test/sql/function_calls_default_args.sql": "a18e53bba66571cd410a61de7e273cf6dcdf8ac1b50cdebf4a37a66b7cd2a3e7",
+    "tests/heldout/projects/autofix-evaluation/origin-2/test/sql/function_return_row_is_selectable.sql": "cbc35d41e059288cce5f52f48efcc2540b0a4d405ef17f4e465c12e8ca4ce6be",
+    "tests/heldout/projects/autofix-evaluation/origin-2/test/sql/inflection_fields.sql": "a3e81ec55265b8a7947e096b5d44ada38e271387907e91427ddd5d8fa2b76aec",
+    "tests/heldout/projects/autofix-evaluation/origin-2/test/sql/page_info.sql": "391e09bd9d2775875494b559304ebca2dccc9c406d4f82ff35f139f2e30c3b3c",
+    "tests/heldout/projects/autofix-evaluation/origin-2/test/sql/type_bigfloat.sql": "8e3cec58e544820a5dbcbfd7e42f6fdd8372ba170926ca111a9092487ae0ec90",
+    "tests/heldout/projects/mimic-bigquery/.sqlfluff": "fb5e9f62caaea3273ac20475543d055f088b43a73086d2f1340e84dfe2139991",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/comorbidity/charlson.sql": "1a6d13edbef12fad4deec3748d5ac903357233fdcf2ca4bd183db257ca915fb2",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/demographics/age.sql": "b91101e98437f96ffdf7b9136a4506ab6a790b1f63572ffcd14c31a28ee273d6",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/demographics/icustay_detail.sql": "35103cee621ed025d266e6c4c59916515ad2ecf59e6b1f1962bff5821e463cd8",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/demographics/icustay_hourly.sql": "6e20f8fba635f25708b29b48f926c4bd68da691bfae66a04fba394593c8c1f28",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/demographics/icustay_times.sql": "a26457b40e30eb4d6dbd98809ab0a39044d014806554c3f2c065262d6cb14bcc",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/demographics/weight_durations.sql": "82e23dd4ac6d0dc316438d08ee3f5edab2c4ca0f6535c23b3ab40eb7cafcd795",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_bg.sql": "3c2ff855bc1fea224d78c50e5905f652e100d75857ef9cf909be8fc10e92a352",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_bg_art.sql": "f3ef6de5f9b071736c19bc27eedeb2509173d9084019ced555ac8dc882683fac",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_gcs.sql": "ebbabc9c407dcea8acc5363636ee6218723192aa6122e49e2e4d553ce958a4a5",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_height.sql": "4ac0656fe4336995f39871093a445b2b46df86dda3d81ff791575bc4d3a98352",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_lab.sql": "bf7b2828579565b923b9c132a3e0c3ec66ee61abf69b0f1c27b034039e72a0cf",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_rrt.sql": "24b7035b85822139f5b7ab952598ff2dcd35067040dd23c239e6db81ce43c859",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_sofa.sql": "e56ae4c67d7b19bf8d47f262011bcd888bdb04160b1e9ce744423243b867892e",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_urine_output.sql": "2ddae1a9d4d0040bedbbb24b552576375f8aa4311e7c9b7ee2603227c5502f11",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_vitalsign.sql": "f85ecb807cbd23090b41f02af2253cf2e46ba8d50e8734fb2577be3a4b9af700",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/firstday/first_day_weight.sql": "be5dbedf07b372ebb5e57f9a8004beaa988ac347e73822b72aedba34af3b69a3",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/bg.sql": "90a7f58852b5af97cfce799e9e76a9754c765e2fb9593860ca6bf85b60a5cd55",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/blood_differential.sql": "a93f21dfb29e00b1450fabff5572830a2a5930f1229dbe43f816dd1b8b8235f1",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/cardiac_marker.sql": "a8e02e5df6089cb4c26cf7c5779a999cf20b5708071f5ae113b570b5f1ac7b36",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/chemistry.sql": "b674ae2e12fe859c44850a5e8268f3a18ccb934fb9f0ab47112af0c346364d70",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/coagulation.sql": "d6f9ba24d8872e3eaed92707522dd2f24a51f879dd77feebe25ee9c6b08225dc",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/complete_blood_count.sql": "8eb94ba8891e0effa66c7a62c76e648d9f42e8941f97f052c92a0823434bae92",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/creatinine_baseline.sql": "3ca2e029f27025df7c96b5364e4bc7acf7165510340160f9f32406a3e838cdda",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/enzyme.sql": "5c719b94ec9947366f4eb191687e12f2b80931764272c3c6988506ef716647cd",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/gcs.sql": "77d14660a8322928069c049cd1aa28eb8f356b7751f73eba2625358266f3039e",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/height.sql": "9b024d54f770b9a8e1f1ac0afe84fe5918295155eaa95872a849ef112c76d492",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/icp.sql": "d7a6ad8f8c455f2f177c26749a0fbf80d000e652dfda276b9782fa7dcd99f62c",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/inflammation.sql": "88b7cc933d2832aed284a489ee67a3a156e67365c96e60706fb6eb6c537590c9",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/oxygen_delivery.sql": "b3c9df45c64ac7364e98c8eba0ebf233dc153ffecdc8ad23bb4b9cea53bd2752",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/rhythm.sql": "97a4b14b1d493605f91ce7587e05fdf0990e1ba1cdfe5562d2e522996219517d",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/urine_output.sql": "51de17db6f24817d1c442654f01b2423e49001738682c0b9d2d6025a3407301a",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/urine_output_rate.sql": "2a94ace1b31094d311b32ae3256eeba0ed6ff000fb57fe30b9917de89db5d7ff",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/ventilator_setting.sql": "80ac2b4bde1d4e8324f1818bd36c453fe0b70b2e90e228762ecfe65fcc757708",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/measurement/vitalsign.sql": "9a618fb7f6bf74ed1571e08088b09d1f27a8ccf8b1054082a94270cde456ab0d",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/acei.sql": "6a5ec32282f6e5207d33818b689fb1c52d41c075f36a0dbc6eeb135afb510110",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/antibiotic.sql": "300816a74a070b2dffe6c5aa982e8103c46080fa5ed98cf5fffd36a245b24be2",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/arb.sql": "e24b91d1ecf8eaef598129b7e9cf14e21b2ff27491407c08fbb07efab9b35d97",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/dobutamine.sql": "7b74249ebca27705ed5e31de753189c60a27e002a50c29745ff0bffee6e27ad5",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/dopamine.sql": "4809121abcd1bd3d827a3025b7427f959dc99a53bbbee7dbe109c957145ff74d",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/epinephrine.sql": "97c1c3cf8c549fb7546c85c7a66902911cc217fd39fd29b3a15070e83d6a2e5a",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/milrinone.sql": "5ff338dcfd6d66733ae2a543bf6180a635518772bc9ea88591552df86a00794e",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/neuroblock.sql": "1e42f6d1f894f593eb315ab1f876ca4777892c65f89113a768c7e003db3ac19f",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/norepinephrine.sql": "4972b33d3dce3aa0f8626f790b19d4cff033436e0910845f795c7e2a55ec1d28",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/norepinephrine_equivalent_dose.sql": "b4c4840d06b079344194eb038bb295b009ddd2ad630b57c5a5dbbb03e7cef11c",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/nsaid.sql": "5289cf2b0e5c6e1f05030c843560ad36c10c03303492d5cadf60acace92aeccc",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/phenylephrine.sql": "173331e5ad8a011e4c9d24faae342ad3a1de5e645879210715885d099c6032a3",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/vasoactive_agent.sql": "7c8fd57ead83e4b8edf3867204b23fac3d06c141bc8ada8be8fa6513dab1b390",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/medication/vasopressin.sql": "13a5e11dd3a4275ffc64dc4f588c04773f6439889fabb2791a2f23edbed2e43b",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/organfailure/kdigo_creatinine.sql": "a7daeaf1c58c6f3b6a3f6fb0e8b7623e1b922123451ee485cc93bb4beb8b30b4",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/organfailure/kdigo_stages.sql": "ecfa0c8c343d3d210a4bf1d59882d83472f4ad02001ae87a605a3695be262d55",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/organfailure/kdigo_uo.sql": "7b4e012a2dc3c1c50f080372edc003aec5f7d3388a3a4d788d4b3cd89c71d2d2",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/organfailure/meld.sql": "a7ce07eb899fcdcf5fc6e2f2200adcc0af320767acc404c7a13a6bf5de919679",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/score/apsiii.sql": "9692a6342940d7c2f885a67db72fc18ce38eab174c4e360a3fe82262d03085c0",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/score/lods.sql": "97d645d39862837b29872571121c3581107ff12cd1f0e6d6217548088e3f410d",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/score/oasis.sql": "7b5082e8e66df40a95590567ab4dad7ef28e44d4a0be7b921d02186c6616a19e",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/score/sapsii.sql": "a7f474712fd8e8e68b7293d1e70e7f42b19fe2712c9c8a8b14149a20a1f52df7",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/score/sirs.sql": "5f2ec6dab9e0bd26c8e5873e19442717616b1287eefc3de60b5fda0da557e9b8",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/score/sofa.sql": "a2dcdfa54c7d981c6846e9afdc8492656cfa8aa85137033becec8ac5dc8c1099",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/sepsis/sepsis3.sql": "1d06e0efed85220c8a9cfd27ee9ee50e4dfbbe7a4975a7d2f7af72a92766692a",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/sepsis/suspicion_of_infection.sql": "2347c2101df9cddbdb1a280bcb8a39f9186c95126e2cf00cbe3e94b7fa3efac8",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/treatment/code_status.sql": "b8c92ff0d4c724ab2f5c069735aa5c0b5608842f1450da933190c5bc38ecca67",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/treatment/crrt.sql": "6fffa92ab889ef5701d0bce0f246eef67e64adb2714cb95f2fd466183d6bd17a",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/treatment/invasive_line.sql": "61c8d3a30219a7d5e3380b3375b0ae595d524b280f1a69f24dcdb3e5a1fe2f7c",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/treatment/rrt.sql": "9b0b11a15f442b402701424a83229df0ee03a9225fc267d27faa4cc2d3089f8b",
+    "tests/heldout/projects/mimic-bigquery/mimic-iv/concepts/treatment/ventilation.sql": "8d7ce56f2d71c8aab18625c7af03c7324cdabfd87c8a431077d755672909a2b2",
+    "tests/heldout/projects/pagila-schema/.sqlfluff": "c2c342ca97c510ee13cf75ba0976d794ebc293cf4d422e34c68956ad1e37c20a",
+    "tests/heldout/projects/pagila-schema/LICENSE.txt": "dcc10ac50b94172e627f7a5ec9c08f9e4568e6dd51a952f96ec09506f70163fb",
+    "tests/heldout/projects/pagila-schema/README.md": "46d477d73f97abc78774be5337fec7e00cbb53903bfa9f2bfd15a7cc3f127592",
+    "tests/heldout/projects/pagila-schema/pagila-schema.sql": "071ee940a73c8f4fad2997185788065291607e2c55559e3747959e8275391536",
+    "tests/heldout/projects/snowflake-evaluation/samples/ML Powered Functions/June 2023 MLPF Demos.sql": "c16b3f619dfb37e77c0598e229a90c36c937592091c4dc7ae5f060978ba9c6ca",
+    "tests/heldout/projects/snowflake-evaluation/samples/geospatial/Python UDFs/JS_CLOSESTPOINT.sql": "96e13989470bfca8e670fb2815918e1fa1fb3b1f332f64d2c25c8ebc97f66f36",
+    "tests/heldout/projects/snowflake-evaluation/samples/marketing-idr-solution/engine/sql/procedures/01_sp_extract_identifiers.sql": "65a2490732702c014b8ba9ea161ac7197c4baf95ede109b4f1fad935c49f458e",
+    "tests/heldout/projects/snowflake-evaluation/samples/marketing-idr-solution/use-cases/martech/sql/procedures/sp_ml_score_candidates.sql": "bfedddb6c8fa4b1f98bb6a42eaa0f63486bb1bed73a2d321fd95815502a28ed9",
+    "tests/heldout/projects/snowflake-evaluation/samples/marketing-idr-solution/use-cases/martech/sql/procedures/sp_run_household_matching.sql": "6582433cdde650d3121db3a087b0f0679c39792ac09b5607a2f92adf2af56932",
+    "tests/heldout/projects/snowflake-evaluation/samples/meta-capi-pipeline/sql/00_discovery/pipeline_config.sql": "7b58d257a676506ac94a1da241d6f82381adf155cd1a40e7c8945aca91e04186",
+    "tests/heldout/projects/snowflake-evaluation/samples/sap_accounts_receivable_dbt/macros/sap_lookup_table.sql": "71e25f568b476abbc8f87a1c1f6ac6d418b517acd709e71c374353fdeb7a1608",
+    "tests/heldout/projects/snowflake-evaluation/samples/tasty_bytes/FY25_Zero_To_Snowflake/tb_geospatial.sql": "2aa11b93b29f157d6a4009e096527597f4bc6bd798446b1ccea639a27be6ddae",
+    "tests/heldout/projects/stripe-postgres/.sqlfluff": "01dd313b8ad015e4157a21923c90728e0f8fb1d808e2076f680dacc8643ac1c8",
+    "tests/heldout/projects/stripe-postgres/internal/queries/queries.sql": "1a75037834aa2661a9fc215a3f5bbb7ad24f2c04ac666e57dfd88b879557d08a",
+    "tests/heldout/projects/syntax-tree-evaluation/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "tests/heldout/projects/syntax-tree-evaluation/views/audit/bigquery_audit_logs_v1.sql": "ad3e000d3463bd406aca6d2590f7ce9c0d4d89fa29278a9a468ad1547b3e0d98",
+    "tests/heldout/projects/syntax-tree-evaluation/views/audit/bigquery_audit_logs_v2.sql": "8fb0a74b2269550d373fb8f488f7221b840337ce4f8f83912585b36ba7239ea1",
+    "tests/heldout/projects/syntax-tree-evaluation/views/audit/bigquery_script_logs_v2.sql": "87a60b95ab260b81cab9849107f51dfad7c2534aebac274c44d8f06d0830b43f",
+    "tests/heldout/projects/syntax-tree-evaluation/views/audit/query_audit.sql": "dacbebbd8da520e63b7f1a17923b67a70c1ea1b202b749f1059736e856e32795",
+    "tests/judge.json": "3bc4c3fb8eb2a66c61f3f4a91d51aafc042a60c08e7ab6758eb785be9a2d7f8f",
+    "tests/notices/README.md": "79ebf224f2eb561951140427ecf43f493e23b010aa7681555c10dfea052ede17",
+    "tests/notices/heldout-projects/mimic-bigquery/LICENSE": "fa5b4187cc5da20dc4f27d76d59c8507d1389a76559b5f56ab48a222d1eb3bb5",
+    "tests/notices/heldout-projects/stripe-postgres/LICENSE.md": "1455a85fbefe02b34ae5fa21ce00a2eef3436ef46c33fb5540f985e6ec252f2a",
+    "tests/test.sh": "4a3ad011ab9ab1260aba61d2fcee039716732c59a00dea41485f8feda31d73ad",
+    "tests/upstream-expectations.json": "68cba7319fe8e84ed7e51db182975edf1b6a087c34f2f35863735cc2f887d663"
+  },
+  "heldout": {
+    "edition": "v1.1-extended",
+    "independent_pristine_reference_runs": 2,
+    "licenses": "RESEARCH.md, tests/notices/ and the original per-project license files",
+    "note": "Independently selected from the pinned public upstream revisions listed in sources; the held-out bodies ship in this repository through Git LFS under tests/heldout/.",
+    "original_bytes_preserved": true,
+    "provenance": "built-new",
+    "selection": "tests/heldout/manifest.json and tests/heldout/inputs.lock.json",
+    "sources": [
+      {
+        "archive_sha256": "7c15d74c345586ba4827b8810fb206557152debe3a772a4252a1914c2cd75a22",
+        "archive_url": "https://codeload.github.com/MIT-LCP/mimic-code/tar.gz/303d26c623dcc9c49cc0f204468d4acc2f063797",
+        "commit": "303d26c623dcc9c49cc0f204468d4acc2f063797",
+        "license": "MIT",
+        "name": "mimic-code",
+        "repository": "https://github.com/MIT-LCP/mimic-code"
+      },
+      {
+        "archive_sha256": "09379e6afbfaf3a10d42be6d14f8362300425595256998dfaec925793b3b5fc5",
+        "archive_url": "https://codeload.github.com/stripe/pg-schema-diff/tar.gz/9ada4710c28718312557c84cca1be4b2557eed54",
+        "commit": "9ada4710c28718312557c84cca1be4b2557eed54",
+        "license": "MIT",
+        "name": "pg-schema-diff",
+        "repository": "https://github.com/stripe/pg-schema-diff"
+      },
+      {
+        "archive_sha256": "dedc1b7cb5f9a9c3df0ccff6e250bfbfcbf125e4b78ae92308941be2c5f232c2",
+        "archive_url": "https://codeload.github.com/devrimgunduz/pagila/tar.gz/ce6e114236bb828e5ec0dc835f65f1bf1b9179f5",
+        "commit": "ce6e114236bb828e5ec0dc835f65f1bf1b9179f5",
+        "license": "PostgreSQL",
+        "name": "pagila-schema",
+        "repository": "https://github.com/devrimgunduz/pagila",
+        "scope": "Original Pagila PostgreSQL schema, no seed data or database execution"
+      }
+    ]
+  },
+  "public_input_distribution": {
+    "git": 8946,
+    "upstream": 0,
+    "operator": 0,
+    "repo-lfs": 0,
+    "upstream_urls": []
+  },
+  "sources": "environment/source.lock.json and environment/public-workloads.lock.json",
+  "task": "sqlfluff-project-lint",
+  "v1.1_extension": {
+    "comparator": "exact bytes, unchanged per stage",
+    "library_source_unchanged": true,
+    "research": "RESEARCH.md",
+    "third_project_source_pins": [
+      {
+        "archive_sha256": "27cb12461fcc49bc4fa0642bd47e3d6f2b01d7deb0720d59c652521555963a20",
+        "archive_url": "https://codeload.github.com/dbt-labs/jaffle-shop-classic/tar.gz/fd7bfacae4f497ff044a6a0275268676bf1b64c3",
+        "commit": "fd7bfacae4f497ff044a6a0275268676bf1b64c3",
+        "dialect": "postgres",
+        "files": {
+          "LICENSE": {
+            "bytes": 11357,
+            "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+          },
+          "README.md": {
+            "bytes": 4568,
+            "sha256": "d8bda98bd6b9c21a69ba0b6aa598cd63800185565357656bf4f14bc6fb03cbec"
+          },
+          "dbt_project.yml": {
+            "bytes": 422,
+            "sha256": "62d00befbc5f4d2f924a497881d34a28b09af1c2da697396da61c144cb048ae7"
+          },
+          "models/customers.sql": {
+            "bytes": 1195,
+            "sha256": "455b90a31f418ae776213ad9932c7cb72d19a5269a8c722bd9f4e44957313ce8"
+          },
+          "models/orders.sql": {
+            "bytes": 970,
+            "sha256": "53950235d8e29690d259e95ee49bda6a5b7911b44c739b738a646dc6014bcfcd"
+          },
+          "models/staging/stg_customers.sql": {
+            "bytes": 326,
+            "sha256": "6f18a29204dad1de6dbb0c288144c4990742e0a1e065c3b2a67b5f98334c22ba"
+          },
+          "models/staging/stg_orders.sql": {
+            "bytes": 349,
+            "sha256": "afffa9cbc57e5fd2cf5898ebf571d444a62c9d6d7929d8133d30567fb9a2ce97"
+          },
+          "models/staging/stg_payments.sql": {
+            "bytes": 442,
+            "sha256": "eb899938258d1fba27fca716a7c334119912a2f9601282026097a7b6ce8cfcd2"
+          }
+        },
+        "licenses": [
+          {
+            "path": "LICENSE",
+            "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+          }
+        ],
+        "models": [
+          "models/customers.sql",
+          "models/orders.sql",
+          "models/staging/stg_customers.sql",
+          "models/staging/stg_orders.sql",
+          "models/staging/stg_payments.sql"
+        ],
+        "project": "jaffle-shop-classic",
+        "repository": "dbt-labs/jaffle-shop-classic",
+        "scope": "Original SQL model subset using ref/source/config Jinja builtins; no dbt adapter, packages or database",
+        "split": "public"
+      },
+      {
+        "archive_sha256": "dedc1b7cb5f9a9c3df0ccff6e250bfbfcbf125e4b78ae92308941be2c5f232c2",
+        "archive_url": "https://codeload.github.com/devrimgunduz/pagila/tar.gz/ce6e114236bb828e5ec0dc835f65f1bf1b9179f5",
+        "commit": "ce6e114236bb828e5ec0dc835f65f1bf1b9179f5",
+        "dialect": "postgres",
+        "files": {
+          ".sqlfluff": {
+            "bytes": 67,
+            "provenance": "benchmark-authored protected workload configuration, not upstream SQL",
+            "sha256": "c2c342ca97c510ee13cf75ba0976d794ebc293cf4d422e34c68956ad1e37c20a"
+          },
+          "LICENSE.txt": {
+            "bytes": 988,
+            "sha256": "dcc10ac50b94172e627f7a5ec9c08f9e4568e6dd51a952f96ec09506f70163fb"
+          },
+          "README.md": {
+            "bytes": 32227,
+            "sha256": "46d477d73f97abc78774be5337fec7e00cbb53903bfa9f2bfd15a7cc3f127592"
+          },
+          "pagila-schema.sql": {
+            "bytes": 89841,
+            "sha256": "071ee940a73c8f4fad2997185788065291607e2c55559e3747959e8275391536"
+          }
+        },
+        "licenses": [
+          {
+            "path": "LICENSE.txt",
+            "sha256": "dcc10ac50b94172e627f7a5ec9c08f9e4568e6dd51a952f96ec09506f70163fb"
+          }
+        ],
+        "models": [
+          "pagila-schema.sql"
+        ],
+        "project": "pagila-schema",
+        "repository": "devrimgunduz/pagila",
+        "scope": "Original Pagila PostgreSQL schema, no seed data or database execution",
+        "split": "heldout"
+      }
+    ],
+    "timing_performed": false
+  }
+}

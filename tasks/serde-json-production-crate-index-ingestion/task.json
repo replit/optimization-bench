@@ -1,0 +1,41 @@
+{
+  "task_version": "1.0.0",
+  "code": "environment/workload/task.py",
+  "command": "sh /app/workload/build.sh /app/build && /app/build/run",
+  "contract": "Preserve full public serde_json APIs/features/errors/ownership and complete typed output. No new global state tuning unrelated to allowed parallelism,caches,dependency replacement or input/schema/config changes. Upstream identities/outcomes must be unchanged.",
+  "editable": "Only production Rust files under /app/serde-json/src. Tests,fixtures,snapshots,all manifests/locks,deps,driver and configuration protected.",
+  "example_count": 21206,
+  "families": {
+    "public": "20999 distinct complete histories, one resident unit, one call per file; geojson-typed: 207 complete GeoJSON FeatureCollections (736395237 bytes; Natural Earth layers plus a 15-17 significant-digit MLIT-derived group), one resident unit, one typed parse per file"
+  },
+  "id": "serde-json-production-crate-index-ingestion",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_visibility": "public_dev",
+  "job": "Two equally weighted timed units, each one long-lived process: a registry metadata service ingests 20,999 distinct complete crate histories through the crates-index typed parser and serializes every full typed result, and a GeoJSON service deserializes 207 complete FeatureCollections into a typed RFC 7946 schema through serde_json. Every complete result is materialized and compared.",
+  "language": "Rust",
+  "limits": "Registry unit: one registry schema; GeoJSON unit: Natural Earth layers plus an MLIT-derived group. No repeated inputs, padding or synthetic records; organizational families are disjoint across splits.",
+  "minimum_unit_seconds": 1.0,
+  "name": "serde_json",
+  "operations": [
+    "pre-read all distinct input bytes before ready stop (untimed)",
+    "Crate::from_slice including unchanged downstream dedup (timed)",
+    "complete serde_json serialization to owned memory and parsed-value drop (timed)",
+    "export and compare every complete structured result after result stop (untimed)",
+    "geojson-typed: pre-read all distinct GeoJSON bytes and touch pre-sized owned output buffers before ready stop (untimed)",
+    "geojson-typed: Deserializer::from_slice, typed RFC 7946 DeserializeSeed into owned flat buffer, end() per file (timed)",
+    "geojson-typed: export and compare every complete flat result (exact bytes: f64 bit patterns, strings, structure) after result stop (untimed)"
+  ],
+  "options": "Rust1.93.1 Release/defaultCPU/defaultallocator; actual downstream default features and serde_json std, no optional number/order/raw/depth feature toggles in timed workload.",
+  "outputs": "Every full typed JSON result; strict types/fields/array order/string/integer/bool/null equality. Ignore only object-key order and escape spelling. geojson-typed: every complete flat typed rendering, exact bytes (each coordinate's f64 bits, every property value, member order and nesting).",
+  "run_mode": "resident-process",
+  "source_bytes": 1073774126,
+  "source_identity": {
+    "archive_sha256": "d638770aea490d6b9b94b67fa14c3533778431a8715792b2fac80e7ca405d721",
+    "upstream_commit": "20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8"
+  },
+  "status": "qualification-in-progress",
+  "target_unit_seconds_fastest_gcp": 1.5,
+  "title": "Ingest Rust registry metadata and typed GeoJSON with serde_json",
+  "version": "1.1.0",
+  "heldout_readme_text": "Held-out inputs are fetch-only; verification downloads them from the pinned crates.io index (`registry-ingest`) and from 194 pinned geoBoundaries gbOpen GeoJSON files (`geojson-typed`), and authenticates them outside the repository. The six held-out `registry-ingest` expected outputs are not stored in Git or Git LFS: regenerate them with `tools/recover_serde_json_goldens.py` before scoring (see [the recovery guide](../../docs/serde-json-verifier-recovery.md)); they must match the SHA-256 commitments in `tests/heldout.lock.json`. crates.io index terms are summarized in [notices/CRATES-IO-INDEX.md](notices/CRATES-IO-INDEX.md); GeoJSON sources, licences and attribution for both splits are in [notices/GEOJSON-SOURCES.md](notices/GEOJSON-SOURCES.md)."
+}

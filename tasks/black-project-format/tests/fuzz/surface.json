@@ -1,0 +1,1023 @@
+{
+  "build_features": {
+    "blackd": "aiohttp dependency present; HTTP worker pending",
+    "native": "mypyc",
+    "notebook": "pinned image dependencies",
+    "runtime": "CPython 3.14.6"
+  },
+  "complete": false,
+  "contract_evidence": [
+    {
+      "path": "LICENSE",
+      "sha256": "9c0428f0c3b4779850cf5bd96e11aaa8afc72d4a86d4a36223d7aba2e58d6e00",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/LICENSE"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "b1d2dbc9eb9220d341dffb79d644c9f29b44dcf41d31edf8e2513a441ac4e6e2",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/pyproject.toml"
+    },
+    {
+      "path": "README.md",
+      "sha256": "97699d63ef95072bbbd1bcdf1768d33879e93f6279d6ef86a6c3a808555ab6e3",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/README.md"
+    },
+    {
+      "path": "docs/usage_and_configuration/the_basics.md",
+      "sha256": "542a4e31b08dd32fdbb1d9196889af3a1187e09fc3c41df88826aafaf907de7f",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/usage_and_configuration/the_basics.md"
+    },
+    {
+      "path": "docs/usage_and_configuration/black_as_a_server.md",
+      "sha256": "057b1d372d56e15bdbeecb70678c6ed21df67e8a24f972784027e9f52056fc89",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/usage_and_configuration/black_as_a_server.md"
+    },
+    {
+      "path": "docs/usage_and_configuration/file_collection_and_discovery.md",
+      "sha256": "84a37184dcacb261bcaf609dcfca3a40829270ebe05610a899a05f77f5247857",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/usage_and_configuration/file_collection_and_discovery.md"
+    },
+    {
+      "path": "docs/guides/using_black_with_jupyter_notebooks.md",
+      "sha256": "78748e752006bcae4798c0d2dcafca71fd2e2fe69bf688046010d011124eadd8",
+      "url": "https://github.com/psf/black/blob/87928e6d6761a4a6d22250e1fee5601b3998086e/docs/guides/using_black_with_jupyter_notebooks.md"
+    }
+  ],
+  "extractor": {
+    "report_sha256": null,
+    "status": "incomplete-corrected-extractor-dependency",
+    "version": null
+  },
+  "format": "optimbench-fuzz-surface-v1",
+  "source": {
+    "archive_sha256": "a4bba75d9fe04c23a5b0935e3cca7b5155dcbde11154fd4ecef69c3845dafd5a",
+    "commit": "87928e6d6761a4a6d22250e1fee5601b3998086e",
+    "public": true
+  },
+  "surfaces": [
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.format_str",
+      "option_family_ids": [
+        "format"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 1211,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.format_str"
+      ],
+      "reexport_origin": "black.format_str",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Name(id='str', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "src_contents",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='Mode', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "mode",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Collection', ctx=Load()), slice=Subscript(value=Name(id='tuple', ctx=Load()), slice=Tuple(elts=[Name(id='int', ctx=Load()), Name(id='int', ctx=Load())], ctx=Load()), ctx=Load()), ctx=Load())",
+            "kind": "keyword-only",
+            "name": "lines",
+            "required": false
+          }
+        ],
+        "return_annotation_ast": "Name(id='str', ctx=Load())"
+      },
+      "surface_id": "black.format_str",
+      "symbol_path": "black.format_str",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.format_file_contents",
+      "option_family_ids": [
+        "format"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 1102,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.format_file_contents"
+      ],
+      "reexport_origin": "black.format_file_contents",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Name(id='str', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "src_contents",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "fast",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='Mode', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "mode",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Collection', ctx=Load()), slice=Subscript(value=Name(id='tuple', ctx=Load()), slice=Tuple(elts=[Name(id='int', ctx=Load()), Name(id='int', ctx=Load())], ctx=Load()), ctx=Load()), ctx=Load())",
+            "kind": "keyword-only",
+            "name": "lines",
+            "required": false
+          }
+        ],
+        "return_annotation_ast": "Name(id='FileContent', ctx=Load())"
+      },
+      "surface_id": "black.format_file_contents",
+      "symbol_path": "black.format_file_contents",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.format_cell",
+      "option_family_ids": [
+        "cell"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 1130,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.format_cell"
+      ],
+      "reexport_origin": "black.format_cell",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Name(id='str', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "src",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "fast",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='Mode', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "mode",
+            "required": true
+          }
+        ],
+        "return_annotation_ast": "Name(id='str', ctx=Load())"
+      },
+      "surface_id": "black.format_cell",
+      "symbol_path": "black.format_cell",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.format_ipynb_string",
+      "option_family_ids": [
+        "notebook"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 1179,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.format_ipynb_string"
+      ],
+      "reexport_origin": "black.format_ipynb_string",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Name(id='str', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "src_contents",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "fast",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='Mode', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "mode",
+            "required": true
+          }
+        ],
+        "return_annotation_ast": "Name(id='FileContent', ctx=Load())"
+      },
+      "surface_id": "black.format_ipynb_string",
+      "symbol_path": "black.format_ipynb_string",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.format_file_in_place",
+      "option_family_ids": [
+        "filesystem"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 955,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.format_file_in_place"
+      ],
+      "reexport_origin": "black.format_file_in_place",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Name(id='Path', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "src",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "fast",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='Mode', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "mode",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='WriteBack', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "write_back",
+            "required": false
+          },
+          {
+            "annotation_ast": "Name(id='Any', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "lock",
+            "required": false
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Collection', ctx=Load()), slice=Subscript(value=Name(id='tuple', ctx=Load()), slice=Tuple(elts=[Name(id='int', ctx=Load()), Name(id='int', ctx=Load())], ctx=Load()), ctx=Load()), ctx=Load())",
+            "kind": "keyword-only",
+            "name": "lines",
+            "required": false
+          }
+        ],
+        "return_annotation_ast": "Name(id='bool', ctx=Load())"
+      },
+      "surface_id": "black.format_file_in_place",
+      "symbol_path": "black.format_file_in_place",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.format_stdin_to_stdout",
+      "option_family_ids": [
+        "stdio"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 1023,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.format_stdin_to_stdout"
+      ],
+      "reexport_origin": "black.format_stdin_to_stdout",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "fast",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Name(id='str', ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "keyword-only",
+            "name": "content",
+            "required": false
+          },
+          {
+            "annotation_ast": "Name(id='WriteBack', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "write_back",
+            "required": false
+          },
+          {
+            "annotation_ast": "Name(id='Mode', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "mode",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Collection', ctx=Load()), slice=Subscript(value=Name(id='tuple', ctx=Load()), slice=Tuple(elts=[Name(id='int', ctx=Load()), Name(id='int', ctx=Load())], ctx=Load()), ctx=Load()), ctx=Load())",
+            "kind": "keyword-only",
+            "name": "lines",
+            "required": false
+          }
+        ],
+        "return_annotation_ast": "Name(id='bool', ctx=Load())"
+      },
+      "surface_id": "black.format_stdin_to_stdout",
+      "symbol_path": "black.format_stdin_to_stdout",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [],
+      "id": "black.Mode",
+      "option_family_ids": [
+        "mode"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 276,
+        "path": "src/black/mode.py",
+        "sha256": "9427c7c144350a8858b1a0c2f0fa11283ebdc7725bbd2ecb7a3c1fe405d3535c"
+      },
+      "reexport_chain": [
+        "black.mode.Mode",
+        "black.Mode"
+      ],
+      "reexport_origin": "black.mode.Mode",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "fields": [
+          {
+            "annotation_ast": "Subscript(value=Name(id='set', ctx=Load()), slice=Name(id='TargetVersion', ctx=Load()), ctx=Load())",
+            "name": "target_versions"
+          },
+          {
+            "annotation_ast": "Name(id='int', ctx=Load())",
+            "name": "line_length"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "string_normalization"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "is_pyi"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "is_ipynb"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "skip_source_first_line"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "magic_trailing_comma"
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='set', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load())",
+            "name": "python_cell_magics"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "preview"
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "name": "unstable"
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='set', ctx=Load()), slice=Name(id='Preview', ctx=Load()), ctx=Load())",
+            "name": "enabled_features"
+          }
+        ],
+        "kind": "class",
+        "public_methods": [
+          "get_cache_key"
+        ]
+      },
+      "surface_id": "black.Mode",
+      "symbol_path": "black.Mode",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [],
+      "id": "black.TargetVersion",
+      "option_family_ids": [
+        "target"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 16,
+        "path": "src/black/mode.py",
+        "sha256": "9427c7c144350a8858b1a0c2f0fa11283ebdc7725bbd2ecb7a3c1fe405d3535c"
+      },
+      "reexport_chain": [
+        "black.mode.TargetVersion",
+        "black.TargetVersion"
+      ],
+      "reexport_origin": "black.mode.TargetVersion",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "fields": [],
+        "kind": "class",
+        "public_methods": [
+          "pretty"
+        ]
+      },
+      "surface_id": "black.TargetVersion",
+      "symbol_path": "black.TargetVersion",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [],
+      "id": "black.Preview",
+      "option_family_ids": [
+        "feature"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 249,
+        "path": "src/black/mode.py",
+        "sha256": "9427c7c144350a8858b1a0c2f0fa11283ebdc7725bbd2ecb7a3c1fe405d3535c"
+      },
+      "reexport_chain": [
+        "black.mode.Preview",
+        "black.Preview"
+      ],
+      "reexport_origin": "black.mode.Preview",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "fields": [],
+        "kind": "class",
+        "public_methods": []
+      },
+      "surface_id": "black.Preview",
+      "symbol_path": "black.Preview",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [
+        "typed-grammar-v1"
+      ],
+      "generators": [
+        "typed-grammar-v1",
+        "explicit-public-corpus-mutation-v1"
+      ],
+      "id": "black.cli",
+      "option_family_ids": [
+        "cli"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 538,
+        "path": "src/black/__init__.py",
+        "sha256": "978c02f4e6914d3886e610eab7174f2ee647fb5c09151bf991be5549e91c6cbf"
+      },
+      "reexport_chain": [
+        "black.cli"
+      ],
+      "reexport_origin": "black.cli",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Attribute(value=Name(id='click', ctx=Load()), attr='Context', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "ctx",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Name(id='str', ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "code",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='int', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "line_length",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='list', ctx=Load()), slice=Name(id='TargetVersion', ctx=Load()), ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "target_version",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "check",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "diff",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Sequence', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "line_ranges",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "color",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "fast",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "pyi",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "ipynb",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Sequence', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "python_cell_magics",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "skip_source_first_line",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "skip_string_normalization",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "skip_magic_trailing_comma",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "preview",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "unstable",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='list', ctx=Load()), slice=Name(id='Preview', ctx=Load()), ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "enable_unstable_feature",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "quiet",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "verbose",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Name(id='str', ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "required_version",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='Pattern', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "include",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Subscript(value=Name(id='Pattern', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "exclude",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Subscript(value=Name(id='Pattern', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "extend_exclude",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Subscript(value=Name(id='Pattern', ctx=Load()), slice=Name(id='str', ctx=Load()), ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "force_exclude",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Name(id='str', ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "stdin_filename",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Name(id='int', ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "workers",
+            "required": true
+          },
+          {
+            "annotation_ast": "Subscript(value=Name(id='tuple', ctx=Load()), slice=Tuple(elts=[Name(id='str', ctx=Load()), Constant(value=Ellipsis)], ctx=Load()), ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "src",
+            "required": true
+          },
+          {
+            "annotation_ast": "BinOp(left=Name(id='str', ctx=Load()), op=BitOr(), right=Constant(value=None))",
+            "kind": "positional-or-keyword",
+            "name": "config",
+            "required": true
+          },
+          {
+            "annotation_ast": "Name(id='bool', ctx=Load())",
+            "kind": "positional-or-keyword",
+            "name": "no_cache",
+            "required": true
+          }
+        ],
+        "return_annotation_ast": "Constant(value=None)"
+      },
+      "surface_id": "black.cli",
+      "symbol_path": "black.cli",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [],
+      "generators": [],
+      "id": "blackd.make_app",
+      "option_family_ids": [
+        "http"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 126,
+        "path": "src/blackd/__init__.py",
+        "sha256": "b1c7a34f5c3bf8423fbcd6ee8d7f5256d0e8a5066150b9d25d87abb60c65031b"
+      },
+      "reexport_chain": [
+        "blackd.make_app"
+      ],
+      "reexport_origin": "blackd.make_app",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "kind": "callable",
+        "parameters": [
+          {
+            "annotation_ast": "Subscript(value=Name(id='tuple', ctx=Load()), slice=Tuple(elts=[Name(id='str', ctx=Load()), Constant(value=Ellipsis)], ctx=Load()), ctx=Load())",
+            "kind": "keyword-only",
+            "name": "cors_allow_origins",
+            "required": false
+          },
+          {
+            "annotation_ast": "Name(id='int', ctx=Load())",
+            "kind": "keyword-only",
+            "name": "max_body_size",
+            "required": false
+          }
+        ],
+        "return_annotation_ast": "Attribute(value=Name(id='web', ctx=Load()), attr='Application', ctx=Load())"
+      },
+      "surface_id": "blackd.make_app",
+      "symbol_path": "blackd.make_app",
+      "visibility": "public"
+    },
+    {
+      "contract_id": "black-public-v1",
+      "coverage_status": "not-exercised",
+      "fault_applicability": "documented syntax errors and readonly/missing file faults; complete I/O faults pending",
+      "generator_ids": [],
+      "generators": [],
+      "id": "blackd.client.BlackDClient",
+      "option_family_ids": [
+        "http-client"
+      ],
+      "oracle": {
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "black-library-values-error-classes-and-exact-cli-v1",
+      "oracle_policy_id": "black-library-values-error-classes-and-exact-cli-v1",
+      "precondition_id": "black-typed-bounded-v1",
+      "precondition_refs": [
+        "black-typed-bounded-v1"
+      ],
+      "public_evidence": {
+        "documentation_review": "pending-validation2",
+        "line": 9,
+        "path": "src/blackd/client.py",
+        "sha256": "f80c715460324d2bc53d2d0e356bdebf413ebd0fbac36fdd2589f33484645bbc"
+      },
+      "reexport_chain": [
+        "blackd.client.BlackDClient"
+      ],
+      "reexport_origin": "blackd.client.BlackDClient",
+      "sequence_applicability": "reused caller Mode A/B/A and clear-target sets; complete reset coverage pending",
+      "signature_version": "python-structural-ast-v1",
+      "structural_signature": {
+        "fields": [],
+        "kind": "class",
+        "public_methods": [
+          "format_code"
+        ]
+      },
+      "surface_id": "blackd.client.BlackDClient",
+      "symbol_path": "blackd.client.BlackDClient",
+      "visibility": "public"
+    }
+  ],
+  "task": "black-project-format",
+  "unresolved": [
+    "Full corrected public export/re-export denominator is not yet bound",
+    "CLI option families beyond initial basic format/check/write/stdin",
+    "blackd server/client lifecycle and documented HTTP header families",
+    "Preview enabled_features, notebook magics, all supported target variants and exception constructors",
+    "Path discovery/config/report/cache APIs and their true supported-public scope",
+    "Diff timestamp/environment control requires predeclared reviewed contract"
+  ]
+}

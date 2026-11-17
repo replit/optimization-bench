@@ -1,0 +1,75 @@
+{
+  "status": "cProfile accepted by Robin for Python workload ownership, independently reviewed arithmetic and path classification",
+  "method": "deterministic Python-level self time (cProfile), used because native sampling is blocked in this sandbox",
+  "timer": "cProfile default wall timer, not sampled native CPU",
+  "native_cpu_ownership": false,
+  "strict_scope": "All recorded cProfile self time, including builtins, stdlib, driver and unresolved. Kernel and pre-profiler startup are not separately observed.",
+  "cohorts": {
+    "public": {
+      "cases": 125,
+      "profile_runs": 1,
+      "full_outputs_match": true,
+      "totals_self_seconds": {
+        "stdlib": 1.4890333549999994,
+        "repository": 12.438266750999995,
+        "driver": 1.34985424,
+        "unresolved": 0.001073808,
+        "dependency": 0.0012263510000000007,
+        "builtin": 5.592801617000003
+      },
+      "profile_self_seconds": 20.872256121999996,
+      "repo_share_of_repo_plus_dependencies": 0.9999014147128067,
+      "conservative_python_level_share": 0.9998151081846479,
+      "strict_repo_share_of_all_measured_self_time": 0.5959234439390422,
+      "excluded_share": 0.4039663543181968,
+      "provisional_above_50_percent": true,
+      "cold_wall_seconds": [5.34272901499935, 5.3042945849992975, 5.31488263799838],
+      "timing_scope": "Uninstrumented cold child startup, execution, writes and supervision, excluding staging/comparison. Not A/A.",
+      "dependency_entry_events": 1010,
+      "dependency_event_scope": "dateutil/six, including initialization and generator resumptions, not distinct calls",
+      "top_repo_functions": [
+        {"file": "sqlglot/optimizer/scope.py", "line": 1018, "function": "walk_in_scope", "self_seconds": 1.7606174970000001},
+        {"file": "sqlglot/expressions/core.py", "line": 1148, "function": "iter_expressions", "self_seconds": 1.050311454},
+        {"file": "sqlglot/expressions/core.py", "line": 1206, "function": "bfs", "self_seconds": 0.507793426}
+      ],
+      "top_functions": [
+        {"function": "builtins.isinstance", "category": "builtin", "self_seconds": 2.701568409},
+        {"function": "walk_in_scope", "category": "repository", "self_seconds": 1.7606174970000001},
+        {"function": "iter_expressions", "category": "repository", "self_seconds": 1.050311454}
+      ]
+    },
+    "private": {
+      "cases": 36,
+      "profile_runs": 1,
+      "profile_reused_after_fresh_output_verification": true,
+      "full_outputs_match": true,
+      "baseline_source_inventory_verified": true,
+      "totals_self_seconds": {
+        "stdlib": 0.7258129630000006,
+        "repository": 3.003909085000007,
+        "driver": 0.6977456160000003,
+        "unresolved": 0.00031510900000000005,
+        "dependency": 0.0,
+        "builtin": 1.8496115220000002
+      },
+      "profile_self_seconds": 6.277394295000009,
+      "repo_share_of_repo_plus_dependencies": 1.0,
+      "conservative_python_level_share": 0.9998951113566592,
+      "strict_repo_share_of_all_measured_self_time": 0.4785280235451584,
+      "excluded_share": 0.521421779034512,
+      "provisional_above_50_percent": true,
+      "cold_wall_seconds": [1.938546484001563, 1.9516199219979171, 1.9513326500018593],
+      "timing_scope": "Uninstrumented cold child startup, execution, writes and supervision, excluding staging/comparison. Not A/A.",
+      "top_repo_functions": [
+        {"file": "sqlglot/optimizer/scope.py", "line": 1018, "function": "walk_in_scope", "self_seconds": 0.419833359},
+        {"file": "sqlglot/expressions/core.py", "line": 1148, "function": "iter_expressions", "self_seconds": 0.269388401},
+        {"file": "sqlglot/expressions/core.py", "line": 1002, "function": "__deepcopy__", "self_seconds": 0.196484233}
+      ],
+      "top_functions": [
+        {"function": "builtins.isinstance", "category": "builtin", "self_seconds": 0.7498128300000001},
+        {"function": "protected materializer.value", "category": "driver", "self_seconds": 0.451511294},
+        {"function": "walk_in_scope", "category": "repository", "self_seconds": 0.419833359}
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "budget": {
+    "coverage_guided_seconds": 2700,
+    "cpu_state_seconds": 900,
+    "grammar_property_seconds": 900,
+    "large_case_seconds": 60,
+    "maximum_sql_bytes": 131072,
+    "per_case_seconds": 20,
+    "profile": "Goldmark, sqlfmt, Black, SQLFluff, SQLGlot, Terser",
+    "sanitizer_seconds_per_applicable_build": 1200
+  },
+  "contract_sources": [
+    "../../instruction.md",
+    "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/README.md"
+  ],
+  "format": "optimbench-fuzz-adapter-v1",
+  "hooks": {
+    "compare": "adapter.py:compare",
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink"
+  },
+  "language": "python",
+  "resources": {
+    "peak_memory": {
+      "mode": "report-only",
+      "verdict_impact": false
+    }
+  },
+  "seed_list": [
+    1729,
+    2718,
+    31415
+  ],
+  "surface_manifest": "surface.json",
+  "task": "sqlglot-mozilla-transpile"
+}

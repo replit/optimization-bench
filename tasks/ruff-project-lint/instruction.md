@@ -1,0 +1,140 @@
+# Speed up Ruff on real project lint workflows
+
+Make pinned Ruff 0.16.10 (3265ed1), built from source with its unchanged release
+profile, faster end to end without changing any supported behavior.
+
+## Setup
+
+8 CPUs, 16 GiB memory, no network access, and a 7,200-second agent timeout
+(2 hours). The source you leave in the editable paths when time runs out is what
+gets evaluated.
+
+## The workload
+
+Each case is one project lint workflow on a fresh copy of its complete Git tree
+and original configuration. pandas uses its frozen pre-commit-selected paths;
+FastAPI checks `fastapi tests docs_src scripts`. Each case runs 14 fresh Ruff
+processes, in this order, over the same paths:
+
+1. the project's original `ruff check`, with JSON diagnostics;
+2. `ruff check --select ALL --statistics`, in stable mode and with `--preview`,
+   for each target version `py39`, `py310`, `py311`, `py312`, `py313` and `py314`
+   (12 processes);
+3. `ruff format --check`.
+
+```sh
+ruff check --no-cache --no-fix --output-format=json <paths>
+ruff check --no-cache --no-fix --select ALL [--preview] --statistics --target-version <version> <paths>
+ruff format --no-cache --check <paths>
+```
+
+pandas also passes `--force-exclude` to every command, and its original check
+keeps `--exit-non-zero-on-fix`. A case's operation includes all 14 processes,
+with startup, configuration discovery, linting, format checking and output I/O.
+Commands, arguments and their order must not change.
+
+`RAYON_NUM_THREADS=8` is fixed. Cache and fixes are disabled. Nothing may persist
+between operations.
+
+## What you may change
+
+The pinned source is committed to a local Git repository at `/app/ruff`.
+Only `.rs` production files enumerated by `release.json`'s source policy, within
+its twenty source roots, are editable and handed to the evaluator.
+Those roots are `crates/{ruff,ruff_linter,ruff_workspace,ruff_cache,
+ruff_diagnostics,ruff_notebook,ruff_source_file,ruff_text_size,ruff_ranged_value,
+ruff_python_parser,ruff_python_ast,ruff_python_semantic,ruff_python_index,
+ruff_python_importer,ruff_python_edits,ruff_python_codegen,ruff_python_literal,
+ruff_python_stdlib,ruff_python_trivia}/src` and `crates/ruff_db/src/diagnostic`.
+Original inline-test tails (first test marker through EOF) and all Rust
+documentation comments, including doctests, remain byte-identical.
+Manifests, Cargo.lock, toolchain, dependencies, generated code, tests, fixtures,
+build profile and scripts, the driver, project trees, inputs and evaluator are
+protected. Changes outside the editable roots are discarded.
+
+## Contract
+
+Every project's `cli-output-v1` result must be byte-identical: every process's exit
+status and complete stdout/stderr bytes (base64 encoded), in original order.
+General CLI, API, configuration, lint rules and diagnostic behavior must remain
+compatible, including on error-producing inputs absent from these clean projects.
+Upstream tests must retain the baseline's outcome set.
+
+No detecting inputs or the evaluator, precomputed answers, external delegation,
+changed thread counts, persistent caches or background work. The driver stops
+descendants after each main process exits; no helpers may outlive an operation.
+
+## Develop
+
+```sh
+sh /app/workload/build.sh
+/app/build/run
+```
+
+The build is offline and uses the fixed Cargo.lock/vendor tree and unchanged
+upstream release profile (fat LTO). Rebuilds reuse `/app/build/target`.
+A cold build takes about 4.5 minutes on 8 CPUs, and because fat LTO relinks
+everything, a one-file edit still takes about 3 minutes. Plan experiments with
+that in mind.
+`/app/build/run` runs every public case and prints
+`id<TAB>result bytes<TAB>result sha256`; it does not measure elapsed time.
+Case definitions and baseline identities are in
+`/app/workload/inputs/manifest.json`. `/app/baseline-build/run` runs the prebuilt
+baseline. Measure performance yourself. No timing or result-checking helper is
+supplied.
+
+Run the supported crates' upstream tests, including inline tests and doctests:
+
+```sh
+cd /app/ruff
+export CARGO_HOME=/app/build/cargo-home CARGO_TARGET_DIR=/app/build/target
+cargo --config 'source.crates-io.replace-with="vendored-sources"' \
+  --config 'source.vendored-sources.directory="/assets/vendor"' \
+  test --locked --offline --all-features -j 8 \
+  -p ruff -p ruff_linter -p ruff_workspace -p ruff_cache \
+  -p ruff_diagnostics -p ruff_notebook -p ruff_source_file \
+  -p ruff_text_size -p ruff_ranged_value -p ruff_python_parser \
+  -p ruff_python_ast -p ruff_python_semantic -p ruff_python_index \
+  -p ruff_python_importer -p ruff_python_edits -p ruff_python_codegen \
+  -p ruff_python_literal -p ruff_python_stdlib -p ruff_python_trivia \
+  -p ruff_db -- --test-threads=8
+```
+
+## Final evaluation
+
+A separate, offline evaluator receives only the editable source roots, rebuilds
+them with protected assets, checks public and held-out behavior and
+upstream test outcomes, and measures complete project operations with its own
+timer. Correctness controls include diagnostic-producing mutations and supported
+configurations not exercised here. The evaluator and the held-out expectations
+are not in this environment; the held-out projects are fetched from their
+upstream repositories at evaluation time.
+
+The protected shared runner prepares and verifies inputs outside execution,
+then collects canonical results after stopping and killing leftover
+descendants at main-process exit. Leftovers are recorded, not an
+independent failure. Nonzero exits, timeouts and all stdout/stderr are
+compared behavior; only runner/input infrastructure errors invalidate a run.
+Local runs provide no timer. The agent-facing commands above are unchanged.
+
+<!-- agent-rules:start -->
+## Working rules
+
+You have up to 2 hours (7,200 seconds), as configured by the agent timeout. The editable source present when time runs out is what gets judged. Keep profiling, optimizing, and verifying correctness until the budget is nearly exhausted rather than stopping after a first improvement.
+
+New tests and new fixture files may be added, including new cases in an existing test file. New tests must pass (skip/xfail markers on new tests are allowed). Do not modify, remove, or rename existing tests, fixtures, or snapshots; every original test identity and outcome must stay identical. Adding tests does not authorize changing original cases or their pass/skip/xfail/deselect status.
+
+Preserve the caller's process-wide runtime configuration. Do not change global GC or allocator settings, memory limits, process counts, environment variables, interpreter/JIT/VM flags, signal handlers, or similar process-global state as a side effect of importing or calling library code. Preserve the public interface: adding public items is allowed; removing or incompatibly changing them is not.
+
+You may use the task's eight CPUs however you see fit (threads, SIMD, parallel algorithms) as long as outputs, interfaces and all other rules hold; results report both wall-time speedup and total CPU time.
+
+Library-level parallelism is allowed; the driver's frozen concurrency settings are workload parameters and must not change (including --threads arguments, BLACK_NUM_WORKERS and -p 8). No worker processes or threads may outlive the measured operation. Caching across calls, input recognition and all other forbidden shortcuts remain forbidden.
+
+Any threads you create must be fully joined at the OS level before the public call returns; in Rust, join every ScopedJoinHandle/JoinHandle explicitly (std::thread::scope's implicit join does not guarantee the OS thread has exited); in C/C++, pthread_join/std::thread::join; detached threads, persistent pools, or threads still running after return are rejected.
+
+Do not change process-global runtime or OS state that the original library leaves alone (e.g., GC/GOGC/GOMAXPROCS/memory limits, Python gc or interpreter settings, malloc tunables, signal handlers, environment, locale, cwd, umask, rlimits, CPU affinity); such changes are rejected as contract regressions.
+
+CLI diagnostics use cli-stderr-contract-v1: preserve error headlines/classes and exit status; implementation stack frames, goroutine identities and memory addresses are not contract data. Stdout and file side effects remain exact. Raw stderr is retained in protected evidence.
+
+Correctness is gated at 1/2/4/8 CPUs. Official performance timing uses 8 CPUs. Low-core timing is an optional report-only diagnostic, not a regression gate, and is not executed by default or used to reject an official score. Memory is reported, not ratio-gated.
+<!-- agent-rules:end -->

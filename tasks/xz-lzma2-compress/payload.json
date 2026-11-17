@@ -1,0 +1,1354 @@
+{
+  "schema_version": 1,
+  "task": "xz-lzma2-compress",
+  "files": [
+    {
+      "scope": "public",
+      "name": "9f3d7572b5a95c475e6553c27465d76cbec891f7448bff9fbc07df4b11367911",
+      "destination": "environment/workload/inputs/files/9f3d7572b5a95c475e6553c27465d76cbec891f7448bff9fbc07df4b11367911",
+      "bytes": 173942,
+      "sha256": "9f3d7572b5a95c475e6553c27465d76cbec891f7448bff9fbc07df4b11367911",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "022dbb96c9671688d49ec0ec2bfa19000e91e82b1769b0d3b1027484209ad39c",
+      "destination": "environment/workload/inputs/files/022dbb96c9671688d49ec0ec2bfa19000e91e82b1769b0d3b1027484209ad39c",
+      "bytes": 157317,
+      "sha256": "022dbb96c9671688d49ec0ec2bfa19000e91e82b1769b0d3b1027484209ad39c",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "b7576d891bc58e4556164634ba3fd9ec9063c261eb74eaf28fc050c25a2e14be",
+      "destination": "environment/workload/inputs/files/b7576d891bc58e4556164634ba3fd9ec9063c261eb74eaf28fc050c25a2e14be",
+      "bytes": 142263,
+      "sha256": "b7576d891bc58e4556164634ba3fd9ec9063c261eb74eaf28fc050c25a2e14be",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "c9bf1d9dc90bd504ab28a9d2da86354660dc470cabe337f0e22e2add1fe0ce6a",
+      "destination": "environment/workload/inputs/files/c9bf1d9dc90bd504ab28a9d2da86354660dc470cabe337f0e22e2add1fe0ce6a",
+      "bytes": 133026,
+      "sha256": "c9bf1d9dc90bd504ab28a9d2da86354660dc470cabe337f0e22e2add1fe0ce6a",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "9e6fdc5b034d3fccc5a9f0a05e880bfd6f6a9b3ee4b014d999cf9bf305ce12bf",
+      "destination": "environment/workload/inputs/files/9e6fdc5b034d3fccc5a9f0a05e880bfd6f6a9b3ee4b014d999cf9bf305ce12bf",
+      "bytes": 124856,
+      "sha256": "9e6fdc5b034d3fccc5a9f0a05e880bfd6f6a9b3ee4b014d999cf9bf305ce12bf",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "43d6fb116a281686a0beaaaabfcc931fe2189b0b99bdf06b803ac04581248931",
+      "destination": "environment/workload/inputs/files/43d6fb116a281686a0beaaaabfcc931fe2189b0b99bdf06b803ac04581248931",
+      "bytes": 101376,
+      "sha256": "43d6fb116a281686a0beaaaabfcc931fe2189b0b99bdf06b803ac04581248931",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "9eb94731d89c55a27ef9ead98de7d003cb2f261f14fd898c1bcef46c1607f619",
+      "destination": "environment/workload/inputs/files/9eb94731d89c55a27ef9ead98de7d003cb2f261f14fd898c1bcef46c1607f619",
+      "bytes": 107822,
+      "sha256": "9eb94731d89c55a27ef9ead98de7d003cb2f261f14fd898c1bcef46c1607f619",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "d5ce447af0526cc38e79bd5a8e59f9a30de29a83d3afce69bdfa9d2d9769eaff",
+      "destination": "environment/workload/inputs/files/d5ce447af0526cc38e79bd5a8e59f9a30de29a83d3afce69bdfa9d2d9769eaff",
+      "bytes": 88628,
+      "sha256": "d5ce447af0526cc38e79bd5a8e59f9a30de29a83d3afce69bdfa9d2d9769eaff",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "7cdf11dfcf174c968777ae6235215fe0f54bb22fdf2a2b0dd8d0757c1373b63e",
+      "destination": "environment/workload/inputs/files/7cdf11dfcf174c968777ae6235215fe0f54bb22fdf2a2b0dd8d0757c1373b63e",
+      "bytes": 79637,
+      "sha256": "7cdf11dfcf174c968777ae6235215fe0f54bb22fdf2a2b0dd8d0757c1373b63e",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "f3b81608598cc610e0148ee9229c3e2a5de1c1182788ca7fbdfdfc2dc23598c3",
+      "destination": "environment/workload/inputs/files/f3b81608598cc610e0148ee9229c3e2a5de1c1182788ca7fbdfdfc2dc23598c3",
+      "bytes": 74249,
+      "sha256": "f3b81608598cc610e0148ee9229c3e2a5de1c1182788ca7fbdfdfc2dc23598c3",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "2ca5f6afffe58219015770f5e1dd442f598a3c3cb0b87295984222cc71232836",
+      "destination": "environment/workload/inputs/files/2ca5f6afffe58219015770f5e1dd442f598a3c3cb0b87295984222cc71232836",
+      "bytes": 482789,
+      "sha256": "2ca5f6afffe58219015770f5e1dd442f598a3c3cb0b87295984222cc71232836",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/PCRE2Project/pcre2/099ae518879ec04494f2c847ccfb0781bd6600f8/src/pcre2_jit_compile.c",
+        "bytes": 482789,
+        "sha256": "2ca5f6afffe58219015770f5e1dd442f598a3c3cb0b87295984222cc71232836"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "ef3772478135f9fa33bead8ce9d3d7ca9ba5935f8765b31008c27ad8e89bcc5c",
+      "destination": "environment/workload/inputs/files/ef3772478135f9fa33bead8ce9d3d7ca9ba5935f8765b31008c27ad8e89bcc5c",
+      "bytes": 396404,
+      "sha256": "ef3772478135f9fa33bead8ce9d3d7ca9ba5935f8765b31008c27ad8e89bcc5c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/PCRE2Project/pcre2/099ae518879ec04494f2c847ccfb0781bd6600f8/src/pcre2_compile.c",
+        "bytes": 396404,
+        "sha256": "ef3772478135f9fa33bead8ce9d3d7ca9ba5935f8765b31008c27ad8e89bcc5c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "819e49f77f1fa14442ad2c2310050185e69dce67913da37fe789c90a6d6b4a75",
+      "destination": "environment/workload/inputs/files/819e49f77f1fa14442ad2c2310050185e69dce67913da37fe789c90a6d6b4a75",
+      "bytes": 359863,
+      "sha256": "819e49f77f1fa14442ad2c2310050185e69dce67913da37fe789c90a6d6b4a75",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/PCRE2Project/pcre2/099ae518879ec04494f2c847ccfb0781bd6600f8/src/pcre2_ucd.c",
+        "bytes": 359863,
+        "sha256": "819e49f77f1fa14442ad2c2310050185e69dce67913da37fe789c90a6d6b4a75"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "fc5bd1cab08a382fb036b34cae09a62ba7633335503c93ac743512a5465c4e02",
+      "destination": "environment/workload/inputs/files/fc5bd1cab08a382fb036b34cae09a62ba7633335503c93ac743512a5465c4e02",
+      "bytes": 268196,
+      "sha256": "fc5bd1cab08a382fb036b34cae09a62ba7633335503c93ac743512a5465c4e02",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/PCRE2Project/pcre2/099ae518879ec04494f2c847ccfb0781bd6600f8/src/pcre2_match.c",
+        "bytes": 268196,
+        "sha256": "fc5bd1cab08a382fb036b34cae09a62ba7633335503c93ac743512a5465c4e02"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "0f3153c269b40924c6f47cea61bd249cf7c3b8c643e97fb7e1f7d0f0680fe1ea",
+      "destination": "environment/workload/inputs/files/0f3153c269b40924c6f47cea61bd249cf7c3b8c643e97fb7e1f7d0f0680fe1ea",
+      "bytes": 153946,
+      "sha256": "0f3153c269b40924c6f47cea61bd249cf7c3b8c643e97fb7e1f7d0f0680fe1ea",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "c90e751dd2ae240f77113a01b6600ecd129ea8bd064736c4d156973a81fef8cd",
+      "destination": "environment/workload/inputs/files/c90e751dd2ae240f77113a01b6600ecd129ea8bd064736c4d156973a81fef8cd",
+      "bytes": 144402,
+      "sha256": "c90e751dd2ae240f77113a01b6600ecd129ea8bd064736c4d156973a81fef8cd",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "cb3df7a1a5e32868de98b9f0149e57e82085767048c64214cf4db3e2b55bdbaa",
+      "destination": "environment/workload/inputs/files/cb3df7a1a5e32868de98b9f0149e57e82085767048c64214cf4db3e2b55bdbaa",
+      "bytes": 101942,
+      "sha256": "cb3df7a1a5e32868de98b9f0149e57e82085767048c64214cf4db3e2b55bdbaa",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "67c3266dc4d8e15454dd05fd704d603e07837240244d9c2c42297a5288200ac1",
+      "destination": "environment/workload/inputs/files/67c3266dc4d8e15454dd05fd704d603e07837240244d9c2c42297a5288200ac1",
+      "bytes": 100266,
+      "sha256": "67c3266dc4d8e15454dd05fd704d603e07837240244d9c2c42297a5288200ac1",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "cd98df905574232de24c3b600607c8326e09854f11a7b81dbb5bb4d6d4cf8790",
+      "destination": "environment/workload/inputs/files/cd98df905574232de24c3b600607c8326e09854f11a7b81dbb5bb4d6d4cf8790",
+      "bytes": 95594,
+      "sha256": "cd98df905574232de24c3b600607c8326e09854f11a7b81dbb5bb4d6d4cf8790",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "b1454443f9a0bd8bd1c7ead537445651dec5a05e49e82f12e8eaa41e3335e090",
+      "destination": "environment/workload/inputs/files/b1454443f9a0bd8bd1c7ead537445651dec5a05e49e82f12e8eaa41e3335e090",
+      "bytes": 76517,
+      "sha256": "b1454443f9a0bd8bd1c7ead537445651dec5a05e49e82f12e8eaa41e3335e090",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "d2b2c1548bb407442ccddc636820e7f7771dbb45b9d6bb2118d9abe93e6d6dc5",
+      "destination": "environment/workload/inputs/files/d2b2c1548bb407442ccddc636820e7f7771dbb45b9d6bb2118d9abe93e6d6dc5",
+      "bytes": 76407,
+      "sha256": "d2b2c1548bb407442ccddc636820e7f7771dbb45b9d6bb2118d9abe93e6d6dc5",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "a8807d316985e9806cc6029e1d0838667da37ff937e60a318d51104ecd2c636d",
+      "destination": "environment/workload/inputs/files/a8807d316985e9806cc6029e1d0838667da37ff937e60a318d51104ecd2c636d",
+      "bytes": 66791,
+      "sha256": "a8807d316985e9806cc6029e1d0838667da37ff937e60a318d51104ecd2c636d",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "06a76fb970c06be85a3fa61724ae51dff43ae290d02f0e7118acc8179327c4f1",
+      "destination": "environment/workload/inputs/files/06a76fb970c06be85a3fa61724ae51dff43ae290d02f0e7118acc8179327c4f1",
+      "bytes": 213399,
+      "sha256": "06a76fb970c06be85a3fa61724ae51dff43ae290d02f0e7118acc8179327c4f1",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "e165b2a6b56317aed9b06070813caa444ad6eeca370f4f6aaf51f85edac5886e",
+      "destination": "environment/workload/inputs/files/e165b2a6b56317aed9b06070813caa444ad6eeca370f4f6aaf51f85edac5886e",
+      "bytes": 142549,
+      "sha256": "e165b2a6b56317aed9b06070813caa444ad6eeca370f4f6aaf51f85edac5886e",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "4656a7ecaa0b7bf554dbfa46e7fdedcef4710ffe4f6c29f367ac8eb6c88f9b96",
+      "destination": "environment/workload/inputs/files/4656a7ecaa0b7bf554dbfa46e7fdedcef4710ffe4f6c29f367ac8eb6c88f9b96",
+      "bytes": 131649,
+      "sha256": "4656a7ecaa0b7bf554dbfa46e7fdedcef4710ffe4f6c29f367ac8eb6c88f9b96",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "3456c0e2d79c3a7fb2b611ca28617b11a146e4ae57d40523f6767fc52412c2e3",
+      "destination": "environment/workload/inputs/files/3456c0e2d79c3a7fb2b611ca28617b11a146e4ae57d40523f6767fc52412c2e3",
+      "bytes": 131114,
+      "sha256": "3456c0e2d79c3a7fb2b611ca28617b11a146e4ae57d40523f6767fc52412c2e3",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "0a21cc37ef7ae0f83bbffdac1b08414380787ddf1cddae7b8539985e4b28e3ab",
+      "destination": "environment/workload/inputs/files/0a21cc37ef7ae0f83bbffdac1b08414380787ddf1cddae7b8539985e4b28e3ab",
+      "bytes": 129492,
+      "sha256": "0a21cc37ef7ae0f83bbffdac1b08414380787ddf1cddae7b8539985e4b28e3ab",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "1a48e05c8a34e50eb59d37c7f1c66c45e74a7ee42795d8db20bbf1c47c52710f",
+      "destination": "environment/workload/inputs/files/1a48e05c8a34e50eb59d37c7f1c66c45e74a7ee42795d8db20bbf1c47c52710f",
+      "bytes": 118395,
+      "sha256": "1a48e05c8a34e50eb59d37c7f1c66c45e74a7ee42795d8db20bbf1c47c52710f",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "87fcd3bea133d278930ef03e4549802b568184fa8202680babf20b1e2a3f24db",
+      "destination": "environment/workload/inputs/files/87fcd3bea133d278930ef03e4549802b568184fa8202680babf20b1e2a3f24db",
+      "bytes": 535874,
+      "sha256": "87fcd3bea133d278930ef03e4549802b568184fa8202680babf20b1e2a3f24db",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/libsdl-org/SDL/8adc0f98837db84fd24f17c339e59dcf36a17156/src/gpu/vulkan/SDL_gpu_vulkan.c",
+        "bytes": 535874,
+        "sha256": "87fcd3bea133d278930ef03e4549802b568184fa8202680babf20b1e2a3f24db"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "bdc7204a6bf4c6ca25e79d686cecd8773cafc1d8afcafdfeb9bad72b05dd5dfa",
+      "destination": "environment/workload/inputs/files/bdc7204a6bf4c6ca25e79d686cecd8773cafc1d8afcafdfeb9bad72b05dd5dfa",
+      "bytes": 439609,
+      "sha256": "bdc7204a6bf4c6ca25e79d686cecd8773cafc1d8afcafdfeb9bad72b05dd5dfa",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/libsdl-org/SDL/8adc0f98837db84fd24f17c339e59dcf36a17156/src/video/SDL_blit_auto.c",
+        "bytes": 439609,
+        "sha256": "bdc7204a6bf4c6ca25e79d686cecd8773cafc1d8afcafdfeb9bad72b05dd5dfa"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "68a77ba5c1e78da16baa849cdeff12e72cedef9ae019bc8a6afd627dcfd4292c",
+      "destination": "environment/workload/inputs/files/68a77ba5c1e78da16baa849cdeff12e72cedef9ae019bc8a6afd627dcfd4292c",
+      "bytes": 385961,
+      "sha256": "68a77ba5c1e78da16baa849cdeff12e72cedef9ae019bc8a6afd627dcfd4292c",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://raw.githubusercontent.com/libsdl-org/SDL/8adc0f98837db84fd24f17c339e59dcf36a17156/src/gpu/d3d12/SDL_gpu_d3d12.c",
+        "bytes": 385961,
+        "sha256": "68a77ba5c1e78da16baa849cdeff12e72cedef9ae019bc8a6afd627dcfd4292c"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "38722c10282b9c61f27b7041872b94639c3deba37b05f5bc83ba5ad0ef3ad28c",
+      "destination": "environment/workload/inputs/files/38722c10282b9c61f27b7041872b94639c3deba37b05f5bc83ba5ad0ef3ad28c",
+      "bytes": 247670,
+      "sha256": "38722c10282b9c61f27b7041872b94639c3deba37b05f5bc83ba5ad0ef3ad28c",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "673b9763297521596b7705e5f713d67fe92c3d35a7185cc171cd6ed11f61e4e2",
+      "destination": "environment/workload/inputs/files/673b9763297521596b7705e5f713d67fe92c3d35a7185cc171cd6ed11f61e4e2",
+      "bytes": 231551,
+      "sha256": "673b9763297521596b7705e5f713d67fe92c3d35a7185cc171cd6ed11f61e4e2",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "315c04638d76f2c6f2bdc7f4c2e8dbb55ecb2b3203ca71467cfc99cdb03a3bfc",
+      "destination": "environment/workload/inputs/files/315c04638d76f2c6f2bdc7f4c2e8dbb55ecb2b3203ca71467cfc99cdb03a3bfc",
+      "bytes": 221106,
+      "sha256": "315c04638d76f2c6f2bdc7f4c2e8dbb55ecb2b3203ca71467cfc99cdb03a3bfc",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "260144572830b58ca6c3a382d399fcb2a42413bf9347a6e09b63344d9b83c126",
+      "destination": "environment/workload/inputs/files/260144572830b58ca6c3a382d399fcb2a42413bf9347a6e09b63344d9b83c126",
+      "bytes": 101834,
+      "sha256": "260144572830b58ca6c3a382d399fcb2a42413bf9347a6e09b63344d9b83c126",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "3c4e62bc11c6ad2726b0898dc6c74437c1ad2327ffec561b2b09d24ffc204004",
+      "destination": "environment/workload/inputs/files/3c4e62bc11c6ad2726b0898dc6c74437c1ad2327ffec561b2b09d24ffc204004",
+      "bytes": 95454,
+      "sha256": "3c4e62bc11c6ad2726b0898dc6c74437c1ad2327ffec561b2b09d24ffc204004",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "7380558b7b7ed8b89eecb70ae959dfb12ab3cc9984d7bde9a97639f98a3bab14",
+      "destination": "environment/workload/inputs/files/7380558b7b7ed8b89eecb70ae959dfb12ab3cc9984d7bde9a97639f98a3bab14",
+      "bytes": 79956,
+      "sha256": "7380558b7b7ed8b89eecb70ae959dfb12ab3cc9984d7bde9a97639f98a3bab14",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "b40945880dc8c4f6ec88daa0b7b7d66682236f4d841feb932b8b816325347c9e",
+      "destination": "environment/workload/inputs/files/b40945880dc8c4f6ec88daa0b7b7d66682236f4d841feb932b8b816325347c9e",
+      "bytes": 63652,
+      "sha256": "b40945880dc8c4f6ec88daa0b7b7d66682236f4d841feb932b8b816325347c9e",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "e333078d9ac454f2066d00a825b2bb05cbb0a4f3cec3f6c1ff9c9e2cd019735f",
+      "destination": "environment/workload/inputs/files/e333078d9ac454f2066d00a825b2bb05cbb0a4f3cec3f6c1ff9c9e2cd019735f",
+      "bytes": 62637,
+      "sha256": "e333078d9ac454f2066d00a825b2bb05cbb0a4f3cec3f6c1ff9c9e2cd019735f",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "c480280203275b5fb2f2fd5df56409eaa886a6011cf6208320ec75bd8ee66a2d",
+      "destination": "environment/workload/inputs/files/c480280203275b5fb2f2fd5df56409eaa886a6011cf6208320ec75bd8ee66a2d",
+      "bytes": 171088,
+      "sha256": "c480280203275b5fb2f2fd5df56409eaa886a6011cf6208320ec75bd8ee66a2d",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "66201f4505d8d1df0068677372d89a659e50e4055d470ccbe8549e98df411005",
+      "destination": "environment/workload/inputs/files/66201f4505d8d1df0068677372d89a659e50e4055d470ccbe8549e98df411005",
+      "bytes": 159672,
+      "sha256": "66201f4505d8d1df0068677372d89a659e50e4055d470ccbe8549e98df411005",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "e6a9b419848ea4ecdd14f4b345092dfc87379674844a70218f613640bdd97639",
+      "destination": "environment/workload/inputs/files/e6a9b419848ea4ecdd14f4b345092dfc87379674844a70218f613640bdd97639",
+      "bytes": 145788,
+      "sha256": "e6a9b419848ea4ecdd14f4b345092dfc87379674844a70218f613640bdd97639",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "77ef0244d56389a223e336b43b84ebd2568c33f294fe8738add4ffc5f28edf41",
+      "destination": "environment/workload/inputs/files/77ef0244d56389a223e336b43b84ebd2568c33f294fe8738add4ffc5f28edf41",
+      "bytes": 134044,
+      "sha256": "77ef0244d56389a223e336b43b84ebd2568c33f294fe8738add4ffc5f28edf41",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "0b9d36f3f39199d842f973f90e47e4c3bd47a3563cde68a3bf659c350df5b6b1",
+      "destination": "environment/workload/inputs/files/0b9d36f3f39199d842f973f90e47e4c3bd47a3563cde68a3bf659c350df5b6b1",
+      "bytes": 84096,
+      "sha256": "0b9d36f3f39199d842f973f90e47e4c3bd47a3563cde68a3bf659c350df5b6b1",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "31a9193892fc9e6ad12a5bae580d4f4652ec2e936a8bb3d87ff5cdc1ad938b71",
+      "destination": "environment/workload/inputs/files/31a9193892fc9e6ad12a5bae580d4f4652ec2e936a8bb3d87ff5cdc1ad938b71",
+      "bytes": 79217,
+      "sha256": "31a9193892fc9e6ad12a5bae580d4f4652ec2e936a8bb3d87ff5cdc1ad938b71",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/125930b0dc249322d6b448490d37a16f52d0d8064f11e941ec53c83a6daaac01",
+      "destination": "tests/heldout/expected/125930b0dc249322d6b448490d37a16f52d0d8064f11e941ec53c83a6daaac01",
+      "bytes": 23124,
+      "sha256": "125930b0dc249322d6b448490d37a16f52d0d8064f11e941ec53c83a6daaac01",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/206577769deb10d982e2d5a5e9b11052f4d424fdf804e4f04009ff81c8045e5b",
+      "destination": "tests/heldout/expected/206577769deb10d982e2d5a5e9b11052f4d424fdf804e4f04009ff81c8045e5b",
+      "bytes": 41632,
+      "sha256": "206577769deb10d982e2d5a5e9b11052f4d424fdf804e4f04009ff81c8045e5b",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/232517534e474fd176964911ff838e188d30bf6b27192448f619473f14c8da51",
+      "destination": "tests/heldout/expected/232517534e474fd176964911ff838e188d30bf6b27192448f619473f14c8da51",
+      "bytes": 27604,
+      "sha256": "232517534e474fd176964911ff838e188d30bf6b27192448f619473f14c8da51",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/2b902ab9ace52122b7bd5764d8a2a726b9cddc737475a68b0235663a28d7289e",
+      "destination": "tests/heldout/expected/2b902ab9ace52122b7bd5764d8a2a726b9cddc737475a68b0235663a28d7289e",
+      "bytes": 43012,
+      "sha256": "2b902ab9ace52122b7bd5764d8a2a726b9cddc737475a68b0235663a28d7289e",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/32047c485a086e6a04d1399684d7310beb2125ec5693666a104c116e0a6fb965",
+      "destination": "tests/heldout/expected/32047c485a086e6a04d1399684d7310beb2125ec5693666a104c116e0a6fb965",
+      "bytes": 23600,
+      "sha256": "32047c485a086e6a04d1399684d7310beb2125ec5693666a104c116e0a6fb965",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/36cda0b648c0c05c74c55f5ce7e0db660ce7d16b25970f7830e9a10dbd295f7d",
+      "destination": "tests/heldout/expected/36cda0b648c0c05c74c55f5ce7e0db660ce7d16b25970f7830e9a10dbd295f7d",
+      "bytes": 19164,
+      "sha256": "36cda0b648c0c05c74c55f5ce7e0db660ce7d16b25970f7830e9a10dbd295f7d",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/4247b12d22ff781baa188468b0c9e64de1577b94286275939cda7209b45fe7ea",
+      "destination": "tests/heldout/expected/4247b12d22ff781baa188468b0c9e64de1577b94286275939cda7209b45fe7ea",
+      "bytes": 22256,
+      "sha256": "4247b12d22ff781baa188468b0c9e64de1577b94286275939cda7209b45fe7ea",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/43c9350fa834dbe6f8e0dca2f8d920ca9adf1f935a34171718c7be2b2a4a5839",
+      "destination": "tests/heldout/expected/43c9350fa834dbe6f8e0dca2f8d920ca9adf1f935a34171718c7be2b2a4a5839",
+      "bytes": 26268,
+      "sha256": "43c9350fa834dbe6f8e0dca2f8d920ca9adf1f935a34171718c7be2b2a4a5839",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/5b94ef3080391d35c39cec624c065767f21375a0776d62ed2e60ce77c078fc40",
+      "destination": "tests/heldout/expected/5b94ef3080391d35c39cec624c065767f21375a0776d62ed2e60ce77c078fc40",
+      "bytes": 45000,
+      "sha256": "5b94ef3080391d35c39cec624c065767f21375a0776d62ed2e60ce77c078fc40",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/5be37525e765f7965ade471da2f57205bf9adfed4a1306ea95a331c50e8734a4",
+      "destination": "tests/heldout/expected/5be37525e765f7965ade471da2f57205bf9adfed4a1306ea95a331c50e8734a4",
+      "bytes": 23348,
+      "sha256": "5be37525e765f7965ade471da2f57205bf9adfed4a1306ea95a331c50e8734a4",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/632b565010d83119cba9d25951cbd77fcfbe5e5d1e27298a79f296dbe59ca634",
+      "destination": "tests/heldout/expected/632b565010d83119cba9d25951cbd77fcfbe5e5d1e27298a79f296dbe59ca634",
+      "bytes": 33628,
+      "sha256": "632b565010d83119cba9d25951cbd77fcfbe5e5d1e27298a79f296dbe59ca634",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/70d96a980100e3f7c0ba3d88ffac2ea3e385fe6591702a71da061c1a73892e3c",
+      "destination": "tests/heldout/expected/70d96a980100e3f7c0ba3d88ffac2ea3e385fe6591702a71da061c1a73892e3c",
+      "bytes": 21888,
+      "sha256": "70d96a980100e3f7c0ba3d88ffac2ea3e385fe6591702a71da061c1a73892e3c",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/74c47a09cbfce4b8973158619f2d8ac92d2279b8bf7081563365e8f697146052",
+      "destination": "tests/heldout/expected/74c47a09cbfce4b8973158619f2d8ac92d2279b8bf7081563365e8f697146052",
+      "bytes": 44112,
+      "sha256": "74c47a09cbfce4b8973158619f2d8ac92d2279b8bf7081563365e8f697146052",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/7f6f16e85af14d3484238257445f3dc4a3ca294e1cee13a8af09587297c79df1",
+      "destination": "tests/heldout/expected/7f6f16e85af14d3484238257445f3dc4a3ca294e1cee13a8af09587297c79df1",
+      "bytes": 17392,
+      "sha256": "7f6f16e85af14d3484238257445f3dc4a3ca294e1cee13a8af09587297c79df1",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/908ccbd240cb5e320c94c891feb8623d1f559c7168b26142020891dcca428bf7",
+      "destination": "tests/heldout/expected/908ccbd240cb5e320c94c891feb8623d1f559c7168b26142020891dcca428bf7",
+      "bytes": 26092,
+      "sha256": "908ccbd240cb5e320c94c891feb8623d1f559c7168b26142020891dcca428bf7",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/9933ce23790829d48bda85501947a4710209b4cbb65457e92756f2e7dcb38062",
+      "destination": "tests/heldout/expected/9933ce23790829d48bda85501947a4710209b4cbb65457e92756f2e7dcb38062",
+      "bytes": 24240,
+      "sha256": "9933ce23790829d48bda85501947a4710209b4cbb65457e92756f2e7dcb38062",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/9ceae3b9065c8377ff8757e6241c7497b522d6ce941046a3df94046f41ce9581",
+      "destination": "tests/heldout/expected/9ceae3b9065c8377ff8757e6241c7497b522d6ce941046a3df94046f41ce9581",
+      "bytes": 63816,
+      "sha256": "9ceae3b9065c8377ff8757e6241c7497b522d6ce941046a3df94046f41ce9581",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/9d25b49435b75bf566d62aa441366c4e904fe2ddbbef225454fa510400f70b57",
+      "destination": "tests/heldout/expected/9d25b49435b75bf566d62aa441366c4e904fe2ddbbef225454fa510400f70b57",
+      "bytes": 29392,
+      "sha256": "9d25b49435b75bf566d62aa441366c4e904fe2ddbbef225454fa510400f70b57",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/a440f551b0b8e3cf51c41f2ad0b16dfa6fbc6d5daeb4cc5258714b240cf87bfe",
+      "destination": "tests/heldout/expected/a440f551b0b8e3cf51c41f2ad0b16dfa6fbc6d5daeb4cc5258714b240cf87bfe",
+      "bytes": 31748,
+      "sha256": "a440f551b0b8e3cf51c41f2ad0b16dfa6fbc6d5daeb4cc5258714b240cf87bfe",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/a561eea141f6ce68c92eda56f095a5ff7a82d5f86bb375a7193ae2623e8b4bc3",
+      "destination": "tests/heldout/expected/a561eea141f6ce68c92eda56f095a5ff7a82d5f86bb375a7193ae2623e8b4bc3",
+      "bytes": 28644,
+      "sha256": "a561eea141f6ce68c92eda56f095a5ff7a82d5f86bb375a7193ae2623e8b4bc3",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/b11748f1d86c7a6385a70bce39f678943f52339b15c9b523df00ae269ebeceea",
+      "destination": "tests/heldout/expected/b11748f1d86c7a6385a70bce39f678943f52339b15c9b523df00ae269ebeceea",
+      "bytes": 28220,
+      "sha256": "b11748f1d86c7a6385a70bce39f678943f52339b15c9b523df00ae269ebeceea",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/b67121380fc844b561741aee884f381a41356b7f9f93df2a1fe2ad5f7c8c3614",
+      "destination": "tests/heldout/expected/b67121380fc844b561741aee884f381a41356b7f9f93df2a1fe2ad5f7c8c3614",
+      "bytes": 37452,
+      "sha256": "b67121380fc844b561741aee884f381a41356b7f9f93df2a1fe2ad5f7c8c3614",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/b77247addd18329e4bc8d4c321fb6cf7d7cf6e9fda7c4d9683acb2a69779d03f",
+      "destination": "tests/heldout/expected/b77247addd18329e4bc8d4c321fb6cf7d7cf6e9fda7c4d9683acb2a69779d03f",
+      "bytes": 25904,
+      "sha256": "b77247addd18329e4bc8d4c321fb6cf7d7cf6e9fda7c4d9683acb2a69779d03f",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/cddf627b96a3415063bf50a08e744939b6b0810f449841701510fd92759fcd72",
+      "destination": "tests/heldout/expected/cddf627b96a3415063bf50a08e744939b6b0810f449841701510fd92759fcd72",
+      "bytes": 18804,
+      "sha256": "cddf627b96a3415063bf50a08e744939b6b0810f449841701510fd92759fcd72",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/d1daf7cc5f15ff593f26a33d6a07fd189d68c8d145c1069bb4b33867b347635a",
+      "destination": "tests/heldout/expected/d1daf7cc5f15ff593f26a33d6a07fd189d68c8d145c1069bb4b33867b347635a",
+      "bytes": 41896,
+      "sha256": "d1daf7cc5f15ff593f26a33d6a07fd189d68c8d145c1069bb4b33867b347635a",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/d460c2bd53da54ada04382d4fd923302ece9f269e9a2837608f30c132e7385e7",
+      "destination": "tests/heldout/expected/d460c2bd53da54ada04382d4fd923302ece9f269e9a2837608f30c132e7385e7",
+      "bytes": 73584,
+      "sha256": "d460c2bd53da54ada04382d4fd923302ece9f269e9a2837608f30c132e7385e7",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/e1a81cd86609dacb1102314ae1c2d01bcc1fffeb2b1de3aa7c873a2e285d55eb",
+      "destination": "tests/heldout/expected/e1a81cd86609dacb1102314ae1c2d01bcc1fffeb2b1de3aa7c873a2e285d55eb",
+      "bytes": 22424,
+      "sha256": "e1a81cd86609dacb1102314ae1c2d01bcc1fffeb2b1de3aa7c873a2e285d55eb",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/e531066382ee607aa050c1432be4995ffd0898cb6152bf0aee2a716e5f3b3828",
+      "destination": "tests/heldout/expected/e531066382ee607aa050c1432be4995ffd0898cb6152bf0aee2a716e5f3b3828",
+      "bytes": 29516,
+      "sha256": "e531066382ee607aa050c1432be4995ffd0898cb6152bf0aee2a716e5f3b3828",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/fae56c5a812b299dff63bfbe15d00edccd238c66f5f2d98de72e4a1534c6c257",
+      "destination": "tests/heldout/expected/fae56c5a812b299dff63bfbe15d00edccd238c66f5f2d98de72e4a1534c6c257",
+      "bytes": 21200,
+      "sha256": "fae56c5a812b299dff63bfbe15d00edccd238c66f5f2d98de72e4a1534c6c257",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/fc29bf94b75a25b72f71e0e0c3f5f3508d450c6de49ad8f0796935e6aa09c612",
+      "destination": "tests/heldout/expected/fc29bf94b75a25b72f71e0e0c3f5f3508d450c6de49ad8f0796935e6aa09c612",
+      "bytes": 34264,
+      "sha256": "fc29bf94b75a25b72f71e0e0c3f5f3508d450c6de49ad8f0796935e6aa09c612",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/fda727e27ef4895c40f9655e2888e8bd09346fe383118d88836e82af3df94fc7",
+      "destination": "tests/heldout/expected/fda727e27ef4895c40f9655e2888e8bd09346fe383118d88836e82af3df94fc7",
+      "bytes": 21092,
+      "sha256": "fda727e27ef4895c40f9655e2888e8bd09346fe383118d88836e82af3df94fc7",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/0096f1622cb9b74d361b45ca7c6ffa071260aff6c599fe257784bb815edaae88",
+      "destination": "tests/heldout/files/0096f1622cb9b74d361b45ca7c6ffa071260aff6c599fe257784bb815edaae88",
+      "bytes": 208793,
+      "sha256": "0096f1622cb9b74d361b45ca7c6ffa071260aff6c599fe257784bb815edaae88",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/012b2b8e68ab5833c8fa7a15016516589330b097ede6bdf68e3ed014df80e56e",
+      "destination": "tests/heldout/files/012b2b8e68ab5833c8fa7a15016516589330b097ede6bdf68e3ed014df80e56e",
+      "bytes": 103268,
+      "sha256": "012b2b8e68ab5833c8fa7a15016516589330b097ede6bdf68e3ed014df80e56e",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/12ca06cc572850c54336f701de69dabe78e0b8b981b444438cae1acccc247c49",
+      "destination": "tests/heldout/files/12ca06cc572850c54336f701de69dabe78e0b8b981b444438cae1acccc247c49",
+      "bytes": 113214,
+      "sha256": "12ca06cc572850c54336f701de69dabe78e0b8b981b444438cae1acccc247c49",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/238839f011fa5572c5dfee8d3660979ae104a89c987c3e77f685d79a5f327b17",
+      "destination": "tests/heldout/files/238839f011fa5572c5dfee8d3660979ae104a89c987c3e77f685d79a5f327b17",
+      "bytes": 129193,
+      "sha256": "238839f011fa5572c5dfee8d3660979ae104a89c987c3e77f685d79a5f327b17",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/29ef1d850e8ba1bee7ddcc94ca7d44aabab016ddbea0b0b90ea89da51b0730a4",
+      "destination": "tests/heldout/files/29ef1d850e8ba1bee7ddcc94ca7d44aabab016ddbea0b0b90ea89da51b0730a4",
+      "bytes": 128350,
+      "sha256": "29ef1d850e8ba1bee7ddcc94ca7d44aabab016ddbea0b0b90ea89da51b0730a4",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/2b4a733c1da0f5baf8aa9baa97b321786cc6e94f06192b27e651fbcb558a557d",
+      "destination": "tests/heldout/files/2b4a733c1da0f5baf8aa9baa97b321786cc6e94f06192b27e651fbcb558a557d",
+      "bytes": 96756,
+      "sha256": "2b4a733c1da0f5baf8aa9baa97b321786cc6e94f06192b27e651fbcb558a557d",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/373c5de7538555198bd9a841b605841a0ef2f3296f96ec705a55b34e96bc44c4",
+      "destination": "tests/heldout/files/373c5de7538555198bd9a841b605841a0ef2f3296f96ec705a55b34e96bc44c4",
+      "bytes": 601226,
+      "sha256": "373c5de7538555198bd9a841b605841a0ef2f3296f96ec705a55b34e96bc44c4",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/3a9264dc76a063216be23693c5278883f75d2b56230158e4eb9cb432a2eccd59",
+      "destination": "tests/heldout/files/3a9264dc76a063216be23693c5278883f75d2b56230158e4eb9cb432a2eccd59",
+      "bytes": 473113,
+      "sha256": "3a9264dc76a063216be23693c5278883f75d2b56230158e4eb9cb432a2eccd59",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/41bd75414960bea62d242b5c08ac064274ae6e34ca98cf95b40020c657b15a74",
+      "destination": "tests/heldout/files/41bd75414960bea62d242b5c08ac064274ae6e34ca98cf95b40020c657b15a74",
+      "bytes": 111190,
+      "sha256": "41bd75414960bea62d242b5c08ac064274ae6e34ca98cf95b40020c657b15a74",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/43287e5746ee0de7cd01a855157ebb5a35bb93cd36d77e0553175c186a6066a1",
+      "destination": "tests/heldout/files/43287e5746ee0de7cd01a855157ebb5a35bb93cd36d77e0553175c186a6066a1",
+      "bytes": 102253,
+      "sha256": "43287e5746ee0de7cd01a855157ebb5a35bb93cd36d77e0553175c186a6066a1",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/4d17eb66582672943e4d418c1cea47b559c0a7f19d153e4ca47276d210aaaf54",
+      "destination": "tests/heldout/files/4d17eb66582672943e4d418c1cea47b559c0a7f19d153e4ca47276d210aaaf54",
+      "bytes": 350860,
+      "sha256": "4d17eb66582672943e4d418c1cea47b559c0a7f19d153e4ca47276d210aaaf54",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/4dcc140d8d6302085d38fa69352e3bd3020bce8bee73bfdd80e39947c1b053ff",
+      "destination": "tests/heldout/files/4dcc140d8d6302085d38fa69352e3bd3020bce8bee73bfdd80e39947c1b053ff",
+      "bytes": 107355,
+      "sha256": "4dcc140d8d6302085d38fa69352e3bd3020bce8bee73bfdd80e39947c1b053ff",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/53cf958a7a9e4a07f13f7ff13c3d2620e6998e418d4b342263b6b0aa53285af5",
+      "destination": "tests/heldout/files/53cf958a7a9e4a07f13f7ff13c3d2620e6998e418d4b342263b6b0aa53285af5",
+      "bytes": 101339,
+      "sha256": "53cf958a7a9e4a07f13f7ff13c3d2620e6998e418d4b342263b6b0aa53285af5",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/5df61a607287b13ef8017893d35b3f6369d858ba53e17f3b3deef389b1bc4f27",
+      "destination": "tests/heldout/files/5df61a607287b13ef8017893d35b3f6369d858ba53e17f3b3deef389b1bc4f27",
+      "bytes": 172397,
+      "sha256": "5df61a607287b13ef8017893d35b3f6369d858ba53e17f3b3deef389b1bc4f27",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/635c70e1dd859d57e4846fac4ca4b0761f96feb1e3839ba2a2fe28a47ad11adb",
+      "destination": "tests/heldout/files/635c70e1dd859d57e4846fac4ca4b0761f96feb1e3839ba2a2fe28a47ad11adb",
+      "bytes": 106760,
+      "sha256": "635c70e1dd859d57e4846fac4ca4b0761f96feb1e3839ba2a2fe28a47ad11adb",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/6e9eaa73db17cb62e2e23ed8e2aa96b1578cc8a08e9d4bfca0c0e273dfe849a2",
+      "destination": "tests/heldout/files/6e9eaa73db17cb62e2e23ed8e2aa96b1578cc8a08e9d4bfca0c0e273dfe849a2",
+      "bytes": 146632,
+      "sha256": "6e9eaa73db17cb62e2e23ed8e2aa96b1578cc8a08e9d4bfca0c0e273dfe849a2",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/6ea4ad0e49681e9d1177be74993ec8ef4fdf2c2334e7fc5d82316f1bc1388ce1",
+      "destination": "tests/heldout/files/6ea4ad0e49681e9d1177be74993ec8ef4fdf2c2334e7fc5d82316f1bc1388ce1",
+      "bytes": 255162,
+      "sha256": "6ea4ad0e49681e9d1177be74993ec8ef4fdf2c2334e7fc5d82316f1bc1388ce1",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/77396123c5ee78f5cc5d58bc99a380ba54508becd1568dae703625bd3342b840",
+      "destination": "tests/heldout/files/77396123c5ee78f5cc5d58bc99a380ba54508becd1568dae703625bd3342b840",
+      "bytes": 192768,
+      "sha256": "77396123c5ee78f5cc5d58bc99a380ba54508becd1568dae703625bd3342b840",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/87420e400000a8ae25e6c27a3fef4834dc349aea52cfc705a74ebf1c495c9200",
+      "destination": "tests/heldout/files/87420e400000a8ae25e6c27a3fef4834dc349aea52cfc705a74ebf1c495c9200",
+      "bytes": 100956,
+      "sha256": "87420e400000a8ae25e6c27a3fef4834dc349aea52cfc705a74ebf1c495c9200",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/91437a5f30a2ae03e4e3a736864ad6964eaaa01e877d34c3ee7c4ea0eaf45670",
+      "destination": "tests/heldout/files/91437a5f30a2ae03e4e3a736864ad6964eaaa01e877d34c3ee7c4ea0eaf45670",
+      "bytes": 125620,
+      "sha256": "91437a5f30a2ae03e4e3a736864ad6964eaaa01e877d34c3ee7c4ea0eaf45670",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/9c58593c3b7fd12da388db03031a15934ea0a21ab394258b7e7c49c1777a59ef",
+      "destination": "tests/heldout/files/9c58593c3b7fd12da388db03031a15934ea0a21ab394258b7e7c49c1777a59ef",
+      "bytes": 172293,
+      "sha256": "9c58593c3b7fd12da388db03031a15934ea0a21ab394258b7e7c49c1777a59ef",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/b2181f3924c9dc7eee0db7000f44349813987581300f95e169e2cbda8ad4e578",
+      "destination": "tests/heldout/files/b2181f3924c9dc7eee0db7000f44349813987581300f95e169e2cbda8ad4e578",
+      "bytes": 112126,
+      "sha256": "b2181f3924c9dc7eee0db7000f44349813987581300f95e169e2cbda8ad4e578",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/b5cb58fe36159ac3142dd3d327b9164cf5a5042b24b575871b0d40c890f842cf",
+      "destination": "tests/heldout/files/b5cb58fe36159ac3142dd3d327b9164cf5a5042b24b575871b0d40c890f842cf",
+      "bytes": 124619,
+      "sha256": "b5cb58fe36159ac3142dd3d327b9164cf5a5042b24b575871b0d40c890f842cf",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/b8f2b9fc4c4e6eff5af4e56cac36523bb86ffe1746ceb07df9b5cfc27dd670fa",
+      "destination": "tests/heldout/files/b8f2b9fc4c4e6eff5af4e56cac36523bb86ffe1746ceb07df9b5cfc27dd670fa",
+      "bytes": 213851,
+      "sha256": "b8f2b9fc4c4e6eff5af4e56cac36523bb86ffe1746ceb07df9b5cfc27dd670fa",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/bc64dde435ea8c287b5d51bdfe928860de78449ad275595af65275a1308ba421",
+      "destination": "tests/heldout/files/bc64dde435ea8c287b5d51bdfe928860de78449ad275595af65275a1308ba421",
+      "bytes": 101729,
+      "sha256": "bc64dde435ea8c287b5d51bdfe928860de78449ad275595af65275a1308ba421",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/c116b510accebcede1e6f378649c84678536d4e10db7816c0a5e934858c267d1",
+      "destination": "tests/heldout/files/c116b510accebcede1e6f378649c84678536d4e10db7816c0a5e934858c267d1",
+      "bytes": 137801,
+      "sha256": "c116b510accebcede1e6f378649c84678536d4e10db7816c0a5e934858c267d1",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/c241a68d40f5c711c0a6f46db5cba4e50d775f79ae03073fc6ff59d5293a1386",
+      "destination": "tests/heldout/files/c241a68d40f5c711c0a6f46db5cba4e50d775f79ae03073fc6ff59d5293a1386",
+      "bytes": 96260,
+      "sha256": "c241a68d40f5c711c0a6f46db5cba4e50d775f79ae03073fc6ff59d5293a1386",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/c8caef445dc83f652ed0a441b09f5c823f38e04dce79c33d941c2c3ecdfef038",
+      "destination": "tests/heldout/files/c8caef445dc83f652ed0a441b09f5c823f38e04dce79c33d941c2c3ecdfef038",
+      "bytes": 128244,
+      "sha256": "c8caef445dc83f652ed0a441b09f5c823f38e04dce79c33d941c2c3ecdfef038",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/ceff690dc72c027b1f5a54164a56e5b4da882abcb20140314ef7b584f47a07ee",
+      "destination": "tests/heldout/files/ceff690dc72c027b1f5a54164a56e5b4da882abcb20140314ef7b584f47a07ee",
+      "bytes": 115628,
+      "sha256": "ceff690dc72c027b1f5a54164a56e5b4da882abcb20140314ef7b584f47a07ee",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/d03c6acc97be7f0a5ecf8ba2164e2dbdc10aad6b7b768b43d997cbf53d248f0d",
+      "destination": "tests/heldout/files/d03c6acc97be7f0a5ecf8ba2164e2dbdc10aad6b7b768b43d997cbf53d248f0d",
+      "bytes": 100095,
+      "sha256": "d03c6acc97be7f0a5ecf8ba2164e2dbdc10aad6b7b768b43d997cbf53d248f0d",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/e2e7419c82fea2d4f80e57e8bc75dfb96932c8b877719e153b3bab40ed3d49ff",
+      "destination": "tests/heldout/files/e2e7419c82fea2d4f80e57e8bc75dfb96932c8b877719e153b3bab40ed3d49ff",
+      "bytes": 223566,
+      "sha256": "e2e7419c82fea2d4f80e57e8bc75dfb96932c8b877719e153b3bab40ed3d49ff",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/manifest.json",
+      "destination": "tests/heldout/manifest.json",
+      "bytes": 50309,
+      "sha256": "58b82e7273a60cb32fe391ae8a2ccbeec214076d98527060895b9fda9a5bd049",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/references/pass-1.tsv",
+      "destination": "tests/heldout/references/pass-1.tsv",
+      "bytes": 3292,
+      "sha256": "a1ff29af0b0deca260864dbdbdedd45d22504b25bd5f2f97bd6f6ec2603f9a50",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/references/pass-2.tsv",
+      "destination": "tests/heldout/references/pass-2.tsv",
+      "bytes": 3292,
+      "sha256": "a1ff29af0b0deca260864dbdbdedd45d22504b25bd5f2f97bd6f6ec2603f9a50",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/references/pristine-double-capture.json",
+      "destination": "tests/heldout/references/pristine-double-capture.json",
+      "bytes": 3019,
+      "sha256": "6f134f1f58192f462f38113cbba4f37e5ef26a44197e50d613626cad2479cc94",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/sources.json",
+      "destination": "tests/heldout/sources.json",
+      "bytes": 3923,
+      "sha256": "4036f052a22577f4273625c0669169b2610ee654392dacbfb686aed7e6d78116",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "public",
+      "name": "19a890175e9263d748f627993de6f4b1af9cd21e03f080e4bfb3a1fac10205a2",
+      "destination": "environment/workload/inputs/files/19a890175e9263d748f627993de6f4b1af9cd21e03f080e4bfb3a1fac10205a2",
+      "bytes": 18752204,
+      "sha256": "19a890175e9263d748f627993de6f4b1af9cd21e03f080e4bfb3a1fac10205a2",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/glibc/glibc-2.40.tar.xz",
+        "bytes": 18752204,
+        "sha256": "19a890175e9263d748f627993de6f4b1af9cd21e03f080e4bfb3a1fac10205a2"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "fe10c37353213d78a5b83d48af231e005c4da84db5ce88037d88355938259640",
+      "destination": "environment/workload/inputs/files/fe10c37353213d78a5b83d48af231e005c4da84db5ce88037d88355938259640",
+      "bytes": 10270724,
+      "sha256": "fe10c37353213d78a5b83d48af231e005c4da84db5ce88037d88355938259640",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/gettext/gettext-0.22.5.tar.xz",
+        "bytes": 10270724,
+        "sha256": "fe10c37353213d78a5b83d48af231e005c4da84db5ce88037d88355938259640"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "cd328edeac92f6a665de9f323c93b712af1858bc2e0d88f3f7100469470a1b8a",
+      "destination": "environment/workload/inputs/files/cd328edeac92f6a665de9f323c93b712af1858bc2e0d88f3f7100469470a1b8a",
+      "bytes": 6007136,
+      "sha256": "cd328edeac92f6a665de9f323c93b712af1858bc2e0d88f3f7100469470a1b8a",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/coreutils/coreutils-9.5.tar.xz",
+        "bytes": 6007136,
+        "sha256": "cd328edeac92f6a665de9f323c93b712af1858bc2e0d88f3f7100469470a1b8a"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "bd7168517fd526333446d4f7ab816527925634094fbd37322e17e2b8d8e76388",
+      "destination": "environment/workload/inputs/files/bd7168517fd526333446d4f7ab816527925634094fbd37322e17e2b8d8e76388",
+      "bytes": 5802280,
+      "sha256": "bd7168517fd526333446d4f7ab816527925634094fbd37322e17e2b8d8e76388",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/guile/guile-3.0.10.tar.xz",
+        "bytes": 5802280,
+        "sha256": "bd7168517fd526333446d4f7ab816527925634094fbd37322e17e2b8d8e76388"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "31ae37e46283529432b61bee1ce01ed0090d599e606fc6a29dca1f77c76a6c82",
+      "destination": "environment/workload/inputs/files/31ae37e46283529432b61bee1ce01ed0090d599e606fc6a29dca1f77c76a6c82",
+      "bytes": 5572864,
+      "sha256": "31ae37e46283529432b61bee1ce01ed0090d599e606fc6a29dca1f77c76a6c82",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/texinfo/texinfo-7.1.1.tar.xz",
+        "bytes": 5572864,
+        "sha256": "31ae37e46283529432b61bee1ce01ed0090d599e606fc6a29dca1f77c76a6c82"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "694db764812a6236423d4ff40ceb7b6c4c441301b72ad502bb5c27e00cd56f78",
+      "destination": "environment/workload/inputs/files/694db764812a6236423d4ff40ceb7b6c4c441301b72ad502bb5c27e00cd56f78",
+      "bytes": 3510032,
+      "sha256": "694db764812a6236423d4ff40ceb7b6c4c441301b72ad502bb5c27e00cd56f78",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/gawk/gawk-5.3.1.tar.xz",
+        "bytes": 3510032,
+        "sha256": "694db764812a6236423d4ff40ceb7b6c4c441301b72ad502bb5c27e00cd56f78"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "9bba0214ccf7f1079c5d59210045227bcf619519840ebfa80cd3849cff5a5bf2",
+      "destination": "environment/workload/inputs/files/9bba0214ccf7f1079c5d59210045227bcf619519840ebfa80cd3849cff5a5bf2",
+      "bytes": 2817324,
+      "sha256": "9bba0214ccf7f1079c5d59210045227bcf619519840ebfa80cd3849cff5a5bf2",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/bison/bison-3.8.2.tar.xz",
+        "bytes": 2817324,
+        "sha256": "9bba0214ccf7f1079c5d59210045227bcf619519840ebfa80cd3849cff5a5bf2"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "4d62ff37342ec7aed748535323930c7cf94acf71c3591882b26a7ea50f3edc16",
+      "destination": "environment/workload/inputs/files/4d62ff37342ec7aed748535323930c7cf94acf71c3591882b26a7ea50f3edc16",
+      "bytes": 2317208,
+      "sha256": "4d62ff37342ec7aed748535323930c7cf94acf71c3591882b26a7ea50f3edc16",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/tar/tar-1.35.tar.xz",
+        "bytes": 2317208,
+        "sha256": "4d62ff37342ec7aed748535323930c7cf94acf71c3591882b26a7ea50f3edc16"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5",
+      "destination": "environment/workload/inputs/files/1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5",
+      "bytes": 2240712,
+      "sha256": "1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/findutils/findutils-4.10.0.tar.xz",
+        "bytes": 2240712,
+        "sha256": "1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab",
+      "destination": "environment/workload/inputs/files/1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab",
+      "bytes": 1703776,
+      "sha256": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab",
+      "distribution": "upstream",
+      "fetch": {
+        "kind": "url",
+        "url": "https://mirrors.kernel.org/gnu/grep/grep-3.11.tar.xz",
+        "bytes": 1703776,
+        "sha256": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab"
+      }
+    },
+    {
+      "scope": "public",
+      "name": "0bfa35ccae43a4c5e98ac8a11e5eef7d010cdf59ad1e6b1596e037d128da420e",
+      "destination": "environment/workload/inputs/files/0bfa35ccae43a4c5e98ac8a11e5eef7d010cdf59ad1e6b1596e037d128da420e",
+      "bytes": 20256,
+      "sha256": "0bfa35ccae43a4c5e98ac8a11e5eef7d010cdf59ad1e6b1596e037d128da420e",
+      "distribution": "git"
+    },
+    {
+      "scope": "public",
+      "name": "70230e1aab036b6adc18cae9f97e5df7f9575c65b5ee7a9ae789f5c510f1d780",
+      "destination": "environment/workload/inputs/files/70230e1aab036b6adc18cae9f97e5df7f9575c65b5ee7a9ae789f5c510f1d780",
+      "bytes": 32184,
+      "sha256": "70230e1aab036b6adc18cae9f97e5df7f9575c65b5ee7a9ae789f5c510f1d780",
+      "distribution": "git"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/008760aa59b371d9404d6499aa5da646502c2ce8542f6dc274062376044564df",
+      "destination": "tests/heldout/expected/008760aa59b371d9404d6499aa5da646502c2ce8542f6dc274062376044564df",
+      "bytes": 24,
+      "sha256": "008760aa59b371d9404d6499aa5da646502c2ce8542f6dc274062376044564df",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/17c93010cbeeb0a0374968ccb5bc5a4da12509b06c15398d0821de8ab1c07af9",
+      "destination": "tests/heldout/expected/17c93010cbeeb0a0374968ccb5bc5a4da12509b06c15398d0821de8ab1c07af9",
+      "bytes": 144,
+      "sha256": "17c93010cbeeb0a0374968ccb5bc5a4da12509b06c15398d0821de8ab1c07af9",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/20eccc3923dac8b9de145043341810f1430e869cfe0191ff09eb1e4cff1f3a2c",
+      "destination": "tests/heldout/expected/20eccc3923dac8b9de145043341810f1430e869cfe0191ff09eb1e4cff1f3a2c",
+      "bytes": 26,
+      "sha256": "20eccc3923dac8b9de145043341810f1430e869cfe0191ff09eb1e4cff1f3a2c",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/2b5eec09fbeec171b5a95f51be11e50a5a436f11ad6866820289ae2df957dde7",
+      "destination": "tests/heldout/expected/2b5eec09fbeec171b5a95f51be11e50a5a436f11ad6866820289ae2df957dde7",
+      "bytes": 26,
+      "sha256": "2b5eec09fbeec171b5a95f51be11e50a5a436f11ad6866820289ae2df957dde7",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/96f2df05f8fb6451afa5cc86172552ba105566143e9a1170e6a75ef2fd38e6cc",
+      "destination": "tests/heldout/expected/96f2df05f8fb6451afa5cc86172552ba105566143e9a1170e6a75ef2fd38e6cc",
+      "bytes": 27,
+      "sha256": "96f2df05f8fb6451afa5cc86172552ba105566143e9a1170e6a75ef2fd38e6cc",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/b493f05ad89c0b588944d2c15108e3ea083b4359104e1686f7c7850508b0b75a",
+      "destination": "tests/heldout/expected/b493f05ad89c0b588944d2c15108e3ea083b4359104e1686f7c7850508b0b75a",
+      "bytes": 27,
+      "sha256": "b493f05ad89c0b588944d2c15108e3ea083b4359104e1686f7c7850508b0b75a",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/c00d63cb2f37c4361cd0a3d46597af1bfc3909a27db7cd464d8ad018aa19ea9b",
+      "destination": "tests/heldout/expected/c00d63cb2f37c4361cd0a3d46597af1bfc3909a27db7cd464d8ad018aa19ea9b",
+      "bytes": 25,
+      "sha256": "c00d63cb2f37c4361cd0a3d46597af1bfc3909a27db7cd464d8ad018aa19ea9b",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/c5374690775fc494ae87f30205cb17656f95574ab34e64640ca42a4001af2c81",
+      "destination": "tests/heldout/expected/c5374690775fc494ae87f30205cb17656f95574ab34e64640ca42a4001af2c81",
+      "bytes": 26,
+      "sha256": "c5374690775fc494ae87f30205cb17656f95574ab34e64640ca42a4001af2c81",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/d1640e41ca93e23f01d8a4ce57ad2807c1b29ee40fb037f7a8830c4036718742",
+      "destination": "tests/heldout/expected/d1640e41ca93e23f01d8a4ce57ad2807c1b29ee40fb037f7a8830c4036718742",
+      "bytes": 25,
+      "sha256": "d1640e41ca93e23f01d8a4ce57ad2807c1b29ee40fb037f7a8830c4036718742",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/e9904e17c893c3102e13f38dad8c96b056bf8960f1d970993d5f04eea511f096",
+      "destination": "tests/heldout/expected/e9904e17c893c3102e13f38dad8c96b056bf8960f1d970993d5f04eea511f096",
+      "bytes": 26,
+      "sha256": "e9904e17c893c3102e13f38dad8c96b056bf8960f1d970993d5f04eea511f096",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/expected/ffaf7d10088bf85c313c7b6259b5c842990c1538c6a10d31dfea703ef0c2cc82",
+      "destination": "tests/heldout/expected/ffaf7d10088bf85c313c7b6259b5c842990c1538c6a10d31dfea703ef0c2cc82",
+      "bytes": 26,
+      "sha256": "ffaf7d10088bf85c313c7b6259b5c842990c1538c6a10d31dfea703ef0c2cc82",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/af94d1aceb572966ff3090af08bf9e72db46a4526c898c370a5eaaea8131c2a3",
+      "destination": "tests/heldout/files/af94d1aceb572966ff3090af08bf9e72db46a4526c898c370a5eaaea8131c2a3",
+      "bytes": 41416,
+      "sha256": "af94d1aceb572966ff3090af08bf9e72db46a4526c898c370a5eaaea8131c2a3",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/files/fc432da618c77324b1a2e8842b4953664eac5bcd0d3833044f3e5121a13a5bd7",
+      "destination": "tests/heldout/files/fc432da618c77324b1a2e8842b4953664eac5bcd0d3833044f3e5121a13a5bd7",
+      "bytes": 21884,
+      "sha256": "fc432da618c77324b1a2e8842b4953664eac5bcd0d3833044f3e5121a13a5bd7",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/references/stream-decode-double-capture.json",
+      "destination": "tests/heldout/references/stream-decode-double-capture.json",
+      "bytes": 1424,
+      "sha256": "71751a097658e81765368512f4159215e5fd7865bd366d975a8236bbd9d00e68",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/references/stream-decode-pass-1.tsv",
+      "destination": "tests/heldout/references/stream-decode-pass-1.tsv",
+      "bytes": 1051,
+      "sha256": "69cced5e10475a07e34d32dcb5bbef909c7770bd9f73581e6a32d98bcbc04fae",
+      "provenance": "built-new"
+    },
+    {
+      "scope": "heldout",
+      "name": "tests/heldout/references/stream-decode-pass-2.tsv",
+      "destination": "tests/heldout/references/stream-decode-pass-2.tsv",
+      "bytes": 1051,
+      "sha256": "69cced5e10475a07e34d32dcb5bbef909c7770bd9f73581e6a32d98bcbc04fae",
+      "provenance": "built-new"
+    },
+    {
+      "bytes": 29534380,
+      "kind": "file",
+      "license": "MIT",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MIT (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "733d0bea242ed6a5bb5c806fe836792ce7f092d45a2f115b7b7e15897c9dd96f",
+      "url": "https://archive.mesa3d.org/mesa-24.2.5.tar.xz",
+      "name": "mesa-24.2.5.tar.xz",
+      "destination": "tests/heldout/files/733d0bea242ed6a5bb5c806fe836792ce7f092d45a2f115b7b7e15897c9dd96f",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 10652952,
+      "kind": "file",
+      "license": "GPL-3.0-or-later",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license GPL-3.0-or-later (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "4687b93c47cd1e33665a2dc503790b6213ee827872fc004d978d14bcbfa9b495",
+      "url": "https://download.gnome.org/sources/gnome-builder/47/gnome-builder-47.2.tar.xz",
+      "name": "gnome-builder-47.2.tar.xz",
+      "destination": "tests/heldout/files/4687b93c47cd1e33665a2dc503790b6213ee827872fc004d978d14bcbfa9b495",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 5555528,
+      "kind": "file",
+      "license": "LGPL-2.1-or-later",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license LGPL-2.1-or-later (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63",
+      "url": "https://download.gnome.org/sources/glib/2.82/glib-2.82.2.tar.xz",
+      "name": "glib-2.82.2.tar.xz",
+      "destination": "tests/heldout/files/ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 1839380,
+      "kind": "file",
+      "license": "X11 (MIT-style)",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license X11 (MIT-style) (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "2b3b3dad9347db41dca56beb7db5878f283bde1142f04d9f8e478af435dfdc53",
+      "url": "https://www.x.org/releases/individual/lib/libX11-1.8.10.tar.xz",
+      "name": "libX11-1.8.10.tar.xz",
+      "destination": "tests/heldout/files/2b3b3dad9347db41dca56beb7db5878f283bde1142f04d9f8e478af435dfdc53",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 1963180,
+      "kind": "file",
+      "license": "LGPL-2.0-or-later",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license LGPL-2.0-or-later (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "8a9eed75021ee734d7fc0fdf3a65c3bba51dfefe4ae51a9b414a60c70b2d1ed8",
+      "url": "https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz",
+      "name": "pango-1.54.0.tar.xz",
+      "destination": "tests/heldout/files/8a9eed75021ee734d7fc0fdf3a65c3bba51dfefe4ae51a9b414a60c70b2d1ed8",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 1864500,
+      "kind": "file",
+      "license": "multiple (per-page notices)",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license multiple (per-page notices) (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "e23cbac29f110ba571f0da8523e79d373691466ed7f2a31301721817d34530bd",
+      "url": "https://cdn.kernel.org/pub/linux/docs/man-pages/man-pages-6.9.1.tar.xz",
+      "name": "man-pages-6.9.1.tar.xz",
+      "destination": "tests/heldout/files/e23cbac29f110ba571f0da8523e79d373691466ed7f2a31301721817d34530bd",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 923736,
+      "kind": "file",
+      "license": "GPL-2.0-or-later",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license GPL-2.0-or-later (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "1f795398a04aeaacd06a8f6ace2cfd913c33fa5953ca99daae83bb5c534611c3",
+      "url": "https://cdn.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.11.0.tar.xz",
+      "name": "iproute2-6.11.0.tar.xz",
+      "destination": "tests/heldout/files/1f795398a04aeaacd06a8f6ace2cfd913c33fa5953ca99daae83bb5c534611c3",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 514428,
+      "kind": "file",
+      "license": "LGPL-2.1-or-later (library) and GPL-2.0-or-later (tools)",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license LGPL-2.1-or-later (library) and GPL-2.0-or-later (tools) (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "dc768b3155172091f56dc69430b5481f2d76ecd9ccb54ead8c2540dbcf5ea9bc",
+      "url": "https://cdn.kernel.org/pub/linux/utils/kernel/kmod/kmod-33.tar.xz",
+      "name": "kmod-33.tar.xz",
+      "destination": "tests/heldout/files/dc768b3155172091f56dc69430b5481f2d76ecd9ccb54ead8c2540dbcf5ea9bc",
+      "retention": "fetch-only"
+    },
+    {
+      "bytes": 18651572,
+      "kind": "file",
+      "license": "LGPL-2.1-or-later",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license LGPL-2.1-or-later (redistribution permitted); the schema's only accepted basis is fetch-only, used here to keep large held-out release archives out of Git/LFS.",
+      "role": "input",
+      "scope": "heldout",
+      "sha256": "302d6813fbed95c419fb3ab67c5da5e214882b6a645c3eab9028dfb91ab418a4",
+      "url": "https://download.gnome.org/sources/gtk/4.16/gtk-4.16.5.tar.xz",
+      "name": "gtk-4.16.5.tar.xz",
+      "destination": "tests/heldout/files/302d6813fbed95c419fb3ab67c5da5e214882b6a645c3eab9028dfb91ab418a4",
+      "retention": "fetch-only"
+    }
+  ]
+}

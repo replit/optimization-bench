@@ -1,0 +1,320 @@
+{
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "candidate_qualification": false,
+  "capabilities": {
+    "atheris": {
+      "evidence": [
+        2
+      ],
+      "reason": "fixture control succeeded; not task qualification",
+      "status": "validated"
+    },
+    "coverage.py-branch": {
+      "evidence": [
+        3,
+        4
+      ],
+      "reason": "task fixture branch export checked",
+      "status": "validated"
+    },
+    "coverage.py-child-process": {
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "reason": "both parent positive and child negative branch bodies retained after combine",
+      "status": "validated"
+    },
+    "hypothesis": {
+      "evidence": [
+        1
+      ],
+      "reason": "fixture control succeeded; not task qualification",
+      "status": "validated"
+    },
+    "interpreter": {
+      "evidence": [
+        0
+      ],
+      "reason": "fixture control succeeded; not task qualification",
+      "status": "validated"
+    },
+    "native-extension-sanitizers": {
+      "evidence": [],
+      "reason": "requires task-specific native module build plus complete instrumented dependency closure",
+      "status": "unsupported"
+    }
+  },
+  "container_leftovers": [],
+  "container_telemetry": {
+    "cpu.stat": "usage_usec 1680124\nuser_usec 1410386\nsystem_usec 269738\nnice_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+    "execution_protocol": "process",
+    "exit_observation": {
+      "fallback_reason": null,
+      "method": "pidfd-poll"
+    },
+    "leftover_count": 0,
+    "memory.peak": "78274560\n",
+    "operation_cpu_time_usec": 1529570
+  },
+  "execution_protocol": "shared-DockerExecutor",
+  "language": "python",
+  "runner_image": "sha256:c498ddea6cb8294f68ccd230fce03984c87ba76574d01ee69eea9f75bda0ab7d",
+  "runtime_input_sha256": {
+    "coverage.py": "22d9a2e2069c1e725fbee926bdff9b75b3616b092fece07681bb25788659a0de",
+    "fixtures/go_race_test.go": "04fc3282cd45a2063c2c4c922c7770e31f4d0109f6d7688a24d655f66f5cc18a",
+    "fixtures/go_target.go": "59b18eb96f671d859b383b151432638d9e8ba49b9b8ec8ef8dc02b20b7423a71",
+    "fixtures/go_test.go": "3a3ee6cf9a2abfb60fd6beed7653676b18fa229d55b8c1de6e378c7c4c1ae817",
+    "fixtures/header-support.txt": "7d78a2baabf5f9f4231beb245861ffa1873ae0136a8308fc7fddf84218690b4a",
+    "fixtures/js_coverage.cjs": "214d58a0cd44ea9a7129c96380087fd10a2068c4bd405848cdebec817c514543",
+    "fixtures/js_fuzz.cjs": "b88484f332533083623acd0aa6003408b0d87aec07976e410671b03fe3daba59",
+    "fixtures/js_property.cjs": "09080b55464ac3606a2bba3b2a7f9a3967027651d3983b6f3a29eefb619fcab8",
+    "fixtures/js_target.cjs": "d1437f8e10eeb2a2a7d1bd398e28d1554e8888a09bb8c2c84092ba3e5c6592f7",
+    "fixtures/native.c": "dcea64c704ad97fbef8b53a4fa201130d19f2371540aff5e7047c56a7ae4b65f",
+    "fixtures/offline-python-parent.Dockerfile": "33e9b0fdd94cfc33c0c0d02b79ecbc8b5a75f3fb6df89482e16a5dfe5888aeda",
+    "fixtures/python_fuzz.py": "bae33e35c939747147be21c0c6ed2381b0811f4e68fcf55d65e858f5365672b4",
+    "fixtures/python_property.py": "078b3beaf6e83eb0c0fd205d6c5ff1ee4fbe5836bf1a85957c3eccba10c50aec",
+    "fixtures/python_target.py": "971bc2c0fa5251a30fe95b37e3fb088dcbe8fad662dda2a08800b64585700b5f",
+    "fixtures/rust.rs": "86dded144cb73bffea16bc579072fd5cbe0827e4d13b01354d63472a39135464",
+    "fixtures/rust_asan.rs": "fc220bdd678ce1137b641254b21c648b1f7050fdf290e25a7e8acf4b81967704",
+    "fixtures/rust_fuzz.rs": "34f6541baa379cae59ee18886ba9c0b5ff295f4dd06f1d70f866121a37c9f7ca",
+    "fixtures/rust_property.rs": "1119e330eb3116b19a55c333089cb24eadce44ad74208c7a229d3e3093d1475c",
+    "fixtures/rust_tsan.rs": "de97c1e91799cf44c00b83e62c064e60790ce889240f400028814dd0ba6b1c9d",
+    "go/branches.go": "67c54e6e71d93389d029cba7394406b639c0da34d80ab681b42e5d33bafda5ef",
+    "go/branches_test.go": "fd95d102b69fd47d2b85a707eb4a1297c3a35361dbdabe2e7d631c2850ea9516",
+    "go/go.mod": "4715586c89ac4af831e74c3ab37f5530321aec07d1d2aee9f86f918ccded7c97",
+    "go/go.sum": "b8ca4f829fbc76244f036300a051e26483b236c255183de966818bba748cac00",
+    "probe.py": "fcfb96dffb89beb740292c8687bc0fde94972852a662e8bb04bde70c209b9e84",
+    "remap.cjs": "9090bae37ea35d9bc1e358579bad4b56edc4b6e2f152b1f9f156f663a357d671",
+    "rust/checks/Cargo.lock": "b3319c253536c9d13856b20ce8e5eb921985a4ed35ee1c5de32c0af024c5dcdf",
+    "rust/checks/Cargo.toml": "4a6e657be7693f38d424e88b3877c6dbe17bc8138a38c900c75fd36d68344284",
+    "rust/checks/miri-bad.rs": "cb2ee043db85c3679f0847428956dd210ba975ffd110446eb091b34e684ca0fd",
+    "rust/checks/miri-safe.rs": "749ccef98740e6e957d906a9168d1b76a2c78fe80dd595b9ba57ddf3c90bd1b2",
+    "rust/checks/race.rs": "f15859ce77b246b9a21ee25ce46382672f954970f12eaf3028fde7e826708397",
+    "rust/checks/safe.rs": "8727e11e8b4d57906bc2f6aeda488ff0e3c503a862d545dd9d2bb625e91e4dc3"
+  },
+  "schema": "optimbench-runner-capabilities-v1",
+  "scope": "tool-runtime-fixture-only",
+  "steps": [
+    {
+      "argv": [
+        "python",
+        "--version"
+      ],
+      "artifacts": [
+        {
+          "bytes": 14,
+          "path": "step-0.stdout",
+          "sha256": "917601090ffb73a030e3eaa8b7a01c41400cad4b61366b4218d7756a5733b66c"
+        },
+        {
+          "bytes": 0,
+          "path": "step-0.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "elapsed_seconds": 0.0026904010001089773,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "python_property.py"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-1.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 0,
+          "path": "step-1.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "elapsed_seconds": 0.2878921420001461,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "python_fuzz.py",
+        "corpus",
+        "-seed=1729",
+        "-runs=100",
+        "-timeout=5"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-2.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 875,
+          "path": "step-2.stderr",
+          "sha256": "d74f1a352cf5f561441ab7c45a5999d982e94f483f4e02f1b46c97163508cfd7"
+        }
+      ],
+      "elapsed_seconds": 0.11972251499992126,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "coverage",
+        "run",
+        "--branch",
+        "python_property.py"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-3.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 0,
+          "path": "step-3.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "elapsed_seconds": 0.3083048459998281,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "coverage",
+        "json",
+        "-o",
+        "python-coverage.json"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-4.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 42,
+          "path": "step-4.stderr",
+          "sha256": "97e95efd6013fe7f3c40d518d3c649035ba718779e858f95588eea30215651ef"
+        }
+      ],
+      "elapsed_seconds": 0.13572762600006172,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "-c",
+        "import subprocess,sys; subprocess.run([sys.executable,'-c','from python_target import classify; classify(-1)'],check=True);from python_target import classify; classify(1)"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-5.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 0,
+          "path": "step-5.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "elapsed_seconds": 0.34123311899975306,
+      "environment": {
+        "COVERAGE_PROCESS_START": "/scratch/probe/work/child-coverage.rc"
+      },
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "coverage",
+        "combine",
+        "--data-file",
+        "/scratch/probe/work/.coverage-children"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-6.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 17,
+          "path": "step-6.stderr",
+          "sha256": "c39da6aa013e7c752dd73a1410ffae0f0ac73e969f916261e4aaf96b839e5ee0"
+        }
+      ],
+      "elapsed_seconds": 0.13669801700007156,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "coverage",
+        "json",
+        "--data-file",
+        "/scratch/probe/work/.coverage-children",
+        "-o",
+        "python-child-coverage.json"
+      ],
+      "artifacts": [
+        {
+          "bytes": 0,
+          "path": "step-7.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 48,
+          "path": "step-7.stderr",
+          "sha256": "4d14b3de3d837c7fab6979685588bea14854a62ed0f562f4aa184d7336bcd6c0"
+        }
+      ],
+      "elapsed_seconds": 0.12456882700007554,
+      "environment": {},
+      "exit_code": 0,
+      "timeout_seconds": 180
+    }
+  ],
+  "uid": 10000
+}

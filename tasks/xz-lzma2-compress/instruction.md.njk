@@ -1,0 +1,49 @@
+# Make XZ liblzma faster
+
+## Goal
+Reduce the wall-clock time of the workload below while preserving every observable result under the stated output contract.
+
+## Setup
+8 CPUs, 16 GiB memory, no network access, and a {{ agent_timeout_seconds }}-second agent timeout ({{ agent_timeout }}). The source you leave in the editable paths when time runs out is what gets evaluated.
+
+## Workload
+The suite has two frozen workloads, each timed separately.
+
+**Compression.** Compress complete, unchanged source files from independent public projects. The public manifest contains 45 files totaling 7,612,040 bytes. One case launches a fresh native driver process for each input. Each process calls `lzma_easy_buffer_encode(6, LZMA_CHECK_CRC64, ...)` once on the entire file and writes one complete XZ stream. Preset 6, CRC64 and fresh per-input codec state are fixed settings. Encoded bytes must stay identical; a different valid compressed representation is not sufficient.
+
+**Stream decoding.** Decode complete, unchanged upstream `.tar.xz` release archives. The public manifest contains 10 archives totaling 58,994,260 bytes. One case launches a fresh driver process per archive. Each process initializes `lzma_stream_decoder(UINT64_MAX, LZMA_CONCATENATED)` and calls `lzma_code` with 64 KiB input chunks and a 64 KiB output buffer, using `LZMA_RUN` and then `LZMA_FINISH`, with integrity checks verified. The driver commits to every decoded byte through a checksum of the complete output and its length. Two more public cases check integrity-check rejection and concatenated streams; they are checked but not timed.
+
+The measured operation includes the native processes from start to exit, including input reads, allocation, coding and output. Input staging and complete-result checking occur outside execution. Every result, error and supported library behavior must remain identical. No library context is reused across processes.
+
+## What you may edit
+In `/app/xz`, only `.c`, `.h`, `.S` and `.s` files under `src/liblzma` are editable. Limits are 2,000 files and 20,000,000 bytes. All other paths are protected, including command-line tools, build scripts, dependencies, tests, fixtures, workload drivers, inputs and manifests. Add no dependencies. Existing attribution must remain intact.
+
+## Build and check
+The image contains the pinned source, dependencies and public inputs. These commands rebuild the candidate and check its public behavior and upstream tests; public output checks do not report evaluation timings.
+
+```sh
+sh /app/workload/build.sh
+/app/build/run
+ctest --test-dir /app/build/cmake --output-on-failure -j8 --output-junit /tmp/xz-ctest.xml
+```
+
+The build requires a fresh output directory. For subsequent builds, pass a new directory to the build script and use that directory for the run and test commands. The public manifest and original input files are available under `/app/workload/inputs/`.
+
+## How it is evaluated
+A separate clean environment rebuilds your editable source, checks the edit scope, runs the project's tests, and compares outputs on public inputs and hidden inputs of the same kind using the contract above. It then times the original and your version on the hidden inputs, checking every output. Your score is a conservative estimate of the wall-clock speedup on the hidden inputs; when there are several timed units, each counts equally. Total CPU time and peak memory are reported but not scored.
+
+## You may
+- Change any code in the editable paths, including algorithms, data structures and internal interfaces.
+- Add to the public interface, as long as every existing use keeps working.
+- Use all 8 CPUs and 16 GiB, as long as results do not depend on how many CPUs are available.
+
+## Rules
+- Preserve all supported behavior, validation, errors and the public interface; compatible additions are allowed.
+- Do not modify, remove or weaken existing tests. Changes outside the editable paths are ignored.
+- No caching across calls or processes, no input or evaluator recognition, no precomputed results, and no delegation to other libraries or programs.
+- Do not change process-wide settings, including GC, allocator, environment, signal handlers, locale, working directory, resource limits or CPU affinity.
+- When a public call returns (or the program exits, for command-line workloads), nothing it started may still be running.
+- Do not change the workload's fixed settings, flags, inputs, operation order or measurement boundaries. Do not defer required work beyond the measured operation.
+- Results must be the same on every run, on any number of CPUs, and across repeated calls in the same process.
+- Overlapping or aliased arguments, and short or failed reads and writes, must behave as in the original.
+- No memory errors, undefined behavior or crashes, including on valid inputs the workload does not use.

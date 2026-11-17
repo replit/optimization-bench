@@ -1,0 +1,8 @@
+This is a runner calibration fixture, not upstream task support evidence.
+Its generated static-inline header intentionally supports the declared GNU89,
+C99 and C++11 cells using GCC-compatible always_inline syntax. Changing static
+inline to GNU inline definitions creates duplicate strong symbols under GNU89,
+but C99 always-inline calls and C++11 COMDAT definitions still link. The fixture
+declares C++03 unsupported solely to exercise unsupported-cell accounting.
+Every real task must replace this fixture evidence with pinned upstream support
+documentation/build/CI requirements before including a dialect in its matrix.

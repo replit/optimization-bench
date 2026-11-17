@@ -1,0 +1,636 @@
+{
+  "files": [
+    {
+      "checkout_inventory_sha256": "e4e9afc35b28a4ab2accc47b2fd671d4f508fac79c4efdd9d09d75909c47b102",
+      "commit": "a018953688f1b10bddf91bff8747068f5f4746a4",
+      "destination": "environment/workload/inputs/histories/git",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 98,
+        "sha256": "ec66359fe2bdbc38b5c4736422b713a92c26fc81f324c37f7d9dcb6c7b9a928b"
+      },
+      "gitlinks": {
+        "sha1collisiondetection": "855827c583bc30645ba427885caa40c5b81764d2"
+      },
+      "kind": "git-history",
+      "name": "git-release-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 8222199955,
+        "object_count": 408171,
+        "sha256": "92d2636bca7242257cbe9d90937706eb061c95e7c3b1451fd393eb5ed7108b4d"
+      },
+      "reason": "Original complete commit closure and native checkout, fetched at build time; no body in Git.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/git/git.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "4bf21754f88d6e711361e05f2494a55c63606265eb574a26e34b4680808bb137",
+      "commit": "b57863321f8d0a0f76fcf9ad636b6e39b024d0c0",
+      "destination": "environment/workload/inputs/histories/cargo",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "name": "cargo-public-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 1535183846,
+        "object_count": 190737,
+        "sha256": "597540f9e42c7e18b4642d73c63b2f9a0c9a17833e6d1f949c471e6da111e8d8"
+      },
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/rust-lang/cargo.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "7155279bd7c6ddbb46f52f95341a6f6d2fbc5f35f3a965a5f4f26ed2138cabd1",
+      "commit": "36920bb4766679f5b32445797dcc5d32b8ff5ad2",
+      "destination": "environment/workload/inputs/histories/django",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "name": "django-public-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 3377448993,
+        "object_count": 428564,
+        "sha256": "1d8bf8845ec32a8631865f1055b58496f0f8cdd637d185e9a4457c30189ca2a7"
+      },
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/django/django.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "89f389b053266c66546e671c370abcda3c67f28c72abd65960334f3b8bac222b",
+      "commit": "7664e36875350ad0f309287391858de19ed13eb7",
+      "destination": "environment/workload/inputs/histories/prettier",
+      "distribution": "upstream",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "name": "prettier-public-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 2484971902,
+        "object_count": 164388,
+        "sha256": "90739312d8c29579b6063096fdeb2c57003a9f13f502cc4db206e00bf7a91254"
+      },
+      "reason": "Fetch-only original pinned history; no repository body in Git or LFS.",
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/prettier/prettier.git",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "d8d9a5a84ae48155157c443dec28fbc8789ad2b71e22680d95ea401a23d65734",
+      "commit": "463527ba1e19c4fafae96fd16d1ff56ce979a698",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 7720827877,
+        "object_count": 174094,
+        "sha256": "410412535c3bd5ef72e49d8022f63659ec4cb2d93aeb8430bef582b81ee1d580"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/haproxy/haproxy.git",
+      "destination": "environment/workload/inputs/histories/haproxy",
+      "distribution": "upstream",
+      "name": "haproxy-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "c1c03320a18ee6de8d8b3140ec218c2ed8057c3aef5fbf9ae2bec5025d1c6353",
+      "commit": "6065d21b3eb2777aa7211cc6bdd72af92bb185e0",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 1866381672,
+        "object_count": 353011,
+        "sha256": "30b9efea44a5cd4ac417f7cf77b8d20e5298283957596ab9b9bf44d743f969a2"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/laravel/framework.git",
+      "destination": "environment/workload/inputs/histories/laravel",
+      "distribution": "upstream",
+      "name": "laravel-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "7ef4c7bf4d73a5e9fb34e07015f032635e38ce26c76ad04801483da37f4b98fd",
+      "commit": "33395d143f267f00820a3327588b1c397c66b209",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 324598264,
+        "object_count": 38181,
+        "sha256": "40adf6cd51f8f740e5e88d0dac42c9ccc7d0560937adad81a14e717b67177e39"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/libuv/libuv.git",
+      "destination": "environment/workload/inputs/histories/libuv",
+      "distribution": "upstream",
+      "name": "libuv-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "7dd029168379fae76a0a3c069f147bd0a9f74a1a0f9f3cd8d3f0e84906fcc67d",
+      "commit": "1ddf1981c4aac4ff72bfb4a97e05909d55c3a149",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 2954576764,
+        "object_count": 181089,
+        "sha256": "4a89d818ba9bf233ff4e81ea9fa6751c9f09fce5b0193396abdd784aab70d683"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/sphinx-doc/sphinx.git",
+      "destination": "environment/workload/inputs/histories/sphinx",
+      "distribution": "upstream",
+      "name": "sphinx-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "checkout_inventory_sha256": "ce51c8553d762b34fb7bd7acdbd48e9d976c7ebc4a9c830e8b43ad69d6db7fd0",
+      "commit": "ca034820b8288ab6da3a033626a7857401ee64a5",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 667210348,
+        "object_count": 69401,
+        "sha256": "e509eb5b4ba77e93ecc828c1c6f890c63420818442f4c32f241c9af2cb795148"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/vuejs/core.git",
+      "destination": "environment/workload/inputs/histories/vuejs-core",
+      "distribution": "upstream",
+      "name": "vuejs-core-public-history",
+      "reason": "Fetch-only complete original closure; no body in Git or LFS.",
+      "scope": "public"
+    },
+    {
+      "bytes": 704683,
+      "destination": "environment/workload/inputs/files/e44947aa61e8e1eca2a2e97732a1af6c3816115be9a605adcfbe47d27a1e4d3e",
+      "distribution": "git",
+      "name": "patch-myers",
+      "scope": "public",
+      "sha256": "e44947aa61e8e1eca2a2e97732a1af6c3816115be9a605adcfbe47d27a1e4d3e"
+    },
+    {
+      "bytes": 352435,
+      "destination": "environment/workload/inputs/files/56a892fc18c3aeca94ce1c6cd95e75d1f80171c4280b22c3f3619808d5c8b3fb",
+      "distribution": "git",
+      "name": "shortstat-myers",
+      "scope": "public",
+      "sha256": "56a892fc18c3aeca94ce1c6cd95e75d1f80171c4280b22c3f3619808d5c8b3fb"
+    },
+    {
+      "bytes": 352435,
+      "destination": "environment/workload/inputs/files/b207d014747c8f8001c7b020033e79c3ada2cb5da7fa0ae889e6608511bac047",
+      "distribution": "git",
+      "name": "patch-histogram",
+      "scope": "public",
+      "sha256": "b207d014747c8f8001c7b020033e79c3ada2cb5da7fa0ae889e6608511bac047"
+    },
+    {
+      "bytes": 131291,
+      "destination": "environment/workload/inputs/files/c18b15b388cab78b81cd24b7ab33b922f4f39a02153ccab56d266a2be65d6d0b",
+      "distribution": "git",
+      "name": "patch-ignore-all-space",
+      "scope": "public",
+      "sha256": "c18b15b388cab78b81cd24b7ab33b922f4f39a02153ccab56d266a2be65d6d0b"
+    },
+    {
+      "bytes": 163499,
+      "destination": "environment/workload/inputs/files/941a3dcb1d7f082a154650894566267405e56ac52edb5e325d09072c180b8fe3",
+      "distribution": "git",
+      "name": "patch-patience",
+      "scope": "public",
+      "sha256": "941a3dcb1d7f082a154650894566267405e56ac52edb5e325d09072c180b8fe3"
+    },
+    {
+      "bytes": 150602,
+      "destination": "environment/workload/inputs/files/b9525799cfc85b0b68e62a4137e2e078ca61d5e6b1f6ee1a0509d929986c3790",
+      "distribution": "git",
+      "name": "patch-full-context",
+      "scope": "public",
+      "sha256": "b9525799cfc85b0b68e62a4137e2e078ca61d5e6b1f6ee1a0509d929986c3790"
+    },
+    {
+      "bytes": 216984,
+      "destination": "environment/workload/inputs/files/8962ce97c4d6777515a293062e5a3b168876092011396e1e410929472ecf7f67",
+      "distribution": "git",
+      "name": "merge-file",
+      "scope": "public",
+      "sha256": "8962ce97c4d6777515a293062e5a3b168876092011396e1e410929472ecf7f67"
+    },
+    {
+      "checkout_inventory_sha256": "eefdb85a2ed2f493aecf7722efd71bfb229915bdd4820f2b01603ba1e9b06d90",
+      "commit": "187d13aa6047e1914244e8033b2d2f3379a0b97f",
+      "destination": "tests/heldout/histories/neovim",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "license": "Apache-2.0 AND Vim",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license Apache-2.0 AND Vim (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. The expected patch and shortstat outputs derived from it are retained in tests/heldout/expected/ (Git LFS) with this license in tests/notices/heldout-expected/.",
+      "name": "neovim-heldout-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 9769452926,
+        "object_count": 328629,
+        "sha256": "ce263a2992455da34234cef606f3a7fba04a3602c5ebbd21353adc5916075176"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/neovim/neovim.git",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "220750e89335f4b0e52db00c1ce3a5ede2b3ec1428c3aa9510c1984d5e2cad2f",
+      "commit": "8c41b823bb093fd14303dc38809c78e0df2d53ea",
+      "destination": "tests/heldout/histories/mdbook",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "license": "MPL-2.0",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MPL-2.0 (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. The expected patch and shortstat outputs derived from it are retained in tests/heldout/expected/ (Git LFS) with this license in tests/notices/heldout-expected/.",
+      "name": "mdbook-heldout-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 89840333,
+        "object_count": 20500,
+        "sha256": "6aaff69fddb0c7e987b61fc59112bbf4b2d5d3a9da78f80a14b7e31d3d140c3c"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/rust-lang/mdBook.git",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "93c61fad9da7a793e1f4055e10c15f68169770d0081c3d3dbfaabf25f4795788",
+      "commit": "2247b35ea1c47c727d7a06e51fa280e12a863ff6",
+      "destination": "tests/heldout/histories/click",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "license": "BSD-3-Clause",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license BSD-3-Clause (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. The expected patch and shortstat outputs derived from it are retained in tests/heldout/expected/ (Git LFS) with this license in tests/notices/heldout-expected/.",
+      "name": "click-heldout-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 126002367,
+        "object_count": 15697,
+        "sha256": "21363b5ede505b8523b2fb1d439ac78ddd883d381e914b7efbcd2f899876fc47"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/pallets/click.git",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "22ae84e46f6d8dfa9988f36887043fc99eb9dedad030860a4c101c6c0e650898",
+      "commit": "9155e14781bf0a5549f9a747691f7d98c8c66dcd",
+      "destination": "tests/heldout/histories/eslint",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "license": "MIT",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MIT (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. The expected patch and shortstat outputs derived from it are retained in tests/heldout/expected/ (Git LFS) with this license in tests/notices/heldout-expected/.",
+      "name": "eslint-heldout-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 978448526,
+        "object_count": 100980,
+        "sha256": "cf217896c8e6be8e8f568e5f80646303a4a3a4d3094e8203c7914bc31f83b89a"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/eslint/eslint.git",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "b6cd715dfd56ed2511d91d61171f589bbb3ad344a79ae8895a0d2493eb889082",
+      "commit": "1c6f1b0fe4000977b9a7b4f34097e4d527dd9824",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 161287969,
+        "object_count": 32561,
+        "sha256": "90bfcbedb5ca88c35ed6ea1f44507a1f0ead8fe3d98b072271504e34ebe893dc"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/expressjs/express.git",
+      "destination": "tests/heldout/histories/express",
+      "license": "MIT",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MIT (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. No output body derived from it is retained; tests/baseline-outputs.json records only the length and SHA-256 of each expected output.",
+      "name": "express-heldout-history",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "233bd1890b8363cb3017f3ea43b3382e9b7c19a1f020e189ab6e7e80dd7901ec",
+      "commit": "71b18a51ae1007c527c71791306c09b02280d639",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 409367875,
+        "object_count": 198652,
+        "sha256": "b0df1c8fd31dc20218312e75cbdfd34762b3b279638066663892accfd2db530c"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/junit-team/junit5.git",
+      "destination": "tests/heldout/histories/junit5",
+      "license": "EPL-2.0",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license EPL-2.0 (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. No output body derived from it is retained; tests/baseline-outputs.json records only the length and SHA-256 of each expected output.",
+      "name": "junit5-heldout-history",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "356bc3f3d7ae46b70afdbda6e46967c5c39e78843baf235379a8841f1f95bc77",
+      "commit": "033f9580d17838aef5c081b1dda912be813ada9b",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 2174812999,
+        "object_count": 114753,
+        "sha256": "e46ccd4f8d3209b39ece61a8ade55b03df164620cf998bb6a38a71a14e1ae5e6"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/python/mypy.git",
+      "destination": "tests/heldout/histories/mypy",
+      "license": "MIT AND PSF-2.0",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MIT, with three mypyc/lib-rt files under PSF-2.0 (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. No output body derived from it is retained; tests/baseline-outputs.json records only the length and SHA-256 of each expected output.",
+      "name": "mypy-heldout-history",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "1d91fdd837b3f43e5af6a089fd92e2e5ff14c493ccd8bcf7ec681913bce66e6d",
+      "commit": "1000636317b856a7a8d0ae6662c3eb30c2a9bfed",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 636222108,
+        "object_count": 108426,
+        "sha256": "5f914472cdd16d51e6aaae7e2529cfb268ff65cbe4401847a4b4325aabba5697"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/pypa/pip.git",
+      "destination": "tests/heldout/histories/pip",
+      "license": "MIT",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MIT; vendored third-party packages carry their own licenses (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. No output body derived from it is retained; tests/baseline-outputs.json records only the length and SHA-256 of each expected output.",
+      "name": "pip-heldout-history",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "78b39e841cc847f50b021fb5bfd6492889df2b3d50340266f3939aeae48bd867",
+      "commit": "3cb40f50066011274b4e54ca7944045851a67d0a",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 2760340387,
+        "object_count": 143366,
+        "sha256": "f79d9603be01376601e51a7b72edc96bcf146fce6bc1e93fd0e700b7165049cf"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/prometheus/prometheus.git",
+      "destination": "tests/heldout/histories/prometheus",
+      "license": "Apache-2.0",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license Apache-2.0 (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. No output body derived from it is retained; tests/baseline-outputs.json records only the length and SHA-256 of each expected output.",
+      "name": "prometheus-heldout-history",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "checkout_inventory_sha256": "1d3b4e0566ead741b28851cceb3737748d5f6fe26c575c5d5be6710f94bfb202",
+      "commit": "5c2970e9e5cb233ed530c274d96c73ebdbdbfc8a",
+      "fsck_warnings": {
+        "count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gitlinks": {},
+      "kind": "git-history",
+      "object_inventory": {
+        "algorithm": "sha256-canonical-git-objects-v1",
+        "bytes": 3463458857,
+        "object_count": 202077,
+        "sha256": "6ae6bbb6414f0d0b42d2f3adc330aff3a8b07b39c95573a635a16817471196c9"
+      },
+      "ref_policy": "one-detached-commit-closure",
+      "repository": "https://github.com/sqlalchemy/sqlalchemy.git",
+      "destination": "tests/heldout/histories/sqlalchemy",
+      "license": "MIT",
+      "license_basis": "fetch-only; no redistribution",
+      "license_note": "Actual license MIT (redistribution permitted). \"fetch-only\" is the only basis the held-out reference schema accepts: the history itself is fetched from the repository at verification and is not stored here. No output body derived from it is retained; tests/baseline-outputs.json records only the length and SHA-256 of each expected output.",
+      "name": "sqlalchemy-heldout-history",
+      "retention": "fetch-only",
+      "role": "input",
+      "scope": "heldout"
+    },
+    {
+      "bytes": 30219611,
+      "destination": "tests/heldout/expected/patch-histogram",
+      "name": "tests/heldout/expected/patch-histogram",
+      "scope": "heldout",
+      "sha256": "284e3cd689bc9198c63571f05585a6ddc34eb1a89e97e733f92307ad2815c5fe"
+    },
+    {
+      "bytes": 91420531,
+      "destination": "tests/heldout/expected/patch-myers",
+      "name": "tests/heldout/expected/patch-myers",
+      "scope": "heldout",
+      "sha256": "b673e58e95e477f8c06b8bcf58bfd5dc6d89ad350db44aeaac625d856fb7725a"
+    },
+    {
+      "bytes": 255891,
+      "destination": "tests/heldout/expected/shortstat-myers",
+      "name": "tests/heldout/expected/shortstat-myers",
+      "scope": "heldout",
+      "sha256": "55cc0bb94a2a2e0fc412c5d053151d4e3ae76e94bf544d1f7b0578c17284143f"
+    },
+    {
+      "bytes": 93231,
+      "destination": "tests/heldout/files/36e982cff07a56016e6ae3737f91ddc6690fc23d8868bab0e921f3ed2d0f40ac",
+      "name": "tests/heldout/files/36e982cff07a56016e6ae3737f91ddc6690fc23d8868bab0e921f3ed2d0f40ac",
+      "scope": "heldout",
+      "sha256": "36e982cff07a56016e6ae3737f91ddc6690fc23d8868bab0e921f3ed2d0f40ac"
+    },
+    {
+      "bytes": 186275,
+      "destination": "tests/heldout/files/460a40d04df486f94798c3084f31cd825e32bd384ef3eee9eb0fad6f4d0d09f5",
+      "name": "tests/heldout/files/460a40d04df486f94798c3084f31cd825e32bd384ef3eee9eb0fad6f4d0d09f5",
+      "scope": "heldout",
+      "sha256": "460a40d04df486f94798c3084f31cd825e32bd384ef3eee9eb0fad6f4d0d09f5"
+    },
+    {
+      "bytes": 93231,
+      "destination": "tests/heldout/files/852cbbba52beb459b8416639fa5b24484620aa1b252d671fa916ed5991d30d2a",
+      "name": "tests/heldout/files/852cbbba52beb459b8416639fa5b24484620aa1b252d671fa916ed5991d30d2a",
+      "scope": "heldout",
+      "sha256": "852cbbba52beb459b8416639fa5b24484620aa1b252d671fa916ed5991d30d2a"
+    },
+    {
+      "bytes": 2675,
+      "destination": "tests/heldout/manifest.json",
+      "name": "tests/heldout/manifest.json",
+      "scope": "heldout",
+      "sha256": "128cf0898e2b91070bb228c7ec3e90f24ac15a37b2abaa22cd0937d14a9de382"
+    },
+    {
+      "bytes": 6868,
+      "destination": "tests/heldout/references/overlap-preflight.json",
+      "name": "tests/heldout/references/overlap-preflight.json",
+      "scope": "heldout",
+      "sha256": "23a8364e067c6ab3e83393cbbe0b3f21d7d50f070127f1523ee57f3764605311"
+    },
+    {
+      "bytes": 74068,
+      "destination": "tests/heldout/references/reference-generation.json",
+      "name": "tests/heldout/references/reference-generation.json",
+      "scope": "heldout",
+      "sha256": "5ed21ec45a976810d9460fbad3ee048227702feae01adcfa962f1eb2d28200a4"
+    },
+    {
+      "bytes": 28178,
+      "destination": "tests/heldout/references/selection-freeze.json",
+      "name": "tests/heldout/references/selection-freeze.json",
+      "scope": "heldout",
+      "sha256": "ba7c3d6aceb88d18d1f017d3581bbc5cf3675d1f70938753dfca2e50224db676"
+    },
+    {
+      "bytes": 964,
+      "destination": "tests/heldout/repository-reservations.json",
+      "name": "tests/heldout/repository-reservations.json",
+      "scope": "heldout",
+      "sha256": "0613f6a00a5b85f278dcc510600f2837fb8a384408d39715d80c631db16a36c6"
+    },
+    {
+      "bytes": 137743,
+      "destination": "tests/heldout/files/29f58a30f2c727b3acec6ba1cfc8fe33843e74d8c9296a402baa775fa9ec8147",
+      "name": "tests/heldout/files/29f58a30f2c727b3acec6ba1cfc8fe33843e74d8c9296a402baa775fa9ec8147",
+      "scope": "heldout",
+      "sha256": "29f58a30f2c727b3acec6ba1cfc8fe33843e74d8c9296a402baa775fa9ec8147"
+    },
+    {
+      "bytes": 116193,
+      "destination": "tests/heldout/files/7fae9ce3dc23674a23b292390d21b935b03ca288514b0767fdc12f9da442c06a",
+      "name": "tests/heldout/files/7fae9ce3dc23674a23b292390d21b935b03ca288514b0767fdc12f9da442c06a",
+      "scope": "heldout",
+      "sha256": "7fae9ce3dc23674a23b292390d21b935b03ca288514b0767fdc12f9da442c06a"
+    },
+    {
+      "bytes": 240904,
+      "destination": "tests/heldout/files/754cba941dbe1be043c1ab6f629b82e8223f5e4127000f337632111b792b4858",
+      "name": "tests/heldout/files/754cba941dbe1be043c1ab6f629b82e8223f5e4127000f337632111b792b4858",
+      "scope": "heldout",
+      "sha256": "754cba941dbe1be043c1ab6f629b82e8223f5e4127000f337632111b792b4858"
+    },
+    {
+      "bytes": 503580,
+      "destination": "tests/heldout/files/f3caaf0e93d9d54e18420c94f497e2c85c1bf62bf92b97e95f6e103cb6f609a7",
+      "name": "tests/heldout/files/f3caaf0e93d9d54e18420c94f497e2c85c1bf62bf92b97e95f6e103cb6f609a7",
+      "scope": "heldout",
+      "sha256": "f3caaf0e93d9d54e18420c94f497e2c85c1bf62bf92b97e95f6e103cb6f609a7"
+    }
+  ],
+  "schema_version": 1,
+  "task": "git-history-change-summary"
+}

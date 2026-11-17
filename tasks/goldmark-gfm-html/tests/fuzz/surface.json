@@ -1,0 +1,40 @@
+{
+  "format": "optimbench-fuzz-surface-v1",
+  "task": "goldmark-gfm-html",
+  "source_commit": "9ac8030064518346e4c9d7847c85278c3a5244ee",
+  "extractor_version": null,
+  "extractor_report_sha256": null,
+  "inventory_complete": false,
+  "status": "corrected-extraction dependency pending; no complete denominator claimed",
+  "features": ["CommonMark", "GFM", "Footnotes", "custom parser", "custom HTML renderer", "public context reuse"],
+  "entry_points": [
+    {
+      "id": "parser.Parse+html.Render",
+      "public": true,
+      "contract_id": "goldmark.public.parse-render-exact",
+      "precondition_id": "goldmark.valid-markdown-and-constructed-options",
+      "requirements": ["Markdown byte string", "parser-generated AST", "constructor-valid options", "legal io.Writer"],
+      "modes": ["gfm", "commonmark", "footnotes", "custom", "context"],
+      "status": "preliminary mapping; full public surface still unresolved"
+    },
+    {
+      "id": "ast.NewDocument.Metadata+ast.NewParagraph",
+      "public": true,
+      "contract_id": "goldmark.public.ast-instance-isolation",
+      "precondition_id": "goldmark.public.ast-construction-and-mutation",
+      "requirements": ["Independent public AST factories", "legal mutation of document metadata", "legal append/remove of separately constructed child nodes"],
+      "status": "Narrow public aliasing program only; not complete AST API coverage"
+    }
+  ],
+  "unresolved_families": [
+    "AST/node constructors and mutators",
+    "text/decoder readers and navigation",
+    "all constructor and parse/render options",
+    "all extension-specific public APIs",
+    "ID generation and context protocols",
+    "public utility exports",
+    "arbitrary byte encodings outside the preliminary UTF-8 string transport",
+    "corrected transitive re-export inventory"
+  ],
+  "exclusions": []
+}

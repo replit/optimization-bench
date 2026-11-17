@@ -1,0 +1,46 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/sqlglot/sqlglot" }]
+
+[task]
+name = "optimbench/sqlglot-mozilla-transpile"
+version = "1.0.0"
+description = "Speed up conversion, optimization, lineage and structural diff in one SQLGlot image."
+keywords = ["optimbench", "performance", "python", "sql", "transpiler", "optimizer", "lineage", "diff", "standalone"]
+
+[metadata]
+category = "library-optimization"
+
+[metadata.optimbench]
+baseline_git_commit = "62a294d494639815defd6b06a530d608e27d84a2"
+baseline_git_tree = "003865d7f0193ea93e8930c61741842e66f56e72"
+baseline_git_date = "2000-01-01T00:00:00+0000"
+status = "qualification-in-progress"
+library = "SQLGlot (tobymao/sqlglot)"
+language = "Python"
+run_mode = "standalone"
+upstream_repo = "https://github.com/tobymao/sqlglot"
+upstream_commit = "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76"
+definition = "task.json"
+provenance = "provenance.json"
+source_lock = "environment/source.lock.json"
+driver = "environment/workload/task.py"
+input_manifest = "environment/workload/inputs/manifest.json"
+input_visibility = "public_dev"
+portable_environment_ready = true
+verifier_ready = false
+
+[verifier]
+timeout_sec = 5400.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+# Published image, pinned by digest (or build from environment/):
+# docker_image = "public.ecr.aws/h1f5v5u6/optimbench:sqlglot-mozilla-transpile-1.0.0@sha256:28331b5165db2f86d62f731377711bc3c6dde38bf23028809565f629d7f8ed04"
+network_mode = "no-network"
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384

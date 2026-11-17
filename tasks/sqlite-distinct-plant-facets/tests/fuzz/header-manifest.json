@@ -1,0 +1,71 @@
+{
+  "schema": "optimbench-header-matrix-v1",
+  "scope": "task:sqlite-distinct-plant-facets",
+  "required_cells": ["sqlite3-c89", "sqlite3ext-c89"],
+  "cells": [
+    {
+      "id": "sqlite3-c89",
+      "supported": true,
+      "headers": ["objects/sqlite3.h"],
+      "language": "c",
+      "dialect": "c89",
+      "features": [],
+      "support_refs": [
+        {
+          "path": "source/AGENTS.md",
+          "sha256": "c3adba7f725441e791e5e444febd9ac447c6aeee3e65a18b2183e218d28bdcd1",
+          "quote": "C89/C99 compatible C only. No C++, no STL, no exceptions, no VLAs."
+        },
+        {
+          "path": "source/src/sqlite.h.in",
+          "sha256": "a66be104bd89782526c11e251b88a92d7aaf91a2bf53460a8a6a3fb4dfb13226",
+          "quote": "This header file defines the interface that the SQLite library\n** presents to client programs."
+        }
+      ],
+      "include_context": {"id": "sqlite3-public-c", "includes": ["sqlite3.h"]},
+      "compiler": "gcc",
+      "include_dirs": ["objects"],
+      "libraries": ["objects/libsqlite3.a"],
+      "defines": [],
+      "compile_flags": [],
+      "link_flags": ["-lm", "-ldl", "-lpthread"],
+      "symbol_refs": ["sqlite3_open", "sqlite3_prepare_v2", "sqlite3_step", "sqlite3_finalize", "sqlite3_close"],
+      "translation_units": [
+        {"name": "first.c", "source": "#include \"sqlite3.h\"\nint consumer(sqlite3 *db) {\n sqlite3_stmt *s = 0;\n int rc = sqlite3_prepare_v2(db, \"SELECT 47, NULL\", -1, &s, 0);\n if (rc) return 1;\n rc = sqlite3_step(s);\n if (rc != SQLITE_ROW || sqlite3_column_int(s, 0) != 47 || sqlite3_column_type(s, 1) != SQLITE_NULL) { sqlite3_finalize(s); return 1; }\n return sqlite3_finalize(s);\n}\n"},
+        {"name": "main.c", "source": "#include \"sqlite3.h\"\nint consumer(sqlite3 *);\nint main(void) {\n sqlite3 *db = 0;\n int rc;\n if (sqlite3_open(\":memory:\", &db)) return 1;\n rc = consumer(db);\n return sqlite3_close(db) || rc;\n}\n"}
+      ]
+    },
+    {
+      "id": "sqlite3ext-c89",
+      "supported": true,
+      "headers": ["objects/sqlite3.h", "objects/sqlite3ext.h"],
+      "language": "c",
+      "dialect": "c89",
+      "features": ["statically-linked-extension"],
+      "support_refs": [
+        {
+          "path": "source/AGENTS.md",
+          "sha256": "c3adba7f725441e791e5e444febd9ac447c6aeee3e65a18b2183e218d28bdcd1",
+          "quote": "C89/C99 compatible C only. No C++, no STL, no exceptions, no VLAs."
+        },
+        {
+          "path": "source/src/sqlite3ext.h",
+          "sha256": "48963abfefb41ac329ef9d706acb5eadba952a99a748285c9ded6b5e0942721b",
+          "quote": "This header file defines the SQLite interface for use by\n** shared libraries that want to be imported as extensions into\n** an SQLite instance."
+        }
+      ],
+      "include_context": {"id": "sqlite3ext-static", "includes": ["sqlite3ext.h"]},
+      "compiler": "gcc",
+      "include_dirs": ["objects"],
+      "libraries": ["objects/libsqlite3.a"],
+      "defines": ["SQLITE_CORE"],
+      "compile_flags": [],
+      "link_flags": ["-lm", "-ldl", "-lpthread"],
+      "symbol_refs": ["sqlite3_create_function", "sqlite3_result_int", "sqlite3_open", "sqlite3_prepare_v2", "sqlite3_close"],
+      "translation_units": [
+        {"name": "first.c", "source": "#include \"sqlite3ext.h\"\nSQLITE_EXTENSION_INIT1\nstatic void answer(sqlite3_context *c, int argc, sqlite3_value **argv) {\n (void)argc; (void)argv; sqlite3_result_int(c, 47);\n}\nint extension(sqlite3 *db) {\n return sqlite3_create_function(db, \"answer\", 0, SQLITE_UTF8, 0, answer, 0, 0);\n}\n"},
+        {"name": "main.c", "source": "#include \"sqlite3ext.h\"\nSQLITE_EXTENSION_INIT3\nint extension(sqlite3 *);\nint main(void) {\n sqlite3 *db = 0;\n sqlite3_stmt *s = 0;\n int rc;\n if (sqlite3_open(\":memory:\", &db)) return 1;\n if (extension(db)) return 2;\n if (sqlite3_prepare_v2(db, \"SELECT answer()\", -1, &s, 0)) return 3;\n rc = sqlite3_step(s) != SQLITE_ROW || sqlite3_column_int(s, 0) != 47;\n sqlite3_finalize(s);\n return sqlite3_close(db) || rc;\n}\n"}
+      ]
+    }
+  ]
+}

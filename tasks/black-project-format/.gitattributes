@@ -1,0 +1,2 @@
+# Input bytes are part of the workload, validated by hashes.
+environment/workload/inputs/** -text -whitespace

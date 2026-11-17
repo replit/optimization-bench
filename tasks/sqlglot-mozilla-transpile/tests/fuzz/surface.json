@@ -1,0 +1,671 @@
+{
+  "complete": false,
+  "contract_sources": [
+    "../../instruction.md",
+    {
+      "path": "README.md",
+      "sha256": "7bd7d13129838a166b447f9b45022b72ac700ae2dde9a1e4c17d8f236d884b8e",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/README.md"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "ad29ac5fbe3393567134cee2e060480f146206d01536ce63c55df0027793309a",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/pyproject.toml"
+    },
+    {
+      "path": "setup.py",
+      "sha256": "506b09dc4d3df05027b39b06e46e2942c80d0b1542d6b67734a383a8edb8ba01",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/setup.py"
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "22639357775f3d3aceaf23e9f3bce13dea030a2c7cb672f3f3781e46d0d37d45",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/MANIFEST.in"
+    },
+    {
+      "path": "sqlglot/__init__.py",
+      "sha256": "62475c676c9112c31d8ecca3ef7763565153a2ba6fe01897dcef6e782fe89cb3",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/__init__.py"
+    },
+    {
+      "path": "sqlglot/dialects/dialect.py",
+      "sha256": "6c8b9249250c3ef4d6a842dd8fe7ec2ce8abc373613025a48ca608067ab03841",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglot/dialects/dialect.py"
+    },
+    {
+      "path": ".github/workflows/package-test.yml",
+      "sha256": "792b95635fb2e8c1086daa33d66123623f82f76c4e8e3efc79dcecdd22ac9498",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/.github/workflows/package-test.yml"
+    },
+    {
+      "path": ".github/workflows/package-publish.yml",
+      "sha256": "74429adb0b43bb5e8e23cf8745ff3fb5ca628a7c8b22f67d087ba45545b8ef0a",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/.github/workflows/package-publish.yml"
+    },
+    {
+      "path": "sqlglotc/setup.py",
+      "sha256": "a455196e7cb4bfeeec7352331bb4903957182678f889f05336e67607f7ffb6a1",
+      "url": "https://github.com/tobymao/sqlglot/blob/5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76/sqlglotc/setup.py"
+    }
+  ],
+  "exclusions": [],
+  "extractor": {
+    "report_sha256": null,
+    "status": "blocked-pending-corrected-transitive-public-surface-authority",
+    "version": null
+  },
+  "feature": "pure-python",
+  "format": "sqlglot-fuzz-surface-map-v1",
+  "surfaces": [
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.transpile",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.parse",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.parse_one",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.tokenize",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.expressions.Expression.sql",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.expressions.Expression.copy",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.expressions.Expression.transform",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.expressions.Expression.walk",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.expressions.Expression.find_all",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.select",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.dialects.dialect.Dialect.parse",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.dialects.dialect.Dialect.generate",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.parser.Parser.parse",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    },
+    {
+      "contract_id": "sqlglot-behavior-preservation-v1",
+      "fault_applicability": "SQL corruption/truncation through public errors; native allocator/I/O hooks not documented for these string APIs",
+      "generators": [
+        "sqlglot-public-grammar-v1",
+        "sqlglot-public-corpus-v1",
+        "sqlglot-public-corpus-comment-mutation-v1"
+      ],
+      "id": "sqlglot.tokens.Tokenizer.tokenize",
+      "option_family_ids": [
+        "dialect-read-write",
+        "generation-bools",
+        "error-levels"
+      ],
+      "oracle": {
+        "baseline_exit_codes": [
+          0
+        ],
+        "baseline_terminations": [
+          "return",
+          "exception"
+        ],
+        "required_error_fields": {
+          "class": "nonempty_string",
+          "message": "string"
+        }
+      },
+      "oracle_policy": "sqlglot-exact-values-errors-effects-v1",
+      "precondition_id": "public-sql-or-parser-produced-tree-v1",
+      "reexport_status": "pending-corrected-extraction; documented symbol identity only",
+      "sequence_applicability": [
+        "invoke",
+        "interleave-independent",
+        "reinitialize",
+        "invoke"
+      ],
+      "structural_signature": {
+        "authority_status": "pending-corrected-extraction",
+        "shape": "See pinned API docstrings/source",
+        "version": 1
+      },
+      "visibility": "public"
+    }
+  ],
+  "task": "sqlglot-mozilla-transpile",
+  "unresolved": [
+    "Full corrected transitive re-export inventory/denominator",
+    "Every remaining documented builder, schema, optimizer, lineage, executor, diff and CLI API",
+    "Complete supported dialect/custom subclass/option-family coverage",
+    "Full structural signatures and re-export origin chains from corrected authority"
+  ],
+  "upstream_commit": "5d16fa83bfb8f3582eaffa4b99c7d05a061d8a76"
+}

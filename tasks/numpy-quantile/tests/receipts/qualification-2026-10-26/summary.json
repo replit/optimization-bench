@@ -1,0 +1,289 @@
+{
+  "task": "numpy-quantile",
+  "date": "2026-10-26",
+  "status": "provisionally qualified; unregistered host",
+  "claimable": false,
+  "candidate_verdict": null,
+  "harbor_loader": "0.24.0 Task loader passed; no Harbor agent trial claimed",
+  "heldout_provenance": "recovered-requalified (not proven original)",
+  "gates": {
+    "public_exact_cases": 37,
+    "heldout_exact_cases": 42,
+    "heldout_noop": "passed",
+    "heldout_negative": "rejected expected case; baseline matched",
+    "differential_pristine_cases": 36,
+    "differential_negative": "rejected; reproducer retained",
+    "public_interface": "passed",
+    "process_state": "passed",
+    "full_upstream": "passed; 51667 passed, 545 skipped, 31 xfailed, 2 xpassed"
+  },
+  "aa": {
+    "public": {
+      "sample_count": 18,
+      "speedup": 1.0051617519127785,
+      "ci95": [
+        0.9905829153353792,
+        1.0204486585314256
+      ],
+      "ci95_spread_percentage_points": 2.98657431960464,
+      "minimum_observed_unit_seconds": 1.127867334,
+      "elapsed_seconds": 608.818366765976,
+      "host": {
+        "cpu_class": "qualification-unregistered",
+        "model": "INTEL(R) XEON(R) PLATINUM 8581C CPU @ 2.30GHz",
+        "microcode": "0x1",
+        "kernel": "6.18.58",
+        "architecture": "x86_64",
+        "boot_id_sha256": "084c6f05da6f7820d3fc2c4b8d33472fab7c1b96950ceb23db270d71cc31f721",
+        "online_cpu_count": 16,
+        "available_cpu_count": 8,
+        "host_boot_sha256": "a283f0ed433e39696cfd783414e78296589a0eb379f76f5682a49be8b49ca87e",
+        "virtualization": {
+          "hypervisor_flag": true,
+          "product_name": null
+        },
+        "cores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "sha256": "2a0be72bd85481c6445165888ce045b98cee9d3b011371a03e38256253200b7a"
+      },
+      "reference_artifact_identity": {
+        "origin": "judge.build output",
+        "timed_build_sha256": "27ab102c5afd5c090340ee588ce6c78b7c8e24aca4ef1b4dc6133ef72148f159",
+        "image_build_sha256": "02263b6e8bac9653bb346be06ca17fc2f67533f05a8200e6175f2fc5deb2fb5d",
+        "rebuilt_build_sha256": "27ab102c5afd5c090340ee588ce6c78b7c8e24aca4ef1b4dc6133ef72148f159",
+        "source_sha256": "f56d0904742def41b14b6463d976f4d0e5cfefc274aa992dfca0dd222a96b35a",
+        "build_receipt_sha256": "4ba223145fe17c195b7825288befdf8ff9c06269ac59bedd48dcb4cd26134f69",
+        "image_vs_rebuilt_identity": "different",
+        "both_aa_arms": "same judge.build output",
+        "image_artifact_is_timed": false
+      },
+      "quality": {
+        "steal_fraction": 0.0028589843169010594,
+        "sibling_busy_fraction": 0,
+        "throttled_fraction": 0.0,
+        "missing_cpu_counters": false,
+        "frequency_before": {
+          "0": null,
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null
+        },
+        "frequency_after": {
+          "0": null,
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null
+        },
+        "frequency_drop_fraction": null,
+        "noisy": false
+      }
+    },
+    "heldout": {
+      "sample_count": 16,
+      "speedup": 1.007278752431426,
+      "ci95": [
+        0.9998104677676739,
+        1.0159130782687107
+      ],
+      "ci95_spread_percentage_points": 1.6102610501036785,
+      "minimum_observed_unit_seconds": 1.821715639,
+      "elapsed_seconds": 859.2982754707336,
+      "host": {
+        "cpu_class": "qualification-unregistered",
+        "model": "INTEL(R) XEON(R) PLATINUM 8581C CPU @ 2.30GHz",
+        "microcode": "0x1",
+        "kernel": "6.18.58",
+        "architecture": "x86_64",
+        "boot_id_sha256": "cacd94c321cd2cc1df608f90285b2b01d4c21da2e62c61095619a8d22eb5d684",
+        "online_cpu_count": 16,
+        "available_cpu_count": 8,
+        "host_boot_sha256": "1d4a6bd2d7201349107f24b6536d92d5c241cc5f3b83d4af341d23ba7ef90e29",
+        "virtualization": {
+          "hypervisor_flag": true,
+          "product_name": null
+        },
+        "cores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "sha256": "ba1381674f805bc33320d025a6a0947541da13f6f585e073417c00c44198e4ba"
+      },
+      "reference_artifact_identity": {
+        "origin": "judge.build output",
+        "timed_build_sha256": "27ab102c5afd5c090340ee588ce6c78b7c8e24aca4ef1b4dc6133ef72148f159",
+        "image_build_sha256": "02263b6e8bac9653bb346be06ca17fc2f67533f05a8200e6175f2fc5deb2fb5d",
+        "rebuilt_build_sha256": "27ab102c5afd5c090340ee588ce6c78b7c8e24aca4ef1b4dc6133ef72148f159",
+        "source_sha256": "f56d0904742def41b14b6463d976f4d0e5cfefc274aa992dfca0dd222a96b35a",
+        "build_receipt_sha256": "4ba223145fe17c195b7825288befdf8ff9c06269ac59bedd48dcb4cd26134f69",
+        "image_vs_rebuilt_identity": "different",
+        "both_aa_arms": "same judge.build output",
+        "image_artifact_is_timed": false
+      },
+      "quality": {
+        "steal_fraction": 0.0012529002320185614,
+        "sibling_busy_fraction": 0,
+        "throttled_fraction": 0.0,
+        "missing_cpu_counters": false,
+        "frequency_before": {
+          "0": null,
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null
+        },
+        "frequency_after": {
+          "0": null,
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null
+        },
+        "frequency_drop_fraction": null,
+        "noisy": false
+      }
+    }
+  },
+  "infrastructure_recovery": {
+    "reason": "Workspace restart lost v1 sampler and Docker daemon before any completed heldout receipt existed",
+    "previous_heldout_result_existed": false,
+    "previous_completed_public_host": {
+      "cpu_class": "qualification-unregistered",
+      "model": "INTEL(R) XEON(R) PLATINUM 8581C CPU @ 2.30GHz",
+      "microcode": "0x1",
+      "kernel": "6.18.58",
+      "architecture": "x86_64",
+      "boot_id_sha256": "084c6f05da6f7820d3fc2c4b8d33472fab7c1b96950ceb23db270d71cc31f721",
+      "online_cpu_count": 16,
+      "available_cpu_count": 8,
+      "host_boot_sha256": "a283f0ed433e39696cfd783414e78296589a0eb379f76f5682a49be8b49ca87e",
+      "virtualization": {
+        "hypervisor_flag": true,
+        "product_name": null
+      },
+      "cores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sha256": "2a0be72bd85481c6445165888ce045b98cee9d3b011371a03e38256253200b7a"
+    },
+    "current_host": {
+      "cpu_class": "qualification-unregistered",
+      "model": "INTEL(R) XEON(R) PLATINUM 8581C CPU @ 2.30GHz",
+      "microcode": "0x1",
+      "kernel": "6.18.58",
+      "architecture": "x86_64",
+      "boot_id_sha256": "cacd94c321cd2cc1df608f90285b2b01d4c21da2e62c61095619a8d22eb5d684",
+      "online_cpu_count": 16,
+      "available_cpu_count": 8,
+      "host_boot_sha256": "1d4a6bd2d7201349107f24b6536d92d5c241cc5f3b83d4af341d23ba7ef90e29",
+      "virtualization": {
+        "hypervisor_flag": true,
+        "product_name": null
+      },
+      "cores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sha256": "ba1381674f805bc33320d025a6a0947541da13f6f585e073417c00c44198e4ba"
+    },
+    "host_identity_changed": true,
+    "statistical_retry": false
+  },
+  "receipts": {
+    "aa-public.json.gz": {
+      "sha256": "8c1505d72e4ddc4244147f47830ec90ebdfaeaf2b9e21bae043a18789a89314e",
+      "uncompressed_sha256": "50eddb013e723b49fe01cfe06ef2f99aa8cf320e852b928b4e72a968ec1a2fc1",
+      "uncompressed_bytes": 1051906
+    },
+    "aa-heldout.json.gz": {
+      "sha256": "c7557e2a51ad809c28c84f21498da79d2f1a53bc6a31828a3bf3bbc32faa68ad",
+      "uncompressed_sha256": "7ed1fb2206dd05806bea22fee3731203e568cf2e92f8cc95dd8e032c43f2ca03",
+      "uncompressed_bytes": 1697728
+    },
+    "public-exact.json.gz": {
+      "sha256": "e38376ed4455af66a1b38987faa902874965c228c02926429a590ff8954da7b3",
+      "uncompressed_sha256": "131783cb544c70ab57beca542772b34ed6f83c3a665ae1ddbef0d650984804cd",
+      "uncompressed_bytes": 10111
+    },
+    "heldout-noop.json.gz": {
+      "sha256": "fb56df980fe34a14e2e34a51928e0fa8db648c541b1b2f997edadb389a9a3cd5",
+      "uncompressed_sha256": "a96807a6ec4213547552ac517943d74b31d9b11469c75e1665fa017dfbaad557",
+      "uncompressed_bytes": 58758
+    },
+    "heldout-negative.json.gz": {
+      "sha256": "1a7b6e53ace467bbe6eea92a34bc968524aab88e611e9c35054fcde5b563f906",
+      "uncompressed_sha256": "7da232aa8154bdcf45a76de78b2ed6acacca1bbb67d9a1cb7ba1e303d991c32a",
+      "uncompressed_bytes": 59058
+    },
+    "differential-pristine.json.gz": {
+      "sha256": "6c2e61b8a7e66721ec1320b9f50fd7bb9eec9fb94cbb2dde1b9c9353d8a99e3a",
+      "uncompressed_sha256": "55d08860dd91f083a03664e4a8404b63a6dcd415e66c8e86a0b44a498fbc04c3",
+      "uncompressed_bytes": 2940
+    },
+    "differential-negative.json.gz": {
+      "sha256": "659600a4b02ad38ba6aa2a3fcd21c3e60243b962d4d8bd34d15be52aa1e61ad1",
+      "uncompressed_sha256": "93d6bae0aff1a1da1b44c402418b09eb33c04385595070d8301f2527160fca0a",
+      "uncompressed_bytes": 492
+    },
+    "upstream-full.json.gz": {
+      "sha256": "104d0a5a2861e90c22de4edc91398a93618b5c9abc2f6ee10a2f6c937f8dbe78",
+      "uncompressed_sha256": "f1d2ee557f9f93bca6302b36ccfdd9ed15721c2639e7ca92d350749af769033f",
+      "uncompressed_bytes": 7335419
+    },
+    "interface.json.gz": {
+      "sha256": "1fb0ca0002496952e86cc778502606e3173e6fe1f1f36afaf13ecac013e75958",
+      "uncompressed_sha256": "0788a8dbbf588e2b41eb35940924635e6217003616c105d9090b48807f25a2e8",
+      "uncompressed_bytes": 298
+    },
+    "process-state.json.gz": {
+      "sha256": "3064f1be35c41588e783dde09b9ebe42566351a4c723b857e49477dd1a4921ff",
+      "uncompressed_sha256": "8064f2894d4ce49559a6ceb278be34025f2f6c329d10f064b514db070e945d42",
+      "uncompressed_bytes": 210763
+    },
+    "rebuilt-reference.json.gz": {
+      "sha256": "e27f637fcefaa7cfe0ccdfdaf0e02e70c02b232d84977ff3a598f6e4dc3e3159",
+      "uncompressed_sha256": "4ba223145fe17c195b7825288befdf8ff9c06269ac59bedd48dcb4cd26134f69",
+      "uncompressed_bytes": 939
+    }
+  }
+}

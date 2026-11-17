@@ -1,0 +1,89 @@
+[
+  {
+    "checkout_inventory_sha256": "e4e9afc35b28a4ab2accc47b2fd671d4f508fac79c4efdd9d09d75909c47b102",
+    "commit": "a018953688f1b10bddf91bff8747068f5f4746a4",
+    "id": "git",
+    "language": "C",
+    "license": "GPL-2.0 and per-file notices",
+    "object_inventory": {
+      "algorithm": "sha256-canonical-git-objects-v1",
+      "bytes": 8222199955,
+      "object_count": 408171,
+      "sha256": "92d2636bca7242257cbe9d90937706eb061c95e7c3b1451fd393eb5ed7108b4d"
+    },
+    "reachable_nonmerge_commits": 61027,
+    "repository": "https://github.com/git/git.git",
+    "root_license_file_sha256": {
+      "COPYING": "5b2198d1645f767585e8a88ac0499b04472164c0d2da22e75ecf97ef443ab32e"
+    },
+    "selected_nonmerge_commits": 8192,
+    "selection": "First8192nonmergecommits in original rev-list --topo-order; disjoint contiguous4096/2048/2048 batches.",
+    "tree": "96aa7b9f343426cd28cf6c2da737b9f847a2919d"
+  },
+  {
+    "checkout_inventory_sha256": "4bf21754f88d6e711361e05f2494a55c63606265eb574a26e34b4680808bb137",
+    "commit": "b57863321f8d0a0f76fcf9ad636b6e39b024d0c0",
+    "id": "cargo",
+    "language": "Rust",
+    "license": "MIT OR Apache-2.0",
+    "object_inventory": {
+      "algorithm": "sha256-canonical-git-objects-v1",
+      "bytes": 1535183846,
+      "object_count": 190737,
+      "sha256": "597540f9e42c7e18b4642d73c63b2f9a0c9a17833e6d1f949c471e6da111e8d8"
+    },
+    "reachable_nonmerge_commits": 15968,
+    "repository": "https://github.com/rust-lang/cargo.git",
+    "root_license_file_sha256": {
+      "LICENSE-APACHE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
+      "LICENSE-MIT": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "LICENSE-THIRD-PARTY": "cbc759b1f17a2ac38fe3eb9e9563b1a08ba0f900611c49faaf68b46907b6d898"
+    },
+    "selected_nonmerge_commits": 8192,
+    "selection": "First8192nonmergecommits in original rev-list --topo-order; disjoint contiguous4096/2048/2048 batches.",
+    "tree": "5356af9b475ed8ed585b0aeacaaa9cf692e23c58"
+  },
+  {
+    "checkout_inventory_sha256": "7155279bd7c6ddbb46f52f95341a6f6d2fbc5f35f3a965a5f4f26ed2138cabd1",
+    "commit": "36920bb4766679f5b32445797dcc5d32b8ff5ad2",
+    "id": "django",
+    "language": "Python",
+    "license": "BSD-3-Clause",
+    "object_inventory": {
+      "algorithm": "sha256-canonical-git-objects-v1",
+      "bytes": 3377448993,
+      "object_count": 428564,
+      "sha256": "1d8bf8845ec32a8631865f1055b58496f0f8cdd637d185e9a4457c30189ca2a7"
+    },
+    "reachable_nonmerge_commits": 34461,
+    "repository": "https://github.com/django/django.git",
+    "root_license_file_sha256": {
+      "LICENSE": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+      "LICENSE.python": "765e2b1e339fef8d3e9f12892e7e072a8be309996a0be43ffc5796398ec4e7d4"
+    },
+    "selected_nonmerge_commits": 8192,
+    "selection": "First8192nonmergecommits in original rev-list --topo-order; disjoint contiguous4096/2048/2048 batches.",
+    "tree": "bc5f917dd9ada2793322544027f9f723aa15b0ba"
+  },
+  {
+    "checkout_inventory_sha256": "89f389b053266c66546e671c370abcda3c67f28c72abd65960334f3b8bac222b",
+    "commit": "7664e36875350ad0f309287391858de19ed13eb7",
+    "id": "prettier",
+    "language": "JavaScript/TypeScript",
+    "license": "MIT",
+    "object_inventory": {
+      "algorithm": "sha256-canonical-git-objects-v1",
+      "bytes": 2484971902,
+      "object_count": 164388,
+      "sha256": "90739312d8c29579b6063096fdeb2c57003a9f13f502cc4db206e00bf7a91254"
+    },
+    "reachable_nonmerge_commits": 11785,
+    "repository": "https://github.com/prettier/prettier.git",
+    "root_license_file_sha256": {
+      "LICENSE": "b0f2417199889f1c0d28ec4e0244eacf1a15de5819d61f641dd7d8f45153ac9c"
+    },
+    "selected_nonmerge_commits": 8192,
+    "selection": "First8192nonmergecommits in original rev-list --topo-order; disjoint contiguous4096/2048/2048 batches.",
+    "tree": "4ab25e69ac61a628fed4f0c78a4c250b526677ea"
+  }
+]

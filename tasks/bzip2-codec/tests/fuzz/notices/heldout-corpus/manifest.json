@@ -1,0 +1,1107 @@
+{
+  "version": "bzip2-corpus-v1",
+  "split": "final",
+  "entries": [
+    {
+      "archive_member": null,
+      "bytes": 4344277,
+      "collection": "govinfo-federal-register",
+      "facts": {},
+      "family": "documents",
+      "id": "documents/govinfo/FR-2024-01-17.xml",
+      "license_and_attribution": {
+        "notice_url": "https://www.govinfo.gov/about/policies",
+        "publisher": "U.S. Government Publishing Office",
+        "status": "retain source; U.S. Government work, not subject to copyright in the United States (17 U.S.C. 105); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/govinfo-policies.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:10.650663+00:00",
+      "sha256": "83a7beff2fb3a66559428c014e845fe24ecef9637fd5029501f06623a251a575",
+      "source_url": "https://www.govinfo.gov/bulkdata/FR/2024/01/FR-2024-01-17.xml",
+      "split": "final",
+      "split_group_keys": [
+        "govinfo:FR-2024-01-17"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "83a7beff2fb3a66559428c014e845fe24ecef9637fd5029501f06623a251a575",
+      "upstream_version": "2024-01-17",
+      "file": "inputs/000.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/000-1.bz2",
+          "sha256": "7cafb2d330999fe3d7d79649cb69e84eb4c737aeaa25f481e3bab915e040f86a",
+          "bytes": 679610
+        },
+        "9": {
+          "file": "reference/000-9.bz2",
+          "sha256": "6eac4f7829f9b78380966af77721b341fabb49821c6df8f0d6aae2be001ef8c3",
+          "bytes": 544294
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 3439626,
+      "collection": "govinfo-federal-register",
+      "facts": {},
+      "family": "documents",
+      "id": "documents/govinfo/FR-2024-01-29.xml",
+      "license_and_attribution": {
+        "notice_url": "https://www.govinfo.gov/about/policies",
+        "publisher": "U.S. Government Publishing Office",
+        "status": "retain source; U.S. Government work, not subject to copyright in the United States (17 U.S.C. 105); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/govinfo-policies.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:10.997953+00:00",
+      "sha256": "c2f5457f5a2410f3289f1cc01df0ddb33bc814e7dc4e3152b80b86df899655b9",
+      "source_url": "https://www.govinfo.gov/bulkdata/FR/2024/01/FR-2024-01-29.xml",
+      "split": "final",
+      "split_group_keys": [
+        "govinfo:FR-2024-01-29"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "c2f5457f5a2410f3289f1cc01df0ddb33bc814e7dc4e3152b80b86df899655b9",
+      "upstream_version": "2024-01-29",
+      "file": "inputs/001.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/001-1.bz2",
+          "sha256": "89375c5ca8a62a9791f26d333aa2a24837f6d8d30e05124f181783de585ca702",
+          "bytes": 484722
+        },
+        "9": {
+          "file": "reference/001-9.bz2",
+          "sha256": "9a25db894b1f4edeed1c59e555ab43dfe96f64712e20d4bf0dc8e2a2f13a0d8d",
+          "bytes": 395384
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 5781920,
+      "collection": "noaa-storm-events",
+      "facts": {
+        "table": "locations",
+        "year": 2019
+      },
+      "family": "tables",
+      "id": "tables/noaa/StormEvents_locations-ftp_v1.0_d2019_c20260707.csv",
+      "license_and_attribution": {
+        "notice_url": "https://www.noaa.gov/office-education/outreach-communication/faq",
+        "publisher": "NOAA NCEI",
+        "source_readme": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/README",
+        "status": "retain source; U.S. Government work, not subject to copyright in the United States (17 U.S.C. 105); reviewed 2026-11-17"
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:12.848429+00:00",
+      "sha256": "1a1d35f10d50683eb8da38a217386d6634a1c88a079e9a7a209daf135d510221",
+      "source_url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_locations-ftp_v1.0_d2019_c20260707.csv.gz",
+      "split": "final",
+      "split_group_keys": [
+        "noaa:storm-events:2019"
+      ],
+      "transformation": "gzip decompression only",
+      "upstream_download_sha256": "b059da46edf92203946ed3cbed53f2bb53a8697c59fdecd4863d433700209b4c",
+      "upstream_version": "StormEvents_locations-ftp_v1.0_d2019_c20260707.csv.gz",
+      "file": "inputs/002.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/002-1.bz2",
+          "sha256": "a6426b7c66a42eb27979b5e4e3444683f8ec9f2e48eea032525cb799b0c69d99",
+          "bytes": 1549198
+        },
+        "9": {
+          "file": "reference/002-9.bz2",
+          "sha256": "ba7343262c3e8e699148d26355d4e9d5705e3454f435d6c35221291b5ba25331",
+          "bytes": 1426875
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 69835,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "query": "transport",
+        "record_ids": [
+          "e6f5411a-bc51-497c-adc7-841da8de646e",
+          "8de1b362-4f81-4057-9d3d-06bb21b4c606",
+          "59700495-8526-403c-88b6-b0fa8d574297",
+          "f9688f2c-96c4-4d56-aec3-9aa59d8314c1",
+          "c993002d-c933-42b4-94b3-ab28764bdd6f",
+          "a1b7b9b8-677d-4879-a672-c36ffeb64d27",
+          "e5ce4334-dac1-5862-8f9e-1c03a024f79e",
+          "2f6fc5b0-e953-53fd-ae8e-c7c4a26ab930",
+          "577fa13b-7279-4517-acb9-e152d464d5ca",
+          "83ff97cb-18f3-4cea-8753-1d4357a57f5a"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/search-transport.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:15.554067+00:00",
+      "sha256": "b032006d8b26b9f1a2c07631537c046fcdb3bcf69663404f5d8b930bfbb86911",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_search?q=transport&rows=10",
+      "split": "final",
+      "split_group_keys": [
+        "canada:record:2f6fc5b0-e953-53fd-ae8e-c7c4a26ab930",
+        "canada:record:577fa13b-7279-4517-acb9-e152d464d5ca",
+        "canada:record:59700495-8526-403c-88b6-b0fa8d574297",
+        "canada:record:83ff97cb-18f3-4cea-8753-1d4357a57f5a",
+        "canada:record:8de1b362-4f81-4057-9d3d-06bb21b4c606",
+        "canada:record:a1b7b9b8-677d-4879-a672-c36ffeb64d27",
+        "canada:record:c993002d-c933-42b4-94b3-ab28764bdd6f",
+        "canada:record:e5ce4334-dac1-5862-8f9e-1c03a024f79e",
+        "canada:record:e6f5411a-bc51-497c-adc7-841da8de646e",
+        "canada:record:f9688f2c-96c4-4d56-aec3-9aa59d8314c1"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "b032006d8b26b9f1a2c07631537c046fcdb3bcf69663404f5d8b930bfbb86911",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/003.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/003-1.bz2",
+          "sha256": "df311eb03b3e2402d826fb416d9ee8a0d4df96ec70738c5f1c2955ce51975a08",
+          "bytes": 8354
+        },
+        "9": {
+          "file": "reference/003-9.bz2",
+          "sha256": "60441776e7b390cd49fc701994c3bc8c9e7cebe1ec0e2c15ed7ac6616280acbe",
+          "bytes": 8354
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 7226,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "record_ids": [
+          "e6f5411a-bc51-497c-adc7-841da8de646e"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/record-e6f5411a-bc51-497c-adc7-841da8de646e.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:15.784773+00:00",
+      "sha256": "27fec92978fda9fc05ccb801033378de44d671e852c877db953217b9b2648bbf",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=e6f5411a-bc51-497c-adc7-841da8de646e",
+      "split": "final",
+      "split_group_keys": [
+        "canada:record:e6f5411a-bc51-497c-adc7-841da8de646e"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "27fec92978fda9fc05ccb801033378de44d671e852c877db953217b9b2648bbf",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/004.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/004-1.bz2",
+          "sha256": "d70599d09d3cf92a3f6e8ca1d83ca8ecbfc5b88228bc5d273a0855c0e291e269",
+          "bytes": 2321
+        },
+        "9": {
+          "file": "reference/004-9.bz2",
+          "sha256": "724c3a84ae0949b052625e57769b836cd25eacaa7ffaac03a32346318b2eb3fd",
+          "bytes": 2321
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 6422,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "record_ids": [
+          "8de1b362-4f81-4057-9d3d-06bb21b4c606"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/record-8de1b362-4f81-4057-9d3d-06bb21b4c606.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:15.996536+00:00",
+      "sha256": "4aecc026fe43f9c85d9516938f656680cdae77933826757ce42baca5b33b05eb",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=8de1b362-4f81-4057-9d3d-06bb21b4c606",
+      "split": "final",
+      "split_group_keys": [
+        "canada:record:8de1b362-4f81-4057-9d3d-06bb21b4c606"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "4aecc026fe43f9c85d9516938f656680cdae77933826757ce42baca5b33b05eb",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/005.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/005-1.bz2",
+          "sha256": "793ebda0d0006eb16edd679e7959d0cf9c959f06521a58ecdcd609e215e4a40e",
+          "bytes": 1984
+        },
+        "9": {
+          "file": "reference/005-9.bz2",
+          "sha256": "21ca0fc429b342ab287354a48085072b5bc7435a682155b59a401ad4aeadc99c",
+          "bytes": 1984
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 6927,
+      "collection": "canada-open-government-metadata",
+      "facts": {
+        "record_ids": [
+          "59700495-8526-403c-88b6-b0fa8d574297"
+        ]
+      },
+      "family": "json",
+      "id": "json/canada/record-59700495-8526-403c-88b6-b0fa8d574297.json",
+      "license_and_attribution": {
+        "notice_url": "https://open.canada.ca/en/open-government-licence-canada",
+        "publisher": "Government of Canada Open Government Portal",
+        "scope": "API metadata response only; linked resource contents are not collected",
+        "status": "retain source; Open Government Licence - Canada (attribution required, notice retained); reviewed 2026-11-17",
+        "upstream_notices": [
+          "notices/canada-licence.html"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.220979+00:00",
+      "sha256": "776efff77f8ffaa2e6ea876effa40b5626f70ac0688f766a02f3ab9907baf0ed",
+      "source_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=59700495-8526-403c-88b6-b0fa8d574297",
+      "split": "final",
+      "split_group_keys": [
+        "canada:record:59700495-8526-403c-88b6-b0fa8d574297"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "776efff77f8ffaa2e6ea876effa40b5626f70ac0688f766a02f3ab9907baf0ed",
+      "upstream_version": "frozen API snapshot",
+      "file": "inputs/006.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/006-1.bz2",
+          "sha256": "3faa1822c71ce6232b3ba6073a3b59e0c74b6c7025edf1297797f02b9bdfb2a2",
+          "bytes": 2204
+        },
+        "9": {
+          "file": "reference/006-9.bz2",
+          "sha256": "29b937d6fb799dcff30ef45b0d8c8ac45a280301a86d6ea5e7fd6b1bca36c258",
+          "bytes": 2204
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/rust/libnewsboat-ffi/build.rs",
+      "bytes": 1058,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 1058,
+        "candidate_count": 137,
+        "category": "implementation",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/newsboat/rust/libnewsboat-ffi/build.rs",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "e858cd7620458fde2e6c0e174c7e3d5a6281ef921c8ceaafb5c15e15f4e0a4be",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/007.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/007-1.bz2",
+          "sha256": "6c0383f7758df6c24d01770e7aa83cb8a397028d741f77375ab46a58566c3b0f",
+          "bytes": 516
+        },
+        "9": {
+          "file": "reference/007-9.bz2",
+          "sha256": "96c47317980f2bf6a891f6e59b1c9eb79827a41f72b2659053dfbc3e1ad239f2",
+          "bytes": 516
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/rust/strprintf/src/traits.rs",
+      "bytes": 5222,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 5222,
+        "candidate_count": 137,
+        "category": "implementation",
+        "selection_rank": 68
+      },
+      "family": "source",
+      "id": "source/newsboat/rust/strprintf/src/traits.rs",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "5c923318f4d6da15da68ae5c292d9407d416d7d62b4dd4bd5180a4c478b409f8",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/008.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/008-1.bz2",
+          "sha256": "e507fe613c9a8c2013aaf6f1f2ce8e903b270fff813edf58ba673b31ed1abb59",
+          "bytes": 1459
+        },
+        "9": {
+          "file": "reference/008-9.bz2",
+          "sha256": "44caec05dec79da1acefa477b289c9498fe1d4d0f4ffb946a03a35e55eacc415",
+          "bytes": 1459
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/rust/libnewsboat/src/utils.rs",
+      "bytes": 83892,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 83892,
+        "candidate_count": 137,
+        "category": "implementation",
+        "selection_rank": 136
+      },
+      "family": "source",
+      "id": "source/newsboat/rust/libnewsboat/src/utils.rs",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "84d3dea592d664708058a183a20d4fe3fd3aa0d44450cf5aaa9a0f4c4b9ff1ea",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/009.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/009-1.bz2",
+          "sha256": "2b1b880e4fc381b77ec38132cc07a068683e1f347cdf6e8c5d060ab7df7aeebe",
+          "bytes": 18225
+        },
+        "9": {
+          "file": "reference/009-9.bz2",
+          "sha256": "f852555b094934ac99c332baa1a290ceace60182e37778890c7dfd4259751fba",
+          "bytes": 18225
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/include/helpformaction.h",
+      "bytes": 1051,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 1051,
+        "candidate_count": 65,
+        "category": "interfaces",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/newsboat/include/helpformaction.h",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "683c5d28bfdbfc53b8df458434c718026fde323973d4e56dbd4d994991b33598",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/010.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/010-1.bz2",
+          "sha256": "e5a1c29af661f2f0028a253f21125905ba9823099e6d02555154d42001bb5596",
+          "bytes": 593
+        },
+        "9": {
+          "file": "reference/010-9.bz2",
+          "sha256": "b23c3d5528dc818a6d0766841e29b7f979921961ebd2c5e068d19ea6b63be126",
+          "bytes": 593
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/include/feedcontainer.h",
+      "bytes": 1498,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 1498,
+        "candidate_count": 65,
+        "category": "interfaces",
+        "selection_rank": 32
+      },
+      "family": "source",
+      "id": "source/newsboat/include/feedcontainer.h",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "16d536cb6df109a8f9de88808610aaa0a43e524ac0ac5e844d4f6c0370bc03f3",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/011.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/011-1.bz2",
+          "sha256": "2aa16709eb5449923eef71005ba362c08c2fde025d550095c21553c7a9bed9df",
+          "bytes": 614
+        },
+        "9": {
+          "file": "reference/011-9.bz2",
+          "sha256": "44edf053542bc4ac5f8efdcfc321963bfa063138dfe6b8e6bf76a0a22857d920",
+          "bytes": 614
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/filter/Scanner.h",
+      "bytes": 7107,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 7107,
+        "candidate_count": 65,
+        "category": "interfaces",
+        "selection_rank": 64
+      },
+      "family": "source",
+      "id": "source/newsboat/filter/Scanner.h",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "f33e4fe545aa2bf63318106a7d16c5d79f21f10c069e13935857d225609bce8d",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/012.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/012-1.bz2",
+          "sha256": "914556fc4873de07a0826e5aeaf2326a419043b32033be5f8dbae27456a904a8",
+          "bytes": 2296
+        },
+        "9": {
+          "file": "reference/012-9.bz2",
+          "sha256": "0a9b6013a9aef4c20f4b61d23beb15da45b2a17a48454c50faf91d9bc94afc87",
+          "bytes": 2296
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/rust/libnewsboat/Cargo.toml",
+      "bytes": 1743,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 1743,
+        "candidate_count": 2,
+        "category": "configuration",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/newsboat/rust/libnewsboat/Cargo.toml",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "27bbd2a140c709a27426d40c30602e2b25e27fdd956c3d199a0930a0e99f389c",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/013.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/013-1.bz2",
+          "sha256": "dba68e1e1d3aad48b08167f0cfb068840de5c0e657ae597721f540381532d415",
+          "bytes": 967
+        },
+        "9": {
+          "file": "reference/013-9.bz2",
+          "sha256": "9cb29bb86e709d6732066493a1604150f2641f8667642602451acdfe6458290b",
+          "bytes": 967
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/Cargo.lock",
+      "bytes": 50295,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 50295,
+        "candidate_count": 2,
+        "category": "configuration",
+        "selection_rank": 1
+      },
+      "family": "source",
+      "id": "source/newsboat/Cargo.lock",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "d4002b957fc2b109340ecb3ea01f663adb72ef909c256e682852ba4b814944ab",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/014.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/014-1.bz2",
+          "sha256": "6a7f1ea6b1676c4787160034b4ddd4ea9fcde88d3e99f07299a21a03d8b3d1fa",
+          "bytes": 10752
+        },
+        "9": {
+          "file": "reference/014-9.bz2",
+          "sha256": "221aa2ff5c9d50d901d1ee88e2e8adf60c5824bb706dce19176c9e125df15bfa",
+          "bytes": 10752
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/doc/chapter-podboat.asciidoc",
+      "bytes": 1205,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 1205,
+        "candidate_count": 25,
+        "category": "documentation",
+        "selection_rank": 0
+      },
+      "family": "source",
+      "id": "source/newsboat/doc/chapter-podboat.asciidoc",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "298de69deedd933ec3963550ff0b908279530cd964cd720df6a410c6a205902a",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/015.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/015-1.bz2",
+          "sha256": "1a2f2e077edf1167a94466a216dc7a6684d10bee3d7467d81085e2e7069e8b8e",
+          "bytes": 641
+        },
+        "9": {
+          "file": "reference/015-9.bz2",
+          "sha256": "50975458a772e8460fa8d59ee32a7217bac637aa853d851849dc3097f4d339b3",
+          "bytes": 641
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/doc/docker.md",
+      "bytes": 3131,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 3131,
+        "candidate_count": 25,
+        "category": "documentation",
+        "selection_rank": 12
+      },
+      "family": "source",
+      "id": "source/newsboat/doc/docker.md",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "d1b54aff8211e4b962b57713f91870a9fa9cdf8d93844ab1067bf53ac8ff100e",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/016.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/016-1.bz2",
+          "sha256": "cd725eb6916b685434a55623ce09df70883aa7727c254a059afa6c784a2aa54c",
+          "bytes": 1481
+        },
+        "9": {
+          "file": "reference/016-9.bz2",
+          "sha256": "c92f600eb9339c93becb2c4250304d8c28c3d8a891e0eb15764c4d73baf0ab40",
+          "bytes": 1481
+        }
+      }
+    },
+    {
+      "archive_member": "newsboat-fc4d86014c0a1ee9cb830f30db7362387ce92b16/CHANGELOG.md",
+      "bytes": 88589,
+      "collection": "newsboat",
+      "facts": {
+        "archive_member_bytes": 88589,
+        "candidate_count": 25,
+        "category": "documentation",
+        "selection_rank": 24
+      },
+      "family": "source",
+      "id": "source/newsboat/CHANGELOG.md",
+      "license_and_attribution": {
+        "project": "https://github.com/newsboat/newsboat",
+        "status": "root notices retained; per-file review complete 2026-11-17: covered by the repository's MIT LICENSE (see NEWSBOAT-LICENSE-REVIEW.md)",
+        "upstream_notices": [
+          "notices/LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:16.864973+00:00",
+      "sha256": "83ddaf018c491008938b34bd817d775de1eb83319ca9e3a53554d2a0e3a27d2b",
+      "source_url": "https://codeload.github.com/newsboat/newsboat/tar.gz/fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "split": "final",
+      "split_group_keys": [
+        "project:newsboat/newsboat"
+      ],
+      "transformation": "tar.gz member extraction; member bytes unchanged",
+      "upstream_download_sha256": "10f2a193614c42391f40b3f3322ca2d5ad644870912a1c6753881b6817e2d9c5",
+      "upstream_version": "r2.45@fc4d86014c0a1ee9cb830f30db7362387ce92b16",
+      "file": "inputs/017.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/017-1.bz2",
+          "sha256": "1f2b0ce42a4da7f16389451bbb5cbd51a442c6bdc5a73a0163a3daa96ec5fb7e",
+          "bytes": 23924
+        },
+        "9": {
+          "file": "reference/017-9.bz2",
+          "sha256": "e08e7a7658f999f41617780efa2f3386d136859d25c9b7a0c9b85252a660dd88",
+          "bytes": 23924
+        }
+      }
+    },
+    {
+      "archive_member": "dist/js/tabulator.js",
+      "bytes": 786853,
+      "collection": "tabulator",
+      "facts": {
+        "minified": false,
+        "upstream_sha256_verified": true
+      },
+      "family": "web",
+      "id": "web/tabulator/dist/js/tabulator.js",
+      "license_and_attribution": {
+        "project": "https://github.com/tabulator-tables/tabulator",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/191a2ee55468-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:58.152368+00:00",
+      "sha256": "c29dfb77b199225b4d1a2cfb9a3e274dd7fc373d2b71869a8f480b7866455629",
+      "source_url": "https://github.com/tabulator-tables/tabulator/releases/download/6.6.1/dist.zip",
+      "split": "final",
+      "split_group_keys": [
+        "project:tabulator-tables/tabulator"
+      ],
+      "transformation": "release ZIP member extraction; member bytes unchanged",
+      "upstream_download_sha256": "d62e6e812ae46d63ec4485ec51261b08a0e49377fe0a2f8a883f3d2cc27bc60b",
+      "upstream_version": "6.6.1@f50492e5dc86460876de4f13394a341451a87c66",
+      "file": "inputs/018.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/018-1.bz2",
+          "sha256": "06b8e333cb7caf793764db857556ea88edfdf17afa5dcacf3c15fae20f444557",
+          "bytes": 145049
+        },
+        "9": {
+          "file": "reference/018-9.bz2",
+          "sha256": "05dc9e891031d28c0b028608015232c4a47b3a1956e6671d58c59c0ab8beba6a",
+          "bytes": 120118
+        }
+      }
+    },
+    {
+      "archive_member": "dist/js/tabulator.min.js",
+      "bytes": 454026,
+      "collection": "tabulator",
+      "facts": {
+        "minified": true,
+        "upstream_sha256_verified": true
+      },
+      "family": "web",
+      "id": "web/tabulator/dist/js/tabulator.min.js",
+      "license_and_attribution": {
+        "project": "https://github.com/tabulator-tables/tabulator",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/191a2ee55468-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:58.152368+00:00",
+      "sha256": "5f945a0327dacb19e50e1abed0942d2563848bcf5220998df325afa74cce3c34",
+      "source_url": "https://github.com/tabulator-tables/tabulator/releases/download/6.6.1/dist.zip",
+      "split": "final",
+      "split_group_keys": [
+        "project:tabulator-tables/tabulator"
+      ],
+      "transformation": "release ZIP member extraction; member bytes unchanged",
+      "upstream_download_sha256": "d62e6e812ae46d63ec4485ec51261b08a0e49377fe0a2f8a883f3d2cc27bc60b",
+      "upstream_version": "6.6.1@f50492e5dc86460876de4f13394a341451a87c66",
+      "file": "inputs/019.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/019-1.bz2",
+          "sha256": "4496333e1aca67f977ddcca69b4beae11980ae0a980752b97b9048f0512d784b",
+          "bytes": 97173
+        },
+        "9": {
+          "file": "reference/019-9.bz2",
+          "sha256": "9730a084ceaeb12d537c8bf8a7a27ee4761be2c98d1de147aef5a3c4425c538b",
+          "bytes": 83356
+        }
+      }
+    },
+    {
+      "archive_member": "dist/css/tabulator.css",
+      "bytes": 32749,
+      "collection": "tabulator",
+      "facts": {
+        "minified": false,
+        "upstream_sha256_verified": true
+      },
+      "family": "web",
+      "id": "web/tabulator/dist/css/tabulator.css",
+      "license_and_attribution": {
+        "project": "https://github.com/tabulator-tables/tabulator",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/191a2ee55468-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:58.152368+00:00",
+      "sha256": "d9ad0d69bec5924320188ddf2f7592a7b64efb742c3d1266745a74030ffa3cf8",
+      "source_url": "https://github.com/tabulator-tables/tabulator/releases/download/6.6.1/dist.zip",
+      "split": "final",
+      "split_group_keys": [
+        "project:tabulator-tables/tabulator"
+      ],
+      "transformation": "release ZIP member extraction; member bytes unchanged",
+      "upstream_download_sha256": "d62e6e812ae46d63ec4485ec51261b08a0e49377fe0a2f8a883f3d2cc27bc60b",
+      "upstream_version": "6.6.1@f50492e5dc86460876de4f13394a341451a87c66",
+      "file": "inputs/020.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/020-1.bz2",
+          "sha256": "b23d4eda74fef1fa1b6f5a2b22ea102f614c35a8a30bb2d0a4b5bb646053b62f",
+          "bytes": 3860
+        },
+        "9": {
+          "file": "reference/020-9.bz2",
+          "sha256": "ddeb0ad441e34a2f5378b17dfe99ea2bdc4954ea0752d4e6c44c15560c3fe93b",
+          "bytes": 3860
+        }
+      }
+    },
+    {
+      "archive_member": "dist/css/tabulator.min.css",
+      "bytes": 28383,
+      "collection": "tabulator",
+      "facts": {
+        "minified": true,
+        "upstream_sha256_verified": true
+      },
+      "family": "web",
+      "id": "web/tabulator/dist/css/tabulator.min.css",
+      "license_and_attribution": {
+        "project": "https://github.com/tabulator-tables/tabulator",
+        "status": "upstream notice retained",
+        "upstream_notices": [
+          "notices/191a2ee55468-LICENSE"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:48:58.152368+00:00",
+      "sha256": "ff598d8e961398e09a8e52ab21740e5ed952c84feebbdacec8f8a362dd3f73db",
+      "source_url": "https://github.com/tabulator-tables/tabulator/releases/download/6.6.1/dist.zip",
+      "split": "final",
+      "split_group_keys": [
+        "project:tabulator-tables/tabulator"
+      ],
+      "transformation": "release ZIP member extraction; member bytes unchanged",
+      "upstream_download_sha256": "d62e6e812ae46d63ec4485ec51261b08a0e49377fe0a2f8a883f3d2cc27bc60b",
+      "upstream_version": "6.6.1@f50492e5dc86460876de4f13394a341451a87c66",
+      "file": "inputs/021.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/021-1.bz2",
+          "sha256": "b8bb9246cf79202dc6531c64e1635d9ea9a073a93157e3b6fd928f347a38dff5",
+          "bytes": 3763
+        },
+        "9": {
+          "file": "reference/021-9.bz2",
+          "sha256": "05c2002a5099d554bcb4ccda71b1462999d5d233aee0d913aaf026749c21f7f0",
+          "bytes": 3763
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 600010,
+      "collection": "physionet-bidmc",
+      "facts": {
+        "channels": 5,
+        "header": "provenance/headers/bidmc/bidmc21.hea",
+        "record": "bidmc21",
+        "representation": "WFDB 16-bit binary",
+        "samples": 60001,
+        "sampling_hz": 125.0,
+        "upstream_sha256_verified": true
+      },
+      "family": "measurements",
+      "id": "measurements/bidmc/bidmc21.dat",
+      "license_and_attribution": {
+        "dataset_doi": "10.13026/C2208R",
+        "license": "Open Data Commons Attribution License v1.0",
+        "required_citations_url": "https://physionet.org/content/bidmc/1.0.0/",
+        "status": "upstream notices retained",
+        "upstream_notices": [
+          "notices/76576a17b505-LICENSE",
+          "notices/README"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:51:06.464119+00:00",
+      "sha256": "a5a6b22495e4bbfc4c8fb16c6cf95094025920541c27637f1e10c574766038d8",
+      "source_url": "https://physionet.org/files/bidmc/1.0.0/bidmc21.dat",
+      "split": "final",
+      "split_group_keys": [
+        "bidmc:record:bidmc21",
+        "mimic2:subject:s11342"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "a5a6b22495e4bbfc4c8fb16c6cf95094025920541c27637f1e10c574766038d8",
+      "upstream_version": "1.0.0",
+      "file": "inputs/022.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/022-1.bz2",
+          "sha256": "7d64c3127383457396b0374764a35cd4245b06bc58a9f7bf90e29e36fd4d760b",
+          "bytes": 365727
+        },
+        "9": {
+          "file": "reference/022-9.bz2",
+          "sha256": "e2cea596188f42d509ec7a50141b02ad98aea59230f05d1db0ad4df4e927c257",
+          "bytes": 314367
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 2660119,
+      "collection": "physionet-bidmc",
+      "facts": {
+        "channels": 5,
+        "header": "provenance/headers/bidmc/bidmc21.hea",
+        "record": "bidmc21",
+        "representation": "CSV",
+        "samples": 60001,
+        "sampling_hz": 125.0,
+        "upstream_sha256_verified": true
+      },
+      "family": "measurements",
+      "id": "measurements/bidmc/bidmc_csv/bidmc_21_Signals.csv",
+      "license_and_attribution": {
+        "dataset_doi": "10.13026/C2208R",
+        "license": "Open Data Commons Attribution License v1.0",
+        "required_citations_url": "https://physionet.org/content/bidmc/1.0.0/",
+        "status": "upstream notices retained",
+        "upstream_notices": [
+          "notices/76576a17b505-LICENSE",
+          "notices/README"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:52:04.783545+00:00",
+      "sha256": "3c36c96d58803596222a1639d1c338fc758b4cfeb3ac75420ceea520fd30a206",
+      "source_url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_21_Signals.csv",
+      "split": "final",
+      "split_group_keys": [
+        "bidmc:record:bidmc21",
+        "mimic2:subject:s11342"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "3c36c96d58803596222a1639d1c338fc758b4cfeb3ac75420ceea520fd30a206",
+      "upstream_version": "1.0.0",
+      "file": "inputs/023.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/023-1.bz2",
+          "sha256": "167c2ec68725e791d61256e9f912c4e1c177310aadd8874bf0d0e75cab57883b",
+          "bytes": 532003
+        },
+        "9": {
+          "file": "reference/023-9.bz2",
+          "sha256": "e753f5161becb34eff06f0c9b6a232f186baadfeb54cb5e766eda15511335809",
+          "bytes": 462888
+        }
+      }
+    },
+    {
+      "archive_member": null,
+      "bytes": 600010,
+      "collection": "physionet-bidmc",
+      "facts": {
+        "channels": 5,
+        "header": "provenance/headers/bidmc/bidmc37.hea",
+        "record": "bidmc37",
+        "representation": "WFDB 16-bit binary",
+        "samples": 60001,
+        "sampling_hz": 125.0,
+        "upstream_sha256_verified": true
+      },
+      "family": "measurements",
+      "id": "measurements/bidmc/bidmc37.dat",
+      "license_and_attribution": {
+        "dataset_doi": "10.13026/C2208R",
+        "license": "Open Data Commons Attribution License v1.0",
+        "required_citations_url": "https://physionet.org/content/bidmc/1.0.0/",
+        "status": "upstream notices retained",
+        "upstream_notices": [
+          "notices/76576a17b505-LICENSE",
+          "notices/README"
+        ]
+      },
+      "retrieved_at_utc": "2026-10-12T02:52:18.799023+00:00",
+      "sha256": "9ba680cbcdd55371fe1c3ecc66cfc131aebc6b24576437a304e04e0d7266c134",
+      "source_url": "https://physionet.org/files/bidmc/1.0.0/bidmc37.dat",
+      "split": "final",
+      "split_group_keys": [
+        "bidmc:record:bidmc37",
+        "mimic2:subject:s24455"
+      ],
+      "transformation": "identity",
+      "upstream_download_sha256": "9ba680cbcdd55371fe1c3ecc66cfc131aebc6b24576437a304e04e0d7266c134",
+      "upstream_version": "1.0.0",
+      "file": "inputs/024.raw",
+      "encodings": {
+        "1": {
+          "file": "reference/024-1.bz2",
+          "sha256": "874dec3b2c3204f4a201587bb77e069d7dca3f0793bde5e9523666d4842be710",
+          "bytes": 361603
+        },
+        "9": {
+          "file": "reference/024-9.bz2",
+          "sha256": "259e59c5eb530d9f785ae1614066dff289a610e33d06cf91866616502fd61fd1",
+          "bytes": 316821
+        }
+      }
+    }
+  ],
+  "description": "Intact real files; no generated padding, prefixes or synthetic timed content."
+}

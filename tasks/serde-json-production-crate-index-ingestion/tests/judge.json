@@ -1,0 +1,92 @@
+{
+  "build_source_env": "OPTIMBENCH_SOURCE",
+  "output_comparator": {
+    "version": "task-output-comparator-v1",
+    "stdout": {
+      "kind": "json-structural"
+    },
+    "files": {
+      "kind": "exact-bytes"
+    }
+  },
+  "differential": {
+    "enabled": true,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "case_budget": 30,
+    "case_timeout_seconds": 30,
+    "time_cap_seconds": 1800,
+    "memory": "4g"
+  },
+  "process_state": {
+    "enabled": true,
+    "kind": "native"
+  },
+  "calibration_max_age_seconds": 86400,
+  "claimable": false,
+  "cores": 8,
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "pids_limit": 512,
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "kind": "declarations",
+    "language": "rust",
+    "files": [
+      "project/src/**/*.rs"
+    ]
+  },
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "upstream_gate": {
+    "command": [
+      "python3",
+      "/judge-task-tests/upstream.py"
+    ],
+    "report": "upstream.json",
+    "timeout": 7200
+  },
+  "warmups": 1,
+  "case_roles": {
+    "public": {
+      "distinct-registry-corpus": "performance",
+      "geojson-typed-corpus": "performance"
+    },
+    "heldout": {
+      "distinct-registry-corpus": "performance",
+      "geojson-typed-corpus": "performance"
+    }
+  },
+  "performance_units": {
+    "public": {
+      "registry-ingest": [
+        "distinct-registry-corpus"
+      ],
+      "geojson-typed": [
+        "geojson-typed-corpus"
+      ]
+    },
+    "heldout": {
+      "registry-ingest": [
+        "distinct-registry-corpus"
+      ],
+      "geojson-typed": [
+        "geojson-typed-corpus"
+      ]
+    }
+  }
+}

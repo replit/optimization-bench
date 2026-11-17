@@ -1,0 +1,36 @@
+{
+  "actual_staged_transport_bytes_per_run": 561735687,
+  "all_untimed_gates_passed": true,
+  "canonical_root": "92186d5b2a561afb5fe4b0dbce18a8906771faef",
+  "generic_hook": "ffb7dbcaa8041e7c2bf51a9a1cf8220883998cdd",
+  "helper_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+  "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+  "image_build_context_commit": "523980cc7e95e08de9c3384f896824b73d08a218",
+  "image_build_end": "2026-10-25T21:44:49.868919189Z",
+  "image_build_log_sha256": "73480774662a04c972fe1821f415556413abef72d2f78b16ab5a19486ec147bd",
+  "image_build_start": "2026-10-25T21:43:05.103874448Z",
+  "judge_tests": {
+    "passed": true,
+    "skipped": 12,
+    "tests": 196
+  },
+  "pack_index_files_per_public_run": 8,
+  "public_preparation_runs": 9,
+  "receipt_semantics_fix": "481c5d6576990f7477265a2f3cbf14d1a97ada34",
+  "recorded_at": "2026-10-25T21:56:10.862651+00:00",
+  "selected_repositories_per_public_run": 4,
+  "source_pin": "a018953688f1b10bddf91bff8747068f5f4746a4",
+  "task_comparator_unchanged": true,
+  "timing_pregrant": "Coordinator71fa24c5: use same approved paired protocol only after all untimed checks pass and VMquiet.",
+  "tools_tests": {
+    "passed": true,
+    "skipped": 10,
+    "tests": 144
+  },
+  "transport_note": "Compressed pack encoding differs from earlier host acquisition; semantic object/checkout pins and all complete outputs unchanged. Expected preparation count derived from actual immutable image-staged files.",
+  "validation_setup_failures": [
+    "Initial author assertion incorrectly assumed previous transport pack size; corrected to actual protected file sizes.",
+    "A reused scratch directory had existing home-0; corrected to fresh per-run scratch. Neither was a task/helper failure."
+  ],
+  "warm_aa_started": false
+}

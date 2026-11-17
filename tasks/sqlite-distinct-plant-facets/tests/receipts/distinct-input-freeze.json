@@ -1,0 +1,39 @@
+{
+  "heldout": {
+    "bytes": 3796992,
+    "expect_len": 1827605,
+    "expect_sha": "df572ec08a1c38be86ea1182e56929abdb3a4ec2958b17cba995f1c378c032a9",
+    "family": "country-filtered-facets",
+    "membership_sha256": "e50c81ebd1a0a46933547cbc9b85642eed28fa74dfef4fa6c7afb18820863f6a",
+    "path": "distinct-plant-facets-heldout",
+    "requests": 12788,
+    "requests_bytes": 258011,
+    "requests_sha256": "0ccaf6f1413ad86b93ae73780d4efc2ccb5ffe945d405ff4e5e20b73b2e9fb79",
+    "sha256": "238912370ec1de1c670e158e239f7bd1da7f2e1afe332356580c7feed326bead"
+  },
+  "overlap": {
+    "complete_original_rows": 0,
+    "country_groups": 0,
+    "plant_ids": 0,
+    "request_keys": 0
+  },
+  "public": {
+    "bytes": 6754304,
+    "expect_len": 3323875,
+    "expect_sha": "962185e0b8d77186376a2a7b2afd91c81ffe6fb29297d48344086813568c41ca",
+    "family": "country-filtered-facets",
+    "membership_sha256": "325def4564a809983514f17a8ef6d6deb0ba9dfb0703a5ec2afa726dbf7b8e13",
+    "path": "distinct-plant-facets-public",
+    "requests": 20855,
+    "requests_bytes": 535697,
+    "requests_sha256": "52564d1dcdabe9da7913e1a799653cdc6e2ef8a9485819f3fd52f6f01628e62c",
+    "sha256": "3fd9bc747aee51d0d7704e6fee62f4bc6e486d144ba09db34ccc642c2e6c59ad"
+  },
+  "qualified": false,
+  "requests": "One closed singleton key range [gppd_idnr,gppd_idnr] per original plant, each once; three original facet statements per service request.",
+  "selection": "country SHA256('distinct-v1:'+country) first-byte parity; full country groups, sorted original unique plant IDs",
+  "source_database_sha256": "fad42609630778a3eaa696888011d6a08430c930ace4d2d7128ba5f2902bdd18",
+  "source_rows": 33643,
+  "timing_performed": false,
+  "transformations": "New SQLite files with original table schema/all original row values and both original table indexes. FTS-only tables omitted. No casts, deduplication or generated data. Original database page layout is NOT preserved."
+}

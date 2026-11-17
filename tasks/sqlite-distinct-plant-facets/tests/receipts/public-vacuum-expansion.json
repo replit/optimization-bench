@@ -1,0 +1,107 @@
+{
+  "build_bindings": {
+    "baseline": {
+      "build_sha256": "4257aae652c68c325da1ef115dccfac5ef893f3c89f489b847e0ea30e6d7a901",
+      "image": "sha256:c4d6a6d28046c700cef5d4db4c2c0c9270149a73a5c93f8f43cb6d02f789d95b",
+      "source_sha256": "4ecda01aa4a6c4c707aca4b54b4c8beb88d2058a9e9b63ed94f93092c08cf238"
+    },
+    "missing-output": {
+      "build_sha256": "6afd749f79d5fb5588b87b029b2a522f65badf3e4e420ff9a04fb91544872c93",
+      "image": "sha256:0f3abff033da82808743a6bce3314e9013b0732c42f3c01e9c01844a05e02bdc",
+      "source_sha256": "319eef4fdaa08a8a41195592189cf711a02acc62edec2bbbb66e324d3459bf6e"
+    },
+    "skipped-work": {
+      "build_sha256": "cebd1b4169e26af984482626b296e3e061d6adafa89a0bf8ff57cada94576291",
+      "image": "sha256:0f3abff033da82808743a6bce3314e9013b0732c42f3c01e9c01844a05e02bdc",
+      "source_sha256": "b2769e9d46572ce8bd015c98ebd0000add462177a97d2dae672f97cf673434b3"
+    },
+    "slow-correct": {
+      "build_sha256": "1989ed67ff365ecec48867f6cd720bdb6b35889127c2b5cca2ff772921c4b16c",
+      "image": "sha256:0f3abff033da82808743a6bce3314e9013b0732c42f3c01e9c01844a05e02bdc",
+      "source_sha256": "552d4f141e88ad4a0b5ad3cd3403038310fe60838706946307cf8051bdb4d719"
+    },
+    "wrong-output": {
+      "build_sha256": "30f1fb15b8699ee1ff5de512961528a337a7ee78b51e12f2c34103c88da1a5ea",
+      "image": "sha256:0f3abff033da82808743a6bce3314e9013b0732c42f3c01e9c01844a05e02bdc",
+      "source_sha256": "c51835a9170c9f0d686ac5e7d84f1cad40993c00c6f878646ca8fedb0044e364"
+    }
+  },
+  "case": {
+    "bytes": 1447354368,
+    "expect_len": 549857847,
+    "expect_sha": "09c37466e87c9eb49feda8da689ecda36ddeb7e759e95dd9bed918f37345d1d8",
+    "family": "mirror-vacuum",
+    "path": "mirror-vacuum-public",
+    "prepared_bytes": 1447354368,
+    "prepared_sha256": "9e445ffa209c1ebc374980c0ca7a1da9800c617967421d310ac4c60597852f61",
+    "records": 1734800,
+    "requests": 1,
+    "sha256": "57e230132964437dfd58c0a6e7e3cc0e1dbe0a4654b88d35a67cb7acec1266a2"
+  },
+  "controlled_build_reuse": "Fault libraries are unchanged canonical builds from the earlier development image. All execute against the expanded input in the new image.",
+  "execution_image": "sha256:c4d6a6d28046c700cef5d4db4c2c0c9270149a73a5c93f8f43cb6d02f789d95b",
+  "observations": [
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "exit_code": 0,
+      "leftovers": 0,
+      "protocol": "complete",
+      "seconds": 39.308100406,
+      "variant": "baseline"
+    },
+    {
+      "collector_rejection": "Fixed database settings differ",
+      "complete_output_equal": false,
+      "exit_code": 0,
+      "leftovers": 0,
+      "protocol": "complete",
+      "seconds": 26.334918393,
+      "variant": "wrong-output"
+    },
+    {
+      "collector_rejection": "VACUUM did not compact the retained database",
+      "complete_output_equal": false,
+      "exit_code": 0,
+      "leftovers": 0,
+      "protocol": "complete",
+      "seconds": 6.4929e-05,
+      "variant": "skipped-work"
+    },
+    {
+      "collector_rejection": "Missing complete alternate output",
+      "complete_output_equal": false,
+      "exit_code": 0,
+      "leftovers": 0,
+      "protocol": "complete",
+      "seconds": 29.106742295,
+      "variant": "missing-output"
+    },
+    {
+      "collector_rejection": null,
+      "complete_output_equal": true,
+      "exit_code": 0,
+      "leftovers": 0,
+      "protocol": "complete",
+      "seconds": 31.174381035,
+      "variant": "slow-correct"
+    }
+  ],
+  "passed": true,
+  "prior_gcp_report": {
+    "commit": "e6b0bde8ffd97642a86bd7f52ae130f09067974b",
+    "heldout_vacuum_spread_pp": 2.89,
+    "public_vacuum_seconds": 0.696563108,
+    "reported_by": "coordination hub",
+    "spread_gate_pp": 3.0
+  },
+  "protected_code_sha256": {
+    "environment/workload/build.sh": "014e7a708778d722dce92410a94c63364b4dbbcf333a07f75fc96d06222fc6c9",
+    "environment/workload/driver/bulk.c": "4512f741c944fe29b2ffec3a66bcad3aaeba8dacb88ba58dfde2e4693723f028",
+    "environment/workload/driver/sqlite_mirror.py": "cb3b1829700dd597b86944298a41b9ffb99af635df3068830ef3c6404146a398",
+    "environment/workload/task.py": "0bcf005ee7470d9490bb7f56e69f4e73a1f46a4de281f8a8946138e00becce47"
+  },
+  "qualification": false,
+  "retained_reference_growth": 4.190662196192854,
+  "timing_scope": "Single local observations only. No A/A or current CPU profile. Existing tiny-fixture delay proof applies to the unchanged fault library, not to a relative real-input timing claim."
+}

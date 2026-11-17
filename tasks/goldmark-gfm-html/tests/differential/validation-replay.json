@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "matched": false,
+      "matches_saved_reproducer": true
+    },
+    {
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "matched": false,
+      "matches_saved_reproducer": true
+    }
+  ],
+  "elapsed_seconds": 16.511022446000425,
+  "case": {
+    "kind": "api",
+    "sources": [
+      "# h\n"
+    ]
+  }
+}

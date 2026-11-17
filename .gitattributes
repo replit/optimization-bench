@@ -1,0 +1,71 @@
+* text=auto eol=lf
+# Input bytes and verbatim third-party notices are content-locked.
+tasks/*/environment/workload/inputs/** -text -whitespace
+tasks/*/environment/notices/** -text -whitespace
+tasks/jq-strip-openapi-descriptions/environment/workload/notices/** -text -whitespace
+tasks/*/notices/** -text -whitespace
+tasks/bzip2-codec/tests/fuzz/notices/** -text -whitespace
+tasks/*/public/**/notices/** -text -whitespace
+# Generated selections, not execution evidence.
+datasets/*.json linguist-generated=true
+# The working release selection is maintained by hand, not catalog generation.
+datasets/v1.0.json linguist-generated=false
+# Tool-serialized native calibration measurements; keep checker code review-visible.
+docs/receipts/smoke-readiness/python/stream-commitment-audit.json linguist-generated=true
+docs/receipts/smoke-readiness/python/summary.json linguist-generated=true
+# Tool-serialized provenance and authenticated held-out import inventories.
+tasks/*/provenance.json linguist-generated=true
+tasks/*/tests/heldout.lock.json linguist-generated=true
+tasks/*/tests/heldout/manifest.json linguist-generated=true
+# SQLGlot's author-generated request packets, complete references and inventories.
+tasks/sqlglot-mozilla-transpile/environment/workload/inputs/** linguist-generated=true
+tasks/sqlglot-mozilla-transpile/environment/payload-public.json linguist-generated=true
+tasks/sqlglot-mozilla-transpile/payload.json linguist-generated=true
+tasks/sqlglot-mozilla-transpile/public/alternates/*.json linguist-generated=true
+tasks/sqlglot-mozilla-transpile/tests/heldout/alternates-provenance.json linguist-generated=true
+# Author-generated private conversion references and inventories.
+tasks/sqlglot-mozilla-transpile/public/conversion/*.json linguist-generated=true
+tasks/sqlglot-mozilla-transpile/tests/heldout/conversion-expansion-provenance.json linguist-generated=true
+tasks/sqlglot-mozilla-transpile/tests/heldout/files/** linguist-generated=true
+tasks/sqlglot-mozilla-transpile/tests/heldout/expected/** linguist-generated=true
+# Exact upstream candidate patches are executable regression fixtures.
+judge/tests/fixtures/*.patch -text -whitespace
+# Private verifier bodies only; manifests and locks remain reviewable JSON.
+tasks/*/tests/heldout/files/** filter=lfs diff=lfs merge=lfs -text
+tasks/*/tests/heldout/references/** filter=lfs diff=lfs merge=lfs -text
+tasks/*/tests/heldout/expected/** filter=lfs diff=lfs merge=lfs -text
+tasks/*/tests/heldout/projects/** filter=lfs diff=lfs merge=lfs -text
+tasks/*/tests/heldout/data/** filter=lfs diff=lfs merge=lfs -text
+tasks/*/tests/heldout/workload/** filter=lfs diff=lfs merge=lfs -text
+# Ruff's two authored case documents are source configuration, not private bodies.
+tasks/ruff-project-lint/tests/heldout/files/c53d2a19fa1ec9a23dd159097d33a72cf0d9b89f21a8d04e0cb3f8fde8509e9d -filter diff merge -text
+tasks/ruff-project-lint/tests/heldout/files/974e2b5f9c0b5a8dc3bc7cf59ada2e62b74777e85a2fbeb8b61c4b956cd44b81 -filter diff merge -text
+# Owner-approved recovered public bodies without authenticated upstream.
+tasks/*/public/files/** filter=lfs diff=lfs merge=lfs -text
+# Authenticated upstream regression sources; provenance and our fixtures stay authored.
+judge/tests/fixtures/msgpackr-interface/project/LICENSE linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/index.js linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/iterators.js linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/node-index.js linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/pack.js linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/package.json linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/stream.js linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/unpack.js linguist-vendored=true
+judge/tests/fixtures/msgpackr-interface/project/dist/node.cjs linguist-vendored=true linguist-generated=true
+judge/tests/fixtures/serde-json-interface/ser.rs linguist-vendored=true
+judge/tests/fixtures/serde-json-interface/LICENSE-APACHE linguist-vendored=true
+judge/tests/fixtures/serde-json-interface/LICENSE-MIT linguist-vendored=true
+# Verifier-only upstream parser and generated hash-locked dependency inventory.
+judge/interface_acorn.cjs linguist-vendored=true
+judge/interface_acorn.LICENSE linguist-vendored=true
+judge/requirements-interface.lock linguist-generated=true
+tasks/sqlite-distinct-plant-facets/public/files/* filter=lfs diff=lfs merge=lfs -text
+# Frozen third-party notices are opaque data. Preserve upstream RST headings verbatim.
+tasks/sqlite-distinct-plant-facets/environment/notices/ranked-documents/** -diff linguist-vendored=true
+tasks/sqlite-distinct-plant-facets/environment/notices/mirror/** -diff linguist-documentation=true linguist-vendored=true
+tasks/sqlite-distinct-plant-facets/environment/workload/driver/mirror-corpus.json linguist-generated=true
+tasks/sqlite-distinct-plant-facets/tests/receipts/mirror-development.json linguist-generated=true
+tasks/sqlite-distinct-plant-facets/tests/receipts/public-vacuum-expansion.json linguist-generated=true
+tasks/sqlite-distinct-plant-facets/tests/receipts/mirror-controls/*.patch -whitespace
+# Scorer-only original metadata bundles must stay byte-identical.
+scorer-metadata/** -text -whitespace

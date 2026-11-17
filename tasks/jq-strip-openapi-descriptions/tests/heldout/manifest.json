@@ -1,0 +1,163 @@
+{
+  "format": "optimbench-inputs-v1",
+  "task": "jq-strip-openapi-descriptions",
+  "splits": {
+    "heldout": [
+      {
+        "docs": [
+          {
+            "batch": "heldout-openapi",
+            "bytes": 3319366,
+            "family": "openapi",
+            "group": "github.com",
+            "id": "heldout_github_ghes_3_0",
+            "original_path": "descriptions/ghes-3.0/ghes-3.0.json",
+            "path": "heldout_github_ghes_3_0",
+            "sha256": "dedfee9ad6a676c2f7186b8e2137d887d6449cad8b7af8253aecdaae24b27977",
+            "expect_len": 1655878,
+            "expect_sha": "eeb5271c38d089e6d329eae046ac87738e0e60f8b7bf9c4d2c74cee1b6b20d83"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 4684318,
+            "family": "openapi",
+            "group": "stripe.com",
+            "id": "heldout_stripe_2022",
+            "original_path": "openapi/spec3.json",
+            "path": "heldout_stripe_2022",
+            "sha256": "b72e9c05af5670233b58a61aeca45aaf10ab6c5e774230ca82b95e32ce6b75ea",
+            "expect_len": 1405866,
+            "expect_sha": "260c2abd4ac292a6f70a28107c7a557ab14a61ecc3df4caaba4b12523bc3a428"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 1237332,
+            "family": "openapi",
+            "group": "slack.com",
+            "id": "heldout_slack",
+            "original_path": "web-api/slack_web_openapi_v2.json",
+            "path": "heldout_slack",
+            "sha256": "742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7",
+            "expect_len": 320292,
+            "expect_sha": "20dc3f34a8d52f73a5a2d0f4a33bcc592408dae4310aa706a0ceb14f04040f60"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 1194330,
+            "family": "openapi",
+            "group": "discord.com",
+            "id": "heldout_discord",
+            "original_path": "specs/openapi.json",
+            "path": "heldout_discord",
+            "sha256": "8ce3450e18f3381dd6b2936db2172ecb5bf8a7f6549ecb51ec3cd01b7c30fa3b",
+            "expect_len": 549735,
+            "expect_sha": "5a2fce90325d2a87ac4233ed4786ac4ca5110fa57febc507b426f0849c167220"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 6563615,
+            "family": "openapi",
+            "group": "elastic.co",
+            "id": "heldout_elasticsearch",
+            "original_path": "output/openapi/elasticsearch-openapi.json",
+            "path": "heldout_elasticsearch",
+            "sha256": "8f394230ec35016d559bfa242ec4f644468317bc91b3928cd73d579b8955792e",
+            "expect_len": 2477314,
+            "expect_sha": "0bb6f3fac37e759cf8d4bf59a124fd3fe7f09ff67bd493f3f60c512cc20e453c"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 4294088,
+            "family": "openapi",
+            "group": "kubernetes.io",
+            "id": "heldout_kubernetes",
+            "original_path": "api/openapi-spec/swagger.json",
+            "path": "heldout_kubernetes",
+            "sha256": "cf628212ef590622596362692360c838d3303f8d45ec7f66ff86a75a94148228",
+            "expect_len": 1472253,
+            "expect_sha": "8c89a106d6c435e5f32489984fe9603014ef510e10d107557ea2e5a90b931766"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 940604,
+            "family": "openapi",
+            "group": "kubernetes.io",
+            "id": "heldout_kubernetes_apps_v1",
+            "original_path": "api/openapi-spec/v3/apis__apps__v1_openapi.json",
+            "path": "heldout_kubernetes_apps_v1",
+            "sha256": "daf75417abefdd10657e1099e3151faba1b58308c405ecc3dea3219a79e73af7",
+            "expect_len": 206593,
+            "expect_sha": "6108c2c0f0b696439252e324d270e703991b3d22ca97277cbd9dbf626fe08589"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 2142412,
+            "family": "openapi",
+            "group": "kubernetes.io",
+            "id": "heldout_kubernetes_core_v1",
+            "original_path": "api/openapi-spec/v3/api__v1_openapi.json",
+            "path": "heldout_kubernetes_core_v1",
+            "sha256": "8c51c61f95563546cbf6cd45a763d452d07d3fa61bf06c15acc7172df37b2d71",
+            "expect_len": 486203,
+            "expect_sha": "a2983d020c7ab20bb3cec9ed628039a885c73b167836d0488cd0568bfaa89d9d"
+          },
+          {
+            "batch": "heldout-openapi",
+            "bytes": 195692,
+            "family": "openapi",
+            "group": "kubernetes.io",
+            "id": "heldout_kubernetes_autoscaling_v2",
+            "original_path": "api/openapi-spec/v3/apis__autoscaling__v2_openapi.json",
+            "path": "heldout_kubernetes_autoscaling_v2",
+            "sha256": "099a2bc8a7d83f30c12b882be05d84831c449f1950ced11f97781a66d57a1ac1",
+            "expect_len": 45055,
+            "expect_sha": "2e61c7550e14f3b0dc56bde873ad75ff9f3028ca45fa8f96f213c3ef3dda044a"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "path": "geojson-features-private",
+            "sha256": "400e40c4e8a7b31dbfa29260d8c6db1b45531c01baf5e66ef988b5334114cb21",
+            "bytes": 24291462,
+            "batch": "stream_geojson_private",
+            "operation": "stream-geojson",
+            "expect_len": 32388317,
+            "expect_sha": "012c16d2894115dc428ab036f22bd1616a4afc9f47257347e926be9ccf2ac600"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "path": "group-gharchive-private",
+            "batch": "group_gharchive_private",
+            "operation": "group-gharchive",
+            "sha256": "5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206",
+            "bytes": 72618102,
+            "decoded_bytes": 523482219,
+            "decoded_sha256": "945b2ba9d9ad388e8778bbd2d544a4be89a9a178b70559a3a1f31ba0838cda40",
+            "expect_len": 8158649,
+            "expect_sha": "e9e910479543b64eaa5fd10f00c5e7b6b38653f0141ffc6739139f233170075a"
+          }
+        ]
+      },
+      {
+        "docs": [
+          {
+            "path": "csv-gharchive-private",
+            "batch": "csv_gharchive_private",
+            "operation": "csv-gharchive",
+            "sha256": "5c5962b7a5bc7a423ab827e76ae38c3911b3217635be0eafffc204550a204206",
+            "bytes": 72618102,
+            "decoded_bytes": 523482219,
+            "decoded_sha256": "945b2ba9d9ad388e8778bbd2d544a4be89a9a178b70559a3a1f31ba0838cda40",
+            "expect_len": 14732885,
+            "expect_sha": "9c2f1353f0e2671920dcf91a466a2fa28afc0d49a398fdc3677f250340c46a5a"
+          }
+        ]
+      }
+    ]
+  }
+}

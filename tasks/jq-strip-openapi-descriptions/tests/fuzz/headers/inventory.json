@@ -1,0 +1,63 @@
+{
+  "format": "optimbench-jq-header-consumer-request-v1",
+  "status": "dialect-authority-unresolved-not-qualified",
+  "upstream_commit": "49fbca1242c7f46f00b849de76565764e0254a03",
+  "installed_header_evidence": {
+    "path": "Makefile.am",
+    "line": 72,
+    "sha256": "2a5f819b8a21f013da579e05370774302d15db8acb954e14fd2bcc10db560da4",
+    "quote": "include_HEADERS = src/jv.h src/jq.h"
+  },
+  "headers": [
+    {
+      "path": "src/jv.h",
+      "sha256": "60dfafe7bc156a2876d643e7daf7c53a7e9631a95fd7a216aeb0610831977e8a",
+      "legal_context": "#include <jv.h>; public include directory; no caller feature macros required",
+      "translation_units": ["jv-a.c", "jv-b.c"],
+      "referenced_symbols": ["jv_get_kind", "jv_copy", "jv_free", "jv_string", "jv_number"]
+    },
+    {
+      "path": "src/jq.h",
+      "sha256": "976689e8c3dc0b4b7d7bba50dc560277c638694681a356be61ae93787b335f8d",
+      "legal_context": "#include <jq.h>; public include directory; jq.h includes jv.h; extern C is supplied by headers",
+      "translation_units": ["jq-a.c", "jq-b.c"],
+      "referenced_symbols": ["jq_init", "jq_compile", "jq_start", "jq_next", "jq_teardown", "jv_get_kind", "jv_copy"]
+    }
+  ],
+  "language_evidence": [
+    {
+      "path": "configure.ac",
+      "sha256": "5bf3b41f9bee589f30db0f32203ada104fd62d278c2e95458fff7f9eb7322fa6",
+      "quote": "AC_PROG_CC; m4_version_prereq([2.70], [], [AC_PROG_CC_STDC])",
+      "scope": "upstream build compiler discovery; not an explicit public consumer dialect promise"
+    },
+    {
+      "path": "src/jq.h and src/jv.h",
+      "quote": "#ifdef __cplusplus ... extern \"C\" {",
+      "scope": "public C++ linkage intent; no numeric minimum C++ standard is stated"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "205d0d7da645af7b402dcfb7270e1d1ed0a4c92fb181923d602b73392e0c509f",
+      "quote": "CFLAGS=\"-O2 -pthread -fstack-protector-all\"",
+      "scope": "upstream compiler/platform builds; no explicit GNU89 header-consumer statement located"
+    }
+  ],
+  "requested_cells": [
+    {"standard": "gnu89", "support_status": "informational-only", "authority": "Coordinator decision: no new benchmark requirement; not a real jq required cell without independent upstream support"},
+    {"standard": "c89", "support_status": "unresolved", "authority": "no guessed support/exclusion"},
+    {"standard": "c99", "support_status": "unresolved", "authority": "requires reviewer acceptance of source/build evidence"},
+    {"standard": "c11", "support_status": "unresolved", "authority": "requires reviewer acceptance of source/build evidence"},
+    {"standard": "c++11", "support_status": "unresolved", "authority": "extern C intent; numeric dialect authority pending"},
+    {"standard": "c++17", "support_status": "unresolved", "authority": "extern C intent; numeric dialect authority pending"}
+  ],
+  "runner_requirements": [
+    "Compile each TU independently then link exactly one executable.",
+    "Use matching baseline/candidate headers and library; same pinned compiler and dependency closure.",
+    "Both TUs take volatile function addresses to retain external references.",
+    "Do not change inline semantics or add multiple-definition linker allowances.",
+    "Record compile exits, link exits, command arguments and both source/build hashes separately.",
+    "Baseline calibration alone does not establish documentary support.",
+    "Missing supported cells remain incomplete, not passed."
+  ]
+}

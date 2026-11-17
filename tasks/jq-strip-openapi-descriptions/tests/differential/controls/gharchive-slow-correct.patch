@@ -1,0 +1,11 @@
+diff --git a/src/main.c b/src/main.c
+--- a/src/main.c
++++ b/src/main.c
+@@ -175,4 +175,7 @@ enum {
+ static int process(jq_state *jq, jv value, int flags, int dumpopts, int options) {
++  /* Positive control: one five-second delay per process, not per JSON record. */
++  static int delayed = 0;
++  if (!delayed) { delayed = 1; usleep(5000000); }
+   int ret = JQ_OK_NO_OUTPUT; // No valid results && -e -> exit(4)
+   jq_start(jq, value, flags);
+   jv result;

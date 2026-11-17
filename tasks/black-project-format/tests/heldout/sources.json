@@ -1,0 +1,171 @@
+{
+  "provenance": "built-new for v1.2 (2026-10-29)",
+  "sources": [
+    {
+      "unit": "sqlalchemy-check",
+      "split": "public",
+      "repository": "sqlalchemy/sqlalchemy",
+      "commit": "3c650cede44e74b0a1939652034debc9fa74759c",
+      "why_this_commit": "parent of 1e1c0084b1804eaae8b7f089435241a2b8f4be60 'update to black 26.3.1' (tree formatted with black 25.11.0 per .pre-commit-config.yaml rev)",
+      "invocation_evidence": "tox.ini:282 at this commit: black --check ./lib/ ./test/ ./examples/ setup.py doc/build/conf.py",
+      "licence": "MIT",
+      "acquisition": "git fetch --depth 2 + git archive HEAD (equivalent to codeload tarball of the commit)"
+    },
+    {
+      "unit": "django-reformat",
+      "split": "public",
+      "repository": "django/django",
+      "commit": "f1d11117c6a3e227ce7cdd263cf0743f0eb73070",
+      "why_this_commit": "unchanged original public unit",
+      "licence": "BSD-3-Clause"
+    },
+    {
+      "unit": "gcp-retail-check",
+      "split": "heldout",
+      "repository": "googleapis/google-cloud-python",
+      "commit": "a05e23b92a2324389817c2bc909637f496621dca",
+      "subtree": "packages/google-cloud-retail",
+      "why_this_commit": "last noxfile revision before the package moved to ruff format; noxfile pins BLACK_VERSION = black[jupyter]==23.7.0",
+      "invocation_evidence": "packages/google-cloud-retail/noxfile.py:146-157 lint session: black --check docs google tests noxfile.py setup.py",
+      "licence": "Apache-2.0",
+      "acquisition": "sparse git fetch + git archive of the package subtree at the commit"
+    },
+    {
+      "unit": "faker-reformat",
+      "split": "heldout",
+      "repository": "joke2k/faker",
+      "commit": "685ea97a9fbb4ab36dc32ea4d318498992f7ba7e",
+      "why_this_commit": "HEAD at acquisition (2026-10-29); tox pins black==24.4.0 (tox.ini:49-52 'black --check --line-length 120 .')",
+      "operation_note": "line-length-79 in-place migration, same modelled scenario as django-reformat",
+      "licence": "MIT",
+      "acquisition": "git fetch --depth 1 + git archive HEAD"
+    }
+  ],
+  "dropped_symlinks": [
+    [
+      "google-cloud-retail-a05e23b9/docs/CHANGELOG.md",
+      "../CHANGELOG.md"
+    ]
+  ],
+  "dropped_symlinks_note": "The held-out store forbids symlinks; this documentation symlink is not a Python source and is outside Black's selection.",
+  "api_workloads_2026_10_29": {
+    "provenance": "built-new by the candidate author for the API workloads; independent of the public project groups (no repository or organisation on both sides)",
+    "warm-snippets": {
+      "extractor": "adamchainz/blacken-docs@8e7705218838da988c103d00ab6ecdd67dea7c37 regexes over files selected by each project's own blacken-docs hook settings",
+      "transforms": [
+        "exact duplicates by sha256(code, mode) removed within split",
+        "fragments equal to any public fragment removed"
+      ],
+      "sources": [
+        {
+          "repository": "mongodb/mongo-python-driver",
+          "commit": "808767cdcc6c432eb1cda0c6e4ace6142a32366a",
+          "licence_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "yt-project/yt",
+          "commit": "d48eb7eb5287763501d8c90071b03b7b63c7dfdb",
+          "licence_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "scrapinghub/spidermon",
+          "commit": "5bac6dd768463ece308ca67dc9fd18525364c940",
+          "licence_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "scrapinghub/scrapyrt",
+          "commit": "066cdafb9dc5e864f3e1dd19cb7fafec7fefb7fe",
+          "licence_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "rapidfuzz/RapidFuzz",
+          "commit": "09328422916b13181238660cd3b23a71905d1ec9",
+          "licence_spdx": "MIT"
+        },
+        {
+          "repository": "getlogbook/logbook",
+          "commit": "ce2772f50eee0957f8e57f8ff6832de7b1bc5d3d",
+          "licence_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "django-commons/django-hosts",
+          "commit": "e538c46a9f0746a7bf00d78379dcc12c04b8aa03",
+          "licence_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "mozilla/django-csp",
+          "commit": "f58220fb2ac20f77c70bd772a37637031e96b803",
+          "licence_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "jackmpcollins/magentic",
+          "commit": "58b72cf58134b9b888a9518932465d7187448e92",
+          "licence_spdx": "MIT"
+        },
+        {
+          "repository": "nnaisense/evotorch",
+          "commit": "cebcac4f20979078becf8b908016cd8e5e6714a4",
+          "licence_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "ics-py/ics-py",
+          "commit": "3b7d07295f60a5d607ee0fa3a552c252f9e163f0",
+          "licence_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "AIM-Harvard/pyradiomics",
+          "commit": "8ed579383b44806651c463d5e691f3b2b57522ab",
+          "licence_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "deepcharles/ruptures",
+          "commit": "ee1c8ff8a548d54c641b2bb471562165931f31c7",
+          "licence_spdx": "BSD-2-Clause"
+        },
+        {
+          "repository": "jsonpickle/jsonpickle",
+          "commit": "f65cfa880c321ff9b58ad5c71576c8758b492fc7",
+          "licence_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "mamba-org/mamba",
+          "commit": "2f35fbc771825acd2bfacb54a2cc7e9e5624c5e5",
+          "licence_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "intel/neural-compressor",
+          "commit": "7749b814de4b7a4fe66867228c7c86146f4a736a",
+          "licence_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "ServiceNow/BrowserGym",
+          "commit": "27a90ce815098f43414e93491e06907af468e45b",
+          "licence_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "run-llama/llama_cloud_services",
+          "commit": "f385e96ab82ddb88330277c34394546398c8bed0",
+          "licence_spdx": "MIT"
+        }
+      ]
+    },
+    "editor-ranges": {
+      "repository": "numpy/numpy",
+      "window_head": "7be480da5f24a0e49d92e27cdc106f77ea8a2e6a",
+      "licence_spdx": "NOASSERTION",
+      "recipe": "for consecutive first-parent non-merge commits, each added/modified numpy/**/*.py file at the commit with the new-side hunks of git diff -U0 --no-renames as lines; pure deletions skipped; files over 400 KB skipped; requests with baseline errors excluded; first consecutive group reaching ~2.2 s on the development host"
+    }
+  },
+  "licence_pass_2026_10_29": {
+    "google-cloud-retail-a05e23b9": {
+      "spdx": "Apache-2.0",
+      "licence_file": "LICENSE (retained in tree)"
+    },
+    "faker-685ea97a": {
+      "spdx": "MIT",
+      "licence_file": "LICENSE.txt (retained in tree)"
+    },
+    "api_workloads": "per-repository SPDX in api_workloads_2026_10_29; public fragments' licence texts in environment/notices/API-WORKLOAD-INPUTS.md",
+    "note": "Fragments and files are reproduced verbatim; each keeps its project's licence. NOASSERTION repositories (yt, logbook, django-hosts, ics-py, BrowserGym, numpy) carry BSD/Apache-style licence files on inspection; a reviewer licence sign-off is still pending."
+  }
+}

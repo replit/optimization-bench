@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "task": "ruff-project-lint",
+  "task_version": "0.3.0",
+  "edition": "ruff-heldout-0.3.0-httpx-rich",
+  "kind": "new held-out edition",
+  "original_public_operations": "Byte-identical pandas and FastAPI inputs, commands, driver and expectations.",
+  "historical_0.2": {
+    "status": "unavailable; original Git/discovery and case/command bindings were not recovered",
+    "manifest_sha256": "45a1b086a84e0503ce952ab1fdcdbdfec6d0901e38ef01f235a69d96f3b1ad5e",
+    "content_lock_sha256": "582653fab40aff62a8575fb37b6b98633002d795c2be1e61168660cd0e87a1cd",
+    "original_public_manifest_sha256": "ec846809b4bbc3b04aedec78927365e5e0ef07ad34732a46b0acaf74c0641969",
+    "recovered_outputs_reused": false,
+    "historical_baseline_metadata": "baseline-qualified; not this edition's qualification"
+  },
+  "inputs": {
+    "projects": {
+      "httpx": {
+        "repository": "https://github.com/encode/httpx.git",
+        "commit": "26d48e0634e6ee9cdc0533996db289ce4b430177",
+        "git_tree": "f6bc290d5ec30e882f9d6215a016aa7aac2c02a1",
+        "version": "0.28.1",
+        "archive": {
+          "archive_url": "https://codeload.github.com/encode/httpx/tar.gz/26d48e0634e6ee9cdc0533996db289ce4b430177",
+          "archive_bytes": 4118375,
+          "archive_sha256": "41ce356ff41e37539b2abbb6b6b13b3f5c41d2c09422112e72074d2e96816e10"
+        },
+        "license": {
+          "spdx": "BSD-3-Clause",
+          "path": "LICENSE.md",
+          "copyright": "Copyright \u00a9 2019, Encode OSS Ltd. All rights reserved.",
+          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d",
+          "url": "https://github.com/encode/httpx/blob/26d48e0634e6ee9cdc0533996db289ce4b430177/LICENSE.md",
+          "review": "Full pinned license text reviewed; complete original tree retains license and notices."
+        },
+        "file_count": 125,
+        "preserved_empty_paths": [
+          "httpx/py.typed",
+          "tests/__init__.py",
+          "tests/client/__init__.py",
+          "tests/models/__init__.py"
+        ],
+        "retention": "fetch-only; no project or Git body is redistributed"
+      },
+      "rich": {
+        "repository": "https://github.com/Textualize/rich.git",
+        "commit": "43d3b04725ab9731727fb1126e35980c62f32377",
+        "git_tree": "86b93c32dca669f15d87e873f558187a8cd8020a",
+        "version": "13.9.4",
+        "archive": {
+          "archive_url": "https://codeload.github.com/Textualize/rich/tar.gz/43d3b04725ab9731727fb1126e35980c62f32377",
+          "archive_bytes": 15065250,
+          "archive_sha256": "b5e80bc998a2adac4311620a9a65fb66b6ea2610d37a238adbc649dcb741d489"
+        },
+        "license": {
+          "spdx": "MIT",
+          "path": "LICENSE",
+          "copyright": "Copyright (c) 2020 Will McGugan",
+          "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15",
+          "url": "https://github.com/Textualize/rich/blob/43d3b04725ab9731727fb1126e35980c62f32377/LICENSE",
+          "review": "Full pinned license text reviewed; complete original tree retains license and notices."
+        },
+        "file_count": 526,
+        "preserved_empty_paths": [
+          "benchmarks/__init__.py",
+          "rich/py.typed",
+          "tests/__init__.py"
+        ],
+        "retention": "fetch-only; no project or Git body is redistributed"
+      }
+    },
+    "complete_project_files": 651,
+    "nonempty_file_index_entries": 644,
+    "nonempty_file_identities": 643,
+    "preserved_empty_files": 7,
+    "correspondence": "Complete canonical Git checkouts, upstream archive inventories and every indexed member's bytes/mode independently matched before SUT execution; Git checkouts reauthenticated afterward.",
+    "pruning_or_normalization": false
+  },
+  "disjointness": {
+    "public_target_banks": 22,
+    "additional_historical_public_packages_checked": 25,
+    "public_byte_and_digest_identities_checked": 173982,
+    "nonempty_collisions": 0,
+    "new_exemptions": 0,
+    "unpublished_bank_scope": "SpaceWasm public-role input hashes independently matched its exact retained subset of the original public inventory; no final code-head or qualification claim.",
+    "rejected_before_sut": [
+      "NetworkX: nonempty public-input collisions",
+      "SQLAlchemy: nonempty Black public-input collisions"
+    ],
+    "scope": "Pinned public input/context bodies and digest references, not execution or qualification of other tasks or image-layer dependency auditing."
+  },
+  "authoring": {
+    "operation": "One sequential untimed pristine-baseline pass after membership, input bytes, full Git context, command, image and driver freeze.",
+    "pre_execution_plan_sha256": "4976bfcded41b0d079ba29ecbfc44bb36121c79089f1d6d19c74bb13a6601797",
+    "image_id": "sha256:e0184a4cbd4cc90a5b1ca711489472fc6bf45339fe72e229d300ae40ef34cc4b",
+    "recipe_sha256": "f254cbf66267df1237549d24c4c4730e9f6ecd45a771fdfef9e026f86e8989eb",
+    "source_commit": "16b6a6ad9804d3d982862be0710e829e72baf381",
+    "source_tree": "fcd093243ceb39862ffb0db3685faa4b113acf81",
+    "pristine_binary_sha256": "af67d43a5275efe1bf6071e7a46653aebb8175ed6a067cab91bffa69ea103a4d",
+    "driver_sha256": "7bc502067f42bfb75f0f47e76e1dd47b58f4119b1cb5d8ec75140c9a23d64254",
+    "runner_sha256": "78720e32703d9d24624d81f1ebe260c2a40e871d830bd63d08ce6c839cdc76c6",
+    "executor": "Unchanged protected LocalExecutor, fixed /scratch/project path, network disabled, read-only original inputs and pristine binary.",
+    "observations": [
+      {
+        "case": "httpx",
+        "command": [
+          "/app/build/ruff",
+          "check",
+          "--no-cache",
+          "--no-fix",
+          "--output-format=json",
+          "."
+        ],
+        "project": "httpx",
+        "inventory_sha256": "bc7f61cc5dcdf73b55504c0826dffe633190c9110b360fec6a75b6f21840e044",
+        "exit_code": 0,
+        "leftovers": [],
+        "stdout": {
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "stderr": {
+          "bytes": 141,
+          "sha256": "b09b6505f8fb48c74695e273406ade63b2c7ca46c80cf1b0e0cf964857c87e0c"
+        },
+        "output": {
+          "bytes": 281,
+          "sha256": "7128553a4cfacb56aa5c90046e828f6ddff04177626ef1c88540a30e87f6585c"
+        },
+        "executor": "unchanged protected LocalExecutor; no timing samples"
+      },
+      {
+        "case": "rich",
+        "command": [
+          "/app/build/ruff",
+          "check",
+          "--no-cache",
+          "--no-fix",
+          "--output-format=json",
+          "."
+        ],
+        "project": "rich",
+        "inventory_sha256": "84cbb39934c799fe88f109eb9c28d70876d5ea5bc98466478e71563fd3b7fc58",
+        "exit_code": 1,
+        "leftovers": [],
+        "stdout": {
+          "bytes": 1103380,
+          "sha256": "cf7c81197fecf5d110779a1b7cb5d7281e44ed810483eaf513126bb60b2262a5"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "output": {
+          "bytes": 1471265,
+          "sha256": "b93122927e0395047bdf22d35c0ec4c491bd4474437381f9459a78387508d610"
+        },
+        "executor": "unchanged protected LocalExecutor; no timing samples"
+      }
+    ],
+    "pass_count": 1,
+    "retries": 0,
+    "owned_cleanup_verified": true,
+    "input_git_checkouts_unchanged": true,
+    "execution_cpu_count": 4,
+    "rayon_threads": 8,
+    "host_limitations": [
+      "Kernel lacks swap-limit capability; not an eight-CPU evaluation host."
+    ],
+    "timing_samples": 0,
+    "claimable": false,
+    "qualification": false,
+    "statement": "New expectations only, not original 0.2 recovery or correctness/performance release qualification."
+  },
+  "command_matrix_revision": {
+    "date": "2026-11-16",
+    "release": "OptimBench v1.0",
+    "reason": "The single `ruff check` per case ran in ~30-90 ms; run-to-run variation (6% for an httpx-sized project) failed the 5 pp A/A qualification bar on the reference Intel host. Each case now runs a CI-style lint matrix (~1 s or more per case; 1.5% variation measured), meeting the repository's one-second unit floor without changing projects, sampling policy or A/A thresholds.",
+    "commands_per_case": "the original check; `check --select ALL --statistics` and the same with `--preview` for target versions py39-py314; `format --check`; same paths and exclusion flags as the original command",
+    "generated_with": "judge runner, hardened Docker executor (CPUs 0-7) and pristine Ruff build on the reference Intel host; every case run twice with identical output",
+    "outputs": {
+      "pandas": {
+        "scope": "public",
+        "bytes": 180579,
+        "sha256": "7397333232c494f17eafac2be4b845659049f2dd8d4fa73de50178651109e6f3"
+      },
+      "fastapi": {
+        "scope": "public",
+        "bytes": 124839,
+        "sha256": "6d7ab69486c58f9c66cc3de16830bee3754a5d3d501dec0f7511f52434afdc5b"
+      },
+      "httpx": {
+        "scope": "heldout",
+        "bytes": 146439,
+        "sha256": "466f1e09c5ecfeecd43ef49f6888a20b2aa17ec2850af749457e3da3f61c5e43"
+      },
+      "rich": {
+        "scope": "heldout",
+        "bytes": 1672895,
+        "sha256": "109d2bfb31c3633e847f192d8990204593ce8242ee8078e9b15e59f7fc8fac80"
+      }
+    }
+  }
+}

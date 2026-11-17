@@ -1,0 +1,23 @@
+{
+  "task": "goldmark-gfm-html",
+  "image": "optimbench-goldmark-diff:baseline",
+  "passed": false,
+  "seeds": [
+    1729,
+    2718,
+    31415
+  ],
+  "case_budget_per_seed": 16,
+  "time_cap_seconds": 600,
+  "cases": [
+    {
+      "seed": 1729,
+      "index": 0,
+      "matched": false
+    }
+  ],
+  "coverage": "seeded differential",
+  "status": "differential_mismatch",
+  "reproducer": "reproducer.json",
+  "elapsed_seconds": 25.482051421000506
+}

@@ -1,0 +1,387 @@
+{
+  "heldout_instances": 0,
+  "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+  "library_bytes_status_stderr_leftovers_exact": true,
+  "negative": {
+    "case_budget_per_seed": 1,
+    "cases": [
+      {
+        "index": 0,
+        "matched": false,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 34451085,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 35418457,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 1729,
+        "shrinking_receipts": [
+          {
+            "matched": false,
+            "receipts": {
+              "baseline": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 124189663,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              },
+              "candidate": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 44308095,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              }
+            }
+          },
+          {
+            "matched": false,
+            "receipts": {
+              "baseline": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 35671963,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              },
+              "candidate": {
+                "container_prepare": {
+                  "argv": [
+                    "/app/workload/guards/warm_git_objects.py",
+                    "--steps",
+                    "/judge-steps.json",
+                    "--inputs",
+                    "/app/workload/inputs"
+                  ],
+                  "duration_ns": 33312622,
+                  "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+                  "exit_code": 0,
+                  "leftovers": [],
+                  "stderr_base64": "",
+                  "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+                  "timed": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "coverage": "seeded differential",
+    "elapsed_seconds": 88.66263611699833,
+    "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+    "passed": false,
+    "reproducer": "reproducer.json",
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "status": "differential_mismatch",
+    "task": "git-history-change-summary",
+    "time_cap_seconds": 600
+  },
+  "original": {
+    "case_budget_per_seed": 1,
+    "cases": [
+      {
+        "index": 0,
+        "matched": true,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 34117440,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 33291743,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 1729
+      },
+      {
+        "index": 0,
+        "matched": true,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 36679091,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 36446303,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 2718
+      },
+      {
+        "index": 0,
+        "matched": true,
+        "receipts": {
+          "baseline": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 34756933,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          },
+          "candidate": {
+            "container_prepare": {
+              "argv": [
+                "/app/workload/guards/warm_git_objects.py",
+                "--steps",
+                "/judge-steps.json",
+                "--inputs",
+                "/app/workload/inputs"
+              ],
+              "duration_ns": 36374702,
+              "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+              "exit_code": 0,
+              "leftovers": [],
+              "stderr_base64": "",
+              "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+              "timed": false
+            }
+          }
+        },
+        "seed": 31415
+      }
+    ],
+    "coverage": "seeded differential",
+    "elapsed_seconds": 111.39923518500291,
+    "image": "sha256:f13ee574022c4edeee542f039c69477ba3998dd6c94f8227e787efd842eefd7f",
+    "passed": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "task": "git-history-change-summary",
+    "time_cap_seconds": 600
+  },
+  "original_atoms_per_seed": 23,
+  "out_of_band_untimed_preparation_metadata": true,
+  "replays": [
+    {
+      "negative_rejected": true,
+      "receipts": {
+        "baseline": {
+          "container_prepare": {
+            "argv": [
+              "/app/workload/guards/warm_git_objects.py",
+              "--steps",
+              "/judge-steps.json",
+              "--inputs",
+              "/app/workload/inputs"
+            ],
+            "duration_ns": 36036357,
+            "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+            "exit_code": 0,
+            "leftovers": [],
+            "stderr_base64": "",
+            "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+            "timed": false
+          }
+        },
+        "candidate": {
+          "container_prepare": {
+            "argv": [
+              "/app/workload/guards/warm_git_objects.py",
+              "--steps",
+              "/judge-steps.json",
+              "--inputs",
+              "/app/workload/inputs"
+            ],
+            "duration_ns": 39202972,
+            "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+            "exit_code": 0,
+            "leftovers": [],
+            "stderr_base64": "",
+            "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+            "timed": false
+          }
+        }
+      },
+      "whole_library_observations_equal_saved": true
+    },
+    {
+      "negative_rejected": true,
+      "receipts": {
+        "baseline": {
+          "container_prepare": {
+            "argv": [
+              "/app/workload/guards/warm_git_objects.py",
+              "--steps",
+              "/judge-steps.json",
+              "--inputs",
+              "/app/workload/inputs"
+            ],
+            "duration_ns": 37825333,
+            "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+            "exit_code": 0,
+            "leftovers": [],
+            "stderr_base64": "",
+            "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+            "timed": false
+          }
+        },
+        "candidate": {
+          "container_prepare": {
+            "argv": [
+              "/app/workload/guards/warm_git_objects.py",
+              "--steps",
+              "/judge-steps.json",
+              "--inputs",
+              "/app/workload/inputs"
+            ],
+            "duration_ns": 33598649,
+            "executable_sha256": "4ebea90b182d4c4780d90d0e497cf9ec9291c953fb8ce238ed63c891136baf0a",
+            "exit_code": 0,
+            "leftovers": [],
+            "stderr_base64": "",
+            "stdout_base64": "eyJidWZmZXJfYnl0ZXMiOiA4Mzg4NjA4LCAiYnl0ZXNfcmVhZCI6IDAsICJmaWxlc19yZWFkIjogMCwgInNlbGVjdGVkX3JlcG9zaXRvcmllcyI6IDAsICJzdGF0dXMiOiAibm8tcmVwb3NpdG9yeS1zdGVwcyJ9Cg==",
+            "timed": false
+          }
+        }
+      },
+      "whole_library_observations_equal_saved": true
+    }
+  ],
+  "reproducer_atoms": 11,
+  "reproducer_sha256": "b3c1a14bb187746d128883cdc1c7cc5e54c6f1dc525561f8e13445ecc47b641e",
+  "timing_started": false,
+  "unchanged_task_comparator": true
+}

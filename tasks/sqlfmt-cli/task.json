@@ -1,0 +1,66 @@
+{
+  "timed_surface": "public_cli",
+  "additional_timed_surfaces": [
+    "native_format_batch"
+  ],
+  "task_version": "1.0.0",
+  "id": "sqlfmt-cli",
+  "name": "sqlfmt",
+  "language": "Go",
+  "title": "Run sqlfmt through its CLI and native formatting API",
+  "job": "**Two equally weighted timed workloads in one image.** The original CLI `batch` and frozen `native-batch` both count toward aggregate speedup. The public CLI batch keeps 89 of its original cold invocations. The native batch uses one cold process containing 844 public documents, with 2,470 documents from a separate origin for private evaluation. Each native document is formatted once, with every complete result and returned error retained. Both entry points use the same rebuilt source. Original CLI inputs and references remain unchanged. The native batch is scored, not an optional diagnostic. See the [native corpus and evidence](tests/fuzz/native/README.md).",
+  "code": "environment/workload/task.py",
+  "operations": [
+    "unpack the case payload into a fresh working directory at a fixed path, mtimes zeroed (untimed)",
+    "fork + exec of sqlfmt with the case argv, stdin redirected, until wait4 returns (timed, wall clock)",
+    "hash of exit status + stdout + declared output files, normalized stderr hash, leftover-process check, directory removal (untimed)",
+    "prepare an authenticated native batch request (untimed)",
+    "one cold native process: decode request, call format.Format once per input, retain full strings and errors, encode and flush the full ordered result, exit (timed)",
+    "compare complete native stdout, exit status and stderr (untimed)"
+  ],
+  "editable": "Non-test .go files in format/ and cmd/sqlfmt/ except explaincmd.go. The CLI interface, explain/, go.mod/go.sum, build flags, tests, testdata and the driver are protected; source growth is capped at 64 KB.",
+  "families": {
+    "primary": "One provenance cluster's SQL tree (~300 KB chunks) with sqlfmt -d . (train 43, validation 7).",
+    "small": "One file of at most 16 KB on stdin, as an editor sends it (train 14, validation 7).",
+    "large": "One file of 128 KB or more as an argument (train 5, validation 0: no validation cluster holds one).",
+    "options": "A tree with -l . or -w . (rewritten files are declared outputs) (train 10, validation 3).",
+    "native_format": "One frozen public batch of 844 authentic PostgreSQL/PostGIS files, 17,584,937 bytes. The native private batch uses a separate whole origin, 2,470 files and 6,164,010 bytes. Each distinct file is formatted exactly once."
+  },
+  "size_meaning": "Bytes of SQL per case (size buckets s/m/l); 72 train and 17 validation CLI cases.",
+  "variables": [
+    "Flag (-d, -l, -w, stdin, file)",
+    "Tree size and file count",
+    "Formatting distance (how many files differ)",
+    "Project style (migrations, extensions, test suites)",
+    "File size"
+  ],
+  "options": "Command-line flags per case (-d, -l, -w, stdin, file argument); fixed environment PATH, HOME=working directory, LC_ALL=C, TZ=UTC; CGO off; go build -trimpath.",
+  "outputs": "Per case: exit status + stdout + declared output files (SHA-256 vs the frozen baseline), plus the normalized stderr hash vs the pinned baseline's.",
+  "contract": "Byte-identical exit status, stdout, declared outputs and normalized stderr per invocation; upstream Go tests pass; no daemons or helpers outliving the invocation, no caches or extra files, no environment-driven behavior or input recognition, no subprocesses, no GC-setting changes; unsafe/syscall/runtime/debug/hash/crypto/compression/encoding imports forbidden; source growth <= 64 KB; peak RSS is measured and reported, not gated.",
+  "limits": "Public splits are grouped by repository subdirectory, and timescaledb/pg_partman appear in both; GOMAXPROCS is not set for the tool (the driver passes a minimal environment); the shared verifier runs timed work within its assigned eight-CPU set.",
+  "sources": [
+    "cmd/sqlfmt/main.go",
+    "format/format.go",
+    "format/layout.go",
+    "format/lexer.go",
+    "README.md"
+  ],
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "preparation": "Pinned sqlfmt archive (sha256-checked), offline Go builds of ./cmd/sqlfmt and the protected native caller against the same copied candidate tree.",
+  "source_identity": {
+    "upstream_repository": "https://github.com/dimitri/sqlfmt",
+    "upstream_commit": "8c676b51ea62e6ce33221e0d9d6d8a43256c942c",
+    "archive_sha256": "2fb1eec6dc5cf3eea27e72c7a6d00340520df1464a15c9f406d87ff0e8af9f37",
+    "qualification_package_commit": "38707c499e"
+  },
+  "example_count": 90,
+  "status": "qualification-in-progress",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_edition": "sqlfmt-cli-v1.0.0-native-origins-v2, original commitments preserved",
+  "input_visibility": "public_dev",
+  "source_bytes": 16824907,
+  "run_mode": "standalone",
+  "packaging_status": "public-task-private-judge",
+  "smoke_status": "passed",
+  "input_edition_note": "The public CLI batch excludes ten Sourcegraph public-snapshot inputs (Sourcegraph Enterprise license, which does not grant redistribution) and their two license notices, and sixteen TimescaleDB validation inputs from its source-available `tsl/` directory (Timescale License) and that license notice, leaving 89 CLI cases; every remaining input and expected output is unchanged. Native and held-out inputs are unchanged."
+}

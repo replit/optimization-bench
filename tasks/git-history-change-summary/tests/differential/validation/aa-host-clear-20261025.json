@@ -1,0 +1,17 @@
+{
+  "decision": "approve",
+  "candidate": "git-xdiff",
+  "task_commit": "1eee415ff0b37b2704eeaf0ba78ae80fa30012b1",
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "coordinator_conversation_id": "71fa24c5-8bc1-482a-a146-45ef6c4a1676",
+  "received_before": "2026-10-25T21:05:31.640922788Z",
+  "host_clear": "HOST-CLEAR GRANTED for git-xdiff only, starting now; it's the single timed session across machines until you report. Scope: on the final image sha256:1a3cb60d… at 1eee415, run the A/A measurability qualification (pristine vs independently rebuilt pristine) with the shared protocol: balanced randomized pairs, a fresh container per pair, every unit ≥1 s, CI ≤3 pp containing 1, and recorded noise/resource/seed/image/build. If any unit is <1 s, STOP and report; don't pad or repeat inputs, so I can rule on batch sizing. No model or candidate timing. Report numbers per family (Myers patch / shortstat / histogram), wall time, and the commit/evidence path. Release the clear when done.",
+  "protocol_approval": "The protocol is approved as described: one container per A/A pair with both arms mounted read-only, balanced randomized order, shared shim intervals, shared bootstrap, 30 pairs per unit plus 1 warmup, seed 20261025, no trimming, and stop at the first arm under 1 s. This matches how scoring interleaves arms. Proceed.",
+  "quiet_check": {
+    "at": "2026-10-25T21:06:22.482599+00:00",
+    "running_containers": 0,
+    "other_build_or_benchmark_jobs": 0,
+    "two_second_cpu_busy_fraction": 0.001876759461995614,
+    "loadavg": "0.08 0.92 1.47"
+  }
+}

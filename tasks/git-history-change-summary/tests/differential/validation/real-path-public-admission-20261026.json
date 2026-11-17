@@ -1,0 +1,23 @@
+{
+  "author_host": true,
+  "calibration_eligible": false,
+  "candidate_build": "/work/git/pristine-scoring-repro/independent/build",
+  "claimable": false,
+  "heldout_refusal": {
+    "aa_sampling_performed": false,
+    "claimable": false,
+    "correct": false,
+    "harness_error": "PAYLOAD PENDING [git-history-change-summary] (heldout): python3 tools/stage_payload.py --task git-history-change-summary --scope heldout --from /path/to/payload; original operator vault unavailable, no scored run allowed",
+    "mode": "heldout-check",
+    "speedup": null,
+    "status": "invalid run",
+    "timing_performed": false
+  },
+  "image": "sha256:6579f4c57a83909459eddd44c168b37629ec2107603d01441d9fb4cf5f675c63",
+  "mode": "qualification",
+  "public_only": true,
+  "source_policy": "passed",
+  "source_sha256": "38605457b86d68144a922cb2689e60350c35a46addf0dca90825f4a6ce36980a",
+  "upstream": "passed",
+  "upstream_receipt": "/work/git/pristine-scoring-repro/admission/upstream.json"
+}

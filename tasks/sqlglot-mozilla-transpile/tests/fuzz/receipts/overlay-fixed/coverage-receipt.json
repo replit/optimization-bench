@@ -1,0 +1,27 @@
+{
+  "build_receipt_sha256": "8259535de0d4d8591b21e394bd52d93904f9c8a6832787d289d44a327e3e69fa",
+  "expected_workers": [
+    "sqlglot-smoke-main"
+  ],
+  "missing_workers": [],
+  "normalized": {
+    "bytes": 548294,
+    "path": "coverage-normalized.json",
+    "sha256": "e9d9caef00f709ee26e8e09c8e92f8a2d030f50c67d0d62fd6d68753c1ec61cd"
+  },
+  "observed_workers": [
+    "sqlglot-smoke-main"
+  ],
+  "qualification": "not-a-task-verdict",
+  "raw": [
+    {
+      "bytes": 2505402,
+      "path": "scratch/coverage.json",
+      "sha256": "b596850f2394c0d5714a8506a73a7e06e9ea793eb1165cfee257191056da9726"
+    }
+  ],
+  "reason": "",
+  "schema": "optimbench-runner-coverage-v1",
+  "source_sha256": "1fb06e382c7953fea39452126906ce1289719e694e7b7914cca1f28177ee5823",
+  "status": "available"
+}

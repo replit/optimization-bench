@@ -1,0 +1,213 @@
+{
+  "origins": [
+    {
+      "origin": "davidmegginson/ourairports-data",
+      "commit": "61129867339deebc81b8ed7534f501b08d921a0c",
+      "observed_at": "2026-10-28T23:29:14.878796+00:00",
+      "files": {
+        "LICENSE": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/LICENSE",
+          "bytes": 1211,
+          "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+        },
+        "README.md": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/README.md",
+          "bytes": 1487,
+          "sha256": "e8223c5ca7e99c33caf54bd795c4f86d0c4d28adec16a9453b0e1f4fc4b9c6f4"
+        },
+        "airport-comments.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/airport-comments.csv",
+          "bytes": 4685334,
+          "sha256": "31b845a4a338b8e50995865705691cda579ee8f408bd40f57adec0c3e8525379"
+        },
+        "airport-frequencies.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/airport-frequencies.csv",
+          "bytes": 1302302,
+          "sha256": "23e6f8bc2221d00726d51b3d477d3fae712edba466e5bee0b7f950383b528da9"
+        },
+        "airports.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/airports.csv",
+          "bytes": 12751638,
+          "sha256": "9c1f3295b59f84c475f8c8555fa102505d7b4af0f931002cc5558dfeee1e43aa"
+        },
+        "countries.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/countries.csv",
+          "bytes": 24583,
+          "sha256": "2a9dbee691125b0cdb8ceb5fe227c48c903f99c488963b8e53e2ab366521c639"
+        },
+        "navaids.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/navaids.csv",
+          "bytes": 1524931,
+          "sha256": "d7292380662c33a95214945023ec0a5b13189599305fd18be739e167a97a9bd1"
+        },
+        "regions.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/regions.csv",
+          "bytes": 485265,
+          "sha256": "9220d6582b804cfdec8432e5bb21456699c9df8969bf5d8886beb62ff0b1318b"
+        },
+        "runways.csv": {
+          "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/61129867339deebc81b8ed7534f501b08d921a0c/runways.csv",
+          "bytes": 3971778,
+          "sha256": "dcddffdd29e2f51920308e06fe80c2deb3dcec3e7125efdca7321cd403e5e08f"
+        }
+      },
+      "license_basis": "Pinned upstream README expressly places data in public domain."
+    },
+    {
+      "origin": "Google Research Open Buildings v3",
+      "observed_at": "2026-10-28T23:45:54.834171+00:00",
+      "object": {
+        "name": "v3/polygons_s2_level_4_gzip/0c5_buildings.csv.gz",
+        "generation": "1687513212332991",
+        "size": "89641472",
+        "md5Hash": "iFQg8nnKfvd8ZIuHu4zaLw=="
+      },
+      "url": "https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/0c5_buildings.csv.gz?generation=1687513212332991",
+      "archive_sha256": "38c24dc1556fa8d33b1db8207077face07d5f9846d16addb13eba9aff7e705a6",
+      "archive_bytes": 89641472,
+      "listing_url": "https://storage.googleapis.com/storage/v1/b/open-buildings-data/o?prefix=v3/polygons_s2_level_4_gzip/&maxResults=1000&fields=items(name,size,generation,md5Hash),nextPageToken",
+      "listing_sha256": "fec9b9af19cb8ea80df673e95892c6ac2b2f9f5e7f82fb79d5fc05765592aa22",
+      "notices": {
+        "official-notices.html": {
+          "url": "https://sites.research.google/open-buildings/",
+          "sha256": "031688f8b9104e216de1bbe1294e36afaaaa0f3e2d86598edc95a37f19d30bc7",
+          "bytes": 107645
+        },
+        "cc-by-4.0-legalcode.html": {
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+          "bytes": 48742
+        }
+      },
+      "license_choice": "CC BY 4.0",
+      "attribution_sha256": "cc99a4fd7542298eba3d728f2501cdcd6ea24caf9f763a032de176bd78ad72d4"
+    }
+  ],
+  "packet": {
+    "files": {
+      "schema.sql": "51530a3cb259a8a35ea2d32913a1668ec0167a811890a9e577b4f2c61ab70cc0",
+      "input.db": "4773bb79d07445fe62867aef01e69e6b707054b4e0cab71fa8e7263869e550a9",
+      "complete-reference.jsonl": "44b66817002fe10416d7322e53e8680f0118e80e2aa0c0f190b07fb22246e89f",
+      "before-vacuum.db": "fd47ed13e3410765d45f2656bc391ef730de3263524958c8738f790f5395828d"
+    },
+    "counts": {
+      "records": 1109532,
+      "retained": 424133,
+      "expired": 685399,
+      "seed": 554766,
+      "source_files": 8,
+      "prior_public_records": 196743,
+      "new_tile_records": 912789,
+      "new_tile_retained": 332260,
+      "new_tile_removed": 580529,
+      "new_tile_archive_bytes": 89641472,
+      "full_input_database_bytes": 354926592,
+      "before_vacuum_database_bytes": 354926592,
+      "unchanged_conflicts": 554766,
+      "new_to_local_mirror": 554766,
+      "observed_changed_updates": 0,
+      "complete_fields_preserved": true
+    }
+  },
+  "predeclared_policy": {
+    "selection": "First lexical complete v3 level-4 polygon gzip object sized 50-100MB in official bucket listing",
+    "confidence_retention_cutoff": 0.8,
+    "existing_public_retention": "Keep prior source's declared regional policy unchanged",
+    "license_choice": "CC BY 4.0; official FAQ explicitly permits choosing CC BY 4.0 or ODbL 1.0",
+    "no_historical_updates": "Odd-row partial local seed then full genuine incoming records, unchanged conflicts plus inserts only"
+  },
+  "transformation": "Whole CSV files, original headers and every field encoded as ordered JSON arrays. One unique record ID per real record. No padding or repeated input passes.",
+  "upsert_coverage": "Odd-ID partial seed, unchanged conflicts plus new-to-local-mirror inserts. No genuinely changed updates or historical before/after claim.",
+  "vacuum_public_expansion": {
+    "preacquisition_policy": {
+      "reason": "The previous public VACUUM observation on GCP was 0.696563108 seconds.",
+      "selection": "Append successive lexical complete v3 level-4 polygon gzip objects sized 50-100MB from the authenticated original official listing, excluding the already included object. Stop only at a whole-file boundary after retained full-state bytes reach at least four times the original.",
+      "retained_state_byte_target": 524841012,
+      "confidence_retention_cutoff": 0.8,
+      "original_retention": "Unchanged",
+      "unchanged_cases": "Both original families, public UPSERT, and every heldout case",
+      "no_repeats": "Each selected published object and every source row is consumed once.",
+      "license_choice": "CC BY 4.0, with existing official notices and attribution retained",
+      "listing_sha256": "fec9b9af19cb8ea80df673e95892c6ac2b2f9f5e7f82fb79d5fc05765592aa22"
+    },
+    "additional_objects": [
+      {
+        "object": {
+          "name": "v3/polygons_s2_level_4_gzip/0c7_buildings.csv.gz",
+          "generation": "1687513222687120",
+          "size": "55672252",
+          "md5Hash": "F7fBKpYY2q9MFuO9EFS2OA=="
+        },
+        "url": "https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/0c7_buildings.csv.gz?generation=1687513222687120",
+        "archive_sha256": "421345cfc86229d32ab9e603dec6a2be115ecf478272653aedda1e986b9c75e8",
+        "records": 577165,
+        "retained": 238990
+      },
+      {
+        "object": {
+          "name": "v3/polygons_s2_level_4_gzip/10d_buildings.csv.gz",
+          "generation": "1687513254355256",
+          "size": "56745071",
+          "md5Hash": "Bf16bHHBw41EilGShplKbw=="
+        },
+        "url": "https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/10d_buildings.csv.gz?generation=1687513254355256",
+        "archive_sha256": "a7804d127543174ce45a27bc064e307100237cd0df68a651bf5e2246eecc5117",
+        "records": 610322,
+        "retained": 249766
+      },
+      {
+        "object": {
+          "name": "v3/polygons_s2_level_4_gzip/127_buildings.csv.gz",
+          "generation": "1687513284923934",
+          "size": "84371246",
+          "md5Hash": "Cnf9vsBCHUlER387I/4Rag=="
+        },
+        "url": "https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/127_buildings.csv.gz?generation=1687513284923934",
+        "archive_sha256": "d2a1608597703d672a4a945e37d38d0e0861cd69a006efc937f1bed8029d6472",
+        "records": 837371,
+        "retained": 359519
+      },
+      {
+        "object": {
+          "name": "v3/polygons_s2_level_4_gzip/13b_buildings.csv.gz",
+          "generation": "1687513236919160",
+          "size": "50086060",
+          "md5Hash": "907Xt75TtSPyD3EPtyYdMw=="
+        },
+        "url": "https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/13b_buildings.csv.gz?generation=1687513236919160",
+        "archive_sha256": "163fc218c72425df4d46b99ba4c45c9724fc05e9bbd1f50b2e63d2f65d35715b",
+        "records": 511426,
+        "retained": 221195
+      },
+      {
+        "object": {
+          "name": "v3/polygons_s2_level_4_gzip/143_buildings.csv.gz",
+          "generation": "1687513168873930",
+          "size": "70012774",
+          "md5Hash": "4KC6WaUMohqE+WIVm7vX1w=="
+        },
+        "url": "https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/143_buildings.csv.gz?generation=1687513168873930",
+        "archive_sha256": "40c971a6256f46d9b34a317ef27b3d01e8302e29c3532ec748cd77cdfb808c7f",
+        "records": 724326,
+        "retained": 241197
+      }
+    ],
+    "observed_at": "2026-10-29T05:14:10.278731+00:00",
+    "packet": {
+      "files": {
+        "schema.sql": "51530a3cb259a8a35ea2d32913a1668ec0167a811890a9e577b4f2c61ab70cc0",
+        "input.db": "57e230132964437dfd58c0a6e7e3cc0e1dbe0a4654b88d35a67cb7acec1266a2",
+        "complete-reference.jsonl": "ce1b61a3a6e952c9ac44b7c5cd355263dce354983a7c6214ca7c0bb58f5b882f",
+        "before-vacuum.db": "9e445ffa209c1ebc374980c0ca7a1da9800c617967421d310ac4c60597852f61"
+      },
+      "counts": {
+        "records": 4370142,
+        "retained": 1734800,
+        "expired": 2635342,
+        "source_files": 13,
+        "complete_fields_preserved": true
+      }
+    },
+    "complete_reference_bytes": 549857847
+  }
+}

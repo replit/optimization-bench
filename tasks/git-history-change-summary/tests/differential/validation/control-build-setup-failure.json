@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-25T20:50:27.376151+00:00",
+  "baseline_or_task_source_changed": false,
+  "failed_build_log_sha256": "eb350f3e1eb4f21bffc54fb837c05e1da7fd8adb717dd5d71363ec98e50df5de",
+  "image": "sha256:1a3cb60daf97268ecb65efb8cde4daa65828a38c89753cb3d770c1307ada723b",
+  "observed": "Prepending long field changed positional initializer types; pinned GCC rejected with int-conversion errors. No interface gate pass claimed.",
+  "phase": "private interface-negative control construction",
+  "remedy": "Append unused long field to mmfile_t, preserving existing initializer positions but changing its public layout. Rebuild only this private control.",
+  "unchanged_completed_builds_reused": [
+    "do-nothing",
+    "broken"
+  ]
+}

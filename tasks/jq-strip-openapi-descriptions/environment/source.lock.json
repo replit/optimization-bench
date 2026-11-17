@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    {
+      "bytes": 657724,
+      "checkout": "vendor/oniguruma",
+      "commit": "4ef89209a239c1aea328cf13c05a2807e5c146d1",
+      "editable": false,
+      "repository": "https://github.com/kkos/oniguruma",
+      "sha256": "70bfed97ee8390f5ac08fea28e3e930a3b33df871c6fc1888c8d436c6c6b755d",
+      "url": "https://codeload.github.com/kkos/oniguruma/tar.gz/4ef89209a239c1aea328cf13c05a2807e5c146d1"
+    }
+  ],
+  "schema_version": 1,
+  "upstream": {
+    "bytes": 1471761,
+    "commit": "49fbca1242c7f46f00b849de76565764e0254a03",
+    "repository": "https://github.com/jqlang/jq",
+    "sha256": "57e05af659c4ee9f1496589d6c633541e2a37483149ac45ae1fd48ae13944e28",
+    "url": "https://codeload.github.com/jqlang/jq/tar.gz/49fbca1242c7f46f00b849de76565764e0254a03"
+  }
+}

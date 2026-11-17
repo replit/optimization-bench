@@ -1,0 +1,30 @@
+{
+  "claimable": false,
+  "qualified": false,
+  "reference_image": "sha256:fa9392b44967617e4225147639682c9418609a135936dc7164b6d02822d8cb16",
+  "reference_origin": "judge.build output",
+  "scopes": {
+    "heldout": {
+      "database_sha256": "238912370ec1de1c670e158e239f7bd1da7f2e1afe332356580c7feed326bead",
+      "expected_length": 1827605,
+      "expected_sha256": "df572ec08a1c38be86ea1182e56929abdb3a4ec2958b17cba995f1c378c032a9",
+      "fresh_complete_native_executions": 2,
+      "independent_original_row_semantics_equal": true,
+      "native_bytes_equal": true,
+      "requests": 12788,
+      "requests_sha256": "0ccaf6f1413ad86b93ae73780d4efc2ccb5ffe945d405ff4e5e20b73b2e9fb79"
+    },
+    "public": {
+      "database_sha256": "3fd9bc747aee51d0d7704e6fee62f4bc6e486d144ba09db34ccc642c2e6c59ad",
+      "expected_length": 3323875,
+      "expected_sha256": "962185e0b8d77186376a2a7b2afd91c81ffe6fb29297d48344086813568c41ca",
+      "fresh_complete_native_executions": 2,
+      "independent_original_row_semantics_equal": true,
+      "native_bytes_equal": true,
+      "requests": 20855,
+      "requests_sha256": "52564d1dcdabe9da7913e1a799653cdc6e2ef8a9485819f3fd52f6f01628e62c"
+    }
+  },
+  "source_unchanged": true,
+  "timing_performed": false
+}

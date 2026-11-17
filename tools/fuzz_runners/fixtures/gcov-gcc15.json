@@ -1,0 +1,35 @@
+{
+  "format_version": "2",
+  "gcc_version": "15.2.0",
+  "current_working_directory": "/scratch",
+  "data_file": "gcov-control.gcda",
+  "files": [{
+    "file": "/capability-fixtures/gcov-control.c",
+    "lines": [
+      {"line_number": 5, "count": 2, "unexecuted_block": false, "branches": []},
+      {"line_number": 7, "count": 2, "unexecuted_block": false, "branches": [
+        {"count": 0, "throw": false, "fallthrough": true, "source_block_id": 2, "destination_block_id": 3},
+        {"count": 2, "throw": false, "fallthrough": false, "source_block_id": 2, "destination_block_id": 4}
+      ]},
+      {"line_number": 8, "count": 0, "unexecuted_block": true, "branches": []},
+      {"line_number": 9, "count": 2, "unexecuted_block": false, "branches": [
+        {"count": 1, "throw": false, "fallthrough": true, "source_block_id": 4, "destination_block_id": 5},
+        {"count": 1, "throw": false, "fallthrough": false, "source_block_id": 4, "destination_block_id": 6}
+      ]},
+      {"line_number": 10, "count": 1, "unexecuted_block": false, "branches": []},
+      {"line_number": 11, "count": 1, "unexecuted_block": false, "branches": []},
+      {"line_number": 14, "count": 2, "unexecuted_block": false, "branches": []},
+      {"line_number": 16, "count": 2, "unexecuted_block": true, "branches": [
+        {"count": 2, "throw": false, "fallthrough": true, "source_block_id": 2, "destination_block_id": 3},
+        {"count": 0, "throw": false, "fallthrough": false, "source_block_id": 2, "destination_block_id": 4}
+      ]},
+      {"line_number": 17, "count": 2, "unexecuted_block": false, "branches": []},
+      {"line_number": 18, "count": 2, "unexecuted_block": false, "branches": []}
+    ]
+  }],
+  "fixture_provenance": {
+    "scope": "line/branch projection of actual pinned GCC15.2 capability export, not task coverage",
+    "repository_commit": "84104ce5121485f5c78cdec1faa92a7273a88ecc",
+    "raw_export": "tasks/universal-ctags-c-symbol-tags/tests/fuzz/receipts/gcov-control.gcov.json.gz"
+  }
+}

@@ -1,0 +1,35 @@
+name: sqlfmt public task checks
+on: [push, pull_request]
+permissions:
+  contents: read
+env:
+  GIT_LFS_SKIP_SMUDGE: "1"
+  PYTHONPATH: .:tools
+jobs:
+  sqlfmt-native-caller:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.26.9"
+          cache: false
+      - name: Install locked host dependencies
+        run: |
+          python3 -m venv .venv-host
+          .venv-host/bin/python -m pip install --require-hashes --only-binary=:all: -r judge/requirements-interface.lock -r judge/requirements-host-registry.lock
+          echo "$PWD/.venv-host/bin" >> "$GITHUB_PATH"
+      - name: Acquire the authenticated original CLI fixture
+        run: python3 tasks/sqlfmt-cli/tests/fuzz/public_cli_recipes.py --stage-cli-fixture
+      - name: Check sqlfmt metadata and protected verifier contracts
+        run: |
+          python3 -m tools.release_preflight --task sqlfmt-cli --require-generic-hooks
+          python3 -m unittest tools.tests.test_sqlfmt_native
+          python3 -m unittest discover -s tasks/sqlfmt-cli/tests/fuzz -p 'test_*.py'
+      - name: Check the native caller against authenticated original source
+        run: python3 tasks/sqlfmt-cli/tests/fuzz/native/native_driver_tests.py

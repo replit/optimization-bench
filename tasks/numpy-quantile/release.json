@@ -1,0 +1,105 @@
+{
+  "task_version": "1.0.0",
+  "v1_0_changelog": "v1.0: adds eight performance units (interp-equalize, busday-calendar, random-dists, strings-text, genfromtxt-catalog, loadtxt-csv, datetime-iso, float-format) next to the unchanged warm-batch unit; existing inputs and references are unchanged.",
+  "schema_version": 1,
+  "task": "numpy-quantile",
+  "edition": "peter-harbor-draft-20261024",
+  "status": "timing-qualified",
+  "timing_qualification": "datasets/v1.0-timing-qualification.json",
+  "correctness_qualification": "pending-new-definition-registration-and-CPU-certification",
+  "source_policy": {
+    "version": 3,
+    "task": "numpy-quantile",
+    "source_root": "/app/numpy",
+    "source_roots": [
+      "numpy"
+    ],
+    "allowed_extensions": [
+      ".py",
+      ".cpp",
+      ".c",
+      ".h",
+      ".hpp",
+      ".cc",
+      ".hh",
+      ".cxx",
+      ".hxx",
+      ".pyi",
+      ".pyx",
+      ".pxd",
+      ".pxi",
+      ".src",
+      ".inc",
+      ".in",
+      ".template",
+      ".s",
+      ".S",
+      ".f",
+      ".f90",
+      ".f95",
+      ".pyf"
+    ],
+    "protected_paths": [
+      "setup.py",
+      "meson.build",
+      "meson.options",
+      "**/tests/**",
+      "**/test/**",
+      "numpy/testing/**",
+      "test_*",
+      "*_test.*",
+      "*_tests.*",
+      "conftest.py"
+    ],
+    "local_test_paths": [
+      "**/tests/**",
+      "**/test/**",
+      "numpy/testing/**",
+      "test_*",
+      "*_test.*",
+      "*_tests.*",
+      "conftest.py"
+    ],
+    "operations": [
+      "modify",
+      "add",
+      "remove"
+    ],
+    "protected_paths_take_precedence": true,
+    "max_source_bytes": 67108864,
+    "max_source_files": 10000,
+    "local_test_edits": "Discouraged; excluded from submissions; host uses original tests"
+  },
+  "judge_distribution": "private",
+  "cores": [
+    8
+  ],
+  "upstream_test_command": "See tests/README.md",
+  "baseline_source_sha256": "9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a",
+  "backend": "harbor-public-v1",
+  "cpu_policy": {
+    "version": "rc-cpu-policy-v1",
+    "correctness": {
+      "mode": "gated",
+      "cpu_counts": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "official_timing": {
+      "cpu_count": 8
+    },
+    "low_core_timing": {
+      "mode": "report-only",
+      "cpu_counts": [
+        1,
+        2,
+        4
+      ],
+      "enabled_by_default": false,
+      "executed_by_official_judge": false
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "task": "sqlfluff-project-lint",
+  "payload_status": "ready",
+  "harbor_execution_qualified": false,
+  "scored_qualification": false
+}

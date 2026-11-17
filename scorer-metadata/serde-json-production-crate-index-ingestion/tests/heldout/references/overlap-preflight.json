@@ -1,0 +1,125 @@
+{
+  "format": "serde-realism-disjointness-v1",
+  "grouping": "canonical forge owner/organization; legacy side assignments retained",
+  "intersection_counts": {
+    "group": 0,
+    "name": 0,
+    "repository_normalized": 0,
+    "sha256": 0
+  },
+  "legacy_repository_assignments": [
+    {
+      "bytes": 865119,
+      "family": "github.com/clap-rs",
+      "name": "clap",
+      "repository": "github.com/clap-rs/clap",
+      "sha256": "bcfe13363857e977a4a41f2c7afa40fb8820bced82516544e7ce600f0777ecc5",
+      "split": "public",
+      "url": "https://crates.io/api/v1/crates/clap"
+    },
+    {
+      "bytes": 138742,
+      "family": "github.com/rust-random",
+      "name": "rand",
+      "repository": "github.com/rust-random/rand",
+      "sha256": "7692e7c4dd22915572691eaa52e2c383d1ef289e63408b58f020dca02004639a",
+      "split": "public",
+      "url": "https://crates.io/api/v1/crates/rand"
+    },
+    {
+      "bytes": 299268,
+      "family": "github.com/rust-lang",
+      "name": "regex",
+      "repository": "github.com/rust-lang/regex",
+      "sha256": "9ae4219cc5e981a066a3fb5804c2f63f574d4a9e58c7feacc36a5a14cc2fdbf8",
+      "split": "public",
+      "url": "https://crates.io/api/v1/crates/regex"
+    },
+    {
+      "bytes": 206499,
+      "family": "github.com/rustls",
+      "name": "rustls",
+      "repository": "github.com/rustls/rustls",
+      "sha256": "5649a78fd8c27de60fd2469a808995e5414d1613dee19f9799179d7255002d8d",
+      "split": "public",
+      "url": "https://crates.io/api/v1/crates/rustls"
+    },
+    {
+      "bytes": 284189,
+      "family": "github.com/serde-rs",
+      "name": "serde_json",
+      "repository": "github.com/serde-rs/json",
+      "sha256": "c8f75a14712c43d3d58f7ddf5f67ebfba6fcc3d24eda2cd6bb54e41c609e9b29",
+      "split": "public",
+      "url": "https://crates.io/api/v1/crates/serde_json"
+    },
+    {
+      "bytes": 456160,
+      "family": "github.com/tokio-rs",
+      "name": "tokio",
+      "repository": "github.com/tokio-rs/tokio",
+      "sha256": "a747d6945b12eb7eb373018a041782ec8b7799490acee103fa4c8881a5b07359",
+      "split": "public",
+      "url": "https://crates.io/api/v1/crates/tokio"
+    },
+    {
+      "bytes": 415830,
+      "family": "github.com/bevyengine",
+      "name": "bevy",
+      "repository": "github.com/bevyengine/bevy",
+      "sha256": "835b7ed6fc2651f666ff96ac02b4313ade212c70a4b003c07ffd5a66e93c83f6",
+      "split": "heldout",
+      "url": "https://crates.io/api/v1/crates/bevy"
+    },
+    {
+      "bytes": 221940,
+      "family": "github.com/diesel-rs",
+      "name": "diesel",
+      "repository": "github.com/diesel-rs/diesel",
+      "sha256": "bd323bd22991d431158f831fe063394c246990de95e9e8889bba1c0c9674d308",
+      "split": "heldout",
+      "url": "https://crates.io/api/v1/crates/diesel"
+    },
+    {
+      "bytes": 192544,
+      "family": "github.com/image-rs",
+      "name": "image",
+      "repository": "github.com/image-rs/image",
+      "sha256": "9b8cad43974ad12facadaa3ce5338b90789f77736fdeedd914aef8ae6080df64",
+      "split": "heldout",
+      "url": "https://crates.io/api/v1/crates/image"
+    },
+    {
+      "bytes": 224762,
+      "family": "github.com/dimforge",
+      "name": "nalgebra",
+      "repository": "github.com/dimforge/nalgebra",
+      "sha256": "4244b3a448455a521bb057281ddef98feaecd4a0ef4f2d5e28c027daa8ffa001",
+      "split": "heldout",
+      "url": "https://crates.io/api/v1/crates/nalgebra"
+    },
+    {
+      "bytes": 581142,
+      "family": "github.com/twistedfall",
+      "name": "opencv",
+      "repository": "github.com/twistedfall/opencv-rust",
+      "sha256": "ee5b4316b49fa3f6b632a4df213dc31f933269bc4f6e2b75f6165bc290b3593f",
+      "split": "heldout",
+      "url": "https://crates.io/api/v1/crates/opencv"
+    },
+    {
+      "bytes": 199776,
+      "family": "github.com/rust-windowing",
+      "name": "winit",
+      "repository": "github.com/rust-windowing/winit",
+      "sha256": "de5bc599829bb08b6c7675ad84d1c9cacd0e33f5f1be87d569fa8c722836df42",
+      "split": "heldout",
+      "url": "https://crates.io/api/v1/crates/winit"
+    }
+  ],
+  "padding": false,
+  "private_files": 22272,
+  "public_files": 20999,
+  "scope_limit": "Proves recorded organization/repository/name/content disjointness; shared ecosystem schemas and cross-dependencies are acknowledged, not independent corpora.",
+  "within_unit_repetitions": 0
+}

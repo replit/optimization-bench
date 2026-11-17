@@ -1,0 +1,66 @@
+{
+  "task_version": "1.0.0",
+  "id": "terser-minify",
+  "name": "Terser",
+  "language": "JavaScript",
+  "title": "Minify unchanged JavaScript assets",
+  "job": "A build step sequentially minifies 149 independent, unchanged JavaScript assets in one Node process. A second build step minifies 7 unminified npm ES-module library dist files with webpack 5's production-default Terser options in one Node process.",
+  "code": "environment/workload/task.py",
+  "operations": [
+    "minify({filename: source}, options)",
+    "minify({filename: source}, webpack 5 production-default options for an ES-module asset)"
+  ],
+  "editable": "Terser production JavaScript under lib, within the existing task\u2019s editable scope; retain upstream tests.",
+  "families": [
+    [
+      "existing_frontend_assets",
+      "Complete JavaScript assets from distinct recorded repository groups in a frozen cdnjs catalog."
+    ],
+    [
+      "webpack_esm_library_dists",
+      "Unminified ES-module dist files from pinned npm package tarballs (registry.npmjs.org), one project lineage per group."
+    ]
+  ],
+  "size_meaning": "Original asset size and structure; 149 cdnjs files, 15,926,819 input bytes; 7 npm ES-module dist files, 5,558,785 input bytes.",
+  "variables": [
+    "Library/project identity",
+    "Source size",
+    "JavaScript syntax and control-flow structure",
+    "Bundled dependencies"
+  ],
+  "options": "cdnjs batch: one compression pass; mangling enabled; comments removed; source maps disabled. No unsafe or property-mangling options. webpack-esm: compress {passes: 2, ecma: 2015}, mangle, module, ecma 2015, source map undefined, and terser-webpack-plugin's extractComments comments callback (license comments extracted, none preserved in the code).",
+  "outputs": "cdnjs batch: one complete minified JavaScript file per input. webpack-esm: one JSON document per input holding the complete minified code and the extracted license text. Each matches the pinned baseline byte length and SHA-256.",
+  "contract": "Preserve the pinned output for this workload, all supported library behavior and the complete existing upstream test suite.",
+  "limits": "Frontend-asset and npm ES-module library batch workloads, not all npm programs or API options.",
+  "sources": [
+    "main.js",
+    "README.md"
+  ],
+  "command": "sh /app/workload/build.sh && /app/build/run",
+  "preparation": "Pinned SHA-256-checked Terser archive committed at /app/terser, locked npm closure, content-addressed original public assets and a prebuilt baseline. The driver imports main.js from the built production source; run upstream tests from /app/build/project to load the fresh CLI distribution.",
+  "source_identity": {
+    "task_package_commit": "0d5df1836c83227cf4bc3db03d22ab6aaf05668b",
+    "original_source_sha256": "6297e8d1db990c0ba388d159c6ffe5ead4ac5aac68401a65ffc12bff68757fcb",
+    "existing_image_id": "sha256:61c89fbb7e76703a747625e1950b0ec41cc48e8f105bd7427ef67de6dd9d0cf7",
+    "basis": "Historical source identity retained for lineage; current source archive pin is in environment/source.lock.json.",
+    "references": [
+      {
+        "file": "main.js",
+        "sha256": "3ad9e454673cf22659f32a321eca3d6ceca190cf3073f7445b1002d0371334f2"
+      },
+      {
+        "file": "README.md",
+        "sha256": "8e9e0a7f8d8d57de42e36b003d1628aaa22559330c15fe96e2e926db691c9523"
+      }
+    ]
+  },
+  "example_count": 156,
+  "status": "qualification-in-progress",
+  "smoke_status": "passed",
+  "packaging_status": "public-task-separate-verifier",
+  "input_manifest": "environment/workload/inputs/manifest.json",
+  "input_edition": "cdnjs-public-dev-20261012",
+  "input_visibility": "public_dev",
+  "source_bytes": 21694735,
+  "input_edition_note": "The public cdnjs batch excludes the Highmaps 6.0.3 input (cdnjs label CC-BY-NC-3.0), leaving 149 assets; every remaining input and its expected output is unchanged. Held-out inputs are unchanged."
+}

@@ -1,0 +1,1 @@
+{"args": ["--check", "."], "format": "black-case-v1", "id": "startup-empty", "input": "empty", "inventory_sha256": "8a0de606468e43695d9199ccd2df0d7c0f8ceb823a67583f2c8d9022f11eec2c", "project": "empty-project", "timeout": 120}

@@ -1,0 +1,29 @@
+{
+  "format": "optimbench-inputs-v1",
+  "task": "ruff-project-lint",
+  "edition": "ruff-heldout-0.3.0-httpx-rich",
+  "note": "New held-out edition; not recovered original 0.2.0 inputs or expectations.",
+  "splits": {
+    "heldout": [
+      {
+        "id": "new-edition-full-projects",
+        "docs": [
+          {
+            "path": "httpx",
+            "bytes": 1476,
+            "sha256": "c53d2a19fa1ec9a23dd159097d33a72cf0d9b89f21a8d04e0cb3f8fde8509e9d",
+            "expect_len": 146439,
+            "expect_sha": "466f1e09c5ecfeecd43ef49f6888a20b2aa17ec2850af749457e3da3f61c5e43"
+          },
+          {
+            "path": "rich",
+            "bytes": 1475,
+            "sha256": "974e2b5f9c0b5a8dc3bc7cf59ada2e62b74777e85a2fbeb8b61c4b956cd44b81",
+            "expect_len": 1672895,
+            "expect_sha": "109d2bfb31c3633e847f192d8990204593ce8242ee8078e9b15e59f7fc8fac80"
+          }
+        ]
+      }
+    ]
+  }
+}

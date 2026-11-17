@@ -1,0 +1,61 @@
+{
+  "calibration_max_age_seconds": 86400,
+  "claimable": false,
+  "cores": 8,
+  "source_path": "/app/sqlfluff",
+  "differential": {
+    "stderr_contract": "cli-stderr-contract-v1",
+    "case_budget": 12,
+    "case_timeout_seconds": 30,
+    "command": [
+      "python3",
+      "/verifier-differential/run.py"
+    ],
+    "enabled": true,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "time_cap_seconds": 600
+  },
+  "heldout_status": "available",
+  "maximum_pairs": 15,
+  "memory": "16g",
+  "minimum_pairs": 5,
+  "noise_thresholds": {
+    "max_sibling_busy": 0.1,
+    "max_steal": 0.01,
+    "max_throttled": 0.01
+  },
+  "pids_limit": 512,
+  "performance_units": {
+    "public": {
+      "configured-projects": ["configured-projects-extended"],
+      "postgres-autofix": ["project-autofix-public"],
+      "snowflake-jinja": ["project-snowflake-public"],
+      "bigquery-syntax-tree": ["project-syntax-tree-public"]
+    },
+    "heldout": {
+      "configured-projects": ["configured-private-projects-extended"],
+      "postgres-autofix": ["project-autofix-evaluation"],
+      "snowflake-jinja": ["project-snowflake-evaluation"],
+      "bigquery-syntax-tree": ["project-syntax-tree-evaluation"]
+    }
+  },
+  "process_state": {
+    "enabled": true,
+    "kind": "python"
+  },
+  "protocol": "eight-core-rmit-aa-v1",
+  "public_interface": {
+    "kind": "python",
+    "packages": [
+      "sqlfluff"
+    ],
+    "root": "runtime"
+  },
+  "relative_ci_half_width": 0.02,
+  "review_required": true,
+  "warmups": 1
+}

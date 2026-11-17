@@ -1,0 +1,116 @@
+{
+  "mode": "development checks, not A/A or qualification",
+  "scopes": {
+    "public": {
+      "batch": {
+        "complete_outputs_match": true,
+        "cases": 284,
+        "missing_output_rejected": true,
+        "method": "Robin-accepted cProfile Python self time, default wall timer",
+        "approved_ratio": 1.0,
+        "conservative_python_ratio": 0.999994102938593,
+        "strict_ratio": 0.7711218318204555,
+        "self_seconds": {
+          "stdlib": 0.15181964999999992,
+          "repository": 3.0652374389999983,
+          "driver": 0.004258778,
+          "unresolved": 1.8076e-05,
+          "builtin": 0.753702572
+        },
+        "native_cpu_claim": false,
+        "transpile_calls": 284,
+        "cold_seconds": [
+          1.3457117550024122,
+          1.4093333359996905,
+          1.3445552829980443
+        ],
+        "median_seconds": 1.3457117550024122,
+        "all_at_least_1_3_seconds": true,
+        "wrong": {
+          "complete_outputs_match": false,
+          "seconds": 1.3266000699986762,
+          "other_units_match": {
+            "optimizer": true
+          }
+        },
+        "skip": {
+          "complete_outputs_match": false,
+          "seconds": 0.14344238599733217,
+          "other_units_match": {
+            "optimizer": true
+          }
+        },
+        "slow": {
+          "complete_outputs_match": true,
+          "seconds": 2.5217060269969807,
+          "other_units_match": {
+            "optimizer": true
+          }
+        }
+      },
+      "optimizer": {
+        "complete_outputs_match": true,
+        "cases": 125,
+        "missing_output_rejected": true
+      }
+    },
+    "private": {
+      "batch": {
+        "complete_outputs_match": true,
+        "cases": 327,
+        "missing_output_rejected": true,
+        "method": "Robin-accepted cProfile Python self time, default wall timer",
+        "approved_ratio": 1.0,
+        "conservative_python_ratio": 0.9999949021974153,
+        "strict_ratio": 0.7726439228120832,
+        "self_seconds": {
+          "stdlib": 0.16354593899999995,
+          "repository": 3.232356633,
+          "driver": 0.005159581000000001,
+          "unresolved": 1.6478e-05,
+          "builtin": 0.7824223810000004
+        },
+        "native_cpu_claim": false,
+        "transpile_calls": 327,
+        "cold_seconds": [
+          1.3633931839976867,
+          1.3898277179978322,
+          1.4135746790016128
+        ],
+        "median_seconds": 1.3898277179978322,
+        "all_at_least_1_3_seconds": true,
+        "wrong": {
+          "complete_outputs_match": false,
+          "seconds": 1.4258308069984196,
+          "other_units_match": {
+            "optimizer": true
+          }
+        },
+        "skip": {
+          "complete_outputs_match": false,
+          "seconds": 0.16718091400252888,
+          "other_units_match": {
+            "optimizer": true
+          }
+        },
+        "slow": {
+          "complete_outputs_match": true,
+          "seconds": 2.8604705299985653,
+          "other_units_match": {
+            "optimizer": true
+          }
+        }
+      },
+      "optimizer": {
+        "complete_outputs_match": true,
+        "cases": 36,
+        "missing_output_rejected": true
+      }
+    }
+  },
+  "all_controls_passed": true,
+  "task_owner_approval_required": true,
+  "gcp_aa": "not run",
+  "original_files_preserved": 122,
+  "added_authentic_view_definitions": 205
+}

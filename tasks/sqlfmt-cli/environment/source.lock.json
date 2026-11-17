@@ -1,0 +1,17 @@
+{
+  "upstream_repository": "https://github.com/dimitri/sqlfmt",
+  "upstream_ref": "main at 2026-09-21 (no release tags)",
+  "upstream_commit": "8c676b51ea62e6ce33221e0d9d6d8a43256c942c",
+  "archive_url": "https://codeload.github.com/dimitri/sqlfmt/tar.gz/8c676b51ea62e6ce33221e0d9d6d8a43256c942c",
+  "archive_sha256": "2fb1eec6dc5cf3eea27e72c7a6d00340520df1464a15c9f406d87ff0e8af9f37",
+  "base_image": "golang:1.26.9-bookworm@sha256:d9c68c2c51161e12fd77e4c6320687c9cd86e1af1e3ad6e6cd63ff970641453c",
+  "toolchain": "Go 1.26.9 (GOTOOLCHAIN=local), CGO off; python3 from Debian bookworm for the harness only",
+  "dependency_lock": "go.sum at the pinned commit (github.com/pmezard/go-difflib v1.0.0, tests only)",
+  "input_source": "real .sql files from 8 public PostgreSQL projects packed as CLI1 case files; repositories and commits in workload/inputs/manifest.json",
+  "upstream": {
+    "url": "https://codeload.github.com/dimitri/sqlfmt/tar.gz/8c676b51ea62e6ce33221e0d9d6d8a43256c942c",
+    "commit": "8c676b51ea62e6ce33221e0d9d6d8a43256c942c",
+    "sha256": "2fb1eec6dc5cf3eea27e72c7a6d00340520df1464a15c9f406d87ff0e8af9f37",
+    "bytes": 202849
+  }
+}

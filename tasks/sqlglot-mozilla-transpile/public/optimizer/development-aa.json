@@ -1,0 +1,126 @@
+{
+  "public": {
+    "superseded_public_optimizer_collection": true,
+    "tested_public_optimizer_cases": 26,
+    "current_public_optimizer_cases": 125,
+    "current_public_aa_evidence": false,
+    "unofficial_development_only": true,
+    "passed": false,
+    "error": null,
+    "quality": {
+      "steal_fraction": 0.003666163467759327,
+      "sibling_busy_fraction": 0,
+      "throttled_fraction": 0.0,
+      "missing_cpu_counters": false,
+      "frequency_before": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null
+      },
+      "frequency_after": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null
+      },
+      "frequency_drop_fraction": null,
+      "noisy": false
+    },
+    "units": {
+      "batch": {
+        "observations": 12,
+        "min_seconds": 1.562544927,
+        "max_seconds": 1.670580584,
+        "all_complete_outputs_match": true,
+        "status": "resolved",
+        "ci95": [
+          1.0098667364248641,
+          1.036609500151867
+        ],
+        "ci95_spread_percentage_points": 2.6742763727002794
+      },
+      "optimizer": {
+        "observations": 12,
+        "min_seconds": 1.000203951,
+        "max_seconds": 1.063831388,
+        "all_complete_outputs_match": true,
+        "status": "not resolved",
+        "ci95": [
+          0.9843475148738193,
+          1.0216873669182052
+        ],
+        "ci95_spread_percentage_points": 3.7339852044385835
+      }
+    },
+    "timed_pairs_target": 5,
+    "maximum_pairs": 5
+  },
+  "heldout": {
+    "superseded_private_optimizer_collection": true,
+    "tested_private_optimizer_cases": 1,
+    "current_private_optimizer_cases": 36,
+    "current_private_aa_evidence": false,
+    "unofficial_development_only": true,
+    "passed": false,
+    "error": "Distinct-input unit below 1 second: optimizer; ns=454596761",
+    "quality": {
+      "steal_fraction": 0.007208073041806823,
+      "sibling_busy_fraction": 0,
+      "throttled_fraction": 0.0,
+      "missing_cpu_counters": false,
+      "frequency_before": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null
+      },
+      "frequency_after": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null
+      },
+      "frequency_drop_fraction": null,
+      "noisy": false
+    },
+    "units": {
+      "batch": {
+        "observations": 12,
+        "min_seconds": 1.072298841,
+        "max_seconds": 1.132960307,
+        "all_complete_outputs_match": true,
+        "status": null,
+        "ci95": null,
+        "ci95_spread_percentage_points": null
+      },
+      "optimizer": {
+        "observations": 1,
+        "min_seconds": 0.454596761,
+        "max_seconds": 0.454596761,
+        "all_complete_outputs_match": true,
+        "status": null,
+        "ci95": null,
+        "ci95_spread_percentage_points": null
+      }
+    },
+    "timed_pairs_target": 5,
+    "maximum_pairs": 5
+  }
+}

@@ -1,0 +1,1246 @@
+{
+  "schema_version": 1,
+  "task": "sqlglot-mozilla-transpile",
+  "provenance": "verified-original",
+  "source_root": "maintainer-held original SQLGlot inputs (not part of this repository)",
+  "revision": "operator-private-final; revision-2 corpus, archived private-release harness",
+  "selection_reason": "Recomputed complete original final protocol commitment and verified original qualification-to-result hash chain.",
+  "original_manifest_sha256": "bca8f08d2caa45412661f2ae5069868ce81cbe5f7e91e08e5f942eeb9c12d58e",
+  "original_reference_index_sha256": "d95ed653d28bf472f99b04f64a585b739dcbf5e2ccc3aeb7a6808f17943fe65c",
+  "original_protocol_commitment": "d11dcb0fb37bc2a1f8fccc8225be8da275330e49fdca7d789dd80447cbf962b6",
+  "original_final_result_sha256": "a3c941b5713dbe2eeac45e1e1b8c2fe3c74150cd82ac8873b5372aa9a6a4fb6e",
+  "original_qualification_sha256": "a88a60b532dea2ee8d0e02aa1be514ea3add5e8510b8b33a243f65bc36e03cac",
+  "expected_outputs_regenerated": false,
+  "reference_conversion": "Original JSON lists serialized exactly as current child.py: json.dumps(value, ensure_ascii=False, separators=(',', ':')).encode('utf-8'); SQLGlot not executed.",
+  "public_reference_encoding_parity_cases": 284,
+  "public_reference_encoding_parity_mismatches": 0,
+  "private_original_output_sha256_commitments_verified": 122,
+  "overlap_policy": "Cross-task public manifest commitments and all environment file hashes/digest references.",
+  "original_cases": 122,
+  "retained_cases": 122,
+  "dropped_overlap_count": 0,
+  "dropped_overlaps": [],
+  "qualification": "Original final cryptographic continuity verified; current image execution/requalification not performed because local Docker daemon is unavailable. Availability is not a scored qualification.",
+  "cases": [
+    {
+      "id": "005edae532e031e3",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/recent_logical_subscription_events_v1/query.sql",
+      "input_sha256": "810a971ce41c0d2a7f8911dc29012d36afc2c9cfc984515095b3a38c4d27c3d2",
+      "original_reference_file": "references/005edae532e031e3.json",
+      "original_reference_sha256": "63c33aa566a2e352d951f94f5fef32a6e39721fa915d5a95781aa163eb125afe",
+      "original_output_sha256": "7f3d344d32d286a2777872b46d003c1ebfdc82b6eec530b9f0ede4f647732e8d",
+      "expect_sha": "7f3d344d32d286a2777872b46d003c1ebfdc82b6eec530b9f0ede4f647732e8d",
+      "expect_len": 640
+    },
+    {
+      "id": "0536422f98b78763",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_task_reschedule_v1/query.sql",
+      "input_sha256": "69451593dc72280c804bc5d1f62f9c7caa0c4e75c234e5ee483e473b109ab8e5",
+      "original_reference_file": "references/0536422f98b78763.json",
+      "original_reference_sha256": "f77bb76ba434b349dce648a14f32728d7cc30fd257b099484d9806e3d15b5ed0",
+      "original_output_sha256": "be3804f4ab9f7936421fb24c0649e3f696bb74cc792ba104c4923476f3516218",
+      "expect_sha": "be3804f4ab9f7936421fb24c0649e3f696bb74cc792ba104c4923476f3516218",
+      "expect_len": 501
+    },
+    {
+      "id": "080c46342f3f62de",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/google_ads_campaign_cost_breakdowns_v1/query.sql",
+      "input_sha256": "4db1d12c444cb1bdc5e2980f096bf4ea1798ff68c6103e52ffa15223f29c26f0",
+      "original_reference_file": "references/080c46342f3f62de.json",
+      "original_reference_sha256": "e7fbc49b91c9d460fd1408dbc2ab8d16bdf2214347c6974e21e59683a5533ef8",
+      "original_output_sha256": "b877ae66ac19c3d0bc879a27584466274ea92fd12320d0027ef9b220854ce256",
+      "expect_sha": "b877ae66ac19c3d0bc879a27584466274ea92fd12320d0027ef9b220854ce256",
+      "expect_len": 3489
+    },
+    {
+      "id": "094614ace68abe46",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_deletion_request_v1/query.sql",
+      "input_sha256": "7b93e072104803e1ad545b6ab1a3ea2ee6d6cb4b5458253f993114228c8c1b8a",
+      "original_reference_file": "references/094614ace68abe46.json",
+      "original_reference_sha256": "10dab1b01c224f9ef61a315bb24a287910da24504d687feeff6a70a558002310",
+      "original_output_sha256": "a1bb7cbb3ac3543dbdace973ed33873897705bf0eda8ad28ed0782ff5be9a553",
+      "expect_sha": "a1bb7cbb3ac3543dbdace973ed33873897705bf0eda8ad28ed0782ff5be9a553",
+      "expect_len": 3336
+    },
+    {
+      "id": "09cb8d20eb56b5db",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_logins_sync_v1/query.sql",
+      "input_sha256": "722a50bd64540383fd55f8aa9ae068c3a8863dd41e6b25d9900af19ce8b4c509",
+      "original_reference_file": "references/09cb8d20eb56b5db.json",
+      "original_reference_sha256": "8bfb1222cd83b88f6a91bc51ff6bd7368abccc53aeadd75e907feaeec10197a3",
+      "original_output_sha256": "fa1593c697b8921adf713518eea9423558ff74da461870722cabb903bd41614d",
+      "expect_sha": "fa1593c697b8921adf713518eea9423558ff74da461870722cabb903bd41614d",
+      "expect_len": 4152
+    },
+    {
+      "id": "09ddd231c40c2dc2",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_mau_per_os_v1/query.sql",
+      "input_sha256": "4b0d9e0c3f1616c5605b1f10bb6b0f20452ba288f111280e85e2875d6328afae",
+      "original_reference_file": "references/09ddd231c40c2dc2.json",
+      "original_reference_sha256": "b7307bee6334deca5fdca01dd46d084b95ab3c1e0bbd54d368c4c7edf42c368d",
+      "original_output_sha256": "711c4b4191cfe1e1358e9601e1185803e658f2b9102436ac4858f2c33fffaf12",
+      "expect_sha": "711c4b4191cfe1e1358e9601e1185803e658f2b9102436ac4858f2c33fffaf12",
+      "expect_len": 873
+    },
+    {
+      "id": "0a1c3d94fb11e85b",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_country_aggregates_v1/query.sql",
+      "input_sha256": "b0e14fb0698bda02b3ba9d10940564ae388fe4e5e62fb44da1b2605fb9bb1f56",
+      "original_reference_file": "references/0a1c3d94fb11e85b.json",
+      "original_reference_sha256": "392ca1c3492b2b74dd4e83120abfd1bd9baafdb795bc2e2023c3f77fdda4f9c4",
+      "original_output_sha256": "e304e874857d0f50959b977891d422a066303c5e8810c12406a845b2357e64b0",
+      "expect_sha": "e304e874857d0f50959b977891d422a066303c5e8810c12406a845b2357e64b0",
+      "expect_len": 635
+    },
+    {
+      "id": "0bf79d0d47129b4d",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/recent_subplat_attribution_impressions_v1/query.sql",
+      "input_sha256": "1137da58ca31c0af51a8412792a140a8882019109243047009bc0b698bfbcddb",
+      "original_reference_file": "references/0bf79d0d47129b4d.json",
+      "original_reference_sha256": "a1d5887b3ba989872fd94898a26dc51019e6d914cec67598e828ecf59f3e5473",
+      "original_output_sha256": "3c405bf0e3cd3301343b9fe72a28c4eec8915d1f8d4be769a0b784cbe25d86a5",
+      "expect_sha": "3c405bf0e3cd3301343b9fe72a28c4eec8915d1f8d4be769a0b784cbe25d86a5",
+      "expect_len": 649
+    },
+    {
+      "id": "0d20e2cf6b60d82c",
+      "source_path": "sql/moz-fx-data-shared-prod/accounts_db_derived/accounts_aggregates_v1/query.sql",
+      "input_sha256": "2e8aa9bf38604b31dd50101b26bfabc409addcfe96a6c3336f9ef8a4adf434da",
+      "original_reference_file": "references/0d20e2cf6b60d82c.json",
+      "original_reference_sha256": "a357402cda5b0e91748a15ec461b84008d522dd991ca5cf10489eefec1e2cced",
+      "original_output_sha256": "4a70085596ea5d0bc3c9e21c183099a116774ab896a3241a6472e263868d0ad8",
+      "expect_sha": "4a70085596ea5d0bc3c9e21c183099a116774ab896a3241a6472e263868d0ad8",
+      "expect_len": 1649
+    },
+    {
+      "id": "0d38fb8f1d9d2908",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/newtab_client_tile_component_daily_v1/query.sql",
+      "input_sha256": "1f9f6aec51aed0e0c05295dc52e8d794ba3c6485fa494597dc6c25120cf376f1",
+      "original_reference_file": "references/0d38fb8f1d9d2908.json",
+      "original_reference_sha256": "c4ad44523f7f29229dd276c425479de0d4cbb3a9f162094b79c761981437ac59",
+      "original_output_sha256": "a5b3e9bbdf8cfa9b13efd9110677596a1c8bb3be8e7e3ae46405ae89c094486e",
+      "expect_sha": "a5b3e9bbdf8cfa9b13efd9110677596a1c8bb3be8e7e3ae46405ae89c094486e",
+      "expect_len": 788
+    },
+    {
+      "id": "0d54e7594708e34f",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_installation_v1/query.sql",
+      "input_sha256": "18bc59ea3dbe87e3ba46661565789a29191f6828fadb8fedf16d3967bbccda87",
+      "original_reference_file": "references/0d54e7594708e34f.json",
+      "original_reference_sha256": "119bce67da0ac7451f9a5b16b9022b8e519e251495b0d75fa706940aee89f0c8",
+      "original_output_sha256": "a241dd56b6afc421827d39b9d1f3092fc845cfa9a7f7972d101b26ff1a5077ab",
+      "expect_sha": "a241dd56b6afc421827d39b9d1f3092fc845cfa9a7f7972d101b26ff1a5077ab",
+      "expect_len": 3328
+    },
+    {
+      "id": "10c764ed3ce3ea7f",
+      "source_path": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_invoice_v1/query.sql",
+      "input_sha256": "58468ae7e09fe79fd5a2f93a466c94310aeec38e0a56b483efbb844d75782129",
+      "original_reference_file": "references/10c764ed3ce3ea7f.json",
+      "original_reference_sha256": "da54b76ade1ded2bb1b6867f4fe9a5a61da17822d59d88f15cc34e1eae53fbbb",
+      "original_output_sha256": "95c42ebfb88a81a753c4733b3299ad14d8f7fa543e3111be0ba4f881b1ed27ca",
+      "expect_sha": "95c42ebfb88a81a753c4733b3299ad14d8f7fa543e3111be0ba4f881b1ed27ca",
+      "expect_len": 866
+    },
+    {
+      "id": "12691c99b9175ebd",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_bookmarks_sync_v1/query.sql",
+      "input_sha256": "e214b8e659f05a3e446f031eeb44c41ff43e4261ec15f5e8a826bade5f09b5e3",
+      "original_reference_file": "references/12691c99b9175ebd.json",
+      "original_reference_sha256": "d4b624a3354267606ec0b243399e336620e34a67f017c9a869f776d3833d8bea",
+      "original_output_sha256": "e021bc55b9df48f5c165cd9e7b5ab041842318ba7ea9d7d3799d6a4ea7ddf306",
+      "expect_sha": "e021bc55b9df48f5c165cd9e7b5ab041842318ba7ea9d7d3799d6a4ea7ddf306",
+      "expect_len": 4324
+    },
+    {
+      "id": "12e0212667d6388d",
+      "source_path": "sql/moz-fx-data-shared-prod/mozilla_org_derived/www_site_page_metrics_v2/query.sql",
+      "input_sha256": "56cc4687a34096e4cb58c2a1e48e07f6b43245c8faa54e6ce6a2cf115e4f7c57",
+      "original_reference_file": "references/12e0212667d6388d.json",
+      "original_reference_sha256": "e43821d8522cc187087af7745116f5fd4264c30330e1baddb9c842109d06f83d",
+      "original_output_sha256": "a1cc206b8a4e2c3766d62579edd522be6fe530578d4cbf1377e04865fe8485b8",
+      "expect_sha": "a1cc206b8a4e2c3766d62579edd522be6fe530578d4cbf1377e04865fe8485b8",
+      "expect_len": 4256
+    },
+    {
+      "id": "12fd933271d5d373",
+      "source_path": "sql/moz-fx-data-shared-prod/search_terms_derived/suggest_partial_aggregates_daily_v1/query.sql",
+      "input_sha256": "7f9d486c45098b4daca254f4fb007001961933eb1c581dd386f02365b6399c1b",
+      "original_reference_file": "references/12fd933271d5d373.json",
+      "original_reference_sha256": "6abcc459e32725a92a54b46b22fe6d7f79313fc30fe84c349826ae5658669b27",
+      "original_output_sha256": "28d61ad70e4eb37eb2487c9108cfa633ecec2ca2203b75a390f04c3e32f932d2",
+      "expect_sha": "28d61ad70e4eb37eb2487c9108cfa633ecec2ca2203b75a390f04c3e32f932d2",
+      "expect_len": 698
+    },
+    {
+      "id": "14703f70abbc833f",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/event_aggregates_v1/query.sql",
+      "input_sha256": "95422c9b72b01b3335a6f779d38fd23586efc66c82b9aa717fc735a7edbe7cfb",
+      "original_reference_file": "references/14703f70abbc833f.json",
+      "original_reference_sha256": "873a0500d3411ba4088e8efa358308d11cea2d81a2935fb2e811c14fd909170d",
+      "original_output_sha256": "77373d57c254e3ca36c6effbd3384ceb78cad7fa7ebcc382fcfe07032e08d019",
+      "expect_sha": "77373d57c254e3ca36c6effbd3384ceb78cad7fa7ebcc382fcfe07032e08d019",
+      "expect_len": 2965
+    },
+    {
+      "id": "176b2001457d8811",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/latest_versions/query.sql",
+      "input_sha256": "7d9cd12af355222aa5845827ed5c595eef538eccfe37230d36e22f2caa614062",
+      "original_reference_file": "references/176b2001457d8811.json",
+      "original_reference_sha256": "78badb6935652fdd576fd9487c0b197e100bd62af9943c1bc9ccbdae43ab058d",
+      "original_output_sha256": "f85d81d390eeaa62630af8b679a1fa0ce49df52e7e13e4695b37a6e322436262",
+      "expect_sha": "f85d81d390eeaa62630af8b679a1fa0ce49df52e7e13e4695b37a6e322436262",
+      "expect_len": 474
+    },
+    {
+      "id": "17c13bdcb9bb373b",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_per_other_installs_v1/query.sql",
+      "input_sha256": "1e60bed5d9ffba8d63ff0498b9dc4e2cb15ede08cd569b70cd82d3070e088c25",
+      "original_reference_file": "references/17c13bdcb9bb373b.json",
+      "original_reference_sha256": "4d33913b124942b39dc370deb52a39f365e7866027270e95369f1b8cc645771c",
+      "original_output_sha256": "1e07dbf81430e827fbc5c137e696ae3e92c010dacc0fe387426b5071cdb8f4b3",
+      "expect_sha": "1e07dbf81430e827fbc5c137e696ae3e92c010dacc0fe387426b5071cdb8f4b3",
+      "expect_len": 358
+    },
+    {
+      "id": "187e8534b98a3221",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_addresses_sync_v1/query.sql",
+      "input_sha256": "e416bf7c0418602a7c00edfe437c6cf284fb81f2271f867d628dbe88e5b711d2",
+      "original_reference_file": "references/187e8534b98a3221.json",
+      "original_reference_sha256": "1e5cef272fcc1c6027ce092f024c9205254b45cd92e30eb53a14d410ff9317a3",
+      "original_output_sha256": "2051203f1ea77807524ed2f975ac9c088680ffab406f263fd30ab3bef8775df7",
+      "expect_sha": "2051203f1ea77807524ed2f975ac9c088680ffab406f263fd30ab3bef8775df7",
+      "expect_len": 4203
+    },
+    {
+      "id": "205f6a22e7c2bc09",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_desktop_compressed_v2/query.sql",
+      "input_sha256": "aebe413a97b489ce629548fa13c55c80a5f64c4d7170c04b90c01cc616c53f3a",
+      "original_reference_file": "references/205f6a22e7c2bc09.json",
+      "original_reference_sha256": "a835df02b79ea36b61f41b7ebb79dfc809a9e802a4047e6a77ff94860cc8aea7",
+      "original_output_sha256": "dcdd3d0075b2e21cfaaf254f39e621a4c132f1007901d3f3fb36a3b3763cf5fd",
+      "expect_sha": "dcdd3d0075b2e21cfaaf254f39e621a4c132f1007901d3f3fb36a3b3763cf5fd",
+      "expect_len": 1586
+    },
+    {
+      "id": "234940c6f1911a0e",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/ltv_state_values_v1/query.sql",
+      "input_sha256": "c67c8ef580cb86c656185288a9680b307d7b091f371e52982d5e32a83d3c1ae2",
+      "original_reference_file": "references/234940c6f1911a0e.json",
+      "original_reference_sha256": "b90f7986bf746edcc2443dfa4fafd785da0b8b01280fdef9debb7bca67898d82",
+      "original_output_sha256": "d2353dde04e79b1cc5b3251ea8db972d8e1630f55cdc85f60670f08c46b38d2a",
+      "expect_sha": "d2353dde04e79b1cc5b3251ea8db972d8e1630f55cdc85f60670f08c46b38d2a",
+      "expect_len": 356
+    },
+    {
+      "id": "236dcbbe331131bd",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_dag_tag_v1/query.sql",
+      "input_sha256": "7daebc68373305618930b6f0688108aae3ee341bc152eab60579c55dbcf0422e",
+      "original_reference_file": "references/236dcbbe331131bd.json",
+      "original_reference_sha256": "1f7f90f08970fcf2db65d2076bec47a595c0c5f746e0ed6e4f9c0a2c9f878c87",
+      "original_output_sha256": "b1f443a0441e183720556ebdd85e48e3dff0c6cb14d78fe83fc48d23f72bd471",
+      "expect_sha": "b1f443a0441e183720556ebdd85e48e3dff0c6cb14d78fe83fc48d23f72bd471",
+      "expect_len": 146
+    },
+    {
+      "id": "27bae48f21a7f6cd",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_ga_derived/ga4_events_v1/query.sql",
+      "input_sha256": "ac28046612e88b0b6adbe3376d1598daf70797ac646973689697d7706f7a4300",
+      "original_reference_file": "references/27bae48f21a7f6cd.json",
+      "original_reference_sha256": "95d5324e0a812f20bf5a6451be916f3097f7a47b48e21b587afd272887b4ae3b",
+      "original_output_sha256": "abeb4a81ea03d2e63bfa39f1dd8c48fc66b9749e6a2824c23ef1c78b955db80c",
+      "expect_sha": "abeb4a81ea03d2e63bfa39f1dd8c48fc66b9749e6a2824c23ef1c78b955db80c",
+      "expect_len": 777
+    },
+    {
+      "id": "2982293d2c67ff81",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/feature_usage_metrics_v1/query.sql",
+      "input_sha256": "cc318939b1df128d8ec7f5f904e00fd25a26febaa5a720376f0b0efd619dbffd",
+      "original_reference_file": "references/2982293d2c67ff81.json",
+      "original_reference_sha256": "5f058d207f068a11ca328ca20a059e355ca4c7bbcc0c357cf1e4d3c7f1f3f362",
+      "original_output_sha256": "93859ebdecde56e9a72352f4c9ae3435a8ee625e2f8965379f4b8a18ad75a30e",
+      "expect_sha": "93859ebdecde56e9a72352f4c9ae3435a8ee625e2f8965379f4b8a18ad75a30e",
+      "expect_len": 13696
+    },
+    {
+      "id": "2d75e8fccc688841",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/zyte_rss_load_job_monitoring_v1/query.sql",
+      "input_sha256": "430670b70b4a00834a577a2348ea31e680843ef453eb49ef229bc92a44971647",
+      "original_reference_file": "references/2d75e8fccc688841.json",
+      "original_reference_sha256": "cccbfef38afbc679e8cce6a169fe46203759152a15c239e799efef2efffb256f",
+      "original_output_sha256": "aeca2df0b3f6e60f10249a45dc4543d063fadaf01980d3dcf8a1b3d5bff8e0bf",
+      "expect_sha": "aeca2df0b3f6e60f10249a45dc4543d063fadaf01980d3dcf8a1b3d5bff8e0bf",
+      "expect_len": 1338
+    },
+    {
+      "id": "2ebbe8abf0a22c44",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_history_sync_v1/query.sql",
+      "input_sha256": "8b1ef5a9b3e116845a4677d8f83c336dfddad508a59e0ac1a68d8b914de8527f",
+      "original_reference_file": "references/2ebbe8abf0a22c44.json",
+      "original_reference_sha256": "42a8c4d01f7d942a794850c7965561235f143ba8275e2be2669489668dbc724c",
+      "original_output_sha256": "8328fd85a247a1b31db5c79664911e492f1c077759ade07cdf2c17042fe5175d",
+      "expect_sha": "8328fd85a247a1b31db5c79664911e492f1c077759ade07cdf2c17042fe5175d",
+      "expect_len": 4169
+    },
+    {
+      "id": "308c8956df391cd8",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/public_data_report_hardware_aggregates_v1/query.sql",
+      "input_sha256": "75322d59018aaccbdc489afd5b7d1f4712eb6adc447c623596989f0f765c3789",
+      "original_reference_file": "references/308c8956df391cd8.json",
+      "original_reference_sha256": "30efa37db674f4573adb64d63d6450bcdaf0b47808ecc3ba29fa66570edf4bc8",
+      "original_output_sha256": "3c5cddcca38fbf586115df326d9bd27b0501807abb38eb5fe7f80a5a7bd386d3",
+      "expect_sha": "3c5cddcca38fbf586115df326d9bd27b0501807abb38eb5fe7f80a5a7bd386d3",
+      "expect_len": 2762
+    },
+    {
+      "id": "310c5f8bbaf843e5",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/newtab_conditional_daily_aggregates_v1/query.sql",
+      "input_sha256": "a0b41e2c2add66a287d6d585a53b9b2180ce4213ef3e0f4285f752812d6d07fd",
+      "original_reference_file": "references/310c5f8bbaf843e5.json",
+      "original_reference_sha256": "f8d80d8aebc15d89edd592f4943a28a23a58704805ef1831d80465813a0e03dd",
+      "original_output_sha256": "1de0766d25e040c3d2a91b0ce5dfaab106a0bbc91a5952616932cc12e8484ee6",
+      "expect_sha": "1de0766d25e040c3d2a91b0ce5dfaab106a0bbc91a5952616932cc12e8484ee6",
+      "expect_len": 6509
+    },
+    {
+      "id": "3386641472472fff",
+      "source_path": "sql/moz-fx-data-shared-prod/search_derived/mobile_search_aggregates_for_searchreport_v1/query.sql",
+      "input_sha256": "6631a653fd1dac66580d97fdf80f0c57a810619f9bb8cec0cc94ac856038e322",
+      "original_reference_file": "references/3386641472472fff.json",
+      "original_reference_sha256": "555d1383c2a94b198cfc1a5023c5e70c827b58170cfb9e70330623faba53177c",
+      "original_output_sha256": "caca27f98d2fe0dfe43995bead300e99ca98c2314caef14a50a9d238bf725431",
+      "expect_sha": "caca27f98d2fe0dfe43995bead300e99ca98c2314caef14a50a9d238bf725431",
+      "expect_len": 1145
+    },
+    {
+      "id": "35275747c755fbad",
+      "source_path": "sql/moz-fx-data-shared-prod/mozilla_vpn_derived/subscriptions_v1/query.sql",
+      "input_sha256": "63ad4d0c607013a96c1785ed0e2e94ad146910e192747aff2bfc8bd142ba776b",
+      "original_reference_file": "references/35275747c755fbad.json",
+      "original_reference_sha256": "06c5988e97f40884cab323f80845d326fb3d5a7670fdc8996346c6137e84d6b7",
+      "original_output_sha256": "109bcde29fa7fc166b6aa710615ec0b25d707b6b3002db9faf20d02ec7e021db",
+      "expect_sha": "109bcde29fa7fc166b6aa710615ec0b25d707b6b3002db9faf20d02ec7e021db",
+      "expect_len": 152
+    },
+    {
+      "id": "36258261c25e0938",
+      "source_path": "sql/moz-fx-data-shared-prod/braze_external/add_ons_devs_users_sync_v1/query.sql",
+      "input_sha256": "70f22163ece5fdd816897b9105ad14066e22fc035c600abaa9ca351e0c7678fa",
+      "original_reference_file": "references/36258261c25e0938.json",
+      "original_reference_sha256": "ce500f766154f0e1e90234c6d3541dafe72ca58d716b3f90a47435fff3fb1631",
+      "original_output_sha256": "bfede6672f615cf9343b4644e7d8b6d2a99ff8c9818c31f66af4c52c895324d4",
+      "expect_sha": "bfede6672f615cf9343b4644e7d8b6d2a99ff8c9818c31f66af4c52c895324d4",
+      "expect_len": 457
+    },
+    {
+      "id": "38575d6d630a9a7a",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_cpu_core_count_v1/query.sql",
+      "input_sha256": "1a5922b495d74fa52982faeb22f53d2ce30a79920cdef0e68907976c66b5bdf4",
+      "original_reference_file": "references/38575d6d630a9a7a.json",
+      "original_reference_sha256": "e80f0561bd47d32b8d20e761df8f4c005d6d4fe70da342b38501c170c764b33d",
+      "original_output_sha256": "279416651ab5237a28eac1b894a57ca849255e5e4cbc61dfebc1b3e3c754a4af",
+      "expect_sha": "279416651ab5237a28eac1b894a57ca849255e5e4cbc61dfebc1b3e3c754a4af",
+      "expect_len": 517
+    },
+    {
+      "id": "39d7ada08d93d6a7",
+      "source_path": "sql/moz-fx-data-shared-prod/sync_derived/desktop_v1/query.sql",
+      "input_sha256": "56c6aee52dcfaf89244f9fed551c8ebfdd51f85cc284709850238d59beb51fcf",
+      "original_reference_file": "references/39d7ada08d93d6a7.json",
+      "original_reference_sha256": "485597275572c53c91b15145cc9b8babd6d0036c68c82b902e142b47fd6dfc41",
+      "original_output_sha256": "da00c4f3c282ec724279157f8be54eae9e20b88224d178133f7c1b4ae8f049ce",
+      "expect_sha": "da00c4f3c282ec724279157f8be54eae9e20b88224d178133f7c1b4ae8f049ce",
+      "expect_len": 2080
+    },
+    {
+      "id": "3ac9718ad9235ced",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/baseline_active_users_aggregates_v2/query.sql",
+      "input_sha256": "1e7baf18a35a9f13f6a900d09556d930e7b429e75936bde7ae72f434adbb41c1",
+      "original_reference_file": "references/3ac9718ad9235ced.json",
+      "original_reference_sha256": "dc1bdfc1ce8424a2808644e7431ec4b629f26eef5ed0fe18f72b087e334939d4",
+      "original_output_sha256": "f528eb1adff9a81480dfabe4398db8065be4eee44f8ab8c797967fdc9042ca1d",
+      "expect_sha": "f528eb1adff9a81480dfabe4398db8065be4eee44f8ab8c797967fdc9042ca1d",
+      "expect_len": 751
+    },
+    {
+      "id": "3b219aa3565a4c6e",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/ltv_state_values_v2/query.sql",
+      "input_sha256": "4c922d4115368510aa5c1541f60efa98df94f902d761a25bf29991500ea45d41",
+      "original_reference_file": "references/3b219aa3565a4c6e.json",
+      "original_reference_sha256": "fa6e5ca96eefc140f36f30473be4ec6e8e1ee79958acccd1dc4cb6207c2e658a",
+      "original_output_sha256": "31ab39967a34f03bc441e67c049ad0b73a897f42fd17d1409692999cb7b9f902",
+      "expect_sha": "31ab39967a34f03bc441e67c049ad0b73a897f42fd17d1409692999cb7b9f902",
+      "expect_len": 164
+    },
+    {
+      "id": "3ef26f9159ce653a",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_creditcards_sync_v1/query.sql",
+      "input_sha256": "54beed4ebb3ed5ace43138e835bc12f56cd5de4f3385e58ff95b4349aec24ebe",
+      "original_reference_file": "references/3ef26f9159ce653a.json",
+      "original_reference_sha256": "c31a96d38132f35fa30cc1589556cbbe7c81f42e6e53c14e8f433984e5455d1f",
+      "original_output_sha256": "cce91f715f9a19f7a53141bb34c2efc8de69421951825c0c0c1c8b20082262dc",
+      "expect_sha": "cce91f715f9a19f7a53141bb34c2efc8de69421951825c0c0c1c8b20082262dc",
+      "expect_len": 4237
+    },
+    {
+      "id": "403c14ba02557a8e",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_glam_nightly__latest_versions_v1/query.sql",
+      "input_sha256": "2857eaa6cb0c61d1670837c17c86621aea3545197802d21d62e2452646b85548",
+      "original_reference_file": "references/403c14ba02557a8e.json",
+      "original_reference_sha256": "f45387e721bb2a52fe402df45267f7d3b8b49d196d0c8aef54da6d78eeec14e0",
+      "original_output_sha256": "8c48c60bf305aab8df03ac00a03df9d2f5943b177f73260219c9b61838e73b8d",
+      "expect_sha": "8c48c60bf305aab8df03ac00a03df9d2f5943b177f73260219c9b61838e73b8d",
+      "expect_len": 615
+    },
+    {
+      "id": "4076580e3c81bd31",
+      "source_path": "sql/moz-fx-data-shared-prod/stripe_external/nonprod_subscription_history_v1/query.sql",
+      "input_sha256": "060675741953173b5755744ca85123aa1cd410ec92c5591915aa7c1122751995",
+      "original_reference_file": "references/4076580e3c81bd31.json",
+      "original_reference_sha256": "5f205489a1287261c50b4310721f3ecf8dd0868da599e7cfc1a337d9fe0d77ac",
+      "original_output_sha256": "f22166fdb849e52d99801d546b8e2daafd7ac7af5fc06e7e968263e78167a41e",
+      "expect_sha": "f22166fdb849e52d99801d546b8e2daafd7ac7af5fc06e7e968263e78167a41e",
+      "expect_len": 656
+    },
+    {
+      "id": "42d2b433dc73d447",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_cert_errors_v1/query.sql",
+      "input_sha256": "48a4c54c32e0e2bb1da39cf67f001ea2d63c71550793704cc89fed56f7ef187a",
+      "original_reference_file": "references/42d2b433dc73d447.json",
+      "original_reference_sha256": "3b61ac26382e05ee14092338e1574d095378be687e62d0c0d8ca6199386f6e18",
+      "original_output_sha256": "f8376256bd64e1391b336acc8aa5ecc008d6ea42bd1df41698a3beef97e6ba85",
+      "expect_sha": "f8376256bd64e1391b336acc8aa5ecc008d6ea42bd1df41698a3beef97e6ba85",
+      "expect_len": 389
+    },
+    {
+      "id": "4376465570aea8d7",
+      "source_path": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/www_site_page_metrics_v1/query.sql",
+      "input_sha256": "10a1572399540789afbad576d97034fb7172e4f660db32202cbffe4b7acd0359",
+      "original_reference_file": "references/4376465570aea8d7.json",
+      "original_reference_sha256": "84d4a442fe22388df63562c69c4b251ab7faa8e0b97f68bbee5185d6cecaf5f9",
+      "original_output_sha256": "37f0f399469a7032601695a4ed7018743a2e047e97eb99ada3d6b7f90e3402ca",
+      "expect_sha": "37f0f399469a7032601695a4ed7018743a2e047e97eb99ada3d6b7f90e3402ca",
+      "expect_len": 4832
+    },
+    {
+      "id": "439c63be652a56c3",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_country_v1/query.sql",
+      "input_sha256": "fbabbe6aeb01c964f3a549744501599e12493c575a06f111284bc1ef6dcb0199",
+      "original_reference_file": "references/439c63be652a56c3.json",
+      "original_reference_sha256": "a7200e394bb814a6b8ed416df22674e60615a01961e5f9f0d17262605ea8e705",
+      "original_output_sha256": "79fc2b123f1a09e123a8905e2f211cb36d8f3e966c7f33b67e3ae0458226921f",
+      "expect_sha": "79fc2b123f1a09e123a8905e2f211cb36d8f3e966c7f33b67e3ae0458226921f",
+      "expect_len": 505
+    },
+    {
+      "id": "440c02fa007dcf87",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_channel_aggregates_v1/query.sql",
+      "input_sha256": "e4b40eb012afff38a06775d9b0ba68b48a07b9065d6f21ad5a958a5482e830e1",
+      "original_reference_file": "references/440c02fa007dcf87.json",
+      "original_reference_sha256": "f98a95060404798bfbebf6941a69b65189df51b2c3ee15ea23ed842cef1fde30",
+      "original_output_sha256": "0dee8c9ac2c369fd78a873c63509c0f24d2cb9d4fa50555c0b9e5fceab0ef15c",
+      "expect_sha": "0dee8c9ac2c369fd78a873c63509c0f24d2cb9d4fa50555c0b9e5fceab0ef15c",
+      "expect_len": 346
+    },
+    {
+      "id": "4920643f72c97a5d",
+      "source_path": "sql/moz-fx-data-shared-prod/braze_external/braze_sends_combined_v1/query.sql",
+      "input_sha256": "55ae1aafbe9b6fe5366a514c484827c147a8e65e73b9cd9d5e0b0c3514a9e8e3",
+      "original_reference_file": "references/4920643f72c97a5d.json",
+      "original_reference_sha256": "57c550aa0bcd413534ecdbce2e00fcac0d6e8cb541e0b775f6dd84cf280cd688",
+      "original_output_sha256": "7838c05203aeb0ac109ebb69b47661740d6b464e51671114167321fdbfb505ce",
+      "expect_sha": "7838c05203aeb0ac109ebb69b47661740d6b464e51671114167321fdbfb505ce",
+      "expect_len": 1235
+    },
+    {
+      "id": "4dc546a6419db2ee",
+      "source_path": "sql/moz-fx-data-shared-prod/relay_derived/relay_mask_firefox_retention_v1/query.sql",
+      "input_sha256": "d27549cf6c0c264b2d0aa0907843010ad508cf7f60c18b100fb699e403d574fa",
+      "original_reference_file": "references/4dc546a6419db2ee.json",
+      "original_reference_sha256": "b44d405f7a815611be49d31cfead4e668133e0721b3371718f330ae131bdd6e4",
+      "original_output_sha256": "2e53798b148c959d33c2d6c77c617f557d4b4980c86a670bd82ddddc16cd9703",
+      "expect_sha": "2e53798b148c959d33c2d6c77c617f557d4b4980c86a670bd82ddddc16cd9703",
+      "expect_len": 2122
+    },
+    {
+      "id": "5256446234901a24",
+      "source_path": "sql/moz-fx-data-shared-prod/stripe_external/invoice_v1/query.sql",
+      "input_sha256": "0f038916fb124747c342760262aff101ecd5fa0f25ea330d43fc4dac8d4d65c2",
+      "original_reference_file": "references/5256446234901a24.json",
+      "original_reference_sha256": "13be77baff3b589d8f425a70a0e09793310dae8b27f8f329dda584319f46913e",
+      "original_output_sha256": "557ad8f50ddaa1eec804214e42c4a10530d29eb797640b027c615f5c85eaaa5f",
+      "expect_sha": "557ad8f50ddaa1eec804214e42c4a10530d29eb797640b027c615f5c85eaaa5f",
+      "expect_len": 861
+    },
+    {
+      "id": "53fef69f5011090a",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_dlsource_v1/query.sql",
+      "input_sha256": "ef4940731438ad11b7078011378b6d3fdd3c36f4ea4eb35d39638f6ae15e3ef2",
+      "original_reference_file": "references/53fef69f5011090a.json",
+      "original_reference_sha256": "8c02b28531c626d30c5eebec19fc0ca75e1384132fb3de3723f146c5016aa91b",
+      "original_output_sha256": "31e30c57ab27d8e8ff125372987e7eaabc97e8aa6059f610690c213f4dfdfa23",
+      "expect_sha": "31e30c57ab27d8e8ff125372987e7eaabc97e8aa6059f610690c213f4dfdfa23",
+      "expect_len": 544
+    },
+    {
+      "id": "5507eea7f153953f",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_baseline_v1/query.sql",
+      "input_sha256": "3c3141d7e419cb6360b0888d1686b896982b5d475d5265a5ede560197ab2ef47",
+      "original_reference_file": "references/5507eea7f153953f.json",
+      "original_reference_sha256": "452f65870b4e655af99d1fa62497ae37f1a800e74538690845f1b9923e737e8c",
+      "original_output_sha256": "67a02b10091589ea0e08668bc6aa1b6c4a98a88ccf6775917e59b1f0067ac08f",
+      "expect_sha": "67a02b10091589ea0e08668bc6aa1b6c4a98a88ccf6775917e59b1f0067ac08f",
+      "expect_len": 4779
+    },
+    {
+      "id": "5dc9412e6a037f58",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_page_reloads_v1/query.sql",
+      "input_sha256": "e0b9dbc56bcb1733b323a81167f879c819d5614bdb815a6a208e405a1a45848c",
+      "original_reference_file": "references/5dc9412e6a037f58.json",
+      "original_reference_sha256": "1bdda580ae043411f349dd82fbcee34b80548e593b39f1e8566f9a1f7528b2b8",
+      "original_output_sha256": "a0dfdc329d89072cf45c9383f9efc7f745fe4d95de60281d753831d58285110c",
+      "expect_sha": "a0dfdc329d89072cf45c9383f9efc7f745fe4d95de60281d753831d58285110c",
+      "expect_len": 492
+    },
+    {
+      "id": "5f18e1a246f438fc",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_metrics_derived/kitsune_contributor_answers_base_v1/query.sql",
+      "input_sha256": "3241633fb302ae1931e5846ac2267a076eb101cf8a016574ed617b79e91a0c0f",
+      "original_reference_file": "references/5f18e1a246f438fc.json",
+      "original_reference_sha256": "2148160b7ad82ebf5e5635225a8c4412c51483c39565a2cdc437e6688775d733",
+      "original_output_sha256": "00665d87683b3f9ddb9a760ad5f7110045d4b8f815f9b7d2e4136ec820650da7",
+      "expect_sha": "00665d87683b3f9ddb9a760ad5f7110045d4b8f815f9b7d2e4136ec820650da7",
+      "expect_len": 3270
+    },
+    {
+      "id": "5fb329f872c8ec88",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/devtools_panel_usage_v1/query.sql",
+      "input_sha256": "71880143c0f88f914bccd2d220df4f8e1424a7074638c7d5405e906f0f2998bc",
+      "original_reference_file": "references/5fb329f872c8ec88.json",
+      "original_reference_sha256": "5187648ce45f57e2655cbda116f0ff3ed71a79e4a6832a5752eb37d5a38b2881",
+      "original_output_sha256": "2bba5ecd940f06b26ee1495129cf6162f13a56b9ad18f2fa326693cf985c1cf5",
+      "expect_sha": "2bba5ecd940f06b26ee1495129cf6162f13a56b9ad18f2fa326693cf985c1cf5",
+      "expect_len": 3642
+    },
+    {
+      "id": "60380042e1413417",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop_glam_nightly__latest_versions_v1/query.sql",
+      "input_sha256": "ff1d0c73105d2c7345342f3355a84d90098453712554627e9fe01b06fa34ac32",
+      "original_reference_file": "references/60380042e1413417.json",
+      "original_reference_sha256": "bcbb40434fcfb319c644ad215bd0b0d8795cee114c26feb416e40af2c24bfcf4",
+      "original_output_sha256": "54968d6ee425f5f77f114252df1cd051c17159a2b76cbe0ebbdab29f87d4eff3",
+      "expect_sha": "54968d6ee425f5f77f114252df1cd051c17159a2b76cbe0ebbdab29f87d4eff3",
+      "expect_len": 611
+    },
+    {
+      "id": "627445900ef113b3",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_browser_v1/query.sql",
+      "input_sha256": "0033bd647ac3db5d4af7a97d1808f4e9f4549c73d3b99d3bc1c2f2512fd94608",
+      "original_reference_file": "references/627445900ef113b3.json",
+      "original_reference_sha256": "9b956c3547c6b49679c7bdb4069548d1fd2e116e770bb8842a9054fddd51f04d",
+      "original_output_sha256": "fb9673a2572c2d1ce6d90f22ca4937c9a702f7c9202da853f9cfcadb60f7bfab",
+      "expect_sha": "fb9673a2572c2d1ce6d90f22ca4937c9a702f7c9202da853f9cfcadb60f7bfab",
+      "expect_len": 518
+    },
+    {
+      "id": "6526de848de2543f",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_dag_run_v1/query.sql",
+      "input_sha256": "86c1a26ef4766d319299b79133bd00b94fa745d154edd2fb22ca237e6bf3ad92",
+      "original_reference_file": "references/6526de848de2543f.json",
+      "original_reference_sha256": "b234a9947f3ffa8f79205cac85c40c28fe3651270698cf7c17e31a907820f6dd",
+      "original_output_sha256": "014f95780d2ffa18f73151ffbf59ec97ea101aa6b1a4f17fad994460cb10f8d4",
+      "expect_sha": "014f95780d2ffa18f73151ffbf59ec97ea101aa6b1a4f17fad994460cb10f8d4",
+      "expect_len": 475
+    },
+    {
+      "id": "663db258007cac91",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_os_ver_v1/query.sql",
+      "input_sha256": "25bc1e4ce4d7979fad2f69f55218440e449a2a07a3559ba0d5882ef67e46cbfb",
+      "original_reference_file": "references/663db258007cac91.json",
+      "original_reference_sha256": "d9d6697301caffa77fcbd54e34cb21f11999ad41260c8a4c0471eb7ce62b6731",
+      "original_output_sha256": "7a93cd810d1b30da4a678d93d2da7ff1c0021b3f40065d158a022b68f321757d",
+      "expect_sha": "7a93cd810d1b30da4a678d93d2da7ff1c0021b3f40065d158a022b68f321757d",
+      "expect_len": 501
+    },
+    {
+      "id": "67f72b730812eb53",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/clients_daily_agg_by_default_browser_lifecycle_stage_v1/query.sql",
+      "input_sha256": "bd4569ae306775c3b8bb32f59e5c668bf898beaebb27aaec1205065d35cae687",
+      "original_reference_file": "references/67f72b730812eb53.json",
+      "original_reference_sha256": "0857a5476a0632735c0292cb251005112a16dcb9e7eb56cc573b0aac1b8229da",
+      "original_output_sha256": "296047e1c0a393bb369f6c058cd9da61f2f6f629bf06e1ca4901013ea221045b",
+      "expect_sha": "296047e1c0a393bb369f6c058cd9da61f2f6f629bf06e1ca4901013ea221045b",
+      "expect_len": 626
+    },
+    {
+      "id": "697fa3c05ce7aac8",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/baseline_active_users_aggregates_v1/query.sql",
+      "input_sha256": "03fd69104fd0511a45ff917eebe67c55aa503815dff8dda940779257de89c28d",
+      "original_reference_file": "references/697fa3c05ce7aac8.json",
+      "original_reference_sha256": "53021f4210d962d46b3a1b7287701c3c10d8f8ad23b095a5cfbe4d2f8cfa8c68",
+      "original_output_sha256": "8f2a4cfa0c514c6a835c61ad6e2dcc1959edb94460514229d5f8b80992ffe58b",
+      "expect_sha": "8f2a4cfa0c514c6a835c61ad6e2dcc1959edb94460514229d5f8b80992ffe58b",
+      "expect_len": 702
+    },
+    {
+      "id": "6b88746cbf19d3b0",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/docker_fxa_customs_sanitized_v2/query.sql",
+      "input_sha256": "82296e06121844183b7702128d4636adcbb7c6bbb074f76fe782efe6ce9853ce",
+      "original_reference_file": "references/6b88746cbf19d3b0.json",
+      "original_reference_sha256": "d7d5a834267608c2c440dc66eaa5842f4b548a09a3da609cf10a7a24efd4c5d1",
+      "original_output_sha256": "86f5395382726bddbbc9a1fe959524e910586b0dc0fbdd7fd9ae10729f610622",
+      "expect_sha": "86f5395382726bddbbc9a1fe959524e910586b0dc0fbdd7fd9ae10729f610622",
+      "expect_len": 753
+    },
+    {
+      "id": "6bb97eb018a87ef3",
+      "source_path": "sql/moz-fx-data-shared-prod/firefoxdotcom_derived/glean_gclid_conversions_v1/query.sql",
+      "input_sha256": "57a3d9e5ad97cde50e0597c21444bfcba5c0b1859723c9ffac59e5c1fae0bd9c",
+      "original_reference_file": "references/6bb97eb018a87ef3.json",
+      "original_reference_sha256": "a29ec1b4efd9c5fc8cc3fc9836b6204da27d754cfb37e79496c7b67f734a5d24",
+      "original_output_sha256": "8149fbadcd8f1dbe0f7f1904a22d39c825ac78b685f11ac3406d09e9e160b051",
+      "expect_sha": "8149fbadcd8f1dbe0f7f1904a22d39c825ac78b685f11ac3406d09e9e160b051",
+      "expect_len": 8419
+    },
+    {
+      "id": "6bc79fd18b2ea217",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_first_session_v1/query.sql",
+      "input_sha256": "dbfac06855d61b774f77d6ae69b8a97dc8143b45cdaca81d9d6b9ada67dfe300",
+      "original_reference_file": "references/6bc79fd18b2ea217.json",
+      "original_reference_sha256": "d51dffb5095c24006359b4591e03ad93f9b72d94817de47d31653d53d6fc9439",
+      "original_output_sha256": "6440bb6300924be0a95a79b983219d33cde2ad9a4413feb0f531d36474406c13",
+      "expect_sha": "6440bb6300924be0a95a79b983219d33cde2ad9a4413feb0f531d36474406c13",
+      "expect_len": 3331
+    },
+    {
+      "id": "6d1431fe70ba3402",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/install_vs_uninstall_by_os_v1/query.sql",
+      "input_sha256": "c1bae4a04e741edbb110fbd684bc93f61c7c7362bb1d65cf2b7e9a49b856574b",
+      "original_reference_file": "references/6d1431fe70ba3402.json",
+      "original_reference_sha256": "d84486fad21d3d392a6c43c9222def292e214a38be389773da641d02870efc1b",
+      "original_output_sha256": "b15bc67dddcb51af434ba96967371a2fb8565165d537c48ed75340f3560dc3f0",
+      "expect_sha": "b15bc67dddcb51af434ba96967371a2fb8565165d537c48ed75340f3560dc3f0",
+      "expect_len": 1328
+    },
+    {
+      "id": "6e5cbf08e8c091e1",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_np_by_install_type_v1/query.sql",
+      "input_sha256": "8d40e0c3c84e5a2aef9e67e0a8117808ddd346655bdde9196eaccf57c6e60161",
+      "original_reference_file": "references/6e5cbf08e8c091e1.json",
+      "original_reference_sha256": "b26856d290a9d95654b243cbbd26a83f8ac9d13a45ea4653792ae09bf1b03e0e",
+      "original_output_sha256": "47cda9a17929bd38a927265f2089cd2c239422ce00a3859157583f19babb85f9",
+      "expect_sha": "47cda9a17929bd38a927265f2089cd2c239422ce00a3859157583f19babb85f9",
+      "expect_len": 1496
+    },
+    {
+      "id": "6fd07728a9d5ec2e",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_ga_derived/ga3_events_v1/query.sql",
+      "input_sha256": "7387a8186be168efca38b40802552a690030917943e7fd04c43f4ed5405b9b7d",
+      "original_reference_file": "references/6fd07728a9d5ec2e.json",
+      "original_reference_sha256": "a1549f837648a54458c3a72e07cfd6e15467b5cc0a937148ee19e8f732f48b5a",
+      "original_output_sha256": "408b6be98e005e652210e17567b6e5148cd2e531b480e4c9c0dee26f4083d3e5",
+      "expect_sha": "408b6be98e005e652210e17567b6e5148cd2e531b480e4c9c0dee26f4083d3e5",
+      "expect_len": 198
+    },
+    {
+      "id": "7068b9c9af6d5121",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/active_users_rollup_shredder_v1/query.sql",
+      "input_sha256": "0703e640a6e62201ed0956c8182f8c6217deb5109a0faba7577a139534cfb1d3",
+      "original_reference_file": "references/7068b9c9af6d5121.json",
+      "original_reference_sha256": "b5e4909c5d98dcfb7ab1ea27fba60a2b619b2c827f1acd68cdbf3082d5ce1063",
+      "original_output_sha256": "c00d51da1d57248611a1683495562fa4a9bd929ed5941fc01b0293f4f86a25e5",
+      "expect_sha": "c00d51da1d57248611a1683495562fa4a9bd929ed5941fc01b0293f4f86a25e5",
+      "expect_len": 675
+    },
+    {
+      "id": "70bb9953a97715e7",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_bookmarks_by_os_version_v1/query.sql",
+      "input_sha256": "65c0da2ee2db8e96f96f3f51edb337cdbbfff410a9bf469d5a2d4c0ab19637be",
+      "original_reference_file": "references/70bb9953a97715e7.json",
+      "original_reference_sha256": "7933bb3afafe3b9a848d80fcd66bcb61d6aa44783d8032a0f2b64bfd0dea817f",
+      "original_output_sha256": "bdd0be6251327f4cb91e350df7d76b38a995417cde433cff2a3fbd816fbbf8d5",
+      "expect_sha": "bdd0be6251327f4cb91e350df7d76b38a995417cde433cff2a3fbd816fbbf8d5",
+      "expect_len": 669
+    },
+    {
+      "id": "7397447aa870c3e9",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/service_subscriptions_v1/query.sql",
+      "input_sha256": "18a6ece760b914ffad2bf39888b80940cd6743d70a05b3ae911245e9006b1da7",
+      "original_reference_file": "references/7397447aa870c3e9.json",
+      "original_reference_sha256": "a67c224edfa8d09d2b54aa126161748151df82a12d6e87ece845d867a5f6b353",
+      "original_output_sha256": "8ad33e68d99b017924ed321d04cb065b2a6f8112bff63535c1303ed86406f960",
+      "expect_sha": "8ad33e68d99b017924ed321d04cb065b2a6f8112bff63535c1303ed86406f960",
+      "expect_len": 244
+    },
+    {
+      "id": "73b4f0ece74828a5",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_users_services_devices_first_seen_v1/query.sql",
+      "input_sha256": "526294581d836160e361b7e9edaa7dafdab3d7f5b217b9eecdc047a3649cf35e",
+      "original_reference_file": "references/73b4f0ece74828a5.json",
+      "original_reference_sha256": "72bf7d856837d42ec750dc70072b75cbfcce5ea85822d0a24897bcc475635d79",
+      "original_output_sha256": "0c6bc1274ff044eaa371942083f9da22093346fc1f9ca205f75fd990f28c532f",
+      "expect_sha": "0c6bc1274ff044eaa371942083f9da22093346fc1f9ca205f75fd990f28c532f",
+      "expect_len": 1214
+    },
+    {
+      "id": "73b5c3493187b097",
+      "source_path": "sql/moz-fx-data-shared-prod/addons_derived/dev_amo_stats_dau_v1/query.sql",
+      "input_sha256": "89f08d2e117139969cae8bfd680dc7663e2471f9fa0ede98c2c0741551bd0a4a",
+      "original_reference_file": "references/73b5c3493187b097.json",
+      "original_reference_sha256": "d8cea9cdac0005b6820cb1ce5b9e1eeb1965bc56bfcc1cd1d2347a05d5e4e503",
+      "original_output_sha256": "2c499d5b059fabd364a6bbbf64b56b58b8188316255c2b505e0b6cd0d4bedae2",
+      "expect_sha": "2c499d5b059fabd364a6bbbf64b56b58b8188316255c2b505e0b6cd0d4bedae2",
+      "expect_len": 718
+    },
+    {
+      "id": "75e6555207bc3b73",
+      "source_path": "sql/moz-fx-data-shared-prod/contextual_services_derived/event_aggregates_suggest_v1/query.sql",
+      "input_sha256": "816e9770288145c75096551f561050092713aacc8f6398eb750b85d6e3ec8cf2",
+      "original_reference_file": "references/75e6555207bc3b73.json",
+      "original_reference_sha256": "b98b3a4cfe38d112228f50207aebb96a20461fcb4624a700a787fd0bd7bd148d",
+      "original_output_sha256": "9fb71e16fb87ea690fb771eb322cb1bbe22f4be044c3f9c563abdd088756fdab",
+      "expect_sha": "9fb71e16fb87ea690fb771eb322cb1bbe22f4be044c3f9c563abdd088756fdab",
+      "expect_len": 7963
+    },
+    {
+      "id": "760af230ed903265",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "input_sha256": "82e1395f0efdac605a5dce952cddf59123ee96ad37ee5bedbb32cb57c7236b28",
+      "original_reference_file": "references/760af230ed903265.json",
+      "original_reference_sha256": "4ab54b3321c377cc9b4f8c85a14ae715f7b18d15adaa42b22b8c41d17dcbbf8b",
+      "original_output_sha256": "9291ae62ae0292bbe0e8a1b276e5268aa45281fed18f44f4664d7367324b088a",
+      "expect_sha": "9291ae62ae0292bbe0e8a1b276e5268aa45281fed18f44f4664d7367324b088a",
+      "expect_len": 11856
+    },
+    {
+      "id": "78f070f89a068b78",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/firefox_installer_aggregates_v1/query.sql",
+      "input_sha256": "095d2cf8a6175a4add1eced39145a1a50e6765f1a92e898f0129fe624e020e43",
+      "original_reference_file": "references/78f070f89a068b78.json",
+      "original_reference_sha256": "cc69d589f0417ccc29da57723daea8e24186504ce6a0e1e85c02319f8fdbf5e8",
+      "original_output_sha256": "a1608b28c23948aa17b58c74196c32651de2355ee9a412fa3256cae7234b1d77",
+      "expect_sha": "a1608b28c23948aa17b58c74196c32651de2355ee9a412fa3256cae7234b1d77",
+      "expect_len": 2072
+    },
+    {
+      "id": "7c56886d3e412df8",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_events_v1/query.sql",
+      "input_sha256": "efc91df29aff4e5ab3efa327a88c98a52c4ad13452411907886a0552fa31c405",
+      "original_reference_file": "references/7c56886d3e412df8.json",
+      "original_reference_sha256": "28ba447b9413cd340372930ec991adcb11fd3dff159b83b88645e76d54f1cae9",
+      "original_output_sha256": "a4af8d88f5688e5ac47c995db3addac37f38b1bd018cbdd773774de33cc90825",
+      "expect_sha": "a4af8d88f5688e5ac47c995db3addac37f38b1bd018cbdd773774de33cc90825",
+      "expect_len": 3310
+    },
+    {
+      "id": "7d0b930af21cb3bb",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_deletion_request_v1/query.sql",
+      "input_sha256": "628b28d7ab76db48efdb67a17bc49dae5d683e342c7e9df27d2edbc4f9534f1e",
+      "original_reference_file": "references/7d0b930af21cb3bb.json",
+      "original_reference_sha256": "7710884c9c5cdb4adffbb4d00b7201ecf6b6012518060ff6065503d74545d826",
+      "original_output_sha256": "ed991bccd036ddc192cd2ee8adf1087e71846aeb1114868134e7d22103c224dd",
+      "expect_sha": "ed991bccd036ddc192cd2ee8adf1087e71846aeb1114868134e7d22103c224dd",
+      "expect_len": 3340
+    },
+    {
+      "id": "7d22207cf36a171e",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/google_subscriptions_history_v1/query.sql",
+      "input_sha256": "53090c16a8b515973cb90074defd81c083c0839f355246897351a018d547885f",
+      "original_reference_file": "references/7d22207cf36a171e.json",
+      "original_reference_sha256": "3b74fbfb22b584856bac5c44908c7f9031e90d5e029862c42eb5747467774373",
+      "original_output_sha256": "7a1c779a107bbdc55f183d3a4dd768ed24c9a15725062f122ceae504209dd746",
+      "expect_sha": "7a1c779a107bbdc55f183d3a4dd768ed24c9a15725062f122ceae504209dd746",
+      "expect_len": 3617
+    },
+    {
+      "id": "7e823ab12b15078e",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/snippets_v2/query.sql",
+      "input_sha256": "5ed1e704ca07376c5b9495486bc51c6f08fbfec420968a312aca2f8f0011e37a",
+      "original_reference_file": "references/7e823ab12b15078e.json",
+      "original_reference_sha256": "04b7f222525896204fa90c08c6782ccad5382c4c5069f42f5327eec88f1876ff",
+      "original_output_sha256": "090cd170f2cd1445d408e2a8ba2780d77e2c7fd72c95603c8df15e0ed27ebe5a",
+      "expect_sha": "090cd170f2cd1445d408e2a8ba2780d77e2c7fd72c95603c8df15e0ed27ebe5a",
+      "expect_len": 888
+    },
+    {
+      "id": "8121bf6723ff7002",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fennec_aurora__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "input_sha256": "410131f74bd49dc97adc91311785e273868285e28304e2bee56d72103c80eaa5",
+      "original_reference_file": "references/8121bf6723ff7002.json",
+      "original_reference_sha256": "3f3410586c46183fc3c85295dfbdfa6c7a223e8804cef03c410f45d72608440e",
+      "original_output_sha256": "1b48de8f82d58b9799cdcc0c898c31a16a5bd618ebf31889c037912665256a82",
+      "expect_sha": "1b48de8f82d58b9799cdcc0c898c31a16a5bd618ebf31889c037912665256a82",
+      "expect_len": 42822
+    },
+    {
+      "id": "822d95eb8f6df102",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/glean_server_knob_experiments_v1/query.sql",
+      "input_sha256": "e537633d59d4cad7fb587c8ef0fe96209fc3263971dbd35d98030ec588d774ec",
+      "original_reference_file": "references/822d95eb8f6df102.json",
+      "original_reference_sha256": "0a8b82bcdd454e13babdbc5a7143699f7708c850b1c7db1e02b8749cc5bfe856",
+      "original_output_sha256": "70355c45d624b4d6fe0daacd072aad6597d2fae591b0f8c223dd7dc133229555",
+      "expect_sha": "70355c45d624b4d6fe0daacd072aad6597d2fae591b0f8c223dd7dc133229555",
+      "expect_len": 713
+    },
+    {
+      "id": "82b6eab463723431",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_nondesktop_compressed_v2/query.sql",
+      "input_sha256": "ff15d6b4211dfe30498527c327bbdf7bc2df60c352fa12858fc8ad2a91cab00e",
+      "original_reference_file": "references/82b6eab463723431.json",
+      "original_reference_sha256": "8a0ae8480a49752ed86548f53b18d1474e2f99ca14ff795a3329bc0fb34151d6",
+      "original_output_sha256": "658476427cc2fb24b047fa542cdb49ab3f5af1ae93e825a27e5c4eadcfcc31d2",
+      "expect_sha": "658476427cc2fb24b047fa542cdb49ab3f5af1ae93e825a27e5c4eadcfcc31d2",
+      "expect_len": 1589
+    },
+    {
+      "id": "8334829c7adac351",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_addon_v1/query.sql",
+      "input_sha256": "4368abb7056db13b16c2071c44eb4ba30122b2bd87a443853487ad63de25e092",
+      "original_reference_file": "references/8334829c7adac351.json",
+      "original_reference_sha256": "723d368d5df1024cc107120b7dd60ea4958e518d2f839d8bf61a7f840218873e",
+      "original_output_sha256": "feadad9661e8caf2df2faef97b8ff0d93ed8305632503b2c8e9fac654d414f9d",
+      "expect_sha": "feadad9661e8caf2df2faef97b8ff0d93ed8305632503b2c8e9fac654d414f9d",
+      "expect_len": 382
+    },
+    {
+      "id": "84aaa3b7d6c3201f",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_accounts_linked_clients_ordered_v1/query.sql",
+      "input_sha256": "dd284378bdf6df835af91b108e6d91948daa401ff7cdc7305671ac756d746425",
+      "original_reference_file": "references/84aaa3b7d6c3201f.json",
+      "original_reference_sha256": "49c5b2b5f7a7cb9174f7db25ad73c3bf838bc9e07bf4489113877b69f76a21a9",
+      "original_output_sha256": "054742ca3f8038b6949bce79abb8777a80dc6255f9b45e4a892a4e8fc5b932af",
+      "expect_sha": "054742ca3f8038b6949bce79abb8777a80dc6255f9b45e4a892a4e8fc5b932af",
+      "expect_len": 2085
+    },
+    {
+      "id": "8adea4c9d97bb3c7",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_attr_src_v1/query.sql",
+      "input_sha256": "d49152454a8d79e6a48fd6e32091637a3252fc2bab4b21e72da5f4172d502995",
+      "original_reference_file": "references/8adea4c9d97bb3c7.json",
+      "original_reference_sha256": "ba053f405a94dd34a02ffb38b3429978682c2b7d12b97c536c7e96f9ac0a1936",
+      "original_output_sha256": "149ae6571d5e92482a076f61146e783a451d237c32bb1cfda60923d90e2e6bc3",
+      "expect_sha": "149ae6571d5e92482a076f61146e783a451d237c32bb1cfda60923d90e2e6bc3",
+      "expect_len": 542
+    },
+    {
+      "id": "8af8032f3c2c6198",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/shredder_targets_joined_v1/query.sql",
+      "input_sha256": "ecb58886655b5d10e5763826daba233b87faa1d4c080698c1f1e1e983dd57510",
+      "original_reference_file": "references/8af8032f3c2c6198.json",
+      "original_reference_sha256": "10fc161c8eebfe0197c0f351963ce6267ce0428ed017722258e07642a46d54dd",
+      "original_output_sha256": "4d693e463320b66a92ea6162a7c3978379cc19c3ae3a2d7741fd6bb15670ef62",
+      "expect_sha": "4d693e463320b66a92ea6162a7c3978379cc19c3ae3a2d7741fd6bb15670ef62",
+      "expect_len": 2570
+    },
+    {
+      "id": "8b54accb4cfd06bd",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/airflow_task_fail_v1/query.sql",
+      "input_sha256": "2cecb83360d143114cd9638cfbc0cdc412fca1d7737e940444bd7da2e97adccf",
+      "original_reference_file": "references/8b54accb4cfd06bd.json",
+      "original_reference_sha256": "e6f29b8e38363819dae64039ff5a60bdea8f09ac560dec94306377fbbff908ac",
+      "original_output_sha256": "32523a34ff4208c6bbf0cc640331b4cdf9595fb861dd8dbf48ccada1bf70df5f",
+      "expect_sha": "32523a34ff4208c6bbf0cc640331b4cdf9595fb861dd8dbf48ccada1bf70df5f",
+      "expect_len": 431
+    },
+    {
+      "id": "8d4ee15365d883e8",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/doh_adoption_rate_v1/query.sql",
+      "input_sha256": "c0045a990ab839d20cfdc2f5ada4f7606f0b039d3b9411ebbc31ea2b92049f8d",
+      "original_reference_file": "references/8d4ee15365d883e8.json",
+      "original_reference_sha256": "01977a21e4c7143db7fbae12287ac589139124b7b6c092810ea06c8d518172b9",
+      "original_output_sha256": "8dc920fdbcce0df97494142c8221d8a3593ce19f8908b524a9b05f5d1a2646fc",
+      "expect_sha": "8dc920fdbcce0df97494142c8221d8a3593ce19f8908b524a9b05f5d1a2646fc",
+      "expect_len": 6665
+    },
+    {
+      "id": "94b6309908db8c2d",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_ios_derived/new_profile_metrics_marketing_geo_testing_v1/query.sql",
+      "input_sha256": "eb318c23db0248c08f963c704e17f2956e9052c6b655d1a46d42730bee6f3b15",
+      "original_reference_file": "references/94b6309908db8c2d.json",
+      "original_reference_sha256": "9219cd51b69cc7bff97f4c69eaa6ddcc8ff373f56f3aecac5dc26ae6d54c8c67",
+      "original_output_sha256": "50abb44a39ef701282751bffe2422636bde965d352b97a9735626377af390a25",
+      "expect_sha": "50abb44a39ef701282751bffe2422636bde965d352b97a9735626377af390a25",
+      "expect_len": 1781
+    },
+    {
+      "id": "99c85cc2312eeff0",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_activation_v1/query.sql",
+      "input_sha256": "4b2e6c0ced5b0e369069e8ff2bae0f0d8c00bdfaf7dd3883fd43b6298efefdab",
+      "original_reference_file": "references/99c85cc2312eeff0.json",
+      "original_reference_sha256": "6ccfd1cfa26dbf0e79e96ef7fa1d2ce83b3d7a7c5c0c6b8a6792b1b7e3401274",
+      "original_output_sha256": "8cc2f879f7da20b7c257e93f81c405fd2519a10bf343151aeae93dc1d82626a9",
+      "expect_sha": "8cc2f879f7da20b7c257e93f81c405fd2519a10bf343151aeae93dc1d82626a9",
+      "expect_len": 3322
+    },
+    {
+      "id": "9b57cd5519a8510f",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "input_sha256": "06567f4611c874ad5d11303627a96d5e046ea90f3141f824aa9b0b6741f43313",
+      "original_reference_file": "references/9b57cd5519a8510f.json",
+      "original_reference_sha256": "11a30cd7b48d91b6fa64d3e54fd66434436c4f0cce22c9d954137dd1782c0251",
+      "original_output_sha256": "09eafa46102843535378da9e213452f7f2d6f2d45dadf6194cb5afd4fc0f7904",
+      "expect_sha": "09eafa46102843535378da9e213452f7f2d6f2d45dadf6194cb5afd4fc0f7904",
+      "expect_len": 42806
+    },
+    {
+      "id": "a053cdc8db0246fd",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_events_v1/query.sql",
+      "input_sha256": "4df117dd03046c494878341712d5b7e9479a3038050e3eb1300615c7704f96ce",
+      "original_reference_file": "references/a053cdc8db0246fd.json",
+      "original_reference_sha256": "71200e110b63c2d0ae1001e46d9fb2788e9707b9cf5c9ff332ffa94a05f95ec7",
+      "original_output_sha256": "8837293b74f3354f66e49ae41c4e72737e602d1d94e7528a74c1de41778c1b7a",
+      "expect_sha": "8837293b74f3354f66e49ae41c4e72737e602d1d94e7528a74c1de41778c1b7a",
+      "expect_len": 3306
+    },
+    {
+      "id": "a4050414e664cfbc",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/addon_names_v1/query.sql",
+      "input_sha256": "10cd9945be54cd3398a2fac27cb1361fb9b483447ad5d5c8c218981bbb45ebe4",
+      "original_reference_file": "references/a4050414e664cfbc.json",
+      "original_reference_sha256": "97de25c89e4171fb8589253cc4a87515d04173efb0b22b8fcda4ad4536d85f46",
+      "original_output_sha256": "7f55e8f0feb800c5a35f6775b0b8289178ad40e207cafdd8e68dcbd8a5d9ce18",
+      "expect_sha": "7f55e8f0feb800c5a35f6775b0b8289178ad40e207cafdd8e68dcbd8a5d9ce18",
+      "expect_len": 532
+    },
+    {
+      "id": "a5b980b361e64c27",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_sync_v1/query.sql",
+      "input_sha256": "d60a931ef1f96fcf0672384d37b2e9c676f8e77009a4f5c0509f1095d5d08177",
+      "original_reference_file": "references/a5b980b361e64c27.json",
+      "original_reference_sha256": "ca0d665792fa35856c308df4448c382ab3b92a2f5185e4a3d65cb03c683bd188",
+      "original_output_sha256": "15d4dfe2b5af6ec009c7428cfacf2d91b808319236491ffe281a76b10822a493",
+      "expect_sha": "15d4dfe2b5af6ec009c7428cfacf2d91b808319236491ffe281a76b10822a493",
+      "expect_len": 3304
+    },
+    {
+      "id": "aa1662142818cf7b",
+      "source_path": "sql/moz-fx-data-shared-prod/search_terms_derived/adm_daily_aggregates_qa_v1/query.sql",
+      "input_sha256": "0b6fa507313d2be9a5f05cf5744d0cf0416bb7e7a1e2a30796ae4e39822b43b8",
+      "original_reference_file": "references/aa1662142818cf7b.json",
+      "original_reference_sha256": "df01ba0d07d963508ed4c5d3e65588bb0677f5fcce8003eecc4c4dac06e4ce10",
+      "original_output_sha256": "3732a43d7b642c8e559d08610f24e2afe090df3edd02a9f077c987dd004c1f2e",
+      "expect_sha": "3732a43d7b642c8e559d08610f24e2afe090df3edd02a9f077c987dd004c1f2e",
+      "expect_len": 444
+    },
+    {
+      "id": "aab7952265ddda4e",
+      "source_path": "sql/moz-fx-data-marketing-prod/fetch/spend_alignment_by_campaign_v1/query.sql",
+      "input_sha256": "1df3d068225ea970cd5d341848ce17569ed3b6e7ea2407ce7c538c0af26e1761",
+      "original_reference_file": "references/aab7952265ddda4e.json",
+      "original_reference_sha256": "9083edb972050829a9e3a365df78b8f42f269e331e99f83551199f3c06f7aa09",
+      "original_output_sha256": "3c99c1f47fff10bd252b82242d484f5e60d91ad6b1e4d2be6683ced8995df567",
+      "expect_sha": "3c99c1f47fff10bd252b82242d484f5e60d91ad6b1e4d2be6683ced8995df567",
+      "expect_len": 623
+    },
+    {
+      "id": "ad61373adbaf8be7",
+      "source_path": "sql/moz-fx-data-shared-prod/glean_telemetry_derived/cohort_daily_churn_v1/query.sql",
+      "input_sha256": "75568282e6fa463711303a6a3852c2592686f630f69f1174f3caa19efd920b6c",
+      "original_reference_file": "references/ad61373adbaf8be7.json",
+      "original_reference_sha256": "38586935e9719b9ab99545d8c7ef7116f84acc4b2be34ea7708d79d03fc8f708",
+      "original_output_sha256": "89a1a25544fa785a526806af83746542fdd61c4db250b6d5e2349e0c803e568e",
+      "expect_sha": "89a1a25544fa785a526806af83746542fdd61c4db250b6d5e2349e0c803e568e",
+      "expect_len": 4797
+    },
+    {
+      "id": "af7ac3f1e42643bf",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_account_signed_in_status_v1/query.sql",
+      "input_sha256": "7f0e2622ae648688deb33722c23acf3f46bb8f82e2fd05e0d80082e01f9b108f",
+      "original_reference_file": "references/af7ac3f1e42643bf.json",
+      "original_reference_sha256": "6733ecbb5d1b62de1002eeda471d390633251abdf1fcc0073253d9a61d5ff4d3",
+      "original_output_sha256": "5bd2cf78c65bd78e8a2b0a49bc3fd3817fce2b3c63b54b1613b081ae5f8ad77f",
+      "expect_sha": "5bd2cf78c65bd78e8a2b0a49bc3fd3817fce2b3c63b54b1613b081ae5f8ad77f",
+      "expect_len": 529
+    },
+    {
+      "id": "b2de00527e38fe46",
+      "source_path": "sql/moz-fx-data-shared-prod/contextual_services_derived/event_aggregates_check_v1/query.sql",
+      "input_sha256": "1e2c8a4efc5e3c4cdc38390df0a861d67ec606c04dfa93e33d9e64de1aeaac36",
+      "original_reference_file": "references/b2de00527e38fe46.json",
+      "original_reference_sha256": "003bef7433a25caa877896e0140cea79116a7730d5520376a176c6ddf151504e",
+      "original_output_sha256": "97807a0b4c8189e1edcc373778f3fb9cf12d868843b8e1eec1c448f4d8138458",
+      "expect_sha": "97807a0b4c8189e1edcc373778f3fb9cf12d868843b8e1eec1c448f4d8138458",
+      "expect_len": 1894
+    },
+    {
+      "id": "b3c90e9f6f53429c",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_baseline_v1/query.sql",
+      "input_sha256": "2ac86defe4fcbc66ec617246bab41c8298cf653f85093f192ca7c3c0f5137a1e",
+      "original_reference_file": "references/b3c90e9f6f53429c.json",
+      "original_reference_sha256": "49c531bb4d8b1082b82a124b43440a5fbf5a72724098574802d497c3d0b0cb76",
+      "original_output_sha256": "288f29a5d8f4c2011cfaf04d59a1a6c1bdf480cf2a7ca0c487dbf6acae790be4",
+      "expect_sha": "288f29a5d8f4c2011cfaf04d59a1a6c1bdf480cf2a7ca0c487dbf6acae790be4",
+      "expect_len": 5758
+    },
+    {
+      "id": "b63f645b831ba48a",
+      "source_path": "sql/moz-fx-data-shared-prod/search_derived/desktop_mobile_search_clients_monthly_v1/query.sql",
+      "input_sha256": "a9f24b99edaea4043701afe825a2056f53f03527e06667bf63a5aa39261e1114",
+      "original_reference_file": "references/b63f645b831ba48a.json",
+      "original_reference_sha256": "1d8fdb4f8b8b5131d287316cff7f37e72724df74169252a1dbfb633840cbf520",
+      "original_output_sha256": "291a2b22f9c6610e91581e976a8848a7e576cdf0b728ae92215a0a0416f55c73",
+      "expect_sha": "291a2b22f9c6610e91581e976a8848a7e576cdf0b728ae92215a0a0416f55c73",
+      "expect_len": 1729
+    },
+    {
+      "id": "b736cf09d6b46395",
+      "source_path": "sql/moz-fx-data-shared-prod/braze_external/delete_users_sync_v1/query.sql",
+      "input_sha256": "e978912d1d841c6b1dbc37d81a50fa53b5fefc2638c90a04ae9cf016788e0501",
+      "original_reference_file": "references/b736cf09d6b46395.json",
+      "original_reference_sha256": "f6f49bbfeac92593b8f3408fb2aa12290fdc7a4756d73276d16f1b1facd5efe9",
+      "original_output_sha256": "8cc25e86929c4d3dc627289733924db04e274004689cf0defa5b296711b10365",
+      "expect_sha": "8cc25e86929c4d3dc627289733924db04e274004689cf0defa5b296711b10365",
+      "expect_len": 226
+    },
+    {
+      "id": "bb2d3e545c75ce8b",
+      "source_path": "sql/moz-fx-data-shared-prod/monitoring_derived/metadata_standardization_v1/query.sql",
+      "input_sha256": "ecd6f02e4c5196bdf60f83a285f75822d291e4a06ac119ef3c73625d9e636b38",
+      "original_reference_file": "references/bb2d3e545c75ce8b.json",
+      "original_reference_sha256": "422830e2e9be1afadf28a9422d92f9319de96507d0f77b2bef0454abf3c77268",
+      "original_output_sha256": "6964789c4405a777bd555705cccdae44da963356141a5c2eeceb69cfee6d5d9a",
+      "expect_sha": "6964789c4405a777bd555705cccdae44da963356141a5c2eeceb69cfee6d5d9a",
+      "expect_len": 2092
+    },
+    {
+      "id": "bcb4bf8448e5b366",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/fx_health_ind_win_instll_by_instll_typ_v1/query.sql",
+      "input_sha256": "7e4c6f996a64cd4b6da461bac5e2396b063f288ba6aa252bcc64a976cc388a5c",
+      "original_reference_file": "references/bcb4bf8448e5b366.json",
+      "original_reference_sha256": "ac9cdd6f17815896e327b1fd32aff6c29dfa10110a3974d9e688f199e1734116",
+      "original_output_sha256": "8c4bf3679e805629afbc53a09241b9b2fe800f5f6e3e10ed6a2dd55f099db8c2",
+      "expect_sha": "8c4bf3679e805629afbc53a09241b9b2fe800f5f6e3e10ed6a2dd55f099db8c2",
+      "expect_len": 326
+    },
+    {
+      "id": "c22c0f285ad46fb9",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_gcp_stdout_events_v1/query.sql",
+      "input_sha256": "4836731a3701633a7b6e2b733bc52b4cfd2f828cf788eb93b5fcbb048a6a1c46",
+      "original_reference_file": "references/c22c0f285ad46fb9.json",
+      "original_reference_sha256": "4e1ecdd50c647f348a74f35e4dd0112f6d2e62457bb5291b99089e5361f3f68b",
+      "original_output_sha256": "2dcfffe3bdae2f108645f3d2f889f767d90edd33f3c973aac1781ae7dd4f028e",
+      "expect_sha": "2dcfffe3bdae2f108645f3d2f889f767d90edd33f3c973aac1781ae7dd4f028e",
+      "expect_len": 291
+    },
+    {
+      "id": "c5f638a21d9f1fb8",
+      "source_path": "sql/moz-fx-data-shared-prod/search_derived/desktop_search_aggregates_by_userstate_v1/query.sql",
+      "input_sha256": "07a52d889066adacb5f5f66933629f535dd115be98e369ef27858e33ca1a2cf6",
+      "original_reference_file": "references/c5f638a21d9f1fb8.json",
+      "original_reference_sha256": "af4d81900471568c42936f53591faccfbe58a183517ecc7e88658e65573a2c72",
+      "original_output_sha256": "59c8d53219ddd42c951168c9389c567c32c4518e4a9ceeaad0c650d22574fcf8",
+      "expect_sha": "59c8d53219ddd42c951168c9389c567c32c4518e4a9ceeaad0c650d22574fcf8",
+      "expect_len": 1203
+    },
+    {
+      "id": "c7226a08dc8a8dc0",
+      "source_path": "sql/moz-fx-data-shared-prod/fenix_derived/new_profile_metrics_marketing_geo_testing_v1/query.sql",
+      "input_sha256": "c1a3c29bc586eaa36c1e65e241c3e202ef58407f995fee74fe041e283bebc3f8",
+      "original_reference_file": "references/c7226a08dc8a8dc0.json",
+      "original_reference_sha256": "8978b27e889d7bbffcdab505d5e7f8721e582b7770b31795de1a80aa3f3ebbd4",
+      "original_output_sha256": "213f4e0be1a3abc0c7b46c34fcddc0b8c62b7b6edf3136ceae537c807ab9aebf",
+      "expect_sha": "213f4e0be1a3abc0c7b46c34fcddc0b8c62b7b6edf3136ceae537c807ab9aebf",
+      "expect_len": 1828
+    },
+    {
+      "id": "cb915be888f9e22f",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_desktop_derived/desktop_dau_distribution_id_history_v1/query.sql",
+      "input_sha256": "cd18beabf201e24cde92c10e1d931a39479bf375b49368b8e0e583bc6ee9a124",
+      "original_reference_file": "references/cb915be888f9e22f.json",
+      "original_reference_sha256": "ada8d98e907814cec44ebbe6f5f62f68b5d894eb32cfc49b75ece98936b432d8",
+      "original_output_sha256": "57e073acc6ca3fd78b5638a59d729c43870226b975906bb4571db55aef5a749c",
+      "expect_sha": "57e073acc6ca3fd78b5638a59d729c43870226b975906bb4571db55aef5a749c",
+      "expect_len": 1436
+    },
+    {
+      "id": "cbd356d56fea1d50",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix_nightly__clients_daily_scalar_aggregates_metrics_v1/query.sql",
+      "input_sha256": "7941a23f92e64ffb83120d34a14fa7e11636c1dc4af65eb30df5b72b61afef62",
+      "original_reference_file": "references/cbd356d56fea1d50.json",
+      "original_reference_sha256": "1d161c28b2ddee587752f24369e6a20e0d2ede2c5182905bd6e15b2963839f8a",
+      "original_output_sha256": "2240eac66d8c7650e9dd618569e0d9b2b29479887291ecec8384476605107355",
+      "expect_sha": "2240eac66d8c7650e9dd618569e0d9b2b29479887291ecec8384476605107355",
+      "expect_len": 42822
+    },
+    {
+      "id": "ccb2ffbfcd841808",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_startup_timeline_v1/query.sql",
+      "input_sha256": "b4fc535bc788e8bc509a7f45c32217be89ecd82024ff8605137dbf40c3ac69cb",
+      "original_reference_file": "references/ccb2ffbfcd841808.json",
+      "original_reference_sha256": "716c720f9f32828c14da932e64b0721cc154a6f4f5f0a0c05d8ca08ce9592126",
+      "original_output_sha256": "96828e85946e9bb16b45b8c7ca900363f671563fcedac39d5be09bd3b828a59b",
+      "expect_sha": "96828e85946e9bb16b45b8c7ca900363f671563fcedac39d5be09bd3b828a59b",
+      "expect_len": 7739
+    },
+    {
+      "id": "ccbbf78e17318ca0",
+      "source_path": "sql/moz-fx-data-marketing-prod/fetch/spend_alignment_by_month_v1/query.sql",
+      "input_sha256": "f4f4210759333da6590b53f0a6a171018d87eba21b03fdd0ee26c2ee73e9e443",
+      "original_reference_file": "references/ccbbf78e17318ca0.json",
+      "original_reference_sha256": "1e84b64ffb7bbf523f99dbb55e33cb4de76dd8212c8acd21685f921f072ea5ac",
+      "original_output_sha256": "139392477d497dc0ce4554f43a6d21d8d33cce592a359275a5c24f9e3916b227",
+      "expect_sha": "139392477d497dc0ce4554f43a6d21d8d33cce592a359275a5c24f9e3916b227",
+      "expect_len": 752
+    },
+    {
+      "id": "d126cf033c12a0f3",
+      "source_path": "sql/moz-fx-data-shared-prod/mozilla_vpn_derived/devices_v1/query.sql",
+      "input_sha256": "3e6241a3eb3f36289539ac1c615809bfcbaac7d1520cabd2801c8569311a387a",
+      "original_reference_file": "references/d126cf033c12a0f3.json",
+      "original_reference_sha256": "9e139556b0f78ed5d8a37e4a3042a0acc521c94bf71a6b0f29c475d93ff6b41f",
+      "original_output_sha256": "98b501483432903d3500da25c5a39f251f451127caf68890d46b3ba60cbe2f4d",
+      "expect_sha": "98b501483432903d3500da25c5a39f251f451127caf68890d46b3ba60cbe2f4d",
+      "expect_len": 140
+    },
+    {
+      "id": "d44a18f579597f50",
+      "source_path": "sql/moz-fx-data-shared-prod/plausible_derived/download_metrics_v1/query.sql",
+      "input_sha256": "0bb9fc87764a09988a0e5cfe25713b076e03df5f29a814f42d1715f67f5aa862",
+      "original_reference_file": "references/d44a18f579597f50.json",
+      "original_reference_sha256": "dc47745338fda664ace6f5da6804bb33ba331d3a0b4ccddc9c0a8677fc628cb6",
+      "original_output_sha256": "7a58c792fe5bdfb8763481061414cdff10de6d99df1658a2b1344d25ddb4f9b5",
+      "expect_sha": "7a58c792fe5bdfb8763481061414cdff10de6d99df1658a2b1344d25ddb4f9b5",
+      "expect_len": 2213
+    },
+    {
+      "id": "d6390e6dcefaae3c",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_tabs_sync_v1/query.sql",
+      "input_sha256": "c308b3c11232e836881cdcf048fd091e3fc961003e0c813a061d01a23189ac20",
+      "original_reference_file": "references/d6390e6dcefaae3c.json",
+      "original_reference_sha256": "393503d961b33c3ff97601d0112ab2daffbde0906077d50fb21954297300d022",
+      "original_output_sha256": "1a0aed75816b6545c989d28eab695eba1cd1f8f7b030c9b7cc35498b6ce23e3e",
+      "expect_sha": "1a0aed75816b6545c989d28eab695eba1cd1f8f7b030c9b7cc35498b6ce23e3e",
+      "expect_len": 4118
+    },
+    {
+      "id": "d7e9110b8225bebb",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_referral_derived/referral_installs_daily_v1/query.sql",
+      "input_sha256": "75de397a8b70904152ecc172bd2b583d8a6ffd5f3b0f58a3a3c613c8fa161380",
+      "original_reference_file": "references/d7e9110b8225bebb.json",
+      "original_reference_sha256": "837efe96b94c731d7f8c7ba2f4d76970d9e1d5a852c975fbede1e46e0d4a83d0",
+      "original_output_sha256": "bcf70b1b89d6ad4819c0d77a482c5af8430d76d08c2fe307fa261b633fa5fe20",
+      "expect_sha": "bcf70b1b89d6ad4819c0d77a482c5af8430d76d08c2fe307fa261b633fa5fe20",
+      "expect_len": 2398
+    },
+    {
+      "id": "d93c2852964a7d28",
+      "source_path": "sql/moz-fx-data-shared-prod/sumo_metrics_derived/translation_daily_eng_base_v1/query.sql",
+      "input_sha256": "c62a7cb39b0651afc03cf37d55c784005761274d30df1b0ec985c2a2d8c3dbd0",
+      "original_reference_file": "references/d93c2852964a7d28.json",
+      "original_reference_sha256": "99ed62dc2f776edc279d3f665e241eb73261b5c87c3c1b1282cf116ed82027b2",
+      "original_output_sha256": "4e1d8e99f278460ba8d0056a02a274e4394842e9f8887beee45fd32312d9542b",
+      "expect_sha": "4e1d8e99f278460ba8d0056a02a274e4394842e9f8887beee45fd32312d9542b",
+      "expect_len": 917
+    },
+    {
+      "id": "dbe833a39d140afe",
+      "source_path": "sql/moz-fx-data-shared-prod/firefox_accounts_derived/fxa_gcp_stderr_events_v1/query.sql",
+      "input_sha256": "0d5467d6b8b9f978aba51c6b9dea253fcb5e4fdcfc53fd3726ce82f66bc1dc47",
+      "original_reference_file": "references/dbe833a39d140afe.json",
+      "original_reference_sha256": "979a3fc01a511d7641bf500a945b427bd9b8df4bc7aa3096ab04ef1e15a11c27",
+      "original_output_sha256": "de2025354ecb702156d3ae5bccc4d73f9f8ff273518b8fded065bac233e34b96",
+      "expect_sha": "de2025354ecb702156d3ae5bccc4d73f9f8ff273518b8fded065bac233e34b96",
+      "expect_len": 291
+    },
+    {
+      "id": "df51f4d878ecb7b2",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_dflt_srch_v1/query.sql",
+      "input_sha256": "ea627f2035765a5798ad0b53bbaff18af87c52dd257890ae4380a0f4eb1a1e9d",
+      "original_reference_file": "references/df51f4d878ecb7b2.json",
+      "original_reference_sha256": "f2326c6e3b677b3fb1f5a723a8cd2ffa01122a3b57e89b0a8227741c1582f0fe",
+      "original_output_sha256": "c2615be969e1039787a04d7822b89b22a84714dd2b6cba8c14c7171c2cc15dbb",
+      "expect_sha": "c2615be969e1039787a04d7822b89b22a84714dd2b6cba8c14c7171c2cc15dbb",
+      "expect_len": 547
+    },
+    {
+      "id": "e349488ec346429c",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_on_day_of_install_by_os_install_yr_v1/query.sql",
+      "input_sha256": "2c3baf8eb3e9e3751b3fe53893b63a9e19489168321e37e2f01f2421649dd6eb",
+      "original_reference_file": "references/e349488ec346429c.json",
+      "original_reference_sha256": "52aa0cc82293742fc5dd9ebde4a66bf9e5165c0ee0d58f54c24f4f7587b5e4c8",
+      "original_output_sha256": "fef7a967de6a1b553318c586f876dbeb38d8e64c037b53204774e5214f14dea3",
+      "expect_sha": "fef7a967de6a1b553318c586f876dbeb38d8e64c037b53204774e5214f14dea3",
+      "expect_len": 527
+    },
+    {
+      "id": "e7fb24c3fbef743c",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/cohort_daily_churn_v1/query.sql",
+      "input_sha256": "621b694142bb343806a81c78f9c7c4f0136e277dcb2c19c3d0e130bcaa6dd5c0",
+      "original_reference_file": "references/e7fb24c3fbef743c.json",
+      "original_reference_sha256": "fc9aa5b7a6fc8596b9cc6b590fd494fc7ab0d8af703e426daeb5241941602c57",
+      "original_output_sha256": "c037d787b1a8d7ee414d847e2347b42af60a2ef722d1cdd8dd5727c7cc5af86c",
+      "expect_sha": "c037d787b1a8d7ee414d847e2347b42af60a2ef722d1cdd8dd5727c7cc5af86c",
+      "expect_len": 4785
+    },
+    {
+      "id": "ea9f08f7258ab1e7",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/smoot_usage_fxa_compressed_v2/query.sql",
+      "input_sha256": "fe44d4ecc8d1fda1f4592e873a037ae18f42793618004800b9081e5a69dcd151",
+      "original_reference_file": "references/ea9f08f7258ab1e7.json",
+      "original_reference_sha256": "9533d34d5f6cf93618be46311dfa8528f521e0ebf5d3f86c09be9c59f370bab6",
+      "original_output_sha256": "1d1d59ca4e30558eec6f37b83e343ca789bb2c459a2838df0ad731269451b816",
+      "expect_sha": "1d1d59ca4e30558eec6f37b83e343ca789bb2c459a2838df0ad731269451b816",
+      "expect_len": 1582
+    },
+    {
+      "id": "ed508bcdfc057bca",
+      "source_path": "sql/glam-fenix-dev/glam_etl/org_mozilla_fenix__clients_daily_scalar_aggregates_migration_v1/query.sql",
+      "input_sha256": "a58e6a7c8ecafdb8c3286c346cf08d15262140bcc9de57f13e9462d06fc8b24e",
+      "original_reference_file": "references/ed508bcdfc057bca.json",
+      "original_reference_sha256": "47cf1c768f8ef1f2ac4f33034c06521e78f9b770c674d26a9cc64511710a1c43",
+      "original_output_sha256": "f462a9c69be42ea0f3d70c9ff190d852fd2a489fd08d1adaa39d2d0e683a2835",
+      "expect_sha": "f462a9c69be42ea0f3d70c9ff190d852fd2a489fd08d1adaa39d2d0e683a2835",
+      "expect_len": 39251
+    },
+    {
+      "id": "f1870bc71aa666cb",
+      "source_path": "sql/moz-fx-data-shared-prod/subscription_platform_derived/recent_service_subscription_events_v1/query.sql",
+      "input_sha256": "685f301757511520c16cd210f331ffbb6e62f21c96df37ae5de3442ac1f39d21",
+      "original_reference_file": "references/f1870bc71aa666cb.json",
+      "original_reference_sha256": "4f8f52d5b62110d95857f78dfd20e610cf6a29b31d09097bb821711f4ffdb5c3",
+      "original_output_sha256": "6ada2126cccc37526a242bce07c2ae758b739cd69214306a0f8deec209fd29ce",
+      "expect_sha": "6ada2126cccc37526a242bce07c2ae758b739cd69214306a0f8deec209fd29ce",
+      "expect_len": 640
+    },
+    {
+      "id": "f313b746fb1d1a81",
+      "source_path": "sql/glam-fenix-dev/glam_etl/firefox_desktop__clients_daily_scalar_aggregates_fog_validation_v1/query.sql",
+      "input_sha256": "6f3bdecf08f29c5092b8300b64bcdcb07824df2a5773d7ac9c0f825355dc9cbd",
+      "original_reference_file": "references/f313b746fb1d1a81.json",
+      "original_reference_sha256": "6f02bca199571c630b993caefc52b452c964c41f7831376493e80e734c486abf",
+      "original_output_sha256": "baa26a6db620ba93a6c5cdd2ec25f4c5eba9bf75a268b6b099c2b9621c8e2668",
+      "expect_sha": "baa26a6db620ba93a6c5cdd2ec25f4c5eba9bf75a268b6b099c2b9621c8e2668",
+      "expect_len": 3605
+    },
+    {
+      "id": "f728142e9835af13",
+      "source_path": "sql/moz-fx-data-shared-prod/search_terms_derived/merino_queries_daily_v1/query.sql",
+      "input_sha256": "cc2d7336128f9d84e851189be6369a8031cc85d090070b640646725f446482b4",
+      "original_reference_file": "references/f728142e9835af13.json",
+      "original_reference_sha256": "3e12fbd04efd85b540f1a2498ebed09b8695f86d0e5f536f7d471fa075ace3a7",
+      "original_output_sha256": "bd3b288568b77b1b8ba52f409176df173a06e00d103707ae3b11190d6fc427d9",
+      "expect_sha": "bd3b288568b77b1b8ba52f409176df173a06e00d103707ae3b11190d6fc427d9",
+      "expect_len": 382
+    },
+    {
+      "id": "f94c041f55ecec0b",
+      "source_path": "sql/moz-fx-data-shared-prod/glean_auto_events_derived/daily_auto_events_metadata_v1/query.sql",
+      "input_sha256": "10f620c8c52a018c3863281225208dc5a75654a6a3161c072e7a3c17c8f3870d",
+      "original_reference_file": "references/f94c041f55ecec0b.json",
+      "original_reference_sha256": "720e0179227f18b74b7b043d82cae8b559f1e3f414a08306a3ec74076f9998d0",
+      "original_output_sha256": "f1b3b2e29d1adbc1a071024924d6c311c81c7167daa019c6d916e9c05ce44a57",
+      "expect_sha": "f1b3b2e29d1adbc1a071024924d6c311c81c7167daa019c6d916e9c05ce44a57",
+      "expect_len": 2689
+    },
+    {
+      "id": "fd623fec1b3de4b0",
+      "source_path": "sql/moz-fx-data-shared-prod/telemetry_derived/uninstalls_by_day_v1/query.sql",
+      "input_sha256": "08502437dba67d1f9da33e6622105681edd752d50a1dc2c487d65c4692c413d0",
+      "original_reference_file": "references/fd623fec1b3de4b0.json",
+      "original_reference_sha256": "7782a882a6f579ea7b4928890037b4639602ddf15246353d82e39c08236e8a66",
+      "original_output_sha256": "cbb1ef05ac41acbce2125a95ca1afca9f054ea9a8a138912c21f6fa03cf33bc6",
+      "expect_sha": "cbb1ef05ac41acbce2125a95ca1afca9f054ea9a8a138912c21f6fa03cf33bc6",
+      "expect_len": 305
+    }
+  ]
+}

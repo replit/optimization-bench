@@ -1,0 +1,38 @@
+{
+  "format": "optimbench-fuzz-adapter-v1",
+  "task": "jq-strip-openapi-descriptions",
+  "language": "c",
+  "contract_sources": [
+    "instruction.md",
+    "upstream:49fbca1242c7f46f00b849de76565764e0254a03:src/jq.h",
+    "upstream:49fbca1242c7f46f00b849de76565764e0254a03:src/jv.h",
+    "upstream:49fbca1242c7f46f00b849de76565764e0254a03:docs/content/manual/dev/manual.yml"
+  ],
+  "surface_manifest": "surface.json",
+  "hooks": {
+    "generate": "adapter.py:generate",
+    "precondition": "adapter.py:precondition",
+    "shrink": "adapter.py:shrink",
+    "compare": "adapter.py:compare"
+  },
+  "seed_list": [1729, 2718, 31415],
+  "budget": {
+    "profile": "xz-serde-spacewasm-zrip-jq-numpy",
+    "grammar_property_seconds": 1200,
+    "coverage_guided_seconds": 3600,
+    "cpu_determinism_state_seconds": 1200,
+    "sanitizer_replay_seconds_per_build": 1800,
+    "per_case_seconds": 30,
+    "large_case_seconds": 120,
+    "declared_before_campaign": true
+  },
+  "resources": {
+    "peak_memory": {"mode": "report-only", "verdict_impact": false}
+  },
+  "status": "incomplete-surface-and-campaign-evidence",
+  "notes": [
+    "Existing differential cases are retained unchanged.",
+    "Only explicit public input selection is permitted; no private paths or expected answers are generator inputs.",
+    "No adequacy, coverage or mutation threshold is implemented in this task adapter."
+  ]
+}

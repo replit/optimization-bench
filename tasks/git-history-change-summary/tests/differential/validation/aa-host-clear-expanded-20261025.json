@@ -1,0 +1,16 @@
+{
+  "approval": "Reviewed and accepted. HOST-CLEAR GRANTED for one fresh git-xdiff A/A on image60d0b356/source6b1bb75,onlytimedsession. Identicalprotocol:onecontainerperpairwithprepare,30balancedpairs+1warmup,seed20261025,bootstrap20000,no trimming,stopfirstarmunder1sorfailedfamily,Myers/shortstat/histogramorder. Reportmedians,ratio/CI/fullwidth,firstsecondratio,noise/steal/throttle,walltime.Resultstands.Releaseclearwhen done.",
+  "build_hash_source": "expanded-public-controls.json, immutable unchanged validated pristine builds",
+  "coordinator_conversation_id": "71fa24c5-8bc1-482a-a146-45ef6c4a1676",
+  "decision": "approve",
+  "git_binary_preread": false,
+  "image": "sha256:60d0b356ce2ff6f18b4ce326e9cbae68d848e8e5870d911bea0819c8032de591",
+  "quiet_check": {
+    "at": "2026-10-25T23:16:38.841474+00:00",
+    "loadavg": "0.23 0.61 1.04 1/371 69515",
+    "other_build_test_or_measurement_jobs": 0,
+    "running_containers": 0,
+    "two_second_cpu_busy_fraction": 0.00250391236306724
+  },
+  "task_commit": "6b1bb753e426d43d9df772c1c041fa6231d811a5"
+}
